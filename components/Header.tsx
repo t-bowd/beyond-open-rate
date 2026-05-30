@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const NAV = [
   { href: "/services", label: "Services" },
@@ -14,6 +15,7 @@ const NAV = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -22,42 +24,67 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // close on route change
+  useEffect(() => { setOpen(false); }, [pathname]);
+
+  // close on Escape
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
-    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
-      <div className="wrap nav">
-        <Link href="/" className="brand" aria-label="Beyond Open Rate home">
-          <span className="brand-mark">
-            <span>B</span>
-          </span>
-          Beyond&nbsp;Open&nbsp;Rate
-        </Link>
-        <nav>
-          <ul className={`nav-links ${open ? "open" : ""}`}>
-            {NAV.map((item) => (
-              <li key={item.href}>
-                <Link href={item.href} onClick={() => setOpen(false)}>
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="nav-cta">
-          <Link href="/contact" className="btn btn-ghost">
-            Talk to us
-          </Link>
-          <Link href="/contact" className="btn btn-primary">
-            Get a free audit
+    <>
+      <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+        <div className="wrap nav">
+          <Link href="/" className="brand" aria-label="Beyond Open Rate home">
+            <span className="brand-mark"><span>B</span></span>
+            Beyond&nbsp;Open&nbsp;Rate
           </Link>
           <button
-            className="nav-toggle"
-            aria-label="Menu"
+            className={`nav-toggle ${open ? "open" : ""}`}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
-            <span></span>
+            <span className="nav-toggle-icon" aria-hidden="true" />
           </button>
         </div>
-      </div>
-    </header>
+      </header>
+
+      {open && (
+        <div
+          className="nav-overlay"
+          onClick={() => setOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      <nav
+        className={`nav-drawer ${open ? "open" : ""}`}
+        aria-label="Main navigation"
+        aria-hidden={!open}
+      >
+        <ul className="nav-drawer-links">
+          {NAV.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="nav-drawer-cta">
+          <Link href="/contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
+            Talk to us
+          </Link>
+          <Link href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
+            Get a free audit
+          </Link>
+        </div>
+      </nav>
+    </>
   );
 }

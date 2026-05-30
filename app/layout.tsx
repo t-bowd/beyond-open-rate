@@ -1,14 +1,15 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Hanken_Grotesk, Space_Mono } from "next/font/google";
+import { Instrument_Serif, Hanken_Grotesk, Space_Mono } from "next/font/google";
 import { site } from "@/lib/site";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/jsonld";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const bricolage = Bricolage_Grotesque({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["400"],
+  style: ["normal", "italic"],
   variable: "--font-bricolage",
   display: "swap",
 });
@@ -64,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${hanken.variable} ${spaceMono.variable}`}
+      className={`${instrumentSerif.variable} ${hanken.variable} ${spaceMono.variable}`}
     >
       <body>
         <Header />
