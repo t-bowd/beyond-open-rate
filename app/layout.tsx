@@ -1,15 +1,14 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Hanken_Grotesk, Space_Mono } from "next/font/google";
+import { DM_Sans, Hanken_Grotesk, Space_Mono } from "next/font/google";
 import { site } from "@/lib/site";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/jsonld";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const instrumentSerif = Instrument_Serif({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal", "italic"],
+  weight: ["500", "600", "700"],
   variable: "--font-bricolage",
   display: "swap",
 });
@@ -65,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${instrumentSerif.variable} ${hanken.variable} ${spaceMono.variable}`}
+      className={`${dmSans.variable} ${hanken.variable} ${spaceMono.variable}`}
     >
       <body>
         <Header />

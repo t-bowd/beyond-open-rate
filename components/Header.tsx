@@ -24,10 +24,8 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // close on route change
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  // close on Escape
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
@@ -43,23 +41,23 @@ export default function Header() {
             <span className="brand-mark"><span>B</span></span>
             Beyond&nbsp;Open&nbsp;Rate
           </Link>
-          <button
-            className={`nav-toggle ${open ? "open" : ""}`}
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span className="nav-toggle-icon" aria-hidden="true" />
-          </button>
+          <div className="nav-cta">
+            <Link href="/contact" className="btn btn-ghost">Talk to us</Link>
+            <Link href="/contact" className="btn btn-primary">Get a free audit</Link>
+            <button
+              className={`nav-toggle ${open ? "open" : ""}`}
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+            >
+              <span className="nav-toggle-icon" aria-hidden="true" />
+            </button>
+          </div>
         </div>
       </header>
 
       {open && (
-        <div
-          className="nav-overlay"
-          onClick={() => setOpen(false)}
-          aria-hidden="true"
-        />
+        <div className="nav-overlay" onClick={() => setOpen(false)} aria-hidden="true" />
       )}
 
       <nav
@@ -76,14 +74,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="nav-drawer-cta">
-          <Link href="/contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
-            Talk to us
-          </Link>
-          <Link href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
-            Get a free audit
-          </Link>
-        </div>
       </nav>
     </>
   );
