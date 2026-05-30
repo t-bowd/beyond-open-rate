@@ -1,0 +1,59 @@
+---
+title: "Why open rate is the wrong number to optimise for"
+description: "Open rate has been a misleading metric for years, and after Apple's Mail Privacy Protection it's mostly noise. Here's what to track instead — and how to brief your team to make the switch."
+publishedAt: "2026-05-30"
+updatedAt: "2026-05-30"
+author: "Beyond Open Rate"
+tags: ["lifecycle", "metrics", "deliverability"]
+faq:
+  - q: "Is open rate completely useless now?"
+    a: "Not completely — it still has some signal for warmup campaigns and for catching catastrophic drops. But for week-to-week campaign comparison, Apple's Mail Privacy Protection makes it close to noise. Use it as a diagnostic, not a target."
+  - q: "What should we use instead of open rate?"
+    a: "Revenue per recipient (RPR) for campaigns, conversion rate by flow for automations, and inbox placement (via a deliverability monitor like Google Postmaster Tools) for sender reputation. These are what actually correlate with revenue."
+  - q: "How do we explain the change to a CEO who's used to opens?"
+    a: "Reframe it in dollars. 'A 40% open rate that drives $0 is worth less than a 20% open rate that drives $50 per send.' Most CEOs care about revenue, not rates — give them the metric that maps to the P&L."
+---
+
+For a decade, open rate was the email metric every marketer reported on. It was easy to measure, easy to compare, and easy to take to a leadership meeting. It also happened to be deeply, structurally misleading — and after Apple shipped Mail Privacy Protection in 2021, it's mostly noise.
+
+This post is about why, and what to track instead.
+
+## What open rate actually measures
+
+When an email reports an "open," what's really happened is that the email client downloaded a small tracking pixel from your ESP. Historically that was a reasonable proxy for "a human looked at this email." A few things broke that assumption:
+
+- **Image blocking.** Outlook (still 10–20% of B2B inboxes) blocks images by default. Those opens never get counted.
+- **Email apps that preload.** Gmail's tabs feature, mobile apps that pre-fetch, corporate proxies — all of these can fire opens with no human involved.
+- **Apple Mail Privacy Protection (MPP).** Since iOS 15, Apple Mail pre-fetches every tracking pixel for users who opt in to MPP. That's a *lot* of users. Your open rate now includes a fictional 100% open rate for that segment.
+
+The net effect: open rate is an inconsistent blend of "people who actually looked" and "robots that pre-fetched." It moves for reasons that have nothing to do with your campaign quality.
+
+## What to track instead
+
+Pick the metric that maps to the decision you're trying to make.
+
+### For campaigns: revenue per recipient (RPR)
+
+RPR is total revenue attributed to a send, divided by the number of recipients. It punishes large unengaged sends and rewards tight, well-segmented ones. Use it as the primary scorecard for every broadcast.
+
+### For flows: conversion rate by step
+
+For automated flows (welcome, abandonment, post-purchase), track conversion rate per step, not opens. You want to know which email in the sequence is doing the work — and which one is just absorbing list fatigue.
+
+### For deliverability: inbox placement + spam complaints
+
+Use Google Postmaster Tools (free) and your ESP's spam complaint rate. Aim for under 0.1% complaints on broadcast sends. If you can afford it, a third-party inbox monitor (GlockApps, Litmus, etc.) shows where you're landing — Inbox vs Promotions vs Spam — by mailbox provider.
+
+### For list health: 30-day engagement
+
+"Has this person clicked, ordered, or visited in the last 30 days?" If not, they shouldn't be in your broadcast segment. Sunset disengaged subscribers ruthlessly; deliverability rewards you for sending to people who want your email.
+
+## How to brief the team
+
+Three lines, no more:
+
+1. We don't optimise opens because Apple breaks the metric.
+2. The new scorecard is revenue per recipient, by send.
+3. Anything we do that increases RPR is a win — even if open rate drops.
+
+Then make sure your monthly report leads with RPR, not opens. What you measure is what gets optimised. Stop measuring the wrong thing.

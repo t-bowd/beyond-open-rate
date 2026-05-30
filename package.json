@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",
+    "gray-matter": "^4.0.3",
     "next": "14.2.5",
+    "next-mdx-remote": "^6.0.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {

@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 const NAV = [
   { href: "/services", label: "Services" },
   { href: "/process", label: "Process" },
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
-  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Header() {
