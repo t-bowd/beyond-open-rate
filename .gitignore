@@ -1,0 +1,14 @@
+
+assets/.DS_Store
+.DS_Store
+assets/.DS_Store
+
+# Next.js
+.next/
+out/
+node_modules/
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env*.local

@@ -1,0 +1,32 @@
+# Beyond Open Rate
+
+> Email marketing, lifecycle and automation consultancy for e-commerce and SaaS brands. We build and run the always-on flows, campaign calendars, and reporting that turn email into a predictable revenue line.
+
+## What we do
+
+- **Lifecycle & automation** — welcome, abandonment, post-purchase, win-back flows.
+- **Campaign management** — planned, segmented broadcast calendars.
+- **Copy & design** — on-brand emails written and designed in-house.
+- **Platform & CRM setup** — Klaviyo, HubSpot, Customer.io, Mailchimp.
+- **Deliverability & audits** — authentication, list hygiene, inbox placement.
+- **Reporting that matters** — revenue per recipient, not vanity opens.
+
+## Engagement model
+
+- Flat monthly retainer based on scope. No hourly billing.
+- Most clients start with a fixed audit + build project, then move to ongoing retainer.
+- Month-to-month after the initial build; no long contracts.
+
+## Key pages
+
+- Home: https://beyondopenrate.com.au/
+- Services: https://beyondopenrate.com.au/services
+- Process: https://beyondopenrate.com.au/process
+- About: https://beyondopenrate.com.au/about
+- Contact: https://beyondopenrate.com.au/contact
+- Blog: https://beyondopenrate.com.au/blog
+- Free tools: https://beyondopenrate.com.au/tools
+
+## Free tools
+
+- Email program audit (quiz): https://beyondopenrate.com.au/tools/email-audit
