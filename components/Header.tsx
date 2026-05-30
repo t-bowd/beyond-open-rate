@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const NAV = [
-  { href: "#services", label: "Services" },
-  { href: "#results", label: "Results" },
-  { href: "#process", label: "Process" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/services", label: "Services" },
+  { href: "/process", label: "Process" },
+  { href: "/about", label: "About" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Header() {
@@ -23,30 +24,30 @@ export default function Header() {
   return (
     <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap nav">
-        <a href="#top" className="brand" aria-label="Beyond Open Rate home">
+        <Link href="/" className="brand" aria-label="Beyond Open Rate home">
           <span className="brand-mark">
             <span>B</span>
           </span>
           Beyond&nbsp;Open&nbsp;Rate
-        </a>
+        </Link>
         <nav>
           <ul className={`nav-links ${open ? "open" : ""}`}>
             {NAV.map((item) => (
               <li key={item.href}>
-                <a href={item.href} onClick={() => setOpen(false)}>
+                <Link href={item.href} onClick={() => setOpen(false)}>
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
         <div className="nav-cta">
-          <a href="#contact" className="btn btn-ghost">
+          <Link href="/contact" className="btn btn-ghost">
             Talk to us
-          </a>
-          <a href="#hero-audit" className="btn btn-primary">
+          </Link>
+          <Link href="/contact" className="btn btn-primary">
             Get a free audit
-          </a>
+          </Link>
           <button
             className="nav-toggle"
             aria-label="Menu"

@@ -3,6 +3,8 @@ import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Hanken_Grotesk, Space_Mono } from "next/font/google";
 import { site } from "@/lib/site";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/jsonld";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -65,7 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${bricolage.variable} ${hanken.variable} ${spaceMono.variable}`}
     >
       <body>
-        {children}
+        <Header />
+        <main id="top">{children}</main>
+        <Footer />
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
       </body>

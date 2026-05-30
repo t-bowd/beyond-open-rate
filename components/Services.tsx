@@ -1,13 +1,5 @@
 import Reveal from "./Reveal";
-
-const SERVICES = [
-  { n: "01", h: "Lifecycle & automation", p: "Welcome, abandonment, post-purchase, win-back. The always-on flows that earn revenue while you sleep." },
-  { n: "02", h: "Campaign management", p: "A planned calendar of broadcasts — segmented, scheduled, and sent. We own the whole cadence, not just one-offs." },
-  { n: "03", h: "Copy & design", p: "On-brand emails that read like a person and convert like a salesperson. Written and designed in-house." },
-  { n: "04", h: "Platform & CRM setup", p: "Klaviyo, HubSpot, Customer.io — migrated, integrated, and configured so your data and triggers actually fire." },
-  { n: "05", h: "Deliverability & audits", p: "Authentication, list hygiene, and inbox placement — so the emails you send are the emails people see." },
-  { n: "06", h: "Reporting that matters", p: "Revenue per recipient, not vanity opens. Clear monthly reporting tied to the numbers your business runs on." },
-];
+import { services } from "@/lib/content";
 
 export default function Services() {
   return (
@@ -21,11 +13,11 @@ export default function Services() {
           </p>
         </Reveal>
         <div className="svc-grid">
-          {SERVICES.map((s) => (
-            <Reveal as="article" className="svc-card" key={s.n}>
-              <div className="svc-num">{s.n}</div>
-              <h3>{s.h}</h3>
-              <p>{s.p}</p>
+          {services.map((s) => (
+            <Reveal as="article" className="svc-card" key={s.slug}>
+              <div className="svc-num">{s.num}</div>
+              <h3>{s.title}</h3>
+              <p>{s.blurb}</p>
             </Reveal>
           ))}
         </div>

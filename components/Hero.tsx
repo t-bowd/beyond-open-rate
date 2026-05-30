@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
 
 export default function Hero() {
+  const router = useRouter();
   const [url, setUrl] = useState("");
-  const [note, setNote] = useState<"default" | "error" | "ok">("default");
+  const [note, setNote] = useState<"default" | "error">("default");
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,11 +16,7 @@ export default function Hero() {
       setNote("error");
       return;
     }
-    // Hand the URL to the contact form and jump to it.
-    window.dispatchEvent(new CustomEvent<string>("bor:prefill", { detail: v }));
-    setNote("ok");
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-    setTimeout(() => document.getElementById("c-name")?.focus(), 700);
+    router.push(`/contact?site=${encodeURIComponent(v)}`);
   };
 
   return (
@@ -63,11 +61,6 @@ export default function Hero() {
             <span className="form-error">
               ↑ Pop your website in first and we&apos;ll take a look.
             </span>
-          ) : note === "ok" ? (
-            <>
-              <span>✦</span>
-              <span>Nice — scroll down and we&apos;ll grab a couple of details.</span>
-            </>
           ) : (
             <>
               <span>✦</span>

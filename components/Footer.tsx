@@ -1,22 +1,22 @@
-import Reveal from "./Reveal";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-inner">
-        <a href="#top" className="brand">
+        <Link href="/" className="brand">
           <span className="brand-mark">
             <span>B</span>
           </span>
           Beyond&nbsp;Open&nbsp;Rate
-        </a>
+        </Link>
         <ul className="footer-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link href="/services">Services</Link></li>
+          <li><Link href="/process">Process</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
-        <p className="footer-copy">© 2026 Beyond Open Rate</p>
+        <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate</p>
       </div>
     </footer>
   );
