@@ -7,9 +7,9 @@ import { getAllPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Blog — email marketing thinking",
+  title: "Email marketing strategy and advice",
   description:
-    "Notes on email marketing, lifecycle automation, deliverability, and the numbers that actually matter.",
+    "Thinking on lifecycle automation, deliverability, segmentation, and the metrics that actually move revenue.",
   alternates: { canonical: "/blog" },
 };
 
@@ -29,26 +29,27 @@ export default async function BlogIndexPage() {
       <section className="hero" data-screen-label="Blog">
         <div className="wrap hero-inner">
           <Reveal as="h1">
-            Notes on <span className="accent">email that works</span>.
+            Email marketing{" "}
+            <span className="accent">strategy and advice</span>.
           </Reveal>
           <Reveal as="p" className="hero-sub">
-            Thinking on lifecycle, deliverability, segmentation, and the
-            difference between a vanity metric and a revenue lever.
+            Thinking on lifecycle, automation, deliverability, and the metrics
+            that actually move revenue.
           </Reveal>
         </div>
       </section>
 
       <section className="section">
-        <div className="wrap" style={{ maxWidth: 760 }}>
+        <div className="wrap">
           {posts.length === 0 ? (
             <Reveal>
-              <p>First posts coming soon.</p>
+              <p style={{ color: "var(--ink-soft)" }}>First posts coming soon.</p>
             </Reveal>
           ) : (
-            <ul className="post-list">
+            <ul className="blog-grid">
               {posts.map((p) => (
-                <Reveal as="li" className="post-list-item" key={p.slug}>
-                  <Link href={`/blog/${p.slug}`} className="post-link">
+                <Reveal as="li" key={p.slug}>
+                  <Link href={`/blog/${p.slug}`} className="blog-card">
                     <p className="post-meta">
                       <time dateTime={p.publishedAt}>{fmt(p.publishedAt)}</time>
                       {p.tags && p.tags.length > 0 && (
@@ -56,7 +57,8 @@ export default async function BlogIndexPage() {
                       )}
                     </p>
                     <h2>{p.title}</h2>
-                    <p>{p.description}</p>
+                    <p className="blog-card-desc">{p.description}</p>
+                    <span className="blog-card-cta">Read more →</span>
                   </Link>
                 </Reveal>
               ))}
