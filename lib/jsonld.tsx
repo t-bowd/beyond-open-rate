@@ -36,6 +36,7 @@ export function serviceSchema(args: {
   name: string;
   description: string;
   slug?: string;
+  areaServed?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -43,7 +44,7 @@ export function serviceSchema(args: {
     name: args.name,
     description: args.description,
     provider: { "@type": "Organization", name: site.legalName, url: site.url },
-    areaServed: "Global",
+    areaServed: args.areaServed ?? "Australia",
     ...(args.slug ? { url: `${site.url}/services/${args.slug}` } : {}),
   };
 }
