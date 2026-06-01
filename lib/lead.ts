@@ -21,6 +21,15 @@ export type CaptureLeadInput = {
 
 export type CaptureLeadResult = { id: string };
 
+export async function requestFullAudit(id: string): Promise<void> {
+  const { error } = await supabaseAdmin()
+    .from("leads")
+    .update({ full_audit_requested: true })
+    .eq("id", id);
+
+  if (error) throw error;
+}
+
 export async function captureLead(
   input: CaptureLeadInput,
 ): Promise<CaptureLeadResult> {

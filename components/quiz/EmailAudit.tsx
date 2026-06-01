@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import {
   questions,
   scoreAnswers,
@@ -27,6 +27,8 @@ export default function EmailAudit() {
   const [serverError, setServerError] = useState<string | null>(null);
   const [hp, setHp] = useState(""); // honeypot
   const [result, setResult] = useState<ScoreResult | null>(null);
+  const [leadId, setLeadId] = useState<string | null>(null);
+  const router = useRouter();
 
   const q = questions[step];
   const total = questions.length;
@@ -116,6 +118,7 @@ export default function EmailAudit() {
         return;
       }
       track("lead_success", { source: "tool:email-audit", tier: scored.tier });
+      setLeadId(json.id ?? null);
       setResult(scored);
       setPhase("results");
     } catch {
@@ -123,6 +126,14 @@ export default function EmailAudit() {
       setServerError("Couldn't reach the server. Check your connection and try again.");
       setPhase("gate");
     }
+  }
+
+  async function requestAudit() {
+    if (leadId) {
+      fetch(`/api/lead/${leadId}`, { method: "PATCH" }).catch(() => {});
+    }
+    track("audit_full_requested", { tier: result?.tier });
+    router.push("/thank-you");
   }
 
   return (
@@ -334,9 +345,9 @@ export default function EmailAudit() {
               Want us to run this audit properly — flows, deliverability, and
               segmentation reviewed by hand?
             </p>
-            <Link href="/#contact" className="btn btn-primary btn-lg">
+            <button className="btn btn-primary btn-lg" onClick={requestAudit}>
               Request a full audit
-            </Link>
+            </button>
           </div>
         </div>
       )}
