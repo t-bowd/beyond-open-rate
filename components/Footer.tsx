@@ -11,12 +11,10 @@ export default function Footer() {
           Beyond&nbsp;Open&nbsp;Rate
         </Link>
         <ul className="footer-links">
-          <li><Link href="/services">Services</Link></li>
-          <li><Link href="/process">Process</Link></li>
           <li><Link href="/tools">Tools</Link></li>
           <li><Link href="/blog">Blog</Link></li>
           <li><Link href="/about">About</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/#contact">Contact</Link></li>
         </ul>
         <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate</p>
       </div>

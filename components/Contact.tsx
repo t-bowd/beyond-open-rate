@@ -14,11 +14,11 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
-  // Prefill website field when Hero form fires the bor:prefill event
+  // Prefill email field when Hero form fires the bor:prefill event
   useEffect(() => {
     const onPrefill = (e: Event) => {
       const detail = (e as CustomEvent<string>).detail;
-      setValues((v) => ({ ...v, site: detail || v.site }));
+      setValues((v) => ({ ...v, email: detail || v.email }));
     };
     window.addEventListener("bor:prefill", onPrefill);
     return () => window.removeEventListener("bor:prefill", onPrefill);

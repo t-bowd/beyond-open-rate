@@ -6,7 +6,11 @@ export default function Process() {
     <section className="section" id="process" data-screen-label="Process">
       <div className="wrap">
         <Reveal className="section-head">
-          <h2>Simple to start. Built to compound.</h2>
+          <h2>Audit. Build. Compound.</h2>
+          <p>
+            We get the foundations live fast, then improve month over month
+            against the numbers that actually matter.
+          </p>
         </Reveal>
         <div className="steps">
           {processSteps.map((s) => (

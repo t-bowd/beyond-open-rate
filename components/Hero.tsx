@@ -4,17 +4,17 @@ import { useState } from "react";
 import Reveal from "./Reveal";
 
 export default function Hero() {
-  const [url, setUrl] = useState("");
+  const [email, setEmail] = useState("");
   const [note, setNote] = useState<"default" | "error">("default");
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const v = url.trim();
-    if (!v) {
+    const v = email.trim();
+    if (!v || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
       setNote("error");
       return;
     }
-    // Prefill the contact form below and scroll to it
+    // Prefill the email field in the contact form below and scroll to it
     window.dispatchEvent(new CustomEvent<string>("bor:prefill", { detail: v }));
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
     setTimeout(() => document.getElementById("c-name")?.focus(), 600);
@@ -27,28 +27,27 @@ export default function Hero() {
           Grow your business with <span className="accent">email</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub">
-          Email marketing, lifecycle and automation for e-commerce and SaaS
-          brands — built to turn quiet subscribers into predictable, repeat
-          revenue.
+          Email marketing, lifecycle and automation — built to turn your list
+          into a predictable, compounding revenue channel.
         </Reveal>
 
         <Reveal as="form" className="audit-form" id="hero-audit" onSubmit={submit} noValidate>
           <span className="icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-              <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           </span>
           <input
-            type="text"
-            id="auditUrl"
-            name="url"
-            placeholder="yourstore.com"
-            aria-label="Your website"
-            autoComplete="url"
-            value={url}
+            type="email"
+            id="heroEmail"
+            name="email"
+            placeholder="your@email.com"
+            aria-label="Your email address"
+            autoComplete="email"
+            value={email}
             onChange={(e) => {
-              setUrl(e.target.value);
+              setEmail(e.target.value);
               if (note === "error") setNote("default");
             }}
           />
@@ -60,14 +59,14 @@ export default function Hero() {
         <Reveal as="p" className="audit-note">
           {note === "error" ? (
             <span className="form-error">
-              ↑ Pop your website in first and we&apos;ll have a look.
+              ↑ Enter your email and we&apos;ll be in touch.
             </span>
           ) : (
             <>
               <span>✦</span>
               <span>
                 Free, no-obligation chat.{" "}
-                <b>You talk to the people who do the work.</b>
+                <b>We&apos;ll respond within one business day.</b>
               </span>
             </>
           )}
