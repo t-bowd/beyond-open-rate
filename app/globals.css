@@ -395,6 +395,61 @@ a { color: inherit; text-decoration: none; }
 .review-name { font-size: 14px; font-weight: 600; color: var(--ink); }
 .review-context { font-size: 13px; color: var(--ink-soft); margin-top: 1px; }
 
+/* ---------- About page ---------- */
+.about-founder-section { background: var(--surface); border-block: 1px solid var(--line); }
+.about-founder {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.about-photo-wrap { position: relative; }
+.about-photo-placeholder {
+  width: 100%; aspect-ratio: 4 / 5;
+  background: var(--line-soft);
+  border-radius: var(--radius);
+  display: grid; place-items: center;
+  border: 1px solid var(--line);
+}
+.about-photo-placeholder span {
+  font-family: var(--font-display); font-size: 72px; font-weight: 700;
+  color: var(--ink-faint);
+}
+.about-photo-img {
+  width: 100%; height: auto; border-radius: var(--radius); display: block;
+}
+.about-eyebrow {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent-deep);
+  margin: 0 0 12px;
+}
+.about-founder-copy h2 { font-size: clamp(28px, 4vw, 38px); margin: 0 0 24px; }
+.about-founder-copy p { color: var(--ink-soft); margin-bottom: 16px; }
+.about-founder-copy p:last-of-type { margin-bottom: 0; }
+
+.about-philosophy .section-head { margin-bottom: 0; }
+.about-philosophy h2 { font-size: clamp(26px, 3.6vw, 36px); margin-bottom: 28px; }
+.about-take { display: grid; gap: 18px; }
+.about-take p { color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: start;
+}
+.about-split-col h2 { font-size: clamp(22px, 3vw, 28px); margin-bottom: 18px; }
+.about-split-col p { color: var(--ink-soft); margin-bottom: 16px; }
+.about-split-col p:last-of-type { margin-bottom: 0; }
+.about-wont { padding: 28px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--line); }
+.about-wont h2 { color: var(--ink); }
+
+@media (max-width: 860px) {
+  .about-founder { grid-template-columns: 1fr; }
+  .about-photo-wrap { max-width: 280px; }
+  .about-split { grid-template-columns: 1fr; gap: 32px; }
+}
+
 /* ---------- Blog cards ---------- */
 .blog-grid {
   list-style: none; margin: 0; padding: 0;
