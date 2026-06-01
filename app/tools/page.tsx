@@ -6,9 +6,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free email marketing tools",
+  title: "Email marketing tools",
   description:
-    "Free tools to assess and improve your email program — built from what we use ourselves on client audits.",
+    "Practical diagnostics to help you understand where your email program stands — and what to do about it.",
   alternates: { canonical: "/tools" },
 };
 
@@ -17,8 +17,9 @@ const tools = [
     slug: "email-audit",
     title: "Email program audit",
     description:
-      "Ten quick questions on your current setup. We score where you are and email you a tailored set of next moves.",
-    time: "~3 minutes",
+      "Ten quick questions on your current setup. We score where you are and give you a tailored set of next moves.",
+    cta: "Take the audit",
+    icon: "✦",
   },
 ];
 
@@ -28,28 +29,29 @@ export default function ToolsPage() {
       <section className="hero" data-screen-label="Tools">
         <div className="wrap hero-inner">
           <Reveal as="h1">
-            Free <span className="accent">tools</span>.
+            <span className="accent">Tools</span> to improve your email program.
           </Reveal>
           <Reveal as="p" className="hero-sub">
-            The same diagnostics we run on paid audits, packaged up so you can
-            self-serve. No fluff, no upsell wall.
+            Practical diagnostics that show you where your email program stands
+            — and what to actually do about it.
           </Reveal>
         </div>
       </section>
 
       <section className="section">
-        <div className="wrap" style={{ maxWidth: 760 }}>
-          <ul className="post-list">
+        <div className="wrap" style={{ maxWidth: 900 }}>
+          <div className="tool-grid">
             {tools.map((t) => (
-              <Reveal as="li" className="post-list-item" key={t.slug}>
-                <Link href={`/tools/${t.slug}`} className="post-link">
-                  <p className="post-meta">FREE · {t.time}</p>
-                  <h2>{t.title}</h2>
-                  <p>{t.description}</p>
+              <Reveal key={t.slug} className="tool-card">
+                <span className="tool-icon" aria-hidden="true">{t.icon}</span>
+                <h2>{t.title}</h2>
+                <p>{t.description}</p>
+                <Link href={`/tools/${t.slug}`} className="btn btn-primary">
+                  {t.cta} →
                 </Link>
               </Reveal>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
 
