@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Why do you need my email?",
-    a: "We send the results to your inbox so you have a concrete record to refer back to — a scored breakdown and your priority recommendations in one place. We don't add you to a marketing sequence.",
+    a: "We send the results to your inbox so you have a concrete record to refer back to — a scored breakdown and your priority recommendations in one place.",
   },
   {
     q: "Who is this for?",

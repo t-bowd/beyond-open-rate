@@ -127,7 +127,7 @@ export default function EmailAudit() {
 
       {phase === "intro" && (
         <div className="quiz-card">
-          <p className="quiz-meta">FREE TOOL · ~3 MINUTES</p>
+          <p className="quiz-meta">EMAIL PROGRAM AUDIT</p>
           <h2>Email program audit</h2>
           <p>
             Ten quick questions on your current email setup. We&apos;ll score where you
@@ -137,7 +137,7 @@ export default function EmailAudit() {
           <ul className="quiz-bullets">
             <li>No fluff — just the gaps and what to do first</li>
             <li>Tailored to your industry, platform, and list size</li>
-            <li>Your answers stay yours; we won&apos;t spam you</li>
+            <li>Specific to your setup, not generic advice</li>
           </ul>
           <button className="btn btn-primary btn-lg" onClick={start}>
             Start the audit →
@@ -228,7 +228,7 @@ export default function EmailAudit() {
           <h2>Where should we send your results?</h2>
           <p>
             We&apos;ll score your answers and email you a tailored set of next
-            moves. No spam, no follow-up sequence — one email, the audit.
+            moves — emailed straight to you.
           </p>
 
           <div className="quiz-form">
