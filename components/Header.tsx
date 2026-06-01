@@ -42,8 +42,8 @@ export default function Header() {
             Beyond&nbsp;Open&nbsp;Rate
           </Link>
           <div className="nav-cta">
-            <Link href="/contact" className="btn btn-ghost">Talk to us</Link>
-            <Link href="/contact" className="btn btn-primary">Get a free audit</Link>
+            <Link href="/contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>
+            <Link href="/tools/email-audit" className="btn btn-primary">Get a free audit</Link>
             <button
               className={`nav-toggle ${open ? "open" : ""}`}
               aria-label={open ? "Close menu" : "Open menu"}
@@ -74,6 +74,14 @@ export default function Header() {
             </li>
           ))}
         </ul>
+        <div className="nav-drawer-cta">
+          <Link href="/contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
+            Talk to us
+          </Link>
+          <Link href="/tools/email-audit" className="btn btn-primary" onClick={() => setOpen(false)}>
+            Get a free audit
+          </Link>
+        </div>
       </nav>
     </>
   );
