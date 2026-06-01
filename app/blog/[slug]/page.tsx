@@ -5,7 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import CtaBand from "@/components/CtaBand";
+import Contact from "@/components/Contact";
 import {
   JsonLd,
   articleSchema,
@@ -105,7 +105,7 @@ export default async function PostPage({ params }: PageProps) {
         </div>
       </article>
 
-      <CtaBand />
+      <Contact />
 
       <JsonLd
         data={articleSchema({

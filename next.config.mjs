@@ -14,11 +14,15 @@ const nextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   async headers() {
+    return [{ source: "/:path*", headers: securityHeaders }];
+  },
+  async redirects() {
     return [
-      {
-        source: "/:path*",
-        headers: securityHeaders,
-      },
+      // /contact preserved as a route for any external links post-launch
+      { source: "/contact", destination: "/", permanent: false },
+      // /services and /process redirect home if anyone links to them
+      { source: "/services", destination: "/", permanent: false },
+      { source: "/process", destination: "/", permanent: false },
     ];
   },
 };

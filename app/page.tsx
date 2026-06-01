@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
 import Services from "@/components/Services";
@@ -20,13 +19,7 @@ export default function Page() {
       <Process />
       <Testimonial />
       <Faq />
-      <section className="section cta" id="contact" data-screen-label="Contact">
-        <div className="wrap">
-          <Suspense fallback={null}>
-            <Contact />
-          </Suspense>
-        </div>
-      </section>
+      <Contact />
       <JsonLd data={faqSchema(faqs)} />
     </>
   );

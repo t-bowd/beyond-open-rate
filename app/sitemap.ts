@@ -4,10 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 
 const staticRoutes = [
   "",
-  "/services",
   "/about",
-  "/process",
-  "/contact",
   "/blog",
   "/tools",
   "/tools/email-audit",

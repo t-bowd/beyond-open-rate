@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
 
 export default function Hero() {
-  const router = useRouter();
   const [url, setUrl] = useState("");
   const [note, setNote] = useState<"default" | "error">("default");
 
@@ -16,7 +14,10 @@ export default function Hero() {
       setNote("error");
       return;
     }
-    router.push(`/contact?site=${encodeURIComponent(v)}`);
+    // Prefill the contact form below and scroll to it
+    window.dispatchEvent(new CustomEvent<string>("bor:prefill", { detail: v }));
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => document.getElementById("c-name")?.focus(), 600);
   };
 
   return (
@@ -52,21 +53,21 @@ export default function Hero() {
             }}
           />
           <button type="submit" className="btn btn-primary">
-            Get my free audit
+            Book a chat
           </button>
         </Reveal>
 
         <Reveal as="p" className="audit-note">
           {note === "error" ? (
             <span className="form-error">
-              ↑ Pop your website in first and we&apos;ll take a look.
+              ↑ Pop your website in first and we&apos;ll have a look.
             </span>
           ) : (
             <>
               <span>✦</span>
               <span>
-                Free 20-minute teardown of your current email program.{" "}
-                <b>No pitch, no obligation.</b>
+                Free, no-obligation chat.{" "}
+                <b>You talk to the people who do the work.</b>
               </span>
             </>
           )}

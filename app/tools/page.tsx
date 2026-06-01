@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import CtaBand from "@/components/CtaBand";
+import Contact from "@/components/Contact";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
@@ -53,7 +53,7 @@ export default function ToolsPage() {
         </div>
       </section>
 
-      <CtaBand />
+      <Contact />
 
       <JsonLd
         data={breadcrumbSchema([

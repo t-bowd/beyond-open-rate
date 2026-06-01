@@ -312,7 +312,7 @@ export default function EmailAudit() {
               Want us to run this audit properly — flows, deliverability, and
               segmentation reviewed by hand?
             </p>
-            <Link href="/contact" className="btn btn-primary btn-lg">
+            <Link href="/#contact" className="btn btn-primary btn-lg">
               Request a full audit
             </Link>
           </div>

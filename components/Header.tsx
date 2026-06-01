@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  { href: "/services", label: "Services" },
-  { href: "/process", label: "Process" },
   { href: "/tools", label: "Tools" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
@@ -42,7 +40,7 @@ export default function Header() {
             Beyond&nbsp;Open&nbsp;Rate
           </Link>
           <div className="nav-cta">
-            <Link href="/contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>
+            <Link href="/#contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>
             <Link href="/tools/email-audit" className="btn btn-primary">Get a free audit</Link>
             <button
               className={`nav-toggle ${open ? "open" : ""}`}
@@ -75,7 +73,7 @@ export default function Header() {
           ))}
         </ul>
         <div className="nav-drawer-cta">
-          <Link href="/contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
+          <Link href="/#contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
             Talk to us
           </Link>
           <Link href="/tools/email-audit" className="btn btn-primary" onClick={() => setOpen(false)}>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
 import { track } from "@/lib/analytics";
 
@@ -9,16 +9,20 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Contact() {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const [values, setValues] = useState({ name: "", email: "", site: "", msg: "", company: "" });
   const [invalid, setInvalid] = useState<Record<string, boolean>>({});
   const [submitting, setSubmitting] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
+  // Prefill website field when Hero form fires the bor:prefill event
   useEffect(() => {
-    const site = searchParams.get("site");
-    if (site) setValues((v) => ({ ...v, site }));
-  }, [searchParams]);
+    const onPrefill = (e: Event) => {
+      const detail = (e as CustomEvent<string>).detail;
+      setValues((v) => ({ ...v, site: detail || v.site }));
+    };
+    window.addEventListener("bor:prefill", onPrefill);
+    return () => window.removeEventListener("bor:prefill", onPrefill);
+  }, []);
 
   const set =
     (key: keyof typeof values) =>
@@ -76,63 +80,57 @@ export default function Contact() {
   };
 
   return (
-    <Reveal className="cta-card">
-      <div className="cta-copy">
-        <h2>Let&apos;s see what your list can really do.</h2>
-        <p>
-          Tell us where you&apos;re at. We&apos;ll come back within one
-          business day with a free teardown and where we&apos;d start.
-        </p>
-        <ul className="cta-list">
-          <li>
-            <span className="tick">✓</span> A free 20-minute audit of your
-            current program
-          </li>
-          <li>
-            <span className="tick">✓</span> No long contracts — month to month
-          </li>
-          <li>
-            <span className="tick">✓</span> Talk to the people who&apos;ll do
-            the work
-          </li>
-        </ul>
-      </div>
-      <div>
-        <form className="contact-form" onSubmit={submit} noValidate>
-          <div className={`field ${invalid.name ? "invalid" : ""}`}>
-            <label htmlFor="c-name">Name</label>
-            <input id="c-name" type="text" placeholder="Your name" value={values.name} onChange={set("name")} />
-            <span className="err">Please tell us your name.</span>
-          </div>
-          <div className={`field ${invalid.email ? "invalid" : ""}`}>
-            <label htmlFor="c-email">Email</label>
-            <input id="c-email" type="email" placeholder="you@company.com" value={values.email} onChange={set("email")} />
-            <span className="err">Enter a valid email address.</span>
-          </div>
-          <div className={`field ${invalid.site ? "invalid" : ""}`}>
-            <label htmlFor="c-site">Website</label>
-            <input id="c-site" type="text" placeholder="yourstore.com" value={values.site} onChange={set("site")} />
-            <span className="err">Where can we find you?</span>
-          </div>
-          <div className="field">
-            <label htmlFor="c-msg">What&apos;s on your mind?</label>
-            <textarea id="c-msg" placeholder="A line or two about your email setup today…" value={values.msg} onChange={set("msg")} />
-          </div>
-          {/* honeypot — hidden from humans, bots tend to fill it */}
-          <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
-            <label htmlFor="c-company">Company (leave blank)</label>
-            <input id="c-company" type="text" tabIndex={-1} autoComplete="off" value={values.company} onChange={set("company")} />
-          </div>
-          {serverError && (
-            <p className="form-error" role="alert" style={{ marginBottom: 12 }}>
-              {serverError}
+    <section className="section cta" id="contact" data-screen-label="Contact">
+      <div className="wrap">
+        <Reveal className="cta-card">
+          <div className="cta-copy">
+            <h2>Let&apos;s have a chat.</h2>
+            <p>
+              Tell us a bit about your business and where email is at. We&apos;ll
+              come back to you within one business day.
             </p>
-          )}
-          <button type="submit" className="btn btn-primary btn-lg" disabled={submitting}>
-            {submitting ? "Sending…" : "Request my free audit"}
-          </button>
-        </form>
+            <ul className="cta-list">
+              <li><span className="tick">✓</span> Free, no-obligation chat</li>
+              <li><span className="tick">✓</span> You talk to the people who do the work</li>
+              <li><span className="tick">✓</span> We&apos;ll respond within one business day</li>
+            </ul>
+          </div>
+          <div>
+            <form className="contact-form" onSubmit={submit} noValidate>
+              <div className={`field ${invalid.name ? "invalid" : ""}`}>
+                <label htmlFor="c-name">Name</label>
+                <input id="c-name" type="text" placeholder="Your name" value={values.name} onChange={set("name")} />
+                <span className="err">Please tell us your name.</span>
+              </div>
+              <div className={`field ${invalid.email ? "invalid" : ""}`}>
+                <label htmlFor="c-email">Email</label>
+                <input id="c-email" type="email" placeholder="you@company.com" value={values.email} onChange={set("email")} />
+                <span className="err">Enter a valid email address.</span>
+              </div>
+              <div className={`field ${invalid.site ? "invalid" : ""}`}>
+                <label htmlFor="c-site">Website</label>
+                <input id="c-site" type="text" placeholder="yourstore.com" value={values.site} onChange={set("site")} />
+                <span className="err">Where can we find you?</span>
+              </div>
+              <div className="field">
+                <label htmlFor="c-msg">What&apos;s on your mind?</label>
+                <textarea id="c-msg" placeholder="A line or two about your email setup today…" value={values.msg} onChange={set("msg")} />
+              </div>
+              {/* honeypot */}
+              <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
+                <label htmlFor="c-company">Company (leave blank)</label>
+                <input id="c-company" type="text" tabIndex={-1} autoComplete="off" value={values.company} onChange={set("company")} />
+              </div>
+              {serverError && (
+                <p className="form-error" role="alert" style={{ marginBottom: 12 }}>{serverError}</p>
+              )}
+              <button type="submit" className="btn btn-primary btn-lg" disabled={submitting}>
+                {submitting ? "Sending…" : "Book a chat"}
+              </button>
+            </form>
+          </div>
+        </Reveal>
       </div>
-    </Reveal>
+    </section>
   );
 }

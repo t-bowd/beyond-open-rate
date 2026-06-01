@@ -91,8 +91,8 @@ export type Faq = { q: string; a: string };
 export const faqs: Faq[] = [
   // ── Working with us ──────────────────────────────────────────
   {
-    q: "Which email platforms do you work in?",
-    a: "We work day to day in Klaviyo, HubSpot, Customer.io and Mailchimp, and we'll happily migrate you if you're on the wrong tool. If you're not sure which platform best fits your stack, the free audit will tell you.",
+    q: "Which email platforms do you work with?",
+    a: "We work across all major email service providers (ESPs) and customer engagement platforms (CEPs) — from established enterprise tools to newer specialists. Whether you're on something widely used, something niche, or nothing yet, we'll work with what you have or advise on the right fit for your stage. Platform choice matters less than how it's set up and used.",
   },
   {
     q: "Do you only work with e-commerce brands?",
@@ -146,7 +146,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How do you approach email list segmentation?",
-    a: "We start with engagement-based segmentation — splitting your list into active (engaged in the last 30/60/90 days), at-risk, and lapsed. Broadcasts go to the active segment; lapsed subscribers get a dedicated win-back sequence, not your regular campaigns. From there we layer in behavioural and demographic signals relevant to your business: purchase history, product category interest, customer lifetime value tier, or subscription plan for SaaS.",
+    a: "Segmentation strategy is driven by your business model and customer behaviour — there's no single right answer. Most programs start by separating engaged and disengaged subscribers to protect deliverability and improve relevance. From there, the right layers depend on your data: for e-commerce, RFM (Recency, Frequency, Monetary value) is a powerful framework for identifying high-value customers worth nurturing and lapsed buyers worth recovering. For SaaS, plan tier and product usage signals tend to be more useful. We build segmentation around what's meaningful for your specific revenue model, not what's technically available in your platform.",
   },
   {
     q: "Do you write the email copy and design the templates?",
