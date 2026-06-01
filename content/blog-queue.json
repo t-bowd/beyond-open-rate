@@ -1,0 +1,98 @@
+[
+  {
+    "id": "welcome-email-series-guide",
+    "title": "Welcome email series: what to send, when, and why most get it wrong",
+    "keyword": "welcome email series",
+    "tags": ["automation", "lifecycle", "flows"],
+    "notes": "Cover the purpose of each email in a 3-5 sequence. Contrast transactional welcome (single email) vs nurture sequence. Link to audit tool. Concrete examples for ecom vs SaaS.",
+    "status": "queued"
+  },
+  {
+    "id": "klaviyo-flows-ecommerce-guide",
+    "title": "The complete guide to Klaviyo flows for e-commerce",
+    "keyword": "klaviyo flows ecommerce",
+    "tags": ["klaviyo", "flows", "ecommerce"],
+    "notes": "Cover the 5 core flows: welcome, abandoned cart, abandoned browse, post-purchase, win-back. Include what to put in each email. Link to audit tool for self-assessment.",
+    "status": "queued"
+  },
+  {
+    "id": "email-list-cleaning-guide",
+    "title": "How to clean your email list — and when to sunset subscribers",
+    "keyword": "email list cleaning",
+    "tags": ["deliverability", "list health", "segmentation"],
+    "notes": "The case for a smaller, cleaner list. Define engagement windows (30/60/90 day). Sunset flow structure. Impact on deliverability and RPR.",
+    "status": "queued"
+  },
+  {
+    "id": "email-authentication-guide",
+    "title": "SPF, DKIM, and DMARC explained for email marketers",
+    "keyword": "email authentication SPF DKIM DMARC",
+    "tags": ["deliverability", "authentication", "technical"],
+    "notes": "Plain-English explanation of each record and what it does. How to check if yours are set up correctly. What happens if DMARC is on monitoring vs enforcing. Common mistakes.",
+    "status": "queued"
+  },
+  {
+    "id": "abandoned-cart-email-strategy",
+    "title": "Abandoned cart email strategy: beyond the obvious 3-email sequence",
+    "keyword": "abandoned cart email strategy",
+    "tags": ["ecommerce", "flows", "automation"],
+    "notes": "Cover timing, copy angle for each email, when to include discount vs not, how to structure the sequence for high vs low AOV. Mention browse abandonment as the underrated companion.",
+    "status": "queued"
+  },
+  {
+    "id": "post-purchase-email-flow",
+    "title": "Post-purchase email flows that drive repeat orders",
+    "keyword": "post-purchase email flow",
+    "tags": ["ecommerce", "lifecycle", "retention"],
+    "notes": "The LTV case for post-purchase emails. What to send and when: order confirmation, delivery update, review request, cross-sell, replenishment. Keep it practical.",
+    "status": "queued"
+  },
+  {
+    "id": "email-segmentation-strategies",
+    "title": "Email segmentation strategies that actually move revenue",
+    "keyword": "email segmentation strategies",
+    "tags": ["segmentation", "campaigns", "strategy"],
+    "notes": "Cover engagement-based, purchase-based, and behavioural segmentation. Debunk 'send to everyone' thinking. Show RPR improvement with simple vs advanced segmentation.",
+    "status": "queued"
+  },
+  {
+    "id": "win-back-email-campaigns",
+    "title": "Win-back email campaigns: how to re-engage lapsed subscribers",
+    "keyword": "win-back email campaign",
+    "tags": ["automation", "retention", "lifecycle"],
+    "notes": "Define what 'lapsed' means (90/180 days). The case for trying to win them back vs sunsetting. Email sequence structure. Subject line approaches. Sunset if unresponsive.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-roi",
+    "title": "How to calculate email marketing ROI — and what most businesses get wrong",
+    "keyword": "email marketing ROI",
+    "tags": ["metrics", "strategy", "reporting"],
+    "notes": "Walk through attribution models. Introduce RPR as the primary metric. Cover contribution-to-total-revenue, flow-level vs campaign-level. Why opens and clicks are insufficient.",
+    "status": "queued"
+  },
+  {
+    "id": "klaviyo-vs-mailchimp",
+    "title": "Klaviyo vs Mailchimp: which is right for your e-commerce store",
+    "keyword": "klaviyo vs mailchimp ecommerce",
+    "tags": ["klaviyo", "platforms", "ecommerce"],
+    "notes": "Honest comparison. Klaviyo wins on data depth, segmentation, and flow logic. Mailchimp still fine for simple newsletters. Migration path if switching. Don't be promotional.",
+    "status": "queued"
+  },
+  {
+    "id": "email-deliverability-guide",
+    "title": "Email deliverability: why your emails land in spam and how to fix it",
+    "keyword": "email deliverability guide",
+    "tags": ["deliverability", "technical", "strategy"],
+    "notes": "Inbox placement vs open rate. The three pillars: authentication, sender reputation, list hygiene. How to diagnose a deliverability problem. Google Postmaster Tools walkthrough.",
+    "status": "queued"
+  },
+  {
+    "id": "saas-email-marketing",
+    "title": "Email marketing for SaaS: lifecycle stages and what to send at each one",
+    "keyword": "SaaS email marketing lifecycle",
+    "tags": ["saas", "lifecycle", "automation"],
+    "notes": "Different from ecom: focus on activation, adoption, expansion, retention. Trial-to-paid flow. Onboarding sequences. Churn prevention. Concrete examples.",
+    "status": "queued"
+  }
+]
