@@ -1,0 +1,97 @@
+name: Generate blog post
+
+on:
+  schedule:
+    # Tuesdays and Fridays at 9 am AEST (UTC+10) = 23:00 UTC Mon/Thu
+    - cron: "0 23 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — generate but don't open a PR"
+        type: boolean
+        default: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Anthropic SDK
+        run: npm install @anthropic-ai/sdk
+
+      - name: Generate post
+        id: generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # stderr (progress logs) flows to the Actions console naturally
+          # stdout carries only the slug= / title= lines
+          output=$(node scripts/generate-blog-post.mjs)
+
+          SLUG=$(echo "$output" | grep '^slug=' | cut -d'=' -f2-)
+          TITLE=$(echo "$output" | grep '^title=' | cut -d'=' -f2-)
+
+          echo "slug=$SLUG" >> $GITHUB_OUTPUT
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+
+          if [ -z "$SLUG" ]; then
+            echo "no_topic=true" >> $GITHUB_OUTPUT
+          else
+            echo "no_topic=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Exit early if nothing to publish
+        if: steps.generate.outputs.no_topic == 'true'
+        run: |
+          echo "No queued topics — nothing to do."
+          exit 0
+
+      - name: Create branch and commit
+        if: steps.generate.outputs.no_topic == 'false'
+        env:
+          SLUG: ${{ steps.generate.outputs.slug }}
+          TITLE: ${{ steps.generate.outputs.title }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b blog/$SLUG
+          git add content/blog/$SLUG.mdx content/blog-queue.json
+          git commit -m "blog: $TITLE
+
+          Auto-generated — review before merging."
+          git push origin blog/$SLUG
+
+      - name: Open PR
+        if: steps.generate.outputs.no_topic == 'false' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLUG: ${{ steps.generate.outputs.slug }}
+          TITLE: ${{ steps.generate.outputs.title }}
+        run: |
+          gh pr create \
+            --title "Blog: $TITLE" \
+            --body "## New post — please review before merging
+
+          **File:** \`content/blog/$SLUG.mdx\`
+
+          ### Review checklist
+          - [ ] Tone and voice feels right
+          - [ ] Facts and examples are accurate
+          - [ ] Internal links to \`/tools/email-audit\` and \`/#contact\` are present
+          - [ ] FAQ questions are ones real people would search for
+          - [ ] Description is under 160 characters
+
+          Merge to publish — Vercel deploys automatically." \
+            --label "content" \
+            --assignee "${{ github.repository_owner }}"
