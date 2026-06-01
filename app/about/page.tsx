@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
@@ -32,15 +33,14 @@ export default function AboutPage() {
       <section className="section about-founder-section">
         <div className="wrap about-founder">
           <Reveal className="about-photo-wrap">
-            {/*
-              Drop a headshot at public/tim.jpg and replace this div with:
-              <Image src="/tim.jpg" alt="Tim, founder of Beyond Open Rate"
-                     width={480} height={560} className="about-photo-img"
-                     priority />
-            */}
-            <div className="about-photo-placeholder" aria-hidden="true">
-              <span>T</span>
-            </div>
+            <Image
+              src="/tim.jpg"
+              alt="Tim, founder of Beyond Open Rate"
+              width={480}
+              height={560}
+              className="about-photo-img"
+              priority
+            />
           </Reveal>
 
           <Reveal className="about-founder-copy">
