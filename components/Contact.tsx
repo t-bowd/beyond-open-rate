@@ -9,12 +9,13 @@ const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function Contact() {
   const router = useRouter();
-  const [values, setValues] = useState({ name: "", email: "", site: "", msg: "", company: "" });
+  const [values, setValues] = useState({
+    name: "", email: "", phone: "", site: "", msg: "", _hp: "",
+  });
   const [invalid, setInvalid] = useState<Record<string, boolean>>({});
   const [submitting, setSubmitting] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
-  // Prefill email field when Hero form fires the bor:prefill event
   useEffect(() => {
     const onPrefill = (e: Event) => {
       const detail = (e as CustomEvent<string>).detail;
@@ -54,9 +55,10 @@ export default function Contact() {
           source: "contact-form",
           name: values.name,
           email: values.email,
+          phone: values.phone || undefined,
           website: values.site,
           message: values.msg || undefined,
-          company: values.company,
+          _hp: values._hp,
         }),
       });
       const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
@@ -107,19 +109,23 @@ export default function Contact() {
                 <input id="c-email" type="email" placeholder="you@company.com" value={values.email} onChange={set("email")} />
                 <span className="err">Enter a valid email address.</span>
               </div>
+              <div className="field">
+                <label htmlFor="c-phone">Phone <span className="field-optional">(optional)</span></label>
+                <input id="c-phone" type="tel" placeholder="+61 4XX XXX XXX" value={values.phone} onChange={set("phone")} />
+              </div>
               <div className={`field ${invalid.site ? "invalid" : ""}`}>
                 <label htmlFor="c-site">Website</label>
                 <input id="c-site" type="text" placeholder="yourstore.com" value={values.site} onChange={set("site")} />
                 <span className="err">Where can we find you?</span>
               </div>
               <div className="field">
-                <label htmlFor="c-msg">What&apos;s on your mind?</label>
+                <label htmlFor="c-msg">What&apos;s on your mind? <span className="field-optional">(optional)</span></label>
                 <textarea id="c-msg" placeholder="A line or two about your email setup today…" value={values.msg} onChange={set("msg")} />
               </div>
               {/* honeypot */}
               <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
-                <label htmlFor="c-company">Company (leave blank)</label>
-                <input id="c-company" type="text" tabIndex={-1} autoComplete="off" value={values.company} onChange={set("company")} />
+                <label htmlFor="c-hp">Leave blank</label>
+                <input id="c-hp" type="text" tabIndex={-1} autoComplete="off" value={values._hp} onChange={set("_hp")} />
               </div>
               {serverError && (
                 <p className="form-error" role="alert" style={{ marginBottom: 12 }}>{serverError}</p>

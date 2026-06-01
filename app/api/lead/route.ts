@@ -13,11 +13,14 @@ const LeadSchema = z.object({
     .max(64)
     .regex(/^(hero-audit|contact-form|tool:[a-z0-9-]+)$/, "invalid source"),
   name: z.string().max(200).optional(),
+  phone: z.string().max(30).optional(),
   website: z.string().max(500).optional(),
+  company: z.string().max(300).optional(),
+  company_size: z.string().max(50).optional(),
   message: z.string().max(5000).optional(),
   payload: z.record(z.string(), z.unknown()).optional(),
   // honeypot — bots fill it, humans don't
-  company: z.string().max(0).optional().or(z.literal("")),
+  _hp: z.string().max(0).optional().or(z.literal("")),
 });
 
 const WINDOW_MS = 60_000;
@@ -67,8 +70,8 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const { company, ...input } = parsed.data;
-  if (company) {
+  const { _hp, ...input } = parsed.data;
+  if (_hp) {
     return NextResponse.json({ ok: true, id: "skipped" });
   }
 

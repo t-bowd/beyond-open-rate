@@ -20,9 +20,12 @@ export default function EmailAudit() {
   const [answers, setAnswers] = useState<Answers>({});
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [company, setCompany] = useState("");
+  const [companySize, setCompanySize] = useState("");
   const [emailError, setEmailError] = useState<string | null>(null);
   const [serverError, setServerError] = useState<string | null>(null);
-  const [company, setCompany] = useState(""); // honeypot
+  const [hp, setHp] = useState(""); // honeypot
   const [result, setResult] = useState<ScoreResult | null>(null);
 
   const q = questions[step];
@@ -89,13 +92,16 @@ export default function EmailAudit() {
           source: "tool:email-audit",
           email,
           name: name || undefined,
+          phone: phone || undefined,
+          company: company || undefined,
+          company_size: companySize || undefined,
           payload: {
             answers,
             score: scored.score,
             maxScore: scored.maxScore,
             tier: scored.tier,
           },
-          company,
+          _hp: hp,
         }),
       });
       const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
@@ -225,41 +231,57 @@ export default function EmailAudit() {
       {(phase === "gate" || phase === "submitting") && (
         <div className="quiz-card">
           <p className="quiz-meta">LAST STEP</p>
-          <h2>Where should we send your results?</h2>
+          <h2>Almost there.</h2>
           <p>
-            We&apos;ll score your answers and email you a tailored set of next
-            moves — emailed straight to you.
+            Enter your details and we&apos;ll show your score and recommendations right here.
           </p>
 
           <div className="quiz-form">
-            <div className="field">
-              <label htmlFor="qz-name">Name (optional)</label>
-              <input
-                id="qz-name"
-                type="text"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
+            <div className="quiz-form-row">
+              <div className="field">
+                <label htmlFor="qz-name">Name <span className="field-optional">(optional)</span></label>
+                <input id="qz-name" type="text" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
+              </div>
+              <div className={`field ${emailError ? "invalid" : ""}`}>
+                <label htmlFor="qz-email">Email</label>
+                <input
+                  id="qz-email"
+                  type="email"
+                  placeholder="you@company.com"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (emailError) setEmailError(null);
+                  }}
+                />
+                {emailError && <span className="err">{emailError}</span>}
+              </div>
             </div>
-            <div className={`field ${emailError ? "invalid" : ""}`}>
-              <label htmlFor="qz-email">Email</label>
-              <input
-                id="qz-email"
-                type="email"
-                placeholder="you@company.com"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (emailError) setEmailError(null);
-                }}
-              />
-              {emailError && <span className="err">{emailError}</span>}
+            <div className="quiz-form-row">
+              <div className="field">
+                <label htmlFor="qz-phone">Phone <span className="field-optional">(optional)</span></label>
+                <input id="qz-phone" type="tel" placeholder="+61 4XX XXX XXX" value={phone} onChange={(e) => setPhone(e.target.value)} />
+              </div>
+              <div className="field">
+                <label htmlFor="qz-company">Business name <span className="field-optional">(optional)</span></label>
+                <input id="qz-company" type="text" placeholder="Your business" value={company} onChange={(e) => setCompany(e.target.value)} />
+              </div>
+            </div>
+            <div className="field">
+              <label htmlFor="qz-size">Team / business size <span className="field-optional">(optional)</span></label>
+              <select id="qz-size" className="quiz-select" value={companySize} onChange={(e) => setCompanySize(e.target.value)}>
+                <option value="">Select…</option>
+                <option value="solo">Just me</option>
+                <option value="2-10">2–10 people</option>
+                <option value="11-50">11–50 people</option>
+                <option value="51-200">51–200 people</option>
+                <option value="200+">200+ people</option>
+              </select>
             </div>
             {/* honeypot */}
             <div aria-hidden="true" style={{ position: "absolute", left: "-10000px", width: 1, height: 1, overflow: "hidden" }}>
-              <label htmlFor="qz-company">Company (leave blank)</label>
-              <input id="qz-company" type="text" tabIndex={-1} autoComplete="off" value={company} onChange={(e) => setCompany(e.target.value)} />
+              <label htmlFor="qz-hp">Leave blank</label>
+              <input id="qz-hp" type="text" tabIndex={-1} autoComplete="off" value={hp} onChange={(e) => setHp(e.target.value)} />
             </div>
             {serverError && (
               <p className="form-error" role="alert">

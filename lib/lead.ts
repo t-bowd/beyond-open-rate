@@ -9,7 +9,10 @@ export type CaptureLeadInput = {
   email: string;
   source: LeadSource;
   name?: string;
+  phone?: string;
   website?: string;
+  company?: string;
+  company_size?: string;
   message?: string;
   payload?: Record<string, unknown>;
   userAgent?: string;
@@ -26,7 +29,10 @@ export async function captureLead(
     .insert({
       email: input.email.toLowerCase().trim(),
       name: input.name?.trim() || null,
+      phone: input.phone?.trim() || null,
       website: input.website?.trim() || null,
+      company: input.company?.trim() || null,
+      company_size: input.company_size?.trim() || null,
       message: input.message?.trim() || null,
       source: input.source,
       payload: input.payload ?? {},
