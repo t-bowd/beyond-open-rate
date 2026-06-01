@@ -5,28 +5,28 @@ import { JsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Free email program audit",
+  title: "Email program audit — score your email setup in 3 minutes",
   description:
-    "Score your email marketing program against best practice in under three minutes. Ten questions, tailored recommendations, no sales pitch.",
+    "Ten questions on your automations, segmentation, deliverability, and reporting. Get a score out of 75 and a prioritised list of what to fix first.",
   alternates: { canonical: "/tools/email-audit" },
 };
 
 const faqs = [
   {
-    q: "How long does the audit take?",
-    a: "About three minutes. Nine multiple-choice questions and one optional free-text question, then your scored results.",
+    q: "What does the audit actually cover?",
+    a: "The ten questions cover the areas that account for most of the gap between a mediocre email program and a well-run one: which automations you have live, how you approach segmentation and sends, your deliverability setup, authentication, and whether you're tracking metrics that connect to revenue. You get a score out of 75 and a prioritised list of what to address first, based on your specific answers.",
   },
   {
-    q: "Do I need to give my email to see results?",
-    a: "Yes — we email you the scored results so you have them on file. We don't add you to a follow-up sequence and we never sell your details.",
+    q: "How long does it take?",
+    a: "About three minutes. Ten multiple-choice questions and one optional free-text question — then your scored results are emailed to you.",
   },
   {
-    q: "Is this just lead bait?",
-    a: "The recommendations are the same ones our consultants would give in a paid audit. We share them because the people who book a paid audit are the ones who already know they need help — the tool just makes the gap visible.",
+    q: "Why do you need my email?",
+    a: "We send the results to your inbox so you have a concrete record to refer back to — a scored breakdown and your priority recommendations in one place. We don't add you to a marketing sequence.",
   },
   {
-    q: "What kinds of businesses is this for?",
-    a: "Mostly e-commerce and SaaS, but the underlying mechanics travel — any business with a list and a product fits. The recommendations adapt to your industry choice.",
+    q: "Who is this for?",
+    a: "Any business that sends marketing email. The scoring and recommendations adapt based on your business type and what you currently have live, so the output reflects where you actually are — not generic best-practice advice.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function EmailAuditPage() {
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 720 }}>
-          <h2>About this audit</h2>
+          <h2>How it works</h2>
           <dl className="post-faq">
             {faqs.map((f) => (
               <div key={f.q}>
