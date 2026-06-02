@@ -38,7 +38,7 @@ export default function Header() {
         <div className="wrap nav">
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
             <span className="brand-mark"><span>B</span></span>
-            Beyond&nbsp;Open&nbsp;Rate
+            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
           <div className="nav-cta">
             <Link href="/#contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>

@@ -218,8 +218,12 @@ a { color: inherit; text-decoration: none; }
 .nav-drawer-links li:last-child a { border-bottom: 0; }
 .nav-drawer-links a:hover { color: var(--accent-deep); padding-left: 6px; }
 .nav-drawer-cta { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 16px; }
-/* hide "Talk to us" from header on narrow screens — it's in the drawer */
-@media (max-width: 600px) { .nav-cta-talk { display: none; } }
+/* Mobile header: hide brand name text and orange audit CTA — keep logo + burger */
+@media (max-width: 600px) {
+  .nav-cta-talk { display: none; }
+  .brand-name { display: none; }
+  .nav-cta .btn-primary { display: none; }
+}
 
 /* ---------- Hero ---------- */
 .hero { padding: clamp(56px, 9vw, 116px) 0 clamp(48px, 7vw, 92px); }
@@ -737,6 +741,11 @@ a { color: inherit; text-decoration: none; }
   .audit-form { flex-wrap: wrap; border-radius: 18px; }
   .audit-form input { padding: 8px 6px; }
   .audit-form .btn { width: 100%; }
+  /* Footer: stack brand + columns vertically, each column full width */
+  .footer-inner { flex-direction: column; gap: 32px; }
+  .footer-brand { max-width: 100%; }
+  .footer-cols { flex-direction: column; gap: 28px; }
+  .footer-col { min-width: 0; width: 100%; }
 }
 
 /* ===========================================================
