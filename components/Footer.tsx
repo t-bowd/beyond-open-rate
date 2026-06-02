@@ -18,6 +18,18 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-heading">Services</p>
             <ul>
+              <li><Link href="/services/lifecycle-automation">Lifecycle & automation</Link></li>
+              <li><Link href="/services/campaign-management">Campaign management</Link></li>
+              <li><Link href="/services/copy-and-design">Copy & design</Link></li>
+              <li><Link href="/services/platform-and-crm-setup">Platform & CRM setup</Link></li>
+              <li><Link href="/services/deliverability-and-audits">Deliverability & audits</Link></li>
+              <li><Link href="/services/reporting-that-matters">Reporting</Link></li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <p className="footer-col-heading">Email marketing</p>
+            <ul>
               <li><Link href="/email-marketing-audit-australia">Email audit</Link></li>
               <li><Link href="/klaviyo-agency-australia">Klaviyo agency</Link></li>
               <li><Link href="/ecommerce-email-marketing-australia">E-commerce email</Link></li>
@@ -26,9 +38,11 @@ export default function Footer() {
               <li><Link href="/email-marketing-agency-brisbane">Brisbane</Link></li>
             </ul>
           </div>
+
           <div className="footer-col">
             <p className="footer-col-heading">Site</p>
             <ul>
+              <li><Link href="/services">Services</Link></li>
               <li><Link href="/tools">Tools</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/about">About</Link></li>
