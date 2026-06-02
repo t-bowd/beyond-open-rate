@@ -11,7 +11,7 @@ export default function Footer() {
             </span>
             Beyond&nbsp;Open&nbsp;Rate
           </Link>
-          <p className="footer-tagline">Email marketing built to compound revenue — not just fill inboxes.</p>
+          <p className="footer-tagline">Grow your business with email.</p>
         </div>
 
         <div className="footer-cols">
