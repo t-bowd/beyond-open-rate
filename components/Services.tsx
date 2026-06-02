@@ -1,5 +1,16 @@
+import Link from "next/link";
 import Reveal from "./Reveal";
 import { services } from "@/lib/content";
+
+// Map operational service slugs → the most relevant SEO page
+const serviceLinks: Record<string, string> = {
+  "lifecycle-automation":      "/services/ecommerce-email-marketing-australia",
+  "campaign-management":       "/services/ecommerce-email-marketing-australia",
+  "copy-and-design":           "/#contact",
+  "platform-and-crm-setup":    "/services/klaviyo-agency-australia",
+  "deliverability-and-audits": "/services/email-marketing-audit-australia",
+  "reporting-that-matters":    "/services/email-marketing-audit-australia",
+};
 
 export default function Services() {
   return (
@@ -18,6 +29,11 @@ export default function Services() {
             <Reveal as="article" className="svc-card" key={s.slug}>
               <h3>{s.title}</h3>
               <p>{s.blurb}</p>
+              {serviceLinks[s.slug] && (
+                <Link href={serviceLinks[s.slug]} className="svc-card-link">
+                  Learn more →
+                </Link>
+              )}
             </Reveal>
           ))}
         </div>

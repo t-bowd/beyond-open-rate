@@ -350,6 +350,11 @@ a { color: inherit; text-decoration: none; }
 }
 .svc-card h3 { font-size: 21px; margin: 16px 0 10px; }
 .svc-card p { font-size: 15.5px; color: var(--ink-soft); line-height: 1.55; }
+.svc-card-link { display: inline-block; margin-top: 14px; font-size: 14px; font-weight: 500; color: var(--accent); text-decoration: none; }
+.svc-card-link:hover { text-decoration: underline; }
+.svc-card-linked { display: block; text-decoration: none; color: inherit; }
+.svc-card-linked:hover { border-color: var(--accent); transform: translateY(-3px); }
+.svc-card-title { font-size: 21px; margin: 16px 0 10px; }
 
 /* ---------- Results (dark band) ---------- */
 .results {
@@ -676,19 +681,46 @@ a { color: inherit; text-decoration: none; }
 .footer {
   background: var(--accent);
   color: var(--on-accent);
-  padding: 44px 0;
+  padding: 56px 0 0;
 }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding-bottom: 48px;
+}
+.footer-brand { flex: 1; min-width: 200px; max-width: 280px; }
+.footer-tagline {
+  margin-top: 12px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: color-mix(in oklab, var(--on-accent) 70%, transparent);
+}
+.footer-cols { display: flex; gap: 48px; flex-wrap: wrap; }
+.footer-col { min-width: 120px; }
+.footer-col ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.footer-col-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in oklab, var(--on-accent) 55%, transparent);
+  margin: 0;
+}
+.footer-col a { font-size: 14px; color: color-mix(in oklab, var(--on-accent) 80%, transparent); }
+.footer-col a:hover { color: var(--on-accent); }
 .footer .brand { font-size: 17px; color: var(--on-accent); }
 .footer .brand-mark {
   background: var(--on-accent);
   color: var(--accent);
 }
 .footer .brand-mark::after { background: var(--accent-deep); }
-.footer-links { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
-.footer-links a { font-size: 14.5px; color: color-mix(in oklab, var(--on-accent) 80%, transparent); }
-.footer-links a:hover { color: var(--on-accent); }
-.footer-copy { font-size: 13.5px; color: color-mix(in oklab, var(--on-accent) 72%, transparent); font-family: var(--font-mono); }
+.footer-bottom {
+  border-top: 1px solid color-mix(in oklab, var(--on-accent) 15%, transparent);
+  padding: 16px 0;
+}
+.footer-copy { font-size: 13px; color: color-mix(in oklab, var(--on-accent) 50%, transparent); font-family: var(--font-mono); margin: 0; }
 
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
