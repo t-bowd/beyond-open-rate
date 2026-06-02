@@ -43,7 +43,6 @@ export default function ServicesPage() {
             {services.map((s) => (
               <Reveal as="li" key={s.slug}>
                 <Link href={`/services/${s.slug}`} className="svc-card svc-card-linked">
-                  <p className="svc-num">{s.num}</p>
                   <h2 className="svc-card-title">{s.title}</h2>
                   <p>{s.description}</p>
                   <span className="svc-card-link">Learn more →</span>
