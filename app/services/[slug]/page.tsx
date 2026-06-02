@@ -78,7 +78,7 @@ export default async function ServicePage({ params }: PageProps) {
       </section>
 
       {/* ── Audit CTA ────────────────────────────────────────── */}
-      <section className="section" style={{ background: "var(--surface-soft)" }}>
+      <section className="section" style={{ background: "var(--surface)" }}>
         <div className="wrap" style={{ maxWidth: 680, textAlign: "center" }}>
           <h2 style={{ marginBottom: 12 }}>Not sure where to start?</h2>
           <p style={{ marginBottom: 28 }}>

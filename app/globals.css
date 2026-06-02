@@ -235,6 +235,14 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 34px;
 }
 
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
 /* hero audit form — single input + button */
 .audit-form {
   display: flex;
