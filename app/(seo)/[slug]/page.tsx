@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
+import CtaLink from "@/components/CtaLink";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllSeoPages, getSeoPage } from "@/lib/seo-pages";
 import { site } from "@/lib/site";
@@ -56,12 +56,12 @@ export default async function SeoPage({ params }: PageProps) {
           <h1>{page.h1}</h1>
           {page.heroSub && <p className="hero-sub">{page.heroSub}</p>}
           <div className="hero-actions">
-            <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
+            <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="hero">
               Score your email program →
-            </Link>
-            <Link href="/#contact" className="btn btn-ghost btn-lg">
+            </CtaLink>
+            <CtaLink href="/#contact" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
               Talk to us
-            </Link>
+            </CtaLink>
           </div>
         </div>
       </section>
@@ -83,9 +83,9 @@ export default async function SeoPage({ params }: PageProps) {
             deliverability, and segmentation — and a scored breakdown of what
             to fix first.
           </p>
-          <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
+          <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="mid_page">
             Start the free audit →
-          </Link>
+          </CtaLink>
         </div>
       </section>
 
