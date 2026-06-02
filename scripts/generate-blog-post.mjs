@@ -94,7 +94,7 @@ Notes: ${topic.notes}
 Output the complete MDX file — frontmatter then body. Nothing else.`;
 
 const message = await client.messages.create({
-  model: "claude-opus-4-5",
+  model: "claude-sonnet-4-5",
   max_tokens: 4096,
   system: [
     {
