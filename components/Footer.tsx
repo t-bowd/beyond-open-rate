@@ -33,6 +33,7 @@ export default function Footer() {
               <li><Link href="/email-marketing-audit-australia">Email audit</Link></li>
               <li><Link href="/email-automation-agency-australia">Email automation</Link></li>
               <li><Link href="/klaviyo-agency-australia">Klaviyo agency</Link></li>
+              <li><Link href="/klaviyo-agency-sydney">Klaviyo — Sydney</Link></li>
               <li><Link href="/ecommerce-email-marketing-australia">E-commerce email</Link></li>
               <li><Link href="/email-deliverability-consultant-australia">Deliverability</Link></li>
               <li><Link href="/mailchimp-to-klaviyo-migration">Mailchimp → Klaviyo</Link></li>
