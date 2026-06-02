@@ -2,14 +2,14 @@ import Link from "next/link";
 import Reveal from "./Reveal";
 import { services } from "@/lib/content";
 
-// Map operational service slugs → the most relevant SEO page
+// Map homepage service cards → their dedicated service page
 const serviceLinks: Record<string, string> = {
-  "lifecycle-automation":      "/services/ecommerce-email-marketing-australia",
-  "campaign-management":       "/services/ecommerce-email-marketing-australia",
-  "copy-and-design":           "/#contact",
-  "platform-and-crm-setup":    "/services/klaviyo-agency-australia",
-  "deliverability-and-audits": "/services/email-marketing-audit-australia",
-  "reporting-that-matters":    "/services/email-marketing-audit-australia",
+  "lifecycle-automation":      "/services/lifecycle-automation",
+  "campaign-management":       "/services/campaign-management",
+  "copy-and-design":           "/services/copy-and-design",
+  "platform-and-crm-setup":    "/services/platform-and-crm-setup",
+  "deliverability-and-audits": "/services/deliverability-and-audits",
+  "reporting-that-matters":    "/services/reporting-that-matters",
 };
 
 export default function Services() {

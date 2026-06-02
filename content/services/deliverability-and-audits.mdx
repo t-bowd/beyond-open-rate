@@ -1,0 +1,43 @@
+---
+title: "Email deliverability & audits — Beyond Open Rate"
+h1: "Deliverability & audits"
+heroSub: "Authentication, list hygiene, and inbox placement — so the emails you send are actually the emails people see."
+description: "Email deliverability consulting and audits for Australian businesses. We fix authentication, clean lists, improve inbox placement, and audit your email program end-to-end."
+faq:
+  - q: "How do I know if I have a deliverability problem?"
+    a: "The tricky part is that deliverability problems are often invisible — revenue declines but open rates look stable because the people who do open skew toward the engaged minority. Signs to watch: a sudden drop in revenue per recipient, rising spam complaint rates in Google Postmaster Tools, or an ESP warning about sending reputation. We can diagnose these quickly."
+  - q: "What does a deliverability audit involve?"
+    a: "We check authentication records (SPF, DKIM, DMARC — are they set up and enforcing?), your sending domain reputation via Google Postmaster Tools, spam complaint rate, list hygiene (how many unengaged contacts are you sending to?), and sending patterns (consistency, volume, segmentation). We produce a prioritised fix list."
+  - q: "How long does it take to recover from a deliverability problem?"
+    a: "It depends on severity. Minor issues — fixing authentication, tightening segments — show results within a few weeks. More serious reputation damage takes two to three months of consistent clean sending to recover. The sooner you catch it, the faster the fix."
+---
+
+A deliverability problem is expensive precisely because it's quiet.
+
+When your emails land in spam, you don't see a spike in bounces — you see a slow decline in revenue that's easy to attribute to other things. The list is still receiving. Open rates look plausible. But a meaningful portion of your sends never made it to an inbox.
+
+## What determines inbox placement
+
+**Authentication.** SPF, DKIM, and DMARC are the baseline. Without all three set up correctly and DMARC set to at least `p=quarantine`, you're exposed to spoofing and your emails are more likely to be filtered. This is the most common gap we find — brands that have been sending for years without realising their authentication is incomplete.
+
+**Sender reputation.** Gmail, Microsoft, and Apple maintain scores for every sending domain and IP. High spam complaint rates (above 0.1%), sudden volume spikes, and sending to lots of unengaged addresses all damage reputation. Reputation repair takes months of consistent clean sending.
+
+**List hygiene.** Every unengaged contact you send to is a liability. They don't open, they don't click, and some of them mark you as spam. A smaller, more engaged list outperforms a large dirty one every time — both in deliverability and in revenue per recipient.
+
+**Sending consistency.** Irregular senders — large blasts followed by weeks of silence — trigger more filtering. A consistent cadence, even a modest one, is better for inbox placement than sporadic high-volume sends.
+
+## What we do
+
+**Deliverability audit.** A structured review of your authentication setup, domain reputation, sending patterns, list hygiene, and complaint rate. Output: a prioritised list of what to fix and how.
+
+**Authentication setup.** SPF, DKIM, and DMARC configured correctly on your sending domain. DMARC moved to enforcing once we've confirmed it won't impact legitimate sends.
+
+**List hygiene.** Identifying and suppressing chronically unengaged contacts, hard bounces, and spam complainers. Setting sunset thresholds so the list stays clean on an ongoing basis.
+
+**Warm-up plans.** For new sending domains or recovering senders — a structured ramp of send volume over 4–6 weeks, monitored against inbox placement and complaint data.
+
+**Ongoing monitoring.** Monthly checks on Google Postmaster Tools, complaint rates, and ESP reputation signals — so problems are caught before they compound.
+
+---
+
+If you're not sure where your program stands, [run the free self-assessment](/tools/email-audit) or see what a [full email program audit](/email-marketing-audit-australia) covers in detail.

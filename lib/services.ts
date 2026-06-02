@@ -4,32 +4,27 @@ import matter from "gray-matter";
 
 const SERVICES_DIR = join(process.cwd(), "content", "services");
 
-export type ServicePageFaq = { q: string; a: string };
+export type ServiceFaq = { q: string; a: string };
 
-export type ServicePageType = "platform" | "service" | "location";
-
-export type ServicePageFrontmatter = {
+export type ServiceFrontmatter = {
   title: string;
   h1: string;
   heroSub: string;
   description: string;
-  type: ServicePageType;
-  location?: string;
-  platform?: string;
-  faq?: ServicePageFaq[];
+  faq?: ServiceFaq[];
 };
 
-export type ServicePage = ServicePageFrontmatter & {
+export type ServicePage = ServiceFrontmatter & {
   slug: string;
   content: string;
 };
 
-function parseFrontmatter(raw: string): ServicePageFrontmatter {
+function parse(raw: string): ServiceFrontmatter {
   const { data } = matter(raw);
   if (!data.title) throw new Error("service page missing `title`");
   if (!data.h1) throw new Error("service page missing `h1`");
   if (!data.description) throw new Error("service page missing `description`");
-  return data as ServicePageFrontmatter;
+  return data as ServiceFrontmatter;
 }
 
 export async function getAllServicePages(): Promise<ServicePage[]> {
@@ -39,11 +34,10 @@ export async function getAllServicePages(): Promise<ServicePage[]> {
   } catch {
     return [];
   }
-  const files = entries.filter((f) => f.endsWith(".mdx"));
   return Promise.all(
-    files.map(async (file) => {
+    entries.filter((f) => f.endsWith(".mdx")).map(async (file) => {
       const raw = await readFile(join(SERVICES_DIR, file), "utf8");
-      const fm = parseFrontmatter(raw);
+      const fm = parse(raw);
       const { content } = matter(raw);
       return { ...fm, content, slug: file.replace(/\.mdx$/, "") };
     }),
@@ -53,7 +47,7 @@ export async function getAllServicePages(): Promise<ServicePage[]> {
 export async function getServicePage(slug: string): Promise<ServicePage | null> {
   try {
     const raw = await readFile(join(SERVICES_DIR, `${slug}.mdx`), "utf8");
-    const fm = parseFrontmatter(raw);
+    const fm = parse(raw);
     const { content } = matter(raw);
     return { ...fm, content, slug };
   } catch {

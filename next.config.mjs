@@ -20,7 +20,6 @@ const nextConfig = {
     return [
       // /contact preserved as a route for any external links post-launch
       { source: "/contact", destination: "/", permanent: false },
-      { source: "/process", destination: "/", permanent: false },
     ];
   },
 };

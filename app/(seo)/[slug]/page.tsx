@@ -7,27 +7,27 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
-import { getAllServicePages, getServicePage } from "@/lib/services";
+import { getAllSeoPages, getSeoPage } from "@/lib/seo-pages";
 import { site } from "@/lib/site";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  const pages = await getAllServicePages();
+  const pages = await getAllSeoPages();
   return pages.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = await getServicePage(slug);
+  const page = await getSeoPage(slug);
   if (!page) return {};
   return {
     title: page.title,
     description: page.description,
-    alternates: { canonical: `/services/${slug}` },
+    alternates: { canonical: `/${slug}` },
     openGraph: {
       type: "website",
-      url: `${site.url}/services/${slug}`,
+      url: `${site.url}/${slug}`,
       title: page.title,
       description: page.description,
     },
@@ -42,12 +42,12 @@ const mdxOptions = {
   ],
 };
 
-export default async function ServicePage({ params }: PageProps) {
+export default async function SeoPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = await getServicePage(slug);
+  const page = await getSeoPage(slug);
   if (!page) notFound();
 
-  const url = `${site.url}/services/${slug}`;
+  const url = `${site.url}/${slug}`;
 
   return (
     <>
@@ -75,6 +75,20 @@ export default async function ServicePage({ params }: PageProps) {
         </div>
       </section>
 
+      <section className="section" style={{ background: "var(--surface)" }}>
+        <div className="wrap" style={{ maxWidth: 680, textAlign: "center" }}>
+          <h2 style={{ marginBottom: 12 }}>Not sure where to start?</h2>
+          <p style={{ marginBottom: 28 }}>
+            Take the free 3-minute audit. Ten questions on your automations,
+            deliverability, and segmentation — and a scored breakdown of what
+            to fix first.
+          </p>
+          <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
+            Start the free audit →
+          </Link>
+        </div>
+      </section>
+
       {page.faq && page.faq.length > 0 && (
         <section className="section">
           <div className="wrap" style={{ maxWidth: 740 }}>
@@ -93,14 +107,14 @@ export default async function ServicePage({ params }: PageProps) {
 
       <Contact />
 
-      <JsonLd data={serviceSchema({ name: page.h1, description: page.description, slug })} />
       <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", url: site.url },
-          { name: "Services", url: `${site.url}/services` },
-          { name: page.h1, url },
-        ])}
+        data={serviceSchema({
+          name: page.h1,
+          description: page.description,
+          ...(page.location ? { areaServed: page.location } : {}),
+        })}
       />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: site.url }, { name: page.h1, url }])} />
       {page.faq && page.faq.length > 0 && <JsonLd data={faqSchema(page.faq)} />}
     </>
   );

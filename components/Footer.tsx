@@ -18,12 +18,12 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-heading">Services</p>
             <ul>
-              <li><Link href="/services/email-marketing-audit-australia">Email audit</Link></li>
-              <li><Link href="/services/klaviyo-agency-australia">Klaviyo agency</Link></li>
-              <li><Link href="/services/ecommerce-email-marketing-australia">E-commerce email</Link></li>
-              <li><Link href="/services/email-marketing-agency-sydney">Sydney</Link></li>
-              <li><Link href="/services/email-marketing-agency-melbourne">Melbourne</Link></li>
-              <li><Link href="/services/email-marketing-agency-brisbane">Brisbane</Link></li>
+              <li><Link href="/email-marketing-audit-australia">Email audit</Link></li>
+              <li><Link href="/klaviyo-agency-australia">Klaviyo agency</Link></li>
+              <li><Link href="/ecommerce-email-marketing-australia">E-commerce email</Link></li>
+              <li><Link href="/email-marketing-agency-sydney">Sydney</Link></li>
+              <li><Link href="/email-marketing-agency-melbourne">Melbourne</Link></li>
+              <li><Link href="/email-marketing-agency-brisbane">Brisbane</Link></li>
             </ul>
           </div>
           <div className="footer-col">
