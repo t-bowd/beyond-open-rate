@@ -28,8 +28,8 @@
   --font-body: var(--font-hanken), system-ui, sans-serif;
   --font-mono: var(--font-space-mono), ui-monospace, monospace;
 
-  --maxw: 1180px;
-  --gutter: clamp(20px, 5vw, 64px);
+  --maxw: 1360px;
+  --gutter: clamp(20px, 4vw, 48px);
   --radius: 14px;
   --radius-sm: 10px;
 }
