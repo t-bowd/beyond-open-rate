@@ -38,7 +38,8 @@ export default function Header() {
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <div className="wrap nav">
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
-            <Image src="/logo.svg" alt="Beyond Open Rate" width={180} height={36} priority style={{ height: 36, width: "auto" }} />
+            <Image src="/logo.svg" alt="" width={36} height={36} priority style={{ height: 36, width: "auto" }} />
+            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
           <div className="nav-cta">
             <Link href="/#contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>

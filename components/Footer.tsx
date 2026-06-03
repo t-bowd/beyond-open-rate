@@ -7,7 +7,8 @@ export default function Footer() {
       <div className="wrap footer-inner">
         <div className="footer-brand">
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
-            <Image src="/logo-reverse.svg" alt="Beyond Open Rate" width={180} height={36} style={{ height: 36, width: "auto" }} />
+            <Image src="/logo-reverse.svg" alt="" width={36} height={36} style={{ height: 36, width: "auto" }} />
+            <span>Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
           <p className="footer-tagline">Grow your business with email.</p>
         </div>
