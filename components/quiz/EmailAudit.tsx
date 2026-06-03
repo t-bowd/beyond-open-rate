@@ -106,7 +106,7 @@ export default function EmailAudit() {
           _hp: hp,
         }),
       });
-      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
+      const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string; id?: string };
       if (!res.ok || !json.ok) {
         track("lead_error", { source: "tool:email-audit", error: json.error ?? String(res.status) });
         setServerError(
