@@ -1,15 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-inner">
         <div className="footer-brand">
-          <Link href="/" className="brand">
-            <span className="brand-mark">
-              <span>B</span>
-            </span>
-            Beyond&nbsp;Open&nbsp;Rate
+          <Link href="/" className="brand" aria-label="Beyond Open Rate home">
+            <Image src="/logo-reverse.svg" alt="Beyond Open Rate" width={180} height={36} style={{ height: 36, width: "auto" }} />
           </Link>
           <p className="footer-tagline">Grow your business with email.</p>
         </div>
