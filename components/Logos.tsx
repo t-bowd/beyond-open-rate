@@ -6,7 +6,14 @@
 //   3. Change the framing copy to "Experience built with teams at" to be
 //      more accurate about the nature of the relationship.
 
-const LOGOS = ["eBay", "99designs", "Vistaprint", "Envato", "Cover-More"];
+import Image from "next/image";
+
+const LOGOS = [
+  { name: "eBay",      src: "/ebay.svg"   },
+  { name: "99designs", src: "/99.svg"     },
+  { name: "Envato",    src: "/envato.svg" },
+  { name: "Cover-More",src: "/cm.svg"     },
+];
 
 export default function Logos() {
   return (
@@ -16,9 +23,9 @@ export default function Logos() {
           Trusted by growing &amp; enterprise businesses
         </p>
         <div className="logo-row">
-          {LOGOS.map((name) => (
+          {LOGOS.map(({ name, src }) => (
             <span className="logo" key={name}>
-              {name}
+              <Image src={src} alt={name} width={120} height={40} style={{ objectFit: "contain", height: 32, width: "auto" }} />
             </span>
           ))}
         </div>
