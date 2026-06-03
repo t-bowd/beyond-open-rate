@@ -3,7 +3,7 @@ export const site = {
   shortName: "BOR",
   url: "https://beyondopenrate.com.au",
   description:
-    "Email marketing, lifecycle and automation for e-commerce and SaaS brands — built to turn quiet subscribers into predictable, repeat revenue.",
+    "Email marketing agency for Australian e-commerce brands. Lifecycle automation, Klaviyo management, campaigns, and deliverability — built to turn your list into predictable revenue.",
   locale: "en_AU",
   ogImage: "/opengraph-image",
   twitter: "@beyondopenrate",

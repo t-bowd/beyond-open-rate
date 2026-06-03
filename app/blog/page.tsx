@@ -7,9 +7,9 @@ import { getAllPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email marketing strategy and advice",
+  title: "Email marketing strategy and advice — Beyond Open Rate",
   description:
-    "Thinking on lifecycle automation, deliverability, segmentation, and the metrics that actually move revenue.",
+    "Practical thinking on lifecycle automation, deliverability, segmentation, and the metrics that drive email revenue — for Australian e-commerce and service businesses.",
   alternates: { canonical: "/blog" },
 };
 

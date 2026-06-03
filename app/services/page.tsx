@@ -7,9 +7,9 @@ import { services } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email marketing services — Beyond Open Rate",
+  title: "Email marketing services, Australia — Beyond Open Rate",
   description:
-    "Lifecycle automation, campaign management, copy and design, platform setup, deliverability, and reporting — built and run end to end for Australian businesses.",
+    "Full-service email marketing for Australian businesses. Lifecycle automation, Klaviyo, campaign management, copy, deliverability, and reporting — built and run end to end.",
   alternates: { canonical: "/services" },
 };
 

@@ -5,9 +5,9 @@ import { JsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email program audit — score your email setup in 3 minutes",
+  title: "Free email marketing audit — score your program in 3 minutes",
   description:
-    "Ten questions on your automations, segmentation, deliverability, and reporting. Get a score out of 75 and a prioritised list of what to fix first.",
+    "Free email audit for Australian businesses. Ten questions on your automations, deliverability, and segmentation — score out of 75 with a prioritised fix list. Takes 3 minutes.",
   alternates: { canonical: "/tools/email-audit" },
 };
 

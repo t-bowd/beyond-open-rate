@@ -6,9 +6,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email marketing tools",
+  title: "Free email marketing tools for Australian businesses",
   description:
-    "Practical diagnostics to help you understand where your email program stands — and what to do about it.",
+    "Free diagnostic tools to audit your email program. See where your automations, deliverability, and segmentation stand — and get a prioritised list of what to fix first.",
   alternates: { canonical: "/tools" },
 };
 

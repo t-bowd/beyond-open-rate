@@ -6,9 +6,9 @@ import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About — email marketing expertise built over 15 years",
+  title: "About Beyond Open Rate — Australian email marketing agency",
   description:
-    "Beyond Open Rate is an Australian email marketing consultancy founded by Tim, with 15 years across email strategy, automation, platform migration and development. We work with businesses of all sizes who want email treated as the revenue channel it actually is.",
+    "Australian email marketing agency. 15 years across lifecycle automation, Klaviyo, deliverability, and platform migrations — we treat email as the revenue channel it is.",
   alternates: { canonical: "/about" },
 };
 
