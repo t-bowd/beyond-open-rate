@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Email preview</title>
+  <style>
+    body { margin: 0; background: #ddd; font-family: sans-serif; }
+    .switcher { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 100; background: #fff; border-radius: 8px; padding: 8px 12px; display: flex; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+    .switcher button { padding: 6px 14px; border: none; border-radius: 5px; cursor: pointer; font-size: 13px; font-weight: 600; background: #eee; color: #333; }
+    .switcher button.active { background: #6A00CC; color: #fff; }
+    .email { display: none; padding-top: 64px; }
+    .email.active { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="switcher">
+  <button class="active" onclick="show('customer')">Customer email</button>
+  <button onclick="show('notify')">Notification to Tim</button>
+</div>
+
+<!-- CUSTOMER EMAIL -->
+<div class="email active" id="customer">
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#f0f0f2;padding:40px 16px;">
+  <tr><td align="center">
+    <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;width:100%;">
+
+      <!-- Header: logo centered, white bg -->
+      <tr>
+        <td style="background:#ffffff;padding:28px 40px 24px;border-radius:12px 12px 0 0;border-bottom:1px solid #eeeeee;" align="center">
+          <a href="https://beyondopenrate.com.au" style="text-decoration:none;display:inline-flex;align-items:center;gap:12px;">
+            <img src="/logo.svg" alt="" width="32" height="32" style="display:block;width:32px;height:32px;" />
+            <span style="font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.4px;">Beyond&nbsp;Open&nbsp;Rate</span>
+          </a>
+        </td>
+      </tr>
+
+      <!-- Body -->
+      <tr>
+        <td style="background:#ffffff;padding:40px 40px 32px;">
+          <h1 style="margin:0 0 8px;font-size:26px;font-weight:700;color:#111111;letter-spacing:-0.5px;">We'll be in touch shortly.</h1>
+          <p style="margin:0 0 24px;font-size:16px;color:#555555;line-height:1.65;">Hi Sarah, thanks for reaching out. We'll review your details and get back to you within one business day.</p>
+          <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">While you wait, it's worth taking our free email program audit — answer 15 questions and get an instant score across deliverability, automation, segmentation, and copy. We'll be able to reference your results when we chat.</p>
+
+          <!-- Audit CTA -->
+          <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:20px;">
+            <tr>
+              <td style="background:linear-gradient(135deg,#6A00CC,#8b2be2);border-radius:10px;padding:28px 28px 24px;">
+                <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.75);text-transform:uppercase;letter-spacing:0.8px;">Free tool</p>
+                <p style="margin:0 0 8px;font-size:20px;font-weight:700;color:#ffffff;letter-spacing:-0.3px;">Score your email program</p>
+                <p style="margin:0 0 20px;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.55;">15 questions. Instant score. Covers deliverability, automation, segmentation, and copy — the four things that actually drive revenue from email.</p>
+                <a href="https://beyondopenrate.com.au/tools/email-audit" style="display:inline-block;background:#ffffff;color:#6A00CC;text-decoration:none;font-size:14px;font-weight:700;padding:12px 24px;border-radius:6px;">Take the free audit →</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Blog CTA -->
+          <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:20px;">
+            <tr>
+              <td style="background:#f9f9fb;border:1px solid #e5e5e8;border-radius:10px;padding:24px 28px;">
+                <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Resources</p>
+                <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">Strategy, automation &amp; deliverability</p>
+                <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">Practical thinking on lifecycle flows, segmentation, Klaviyo, and the metrics that actually move revenue — written for Australian e-commerce brands.</p>
+                <a href="https://beyondopenrate.com.au/blog" style="display:inline-block;background:#111111;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:11px 22px;border-radius:6px;">Read the blog →</a>
+              </td>
+            </tr>
+          </table>
+
+          <p style="margin:32px 0 0;font-size:14px;color:#888888;line-height:1.6;">If you have anything to add before we chat, just reply to this email — it comes straight to us.</p>
+        </td>
+      </tr>
+
+      <!-- Footer -->
+      <tr>
+        <td style="background:#f5f5f7;padding:20px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e5e5e8;" align="center">
+          <p style="margin:0 0 4px;font-size:12px;color:#999999;">Beyond Open Rate · <a href="https://beyondopenrate.com.au" style="color:#999;text-decoration:none;">beyondopenrate.com.au</a></p>
+          <p style="margin:0;font-size:12px;color:#bbbbbb;">You received this because you submitted an enquiry on our website.</p>
+        </td>
+      </tr>
+
+    </table>
+  </td></tr>
+</table>
+</div>
+
+<!-- TIM NOTIFICATION EMAIL -->
+<div class="email" id="notify">
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#f0f0f2;padding:40px 16px;">
+  <tr><td align="center">
+    <table width="620" cellpadding="0" cellspacing="0" style="max-width:620px;width:100%;">
+      <tr>
+        <td style="background:#6A00CC;padding:20px 32px;border-radius:8px 8px 0 0;">
+          <p style="margin:0;font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:1px;">Beyond Open Rate — New Lead</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background:#ffffff;padding:32px;border-radius:0 0 8px 8px;">
+          <h1 style="margin:0 0 24px;font-size:22px;font-weight:700;color:#111;">Sarah Thompson</h1>
+          <table cellpadding="0" cellspacing="0" style="border-top:1px solid #eee;width:100%;">
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Email</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;"><a href="mailto:sarah@example.com" style="color:#6A00CC;">sarah@example.com</a></td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Name</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;">Sarah Thompson</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Phone</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;">0412 345 678</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Company</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;">Botanica Skincare</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Company size</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;">11–50</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Website</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;"><a href="https://botanicaskincare.com.au" style="color:#6A00CC;">botanicaskincare.com.au</a></td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Source</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;">tool:email-audit</td></tr>
+            <tr><td style="padding:8px 16px 8px 0;font-size:13px;font-weight:600;color:#666;white-space:nowrap;vertical-align:top;">Lead ID</td><td style="padding:8px 0;font-size:14px;color:#111;vertical-align:top;font-family:monospace;font-size:12px;">a3f8c1d2-4e5b-6789</td></tr>
+          </table>
+
+          <div style="margin-top:20px;background:#f9f9f9;border-left:3px solid #6A00CC;padding:16px;border-radius:0 6px 6px 0;">
+            <p style="margin:0 0 8px;font-size:12px;font-weight:600;color:#666;text-transform:uppercase;">Message</p>
+            <p style="margin:0;font-size:14px;color:#111;line-height:1.6;">We're on Klaviyo but have never really set up proper flows. Open rates look okay but we're not driving much revenue from email. Would love to understand what we're missing.</p>
+          </div>
+
+          <div style="margin-top:24px;background:#f5f0ff;border:1px solid #d8b4fe;border-radius:8px;padding:20px;">
+            <p style="margin:0 0 12px;font-size:13px;font-weight:700;color:#6A00CC;text-transform:uppercase;letter-spacing:0.5px;">Email Audit Results</p>
+            <p style="margin:0 0 8px;font-size:22px;font-weight:700;color:#111;">31/50 <span style="font-size:15px;color:#666;">(62% — Developing)</span></p>
+            <table cellpadding="0" cellspacing="0" style="margin-top:12px;width:100%;border-top:1px solid #e9d5ff;">
+              <tr><td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;width:60%;border-bottom:1px solid #f3e8ff;">Do you have SPF, DKIM and DMARC configured?</td><td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;border-bottom:1px solid #f3e8ff;">Partially</td></tr>
+              <tr><td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;border-bottom:1px solid #f3e8ff;">Do you have a welcome series set up?</td><td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;border-bottom:1px solid #f3e8ff;">Yes</td></tr>
+              <tr><td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;border-bottom:1px solid #f3e8ff;">Do you segment before sending campaigns?</td><td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;border-bottom:1px solid #f3e8ff;">No</td></tr>
+              <tr><td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;border-bottom:1px solid #f3e8ff;">Do you have an abandoned cart flow?</td><td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;border-bottom:1px solid #f3e8ff;">Yes</td></tr>
+              <tr><td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;">Do you track revenue per recipient?</td><td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;">No</td></tr>
+            </table>
+          </div>
+
+          <div style="margin-top:24px;text-align:center;">
+            <a href="mailto:sarah@example.com" style="display:inline-block;background:#6A00CC;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:12px 28px;border-radius:6px;">Reply to Sarah →</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </td></tr>
+</table>
+</div>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.email').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.switcher button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

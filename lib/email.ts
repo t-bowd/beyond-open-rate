@@ -184,9 +184,11 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
 
           <!-- Header -->
           <tr>
-            <td style="background:#6A00CC;padding:28px 40px;border-radius:12px 12px 0 0;" align="left">
-              <p style="margin:0;font-size:20px;font-weight:700;color:#ffffff;letter-spacing:-0.4px;">Beyond Open Rate</p>
-              <p style="margin:4px 0 0;font-size:13px;color:rgba(255,255,255,0.7);">Email marketing agency, Australia</p>
+            <td style="background:#ffffff;padding:28px 40px 24px;border-radius:12px 12px 0 0;border-bottom:1px solid #eeeeee;" align="center">
+              <a href="${SITE}" style="text-decoration:none;display:inline-flex;align-items:center;gap:12px;">
+                <img src="${SITE}/logo.svg" alt="Beyond Open Rate" width="32" height="32" style="display:block;width:32px;height:32px;" />
+                <span style="font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.4px;">Beyond&nbsp;Open&nbsp;Rate</span>
+              </a>
             </td>
           </tr>
 
@@ -195,12 +197,12 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
             <td style="background:#ffffff;padding:40px 40px 32px;">
 
               <h1 style="margin:0 0 8px;font-size:26px;font-weight:700;color:#111111;letter-spacing:-0.5px;">We'll be in touch shortly.</h1>
-              <p style="margin:0 0 24px;font-size:16px;color:#555555;line-height:1.65;">${greeting} Thanks for reaching out. Tim will review your details and get back to you within one business day.</p>
+              <p style="margin:0 0 24px;font-size:16px;color:#555555;line-height:1.65;">${greeting} Thanks for reaching out. We'll review your details and get back to you within one business day.</p>
 
               ${auditCompleted ? `
               <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">In the meantime, here are a few resources worth exploring while you wait.</p>
               ` : `
-              <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">While you wait, it's worth taking our free email program audit — answer 15 questions and get an instant score across deliverability, automation, segmentation, and copy. Tim will be able to reference your results when you chat.</p>
+              <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">While you wait, it's worth taking our free email program audit — answer 15 questions and get an instant score across deliverability, automation, segmentation, and copy. We'll be able to reference your results when we chat.</p>
               `}
 
               ${!auditCompleted ? `
@@ -243,7 +245,7 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
               </table>
               ` : ""}
 
-              <p style="margin:32px 0 0;font-size:14px;color:#888888;line-height:1.6;">If you have anything to add before we chat, just reply to this email — it comes straight to Tim.</p>
+              <p style="margin:32px 0 0;font-size:14px;color:#888888;line-height:1.6;">If you have anything to add before we chat, just reply to this email — it comes straight to us.</p>
 
             </td>
           </tr>
