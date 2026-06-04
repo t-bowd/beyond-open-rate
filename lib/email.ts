@@ -1,5 +1,6 @@
 const BREVO_API = "https://api.brevo.com/v3/smtp/email";
-const FROM = { name: "Beyond Open Rate", email: "hello@beyondopenrate.com.au" };
+const FROM_LEADS = { name: "Beyond Open Rate", email: "leads@ops.beyondopenrate.com.au" };
+const FROM_HELLO = { name: "Beyond Open Rate", email: "hello@again.beyondopenrate.com.au" };
 const NOTIFY_TO = "tim@beyondopenrate.com.au";
 const SITE = "https://beyondopenrate.com.au";
 
@@ -7,10 +8,12 @@ const SITE = "https://beyondopenrate.com.au";
 
 async function sendEmail({
   to,
+  from,
   subject,
   htmlContent,
 }: {
   to: string;
+  from: { name: string; email: string };
   subject: string;
   htmlContent: string;
 }): Promise<void> {
@@ -25,9 +28,9 @@ async function sendEmail({
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      sender: FROM,
+      sender: from,
       to: [{ email: to }],
-      replyTo: FROM,
+      replyTo: from,
       subject,
       htmlContent,
     }),
@@ -148,7 +151,7 @@ export async function sendLeadNotification(lead: NotifyLeadInput): Promise<void>
 </body>
 </html>`;
 
-  await sendEmail({ to: NOTIFY_TO, subject, htmlContent: html });
+  await sendEmail({ to: NOTIFY_TO, from: FROM_LEADS, subject, htmlContent: html });
 }
 
 // ── Confirmation email to the lead ────────────────────────────────────────────
@@ -266,5 +269,5 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
 </body>
 </html>`;
 
-  await sendEmail({ to: lead.email, subject, htmlContent: html });
+  await sendEmail({ to: lead.email, from: FROM_HELLO, subject, htmlContent: html });
 }
