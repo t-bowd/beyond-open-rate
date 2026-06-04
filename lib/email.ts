@@ -1,7 +1,8 @@
 const BREVO_API = "https://api.brevo.com/v3/smtp/email";
 const FROM_LEADS = { name: "Beyond Open Rate", email: "leads@ops.beyondopenrate.com.au" };
 const FROM_HELLO = { name: "Beyond Open Rate", email: "hello@again.beyondopenrate.com.au" };
-const NOTIFY_TO = "tim@beyondopenrate.com.au";
+const REPLY_TO = { name: "Tim Bowman", email: "tim@timbowman.com.au" };
+const NOTIFY_TO = "tim@timbowman.com.au";
 const SITE = "https://beyondopenrate.com.au";
 
 // ── Brevo send helper ─────────────────────────────────────────────────────────
@@ -30,7 +31,7 @@ async function sendEmail({
     body: JSON.stringify({
       sender: from,
       to: [{ email: to }],
-      replyTo: from,
+      replyTo: REPLY_TO,
       subject,
       htmlContent,
     }),
