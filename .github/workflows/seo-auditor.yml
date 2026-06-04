@@ -1,0 +1,83 @@
+name: SEO meta auditor
+
+on:
+  schedule:
+    # Wednesdays at 9am AEST (UTC+10) = 23:00 UTC Tuesday
+    - cron: "0 23 * * 2"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install @anthropic-ai/sdk googleapis
+
+      - name: Run SEO audit
+        id: audit
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_DELEGATED_EMAIL: ${{ secrets.GSC_DELEGATED_EMAIL }}
+        run: |
+          output=$(node scripts/seo-audit.mjs)
+          CHANGED=$(echo "$output" | grep '^changed_files=' | cut -d'=' -f2-)
+          FILES=$(echo "$output" | grep '^files=' | cut -d'=' -f2-)
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Exit early if nothing changed
+        if: steps.audit.outputs.changed == '0'
+        run: |
+          echo "No meta improvements needed this week."
+          exit 0
+
+      - name: Commit and open PR
+        if: steps.audit.outputs.changed != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGED: ${{ steps.audit.outputs.changed }}
+          FILES: ${{ steps.audit.outputs.files }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="seo/meta-$(date +%Y-%m-%d)"
+          git checkout -b $BRANCH
+          git add -A
+          git commit -m "seo: Improve meta titles and descriptions for $CHANGED pages"
+          git push origin $BRANCH
+
+          gh pr create \
+            --title "SEO: Improved meta for $CHANGED pages" \
+            --body "## Meta title & description improvements
+
+          Generated from Google Search Console CTR data (last 28 days).
+          Pages targeted had good impressions but low click-through rate.
+
+          **Files changed:** $CHANGED
+          \`\`\`
+          $(echo "$FILES" | tr ',' '\n')
+          \`\`\`
+
+          ### Review checklist
+          - [ ] New titles are accurate and on-brand
+          - [ ] Descriptions stay under 160 characters
+          - [ ] Primary keywords are present
+          - [ ] Tone matches the rest of the site
+
+          Merge to deploy — Vercel builds automatically." \
+            --label "seo" \
+            --assignee "${{ github.repository_owner }}"

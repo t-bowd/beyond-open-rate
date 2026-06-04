@@ -1,0 +1,80 @@
+name: Generate blog topics
+
+on:
+  schedule:
+    # Mondays at 9am AEST (UTC+10) = 23:00 UTC Sunday
+    - cron: "0 23 * * 0"
+  workflow_dispatch:
+
+jobs:
+  generate-topics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install @anthropic-ai/sdk googleapis
+
+      - name: Generate topics
+        id: generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_DELEGATED_EMAIL: ${{ secrets.GSC_DELEGATED_EMAIL }}
+        run: |
+          output=$(node scripts/generate-topics.mjs)
+          COUNT=$(echo "$output" | grep '^count=' | cut -d'=' -f2-)
+          TITLES=$(echo "$output" | grep '^titles=' | cut -d'=' -f2-)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "titles=$TITLES" >> $GITHUB_OUTPUT
+
+      - name: Exit early if no new topics
+        if: steps.generate.outputs.count == '0'
+        run: |
+          echo "No new topics generated."
+          exit 0
+
+      - name: Commit and open PR
+        if: steps.generate.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT: ${{ steps.generate.outputs.count }}
+          TITLES: ${{ steps.generate.outputs.titles }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="topics/$(date +%Y-%m-%d)"
+          git checkout -b $BRANCH
+          git add content/blog-queue.json
+          git commit -m "topics: Add $COUNT new blog topics from GSC data"
+          git push origin $BRANCH
+
+          gh pr create \
+            --title "Blog topics: $COUNT new topics from Search Console" \
+            --body "## New blog topics — review before merging
+
+          Generated from Google Search Console keyword opportunity data.
+
+          **Topics added:**
+          $(echo "$TITLES" | tr '|' '\n' | sed 's/^ /- /')
+
+          ### Review checklist
+          - [ ] Topics are relevant and on-brand
+          - [ ] Keywords look like genuine opportunities
+          - [ ] Notes give enough direction for good content
+          - [ ] No duplicates with existing content
+
+          Merge to add to the queue — the blog generator will pick them up automatically." \
+            --label "content" \
+            --assignee "${{ github.repository_owner }}"
