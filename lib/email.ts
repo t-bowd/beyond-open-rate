@@ -186,7 +186,7 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
           <tr>
             <td style="background:#ffffff;padding:28px 40px 24px;border-radius:12px 12px 0 0;border-bottom:1px solid #eeeeee;" align="center">
               <a href="${SITE}" style="text-decoration:none;display:inline-flex;align-items:center;gap:12px;">
-                <img src="${SITE}/logo.svg" alt="Beyond Open Rate" width="32" height="32" style="display:block;width:32px;height:32px;" />
+                <img src="${SITE}/favicon.png" alt="Beyond Open Rate" width="32" height="32" style="display:block;width:32px;height:32px;" />
                 <span style="font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.4px;">Beyond&nbsp;Open&nbsp;Rate</span>
               </a>
             </td>
