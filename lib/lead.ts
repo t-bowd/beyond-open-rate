@@ -54,8 +54,6 @@ export async function captureLead(
 
   if (error) throw error;
 
-  // Fire emails — don't await so they don't block the API response,
-  // but do log failures so they show up in Vercel logs
   const lead = {
     id: data.id,
     email: input.email.toLowerCase().trim(),
@@ -69,15 +67,20 @@ export async function captureLead(
     payload: input.payload ?? {},
   };
 
-  Promise.all([
-    sendLeadNotification(lead),
-    sendLeadConfirmation({
-      email: lead.email,
-      name: lead.name,
-      source: lead.source,
-      auditCompleted: lead.source === "tool:email-audit",
-    }),
-  ]).catch((err) => console.error("[email] send failed", err));
+  // Await emails — Vercel kills un-awaited promises when the function returns
+  try {
+    await Promise.all([
+      sendLeadNotification(lead),
+      sendLeadConfirmation({
+        email: lead.email,
+        name: lead.name,
+        source: lead.source,
+        auditCompleted: lead.source === "tool:email-audit",
+      }),
+    ]);
+  } catch (err) {
+    console.error("[email] send failed", err);
+  }
 
   return { id: data.id };
 }
