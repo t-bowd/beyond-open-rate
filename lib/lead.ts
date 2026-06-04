@@ -1,4 +1,5 @@
 import { supabaseAdmin } from "./supabase";
+import { sendLeadNotification, sendLeadConfirmation } from "./email";
 
 export type LeadSource =
   | "hero-audit"
@@ -52,5 +53,31 @@ export async function captureLead(
     .single();
 
   if (error) throw error;
+
+  // Fire emails — don't await so they don't block the API response,
+  // but do log failures so they show up in Vercel logs
+  const lead = {
+    id: data.id,
+    email: input.email.toLowerCase().trim(),
+    name: input.name?.trim() || null,
+    phone: input.phone?.trim() || null,
+    website: input.website?.trim() || null,
+    company: input.company?.trim() || null,
+    company_size: input.company_size?.trim() || null,
+    message: input.message?.trim() || null,
+    source: input.source,
+    payload: input.payload ?? {},
+  };
+
+  Promise.all([
+    sendLeadNotification(lead),
+    sendLeadConfirmation({
+      email: lead.email,
+      name: lead.name,
+      source: lead.source,
+      auditCompleted: lead.source === "tool:email-audit",
+    }),
+  ]).catch((err) => console.error("[email] send failed", err));
+
   return { id: data.id };
 }
