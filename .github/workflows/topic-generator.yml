@@ -76,5 +76,4 @@ jobs:
           - [ ] No duplicates with existing content
 
           Merge to add to the queue — the blog generator will pick them up automatically." \
-            --label "content" \
             --assignee "${{ github.repository_owner }}"

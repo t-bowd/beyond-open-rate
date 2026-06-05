@@ -79,5 +79,4 @@ jobs:
           - [ ] Tone matches the rest of the site
 
           Merge to deploy — Vercel builds automatically." \
-            --label "seo" \
             --assignee "${{ github.repository_owner }}"
