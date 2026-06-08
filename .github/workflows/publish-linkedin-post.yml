@@ -1,0 +1,40 @@
+name: Publish LinkedIn Post
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+    paths:
+      - "content-engine/posts/drafts/**"
+
+jobs:
+  publish:
+    # Only run if the PR was actually merged (not just closed)
+    if: github.event.pull_request.merged == true
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install @octokit/rest
+
+      - name: Publish post
+        env:
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_LINKEDIN_PROFILE_ID: ${{ secrets.BUFFER_LINKEDIN_PROFILE_ID }}
+          BUFFER_FACEBOOK_PAGE_ID: ${{ secrets.BUFFER_FACEBOOK_PAGE_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node content-engine/scripts/publish-post.js

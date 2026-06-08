@@ -1,0 +1,33 @@
+name: Generate LinkedIn Post
+
+on:
+  schedule:
+    # Mon/Wed/Thu/Fri at 8:00am AEST (UTC+10 = 22:00 UTC previous day)
+    - cron: "0 22 * * 0,1,3,4"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install @anthropic-ai/sdk @octokit/rest
+
+      - name: Generate post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node content-engine/scripts/generate-post.js

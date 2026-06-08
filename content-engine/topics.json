@@ -1,0 +1,204 @@
+{
+  "topics": [
+    {
+      "id": "001",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "You paid to acquire that customer. Then you emailed them once.",
+      "seed_claim": "Most brands spend $20–50 per customer in paid ads and then send one welcome email. That's not a retention strategy — it's abandonment dressed up as marketing.",
+      "audience_angle": "Founder who thinks their email is fine because they have an automated welcome",
+      "cta_style": "none",
+      "notes": "Pattern interrupt opener. Lead with the acquisition cost contradiction. Make the math feel personal."
+    },
+    {
+      "id": "002",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "Why most welcome flows stop too early",
+      "seed_claim": "Three emails isn't a welcome series. It's an introduction. The decision to buy — or not — usually happens after email five or six, when most brands have already gone quiet.",
+      "audience_angle": "Founder who set up their own welcome flow and hasn't touched it since",
+      "cta_style": "soft",
+      "notes": "Platform agnostic. Focus on the 3-email myth and the silence that follows. Soft CTA — follow for more."
+    },
+    {
+      "id": "003",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "What we actually look at in an email audit",
+      "seed_claim": "Most audits check open rates. Ours looks at where the revenue is leaking — flows that exist but don't convert, authentication gaps quietly killing deliverability, segmentation too broad to be useful.",
+      "audience_angle": "Founder actively researching whether to get email help",
+      "cta_style": "audit",
+      "notes": "CTA to the free audit tool at beyondopenrate.com.au/tools/email-audit"
+    },
+    {
+      "id": "004",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "The silence between a customer's first and second purchase",
+      "seed_claim": "The average gap between first and second purchase is 47 days. Most brands fill that silence with nothing. A competitor's retargeting ad fills it instead.",
+      "audience_angle": "Founder who doesn't realise how much repeat purchase rate is driven by email timing",
+      "cta_style": "none",
+      "notes": "Use the 47-day stat as the hook. Make the silence feel costly, not abstract."
+    },
+    {
+      "id": "005",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "Deliverability is the problem nobody checks until it's too late",
+      "seed_claim": "Your open rates look fine because the people who aren't receiving your emails aren't opening them. Deliverability problems are invisible in your dashboard until they're catastrophic.",
+      "audience_angle": "Founder who trusts their open rate as a signal that everything is working",
+      "cta_style": "soft",
+      "notes": "The key insight: the dashboard hides the problem. Make them question a metric they trust."
+    },
+    {
+      "id": "006",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "Why we report on recovered revenue, not open rates",
+      "seed_claim": "Open rates are a vanity metric. They measure whether someone saw your email, not whether email is working. The only number that tells you email is actually working is revenue per recipient.",
+      "audience_angle": "Founder who has been getting agency reports full of opens and clicks and no revenue data",
+      "cta_style": "soft",
+      "notes": "This is a methodology post. Blunt and direct — this is how we think, and it's different."
+    },
+    {
+      "id": "007",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "The post-purchase sequence most brands skip",
+      "seed_claim": "Brands obsess over abandoned cart. The flow that actually drives repeat purchase rate is what happens after the sale — and most brands send one order confirmation and then go silent for 47 days.",
+      "audience_angle": "Founder who has an abandoned cart flow but nothing after the purchase",
+      "cta_style": "audit",
+      "notes": "Reference the 47-day stat. CTA to free audit to check if they have this gap."
+    },
+    {
+      "id": "008",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "Your retention strategy is a weekly newsletter. That's not retention.",
+      "seed_claim": "A weekly broadcast to your whole list isn't retention. It's interruption. Retention is automated sequences that trigger based on customer behaviour — when they buy, when they browse, when they go quiet.",
+      "audience_angle": "Founder who thinks sending a regular newsletter means they're doing email well",
+      "cta_style": "none",
+      "notes": "Pattern interrupt. They think they're doing retention. They're not. Don't lecture — show them the gap."
+    },
+    {
+      "id": "009",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "How we prioritise what to fix first in an email program",
+      "seed_claim": "Everyone wants to start with the welcome flow because it feels like the obvious win. We start wherever the dollar value per hour of work is highest — which is usually authentication, then deliverability, then whichever flow has the biggest leak.",
+      "audience_angle": "Founder who is considering email work and wants to understand the approach",
+      "cta_style": "soft",
+      "notes": "Methodology post. The insight is that priority is driven by dollar value, not what feels most visible."
+    },
+    {
+      "id": "010",
+      "status": "queued",
+      "tier": "ready_to_buy",
+      "topic": "We have one audit slot open this month",
+      "seed_claim": "We take on two or three new clients per quarter. One slot is open. If you've been sitting on the fence about getting your email properly looked at, this is the time.",
+      "audience_angle": "Founder who has been thinking about it but hasn't pulled the trigger",
+      "cta_style": "direct",
+      "notes": "Update month before publishing. Short, direct, no padding. One CTA — book a call."
+    },
+    {
+      "id": "011",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "What 'burned by an agency before' usually means in practice",
+      "seed_claim": "It means you paid for three months of sends, got a report full of open rate graphs, and had no idea whether email contributed to revenue. That's not bad luck — it's how most email engagements are structured.",
+      "audience_angle": "Founder who tried an agency, had a bad experience, and is now sceptical",
+      "cta_style": "soft",
+      "notes": "Empathise with the experience before making the implicit case that it doesn't have to be that way."
+    },
+    {
+      "id": "012",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "The LTV gap between brands that do lifecycle email and those that don't",
+      "seed_claim": "Brands with mature lifecycle email programs typically see 20–30% of revenue attributed to email. Brands without one see under 5%. The gap compounds — every month without it is a month of repeat purchases that didn't happen.",
+      "audience_angle": "Founder who doesn't realise the scale of what they're leaving on the table",
+      "cta_style": "none",
+      "notes": "Use the revenue percentage gap as the hook. Make the compounding feel real — it's not just this month."
+    },
+    {
+      "id": "013",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "Why being platform-independent matters when you're choosing email help",
+      "seed_claim": "The right email platform depends on your business — your order volume, your list size, your tech stack. An agency that recommends the same platform to every client is probably recommending the one they get a margin on.",
+      "audience_angle": "Founder actively evaluating email help and thinking about platform decisions",
+      "cta_style": "soft",
+      "notes": "Platform agnostic framing. The implicit message: we recommend what's right for you, not what's right for us."
+    },
+    {
+      "id": "014",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "The win-back flow: most brands either don't have one or have it set wrong",
+      "seed_claim": "A win-back flow set to trigger after 90 days of inactivity is almost certainly too late. By 90 days, that customer has bought from someone else. The trigger should be 30–45 days, with a genuine reason to come back — not a blanket discount.",
+      "audience_angle": "Founder who thinks they have a win-back flow and considers it handled",
+      "cta_style": "audit",
+      "notes": "The insight is the timing, not the existence of the flow. Many brands have one but it's set wrong."
+    },
+    {
+      "id": "015",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "Ads get you customers. Email keeps them. Most brands only invest in one.",
+      "seed_claim": "Ad spend buys acquisition. Email drives retention. The brands with the best unit economics treat both as serious investments — not the ones spending $50k/month on ads and nothing on keeping the customers those ads bought.",
+      "audience_angle": "Founder who is heavily invested in paid acquisition but treats email as an afterthought",
+      "cta_style": "none",
+      "notes": "The contrast between ad spend and email spend is the hook. No explicit CTA — just make them feel the imbalance."
+    },
+    {
+      "id": "016",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "How to know if your flows are actually converting or just sending",
+      "seed_claim": "If your email reporting shows opens and clicks but not revenue generated, you're measuring activity, not outcomes. Every flow should have a revenue number attached to it — recovered cart value, repeat purchase lift, LTV movement.",
+      "audience_angle": "Founder who checks their email dashboard but doesn't see revenue data",
+      "cta_style": "soft",
+      "notes": "Education post. The key shift is from activity metrics to outcome metrics."
+    },
+    {
+      "id": "017",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "The difference between a campaign calendar and a lifecycle strategy",
+      "seed_claim": "A campaign calendar is a list of things to send. A lifecycle strategy is a system that responds to customer behaviour — automatically, at the right time, with the right message. Most brands have the first. Almost none have the second.",
+      "audience_angle": "Founder who has a content calendar and thinks that's their email strategy",
+      "cta_style": "audit",
+      "notes": "The insight is that campaigns and lifecycle are different things serving different purposes. Don't dismiss campaigns — show what's missing."
+    },
+    {
+      "id": "018",
+      "status": "queued",
+      "tier": "problem_aware",
+      "topic": "Why flows built two years ago are probably underperforming now",
+      "seed_claim": "Your product range has changed. Your customer has changed. Email clients have changed how they handle tracking data. A flow built two years ago for a different product mix, before privacy changes rewrote open rate data, is almost certainly underperforming — and your dashboard isn't showing you that.",
+      "audience_angle": "Founder who set up their flows a while ago and considers them done",
+      "cta_style": "soft",
+      "notes": "The insight is that 'set and forget' is a myth. Flows decay. Be specific about why."
+    },
+    {
+      "id": "019",
+      "status": "queued",
+      "tier": "unaware",
+      "topic": "$5M revenue, $0 invested in keeping those customers",
+      "seed_claim": "It's more common than you'd think. Brands at $2–5M are often so focused on acquisition that retention is an afterthought. The math doesn't hold long-term — CAC keeps rising, repeat purchase rate stays flat, margin gets squeezed.",
+      "audience_angle": "Founder who has scaled revenue through acquisition but hasn't built retention infrastructure",
+      "cta_style": "none",
+      "notes": "Lead with the dollar figure. Make the math feel inevitable and personal — this is where they're heading if nothing changes."
+    },
+    {
+      "id": "020",
+      "status": "queued",
+      "tier": "gathering_info",
+      "topic": "The free audit: what it checks and what to do with your results",
+      "seed_claim": "The audit checks the ten things that actually affect email revenue — not opens, not list size. Authentication, deliverability, flow coverage, segmentation, send cadence. You get a score out of 75 and a prioritised list of what to fix first.",
+      "audience_angle": "Founder who has heard about the audit but isn't sure if it's worth their time",
+      "cta_style": "audit",
+      "notes": "Direct CTA to the free audit tool at beyondopenrate.com.au/tools/email-audit. Make it feel low-effort and high-value."
+    }
+  ]
+}
