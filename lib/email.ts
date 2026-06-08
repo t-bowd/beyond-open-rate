@@ -101,6 +101,7 @@ export async function triggerBrevoNurture(input: NurtureInput): Promise<void> {
       event_properties: {
         audit_score: input.auditScore,
         audit_top_issue: input.auditTopIssue,
+        audit_completed_date: input.auditCompletedDate,
       },
     }),
   });
