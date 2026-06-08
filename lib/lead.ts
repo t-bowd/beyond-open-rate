@@ -1,5 +1,6 @@
 import { supabaseAdmin } from "./supabase";
-import { sendLeadNotification, sendLeadConfirmation } from "./email";
+import { sendLeadNotification, sendLeadConfirmation, triggerBrevoNurture } from "./email";
+import { getTopIssue, type Answers } from "./quiz/email-audit";
 
 export type LeadSource =
   | "hero-audit"
@@ -80,6 +81,24 @@ export async function captureLead(
     ]);
   } catch (err) {
     console.error("[email] send failed", err);
+  }
+
+  // Trigger Brevo nurture sequence for audit completions
+  if (lead.source === "tool:email-audit") {
+    try {
+      const answers = (lead.payload as Record<string, unknown>)?.answers as Answers | undefined;
+      const auditScore = (lead.payload as Record<string, unknown>)?.score as number | undefined;
+
+      await triggerBrevoNurture({
+        email: lead.email,
+        firstName: lead.name?.split(" ")[0] ?? null,
+        auditScore,
+        auditTopIssue: answers ? getTopIssue(answers) : undefined,
+        auditCompletedDate: new Date().toISOString().split("T")[0],
+      });
+    } catch (err) {
+      console.error("[brevo nurture] trigger failed", err);
+    }
   }
 
   return { id: data.id };

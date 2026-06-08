@@ -43,6 +43,74 @@ async function sendEmail({
   }
 }
 
+// ── Brevo automation trigger ──────────────────────────────────────────────────
+
+export type NurtureInput = {
+  email: string;
+  firstName?: string | null;
+  auditScore?: number;
+  auditTopIssue?: string;
+  auditCompletedDate: string; // "YYYY-MM-DD"
+};
+
+/**
+ * 1. Upserts the Brevo contact with audit attributes so the automation
+ *    templates can personalise using {{ contact.audit_score }} etc.
+ * 2. Fires the `audit_completed` event to start the POST_AUDIT_NURTURE_V1
+ *    automation workflow in Brevo.
+ */
+export async function triggerBrevoNurture(input: NurtureInput): Promise<void> {
+  const apiKey = process.env.BREVO_API_KEY;
+  if (!apiKey) throw new Error("BREVO_API_KEY env var is missing");
+
+  const headers = {
+    accept: "application/json",
+    "api-key": apiKey,
+    "content-type": "application/json",
+  };
+
+  // Step 1 — upsert the contact with custom attributes
+  const contactRes = await fetch("https://api.brevo.com/v3/contacts", {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      email: input.email,
+      updateEnabled: true,
+      attributes: {
+        ...(input.firstName ? { FIRSTNAME: input.firstName } : {}),
+        ...(input.auditScore !== undefined ? { audit_score: input.auditScore } : {}),
+        ...(input.auditTopIssue ? { audit_top_issue: input.auditTopIssue } : {}),
+        audit_completed_date: input.auditCompletedDate,
+      },
+    }),
+  });
+
+  if (!contactRes.ok) {
+    const text = await contactRes.text().catch(() => "");
+    throw new Error(`Brevo contact upsert failed (${contactRes.status}): ${text}`);
+  }
+
+  // Step 2 — fire the automation trigger event
+  const eventRes = await fetch("https://api.brevo.com/v3/events", {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      event_name: "audit_completed",
+      event_date: new Date().toISOString(),
+      identifiers: { email: input.email },
+      event_properties: {
+        audit_score: input.auditScore,
+        audit_top_issue: input.auditTopIssue,
+      },
+    }),
+  });
+
+  if (!eventRes.ok) {
+    const text = await eventRes.text().catch(() => "");
+    throw new Error(`Brevo event trigger failed (${eventRes.status}): ${text}`);
+  }
+}
+
 // ── Notification email to Tim ─────────────────────────────────────────────────
 
 export type NotifyLeadInput = {
