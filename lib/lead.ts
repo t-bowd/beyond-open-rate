@@ -70,15 +70,22 @@ export async function captureLead(
 
   // Await emails — Vercel kills un-awaited promises when the function returns
   try {
-    await Promise.all([
-      sendLeadNotification(lead),
-      sendLeadConfirmation({
-        email: lead.email,
-        name: lead.name,
-        source: lead.source,
-        auditCompleted: lead.source === "tool:email-audit",
-      }),
-    ]);
+    const emailJobs: Promise<void>[] = [sendLeadNotification(lead)];
+
+    // Confirmation email only for non-audit sources (contact form, etc).
+    // Audit completions get the nurture sequence instead — email 1 serves as the confirmation.
+    if (lead.source !== "tool:email-audit") {
+      emailJobs.push(
+        sendLeadConfirmation({
+          email: lead.email,
+          name: lead.name,
+          source: lead.source,
+          auditCompleted: false,
+        }),
+      );
+    }
+
+    await Promise.all(emailJobs);
   } catch (err) {
     console.error("[email] send failed", err);
   }
