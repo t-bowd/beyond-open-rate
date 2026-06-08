@@ -2,7 +2,7 @@
   "topics": [
     {
       "id": "001",
-      "status": "queued",
+      "status": "in_review",
       "tier": "unaware",
       "topic": "You paid to acquire that customer. Then you emailed them once.",
       "seed_claim": "Most brands spend $20–50 per customer in paid ads and then send one welcome email. That's not a retention strategy — it's abandonment dressed up as marketing.",
