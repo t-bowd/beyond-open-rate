@@ -12,7 +12,7 @@
     },
     {
       "id": "002",
-      "status": "queued",
+      "status": "in_review",
       "tier": "problem_aware",
       "topic": "Why most welcome flows stop too early",
       "seed_claim": "Three emails isn't a welcome series. It's an introduction. The decision to buy — or not — usually happens after email five or six, when most brands have already gone quiet.",
