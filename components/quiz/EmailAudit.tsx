@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   questions,
   scoreAnswers,
@@ -28,7 +27,6 @@ export default function EmailAudit() {
   const [hp, setHp] = useState(""); // honeypot
   const [result, setResult] = useState<ScoreResult | null>(null);
   const [leadId, setLeadId] = useState<string | null>(null);
-  const router = useRouter();
 
   const q = questions[step];
   const total = questions.length;
@@ -133,7 +131,8 @@ export default function EmailAudit() {
       fetch(`/api/lead/${leadId}`, { method: "PATCH" }).catch(() => {});
     }
     track("audit_full_requested", { tier: result?.tier });
-    router.push("/thank-you");
+    // TODO: replace with real Calendly URL when available
+    window.open("https://calendly.com/beyondopenrate", "_blank");
   }
 
   return (
