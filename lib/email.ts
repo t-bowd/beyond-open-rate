@@ -97,7 +97,7 @@ export async function triggerBrevoNurture(input: NurtureInput): Promise<void> {
     body: JSON.stringify({
       event_name: "audit_completed",
       event_date: new Date().toISOString(),
-      identifiers: { email: input.email },
+      identifiers: { email_id: input.email },
       event_properties: {
         audit_score: input.auditScore,
         audit_top_issue: input.auditTopIssue,
