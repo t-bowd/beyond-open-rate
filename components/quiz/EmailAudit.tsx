@@ -341,11 +341,11 @@ export default function EmailAudit() {
 
           <div className="quiz-cta">
             <p>
-              Want us to run this audit properly — flows, deliverability, and
-              segmentation reviewed by hand?
+              Find out what closing these gaps is actually worth. Book a free
+              30-minute call — we&apos;ll put a dollar value on every one.
             </p>
             <button className="btn btn-primary btn-lg" onClick={requestAudit}>
-              Request a full audit
+              Book a free 30-min call →
             </button>
           </div>
         </div>
