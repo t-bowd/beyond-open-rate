@@ -341,8 +341,8 @@ export default function EmailAudit() {
 
           <div className="quiz-cta">
             <p>
-              Find out what closing these gaps is actually worth. Book a free
-              30-minute call — we&apos;ll put a dollar value on every one.
+              Want to know what these gaps are actually costing you?
+              Book a free 30-minute call. No pitch, just the specifics.
             </p>
             <button className="btn btn-primary btn-lg" onClick={requestAudit}>
               Book a free 30-min call →
