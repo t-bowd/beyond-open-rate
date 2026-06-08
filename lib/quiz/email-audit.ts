@@ -243,11 +243,11 @@ export function scoreAnswers(answers: Answers): ScoreResult {
 
   const tierBlurb = {
     foundations:
-      "Your email program is leaving real money on the table. The good news: the first few moves are the biggest wins.",
+      "Urgent: Your email strategy is killing your revenue. Unlock powerful results with small changes.",
     improving:
-      "You've got the basics working. The next quarter is about turning a decent program into a revenue line.",
+      "You're leaving money on the table. Dial up results and reduce revenue leaks.",
     advanced:
-      "You're running a serious program. The lift from here is in testing, segmentation depth, and reporting discipline.",
+      "You're serious about email. Unlock more revenue and scale up results with tested strategies in segmentation depth and reporting discipline.",
   }[tier];
 
   const recommendations = buildRecommendations(answers, tier);
