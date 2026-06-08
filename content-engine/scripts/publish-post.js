@@ -21,7 +21,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
-const BUFFER_API = "https://api.bufferapp.com/1/updates/create.json";
+const BUFFER_API = "https://api.buffer.com";
 
 // ── Find the merged draft file ────────────────────────────────────────────────
 
@@ -129,28 +129,47 @@ console.log(`Schedule time: ${scheduleTime}`);
 
 // ── Schedule LinkedIn post via Buffer ─────────────────────────────────────────
 
-async function bufferSchedule(profileId, text, scheduledAt) {
-  const params = new URLSearchParams({
-    "profile_ids[]": profileId,
-    text,
-    scheduled_at: scheduledAt,
-    shorten: "false",
-    access_token: process.env.BUFFER_ACCESS_TOKEN,
-  });
+async function bufferSchedule(channelId, text, scheduledAt) {
+  const mutation = `
+    mutation CreatePost {
+      createPost(input: {
+        text: ${JSON.stringify(text)},
+        channelId: ${JSON.stringify(channelId)},
+        schedulingType: automatic,
+        mode: customScheduled,
+        dueAt: ${JSON.stringify(new Date(scheduledAt).toISOString())}
+      }) {
+        ... on PostActionSuccess {
+          post { id text dueAt }
+        }
+        ... on MutationError {
+          message
+        }
+      }
+    }
+  `;
 
   const res = await fetch(BUFFER_API, {
     method: "POST",
-    headers: { "content-type": "application/x-www-form-urlencoded" },
-    body: params.toString(),
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${process.env.BUFFER_ACCESS_TOKEN}`,
+    },
+    body: JSON.stringify({ query: mutation }),
   });
 
   const data = await res.json();
 
-  if (!res.ok || !data.success) {
-    throw new Error(`Buffer API error: ${JSON.stringify(data)}`);
+  if (!res.ok) {
+    throw new Error(`Buffer API error (${res.status}): ${JSON.stringify(data)}`);
   }
 
-  return data;
+  const result = data?.data?.createPost;
+  if (result?.__typename === "MutationError" || result?.message) {
+    throw new Error(`Buffer mutation error: ${result.message}`);
+  }
+
+  return result;
 }
 
 // LinkedIn
