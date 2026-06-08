@@ -132,7 +132,7 @@ export default function EmailAudit() {
     }
     track("audit_full_requested", { tier: result?.tier });
     // TODO: replace with real Calendly URL when available
-    window.open("https://calendly.com/beyondopenrate", "_blank");
+    window.open("https://calendly.com/beyondopenrate/30min", "_blank");
   }
 
   return (
