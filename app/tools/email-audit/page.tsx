@@ -50,11 +50,14 @@ export default function EmailAuditPage() {
       <section className="hero" data-screen-label="Email audit">
         <div className="wrap hero-inner">
           <Reveal as="h1">
-            Where does your email program <span className="accent">actually</span> stand?
+            Revenue Killing Email Marketing <span className="accent">Secrets Exposed</span>
           </Reveal>
           <Reveal as="p" className="hero-sub">
-            Ten questions, a score against best practice, and a tailored set
-            of next moves emailed straight to you.
+            What marketing agencies won&apos;t tell you&hellip;and it&apos;s leaving money on the table.
+          </Reveal>
+          <Reveal as="p" className="hero-sub">
+            What you don&apos;t know about email marketing that&apos;s killing your revenue.
+            Unlock instant improvement recommendations with this free audit &mdash; just answer 10 quick questions.
           </Reveal>
         </div>
       </section>

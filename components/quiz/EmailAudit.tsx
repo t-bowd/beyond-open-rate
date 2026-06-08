@@ -144,17 +144,17 @@ export default function EmailAudit() {
 
       {phase === "intro" && (
         <div className="quiz-card">
-          <p className="quiz-meta">EMAIL PROGRAM AUDIT</p>
           <h2>Email program audit</h2>
           <p>
-            Ten quick questions on your current email setup. We&apos;ll score where you
-            are and email you a personalised set of next moves — based on what
-            we&apos;ve seen across dozens of programs.
+            Find your revenue killers in minutes with our free audit, PLUS get 5 instant recommendations to improve your email marketing results.
           </p>
           <ul className="quiz-bullets">
-            <li>No fluff — just the gaps and what to do first</li>
-            <li>Tailored to your industry, platform, and list size</li>
-            <li>Specific to your setup, not generic advice</li>
+            <li>How to make money while you sleep — emails that work even when you&apos;re not</li>
+            <li>How to deliver hot messages to your hot audience</li>
+            <li>Sending to your whole list works, right? Wrong!</li>
+            <li>The truth about landing in the inbox</li>
+            <li>Have you been doing authentication wrong? Or at all?!</li>
+            <li>Have you been tracking metrics wrong? (And it really does matter)</li>
           </ul>
           <button className="btn btn-primary btn-lg" onClick={start}>
             Start the audit →
