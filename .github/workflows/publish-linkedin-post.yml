@@ -6,11 +6,17 @@ on:
     branches: [main]
     paths:
       - "content-engine/posts/drafts/**"
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to publish (use for re-runs after a failure)"
+        required: true
+        type: string
 
 jobs:
   publish:
-    # Only run if the PR was actually merged (not just closed)
-    if: github.event.pull_request.merged == true
+    # On PR close: only run if actually merged. On manual dispatch: always run.
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
     permissions:
@@ -36,5 +42,5 @@ jobs:
           BUFFER_FACEBOOK_PAGE_ID: ${{ secrets.BUFFER_FACEBOOK_PAGE_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_NUMBER: ${{ github.event_name == 'workflow_dispatch' && inputs.pr_number || github.event.pull_request.number }}
         run: node content-engine/scripts/publish-post.js
