@@ -5,5 +5,12 @@
     "published_at": "2026-06-08T05:10:40.374Z",
     "schedule_time": "2026-06-09T08:00:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "002",
+    "file": "2026-06-08-why-most-welcome-flows-stop-too-early.mdx",
+    "published_at": "2026-06-09T00:59:58.345Z",
+    "schedule_time": "2026-06-11T08:00:00.000+10:00",
+    "variant": "B"
   }
 ]
