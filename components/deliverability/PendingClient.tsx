@@ -8,9 +8,10 @@ type Props = {
   id: string;
   inboundAddress: string;
   initialStatus: string;
+  supabaseUrl: string;
 };
 
-export default function PendingClient({ id, inboundAddress, initialStatus }: Props) {
+export default function PendingClient({ id, inboundAddress, initialStatus, supabaseUrl }: Props) {
   const router = useRouter();
   const [copied, setCopied] = useState(false);
   const [status, setStatus] = useState(initialStatus);
@@ -23,7 +24,7 @@ export default function PendingClient({ id, inboundAddress, initialStatus }: Pro
     }
 
     // Subscribe to realtime updates on this audit row
-    const channel = supabaseClient()
+    const channel = supabaseClient(supabaseUrl)
       .channel(`audit-${id}`)
       .on(
         "postgres_changes",
@@ -44,7 +45,7 @@ export default function PendingClient({ id, inboundAddress, initialStatus }: Pro
       .subscribe();
 
     return () => {
-      supabaseClient().removeChannel(channel);
+      supabaseClient(supabaseUrl).removeChannel(channel);
     };
   }, [id, status, router]);
 

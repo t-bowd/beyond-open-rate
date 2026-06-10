@@ -33,6 +33,7 @@ export default async function PendingPage({ params }: Props) {
           id={audit.id}
           inboundAddress={audit.inbound_address}
           initialStatus={audit.status}
+          supabaseUrl={process.env.SUPABASE_URL!}
         />
 
         <div className="da-pending-faq">
