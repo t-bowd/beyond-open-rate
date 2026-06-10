@@ -26,7 +26,7 @@ export default async function SuccessPage({ params, searchParams }: Props) {
   if (audit.tier !== "premium" && sessionId) {
     try {
       const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-        apiVersion: "2025-05-28.basil",
+        apiVersion: "2026-05-27.dahlia",
       });
       const session = await stripe.checkout.sessions.retrieve(sessionId);
 
