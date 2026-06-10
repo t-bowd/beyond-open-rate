@@ -335,6 +335,13 @@ export default function EmailAudit() {
               <li key={r.title}>
                 <h4>{r.title}</h4>
                 <p>{r.body}</p>
+                {r.list && (
+                  <ol>
+                    {r.list.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ol>
+                )}
               </li>
             ))}
           </ul>

@@ -197,6 +197,7 @@ export type Tier = "foundations" | "improving" | "advanced";
 export type Recommendation = {
   title: string;
   body: string;
+  list?: string[];
 };
 
 export type ScoreResult = {
@@ -261,62 +262,67 @@ function buildRecommendations(answers: Answers, tier: Tier): Recommendation[] {
 
   if (!flows.includes("welcome")) {
     recs.push({
-      title: "Build a welcome series",
-      body: "A 3–5 email welcome flow is the single highest-ROI thing most programs are missing. It earns revenue from new subscribers while they're still hot.",
+      title: "Get them while they're hot: Build a welcome series",
+      body: "A 3–5 email welcome flow is the single highest ROI thing most programs are missing. It earns revenue from new subscribers while they're still hot.",
     });
   }
-  if (!flows.includes("abandoned_cart") && (answers.industry === "ecommerce")) {
+  if (!flows.includes("abandoned_cart") && answers.industry === "ecommerce") {
     recs.push({
-      title: "Turn on abandoned cart",
-      body: "For e-commerce, abandoned cart typically accounts for 10–20% of email revenue on its own. If it's off, that's the next thing to ship.",
+      title: "How to close revenue leaks: Turn on abandoned cart",
+      body: "For e-commerce, abandoned cart typically accounts for 10–20% of email revenue on its own. If it's off, you're basically throwing money away.",
     });
   }
   if (!flows.includes("post_purchase")) {
     recs.push({
-      title: "Add a post-purchase flow",
-      body: "Post-purchase emails drive repeat orders, reduce support tickets, and quietly improve LTV. Cheap to set up, high compounding value.",
+      title: "How to generate repeat sales with no extra effort: Add a post-purchase flow",
+      body: "Post-purchase emails drive repeat orders, reduce support tickets and work in the background to improve LTV. Serious compounding value with little effort and low costs.",
     });
   }
   if (answers.auth === "none" || answers.auth === "unknown") {
     recs.push({
-      title: "Set up SPF, DKIM, and DMARC",
-      body: "Without authentication, your emails increasingly get binned by Gmail and Apple. This is a one-time setup with permanent deliverability upside.",
+      title: "What you should never do: Send without authentication",
+      body: "If your emails don't make it to the inbox, then your efforts (and revenue) go down the drain. Without authentication, your emails increasingly get binned by Gmail and Apple. This is a one-time setup with permanent deliverability upside.",
     });
   } else if (answers.auth === "some") {
     recs.push({
-      title: "Finish your email authentication",
-      body: "Partial setup leaves you exposed to spoofing and deliverability hits. Get all three records in place and move DMARC to enforcing.",
+      title: "You've been doing authentication wrong (and it really does matter)",
+      body: "If your emails don't make it to the inbox, your efforts go down the drain. Finish your email authentication. Partial setup leaves you exposed to spoofing and deliverability hits. Get all 3 records in place and move DMARC to enforcing.",
     });
   }
   if (answers.segmentation === "never") {
     recs.push({
-      title: "Stop sending to your whole list",
-      body: "Even simple engagement-based segmentation (last 30/60/90 days) lifts revenue per recipient and protects your sender reputation.",
+      title: "You send to the whole list, right? Wrong!",
+      body: "Even simple engagement-based segmentation (last 30/60/90 days) lifts revenue share per recipient and protects your sender reputation. It's a win-win.",
     });
   }
   if (answers.revenue_share === "unknown") {
     recs.push({
-      title: "Measure email's share of revenue",
-      body: "If you don't know what email contributes, you can't defend the budget. Wire up revenue-per-recipient and a monthly contribution-to-total report.",
+      title: "How to eliminate performance uncertainty",
+      body: "If you don't know what email contributes to your revenue, you can't defend performance. Wire up revenue-per-recipient and monthly contribution-to-total reports, to measure email's share of revenue.",
     });
   }
   if (answers.cadence === "sporadic" || answers.cadence === "never") {
     recs.push({
-      title: "Commit to a campaign cadence",
-      body: "A predictable monthly calendar — even just two well-segmented sends — outperforms reactive 'whenever' sending. List warmth compounds.",
+      title: "Say goodbye to reactive campaign blasts",
+      body: "Commit to a campaign cadence — a predictable monthly calendar. Even just two well-segmented sends outperforms reactive 'whenever' sends. List warmth compounds and you stay on the front foot.",
     });
   }
 
   if (recs.length === 0) {
     if (tier === "advanced") {
       recs.push({
-        title: "Push into testing + reporting depth",
-        body: "Subject line and content tests at flow level, send-time optimisation, and a monthly cohort view of repeat-purchase rate by acquisition source.",
+        title: "3 ways to squeeze more out of your emails",
+        body: "Push into testing and reporting depth.",
+        list: [
+          "Subject line and content tests at flow level",
+          "Send-time optimisation tests",
+          "A monthly cohort view of repeat-purchase rate by acquisition source",
+        ],
       });
     } else {
       recs.push({
-        title: "Tighten reporting",
-        body: "Make sure your monthly view leads with RPR, contribution-to-revenue, and flow-level performance — not opens.",
+        title: "How to eliminate vanity metrics",
+        body: "Tighten your reporting. Make sure your monthly view leads with RPR, contribution-to-revenue, and flow-level performance. Not opens.",
       });
     }
   }
