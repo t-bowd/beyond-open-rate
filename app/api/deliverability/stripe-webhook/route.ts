@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { unlockPremium } from "@/lib/deliverability/db";
 
-export const config = { api: { bodyParser: false } };
-
 /**
  * Stripe webhook — listens for checkout.session.completed.
  * Unlocks premium tier and triggers PDF generation + Brevo notification.
