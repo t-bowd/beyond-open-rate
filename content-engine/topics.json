@@ -22,7 +22,7 @@
     },
     {
       "id": "003",
-      "status": "queued",
+      "status": "in_review",
       "tier": "gathering_info",
       "topic": "What we actually look at in an email audit",
       "seed_claim": "Most audits check open rates. Ours looks at where the revenue is leaking — flows that exist but don't convert, authentication gaps quietly killing deliverability, segmentation too broad to be useful.",
