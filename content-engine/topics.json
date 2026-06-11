@@ -32,7 +32,7 @@
     },
     {
       "id": "004",
-      "status": "queued",
+      "status": "in_review",
       "tier": "unaware",
       "topic": "The silence between a customer's first and second purchase",
       "seed_claim": "The average gap between first and second purchase is 47 days. Most brands fill that silence with nothing. A competitor's retargeting ad fills it instead.",
