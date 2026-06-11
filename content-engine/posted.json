@@ -12,5 +12,12 @@
     "published_at": "2026-06-09T00:59:58.345Z",
     "schedule_time": "2026-06-11T08:00:00.000+10:00",
     "variant": "B"
+  },
+  {
+    "id": "003",
+    "file": "2026-06-10-what-we-actually-look-at-in-an-email-audit.mdx",
+    "published_at": "2026-06-11T00:05:57.954Z",
+    "schedule_time": "2026-06-12T08:00:00.000+10:00",
+    "variant": "A"
   }
 ]
