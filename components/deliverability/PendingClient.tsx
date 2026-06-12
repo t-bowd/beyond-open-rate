@@ -50,10 +50,35 @@ export default function PendingClient({ id, inboundAddress, initialStatus, supab
   }, [id, status, router]);
 
   function copyAddress() {
-    navigator.clipboard.writeText(inboundAddress).then(() => {
+    const done = () => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    });
+    };
+
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(inboundAddress).then(done).catch(() => {
+        fallbackCopy();
+      });
+    } else {
+      fallbackCopy();
+    }
+
+    function fallbackCopy() {
+      const el = document.createElement("textarea");
+      el.value = inboundAddress;
+      el.style.position = "fixed";
+      el.style.opacity = "0";
+      document.body.appendChild(el);
+      el.focus();
+      el.select();
+      try {
+        document.execCommand("copy");
+        done();
+      } catch {
+        // ignore — nothing more we can do
+      }
+      document.body.removeChild(el);
+    }
   }
 
   const isProcessing = status === "processing";
