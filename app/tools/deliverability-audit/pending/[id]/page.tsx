@@ -21,8 +21,7 @@ export default async function PendingPage({ params }: Props) {
     <section className="section">
       <div className="wrap" style={{ maxWidth: 680 }}>
         <div className="da-pending-header">
-          <p className="eyebrow">Your audit is ready</p>
-          <h1>Send your email to this address</h1>
+          <h1>Send your email to us</h1>
           <p className="da-pending-sub">
             Open your email platform, grab one of your real campaign emails,
             and send it to the address below. Your report appears here automatically.

@@ -1176,7 +1176,14 @@ a { color: inherit; text-decoration: none; }
 .da-pending-faq summary {
   font-weight: 600; font-size: 15px; list-style: none;
   font-family: var(--font-display);
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
 }
+.da-pending-faq summary::after {
+  content: "↓"; font-size: 14px; color: var(--ink-soft); flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.da-pending-faq details[open] summary::after { transform: rotate(180deg); }
+.da-pending-faq summary::-webkit-details-marker { display: none; }
 .da-pending-faq p { margin: 10px 0 0; font-size: 14px; color: var(--ink-soft); }
 
 /* ── Report page ─────────────────────────────────────────── */
