@@ -19,5 +19,12 @@
     "published_at": "2026-06-11T00:05:57.954Z",
     "schedule_time": "2026-06-12T08:00:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "004",
+    "file": "2026-06-11-the-silence-between-a-customers-first-and-second-p.mdx",
+    "published_at": "2026-06-12T06:47:39.688Z",
+    "schedule_time": "2026-06-13T08:00:00.000+10:00",
+    "variant": "A"
   }
 ]
