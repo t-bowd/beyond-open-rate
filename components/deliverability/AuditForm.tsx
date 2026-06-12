@@ -65,7 +65,7 @@ export default function AuditForm() {
       {error && <p className="da-form-error">{error}</p>}
 
       <button type="submit" className="btn btn-primary btn-lg" disabled={loading}>
-        {loading ? "Setting up your audit…" : "Get my inbound address →"}
+        {loading ? "Setting up your audit…" : "Run my audit →"}
       </button>
 
       <p className="da-form-note">

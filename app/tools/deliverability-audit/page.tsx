@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import AuditForm from "@/components/deliverability/AuditForm";
+import TierSelector from "@/components/deliverability/TierSelector";
 import { site } from "@/lib/site";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 
@@ -16,9 +17,6 @@ export default function DeliverabilityAuditPage() {
     <>
       <section className="hero" data-screen-label="Deliverability audit">
         <div className="wrap hero-inner">
-          <Reveal as="p" className="eyebrow">
-            Free tool
-          </Reveal>
           <Reveal as="h1">
             Is your email actually{" "}
             <span className="accent">reaching the inbox?</span>
@@ -26,95 +24,97 @@ export default function DeliverabilityAuditPage() {
           <Reveal as="p" className="hero-sub">
             Send us one of your real campaign emails. We run 13 checks across
             your authentication setup, blacklist status, sending infrastructure,
-            and content signals — then score your deliverability and show you
+            and content signals — then score your deliverability and tell you
             exactly what&apos;s failing.
           </Reveal>
         </div>
       </section>
 
-      <section className="section">
+      {/* Tier selector */}
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap" style={{ maxWidth: 680 }}>
-          <div className="da-how-it-works">
-            <div className="da-hiw-step">
-              <span className="da-hiw-num">1</span>
-              <p>Enter your name and email — we generate a unique inbound address for you</p>
-            </div>
-            <div className="da-hiw-step">
-              <span className="da-hiw-num">2</span>
-              <p>Send one of your real campaign emails to that address from your ESP</p>
-            </div>
-            <div className="da-hiw-step">
-              <span className="da-hiw-num">3</span>
-              <p>Your scored report appears automatically — no waiting, no account</p>
-            </div>
-          </div>
-
-          <AuditForm />
+          <Reveal as="h2" className="da-section-label">What you get</Reveal>
+          <TierSelector />
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="section da-hiw-section">
+        <div className="wrap" style={{ maxWidth: 680 }}>
+          <Reveal as="h2" className="da-section-label">How it works</Reveal>
+          <div className="da-hiw-steps">
+            <div className="da-hiw-step-v2">
+              <div className="da-hiw-icon">✉</div>
+              <div className="da-hiw-connector" aria-hidden="true" />
+              <div className="da-hiw-body">
+                <strong>Enter your details</strong>
+                <p>We generate a unique inbound address just for you. It stays active for 30 days.</p>
+              </div>
+            </div>
+            <div className="da-hiw-step-v2">
+              <div className="da-hiw-icon">⟶</div>
+              <div className="da-hiw-connector" aria-hidden="true" />
+              <div className="da-hiw-body">
+                <strong>Forward a real campaign email</strong>
+                <p>Send any email from your ESP to the address we give you — exactly as you'd send to a subscriber.</p>
+              </div>
+            </div>
+            <div className="da-hiw-step-v2">
+              <div className="da-hiw-icon">◎</div>
+              <div className="da-hiw-body">
+                <strong>Get your score instantly</strong>
+                <p>Your report appears automatically. No waiting, no account, no spam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What we check */}
       <section className="section da-checks-preview">
         <div className="wrap" style={{ maxWidth: 680 }}>
-          <h2>What we check</h2>
+          <Reveal as="h2" className="da-section-label">What we check</Reveal>
           <div className="da-check-categories">
-            <div>
+            <div className="da-check-cat">
+              <span className="da-check-cat-icon">🔐</span>
               <h3>Authentication</h3>
               <ul>
-                <li>SPF record — pass / fail / softfail</li>
-                <li>DKIM signature — pass / fail + signing domain</li>
-                <li>DMARC policy — none / quarantine / reject + alignment</li>
+                <li>SPF — pass / fail / softfail</li>
+                <li>DKIM — signature + signing domain</li>
+                <li>DMARC — none / quarantine / reject</li>
               </ul>
             </div>
-            <div>
+            <div className="da-check-cat">
+              <span className="da-check-cat-icon">🖥</span>
               <h3>Infrastructure</h3>
               <ul>
-                <li>Blacklist check — 50+ DNSBLs including Spamhaus, Barracuda, SORBS</li>
-                <li>Shared vs dedicated IP detection</li>
-                <li>Sending platform identification</li>
+                <li>Blacklist check (10 DNSBLs)</li>
+                <li>Shared vs dedicated IP</li>
+                <li>Sending platform identified</li>
                 <li>TLS encryption in transit</li>
                 <li>Reverse DNS (PTR) record</li>
               </ul>
             </div>
-            <div>
+            <div className="da-check-cat">
+              <span className="da-check-cat-icon">📝</span>
               <h3>Content signals</h3>
               <ul>
                 <li>Reply-to / Return-Path alignment</li>
-                <li>Subject line spam trigger scan</li>
+                <li>Subject line spam triggers</li>
                 <li>Plain text version present</li>
-                <li>List-Unsubscribe header (required by Gmail/Yahoo)</li>
-                <li>One-click unsubscribe (Gmail/Yahoo 2024 requirement)</li>
+                <li>List-Unsubscribe header</li>
+                <li>One-click unsubscribe</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Form */}
       <section className="section">
         <div className="wrap" style={{ maxWidth: 680 }}>
-          <h2>Free vs full report</h2>
-          <div className="da-tier-compare">
-            <div className="da-tier-col">
-              <p className="da-tier-label">Free</p>
-              <ul>
-                <li>Overall score (0–100) and grade</li>
-                <li>Pass / fail for each of the 13 checks</li>
-                <li>Sending platform detected</li>
-                <li>Issue count summary</li>
-              </ul>
-            </div>
-            <div className="da-tier-col da-tier-col--premium">
-              <p className="da-tier-label">Full report <span className="da-tier-price">$9</span></p>
-              <ul>
-                <li>Everything in free</li>
-                <li>Plain-English explanation of each issue</li>
-                <li>Specific remediation steps for every failure</li>
-                <li>Revenue impact estimate based on your list size</li>
-                <li>Industry benchmarks per issue</li>
-                <li>Re-test link — same address active for 30 days</li>
-                <li>PDF report to share with your developer or agency</li>
-              </ul>
-            </div>
-          </div>
+          <Reveal as="h2" className="da-section-label">Run your audit</Reveal>
+          <AuditForm />
         </div>
       </section>
 

@@ -21,6 +21,14 @@ const tools = [
     cta: "Take the audit",
     icon: "✦",
   },
+  {
+    slug: "deliverability-audit",
+    title: "Deliverability audit",
+    description:
+      "Send us one of your real campaign emails. We run 13 checks on your authentication, blacklist status, and content signals — then score your inbox landing in seconds.",
+    cta: "Run my audit",
+    icon: "◎",
+  },
 ];
 
 export default function ToolsPage() {
