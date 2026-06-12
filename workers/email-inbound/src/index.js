@@ -9,9 +9,9 @@ export default {
    * and POSTs it to the Next.js inbound webhook.
    */
   async email(message, env, ctx) {
-    // Parse the raw email stream
-    const parser = new PostalMime();
-    const email = await parser.parse(message.raw);
+    // Convert ReadableStream to ArrayBuffer before parsing
+    const rawBuffer = await new Response(message.raw).arrayBuffer();
+    const email = await PostalMime.parse(rawBuffer);
 
     // Build a flat headers map (lowercase keys, arrays for multi-value)
     const headers = {};
