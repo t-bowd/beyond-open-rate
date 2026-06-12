@@ -11,7 +11,7 @@ export default {
   async email(message, env, ctx) {
     // Convert ReadableStream to ArrayBuffer before parsing
     const rawBuffer = await new Response(message.raw).arrayBuffer();
-    const email = await PostalMime.parse(rawBuffer);
+    const email = await new PostalMime().parse(rawBuffer);
 
     // Build a flat headers map (lowercase keys, arrays for multi-value)
     const headers = {};
