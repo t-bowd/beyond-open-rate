@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import AuditForm from "@/components/deliverability/AuditForm";
-import TierSelector from "@/components/deliverability/TierSelector";
+import AuditLanding from "@/components/deliverability/AuditLanding";
 import { site } from "@/lib/site";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 
@@ -30,14 +29,6 @@ export default function DeliverabilityAuditPage() {
         </div>
       </section>
 
-      {/* Tier selector */}
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap" style={{ maxWidth: 680 }}>
-          <Reveal as="h2" className="da-section-label">What you get</Reveal>
-          <TierSelector />
-        </div>
-      </section>
-
       {/* How it works */}
       <section className="section da-hiw-section">
         <div className="wrap" style={{ maxWidth: 680 }}>
@@ -45,7 +36,6 @@ export default function DeliverabilityAuditPage() {
           <div className="da-hiw-steps">
             <div className="da-hiw-step-v2">
               <div className="da-hiw-icon">✉</div>
-              <div className="da-hiw-connector" aria-hidden="true" />
               <div className="da-hiw-body">
                 <strong>Enter your details</strong>
                 <p>We generate a unique inbound address just for you. It stays active for 30 days.</p>
@@ -53,10 +43,9 @@ export default function DeliverabilityAuditPage() {
             </div>
             <div className="da-hiw-step-v2">
               <div className="da-hiw-icon">⟶</div>
-              <div className="da-hiw-connector" aria-hidden="true" />
               <div className="da-hiw-body">
                 <strong>Forward a real campaign email</strong>
-                <p>Send any email from your ESP to the address we give you — exactly as you'd send to a subscriber.</p>
+                <p>Send any email from your ESP to the address we give you — exactly as you&apos;d send to a subscriber.</p>
               </div>
             </div>
             <div className="da-hiw-step-v2">
@@ -110,11 +99,11 @@ export default function DeliverabilityAuditPage() {
         </div>
       </section>
 
-      {/* Form */}
+      {/* Tier selector + form */}
       <section className="section">
-        <div className="wrap" style={{ maxWidth: 680 }}>
-          <Reveal as="h2" className="da-section-label">Run your audit</Reveal>
-          <AuditForm />
+        <div className="wrap" style={{ maxWidth: 780 }}>
+          <Reveal as="h2" className="da-section-label">What you get</Reveal>
+          <AuditLanding />
         </div>
       </section>
 

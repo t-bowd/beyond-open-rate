@@ -948,33 +948,65 @@ a { color: inherit; text-decoration: none; }
 .da-hiw-steps { display: grid; gap: 0; }
 
 .da-hiw-step-v2 {
-  display: grid; grid-template-columns: 52px 24px 1fr; align-items: start; gap: 0;
+  display: grid; grid-template-columns: 64px 1fr; align-items: start;
+  padding-bottom: 36px; position: relative;
+}
+.da-hiw-step-v2:last-child { padding-bottom: 0; }
+
+/* vertical connector line between steps */
+.da-hiw-step-v2:not(:last-child)::before {
+  content: ""; position: absolute;
+  left: 31px; top: 64px; bottom: 0;
+  width: 2px; background: var(--border);
 }
 
 .da-hiw-icon {
-  width: 52px; height: 52px; border-radius: 50%;
+  width: 64px; height: 64px; border-radius: 50%;
   background: var(--bg); border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  font-size: 20px; flex-shrink: 0;
-  position: relative; z-index: 1;
+  font-size: 24px; flex-shrink: 0; position: relative; z-index: 1;
 }
 
-.da-hiw-connector {
-  width: 1px; background: var(--border); align-self: stretch;
-  margin: 52px auto 0; min-height: 32px;
-}
-.da-hiw-step-v2:last-child .da-hiw-connector { display: none; }
-
-.da-hiw-body {
-  padding: 12px 0 32px 16px;
-}
-.da-hiw-step-v2:last-child .da-hiw-body { padding-bottom: 0; }
+.da-hiw-body { padding: 16px 0 0 20px; }
 .da-hiw-body strong { display: block; font-family: var(--font-display); font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .da-hiw-body p { margin: 0; font-size: 15px; color: var(--ink-soft); line-height: 1.5; }
 
 /* Check categories — v2 */
 .da-check-cat { padding: 20px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); }
 .da-check-cat-icon { font-size: 22px; display: block; margin-bottom: 10px; }
+
+/* Tier grid — both cards always visible */
+.da-landing-flow { display: grid; gap: 40px; }
+
+.da-tier-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+@media (max-width: 560px) { .da-tier-grid { grid-template-columns: 1fr; } }
+
+.da-tier-card {
+  display: flex; flex-direction: column;
+  padding: 24px; border: 2px solid var(--border); border-radius: var(--radius);
+  background: var(--bg); transition: border-color 0.15s;
+}
+.da-tier-card--selected { border-color: var(--accent); }
+.da-tier-card--premium { background: oklch(0.98 0.01 290); }
+.da-tier-card--premium.da-tier-card--selected { border-color: var(--accent); background: oklch(0.97 0.02 290); }
+
+.da-tier-card-head { margin-bottom: 16px; }
+.da-tier-card-name { font-family: var(--font-display); font-size: 16px; font-weight: 700; display: block; margin-bottom: 4px; }
+.da-tier-card-price { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--ink); }
+.da-tier-card-price-note { font-size: 13px; font-weight: 500; color: var(--ink-soft); margin-left: 2px; }
+
+.da-tier-recommended {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  background: var(--accent); color: var(--on-accent); border-radius: 4px; padding: 2px 7px;
+}
+
+.da-tier-card-foot { margin-top: auto; padding-top: 16px; }
+.da-tier-limit { font-size: 13px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.4; }
+
+.da-tier-select-btn { width: 100%; justify-content: center; }
+.da-tier-select-btn--active { opacity: 0.75; cursor: default; }
 
 /* ── Audit form ──────────────────────────────────────────── */
 
