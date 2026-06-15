@@ -42,7 +42,7 @@
     },
     {
       "id": "005",
-      "status": "queued",
+      "status": "in_review",
       "tier": "problem_aware",
       "topic": "Deliverability is the problem nobody checks until it's too late",
       "seed_claim": "Your open rates look fine because the people who aren't receiving your emails aren't opening them. Deliverability problems are invisible in your dashboard until they're catastrophic.",
