@@ -142,5 +142,65 @@
     ],
     "notes": "Different from ecom: focus on activation, adoption, expansion, retention. Trial-to-paid flow. Onboarding sequences. Churn prevention. Concrete examples.",
     "status": "queued"
+  },
+  {
+    "id": "when-to-hire-email-automation-agency",
+    "title": "When to Hire an Email Automation Agency (And What to Look For)",
+    "keyword": "email automation agency",
+    "tags": [
+      "agencies",
+      "automation",
+      "strategy"
+    ],
+    "notes": "Target brands considering outsourcing their email marketing. Cover: signs you've outgrown DIY email (revenue plateaus, time constraints, technical complexity), what services agencies provide vs in-house, red flags when vetting agencies, cost benchmarks for Australian market, and how to prepare for onboarding. Include case study example of a brand that scaled with agency support. Link to existing Klaviyo flows guide and segmentation strategies post.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-automation-workflows-ecommerce",
+    "title": "10 Email Marketing Automation Workflows Every E-Commerce Brand Needs",
+    "keyword": "email marketing automation workflows",
+    "tags": [
+      "automation",
+      "workflows",
+      "e-commerce"
+    ],
+    "notes": "Comprehensive workflow library beyond the basics. Include: browse abandonment, price drop alerts, back-in-stock, VIP/loyalty tier triggers, birthday/anniversary, cross-sell sequences, review request automation, and seasonal reactivation. Each workflow should have trigger logic, recommended email count, and expected performance benchmarks. Link to post-purchase flows, abandoned cart strategy, and win-back campaign posts for deeper dives.",
+    "status": "queued"
+  },
+  {
+    "id": "klaviyo-email-automation-setup-guide",
+    "title": "Klaviyo Email Automation Setup: From Zero to Revenue-Generating Flows",
+    "keyword": "klaviyo email automation",
+    "tags": [
+      "klaviyo",
+      "automation",
+      "setup"
+    ],
+    "notes": "Step-by-step implementation guide for Klaviyo beginners. Cover: account structure best practices, integrating Shopify/BigCommerce, creating first three flows (welcome, abandoned cart, post-purchase), setting up segments, basic triggers and filters, and testing before going live. Include screenshots, common mistakes to avoid, and timeline expectations. Link to complete Klaviyo flows guide and segmentation strategies post.",
+    "status": "queued"
+  },
+  {
+    "id": "email-automation-software-comparison-australia",
+    "title": "Best Email Automation Software for Australian E-Commerce Brands (2024 Comparison)",
+    "keyword": "email automation software",
+    "tags": [
+      "tools",
+      "comparison",
+      "automation"
+    ],
+    "notes": "Compare top platforms for Australian market: Klaviyo, Mailchimp, Omnisend, Drip, ActiveCampaign. Evaluation criteria: Shopify integration depth, automation capabilities, pricing (AUD), deliverability, support timezone coverage, and scalability. Include decision matrix based on store size, technical resources, and budget. Position Klaviyo as the winner for serious e-commerce brands. Link to Klaviyo vs Mailchimp comparison and ROI calculation posts.",
+    "status": "queued"
+  },
+  {
+    "id": "email-automation-best-practices-conversion",
+    "title": "Email Automation Best Practices: 15 Ways to Increase Conversions",
+    "keyword": "email automation best practices",
+    "tags": [
+      "automation",
+      "conversion",
+      "best-practices"
+    ],
+    "notes": "Tactical optimization guide covering: timing and frequency rules, personalization beyond first name, dynamic content strategies, mobile optimization, subject line formulas, CTA placement, email length guidelines, A/B testing priorities, and avoiding automation fatigue. Include before/after examples from Australian e-commerce clients. Address both technical setup and copywriting tactics. Link to deliverability guide, segmentation strategies, and email list cleaning posts.",
+    "status": "queued"
   }
 ]
