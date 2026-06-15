@@ -52,7 +52,7 @@
     },
     {
       "id": "006",
-      "status": "queued",
+      "status": "in_review",
       "tier": "gathering_info",
       "topic": "Why we report on recovered revenue, not open rates",
       "seed_claim": "Open rates are a vanity metric. They measure whether someone saw your email, not whether email is working. The only number that tells you email is actually working is revenue per recipient.",
