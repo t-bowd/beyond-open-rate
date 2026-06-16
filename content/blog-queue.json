@@ -45,7 +45,7 @@
       "technical"
     ],
     "notes": "Plain-English explanation of each record and what it does. How to check if yours are set up correctly. What happens if DMARC is on monitoring vs enforcing. Common mistakes.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "abandoned-cart-email-strategy",

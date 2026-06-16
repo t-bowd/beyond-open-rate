@@ -1,0 +1,112 @@
+---
+title: "SPF, DKIM, and DMARC explained for email marketers"
+description: "Email authentication SPF DKIM DMARC records protect your sender reputation and inbox placement. Here's what each does and how to set them up correctly."
+publishedAt: "2026-06-16"
+author: "Beyond Open Rate"
+tags: ["deliverability", "authentication", "technical"]
+faq:
+  - q: "What's the difference between SPF, DKIM, and DMARC?"
+    a: "SPF lists which servers can send email for your domain. DKIM adds a digital signature proving the message wasn't tampered with. DMARC tells receiving servers what to do when SPF or DKIM fails, and sends you reports about authentication failures."
+  - q: "Can I send marketing emails without DMARC?"
+    a: "Technically yes, but Gmail and Outlook now require DMARC for bulk senders (5,000+ messages per day to Gmail addresses). Without it, your messages are far more likely to land in spam, even if you're under that threshold."
+  - q: "What's the difference between DMARC monitoring and enforcing?"
+    a: "Monitoring mode (p=none) collects reports but doesn't block failed messages. Enforcing mode (p=quarantine or p=reject) actually sends failed messages to spam or blocks them entirely. Start with monitoring, review reports for two weeks, then move to quarantine."
+---
+
+If your emails suddenly start hitting spam in 2026, there's a good chance **email authentication** is the culprit. Gmail and Outlook now require SPF, DKIM, and DMARC for any sender doing volume. Even if you're not sending 5,000 messages a day, these three DNS records are the difference between inbox and junk folder.
+
+Here's what each one does, how to check yours, and the mistakes that tank deliverability.
+
+## What SPF does (and why it exists)
+
+**SPF** (Sender Policy Framework) is a DNS record that lists which mail servers are allowed to send email on behalf of your domain. When a receiving server gets a message claiming to be from you@yourdomain.com, it checks your SPF record. If the sending IP isn't on the list, the message fails SPF.
+
+SPF exists because email was designed without authentication. Anyone can claim to send from any domain. SPF closes that loophole by publishing a whitelist.
+
+Your SPF record is a TXT record at your root domain. It looks like this:
+
+`v=spf1 include:_spf.google.com include:servers.mcsv.net ~all`
+
+That line says "trust Google Workspace servers and Mailchimp servers, soft-fail everything else." The `~all` means "mark as suspicious but don't reject outright." Using `-all` means "reject anything not listed," which is stricter but riskier if you've missed a sending service.
+
+**Common mistake:** Including too many services. SPF has a 10-DNS-lookup limit. Go over that and the whole record fails. If you're using Google Workspace, Mailchimp, HubSpot, Salesforce, and three other tools, you'll hit the cap. The fix is either consolidating tools or using an SPF flattening service.
+
+## What DKIM does (the digital signature part)
+
+**DKIM** (DomainKeys Identified Mail) adds a cryptographic signature to your email headers. Your sending server signs the message with a private key. The receiving server checks the signature using a public key published in your DNS. If the signature matches, the message hasn't been tampered with in transit.
+
+DKIM proves two things: the message came from a server that has your private key, and nobody modified the content after it was signed.
+
+Your ESP generates the DKIM key pair. You publish the public key as a DNS TXT record at a subdomain they specify. Mailchimp uses `k1._domainkey.yourdomain.com`. Google Workspace uses `google._domainkey.yourdomain.com`. The record looks like:
+
+`v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GN...`
+
+Most marketers never see the private key. Your ESP holds it and signs messages automatically.
+
+**Common mistake:** Forgetting to set up DKIM for every sending domain. If you send from hello@yourdomain.com and support@yourdomain.com, you need DKIM for yourdomain.com. If you send from newsletter@promo.yourdomain.com, you need a separate DKIM record for promo.yourdomain.com. Missing even one subdomain means those messages fail DKIM.
+
+## What DMARC does (the enforcer)
+
+**DMARC** (Domain-based Message Authentication, Reporting, and Conformance) ties SPF and DKIM together and tells receiving servers what to do when authentication fails. It also sends you daily reports showing who's sending email claiming to be from your domain.
+
+DMARC requires that either SPF or DKIM passes *and* aligns with the From address. Alignment means the domain in the SPF check or DKIM signature matches the domain in the visible From header.
+
+Your DMARC record is a TXT record at `_dmarc.yourdomain.com`. A basic version looks like:
+
+`v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com`
+
+The `p=none` is **monitoring mode**. Failed messages still get delivered, but you receive aggregate reports showing authentication results. This is where you start.
+
+After reviewing reports for two weeks and confirming legitimate mail is passing, you move to **enforcing mode**:
+
+`v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc@yourdomain.com`
+
+Now failed messages go to spam. `p=reject` blocks them entirely, but most senders use quarantine because it's less catastrophic if you misconfigured something.
+
+The `pct=100` means "apply this policy to 100% of messages." You can start with `pct=10` to test on a sample.
+
+## How to check if your records are set up correctly
+
+Use a DNS lookup tool or command line:
+
+- SPF: `nslookup -type=txt yourdomain.com`
+- DKIM: `nslookup -type=txt selector._domainkey.yourdomain.com` (replace `selector` with your ESP's selector, like `k1` or `google`)
+- DMARC: `nslookup -type=txt _dmarc.yourdomain.com`
+
+Or use [MXToolbox](https://mxtoolbox.com/SuperTool.aspx) to check all three at once. Look for green checkmarks and no syntax errors.
+
+**Better option:** Send a test email to a Gmail or Outlook address you control. View the message source (in Gmail: three dots → Show original). Look for the `Authentication-Results` header. You want to see `spf=pass`, `dkim=pass`, and `dmarc=pass`.
+
+If anything fails, the header tells you why. "SPF fail" usually means you're sending from an IP not in your SPF record. "DKIM fail" means the signature doesn't match, often because you didn't publish the public key. "DMARC fail" means SPF and DKIM both failed, or neither aligned with your From domain.
+
+If you're not sure what's misconfigured, [run the free email program audit](/tools/email-audit) — it checks authentication records and flags common issues.
+
+## What happens in monitoring vs enforcing mode
+
+**Monitoring mode** (`p=none`) is purely diagnostic. You get reports, but receiving servers ignore the policy. This is essential for the first 7–14 days after setting up DMARC. The reports show you every source sending email from your domain: your ESP, your CRM, your helpdesk software, and any third-party services using your domain.
+
+If you see failures from legitimate sources, you add them to SPF or set up DKIM for them. Once your reports show 95%+ pass rates, you move to enforcing.
+
+**Quarantine mode** (`p=quarantine`) sends failed messages to spam. Gmail and Outlook will still deliver them to the junk folder, so recipients can find them if they're looking. This is the safe middle ground.
+
+**Reject mode** (`p=reject`) blocks failed messages outright. They never reach the inbox or spam folder. This is the strongest protection against spoofing, but one misconfiguration (like forgetting to add a new sending service to SPF) means legitimate mail disappears. Most companies stay on quarantine indefinitely.
+
+## The mistakes that wreck deliverability
+
+**Mistake 1: Not aligning your From domain with your SPF/DKIM domain.** If you send from hello@yourdomain.com but your ESP uses their own domain for SPF and DKIM, DMARC fails. Your ESP needs to sign with your domain, not theirs. Most reputable platforms do this automatically if you set up a custom sending domain.
+
+**Mistake 2: Setting DMARC to reject before checking reports.** You'll block legitimate email and won't know until customers complain. Always start with `p=none`, review reports, fix failures, then move to quarantine.
+
+**Mistake 3: Publishing multiple SPF records.** DNS only allows one SPF record per domain. If you add a second, both break. If you need to include multiple services, combine them into one record with multiple `include:` statements.
+
+**Mistake 4: Ignoring subdomains.** If you send from multiple subdomains, each needs its own SPF, DKIM, and DMARC records. A DMARC record on yourdomain.com doesn't protect promo.yourdomain.com unless you explicitly publish a record there.
+
+**Mistake 5: Never reviewing DMARC reports.** The reports show you spoofing attempts, misconfigured services, and authentication failures. If you're not reading them, you're missing half the point of DMARC. Set up a dedicated email address (like dmarc@yourdomain.com) and check it weekly, or use a DMARC monitoring tool to parse the XML reports into something readable.
+
+## Why this matters more in 2026
+
+Google and Yahoo made DMARC mandatory for bulk senders in early 2024. By mid-2026, virtually every major mailbox provider enforces it. If you're sending marketing email without proper authentication, you're either landing in spam or getting blocked outright.
+
+Authentication also protects your domain from being used in phishing attacks. When someone spoofs your domain to scam your customers, it damages your sender reputation even if you didn't send the message. DMARC in reject mode stops that.
+
+If you're not sure whether your authentication is set up correctly — or if you've seen a sudden drop in inbox placement — you're likely missing one of these records or have a configuration error. It's fixable, but it requires checking DNS, testing with real mailbox providers, and monitoring reports. If you'd rather have an expert review your setup, [get in touch here](/#contact) and we'll audit your authentication stack.
