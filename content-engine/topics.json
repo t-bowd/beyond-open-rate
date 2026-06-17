@@ -62,7 +62,7 @@
     },
     {
       "id": "007",
-      "status": "queued",
+      "status": "in_review",
       "tier": "problem_aware",
       "topic": "The post-purchase sequence most brands skip",
       "seed_claim": "Brands obsess over abandoned cart. The flow that actually drives repeat purchase rate is what happens after the sale — and most brands send one order confirmation and then go silent for 47 days.",
