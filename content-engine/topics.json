@@ -72,7 +72,7 @@
     },
     {
       "id": "008",
-      "status": "queued",
+      "status": "in_review",
       "tier": "unaware",
       "topic": "Your retention strategy is a weekly newsletter. That's not retention.",
       "seed_claim": "A weekly broadcast to your whole list isn't retention. It's interruption. Retention is automated sequences that trigger based on customer behaviour — when they buy, when they browse, when they go quiet.",
