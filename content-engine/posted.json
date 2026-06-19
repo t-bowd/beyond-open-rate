@@ -47,5 +47,12 @@
     "published_at": "2026-06-18T07:18:32.325Z",
     "schedule_time": "2026-06-19T08:00:00.000+10:00",
     "variant": "B"
+  },
+  {
+    "id": "008",
+    "file": "2026-06-18-your-retention-strategy-is-a-weekly-newsletter-tha.mdx",
+    "published_at": "2026-06-19T00:27:11.335Z",
+    "schedule_time": "2026-06-22T08:00:00.000+10:00",
+    "variant": "A"
   }
 ]
