@@ -82,7 +82,7 @@
     },
     {
       "id": "009",
-      "status": "queued",
+      "status": "in_review",
       "tier": "gathering_info",
       "topic": "How we prioritise what to fix first in an email program",
       "seed_claim": "Everyone wants to start with the welcome flow because it feels like the obvious win. We start wherever the dollar value per hour of work is highest — which is usually authentication, then deliverability, then whichever flow has the biggest leak.",
