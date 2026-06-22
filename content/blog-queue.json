@@ -202,5 +202,41 @@
     ],
     "notes": "Tactical optimization guide covering: timing and frequency rules, personalization beyond first name, dynamic content strategies, mobile optimization, subject line formulas, CTA placement, email length guidelines, A/B testing priorities, and avoiding automation fatigue. Include before/after examples from Australian e-commerce clients. Address both technical setup and copywriting tactics. Link to deliverability guide, segmentation strategies, and email list cleaning posts.",
     "status": "queued"
+  },
+  {
+    "id": "choosing-email-automation-services-australia",
+    "title": "How to Choose Email Automation Services for Your E-Commerce Store (2024 Australian Guide)",
+    "keyword": "email automation services",
+    "tags": [
+      "email automation",
+      "services",
+      "australia"
+    ],
+    "notes": "Create a comprehensive buyer's guide covering types of email automation services available, pricing models, what's included in typical packages, questions to ask providers, and specific considerations for Australian e-commerce brands. Include case study examples and link to Klaviyo comparison and automation setup guides.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-automation-agency-services-explained",
+    "title": "What Does an Email Marketing Automation Agency Actually Do? (Complete Service Breakdown)",
+    "keyword": "email marketing automation agency",
+    "tags": [
+      "email marketing",
+      "automation",
+      "agency services"
+    ],
+    "notes": "Demystify agency services by breaking down specific deliverables: flow setup, list management, campaign strategy, copywriting, design, analytics reporting, and ongoing optimization. Include timeline expectations, typical engagement models, and before/after performance metrics. Link to '10 email automation workflows' and 'calculate email marketing ROI' posts.",
+    "status": "queued"
+  },
+  {
+    "id": "migrate-mailchimp-to-klaviyo-complete-guide",
+    "title": "Mailchimp to Klaviyo Migration: Complete Step-by-Step Integration Guide for Australian Stores",
+    "keyword": "mailchimp klaviyo integration",
+    "tags": [
+      "klaviyo",
+      "mailchimp",
+      "migration"
+    ],
+    "notes": "Target migration intent with practical walkthrough: data export/import process, preserving subscriber consent, recreating automations in Klaviyo, handling integrations, testing before full switch, and common pitfalls. Include timeline and checklist. Link to 'Klaviyo vs Mailchimp' comparison and 'Klaviyo email automation setup' posts.",
+    "status": "queued"
   }
 ]
