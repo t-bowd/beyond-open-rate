@@ -92,7 +92,7 @@
     },
     {
       "id": "010",
-      "status": "queued",
+      "status": "in_review",
       "tier": "ready_to_buy",
       "topic": "We have one audit slot open this month",
       "seed_claim": "We take on two or three new clients per quarter. One slot is open. If you've been sitting on the fence about getting your email properly looked at, this is the time.",
