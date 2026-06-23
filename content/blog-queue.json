@@ -69,7 +69,7 @@
       "retention"
     ],
     "notes": "The LTV case for post-purchase emails. What to send and when: order confirmation, delivery update, review request, cross-sell, replenishment. Keep it practical.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "email-segmentation-strategies",
