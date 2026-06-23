@@ -61,5 +61,12 @@
     "published_at": "2026-06-22T05:08:14.081Z",
     "schedule_time": "2026-06-23T08:00:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "010",
+    "file": "2026-06-22-we-have-one-audit-slot-open-this-month.mdx",
+    "published_at": "2026-06-23T00:32:04.520Z",
+    "schedule_time": "2026-06-24T08:00:00.000+10:00",
+    "variant": "B"
   }
 ]
