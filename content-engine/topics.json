@@ -112,7 +112,7 @@
     },
     {
       "id": "012",
-      "status": "queued",
+      "status": "in_review",
       "tier": "unaware",
       "topic": "The LTV gap between brands that do lifecycle email and those that don't",
       "seed_claim": "Brands with mature lifecycle email programs typically see 20–30% of revenue attributed to email. Brands without one see under 5%. The gap compounds — every month without it is a month of repeat purchases that didn't happen.",
