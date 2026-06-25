@@ -16,7 +16,6 @@ export type SeoPageFrontmatter = {
   location?: string;
   platform?: string;
   faq?: SeoPageFaq[];
-  updatedAt?: string;
 };
 
 export type SeoPage = SeoPageFrontmatter & {

@@ -85,6 +85,13 @@ export function faqSchema(items: { q: string; a: string }[]) {
   };
 }
 
+// Named writers on the team — used to attribute Article authorship to a
+// real Person (better for E-E-A-T) instead of just the brand Organization.
+const TEAM = {
+  Tim: { jobTitle: "Founder", url: `${site.url}/about` },
+  Tara: { jobTitle: "Email strategist" },
+} as const;
+
 export function articleSchema(args: {
   title: string;
   description: string;
@@ -93,6 +100,8 @@ export function articleSchema(args: {
   updatedAt?: string;
   author?: string;
 }) {
+  const teamMember = args.author ? TEAM[args.author as keyof typeof TEAM] : undefined;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -101,10 +110,9 @@ export function articleSchema(args: {
     url: args.url,
     datePublished: args.publishedAt,
     dateModified: args.updatedAt ?? args.publishedAt,
-    author:
-      args.author === "Tim Bowman"
-        ? { "@type": "Person", name: "Tim Bowman", jobTitle: "Founder", url: `${site.url}/about` }
-        : { "@type": "Organization", name: args.author ?? site.legalName },
+    author: teamMember
+      ? { "@type": "Person", name: args.author, ...teamMember }
+      : { "@type": "Organization", name: args.author ?? site.legalName },
     publisher: {
       "@type": "Organization",
       name: site.legalName,

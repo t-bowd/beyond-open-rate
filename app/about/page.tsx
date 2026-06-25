@@ -158,7 +158,7 @@ export default function AboutPage() {
       />
       <JsonLd
         data={personSchema({
-          name: "Tim Bowman",
+          name: "Tim",
           jobTitle: "Founder",
           url: `${site.url}/about`,
         })}
