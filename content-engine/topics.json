@@ -102,7 +102,7 @@
     },
     {
       "id": "011",
-      "status": "queued",
+      "status": "in_review",
       "tier": "problem_aware",
       "topic": "What 'burned by an agency before' usually means in practice",
       "seed_claim": "It means you paid for three months of sends, got a report full of open rate graphs, and had no idea whether email contributed to revenue. That's not bad luck — it's how most email engagements are structured.",
