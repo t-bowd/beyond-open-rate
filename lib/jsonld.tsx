@@ -12,13 +12,37 @@ export function JsonLd({ data }: { data: object }) {
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    // ProfessionalService is a LocalBusiness subtype — helps AI engines and
+    // Google answer "best email agency in Australia"-style queries by
+    // signalling a real service business with a defined service area,
+    // not just a generic publisher/organization.
+    "@type": ["Organization", "ProfessionalService"],
     name: site.legalName,
     url: site.url,
     logo: `${site.url}/icon.png`,
+    image: `${site.url}/icon.png`,
     description: site.description,
     foundingDate: site.founded,
+    areaServed: { "@type": "Country", name: "Australia" },
+    priceRange: "$$",
     sameAs: site.sameAs,
+  };
+}
+
+export function personSchema(args: {
+  name: string;
+  jobTitle: string;
+  url?: string;
+  sameAs?: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: args.name,
+    jobTitle: args.jobTitle,
+    worksFor: { "@type": "Organization", name: site.legalName, url: site.url },
+    ...(args.url ? { url: args.url } : {}),
+    ...(args.sameAs?.length ? { sameAs: args.sameAs } : {}),
   };
 }
 
@@ -77,10 +101,10 @@ export function articleSchema(args: {
     url: args.url,
     datePublished: args.publishedAt,
     dateModified: args.updatedAt ?? args.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: args.author ?? site.legalName,
-    },
+    author:
+      args.author === "Tim Bowman"
+        ? { "@type": "Person", name: "Tim Bowman", jobTitle: "Founder", url: `${site.url}/about` }
+        : { "@type": "Organization", name: args.author ?? site.legalName },
     publisher: {
       "@type": "Organization",
       name: site.legalName,

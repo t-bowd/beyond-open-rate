@@ -55,7 +55,7 @@ FRONTMATTER SCHEMA (all fields required unless marked optional)
 title: "<post title>"
 description: "<one sentence, 140–160 chars, includes the primary keyword>"
 publishedAt: "<YYYY-MM-DD>"
-author: "Beyond Open Rate"
+author: "Tim Bowman"
 tags: [<array of 2–4 tag strings>]
 faq:
   - q: "<question someone would actually type into Google>"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
-import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
+import { JsonLd, breadcrumbSchema, personSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -155,6 +155,13 @@ export default function AboutPage() {
           { name: "Home", url: site.url },
           { name: "About", url: `${site.url}/about` },
         ])}
+      />
+      <JsonLd
+        data={personSchema({
+          name: "Tim Bowman",
+          jobTitle: "Founder",
+          url: `${site.url}/about`,
+        })}
       />
     </>
   );

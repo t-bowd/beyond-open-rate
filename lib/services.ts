@@ -12,6 +12,7 @@ export type ServiceFrontmatter = {
   heroSub: string;
   description: string;
   faq?: ServiceFaq[];
+  updatedAt?: string;
 };
 
 export type ServicePage = ServiceFrontmatter & {
