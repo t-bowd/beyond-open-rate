@@ -3,7 +3,7 @@ const FROM_LEADS = { name: "Beyond Open Rate", email: "leads@ops.beyondopenrate.
 const FROM_HELLO = { name: "Beyond Open Rate", email: "hello@again.beyondopenrate.com.au" };
 const REPLY_TO = { name: "Tim Bowman", email: "tim@timbowman.com.au" };
 const NOTIFY_TO = "tim@timbowman.com.au";
-const SITE = "https://beyondopenrate.com.au";
+const SITE = "https://www.beyondopenrate.com.au";
 
 // ── Brevo send helper ─────────────────────────────────────────────────────────
 

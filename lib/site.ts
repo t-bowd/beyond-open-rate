@@ -1,7 +1,7 @@
 export const site = {
   name: "Beyond Open Rate",
   shortName: "BOR",
-  url: "https://beyondopenrate.com.au",
+  url: "https://www.beyondopenrate.com.au",
   description:
     "Email marketing agency for Australian e-commerce brands. Lifecycle automation, Klaviyo management, campaigns, and deliverability — built to turn your list into predictable revenue.",
   locale: "en_AU",
