@@ -93,4 +93,5 @@ jobs:
           - [ ] Description is under 160 characters
 
           Merge to publish — Vercel deploys automatically." \
-            --assignee "${{ github.repository_owner }}"
+            --assignee "${{ github.repository_owner }}" \
+            --assignee "tara-rose"

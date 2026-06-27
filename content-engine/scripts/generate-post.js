@@ -270,7 +270,7 @@ ${variantB.copy}
 - [ ] Set \`schedule_time\` to desired publish time (default: tomorrow 8am AEST)
 - [ ] Toggle \`facebook: true\` and add \`facebook_variant\` copy if repurposing
 - [ ] Merge to publish`,
-  assignees: [owner],
+  assignees: [owner, "tara-rose"],
 });
 
 console.log(`PR opened: ${pr.html_url}`);
