@@ -270,6 +270,14 @@ ${variantB.copy}
 - [ ] Set \`schedule_time\` to desired publish time (default: tomorrow 8am AEST)
 - [ ] Toggle \`facebook: true\` and add \`facebook_variant\` copy if repurposing
 - [ ] Merge to publish`,
+});
+
+// pulls.create has no `assignees` field — it's silently ignored there.
+// Assignees live on the underlying issue, so they need a separate call.
+await octokit.issues.addAssignees({
+  owner,
+  repo,
+  issue_number: pr.number,
   assignees: [owner, "tara-rose"],
 });
 
