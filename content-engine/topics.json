@@ -122,7 +122,7 @@
     },
     {
       "id": "013",
-      "status": "queued",
+      "status": "in_review",
       "tier": "gathering_info",
       "topic": "Why being platform-independent matters when you're choosing email help",
       "seed_claim": "The right email platform depends on your business — your order volume, your list size, your tech stack. An agency that recommends the same platform to every client is probably recommending the one they get a margin on.",
