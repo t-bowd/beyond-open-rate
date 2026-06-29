@@ -134,7 +134,7 @@
     },
     {
       "id": "013",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "Why being platform-independent matters when you're choosing email help",

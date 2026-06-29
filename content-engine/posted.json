@@ -82,5 +82,12 @@
     "published_at": "2026-06-25T23:51:15.796Z",
     "schedule_time": "2026-06-29T08:00:00.000+10:00",
     "variant": "B"
+  },
+  {
+    "id": "013",
+    "file": "2026-06-28-why-being-platform-independent-matters-when-youre.mdx",
+    "published_at": "2026-06-29T11:00:49.509Z",
+    "schedule_time": "2026-06-30T10:00:00.000+10:00",
+    "variant": "A"
   }
 ]
