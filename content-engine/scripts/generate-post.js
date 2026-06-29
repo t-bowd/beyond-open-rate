@@ -48,6 +48,7 @@ console.log(`Generating post for topic ${topic.id}: "${topic.topic}"`);
 // ── Build user prompt ─────────────────────────────────────────────────────────
 
 const userPrompt = briefTemplate
+  .replace("[pillar]", topic.pillar || "educational")
   .replace("[tier]", topic.tier)
   .replace("[topic]", topic.topic)
   .replace("[seed_claim]", topic.seed_claim)

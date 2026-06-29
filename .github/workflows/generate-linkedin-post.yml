@@ -2,8 +2,8 @@ name: Generate LinkedIn Post
 
 on:
   schedule:
-    # Mon/Wed/Thu/Fri at 8:00am AEST (UTC+10 = 22:00 UTC previous day)
-    - cron: "0 22 * * 0,1,3,4"
+    # Mon/Thu at 8:00am AEST (UTC+10 = 22:00 UTC previous day) — 2 posts/week per strategy
+    - cron: "0 22 * * 0,3"
   workflow_dispatch:
 
 jobs:

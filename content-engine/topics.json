@@ -3,6 +3,7 @@
     {
       "id": "001",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "You paid to acquire that customer. Then you emailed them once.",
       "seed_claim": "Most brands spend $20–50 per customer in paid ads and then send one welcome email. That's not a retention strategy — it's abandonment dressed up as marketing.",
@@ -13,6 +14,7 @@
     {
       "id": "002",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Why most welcome flows stop too early",
       "seed_claim": "Three emails isn't a welcome series. It's an introduction. The decision to buy — or not — usually happens after email five or six, when most brands have already gone quiet.",
@@ -23,6 +25,7 @@
     {
       "id": "003",
       "status": "in_review",
+      "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "What we actually look at in an email audit",
       "seed_claim": "Most audits check open rates. Ours looks at where the revenue is leaking — flows that exist but don't convert, authentication gaps quietly killing deliverability, segmentation too broad to be useful.",
@@ -33,6 +36,7 @@
     {
       "id": "004",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "The silence between a customer's first and second purchase",
       "seed_claim": "The average gap between first and second purchase is 47 days. Most brands fill that silence with nothing. A competitor's retargeting ad fills it instead.",
@@ -43,6 +47,7 @@
     {
       "id": "005",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Deliverability is the problem nobody checks until it's too late",
       "seed_claim": "Your open rates look fine because the people who aren't receiving your emails aren't opening them. Deliverability problems are invisible in your dashboard until they're catastrophic.",
@@ -53,6 +58,7 @@
     {
       "id": "006",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "gathering_info",
       "topic": "Why we report on recovered revenue, not open rates",
       "seed_claim": "Open rates are a vanity metric. They measure whether someone saw your email, not whether email is working. The only number that tells you email is actually working is revenue per recipient.",
@@ -63,6 +69,7 @@
     {
       "id": "007",
       "status": "in_review",
+      "pillar": "promotional",
       "tier": "problem_aware",
       "topic": "The post-purchase sequence most brands skip",
       "seed_claim": "Brands obsess over abandoned cart. The flow that actually drives repeat purchase rate is what happens after the sale — and most brands send one order confirmation and then go silent for 47 days.",
@@ -73,6 +80,7 @@
     {
       "id": "008",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "Your retention strategy is a weekly newsletter. That's not retention.",
       "seed_claim": "A weekly broadcast to your whole list isn't retention. It's interruption. Retention is automated sequences that trigger based on customer behaviour — when they buy, when they browse, when they go quiet.",
@@ -83,6 +91,7 @@
     {
       "id": "009",
       "status": "in_review",
+      "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "How we prioritise what to fix first in an email program",
       "seed_claim": "Everyone wants to start with the welcome flow because it feels like the obvious win. We start wherever the dollar value per hour of work is highest — which is usually authentication, then deliverability, then whichever flow has the biggest leak.",
@@ -93,6 +102,7 @@
     {
       "id": "010",
       "status": "in_review",
+      "pillar": "promotional",
       "tier": "ready_to_buy",
       "topic": "We have one audit slot open this month",
       "seed_claim": "We take on two or three new clients per quarter. One slot is open. If you've been sitting on the fence about getting your email properly looked at, this is the time.",
@@ -103,6 +113,7 @@
     {
       "id": "011",
       "status": "in_review",
+      "pillar": "promotional",
       "tier": "problem_aware",
       "topic": "What 'burned by an agency before' usually means in practice",
       "seed_claim": "It means you paid for three months of sends, got a report full of open rate graphs, and had no idea whether email contributed to revenue. That's not bad luck — it's how most email engagements are structured.",
@@ -113,6 +124,7 @@
     {
       "id": "012",
       "status": "in_review",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "The LTV gap between brands that do lifecycle email and those that don't",
       "seed_claim": "Brands with mature lifecycle email programs typically see 20–30% of revenue attributed to email. Brands without one see under 5%. The gap compounds — every month without it is a month of repeat purchases that didn't happen.",
@@ -123,6 +135,7 @@
     {
       "id": "013",
       "status": "queued",
+      "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "Why being platform-independent matters when you're choosing email help",
       "seed_claim": "The right email platform depends on your business — your order volume, your list size, your tech stack. An agency that recommends the same platform to every client is probably recommending the one they get a margin on.",
@@ -133,6 +146,7 @@
     {
       "id": "014",
       "status": "queued",
+      "pillar": "educational",
       "tier": "problem_aware",
       "topic": "The win-back flow: most brands either don't have one or have it set wrong",
       "seed_claim": "A win-back flow set to trigger after 90 days of inactivity is almost certainly too late. By 90 days, that customer has bought from someone else. The trigger should be 30–45 days, with a genuine reason to come back — not a blanket discount.",
@@ -143,6 +157,7 @@
     {
       "id": "015",
       "status": "queued",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "Ads get you customers. Email keeps them. Most brands only invest in one.",
       "seed_claim": "Ad spend buys acquisition. Email drives retention. The brands with the best unit economics treat both as serious investments — not the ones spending $50k/month on ads and nothing on keeping the customers those ads bought.",
@@ -153,6 +168,7 @@
     {
       "id": "016",
       "status": "queued",
+      "pillar": "educational",
       "tier": "problem_aware",
       "topic": "How to know if your flows are actually converting or just sending",
       "seed_claim": "If your email reporting shows opens and clicks but not revenue generated, you're measuring activity, not outcomes. Every flow should have a revenue number attached to it — recovered cart value, repeat purchase lift, LTV movement.",
@@ -163,6 +179,7 @@
     {
       "id": "017",
       "status": "queued",
+      "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "The difference between a campaign calendar and a lifecycle strategy",
       "seed_claim": "A campaign calendar is a list of things to send. A lifecycle strategy is a system that responds to customer behaviour — automatically, at the right time, with the right message. Most brands have the first. Almost none have the second.",
@@ -173,6 +190,7 @@
     {
       "id": "018",
       "status": "queued",
+      "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Why flows built two years ago are probably underperforming now",
       "seed_claim": "Your product range has changed. Your customer has changed. Email clients have changed how they handle tracking data. A flow built two years ago for a different product mix, before privacy changes rewrote open rate data, is almost certainly underperforming — and your dashboard isn't showing you that.",
@@ -183,6 +201,7 @@
     {
       "id": "019",
       "status": "queued",
+      "pillar": "educational",
       "tier": "unaware",
       "topic": "$5M revenue, $0 invested in keeping those customers",
       "seed_claim": "It's more common than you'd think. Brands at $2–5M are often so focused on acquisition that retention is an afterthought. The math doesn't hold long-term — CAC keeps rising, repeat purchase rate stays flat, margin gets squeezed.",
@@ -193,6 +212,7 @@
     {
       "id": "020",
       "status": "queued",
+      "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "The free audit: what it checks and what to do with your results",
       "seed_claim": "The audit checks the ten things that actually affect email revenue — not opens, not list size. Authentication, deliverability, flow coverage, segmentation, send cadence. You get a score out of 75 and a prioritised list of what to fix first.",

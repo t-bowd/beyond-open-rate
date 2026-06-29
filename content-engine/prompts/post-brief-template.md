@@ -1,5 +1,6 @@
 Write a LinkedIn post using this brief:
 
+CONTENT PILLAR: [pillar] — follow that pillar's CTA style guidance from the system prompt
 MARKET TIER: [tier] — remind yourself what this temperature means before writing
 TOPIC: [topic]
 SEED CLAIM: [seed_claim]
