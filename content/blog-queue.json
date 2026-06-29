@@ -238,5 +238,18 @@
     ],
     "notes": "Target migration intent with practical walkthrough: data export/import process, preserving subscriber consent, recreating automations in Klaviyo, handling integrations, testing before full switch, and common pitfalls. Include timeline and checklist. Link to 'Klaviyo vs Mailchimp' comparison and 'Klaviyo email automation setup' posts.",
     "status": "queued"
+  },
+  {
+    "id": "klaviyo-agency-australia-certification-partner-comparison",
+    "title": "The Complete Guide to Klaviyo Agencies in Australia: Certifications, Partners & What to Look For",
+    "keyword": "klaviyo agency australia",
+    "tags": [
+      "klaviyo",
+      "agency",
+      "australia",
+      "certification"
+    ],
+    "notes": "Target position 41.3 ranking with focused content on Australian Klaviyo partner landscape. Explain Klaviyo certification tiers (Bronze/Silver/Gold/Platinum), what they mean, directory of certified Australian partners, questions to ask before hiring, pricing benchmarks for Australian market, and how to verify credentials. Include comparison table of service offerings by partner tier.",
+    "status": "queued"
   }
 ]
