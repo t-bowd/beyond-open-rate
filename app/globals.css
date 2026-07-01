@@ -248,6 +248,11 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   padding-block: clamp(48px, 7vw, 92px);
   background: #0b0b12;
+  /* slight diagonal cut on the bottom edge so it doesn't hand off to the
+     next section as one hard horizontal line — paired with .hero-fade,
+     which softens the seam further so the video visually dissolves into
+     the page rather than ending abruptly. */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
 }
 .hero-bg {
   position: absolute;
@@ -267,6 +272,14 @@ a { color: inherit; text-decoration: none; }
     oklch(0.12 0.02 260 / 0.58) 55%,
     oklch(0.12 0.02 260 / 0.8) 100%
   );
+}
+.hero-fade {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 1;
+  height: clamp(60px, 10vw, 140px);
+  background: linear-gradient(180deg, transparent 0%, var(--bg) 100%);
+  pointer-events: none;
 }
 .hero-video .hero-inner { position: relative; z-index: 2; }
 .hero-video h1 { color: #fff; }
@@ -330,9 +343,19 @@ a { color: inherit; text-decoration: none; }
   font-size: 14.5px;
   color: var(--ink-faint);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 8px;
+}
+/* icon sits inline with the note text — give it the same line-height
+   as the paragraph so it centers on the first line instead of the
+   whole (possibly wrapped) block */
+.audit-note > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  height: 1.6em;
+  line-height: 1;
+  flex-shrink: 0;
 }
 .audit-note b { color: var(--ink-soft); font-weight: 600; }
 .form-error { color: var(--accent-deep); font-weight: 600; }

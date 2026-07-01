@@ -34,6 +34,7 @@ export default function Hero() {
         <source src="/hero-bg.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay" aria-hidden="true" />
+      <div className="hero-fade" aria-hidden="true" />
 
       <div className="wrap hero-inner">
         <Reveal as="h1">
