@@ -21,7 +21,20 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero" data-screen-label="Hero">
+    <section className="hero hero-video" data-screen-label="Hero">
+      <video
+        className="hero-bg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+      >
+        <source src="/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="hero-overlay" aria-hidden="true" />
+
       <div className="wrap hero-inner">
         <Reveal as="h1">
           Grow your business with <span className="accent">email</span>.
