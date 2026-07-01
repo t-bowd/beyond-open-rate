@@ -32,6 +32,10 @@
   --gutter: clamp(20px, 4vw, 48px);
   --radius: 14px;
   --radius-sm: 10px;
+
+  /* height of the diagonal-cut wedge used to transition between the
+     video hero / colour bands and the sections next to them */
+  --wedge-h: clamp(90px, 11vw, 200px);
 }
 
 * { box-sizing: border-box; }
@@ -262,7 +266,7 @@ a { color: inherit; text-decoration: none; }
   left: 0;
   right: 0;
   bottom: 0;
-  height: 64px;
+  height: var(--wedge-h);
   background: var(--surface);
   clip-path: polygon(0 0, 100% 100%, 0 100%);
   z-index: 1;
@@ -443,9 +447,31 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Results (dark band) ---------- */
 .results {
+  position: relative;
+  overflow: hidden;
   background: var(--accent);
   color: var(--on-accent);
+  /* extra clearance so headings/stats never sit inside the diagonal
+     wedge corners, where on-accent (near-white) text would land on
+     the wedge's near-white fill and disappear */
+  padding-block: calc(var(--wedge-h) + clamp(24px, 4vw, 48px));
 }
+/* diagonal wedges, in the colour of the section above/below, so the
+   purple band reads as an angled strip rather than a hard rectangle —
+   same cut direction (rises left-to-right) as the hero's transition */
+.results::before,
+.results::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--wedge-h);
+  background: var(--bg);
+  z-index: 1;
+}
+.results::before { top: 0; clip-path: polygon(0 0, 100% 0, 0 100%); }
+.results::after { bottom: 0; clip-path: polygon(0 0, 100% 100%, 0 100%); }
+.results .wrap { position: relative; z-index: 2; }
 .results .section-head h2 { color: var(--on-accent); font-family: var(--font-body); }
 .results .section-head p { color: color-mix(in oklab, var(--on-accent) 86%, var(--accent)); }
 .stat-grid {
