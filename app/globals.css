@@ -232,6 +232,9 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(40px, 7.2vw, 84px);
   margin-bottom: 22px;
 }
+.hero-video h1 {
+  font-size: clamp(46px, 8.4vw, 100px);
+}
 .hero-sub {
   font-size: clamp(18px, 2vw, 21px);
   color: var(--ink-soft);
@@ -248,11 +251,21 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   padding-block: clamp(48px, 7vw, 92px);
   background: #0b0b12;
-  /* slight diagonal cut on the bottom edge so it doesn't hand off to the
-     next section as one hard horizontal line — paired with .hero-fade,
-     which softens the seam further so the video visually dissolves into
-     the page rather than ending abruptly. */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+/* diagonal wedge in the next section's colour, overlaid on the bottom
+   of the hero — rises higher on the left, tapers to nothing on the
+   right, so the hand-off to .logos reads as an angled cut rather than
+   a hard horizontal line, with no gap of bare page background. */
+.hero-video::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 64px;
+  background: var(--surface);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 1;
 }
 .hero-bg {
   position: absolute;
@@ -273,28 +286,15 @@ a { color: inherit; text-decoration: none; }
     oklch(0.12 0.02 260 / 0.8) 100%
   );
 }
-.hero-fade {
-  position: absolute;
-  inset: auto 0 0 0;
-  z-index: 1;
-  height: clamp(60px, 10vw, 140px);
-  background: linear-gradient(180deg, transparent 0%, var(--bg) 100%);
-  pointer-events: none;
-}
 .hero-video .hero-inner { position: relative; z-index: 2; }
 .hero-video h1 { color: #fff; }
+.hero-video .accent { color: #fff; }
 .hero-video .hero-sub { color: color-mix(in oklab, #fff 78%, transparent); }
 .hero-video .audit-note { color: color-mix(in oklab, #fff 70%, transparent); }
 .hero-video .audit-note b { color: #fff; }
 .hero-video .audit-form {
   background: color-mix(in oklab, #fff 96%, transparent);
   box-shadow: 0 24px 60px -24px oklch(0.1 0.02 260 / 0.6);
-}
-
-@media (max-width: 640px) {
-  .hero-bg { display: none; }
-  .hero-video { background: linear-gradient(180deg, #14141f 0%, #0b0b12 100%); }
-  .hero-overlay { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
