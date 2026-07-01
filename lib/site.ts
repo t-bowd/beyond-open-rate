@@ -12,7 +12,14 @@ export const site = {
   sameAs: [
     "https://www.linkedin.com/company/beyond-openrate/",
     "https://share.google/CDL1xsjQbqoCbIO2M",
+    "https://www.facebook.com/people/Beyond-Open-Rate/61590700829635/",
+    "https://www.instagram.com/beyondopenrate",
   ] as string[],
+  social: {
+    linkedin: "https://www.linkedin.com/company/beyond-openrate/",
+    facebook: "https://www.facebook.com/people/Beyond-Open-Rate/61590700829635/",
+    instagram: "https://www.instagram.com/beyondopenrate",
+  },
 } as const;
 
 export type SiteConfig = typeof site;
