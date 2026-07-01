@@ -9,7 +9,10 @@ export const site = {
   twitter: "@beyondopenrate",
   legalName: "Beyond Open Rate",
   founded: "2026",
-  sameAs: [] as string[],
+  sameAs: [
+    "https://www.linkedin.com/company/beyond-openrate/",
+    "https://share.google/CDL1xsjQbqoCbIO2M",
+  ] as string[],
 } as const;
 
 export type SiteConfig = typeof site;
