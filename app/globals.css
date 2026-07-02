@@ -182,6 +182,10 @@ a { color: inherit; text-decoration: none; }
   width: 44px; height: 44px;
   border: none; background: none; cursor: pointer;
   padding: 0;
+  /* buttons don't inherit `color` from ancestors by default (unlike
+     <a>) — without this the currentColor burger silently fell back
+     to the browser's default button text colour instead of white */
+  color: inherit;
 }
 /* staggered lengths (short/long/medium), not three equal bars */
 .nav-toggle-icon,
@@ -260,6 +264,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(44px, 7.6vw, 100px);
   line-height: 0.98;
 }
+.hero-shout { text-transform: uppercase; letter-spacing: -0.01em; }
 .hero-video .hero-inner { max-width: 980px; }
 .hero-sub {
   font-size: clamp(18px, 2vw, 21px);
@@ -298,9 +303,9 @@ a { color: inherit; text-decoration: none; }
   z-index: 1;
   background: linear-gradient(
     180deg,
-    oklch(0.12 0.02 260 / 0.72) 0%,
-    oklch(0.12 0.02 260 / 0.58) 55%,
-    oklch(0.12 0.02 260 / 0.8) 100%
+    oklch(0.12 0.02 260 / 0.8) 0%,
+    oklch(0.12 0.02 260 / 0.68) 55%,
+    oklch(0.12 0.02 260 / 0.86) 100%
   );
 }
 .hero-video .hero-inner { position: relative; z-index: 2; }
@@ -309,6 +314,7 @@ a { color: inherit; text-decoration: none; }
 .hero-video .hero-sub { color: color-mix(in oklab, #fff 78%, transparent); }
 .hero-video .audit-note { color: color-mix(in oklab, #fff 70%, transparent); }
 .hero-video .audit-note b { color: #fff; }
+.hero-video .audit-note-split { color: color-mix(in oklab, #fff 70%, transparent); }
 .hero-video .audit-form {
   background: color-mix(in oklab, #fff 96%, transparent);
   box-shadow: 0 24px 60px -24px oklch(0.1 0.02 260 / 0.6);
@@ -376,6 +382,24 @@ a { color: inherit; text-decoration: none; }
 }
 .audit-note b { color: var(--ink-soft); font-weight: 600; }
 .form-error { color: var(--accent-deep); font-weight: 600; }
+
+/* two-column note under the hero form: witty aside on the left,
+   star-rating social proof on the right */
+.audit-note-split {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 14.5px;
+  color: var(--ink-faint);
+}
+.audit-note-witty, .audit-note-stars { margin: 0; }
+.audit-note-stars { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.audit-note-stars span { color: #f4b400; letter-spacing: 1px; }
+@media (max-width: 560px) {
+  .audit-note-split { flex-direction: column; gap: 6px; text-align: center; }
+}
 
 /* ---------- Logo strip ---------- */
 .logos {

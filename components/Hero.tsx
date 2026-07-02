@@ -36,12 +36,13 @@ export default function Hero() {
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="wrap hero-inner">
-        <Reveal as="h1">
-          Grow your business with <span className="accent">email</span>.
+        <Reveal as="h1" className="hero-shout">
+          Emails that print money.
         </Reveal>
         <Reveal as="p" className="hero-sub">
-          Email marketing, lifecycle and automation — built to turn your list
-          into a predictable, compounding revenue channel.
+          Your list is just sitting there. We turn it into flows and
+          campaigns that earn while you sleep — no jargon, no guesswork,
+          just revenue you can point to.
         </Reveal>
 
         <Reveal as="form" className="audit-form" id="hero-audit" onSubmit={submit} noValidate>
@@ -65,25 +66,24 @@ export default function Hero() {
             }}
           />
           <button type="submit" className="btn btn-primary">
-            Book a chat
+            Let&apos;s go
           </button>
         </Reveal>
 
-        <Reveal as="p" className="audit-note">
-          {note === "error" ? (
+        {note === "error" ? (
+          <Reveal as="p" className="audit-note">
             <span className="form-error">
               ↑ Enter your email and we&apos;ll be in touch.
             </span>
-          ) : (
-            <>
-              <span>✦</span>
-              <span>
-                Free, no-obligation chat.{" "}
-                <b>We&apos;ll respond within one business day.</b>
-              </span>
-            </>
-          )}
-        </Reveal>
+          </Reveal>
+        ) : (
+          <Reveal as="div" className="audit-note-split">
+            <p className="audit-note-witty">No awkward sales pitch. Just a real reply.</p>
+            <p className="audit-note-stars">
+              <span aria-hidden="true">★★★★★</span> 5.0 stars from [REVIEW COUNT TBD]
+            </p>
+          </Reveal>
+        )}
       </div>
     </section>
   );
