@@ -77,6 +77,12 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="wrap footer-platforms">
+        {["Klaviyo", "HubSpot", "Customer.io", "Mailchimp", "ActiveCampaign"].map((p) => (
+          <span className="footer-platform-badge" key={p}>{p}</span>
+        ))}
+      </div>
+
       <div className="wrap footer-bottom">
         <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate</p>
       </div>

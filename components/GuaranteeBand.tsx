@@ -10,7 +10,7 @@ export default function GuaranteeBand() {
     <section className="section guarantee-band" data-screen-label="Guarantee">
       <div className="wrap guarantee-inner">
         <Reveal as="p" className="eyebrow">[GUARANTEE COPY TBD]</Reveal>
-        <Reveal as="h2">[Placeholder — a bold, specific promise goes here]</Reveal>
+        <Reveal as="h2" className="display-huge">[Placeholder — a bold, specific promise goes here]</Reveal>
         <Reveal as="p" className="guarantee-sub">
           [One sentence backing the promise with a real number or condition —
           not written yet, layout only.]
