@@ -82,7 +82,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12.5px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -408,9 +408,9 @@ a { color: inherit; text-decoration: none; }
   max-width: 580px;
   margin-inline: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 28px;
   font-size: 14.5px;
   color: var(--ink-faint);
 }
@@ -497,7 +497,7 @@ a { color: inherit; text-decoration: none; }
   box-shadow: 0 26px 50px -34px oklch(0.4 0.05 60 / 0.55);
 }
 .svc-num {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 13px;
   color: var(--accent-deep);
   letter-spacing: 0.06em;
@@ -510,52 +510,6 @@ a { color: inherit; text-decoration: none; }
 .svc-card-linked:hover { border-color: var(--accent); transform: translateY(-3px); }
 .svc-card-title { font-size: 21px; margin: 16px 0 10px; }
 
-/* ---------- Results (dark band) ---------- */
-.results {
-  position: relative;
-  overflow: hidden;
-  background: var(--accent);
-  color: var(--on-accent);
-  /* extra clearance so headings/stats never sit inside the diagonal
-     wedge corners, where on-accent (near-white) text would land on
-     the wedge's near-white fill and disappear */
-  padding-block: calc(var(--wedge-h) + clamp(24px, 4vw, 48px));
-}
-/* diagonal wedges, in the colour of the section above/below, so the
-   purple band reads as an angled strip rather than a hard rectangle —
-   same cut direction (rises left-to-right) as the hero's transition */
-.results::before,
-.results::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: calc(var(--wedge-h) + 1px);
-  background: var(--bg);
-  z-index: 1;
-}
-.results::before { top: -1px; clip-path: polygon(0 0, 100% 0, 0 100%); }
-.results::after { bottom: -1px; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
-.results .wrap { position: relative; z-index: 2; }
-.results .section-head h2 { color: var(--on-accent); font-family: var(--font-body); }
-.results .section-head p { color: color-mix(in oklab, var(--on-accent) 86%, var(--accent)); }
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  border-top: 1px solid color-mix(in oklab, var(--on-accent) 28%, transparent);
-  padding-top: 48px;
-}
-.stat-num {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(48px, 7vw, 76px);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  color: var(--on-accent);
-}
-.stat-label { margin-top: 14px; font-size: 16px; color: color-mix(in oklab, var(--on-accent) 84%, var(--accent)); max-width: 260px; }
-.stat-source { margin-top: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.05em; opacity: .55; }
 
 /* ---------- Guarantee band (placeholder module) ---------- */
 .guarantee-band { background: var(--ink-bg); color: var(--on-ink); }
@@ -579,7 +533,12 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Split offer ---------- */
 .split-offer { background: var(--ink-bg); color: var(--on-ink); }
-.split-offer-label { text-align: center; margin-bottom: 32px; color: color-mix(in oklab, var(--on-ink) 55%, transparent); }
+.split-offer-label {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 16px;
+  color: color-mix(in oklab, var(--on-ink) 55%, transparent);
+}
 .split-offer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -587,7 +546,6 @@ a { color: inherit; text-decoration: none; }
 }
 .split-offer-card {
   background: color-mix(in oklab, white 6%, transparent);
-  border: 1px solid color-mix(in oklab, white 12%, transparent);
   border-radius: var(--radius);
   padding: clamp(28px, 3.5vw, 40px);
   text-align: center;
@@ -625,7 +583,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 28px;
 }
 .final-cta-badge {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12.5px;
   letter-spacing: 0.03em;
   padding: 7px 14px;
@@ -685,7 +643,7 @@ a { color: inherit; text-decoration: none; }
 .press-logos { background: var(--surface); padding: clamp(32px, 5vw, 48px) 0; }
 .press-logos-label {
   text-align: center;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -722,7 +680,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   place-items: center;
   color: var(--ink-faint);
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 13px;
 }
 
@@ -750,7 +708,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%; height: auto; border-radius: var(--radius); display: block;
 }
 .about-eyebrow {
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em;
+  font-family: var(--font-body); font-size: 12px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--accent-deep);
   margin: 0 0 12px;
 }
@@ -865,7 +823,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 2px solid var(--line);
 }
 .step .num {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 13px;
   color: var(--accent-deep);
   letter-spacing: 0.1em;
@@ -894,7 +852,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent-tint);
   border: 1px solid color-mix(in oklab, var(--accent) 35%, var(--line));
   display: grid; place-items: center;
-  font-family: var(--font-mono); font-weight: 700; font-size: 15px; color: var(--accent-deep);
+  font-family: var(--font-body); font-weight: 700; font-size: 15px; color: var(--accent-deep);
 }
 .quote-cite .who { font-weight: 600; font-size: 16px; }
 .quote-cite .role { font-size: 14.5px; color: var(--ink-faint); }
@@ -964,7 +922,7 @@ a { color: inherit; text-decoration: none; }
 .contact-form { display: grid; gap: 14px; }
 .field { display: grid; gap: 7px; }
 .field label {
-  font-size: 13px; font-family: var(--font-mono); letter-spacing: .04em;
+  font-size: 13px; font-family: var(--font-body); letter-spacing: .04em;
   text-transform: uppercase; color: var(--on-ink-soft);
 }
 .field input, .field textarea {
@@ -1056,7 +1014,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid color-mix(in oklab, var(--on-accent) 15%, transparent);
 }
 .footer-platform-badge {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 12px;
   letter-spacing: 0.03em;
   padding: 6px 12px;
@@ -1068,7 +1026,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid color-mix(in oklab, var(--on-accent) 15%, transparent);
   padding-block: 16px;
 }
-.footer-copy { font-size: 13px; color: color-mix(in oklab, var(--on-accent) 50%, transparent); font-family: var(--font-mono); margin: 0; }
+.footer-copy { font-size: 13px; color: color-mix(in oklab, var(--on-accent) 50%, transparent); font-family: var(--font-body); margin: 0; }
 
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
@@ -1076,12 +1034,12 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .svc-grid, .stat-grid, .steps { grid-template-columns: 1fr 1fr; }
+  .svc-grid, .steps { grid-template-columns: 1fr 1fr; }
   .cta-card { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   body { font-size: 17px; }
-  .svc-grid, .stat-grid, .steps { grid-template-columns: 1fr; }
+  .svc-grid, .steps { grid-template-columns: 1fr; }
   .audit-form { flex-wrap: wrap; border-radius: 18px; }
   .audit-form input { padding: 8px 6px; }
   .audit-form .btn { width: 100%; }
@@ -1104,7 +1062,7 @@ a { color: inherit; text-decoration: none; }
 .post-link:hover h2 { color: var(--accent-deep); }
 .post-link p:last-of-type { color: var(--ink-soft); margin: 0; }
 
-.post-meta { font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; }
+.post-meta { font-family: var(--font-body); font-size: 13px; color: var(--ink-faint); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; }
 .post-meta a { color: inherit; text-decoration: none; }
 .post-meta a:hover { color: var(--accent-deep); }
 .post-tags { color: var(--ink-faint); }
@@ -1150,7 +1108,7 @@ a { color: inherit; text-decoration: none; }
   gap: 18px;
 }
 .quiz-meta {
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em;
+  font-family: var(--font-body); font-size: 12px; letter-spacing: 0.1em;
   color: var(--ink-faint); text-transform: uppercase; margin: 0;
 }
 .quiz-card h2, .quiz-prompt {
