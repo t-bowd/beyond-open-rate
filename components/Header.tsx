@@ -33,9 +33,18 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  // Header goes solid-white + dark content whenever the menu is open,
+  // regardless of scroll position — same as the scrolled state.
+  const light = scrolled || open;
+
   return (
     <>
-      <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+      <header className={`site-header ${light ? "scrolled" : ""}`}>
         <div className="wrap nav">
           <a href="tel:1300444444" className="nav-phone">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -45,7 +54,7 @@ export default function Header() {
           </a>
 
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
-            <Image src={scrolled ? "/logo.svg" : "/logo-reverse.svg"} alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
+            <Image src={light ? "/logo.svg" : "/logo-reverse.svg"} alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
             <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
 
@@ -59,10 +68,6 @@ export default function Header() {
           </button>
         </div>
       </header>
-
-      {open && (
-        <div className="nav-overlay" onClick={() => setOpen(false)} aria-hidden="true" />
-      )}
 
       <nav
         className={`nav-drawer ${open ? "open" : ""}`}
