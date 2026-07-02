@@ -48,14 +48,27 @@ function Stars() {
 }
 
 export default function Testimonials() {
+  const [featured, ...rest] = REVIEWS;
+
   return (
-    <section className="section" data-screen-label="Testimonials">
+    <section className="section testimonial-wall" data-screen-label="Testimonials">
       <div className="wrap">
-        <Reveal className="section-head">
-          <h2>What clients say.</h2>
+        <Reveal as="h2" className="display-huge testimonial-heading">What clients say.</Reveal>
+
+        <Reveal className="testimonial-featured">
+          <Stars />
+          <p className="testimonial-featured-text">&ldquo;{featured.text}&rdquo;</p>
+          <div className="review-cite">
+            <span className="review-avatar" aria-hidden="true">{featured.initial}</span>
+            <div>
+              <div className="review-name">{featured.name}</div>
+              <div className="review-context">{featured.context}</div>
+            </div>
+          </div>
         </Reveal>
+
         <div className="review-grid">
-          {REVIEWS.map((r) => (
+          {rest.map((r) => (
             <Reveal key={r.name} className="review-card">
               <Stars />
               <p className="review-text">&ldquo;{r.text}&rdquo;</p>

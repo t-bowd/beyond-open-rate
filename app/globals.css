@@ -585,7 +585,26 @@ a { color: inherit; text-decoration: none; }
 }
 .final-cta .display-huge { color: var(--on-ink); max-width: 780px; margin-inline: auto 24px; }
 
-/* ---------- Reviews ---------- */
+/* ---------- Testimonial wall (light — kept light so it doesn't sit
+   next to another dark band; bold featured-quote treatment is the
+   King Kong-inspired part, not the colour) ---------- */
+.testimonial-wall { background: var(--bg); }
+.testimonial-heading { text-align: center; }
+.testimonial-featured {
+  max-width: 720px;
+  margin: 0 auto clamp(40px, 6vw, 64px);
+  text-align: center;
+}
+.testimonial-featured .review-stars { justify-content: center; }
+.testimonial-featured-text {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 18px 0 22px;
+}
+.testimonial-featured .review-cite { justify-content: center; }
+
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -611,6 +630,51 @@ a { color: inherit; text-decoration: none; }
 }
 .review-name { font-size: 14px; font-weight: 600; color: var(--ink); }
 .review-context { font-size: 13px; color: var(--ink-soft); margin-top: 1px; }
+
+/* ---------- Press logos (placeholder module) ---------- */
+.press-logos { background: var(--surface); padding: clamp(32px, 5vw, 48px) 0; }
+.press-logos-label {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 24px;
+}
+.press-logos-row { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(24px, 4vw, 48px); }
+.press-logo-slot {
+  width: 120px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in oklab, var(--ink) 8%, transparent);
+}
+
+/* ---------- Case studies wall (placeholder module) ---------- */
+/* Kept light — this is an empty shell, and light avoids stacking
+   another dark band next to Positioning/GuaranteeBand. */
+.case-studies { background: var(--bg); padding: clamp(64px, 9vw, 120px) 0 0; }
+.case-studies .case-studies-label { text-align: center; }
+.case-studies-heading { text-align: center; max-width: 780px; margin-inline: auto 24px; }
+.case-studies-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: clamp(40px, 6vw, 64px) var(--gutter) clamp(64px, 9vw, 120px);
+}
+.case-studies-card {
+  flex: none;
+  width: 260px;
+  height: 320px;
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
 
 /* ---------- About page ---------- */
 .about-founder-section { background: var(--surface); border-block: 1px solid var(--line); }

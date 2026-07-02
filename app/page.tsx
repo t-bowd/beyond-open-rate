@@ -1,10 +1,9 @@
 import Hero from "@/components/Hero";
 import NarrativeLetter from "@/components/NarrativeLetter";
 import SplitOffer from "@/components/SplitOffer";
-import Logos from "@/components/Logos";
-import Services from "@/components/Services";
+import PressLogos from "@/components/PressLogos";
 import Results from "@/components/Results";
-import Process from "@/components/Process";
+import CaseStudiesWall from "@/components/CaseStudiesWall";
 import Positioning from "@/components/Positioning";
 import Testimonial from "@/components/Testimonial";
 import GuaranteeBand from "@/components/GuaranteeBand";
@@ -20,10 +19,9 @@ export default function Page() {
       <Hero />
       <NarrativeLetter />
       <SplitOffer />
-      <Logos />
-      <Services />
+      <PressLogos />
       <Results />
-      <Process />
+      <CaseStudiesWall />
       <Positioning />
       <Testimonial />
       <GuaranteeBand />
