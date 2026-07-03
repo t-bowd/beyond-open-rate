@@ -16,7 +16,7 @@ export default function Faq() {
     <section className="section" id="faq" data-screen-label="FAQ">
       <div className="wrap">
         <Reveal className="section-head">
-          <h2 className="display-huge">Your questions answered</h2>
+          <h2 className="display-huge faq-heading">Your questions answered</h2>
         </Reveal>
         <Reveal className="faq-list">
           {visible.map((item, i) => {
