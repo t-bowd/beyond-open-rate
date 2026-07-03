@@ -53,7 +53,7 @@ export default function Testimonials() {
   return (
     <section className="section testimonial-wall" data-screen-label="Testimonials">
       <div className="wrap">
-        <Reveal as="h2" className="display-huge testimonial-heading">What clients say.</Reveal>
+        <Reveal as="h2" className="display-huge testimonial-heading">What our clients say</Reveal>
 
         <Reveal className="testimonial-featured">
           <Stars />
