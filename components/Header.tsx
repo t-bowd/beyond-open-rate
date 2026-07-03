@@ -42,6 +42,24 @@ export default function Header() {
   // regardless of scroll position — same as the scrolled state.
   const light = scrolled || open;
 
+  // Focused-flow pages (e.g. the strategy session funnel) get a stripped
+  // header — logo only, always dark, no phone/burger/drawer — since the
+  // page background is white, not the dark hero video.
+  const isFlow = pathname === "/strategy-session";
+
+  if (isFlow) {
+    return (
+      <header className="site-header flow">
+        <div className="wrap nav nav-flow">
+          <Link href="/" className="brand" aria-label="Beyond Open Rate home">
+            <Image src="/logo.svg" alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
+            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
+          </Link>
+        </div>
+      </header>
+    );
+  }
+
   return (
     <>
       <header className={`site-header ${light ? "scrolled" : ""}`}>
@@ -84,7 +102,7 @@ export default function Header() {
           ))}
         </ul>
         <div className="nav-drawer-cta">
-          <Link href="/#contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
+          <Link href="/strategy-session" className="btn btn-ghost" onClick={() => setOpen(false)}>
             Talk to us
           </Link>
           <Link href="/tools/email-audit" className="btn btn-primary" onClick={() => setOpen(false)}>

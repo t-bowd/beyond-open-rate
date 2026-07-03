@@ -59,7 +59,7 @@ export default async function SeoPage({ params }: PageProps) {
             <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="hero">
               Score your email program →
             </CtaLink>
-            <CtaLink href="/#contact" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
+            <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
               Talk to us
             </CtaLink>
           </div>

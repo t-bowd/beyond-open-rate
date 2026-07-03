@@ -30,7 +30,7 @@ export default function ServicesPage() {
             <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
               Score your email program →
             </Link>
-            <Link href="/#contact" className="btn btn-ghost btn-lg">
+            <Link href="/strategy-session" className="btn btn-ghost btn-lg">
               Talk to us
             </Link>
           </div>

@@ -10,8 +10,8 @@ const OFFERS = [
     eyebrow: "Talk to a person",
     title: "Book a call",
     body: "Tell us a bit about your business and where email is at. Free, no-obligation — you'll talk to the people who actually do the work, and we'll respond within one business day.",
-    cta: "Book a chat",
-    href: "/#contact",
+    cta: "Book your free session",
+    href: "/strategy-session",
   },
   {
     eyebrow: "Do it yourself first",

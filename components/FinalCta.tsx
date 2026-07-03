@@ -19,7 +19,7 @@ export default function FinalCta() {
           [Placeholder — closing line TBD]
         </Reveal>
         <Reveal>
-          <Link href="/#contact" className="btn btn-primary btn-lg">Book a chat</Link>
+          <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>
         </Reveal>
       </div>
     </section>

@@ -16,7 +16,7 @@ export default function GuaranteeBand() {
           not written yet, layout only.]
         </Reveal>
         <Reveal>
-          <Link href="/#contact" className="btn btn-primary btn-lg">Book a chat</Link>
+          <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>
         </Reveal>
       </div>
     </section>
