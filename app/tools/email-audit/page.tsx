@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Reveal from "@/components/Reveal";
 import EmailAudit from "@/components/quiz/EmailAudit";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
@@ -47,20 +47,15 @@ export default function EmailAuditPage() {
 
   return (
     <>
-      <section className="hero" data-screen-label="Email audit">
-        <div className="wrap hero-inner">
-          <Reveal as="h1">
-            Revenue Killing Email Marketing <span className="accent">Secrets Exposed</span>
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            What marketing agencies won&apos;t tell you&hellip;and it&apos;s leaving money on the table.
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            What you don&apos;t know about email marketing that&apos;s killing your revenue.
-            Unlock instant improvement recommendations with this free audit &mdash; just answer 10 quick questions.
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        label="Email audit"
+        title={<>Revenue Killing Email Marketing <span className="accent">Secrets Exposed</span></>}
+        sub={<>
+          What marketing agencies won&apos;t tell you&hellip;and it&apos;s leaving money on the table.{" "}
+          What you don&apos;t know about email marketing that&apos;s killing your revenue.
+          Unlock instant improvement recommendations with this free audit &mdash; just answer 10 quick questions.
+        </>}
+      />
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 720 }}>

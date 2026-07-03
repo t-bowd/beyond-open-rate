@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
@@ -26,17 +27,12 @@ const tools = [
 export default function ToolsPage() {
   return (
     <>
-      <section className="hero" data-screen-label="Tools">
-        <div className="wrap hero-inner">
-          <Reveal as="h1">
-            <span className="accent">Tools</span> to improve your email program.
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            Practical diagnostics that show you where your email program stands
-            — and what to actually do about it.
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        label="Tools"
+        title={<><span className="accent">Tools</span> to improve your email program.</>}
+        sub="Practical diagnostics that show you where your email program stands
+          — and what to actually do about it."
+      />
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 900 }}>

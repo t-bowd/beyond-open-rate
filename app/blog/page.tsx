@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { getAllPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
@@ -26,18 +27,12 @@ export default async function BlogIndexPage() {
 
   return (
     <>
-      <section className="hero" data-screen-label="Blog">
-        <div className="wrap hero-inner">
-          <Reveal as="h1">
-            Email marketing{" "}
-            <span className="accent">strategy and advice</span>.
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            Thinking on lifecycle, automation, deliverability, and the metrics
-            that actually move revenue.
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        label="Blog"
+        title={<>Email marketing <span className="accent">strategy and advice</span>.</>}
+        sub="Thinking on lifecycle, automation, deliverability, and the metrics
+          that actually move revenue."
+      />
 
       <section className="section">
         <div className="wrap">

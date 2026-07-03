@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, personSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
@@ -15,19 +16,13 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="hero" data-screen-label="About">
-        <div className="wrap hero-inner">
-          <Reveal as="h1">
-            Fifteen years in email.{" "}
-            <span className="accent">Still obsessed with getting it right.</span>
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            Beyond Open Rate is a small, senior email marketing consultancy
-            based in Australia. We work with businesses of every size who are
-            ready to treat email as the revenue channel it actually is.
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        label="About"
+        title={<>Fifteen years in email. <span className="accent">Still obsessed with getting it right.</span></>}
+        sub="Beyond Open Rate is a small, senior email marketing consultancy
+          based in Australia. We work with businesses of every size who are
+          ready to treat email as the revenue channel it actually is."
+      />
 
       {/* ── Founder ────────────────────────────────────── */}
       <section className="section about-founder-section">

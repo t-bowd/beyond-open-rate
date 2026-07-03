@@ -6,6 +6,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import CtaLink from "@/components/CtaLink";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllSeoPages, getSeoPage } from "@/lib/seo-pages";
 import { site } from "@/lib/site";
@@ -51,20 +52,21 @@ export default async function SeoPage({ params }: PageProps) {
 
   return (
     <>
-      <section className="hero" data-screen-label={page.h1}>
-        <div className="wrap hero-inner">
-          <h1>{page.h1}</h1>
-          {page.heroSub && <p className="hero-sub">{page.heroSub}</p>}
-          <div className="hero-actions">
+      <PageHero
+        label={page.h1}
+        title={page.h1}
+        sub={page.heroSub}
+        actions={
+          <>
             <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="hero">
               Score your email program →
             </CtaLink>
             <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
               Talk to us
             </CtaLink>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       <section className="section">
         <div className="wrap prose" style={{ maxWidth: 740 }}>
