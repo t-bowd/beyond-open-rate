@@ -4,11 +4,34 @@ import Reveal from "./Reveal";
    "Dear business builder" letter here that does most of the persuasive
    work on the page. BOR has no equivalent copy written yet — this is
    scaffolding for that narrative, not a real draft. */
+
+function ordinal(day: number) {
+  if (day > 3 && day < 21) return `${day}th`;
+  switch (day % 10) {
+    case 1: return `${day}st`;
+    case 2: return `${day}nd`;
+    case 3: return `${day}rd`;
+    default: return `${day}th`;
+  }
+}
+
+// Rounds down to the start of the current 3-day window so the date only
+// ticks over every 3 days instead of every render.
+function getUpdatedDate() {
+  const MS_PER_DAY = 86_400_000;
+  const now = Date.now();
+  const bucketStart = Math.floor(now / (MS_PER_DAY * 3)) * (MS_PER_DAY * 3);
+  const d = new Date(bucketStart);
+  const month = d.toLocaleString("en-AU", { month: "long" });
+  return `${ordinal(d.getDate())} of ${month} ${d.getFullYear()}`;
+}
+
 export default function NarrativeLetter() {
+  const updated = getUpdatedDate();
   return (
     <section className="section narrative-letter" data-screen-label="Narrative letter">
       <div className="wrap narrative-inner">
-        <Reveal as="p" className="narrative-date">[Updated: DATE TBD]</Reveal>
+        <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
         <Reveal as="div" className="narrative-body">
           <p>[Dear —, opening line TBD.]</p>
           <p>
