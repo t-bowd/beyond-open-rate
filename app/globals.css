@@ -353,14 +353,13 @@ a { color: inherit; text-decoration: none; }
   margin-top: 8px;
 }
 
-/* Secondary-page hero — same dark-overlay treatment as the homepage
-   video hero, but for a static photo (or, until photography is picked,
-   just the dark gradient) and a shorter, non-full-viewport band since
-   these are content pages, not a landing page. */
+/* Secondary-page hero — same dark-overlay treatment and full-viewport
+   height as the homepage video hero, just with a static photo (or,
+   until photography is picked, just the dark gradient) instead of video. */
 .hero-photo {
   position: relative;
   overflow: hidden;
-  min-height: 44vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   margin-top: -72px;
