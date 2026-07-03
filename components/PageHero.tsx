@@ -2,17 +2,20 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import Reveal from "./Reveal";
 
+// TODO: swap for per-page photography once it's picked — this is a
+// placeholder stock shot standing in across every secondary-page hero.
+const DEFAULT_IMAGE = "/pexels-yankrukov-7693745.jpg";
+
 type PageHeroProps = {
   label: string;
   title: ReactNode;
   sub?: ReactNode;
   actions?: ReactNode;
-  /** TODO: swap in real photography per page once available — falls back
-      to a plain dark background (matching the homepage overlay tone). */
+  /** Defaults to a placeholder stock photo — pass a specific image to override per page. */
   image?: string;
 };
 
-export default function PageHero({ label, title, sub, actions, image }: PageHeroProps) {
+export default function PageHero({ label, title, sub, actions, image = DEFAULT_IMAGE }: PageHeroProps) {
   return (
     <section className="hero hero-photo" data-screen-label={label}>
       {image && (
