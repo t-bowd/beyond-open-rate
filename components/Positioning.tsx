@@ -1,5 +1,4 @@
 import Reveal from "./Reveal";
-import SectionSeam from "./SectionSeam";
 
 /* PLACEHOLDER MODULE — layout only. Consolidates King Kong's "Built
    for scale" and "The power is in the platform" blocks into one slot,
@@ -9,7 +8,6 @@ import SectionSeam from "./SectionSeam";
 export default function Positioning() {
   return (
     <section className="section positioning" data-screen-label="Positioning">
-      <SectionSeam fill="var(--ink-bg)" />
       <div className="wrap positioning-inner">
         <Reveal as="p" className="eyebrow">[POSITIONING EYEBROW TBD]</Reveal>
         <Reveal as="h2" className="display-huge">
