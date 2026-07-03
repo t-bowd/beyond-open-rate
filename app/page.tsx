@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import NarrativeLetter from "@/components/NarrativeLetter";
 import SplitOffer from "@/components/SplitOffer";
 import PressLogos from "@/components/PressLogos";
+import GrowFaster from "@/components/GrowFaster";
 import CaseStudiesWall from "@/components/CaseStudiesWall";
 import Positioning from "@/components/Positioning";
 import Testimonial from "@/components/Testimonial";
@@ -19,6 +20,7 @@ export default function Page() {
       <NarrativeLetter />
       <SplitOffer />
       <PressLogos />
+      <GrowFaster />
       <CaseStudiesWall />
       <Positioning />
       <Testimonial />
