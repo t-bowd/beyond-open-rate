@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import StrategySession from "@/components/quiz/StrategySession";
 
 export const metadata: Metadata = {
@@ -12,7 +13,9 @@ export default function StrategySessionPage() {
   return (
     <section className="section strategy-session-section" data-screen-label="Strategy session">
       <div className="wrap" style={{ maxWidth: 640 }}>
-        <StrategySession />
+        <Suspense fallback={null}>
+          <StrategySession />
+        </Suspense>
       </div>
     </section>
   );

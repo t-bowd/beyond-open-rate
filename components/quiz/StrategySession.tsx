@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   platformOptions,
   budgetOptions,
@@ -54,9 +54,13 @@ type Phase = "intro" | "steps" | "submitting" | "done";
 
 export default function StrategySession() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [phase, setPhase] = useState<Phase>("intro");
   const [stepIndex, setStepIndex] = useState(0);
-  const [values, setValues] = useState<Values>(initialValues);
+  const [values, setValues] = useState<Values>(() => ({
+    ...initialValues,
+    email: searchParams.get("email") ?? "",
+  }));
   const [error, setError] = useState<string | null>(null);
   const [serverError, setServerError] = useState<string | null>(null);
 

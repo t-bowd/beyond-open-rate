@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
 
 export default function Hero() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [note, setNote] = useState<"default" | "error">("default");
 
@@ -14,10 +16,10 @@ export default function Hero() {
       setNote("error");
       return;
     }
-    // Prefill the email field in the contact form below and scroll to it
-    window.dispatchEvent(new CustomEvent<string>("bor:prefill", { detail: v }));
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-    setTimeout(() => document.getElementById("c-name")?.focus(), 600);
+    // Hand off into the strategy session flow with the email pre-filled —
+    // nothing is saved as a lead until they actually complete (or at
+    // least reach) that funnel.
+    router.push(`/strategy-session?email=${encodeURIComponent(v)}`);
   };
 
   return (
