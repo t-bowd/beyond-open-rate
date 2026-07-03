@@ -544,8 +544,8 @@ a { color: inherit; text-decoration: none; }
 
 
 /* ---------- Guarantee band (placeholder module) ---------- */
-.guarantee-band { background: var(--ink-bg); color: var(--on-ink); }
-.guarantee-inner { max-width: 780px; margin-inline: auto; text-align: center; }
+.guarantee-band { background: var(--ink-bg); color: var(--on-ink); position: relative; overflow: hidden; }
+.guarantee-inner { max-width: 780px; margin-inline: auto; text-align: center; position: relative; z-index: 1; }
 .guarantee-band .eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); }
 .guarantee-band .display-huge { color: var(--on-ink); }
 .guarantee-sub { color: var(--on-ink-soft); font-size: 17px; margin-bottom: 28px; }
@@ -599,14 +599,15 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ---------- Positioning (placeholder module) ---------- */
-.positioning { background: var(--ink-bg); color: var(--on-ink); text-align: center; }
-.positioning-inner { max-width: 780px; margin-inline: auto; }
+.positioning { background: var(--ink-bg); color: var(--on-ink); text-align: center; position: relative; overflow: hidden; }
+.positioning-inner { max-width: 780px; margin-inline: auto; position: relative; z-index: 1; }
 .positioning .eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); }
 .positioning .display-huge { color: var(--on-ink); }
 .positioning-sub { color: var(--on-ink-soft); font-size: 18px; }
 
 /* ---------- Final CTA ---------- */
-.final-cta { background: var(--ink-bg); color: var(--on-ink); text-align: center; }
+.final-cta { background: var(--ink-bg); color: var(--on-ink); text-align: center; position: relative; overflow: hidden; }
+.final-cta-inner { position: relative; z-index: 1; }
 .final-cta-platforms {
   display: flex;
   flex-wrap: wrap;
@@ -624,6 +625,36 @@ a { color: inherit; text-decoration: none; }
   color: var(--on-ink-soft);
 }
 .final-cta .display-huge { color: var(--on-ink); max-width: 780px; margin-inline: auto 24px; }
+
+/* ---------- Accent stripes — layered diagonal bars in shades of the
+   brand accent, corner-clustered for depth on otherwise flat dark
+   sections. Concept borrowed from King Kong's stripe clusters, not
+   a literal copy: purple instead of lime, fewer/simpler bars. ---------- */
+.accent-stripes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.accent-stripe {
+  position: absolute;
+  height: 26px;
+  border-radius: 2px;
+}
+.accent-stripes-tr .accent-stripe-a { top: 4%; right: -8%; width: 46%; background: var(--accent); opacity: .85; transform: rotate(-13deg); }
+.accent-stripes-tr .accent-stripe-b { top: 13%; right: -18%; width: 62%; height: 18px; background: color-mix(in oklab, var(--accent) 55%, white); opacity: .5; transform: rotate(-13deg); }
+.accent-stripes-tr .accent-stripe-c { top: 20%; right: -4%; width: 32%; height: 14px; background: var(--accent-deep); opacity: .8; transform: rotate(-13deg); }
+.accent-stripes-tr .accent-stripe-d { top: 27%; right: -24%; width: 54%; height: 9px; background: color-mix(in oklab, var(--accent) 30%, white); opacity: .35; transform: rotate(-13deg); }
+
+.accent-stripes-bl .accent-stripe-a { bottom: 4%; left: -8%; width: 46%; background: var(--accent); opacity: .85; transform: rotate(-13deg); }
+.accent-stripes-bl .accent-stripe-b { bottom: 13%; left: -18%; width: 62%; height: 18px; background: color-mix(in oklab, var(--accent) 55%, white); opacity: .5; transform: rotate(-13deg); }
+.accent-stripes-bl .accent-stripe-c { bottom: 20%; left: -4%; width: 32%; height: 14px; background: var(--accent-deep); opacity: .8; transform: rotate(-13deg); }
+.accent-stripes-bl .accent-stripe-d { bottom: 27%; left: -24%; width: 54%; height: 9px; background: color-mix(in oklab, var(--accent) 30%, white); opacity: .35; transform: rotate(-13deg); }
+
+@media (max-width: 720px) {
+  .accent-stripes { display: none; }
+}
 
 /* ---------- Testimonial wall (light — kept light so it doesn't sit
    next to another dark band; bold featured-quote treatment is the

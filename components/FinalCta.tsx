@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import AccentStripes from "./AccentStripes";
 
 /* Platform badges are real — these are the ESPs/CRMs BOR actually
    works with (see lib/content.ts, "Platform & CRM setup"). Headline
@@ -9,6 +10,7 @@ const PLATFORMS = ["Klaviyo", "HubSpot", "Customer.io", "Mailchimp", "ActiveCamp
 export default function FinalCta() {
   return (
     <section className="section final-cta" data-screen-label="Final CTA">
+      <AccentStripes corner="bl" />
       <div className="wrap final-cta-inner">
         <div className="final-cta-platforms">
           {PLATFORMS.map((p) => (
