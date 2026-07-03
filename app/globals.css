@@ -1082,8 +1082,12 @@ a { color: inherit; text-decoration: none; }
 .footer-bottom {
   border-top: 1px solid color-mix(in oklab, var(--on-accent) 15%, transparent);
   padding-block: 16px;
+  text-align: center;
+  display: grid;
+  gap: 6px;
 }
 .footer-copy { font-size: 13px; color: color-mix(in oklab, var(--on-accent) 50%, transparent); font-family: var(--font-body); margin: 0; }
+.footer-legal-link { font-size: 13px; color: color-mix(in oklab, var(--on-accent) 50%, transparent); font-family: var(--font-body); margin: 0; }
 
 /* ---------- Reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
