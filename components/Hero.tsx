@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
-import AccentStripes from "./AccentStripes";
 
 export default function Hero() {
   const router = useRouter();
@@ -37,7 +36,6 @@ export default function Hero() {
         <source src="/hero-bg.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay" aria-hidden="true" />
-      <AccentStripes corner="tr" />
 
       <div className="wrap hero-inner">
         <Reveal as="h1" className="hero-shout">

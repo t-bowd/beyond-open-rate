@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
-import AccentStripes from "./AccentStripes";
+import SectionSeam from "./SectionSeam";
 
 /* PLACEHOLDER MODULE — layout only, no real offer/guarantee copy yet.
    King Kong's homepage uses a bold guarantee statement here to convert
@@ -9,7 +9,7 @@ import AccentStripes from "./AccentStripes";
 export default function GuaranteeBand() {
   return (
     <section className="section guarantee-band" data-screen-label="Guarantee">
-      <AccentStripes corner="tr" />
+      <SectionSeam fill="var(--ink-bg)" flip />
       <div className="wrap guarantee-inner">
         <Reveal as="p" className="eyebrow">[GUARANTEE COPY TBD]</Reveal>
         <Reveal as="h2" className="display-huge">[Placeholder — a bold, specific promise goes here]</Reveal>
