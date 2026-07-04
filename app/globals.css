@@ -272,12 +272,6 @@ a { color: inherit; text-decoration: none; }
   transition: color .15s;
 }
 .nav-drawer-links a:hover { color: var(--accent); }
-.nav-drawer-cta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-.nav-drawer-cta .btn-ghost {
-  color: var(--on-ink);
-  border-color: color-mix(in oklab, var(--on-ink) 30%, transparent);
-}
-.nav-drawer-cta .btn-ghost:hover { border-color: var(--on-ink); }
 @media (max-width: 480px) {
   .nav-phone-number { display: none; }
 }

@@ -101,14 +101,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="nav-drawer-cta">
-          <Link href="/strategy-session" className="btn btn-ghost" onClick={() => setOpen(false)}>
-            Talk to us
-          </Link>
-          <Link href="/tools/email-audit" className="btn btn-primary" onClick={() => setOpen(false)}>
-            Get a free audit
-          </Link>
-        </div>
       </nav>
     </>
   );
