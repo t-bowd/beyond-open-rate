@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
 import PageHero from "@/components/PageHero";
+import BlogListing from "@/components/BlogListing";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { getAllPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
@@ -13,14 +13,6 @@ export const metadata: Metadata = {
     "Practical thinking on lifecycle automation, deliverability, segmentation, and the metrics that drive email revenue — for Australian e-commerce and service businesses.",
   alternates: { canonical: "/blog" },
 };
-
-function fmt(date: string) {
-  return new Date(date).toLocaleDateString("en-AU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
 
 export default async function BlogIndexPage() {
   const posts = await getAllPosts();
@@ -41,23 +33,15 @@ export default async function BlogIndexPage() {
               <p style={{ color: "var(--ink-soft)" }}>First posts coming soon.</p>
             </Reveal>
           ) : (
-            <ul className="blog-grid">
-              {posts.map((p) => (
-                <Reveal as="li" key={p.slug}>
-                  <Link href={`/blog/${p.slug}`} className="blog-card">
-                    <p className="post-meta">
-                      <time dateTime={p.publishedAt}>{fmt(p.publishedAt)}</time>
-                      {p.tags && p.tags.length > 0 && (
-                        <span className="post-tags"> · {p.tags.join(" · ")}</span>
-                      )}
-                    </p>
-                    <h2>{p.title}</h2>
-                    <p className="blog-card-desc">{p.description}</p>
-                    <span className="blog-card-cta">Read more →</span>
-                  </Link>
-                </Reveal>
-              ))}
-            </ul>
+            <BlogListing
+              posts={posts.map((p) => ({
+                slug: p.slug,
+                title: p.title,
+                description: p.description,
+                publishedAt: p.publishedAt,
+                tags: p.tags,
+              }))}
+            />
           )}
         </div>
       </section>

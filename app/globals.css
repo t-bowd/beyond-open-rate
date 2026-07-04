@@ -845,42 +845,68 @@ a { color: inherit; text-decoration: none; }
   .about-split { grid-template-columns: 1fr; gap: 32px; }
 }
 
-/* ---------- Blog cards ---------- */
-.blog-grid {
-  list-style: none; margin: 0; padding: 0;
+/* ---------- Blog listing — two-column: rows + sidebar ---------- */
+.blog-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: 1fr 300px;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: start;
 }
-.blog-card {
-  display: flex; flex-direction: column;
+@media (max-width: 900px) {
+  .blog-layout { grid-template-columns: 1fr; }
+}
+
+.blog-list { list-style: none; margin: 0; padding: 0; }
+.blog-row { border-bottom: 1px solid var(--line); }
+.blog-row:first-child { border-top: 1px solid var(--line); }
+.blog-row-link {
+  display: block;
   text-decoration: none; color: inherit;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 24px 24px 22px;
-  height: 100%;
-  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  padding: 28px 0;
 }
-.blog-card:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in oklab, var(--accent) 55%, var(--line));
-  box-shadow: 0 20px 48px -28px oklch(0.4 0.05 60 / 0.45);
-}
-.blog-card h2 {
+.blog-row-link h2 {
   font-size: clamp(20px, 2.2vw, 24px);
   line-height: 1.25; margin: 10px 0 12px;
+  transition: color .15s ease;
 }
-.blog-card-desc {
+.blog-row-link:hover h2 { color: var(--accent-deep); }
+.blog-row-desc {
   color: var(--ink-soft); font-size: 17.5px; line-height: 1.6;
-  margin: 0 0 20px; flex: 1;
+  margin: 0 0 14px; max-width: 640px;
 }
-.blog-card-cta {
-  font-size: 16.5px; font-weight: 600;
-  color: var(--accent-deep); margin-top: auto;
+.blog-card-cta { font-size: 16.5px; font-weight: 600; color: var(--accent-deep); }
+.blog-row-link:hover .blog-card-cta { text-decoration: underline; text-underline-offset: 3px; }
+
+.blog-sidebar {
+  position: sticky;
+  top: 96px;
+  display: grid;
+  gap: 28px;
 }
-.blog-card:hover .blog-card-cta {
-  text-decoration: underline; text-underline-offset: 3px;
+.blog-sidebar-heading {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint);
+  margin: 0 0 12px;
+}
+.blog-tag-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-pill {
+  font-family: var(--font-body); font-size: 14px; font-weight: 500;
+  color: var(--ink-soft); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 7px 16px; cursor: pointer; transition: border-color .15s, background .15s, color .15s;
+}
+.tag-pill:hover { border-color: var(--accent); color: var(--ink); }
+.tag-pill.selected { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+
+.blog-sidebar-offer {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 26px;
+}
+.blog-sidebar-offer h3 { font-size: 20px; margin: 10px 0 10px; }
+.blog-sidebar-offer p { color: var(--ink-soft); font-size: 15.5px; line-height: 1.55; margin: 0 0 18px; }
+@media (max-width: 900px) {
+  .blog-sidebar { position: static; }
 }
 
 /* ---------- Tool cards ---------- */
