@@ -27,6 +27,14 @@ export default function PageHero({ label, title, sub, actions, image = DEFAULT_I
         {sub && <Reveal as="p" className="hero-sub">{sub}</Reveal>}
         {actions && <Reveal as="div" className="hero-actions">{actions}</Reveal>}
       </div>
+      {!actions && (
+        <div className="hero-scroll-cue" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 4v16" />
+            <path d="m6 14 6 6 6-6" />
+          </svg>
+        </div>
+      )}
     </section>
   );
 }

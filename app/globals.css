@@ -397,6 +397,27 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-photo .btn-ghost:hover { border-color: #fff; }
 
+/* Scroll cue — only shown when the hero has no CTA of its own, so
+   there's still a clear signal that there's more below the fold. */
+.hero-scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(20px, 4vw, 40px);
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  opacity: 0.75;
+  pointer-events: none;
+  animation: scroll-cue-bounce 1.8s ease-in-out infinite;
+}
+@keyframes scroll-cue-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-cue { animation: none; }
+}
+
 /* hero audit form — single input + button */
 .audit-form {
   display: flex;
