@@ -19,7 +19,7 @@ export default function PressLogos() {
   return (
     <section className="press-logos" data-screen-label="Press logos">
       <div className="wrap">
-        <Reveal as="p" className="press-logos-label">We&apos;ve worked with</Reveal>
+        <Reveal as="p" className="press-logos-label">Brands we&apos;ve made money for</Reveal>
         <div className="press-logos-row">
           {LOGOS.map(({ name, src }) => (
             <span className="press-logo" key={name}>
