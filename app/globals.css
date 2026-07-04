@@ -406,7 +406,7 @@ a { color: inherit; text-decoration: none; }
   transform: translateX(-50%);
   z-index: 2;
   color: #fff;
-  opacity: 0.75;
+  opacity: 1;
   pointer-events: none;
   animation: scroll-cue-bounce 1.8s ease-in-out infinite;
 }
