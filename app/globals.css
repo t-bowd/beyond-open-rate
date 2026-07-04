@@ -19,6 +19,11 @@
   --accent-tint: oklch(0.96 0.025 294);
   --on-accent:   oklch(0.99 0.005 294);
 
+  /* Complementary (hue 294 - 180 = 114, lime/chartreuse) — used for the
+     eyebrow pill so it reads as a deliberate accent colour, not a tint
+     of the primary purple. */
+  --eyebrow-bg: oklch(0.88 0.15 114);
+
   --ink-bg:    oklch(0.215 0.016 62);      /* dark band */
   --on-ink:    oklch(0.96 0.008 85);
   --on-ink-soft: oklch(0.74 0.012 75);
@@ -86,11 +91,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .eyebrow {
+  display: inline-block;
   font-family: var(--font-body);
   font-size: 12.5px;
+  font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent-deep);
+  background: var(--eyebrow-bg);
+  padding: 6px 16px;
+  border-radius: 999px;
   margin: 0;
 }
 
@@ -550,7 +560,6 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Guarantee band (placeholder module) ---------- */
 .guarantee-band { background: var(--ink-bg); color: var(--on-ink); }
 .guarantee-inner { max-width: 780px; margin-inline: auto; text-align: center; }
-.guarantee-band .eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); }
 .guarantee-band .display-huge { color: var(--on-ink); }
 .guarantee-sub { color: var(--on-ink-soft); font-size: 17px; margin-bottom: 28px; }
 
@@ -570,10 +579,10 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Split offer ---------- */
 .split-offer { background: var(--ink-bg); color: var(--on-ink); }
 .split-offer-label {
-  text-align: center;
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
   margin-bottom: 32px;
-  font-size: 16px;
-  color: color-mix(in oklab, var(--on-ink) 55%, transparent);
 }
 .split-offer-grid {
   display: grid;
@@ -595,7 +604,7 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent);
   margin: 0 auto 20px;
 }
-.split-offer-eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); margin-bottom: 6px; }
+.split-offer-eyebrow { margin-bottom: 6px; }
 .split-offer-title { font-size: clamp(30px, 4vw, 44px); color: var(--on-ink); margin-bottom: 14px; }
 .split-offer-body { color: var(--on-ink-soft); font-size: 16.5px; margin-bottom: 26px; max-width: 380px; margin-inline: auto; }
 @media (max-width: 720px) {
@@ -605,7 +614,6 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Positioning (placeholder module) ---------- */
 .positioning { background: var(--ink-bg); color: var(--on-ink); text-align: center; }
 .positioning-inner { max-width: 780px; margin-inline: auto; }
-.positioning .eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); }
 .positioning .display-huge { color: var(--on-ink); }
 .positioning-sub { color: var(--on-ink-soft); font-size: 18px; }
 
@@ -701,7 +709,7 @@ a { color: inherit; text-decoration: none; }
 /* Kept light — this is an empty shell, and light avoids stacking
    another dark band next to Positioning/GuaranteeBand. */
 .case-studies { background: var(--bg); padding: clamp(64px, 9vw, 120px) 0 0; }
-.case-studies .case-studies-label { text-align: center; }
+.case-studies .case-studies-label { display: block; width: fit-content; margin-inline: auto; }
 .case-studies-heading { text-align: center; max-width: 780px; margin-inline: auto 24px; }
 .case-studies-row {
   display: flex;
@@ -989,7 +997,6 @@ a { color: inherit; text-decoration: none; }
   gap: clamp(36px, 5vw, 72px);
   align-items: start;
 }
-.cta-card .eyebrow { color: color-mix(in oklab, var(--accent) 72%, white); }
 .cta-copy h2 { color: var(--on-ink); font-size: clamp(28px, 4vw, 44px); margin: 16px 0 18px; }
 .cta-copy p { color: var(--on-ink-soft); font-size: 18px; max-width: 420px; }
 .cta-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 14px; }
