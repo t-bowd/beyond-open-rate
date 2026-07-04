@@ -604,7 +604,6 @@ a { color: inherit; text-decoration: none; }
   background: var(--accent);
   margin: 0 auto 20px;
 }
-.split-offer-eyebrow { margin-bottom: 6px; }
 .split-offer-title { font-size: clamp(30px, 4vw, 44px); color: var(--on-ink); margin-bottom: 14px; }
 .split-offer-body { color: var(--on-ink-soft); font-size: 16.5px; margin-bottom: 26px; max-width: 380px; margin-inline: auto; }
 @media (max-width: 720px) {
@@ -765,7 +764,6 @@ a { color: inherit; text-decoration: none; }
   line-height: 1;
 }
 .grow-stat-label { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--ink-soft); }
-.grow-stat-source { margin-top: 8px; font-size: 11px; letter-spacing: 0.04em; color: var(--ink-faint); }
 @media (max-width: 900px) {
   .grow-stat-grid { grid-template-columns: 1fr 1fr; }
 }

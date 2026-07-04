@@ -11,28 +11,24 @@ const STATS = [
     prefix: "$",
     suffix: "",
     label: "Returned for every $1 spent on email — the highest ROI of any marketing channel.",
-    source: "Litmus / DMA",
   },
   {
     target: 40,
     prefix: "",
     suffix: "%",
     label: "Of total revenue at well-run e-commerce brands comes from email alone.",
-    source: "Klaviyo benchmarks",
   },
   {
     target: 320,
     prefix: "",
     suffix: "%",
     label: "More revenue from automated flows than one-off broadcast sends.",
-    source: "Omnisend",
   },
   {
     target: 14,
     prefix: "",
     suffix: " days",
     label: "From kickoff to your first automated flow going live.",
-    source: null,
   },
 ];
 
@@ -41,10 +37,9 @@ type StatProps = {
   prefix: string;
   suffix: string;
   label: string;
-  source: string | null;
 };
 
-function StatCard({ target, prefix, suffix, label, source }: StatProps) {
+function StatCard({ target, prefix, suffix, label }: StatProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [display, setDisplay] = useState(prefix + "0" + suffix);
 
@@ -82,7 +77,6 @@ function StatCard({ target, prefix, suffix, label, source }: StatProps) {
     <Reveal className="grow-stat-card">
       <div className="grow-stat-num" ref={ref}>{display}</div>
       <p className="grow-stat-label">{label}</p>
-      {source && <p className="grow-stat-source">Source: {source}</p>}
     </Reveal>
   );
 }
