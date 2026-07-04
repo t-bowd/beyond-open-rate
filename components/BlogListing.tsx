@@ -38,13 +38,13 @@ export default function BlogListing({ posts }: { posts: ListPost[] }) {
         {filtered.map((p) => (
           <li className="blog-row" key={p.slug}>
             <Link href={`/blog/${p.slug}`} className="blog-row-link">
+              <h2>{p.title}</h2>
               <p className="post-meta">
                 <time dateTime={p.publishedAt}>{fmt(p.publishedAt)}</time>
                 {p.tags && p.tags.length > 0 && (
                   <span className="post-tags"> · {p.tags.join(" · ")}</span>
                 )}
               </p>
-              <h2>{p.title}</h2>
               <p className="blog-row-desc">{p.description}</p>
               <span className="blog-card-cta">Read more →</span>
             </Link>
