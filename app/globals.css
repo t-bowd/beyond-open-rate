@@ -3,6 +3,45 @@
    Design system + page styles
    =========================================================== */
 
+/* Aileron — self-hosted from /public, used for all headings.
+   Static OTF weights (no variable GRAD axis); Heavy stands in for the
+   "GRAD 200" treatment h1 previously got from the Google Sans variable font. */
+@font-face {
+  font-family: "Aileron";
+  src: url("/Aileron/Aileron-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("/Aileron/Aileron-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("/Aileron/Aileron-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("/Aileron/Aileron-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Aileron";
+  src: url("/Aileron/Aileron-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Color — warm neutral ink/paper + single bold accent */
   --bg:        oklch(0.987 0.006 85);
@@ -29,7 +68,7 @@
   --on-ink-soft: oklch(0.74 0.012 75);
 
   /* Type */
-  --font-display: "Google Sans", var(--font-bricolage), "Hanken Grotesk", system-ui, sans-serif;
+  --font-display: "Aileron", "Google Sans", var(--font-bricolage), "Hanken Grotesk", system-ui, sans-serif;
   --font-body: var(--font-hanken), system-ui, sans-serif;
   --font-mono: var(--font-space-mono), ui-monospace, monospace;
 
@@ -75,8 +114,7 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 h1 {
-  font-weight: 700;
-  font-variation-settings: "GRAD" 200;
+  font-weight: 800; /* Aileron Heavy — static-font stand-in for the old GRAD 200 look */
 }
 
 p { margin: 0; text-wrap: pretty; }
@@ -291,7 +329,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   font-size: clamp(54px, 9vw, 124px);
   letter-spacing: -0.04em;
-  font-weight: 700;
+  font-weight: 800;
 }
 .hero-video .hero-inner { max-width: 980px; }
 .hero-sub {
@@ -378,7 +416,7 @@ a { color: inherit; text-decoration: none; }
 .hero-photo h1 {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.03em;
   font-size: clamp(36px, 5.6vw, 66px);
   line-height: 1.05;
