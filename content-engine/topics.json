@@ -156,7 +156,7 @@
     },
     {
       "id": "015",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "Ads get you customers. Email keeps them. Most brands only invest in one.",
