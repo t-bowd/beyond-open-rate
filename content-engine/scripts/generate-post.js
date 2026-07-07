@@ -121,28 +121,38 @@ if (!variantA || !variantB) {
   process.exit(1);
 }
 
-// ── Generate social content ───────────────────────────────────────────────────
+// ── Generate social content (both variants in parallel) ───────────────────────
 
-const socialPrompt = socialBriefTemplate
-  .replace("[topic]", topic.topic)
-  .replace("[tier]", topic.tier)
-  .replace("[cta_style]", topic.cta_style)
-  .replace("[linkedin_copy]", variantA.copy);
+function buildSocialPrompt(linkedinCopy) {
+  return socialBriefTemplate
+    .replace("[topic]", topic.topic)
+    .replace("[tier]", topic.tier)
+    .replace("[cta_style]", topic.cta_style)
+    .replace("[linkedin_copy]", linkedinCopy);
+}
 
-let socialResponse;
+let socialA, socialB;
 try {
-  socialResponse = await client.messages.create({
-    model: "claude-sonnet-5",
-    max_tokens: 2000,
-    messages: [{ role: "user", content: socialPrompt }],
-  });
+  [socialA, socialB] = await Promise.all([
+    client.messages.create({
+      model: "claude-sonnet-5",
+      max_tokens: 2000,
+      messages: [{ role: "user", content: buildSocialPrompt(variantA.copy) }],
+    }),
+    client.messages.create({
+      model: "claude-sonnet-5",
+      max_tokens: 2000,
+      messages: [{ role: "user", content: buildSocialPrompt(variantB.copy) }],
+    }),
+  ]);
 } catch (err) {
   console.error("Social content API call failed:", err.message);
   process.exit(1);
 }
 
-const socialRaw = socialResponse.content[0].text;
-console.log("Social content received.");
+const socialRawA = socialA.content[0].text;
+const socialRawB = socialB.content[0].text;
+console.log("Social content received for both variants.");
 
 // ── Build slug and date ───────────────────────────────────────────────────────
 
@@ -211,11 +221,19 @@ const socialPath = path.join(ROOT, "posts", "drafts", socialFileName);
 const socialContent = `# Social content — ${topic.topic}
 
 Generated: ${today}
-LinkedIn source: Variant A (update if you approve B instead)
+Use the section that matches whichever LinkedIn variant Tim approved.
 
 ---
 
-${socialRaw}
+# VARIANT A
+
+${socialRawA}
+
+---
+
+# VARIANT B
+
+${socialRawB}
 `;
 
 fs.writeFileSync(socialPath, socialContent, "utf8");
