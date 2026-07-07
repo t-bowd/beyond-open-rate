@@ -320,14 +320,11 @@ export default function EmailAudit() {
           </ul>
 
           <div className="audit-cta">
-            <p>Want to know what these gaps are actually costing you?
-              Book a free 30-minute call. No pitch, just the specifics.</p>
-            <button className="btn btn-primary btn-lg btn-arrow" onClick={requestAudit}>
-              Book a free 30-min call
-              <svg className="btn-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M5 12h14" /><path d="m13 6 6 6-6 6" />
-              </svg>
+            <p>Want to know how these gaps are killing your revenue? Claim your free 30-minute strategy session (worth $500). We can only book so many, so be quick!</p>
+            <button className="btn btn-primary btn-lg" onClick={requestAudit}>
+              Claim your free 30-minute strategy session (worth $500)
             </button>
+            <p className="audit-cta-micro">Limited sessions available</p>
           </div>
         </div>
       )}
