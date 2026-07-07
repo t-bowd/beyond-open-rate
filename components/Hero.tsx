@@ -52,7 +52,7 @@ export default function Hero() {
 
       <div className="wrap hero-inner">
         <Reveal as="h1" className="hero-shout">
-          Your emails owe you money
+          Your emails <span className="highlight">owe you money</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub">
           The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable.
