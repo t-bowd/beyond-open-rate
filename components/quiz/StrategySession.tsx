@@ -174,11 +174,12 @@ export default function StrategySession() {
         <div className="quiz-card strategy-intro">
           <span className="strategy-wave" aria-hidden="true">👋</span>
   
-          <h1 className="strategy-headline">Free 30-Minute Email Strategy Session</h1>
+          <h1 className="strategy-headline">Free 30-minute strategy session (valued at $500)</h1>
           <p className="strategy-sub">
-            Claim your 100% free, no-obligation 30-minute growth session
-            ($500 value). We&apos;ll map out exactly how to turn your email
-            list into a reliable revenue channel — no pitch, just the plan.
+            If you’re serious about finding out where your email program is costing you money, then this session is for you. No obligation, 100% free, PLUS strategies to implement first.
+<br /><br />
+Session availability is limited, claim yours now or join the waitlist.
+
           </p>
           <button className="btn btn-primary btn-lg btn-arrow" onClick={start}>
             Get started
