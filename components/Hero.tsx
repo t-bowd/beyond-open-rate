@@ -51,7 +51,7 @@ export default function Hero() {
             type="email"
             id="heroEmail"
             name="email"
-            placeholder="Enter your email and let's get started…"
+            placeholder="Enter your email and let's talk revenue…"
             aria-label="Your email address"
             autoComplete="email"
             value={email}
