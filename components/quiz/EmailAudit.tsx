@@ -130,7 +130,7 @@ export default function EmailAudit() {
       fetch(`/api/lead/${leadId}`, { method: "PATCH" }).catch(() => {});
     }
     track("audit_full_requested", { tier: result?.tier });
-    window.open("https://calendly.com/beyondopenrate/30min", "_blank");
+    window.location.href = "/strategy-session";
   }
 
   return (
