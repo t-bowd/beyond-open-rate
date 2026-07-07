@@ -144,11 +144,19 @@ export default function EmailAudit() {
       {phase === "intro" && (
         <div className="quiz-card strategy-intro">
           <span className="strategy-wave" aria-hidden="true">📧</span>
-          <h2 className="strategy-headline">Free email program audit</h2>
+          <h2 className="strategy-headline">Answer {total} questions.</h2>
           <p className="strategy-sub">
-            Answer {total} questions and get an instant score across deliverability,
+            Get an instant score across deliverability,
             automation, segmentation, and copy — plus your top recommendations.
           </p>
+          <ul className="quiz-bullets">
+            <li>How to make money while you sleep — emails that work even when you&apos;re not</li>
+            <li>How to deliver hot messages to your hot audience</li>
+            <li>Sending to your whole list works, right? Wrong!</li>
+            <li>The truth about landing in the inbox</li>
+            <li>Have you been doing authentication wrong? Or at all?!</li>
+            <li>Have you been tracking metrics wrong? (And it really does matter)</li>
+          </ul>
           <button className="btn btn-primary btn-lg btn-arrow" onClick={start}>
             Start the audit
             <svg className="btn-arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
