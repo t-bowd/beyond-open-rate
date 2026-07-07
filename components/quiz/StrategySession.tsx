@@ -173,8 +173,8 @@ export default function StrategySession() {
       {phase === "intro" && (
         <div className="quiz-card strategy-intro">
           <span className="strategy-wave" aria-hidden="true">👋</span>
-          <p className="strategy-servicing">Servicing clients in <span aria-hidden="true">🇦🇺</span></p>
-          <h1 className="strategy-headline">Free 30-Minute Email Growth Session</h1>
+  
+          <h1 className="strategy-headline">Free 30-Minute Email Strategy Session</h1>
           <p className="strategy-sub">
             Claim your 100% free, no-obligation 30-minute growth session
             ($500 value). We&apos;ll map out exactly how to turn your email
@@ -188,7 +188,7 @@ export default function StrategySession() {
             </svg>
           </button>
           <p className="audit-note-stars">
-            <span aria-hidden="true">★★★★★</span> 5.0 stars from 100 reviews
+            {/*<span aria-hidden="true">★★★★★</span> 5.0 stars from 100 reviews*/}
           </p>
         </div>
       )}

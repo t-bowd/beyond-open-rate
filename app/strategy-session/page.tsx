@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import StrategySession from "@/components/quiz/StrategySession";
 
 export const metadata: Metadata = {
-  title: "Free 30-minute email growth session",
+  title: "Free 30-minute email strategy session",
   description:
     "Book a free, no-obligation 30-minute strategy session. Tell us about your business and we'll map out how to turn your email list into a reliable revenue channel.",
   alternates: { canonical: "/strategy-session" },
