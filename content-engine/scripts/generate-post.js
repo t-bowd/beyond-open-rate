@@ -34,6 +34,11 @@ const briefTemplate = fs.readFileSync(
   "utf8"
 );
 
+const socialBriefTemplate = fs.readFileSync(
+  path.join(ROOT, "prompts", "social-brief-template.md"),
+  "utf8"
+);
+
 // ── Pick next topic ───────────────────────────────────────────────────────────
 
 const topic = topics.topics.find((t) => t.status === "queued");
@@ -116,6 +121,29 @@ if (!variantA || !variantB) {
   process.exit(1);
 }
 
+// ── Generate social content ───────────────────────────────────────────────────
+
+const socialPrompt = socialBriefTemplate
+  .replace("[topic]", topic.topic)
+  .replace("[tier]", topic.tier)
+  .replace("[cta_style]", topic.cta_style)
+  .replace("[linkedin_copy]", variantA.copy);
+
+let socialResponse;
+try {
+  socialResponse = await client.messages.create({
+    model: "claude-sonnet-5",
+    max_tokens: 2000,
+    messages: [{ role: "user", content: socialPrompt }],
+  });
+} catch (err) {
+  console.error("Social content API call failed:", err.message);
+  process.exit(1);
+}
+
+const socialRaw = socialResponse.content[0].text;
+console.log("Social content received.");
+
 // ── Build slug and date ───────────────────────────────────────────────────────
 
 const today = new Date().toISOString().split("T")[0];
@@ -175,6 +203,24 @@ CTA B: ${variantB.ctaLine}
 fs.writeFileSync(draftPath, mdxContent, "utf8");
 console.log(`Draft written to ${draftPath}`);
 
+// ── Write social file ─────────────────────────────────────────────────────────
+
+const socialFileName = `${today}-${slug}-social.md`;
+const socialPath = path.join(ROOT, "posts", "drafts", socialFileName);
+
+const socialContent = `# Social content — ${topic.topic}
+
+Generated: ${today}
+LinkedIn source: Variant A (update if you approve B instead)
+
+---
+
+${socialRaw}
+`;
+
+fs.writeFileSync(socialPath, socialContent, "utf8");
+console.log(`Social draft written to ${socialPath}`);
+
 // ── Mark topic as in_review ───────────────────────────────────────────────────
 
 topic.status = "in_review";
@@ -220,8 +266,18 @@ await octokit.repos.createOrUpdateFileContents({
   owner,
   repo,
   path: `content-engine/posts/drafts/${fileName}`,
-  message: `linkedin: add draft — ${topic.topic}`,
+  message: `content: add LinkedIn draft — ${topic.topic}`,
   content: Buffer.from(mdxContent).toString("base64"),
+  branch: branchName,
+});
+
+// Create social draft file
+await octokit.repos.createOrUpdateFileContents({
+  owner,
+  repo,
+  path: `content-engine/posts/drafts/${socialFileName}`,
+  message: `content: add social draft — ${topic.topic}`,
+  content: Buffer.from(socialContent).toString("base64"),
   branch: branchName,
 });
 
@@ -243,11 +299,15 @@ const { data: pr } = await octokit.pulls.create({
   title: `[LinkedIn] ${topic.topic} — ${today}`,
   head: branchName,
   base: "main",
-  body: `## LinkedIn post draft — review before merging
+  body: `## Content draft — review before merging
 
 **Topic:** ${topic.topic}
 **Tier:** ${topic.tier}
-**File:** \`content-engine/posts/drafts/${fileName}\`
+
+| File | Purpose |
+|---|---|
+| \`content-engine/posts/drafts/${fileName}\` | LinkedIn (auto-publishes on merge) |
+| \`content-engine/posts/drafts/${socialFileName}\` | IG carousel + Reel script (Tara posts manually) |
 
 ---
 
@@ -265,12 +325,18 @@ ${variantB.copy}
 
 ---
 
-### Review checklist
+### Tim — LinkedIn checklist
 - [ ] Pick the better variant — set \`approved_variant: "A"\` or \`"B"\` in frontmatter (or \`"EDITED"\` if you rewrote it)
 - [ ] Edit copy if needed
 - [ ] Set \`schedule_time\` to desired publish time (default: tomorrow 8am AEST)
-- [ ] Toggle \`facebook: true\` and add \`facebook_variant\` copy if repurposing
-- [ ] Merge to publish`,
+- [ ] Toggle \`facebook: true\` and add \`facebook_variant\` copy if repurposing to Facebook
+- [ ] Merge to publish
+
+### Tara — Instagram checklist
+- [ ] Open \`${socialFileName}\` in this PR
+- [ ] Use the carousel slides to build the post in Canva or IG
+- [ ] Copy the reel script and record
+- [ ] Post manually to Instagram`,
 });
 
 // pulls.create has no `assignees` field — it's silently ignored there.
