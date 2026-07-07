@@ -112,6 +112,7 @@ export default function StrategySession() {
       if (stepId === "email") setError("Enter a valid email address.");
       return;
     }
+    track("strategy_session_step", { step: stepId, step_number: stepIndex + 1 });
     if (stepIndex < STEP_IDS.length - 1) {
       setStepIndex((i) => i + 1);
       return;
