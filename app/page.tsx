@@ -8,7 +8,6 @@ import Testimonial from "@/components/Testimonial";
 import GuaranteeBand from "@/components/GuaranteeBand";
 import Faq from "@/components/Faq";
 import FinalCta from "@/components/FinalCta";
-import Contact from "@/components/Contact";
 import { JsonLd, faqSchema } from "@/lib/jsonld";
 import { faqs } from "@/lib/content";
 
@@ -25,7 +24,6 @@ export default function Page() {
       <GuaranteeBand />
       <Faq />
       <FinalCta />
-      <Contact />
       <JsonLd data={faqSchema(faqs)} />
     </>
   );
