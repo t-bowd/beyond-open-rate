@@ -9,14 +9,14 @@ export default function Positioning() {
   return (
     <section className="section positioning" data-screen-label="Positioning">
       <div className="wrap positioning-inner">
-        <Reveal as="p" className="eyebrow">[POSITIONING EYEBROW TBD]</Reveal>
+        <Reveal as="p" className="eyebrow">We're not like other agencies</Reveal>
         <Reveal as="h2" className="display-huge">
-          [Placeholder — the one-line reason BOR is different]
+          We're experts. Email & lifecycle marketing is all we do, and we do it at a level most agencies can't.
         </Reveal>
         <Reveal as="p" className="positioning-sub">
-          [PLACEHOLDER — a short paragraph backing the claim above with
-          something concrete: an approach, a number, a way of working
-          that competitors don&apos;t do. Not written yet.]
+          You won't get recommendations based on what earns us a platform commission. You won't get reports full of metrics that don't connect to revenue. 
+<br /><br />
+We've spent 20 years inside email programs from start-ups to global enterprises. We know what good looks like, and we know when mediocre is pretending to be good.
         </Reveal>
       </div>
     </section>

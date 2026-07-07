@@ -35,17 +35,17 @@ export default function NarrativeLetter() {
       <div className="wrap narrative-inner">
         <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
         <Reveal as="div" className="narrative-body">
-          <p>[Dear —, opening line TBD.]</p>
+         {/* <p>[Dear —, opening line TBD.]</p> */}
           <p>
-            [PLACEHOLDER — this is where a longer, direct-address narrative
-            would go: the problem the reader is facing, why it&apos;s
-            harder than it should be, and how BOR sees it differently.
-            Not written yet — layout only.]
+            You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?
           </p>
           <p>
-            [PLACEHOLDER — second paragraph continuing the narrative
-            toward the offer below.]
+            Here's what we see constantly: businesses sending campaigns that land in spam, automation that hasn't been touched since setup day, and a list full of people who stopped caring months ago. 
           </p>
+
+          <p>Nobody flagged it. Nobody fixed it. And quietly, month after month, that's revenue you didn't see and can't get back.</p>
+
+          <p>Most agencies will sell you on open rates and design. We don't. We care about one thing: whether your email program is making you money. If it isn't, we find out why, and we fix it.</p>
         </Reveal>
       </div>
     </section>
