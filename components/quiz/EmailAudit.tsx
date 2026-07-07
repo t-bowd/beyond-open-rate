@@ -150,7 +150,7 @@ export default function EmailAudit() {
             automation, segmentation, and copy — plus your top recommendations.
           </p>
           <ul className="quiz-bullets">
-            <li>How to make money while you sleep — emails that work even when you&apos;re not</li>
+            <li>How to make money while you sleep, with emails that work even when you're not</li>
             <li>How to deliver hot messages to your hot audience</li>
             <li>Sending to your whole list works, right? Wrong!</li>
             <li>The truth about landing in the inbox</li>
