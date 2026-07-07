@@ -16,7 +16,7 @@ export default function FinalCta() {
           ))}
         </div>
         <Reveal as="h2" className="display-huge">
-          [Placeholder — closing line TBD]
+          Walk away knowing where your email program is costing you money.
         </Reveal>
         <Reveal>
           <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>

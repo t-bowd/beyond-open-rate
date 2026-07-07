@@ -10,19 +10,19 @@ const STATS = [
     target: 36,
     prefix: "$",
     suffix: "",
-    label: "Returned for every $1 spent on email, the highest ROI of any marketing channel.",
+    label: "Returned for every $1 spent. No other marketing channel comes close.",
   },
   {
     target: 40,
     prefix: "",
     suffix: "%",
-    label: "Of total revenue at well-run e-commerce brands comes from email alone.",
+    label: "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this.",
   },
   {
     target: 320,
     prefix: "",
     suffix: "%",
-    label: "More revenue from automated flows than one-off broadcast sends.",
+    label: "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously.",
   },
   {
     target: 6,
@@ -86,12 +86,10 @@ export default function GrowFaster() {
     <section className="section grow-faster" data-screen-label="Grow faster">
       <div className="wrap grow-faster-inner">
         <Reveal as="h2" className="display-huge">
-          Grow faster, without the guesswork
+          Your email program is either making you money or costing you money. There's no middle ground.
         </Reveal>
         <Reveal as="p" className="grow-faster-sub">
-          Most brands treat email like an afterthought and leave real money
-          on the table. Done properly, it&apos;s the highest-return channel
-          you have, here&apos;s what the data says.
+          Most brands treat email like an afterthought. The businesses growing fastest on email aren't doing anything exotic. They're just doing it properly.
         </Reveal>
       </div>
       <div className="wrap grow-stat-grid">
