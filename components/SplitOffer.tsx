@@ -1,11 +1,11 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-/* King Kong's "choose your own adventure" split — two clear paths
-   instead of one CTA. Both use real, existing BOR copy/links:
-   book a call (Contact) vs. take the free audit (the existing tool). */
-const OFFERS = [
+type Offer = { title: ReactNode; body: string; cta: string; href: string };
+
+const OFFERS: Offer[] = [
   {
     title: "Claim your free strategy session",
     body: "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and which revenue gaps need closing. Availability is limited!",
@@ -13,7 +13,7 @@ const OFFERS = [
     href: "/strategy-session",
   },
   {
-    title: "Revenue killers exposed",
+    title: <>Revenue killers<br className="desktop-br" /> exposed</>,
     body: "TWhat marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
     cta: "Take the free audit",
     href: "/tools/email-audit",
