@@ -703,7 +703,7 @@ a { color: inherit; text-decoration: none; }
    next to another dark band; bold featured-quote treatment is the
    King Kong-inspired part, not the colour) ---------- */
 .testimonial-wall { background: var(--bg); }
-.testimonial-heading { text-align: center; text-transform: uppercase; }
+.testimonial-heading { text-align: center; }
 .faq-heading { text-transform: uppercase; }
 .testimonial-featured {
   max-width: 720px;
