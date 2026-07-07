@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import EmailAudit from "@/components/quiz/EmailAudit";
+import Faq from "@/components/Faq";
 import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
@@ -49,11 +50,11 @@ export default function EmailAuditPage() {
     <>
       <PageHero
         label="Email audit"
-        title={<>Revenue Killing Email Marketing <span className="highlight">Secrets Exposed</span></>}
+        title={<>Revenue killing email marketing <span className="highlight">secrets exposed</span></>}
         sub={<>
-          What marketing agencies won&apos;t tell you&hellip;and it&apos;s leaving money on the table.{" "}
-          What you don&apos;t know about email marketing that&apos;s killing your revenue.
-          Unlock instant improvement recommendations with this free audit &mdash; just answer 10 quick questions.
+          What marketing agencies won't tell you...and it's slowly killing your revenue.{" "}
+ Unlock instant expert recommendations with this free audit - just answer 10 quick questions.
+
         </>}
       />
 
@@ -66,14 +67,7 @@ export default function EmailAuditPage() {
       <section className="section">
         <div className="wrap" style={{ maxWidth: 720 }}>
           <h2>How it works</h2>
-          <dl className="post-faq">
-            {faqs.map((f) => (
-              <div key={f.q}>
-                <dt>{f.q}</dt>
-                <dd>{f.a}</dd>
-              </div>
-            ))}
-          </dl>
+          <Faq items={faqs} standalone={false} />
         </div>
       </section>
 

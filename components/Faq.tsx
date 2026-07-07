@@ -2,15 +2,56 @@
 
 import { useState } from "react";
 import Reveal from "./Reveal";
-import { faqs } from "@/lib/content";
+import { faqs as globalFaqs } from "@/lib/content";
+
+export type FaqItem = { q: string; a: string };
 
 const INITIAL_SHOW = 6;
 
-export default function Faq() {
+type FaqProps = {
+  /** Custom items — falls back to the global site FAQs when omitted. */
+  items?: FaqItem[];
+  /**
+   * When true (default), renders the full standalone section with heading
+   * and show-more. Set to false to render the accordion list inline inside
+   * an existing section.
+   */
+  standalone?: boolean;
+};
+
+export default function Faq({ items, standalone = true }: FaqProps) {
+  const source = items ?? globalFaqs;
+  const canShowMore = standalone && !items && source.length > INITIAL_SHOW;
+
   const [openIndex, setOpenIndex] = useState(-1);
   const [showAll, setShowAll] = useState(false);
 
-  const visible = showAll ? faqs : faqs.slice(0, INITIAL_SHOW);
+  const visible = canShowMore && !showAll ? source.slice(0, INITIAL_SHOW) : source;
+
+  const list = (
+    <Reveal className="faq-list">
+      {visible.map((item, i) => {
+        const open = openIndex === i;
+        return (
+          <div className={`faq-item ${open ? "open" : ""}`} key={item.q}>
+            <button
+              className="faq-q"
+              aria-expanded={open}
+              onClick={() => setOpenIndex(open ? -1 : i)}
+            >
+              {item.q}
+              <span className="plus" />
+            </button>
+            <div className="faq-a" style={{ maxHeight: open ? "480px" : "0px" }}>
+              <div className="faq-a-inner">{item.a}</div>
+            </div>
+          </div>
+        );
+      })}
+    </Reveal>
+  );
+
+  if (!standalone) return list;
 
   return (
     <section className="section" id="faq" data-screen-label="FAQ">
@@ -18,33 +59,11 @@ export default function Faq() {
         <Reveal className="section-head">
           <h2 className="display-huge faq-heading">Your questions answered</h2>
         </Reveal>
-        <Reveal className="faq-list">
-          {visible.map((item, i) => {
-            const open = openIndex === i;
-            return (
-              <div className={`faq-item ${open ? "open" : ""}`} key={item.q}>
-                <button
-                  className="faq-q"
-                  aria-expanded={open}
-                  onClick={() => setOpenIndex(open ? -1 : i)}
-                >
-                  {item.q}
-                  <span className="plus"></span>
-                </button>
-                <div className="faq-a" style={{ maxHeight: open ? "480px" : "0px" }}>
-                  <div className="faq-a-inner">{item.a}</div>
-                </div>
-              </div>
-            );
-          })}
-        </Reveal>
-        {!showAll && faqs.length > INITIAL_SHOW && (
+        {list}
+        {canShowMore && !showAll && (
           <Reveal style={{ marginTop: 24, textAlign: "center" } as React.CSSProperties}>
-            <button
-              className="btn btn-ghost"
-              onClick={() => setShowAll(true)}
-            >
-              Show {faqs.length - INITIAL_SHOW} more questions
+            <button className="btn btn-ghost" onClick={() => setShowAll(true)}>
+              Show {source.length - INITIAL_SHOW} more questions
             </button>
           </Reveal>
         )}

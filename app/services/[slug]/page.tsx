@@ -6,6 +6,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import CtaLink from "@/components/CtaLink";
+import Faq from "@/components/Faq";
 import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllServicePages, getServicePage } from "@/lib/services";
@@ -81,14 +82,7 @@ export default async function ServicePage({ params }: PageProps) {
         <section className="section">
           <div className="wrap" style={{ maxWidth: 740 }}>
             <h2>Frequently asked</h2>
-            <dl className="post-faq">
-              {page.faq.map((f) => (
-                <div key={f.q}>
-                  <dt>{f.q}</dt>
-                  <dd>{f.a}</dd>
-                </div>
-              ))}
-            </dl>
+            <Faq items={page.faq} standalone={false} />
           </div>
         </section>
       )}
