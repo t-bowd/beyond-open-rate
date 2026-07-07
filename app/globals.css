@@ -424,7 +424,6 @@ a { color: inherit; text-decoration: none; }
 .hero-photo .hero-inner { position: relative; z-index: 2; }
 .hero-photo h1 {
   color: #fff;
-  text-transform: uppercase;
   font-weight: 800;
   letter-spacing: -0.03em;
   font-size: clamp(36px, 5.6vw, 66px);

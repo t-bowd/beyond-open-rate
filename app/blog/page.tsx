@@ -21,7 +21,7 @@ export default async function BlogIndexPage() {
     <>
       <PageHero
         label="Blog"
-        title={<>Email marketing <span className="accent">strategy and advice</span>.</>}
+        title={<>Email marketing <span className="highlight">strategy and advice</span>.</>}
         sub="Thinking on lifecycle, automation, deliverability, and the metrics
           that actually move revenue."
       />

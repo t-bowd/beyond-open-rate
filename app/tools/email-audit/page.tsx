@@ -49,7 +49,7 @@ export default function EmailAuditPage() {
     <>
       <PageHero
         label="Email audit"
-        title={<>Revenue Killing Email Marketing <span className="accent">Secrets Exposed</span></>}
+        title={<>Revenue Killing Email Marketing <span className="highlight">Secrets Exposed</span></>}
         sub={<>
           What marketing agencies won&apos;t tell you&hellip;and it&apos;s leaving money on the table.{" "}
           What you don&apos;t know about email marketing that&apos;s killing your revenue.

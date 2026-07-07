@@ -23,7 +23,7 @@ export default function PageHero({ label, title, sub, actions, image = DEFAULT_I
       )}
       <div className="hero-overlay" aria-hidden="true" />
       <div className="wrap hero-inner">
-        <Reveal as="h1">{title}</Reveal>
+        <Reveal as="h1" className="hero-shout">{title}</Reveal>
         {sub && <Reveal as="p" className="hero-sub">{sub}</Reveal>}
         {actions && <Reveal as="div" className="hero-actions">{actions}</Reveal>}
       </div>

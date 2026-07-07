@@ -13,7 +13,7 @@ export default function ThankYouPage() {
   return (
     <PageHero
       label="Thank you"
-      title={<>Got it — <span className="accent">thanks</span>.</>}
+      title={<>Got it — <span className="highlight">thanks</span>.</>}
       sub="We'll be in touch within one business day with your free
         teardown and where we'd start."
       actions={

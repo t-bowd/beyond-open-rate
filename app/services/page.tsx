@@ -19,7 +19,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         label="Services"
-        title={<>Full-service email marketing <span className="accent">and automation</span>.</>}
+        title={<>Full-service email marketing <span className="highlight">and automation</span>.</>}
         sub="Strategy, copy, design, and the automations that keep earning —
           built and run end to end."
         actions={

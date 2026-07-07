@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <PageHero
         label="About"
-        title={<>Fifteen years in email. <span className="accent">Still obsessed with getting it right.</span></>}
+        title={<>Fifteen years in email. <span className="highlight">Still obsessed with getting it right.</span></>}
         sub="Beyond Open Rate is a small, senior email marketing consultancy
           based in Australia. We work with businesses of every size who are
           ready to treat email as the revenue channel it actually is."
