@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import NarrativeLetter from "@/components/NarrativeLetter";
 import SplitOffer from "@/components/SplitOffer";
@@ -10,6 +11,12 @@ import Faq from "@/components/Faq";
 import FinalCta from "@/components/FinalCta";
 import { JsonLd, faqSchema } from "@/lib/jsonld";
 import { faqs } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Beyond Open Rate — Email marketing agency, Australia",
+  description:
+    "Your email program is either making you money or costing you money. Beyond Open Rate helps Australian businesses find out which — and fix it. Free strategy session (valued at $500) or take the free audit.",
+};
 
 export default function Page() {
   return (
