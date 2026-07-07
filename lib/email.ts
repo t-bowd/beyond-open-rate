@@ -136,6 +136,43 @@ function row(label: string, value: string | null | undefined) {
     </tr>`;
 }
 
+function strategySection(payload: Record<string, unknown> | undefined): string {
+  if (!payload || Object.keys(payload).length === 0) return "";
+
+  const fmt = (n: unknown) => {
+    const num = Number(n);
+    if (isNaN(num)) return String(n ?? "—");
+    if (num >= 1_000_000) return `$${(num / 1_000_000).toFixed(1)}M`;
+    if (num >= 1_000) return `$${Math.round(num / 1_000)}k`;
+    return `$${num}`;
+  };
+
+  const fields: [string, string][] = [
+    ["Platform", String(payload.platform ?? "—")],
+    ["Budget", String(payload.budget ?? "—")],
+    ["Current revenue", fmt(payload.currentRevenue)],
+    ["Target revenue", fmt(payload.targetRevenue)],
+    ["Timeline", String(payload.timeline ?? "—")],
+  ];
+
+  return `
+    <div style="margin-top:24px;background:#f5f0ff;border:1px solid #d8b4fe;border-radius:8px;padding:20px;">
+      <p style="margin:0 0 12px;font-size:13px;font-weight:700;color:#6A00CC;text-transform:uppercase;letter-spacing:0.5px;">Strategy Session Answers</p>
+      <table cellpadding="0" cellspacing="0" style="width:100%;border-top:1px solid #e9d5ff;">
+        ${fields.map(([label, val]) => `
+        <tr>
+          <td style="padding:8px 12px 8px 0;font-size:12px;color:#555;vertical-align:top;width:40%;border-bottom:1px solid #f3e8ff;">${label}</td>
+          <td style="padding:8px 0;font-size:12px;font-weight:600;color:#111;vertical-align:top;border-bottom:1px solid #f3e8ff;">${val}</td>
+        </tr>`).join("")}
+      </table>
+      ${payload.obstacle ? `
+      <div style="margin-top:14px;background:#fff;border:1px solid #e9d5ff;border-radius:6px;padding:12px 14px;">
+        <p style="margin:0 0 4px;font-size:11px;font-weight:700;color:#6A00CC;text-transform:uppercase;letter-spacing:0.5px;">#1 obstacle</p>
+        <p style="margin:0;font-size:13px;color:#111;line-height:1.55;">${String(payload.obstacle)}</p>
+      </div>` : ""}
+    </div>`;
+}
+
 function auditSection(payload: Record<string, unknown> | undefined): string {
   if (!payload || Object.keys(payload).length === 0) return "";
 
@@ -207,7 +244,7 @@ export async function sendLeadNotification(lead: NotifyLeadInput): Promise<void>
                 <p style="margin:0;font-size:14px;color:#111;line-height:1.6;">${lead.message.replace(/\n/g, "<br>")}</p>
               </div>` : ""}
 
-              ${auditSection(lead.payload)}
+              ${lead.source === "strategy-session" ? strategySection(lead.payload) : auditSection(lead.payload)}
 
               <div style="margin-top:24px;text-align:center;">
                 <a href="mailto:${lead.email}" style="display:inline-block;background:#6A00CC;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:12px 28px;border-radius:6px;">Reply to ${lead.name?.split(" ")[0] ?? "lead"} →</a>
