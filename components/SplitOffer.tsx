@@ -7,14 +7,14 @@ import Reveal from "./Reveal";
    book a call (Contact) vs. take the free audit (the existing tool). */
 const OFFERS = [
   {
-    title: "Book a call",
-    body: "Tell us a bit about your business and where email is at. Free, no-obligation — you'll talk to the people who actually do the work, and we'll respond within one business day.",
-    cta: "Book your free session",
+    title: "Claim your free strategy session",
+    body: "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and which revenue gaps need closing. Availability is limited!",
+    cta: "Claim your free session",
     href: "/strategy-session",
   },
   {
-    title: "Free audit",
-    body: "Ten questions on your automations, deliverability, and segmentation. Takes about three minutes — you get a score out of 75 and a prioritised list of what to fix first.",
+    title: "Revenue killers exposed",
+    body: "TWhat marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
     cta: "Take the free audit",
     href: "/tools/email-audit",
   },
