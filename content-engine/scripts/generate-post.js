@@ -366,4 +366,11 @@ await octokit.issues.addAssignees({
   assignees: [owner, "tara-rose"],
 });
 
+await octokit.pulls.requestReviewers({
+  owner,
+  repo,
+  pull_number: pr.number,
+  reviewers: ["tara-rose"],
+});
+
 console.log(`PR opened: ${pr.html_url}`);
