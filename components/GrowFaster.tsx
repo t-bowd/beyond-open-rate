@@ -10,7 +10,7 @@ const STATS = [
     target: 36,
     prefix: "$",
     suffix: "",
-    label: "Returned for every $1 spent on email — the highest ROI of any marketing channel.",
+    label: "Returned for every $1 spent on email, the highest ROI of any marketing channel.",
   },
   {
     target: 40,
@@ -25,10 +25,10 @@ const STATS = [
     label: "More revenue from automated flows than one-off broadcast sends.",
   },
   {
-    target: 14,
+    target: 72,
     prefix: "",
-    suffix: " days",
-    label: "From kickoff to your first automated flow going live.",
+    suffix: "hrs",
+    label: "From kickoff to your first automated flow live and earning.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function GrowFaster() {
         <Reveal as="p" className="grow-faster-sub">
           Most brands treat email like an afterthought and leave real money
           on the table. Done properly, it&apos;s the highest-return channel
-          you have — here&apos;s what the data says.
+          you have, here&apos;s what the data says.
         </Reveal>
       </div>
       <div className="wrap grow-stat-grid">
