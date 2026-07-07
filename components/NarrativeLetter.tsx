@@ -1,3 +1,4 @@
+import { unstable_noStore as noStore } from "next/cache";
 import Reveal from "./Reveal";
 
 /* PLACEHOLDER MODULE — layout only. King Kong runs a long, direct-address
@@ -27,6 +28,7 @@ function getUpdatedDate() {
 }
 
 export default function NarrativeLetter() {
+  noStore();
   const updated = getUpdatedDate();
   return (
     <section className="section narrative-letter" data-screen-label="Narrative letter">

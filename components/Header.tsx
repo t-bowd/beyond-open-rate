@@ -53,7 +53,7 @@ export default function Header() {
         <div className="wrap nav nav-flow">
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
             <Image src="/logo.svg" alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
-            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
+            <span className="brand-name">Beyond&nbsp;<span className="brand-accent">Open&nbsp;Rate</span></span>
           </Link>
         </div>
       </header>
@@ -73,7 +73,7 @@ export default function Header() {
 
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
             <Image src={light ? "/logo.svg" : "/logo-reverse.svg"} alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
-            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
+            <span className="brand-name">Beyond&nbsp;<span className="brand-accent">Open&nbsp;Rate</span></span>
           </Link>
 
           <button
