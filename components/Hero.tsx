@@ -1,13 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
+
+const VIDEOS = ["/hero-bg1.mp4", "/hero-bg.mp4", "/hero-bg2.mp4"];
 
 export default function Hero() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [note, setNote] = useState<"default" | "error">("default");
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const idxRef = useRef(0);
+
+  const advance = useCallback(() => {
+    idxRef.current = (idxRef.current + 1) % VIDEOS.length;
+    const v = videoRef.current;
+    if (!v) return;
+    v.src = VIDEOS[idxRef.current];
+    v.load();
+    v.play().catch(() => {});
+  }, []);
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,16 +38,16 @@ export default function Hero() {
   return (
     <section className="hero hero-video" data-screen-label="Hero">
       <video
+        ref={videoRef}
+        src={VIDEOS[0]}
         className="hero-bg"
         autoPlay
         muted
-        loop
         playsInline
         preload="auto"
         aria-hidden="true"
-      >
-        <source src="/hero-bg.mp4" type="video/mp4" />
-      </video>
+        onEnded={advance}
+      />
       <div className="hero-overlay" aria-hidden="true" />
 
       <div className="wrap hero-inner">
