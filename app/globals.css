@@ -697,7 +697,7 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid color-mix(in oklab, white 18%, transparent);
   color: var(--on-ink-soft);
 }
-.final-cta .display-huge { color: var(--on-ink); max-width: 780px; margin-inline: auto; }
+.final-cta .display-huge { color: var(--on-ink); max-width: 780px; margin-inline: auto; margin-bottom: 40px; }
 
 /* ---------- Testimonial wall (light — kept light so it doesn't sit
    next to another dark band; bold featured-quote treatment is the
