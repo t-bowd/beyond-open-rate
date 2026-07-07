@@ -1387,6 +1387,48 @@ a { color: inherit; text-decoration: none; }
 }
 .quiz-cta p { margin: 0; }
 
+/* Email audit — same no-card, centred style as strategy session */
+.audit-quiz .quiz-card {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.audit-quiz .strategy-card { text-align: left; justify-items: start; }
+.audit-quiz .quiz-meta { text-align: center; width: 100%; }
+.audit-quiz .strategy-prompt { text-align: center; width: 100%; }
+.audit-quiz .strategy-help { text-align: center; }
+
+.audit-pill-check {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; flex-shrink: 0;
+  border: 1.5px solid var(--line); border-radius: 5px;
+  font-size: 12px; font-weight: 700; color: var(--accent-deep);
+  transition: border-color .15s, background .15s;
+}
+.audit-pill-multi.selected .audit-pill-check {
+  border-color: var(--accent); background: var(--accent-tint);
+}
+
+.audit-score-row {
+  display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center;
+  padding: 20px; background: var(--accent-tint); border-radius: var(--radius-sm);
+}
+
+.audit-gate-form .field label { color: var(--ink-soft); }
+.audit-gate-form .field input,
+.audit-gate-form .field textarea {
+  color: var(--ink); background: var(--paper); border-color: var(--line);
+}
+.audit-gate-form .field input::placeholder { color: var(--ink-faint); }
+.audit-gate-form .field input:focus { border-color: var(--accent); background: var(--paper); }
+
+.audit-cta {
+  padding: 24px 28px; background: var(--surface);
+  border-radius: var(--radius-sm); display: grid; gap: 16px;
+}
+.audit-cta p { margin: 0; color: var(--ink-soft); }
+.audit-results { display: grid; gap: 24px; }
+
 /* Strategy session — King Kong-style dot-stepper funnel */
 .strategy-session-section {
   background: var(--paper);
