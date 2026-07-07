@@ -66,7 +66,9 @@ export default function EmailAuditPage() {
 
       <section className="section">
         <div className="wrap" style={{ maxWidth: 720 }}>
-          <h2>How it works</h2>
+          <div className="section-head">
+            <h2>How it works</h2>
+          </div>
           <Faq items={faqs} standalone={false} />
         </div>
       </section>
