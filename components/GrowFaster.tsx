@@ -25,10 +25,10 @@ const STATS = [
     label: "More revenue from automated flows than one-off broadcast sends.",
   },
   {
-    target: 72,
+    target: 6,
     prefix: "",
-    suffix: "hrs",
-    label: "From kickoff to your first automated flow live and earning.",
+    suffix: "x",
+    label: "Revenue difference between a well-run email program and the industry average.",
   },
 ];
 
