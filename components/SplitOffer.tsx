@@ -9,14 +9,14 @@ const OFFERS: Offer[] = [
   {
     id: "strategy",
     title: "Claim your free strategy session",
-    body: "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and which revenue gaps need closing. Availability is limited!",
+    body: "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and how it ties to revenue. Act fast - sessions are limited!",
     cta: "Claim your free session",
     href: "/strategy-session",
   },
   {
     id: "audit",
     title: <>Revenue killers<br className="desktop-br" /> exposed</>,
-    body: "TWhat marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
+    body: "What marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
     cta: "Take the free audit",
     href: "/tools/email-audit",
   },
@@ -26,7 +26,7 @@ export default function SplitOffer() {
   return (
     <section className="section split-offer" data-screen-label="Split offer">
       <div className="wrap">
-        <Reveal as="p" className="eyebrow split-offer-label">Our offering</Reveal>
+        <Reveal as="p" className="eyebrow split-offer-label">Our offers</Reveal>
         <div className="split-offer-grid">
           {OFFERS.map((o) => (
             <Reveal className="split-offer-card" key={o.id}>

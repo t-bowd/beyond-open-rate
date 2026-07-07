@@ -9,11 +9,10 @@ export default function GuaranteeBand() {
   return (
     <section className="section guarantee-band" data-screen-label="Guarantee">
       <div className="wrap guarantee-inner">
-        <Reveal as="p" className="eyebrow">[GUARANTEE COPY TBD]</Reveal>
-        <Reveal as="h2" className="display-huge">[Placeholder — a bold, specific promise goes here]</Reveal>
+        <Reveal as="p" className="eyebrow">Our promise</Reveal>
+        <Reveal as="h2" className="display-huge">Results guaranteed or we'll work for free.*</Reveal>
         <Reveal as="p" className="guarantee-sub">
-          [One sentence backing the promise with a real number or condition —
-          not written yet, layout only.]
+          We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current results, or it's on us until we do.*
         </Reveal>
         <Reveal>
           <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>
