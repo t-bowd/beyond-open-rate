@@ -39,11 +39,10 @@ export default function Hero() {
 
       <div className="wrap hero-inner">
         <Reveal as="h1" className="hero-shout">
-          Emails that print money
+          Your emails owe you money
         </Reveal>
         <Reveal as="p" className="hero-sub">
-          Email marketing is hard to get right. We make it simpler,
-          faster, and genuinely profitable.
+          The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable.
         </Reveal>
 
         <Reveal as="form" className="audit-form" id="hero-audit" onSubmit={submit} noValidate>
@@ -52,7 +51,7 @@ export default function Hero() {
             type="email"
             id="heroEmail"
             name="email"
-            placeholder="Enter your email and we'll start printing…"
+            placeholder="Enter your email and let's get started…"
             aria-label="Your email address"
             autoComplete="email"
             value={email}
@@ -78,9 +77,9 @@ export default function Hero() {
           </Reveal>
         ) : (
           <Reveal as="div" className="audit-note-split">
-            <p className="audit-note-witty">No awkward sales pitch. Just a real reply.</p>
+            <p className="audit-note-witty">We won't ghost you. Unlike your unengaged subscribers.</p>
             <p className="audit-note-stars">
-              <span aria-hidden="true">★★★★★</span> 5.0 stars from 100 reviews
+              {/* <span aria-hidden="true">★★★★★</span> 5.0 stars from 100 reviews */}
             </p>
           </Reveal>
         )}
