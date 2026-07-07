@@ -5,6 +5,7 @@ import { getTopIssue, type Answers } from "./quiz/email-audit";
 export type LeadSource =
   | "hero-audit"
   | "contact-form"
+  | "strategy-session"
   | `tool:${string}`;
 
 export type CaptureLeadInput = {

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-// /contact now redirects to home — the contact form lives at /#contact
+// /contact now redirects to the strategy session flow
 export default function ContactPage() {
-  redirect("/");
+  redirect("/strategy-session");
 }

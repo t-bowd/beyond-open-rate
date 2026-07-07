@@ -1,8 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Focused-flow pages (e.g. the strategy session funnel) hide the footer
+  // so there's nothing pulling attention away from finishing the quiz.
+  if (pathname === "/strategy-session") return null;
+
   return (
     <footer className="footer">
       <div className="wrap footer-inner">
@@ -71,14 +80,16 @@ export default function Footer() {
               <li><Link href="/tools">Tools</Link></li>
               <li><Link href="/blog">Blog</Link></li>
               <li><Link href="/about">About</Link></li>
-              <li><Link href="/#contact">Contact</Link></li>
+              <li><Link href="/strategy-session">Contact</Link></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div className="wrap footer-bottom">
-        <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate</p>
+        <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate. All rights reserved.</p>
+        {/* Privacy policy copy isn't written yet — plain text, not a link, until the page exists. */}
+        <p className="footer-legal-link">Privacy policy</p>
       </div>
     </footer>
   );

@@ -5,6 +5,8 @@ type EventName =
   | "audit_quiz_start"
   | "audit_quiz_complete"
   | "audit_full_requested"
+  | "strategy_session_start"
+  | "strategy_session_complete"
   | "cta_click";
 
 type EventProps = Record<string, string | number | boolean | null | undefined>;

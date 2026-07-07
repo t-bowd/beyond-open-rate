@@ -6,6 +6,8 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import CtaLink from "@/components/CtaLink";
+import Faq from "@/components/Faq";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllServicePages, getServicePage } from "@/lib/services";
 import { site } from "@/lib/site";
@@ -51,20 +53,21 @@ export default async function ServicePage({ params }: PageProps) {
 
   return (
     <>
-      <section className="hero" data-screen-label={page.h1}>
-        <div className="wrap hero-inner">
-          <h1>{page.h1}</h1>
-          {page.heroSub && <p className="hero-sub">{page.heroSub}</p>}
-          <div className="hero-actions">
+      <PageHero
+        label={page.h1}
+        title={page.h1}
+        sub={page.heroSub}
+        actions={
+          <>
             <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="hero">
               Score your email program →
             </CtaLink>
-            <CtaLink href="/#contact" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
+            <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
               Talk to us
             </CtaLink>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       <section className="section">
         <div className="wrap prose" style={{ maxWidth: 740 }}>
@@ -79,14 +82,7 @@ export default async function ServicePage({ params }: PageProps) {
         <section className="section">
           <div className="wrap" style={{ maxWidth: 740 }}>
             <h2>Frequently asked</h2>
-            <dl className="post-faq">
-              {page.faq.map((f) => (
-                <div key={f.q}>
-                  <dt>{f.q}</dt>
-                  <dd>{f.a}</dd>
-                </div>
-              ))}
-            </dl>
+            <Faq items={page.faq} standalone={false} />
           </div>
         </section>
       )}

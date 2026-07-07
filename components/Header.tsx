@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  { href: "/services", label: "Services" },
-  { href: "/tools", label: "Tools" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
+  { href: "/services", label: "SERVICES" },
+  { href: "/tools", label: "TOOLS" },
+  { href: "/blog", label: "BLOG" },
+  { href: "/about", label: "ABOUT" },
 ];
 
 export default function Header() {
@@ -33,32 +33,59 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  return (
-    <>
-      <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
-        <div className="wrap nav">
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  // Header goes solid-white + dark content whenever the menu is open,
+  // regardless of scroll position — same as the scrolled state.
+  const light = scrolled || open;
+
+  // Focused-flow pages (e.g. the strategy session funnel) get a stripped
+  // header — logo only, always dark, no phone/burger/drawer — since the
+  // page background is white, not the dark hero video.
+  const isFlow = pathname === "/strategy-session";
+
+  if (isFlow) {
+    return (
+      <header className="site-header flow">
+        <div className="wrap nav nav-flow">
           <Link href="/" className="brand" aria-label="Beyond Open Rate home">
-            <Image src="/logo.svg" alt="" width={36} height={36} priority style={{ height: 36, width: "auto" }} />
-            <span className="brand-name">Beyond&nbsp;Open&nbsp;Rate</span>
+            <Image src="/logo.svg" alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
+            <span className="brand-name">Beyond&nbsp;<span className="brand-accent">Open&nbsp;Rate</span></span>
           </Link>
-          <div className="nav-cta">
-            <Link href="/#contact" className="btn btn-ghost nav-cta-talk">Talk to us</Link>
-            <Link href="/tools/email-audit" className="btn btn-primary">Get a free audit</Link>
-            <button
-              className={`nav-toggle ${open ? "open" : ""}`}
-              aria-label={open ? "Close menu" : "Open menu"}
-              aria-expanded={open}
-              onClick={() => setOpen((v) => !v)}
-            >
-              <span className="nav-toggle-icon" aria-hidden="true" />
-            </button>
-          </div>
         </div>
       </header>
+    );
+  }
 
-      {open && (
-        <div className="nav-overlay" onClick={() => setOpen(false)} aria-hidden="true" />
-      )}
+  return (
+    <>
+      <header className={`site-header ${light ? "scrolled" : ""}`}>
+        <div className="wrap nav">
+          <a href="tel:1300444444" className="nav-phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span className="nav-phone-number">1300 444 444</span>
+          </a>
+
+          <Link href="/" className="brand" aria-label="Beyond Open Rate home">
+            <Image src={light ? "/logo.svg" : "/logo-reverse.svg"} alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
+            <span className="brand-name">Beyond&nbsp;<span className="brand-accent">Open&nbsp;Rate</span></span>
+          </Link>
+
+          <button
+            className={`nav-toggle ${open ? "open" : ""}`}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="nav-toggle-icon" aria-hidden="true" />
+          </button>
+        </div>
+      </header>
 
       <nav
         className={`nav-drawer ${open ? "open" : ""}`}
@@ -74,14 +101,6 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="nav-drawer-cta">
-          <Link href="/#contact" className="btn btn-ghost" onClick={() => setOpen(false)}>
-            Talk to us
-          </Link>
-          <Link href="/tools/email-audit" className="btn btn-primary" onClick={() => setOpen(false)}>
-            Get a free audit
-          </Link>
-        </div>
       </nav>
     </>
   );

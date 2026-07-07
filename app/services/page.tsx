@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Contact from "@/components/Contact";
+import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
 import { services } from "@/lib/content";
 import { site } from "@/lib/site";
@@ -16,26 +17,22 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="hero" data-screen-label="Services">
-        <div className="wrap hero-inner">
-          <Reveal as="h1">
-            Full-service email marketing{" "}
-            <span className="accent">and automation</span>.
-          </Reveal>
-          <Reveal as="p" className="hero-sub">
-            Strategy, copy, design, and the automations that keep earning —
-            built and run end to end.
-          </Reveal>
-          <div className="hero-actions">
+      <PageHero
+        label="Services"
+        title={<>Full-service email marketing <span className="highlight">and automation</span>.</>}
+        sub="Strategy, copy, design, and the automations that keep earning —
+          built and run end to end."
+        actions={
+          <>
             <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
               Score your email program →
             </Link>
-            <Link href="/#contact" className="btn btn-ghost btn-lg">
+            <Link href="/strategy-session" className="btn btn-ghost btn-lg">
               Talk to us
             </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       <section className="section">
         <div className="wrap">

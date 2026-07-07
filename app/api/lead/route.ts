@@ -11,7 +11,7 @@ const LeadSchema = z.object({
     .string()
     .min(1)
     .max(64)
-    .regex(/^(hero-audit|contact-form|tool:[a-z0-9-]+)$/, "invalid source"),
+    .regex(/^(hero-audit|contact-form|strategy-session|tool:[a-z0-9-]+)$/, "invalid source"),
   name: z.string().max(200).optional(),
   phone: z.string().max(30).optional(),
   website: z.string().max(500).optional(),

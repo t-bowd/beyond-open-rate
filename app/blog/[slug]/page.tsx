@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
+import Faq from "@/components/Faq";
 import {
   JsonLd,
   articleSchema,
@@ -92,14 +93,7 @@ export default async function PostPage({ params }: PageProps) {
           {post.faq && post.faq.length > 0 && (
             <section className="post-faq">
               <h2>Frequently asked</h2>
-              <dl>
-                {post.faq.map((f) => (
-                  <div key={f.q}>
-                    <dt>{f.q}</dt>
-                    <dd>{f.a}</dd>
-                  </div>
-                ))}
-              </dl>
+              <Faq items={post.faq} standalone={false} />
             </section>
           )}
         </div>

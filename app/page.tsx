@@ -1,11 +1,13 @@
 import Hero from "@/components/Hero";
-import Logos from "@/components/Logos";
-import Services from "@/components/Services";
-import Results from "@/components/Results";
-import Process from "@/components/Process";
+import NarrativeLetter from "@/components/NarrativeLetter";
+import SplitOffer from "@/components/SplitOffer";
+import PressLogos from "@/components/PressLogos";
+import GrowFaster from "@/components/GrowFaster";
+import Positioning from "@/components/Positioning";
 import Testimonial from "@/components/Testimonial";
+import GuaranteeBand from "@/components/GuaranteeBand";
 import Faq from "@/components/Faq";
-import Contact from "@/components/Contact";
+import FinalCta from "@/components/FinalCta";
 import { JsonLd, faqSchema } from "@/lib/jsonld";
 import { faqs } from "@/lib/content";
 
@@ -13,13 +15,15 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Logos />
-      <Services />
-      <Results />
-      <Process />
+      <NarrativeLetter />
+      <SplitOffer />
+      <PressLogos />
+      <GrowFaster />
+      <Positioning />
       <Testimonial />
+      <GuaranteeBand />
       <Faq />
-      <Contact />
+      <FinalCta />
       <JsonLd data={faqSchema(faqs)} />
     </>
   );
