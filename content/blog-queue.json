@@ -117,7 +117,7 @@
       "ecommerce"
     ],
     "notes": "Honest comparison. Klaviyo wins on data depth, segmentation, and flow logic. Mailchimp still fine for simple newsletters. Migration path if switching. Don't be promotional.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "email-deliverability-guide",
@@ -250,6 +250,30 @@
       "certification"
     ],
     "notes": "Target position 41.3 ranking with focused content on Australian Klaviyo partner landscape. Explain Klaviyo certification tiers (Bronze/Silver/Gold/Platinum), what they mean, directory of certified Australian partners, questions to ask before hiring, pricing benchmarks for Australian market, and how to verify credentials. Include comparison table of service offerings by partner tier.",
+    "status": "queued"
+  },
+  {
+    "id": "klaviyo-migration-checklist-data-preservation",
+    "title": "Klaviyo Migration Checklist: How to Preserve Your Email Data, Segments & Performance History",
+    "keyword": "klaviyo migration",
+    "tags": [
+      "klaviyo",
+      "migration",
+      "technical"
+    ],
+    "notes": "Target both 'klaviyo migration' and 'migrate mailchimp to klaviyo' queries with a technical deep-dive on what many guides miss: preserving historical data, maintaining segment logic, handling custom properties, and avoiding deliverability drops during transition. Include pre-migration audit steps, data mapping templates, and post-migration testing protocols. Link to Mailchimp migration guide and Klaviyo vs Mailchimp comparison.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-adelaide-local-businesses",
+    "title": "Email Marketing in Adelaide: Local Compliance, Best Practices & E-Commerce Success Stories",
+    "keyword": "email marketing adelaide",
+    "tags": [
+      "adelaide",
+      "australia",
+      "local"
+    ],
+    "notes": "Geo-targeted content for Adelaide market. Cover Australian spam act compliance specific to South Australia, local e-commerce case studies, timezone/sending time considerations for Adelaide audiences, and how local businesses can compete with national brands through email. Include references to Australian privacy laws and link to deliverability and segmentation guides. Mention local Klaviyo partners and Adelaide-specific success metrics.",
     "status": "queued"
   }
 ]
