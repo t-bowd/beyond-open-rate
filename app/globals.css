@@ -580,7 +580,7 @@ a { color: inherit; text-decoration: none; }
 /* Oversized headline treatment for King Kong-style statement blocks —
    bigger and bolder than the standard .section-head h2 scale. */
 .display-huge {
-  font-size: clamp(40px, 6.6vw, 82px);
+  font-size: clamp(40px, 6.2vw, 78px);
   line-height: 0.98;
   margin: 14px 0 20px;
 }
