@@ -675,7 +675,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Positioning (placeholder module) ---------- */
 .positioning { background: var(--ink-bg); color: var(--on-ink); text-align: center; }
-.positioning-inner { max-width: 780px; margin-inline: auto; }
+.positioning-inner { max-width: 920px; margin-inline: auto; }
 .positioning .display-huge { color: var(--on-ink); }
 .positioning-sub { color: var(--on-ink-soft); font-size: 20px; }
 
