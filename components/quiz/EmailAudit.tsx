@@ -303,7 +303,6 @@ export default function EmailAudit() {
               {result.score}<span>/{result.maxScore}</span>
             </div>
             <div>
-              <h2 className="quiz-tier">{result.tierLabel}</h2>
               <p style={{ margin: 0, color: "var(--ink-soft)" }}>{result.tierBlurb}</p>
             </div>
           </div>
