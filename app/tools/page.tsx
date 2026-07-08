@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Free email marketing tools for Australian businesses",
   description:
-    "Free diagnostic tools to audit your email program. See where your automations, deliverability, and segmentation stand — and get a prioritised list of what to fix first.",
+    "Free diagnostic tools to audit your email program. See where your automations, deliverability, and segmentation are losing you revenue.",
   alternates: { canonical: "/tools" },
 };
 

@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Beyond Open Rate — Australian email marketing agency",
   description:
-    "Australian email marketing agency. 15 years across lifecycle automation, Klaviyo, deliverability, and platform migrations — we treat email as the revenue channel it is.",
+    "Australian email marketing agency. Lifecycle automation, Klaviyo, deliverability, and campaign management — for brands that want email to compound.",
   alternates: { canonical: "/about" },
 };
 

@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Email marketing services, Australia",
   description:
-    "Full-service email marketing for Australian businesses. Lifecycle automation, Klaviyo, campaign management, copy, deliverability, and reporting — built and run end to end.",
+    "Full-service email marketing for Australian businesses. Lifecycle automation, Klaviyo, campaign management, copy, deliverability, and reporting — end to end.",
   alternates: { canonical: "/services" },
 };
 

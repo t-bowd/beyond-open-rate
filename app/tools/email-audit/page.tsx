@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Free email marketing audit — score your program in 3 minutes",
   description:
-    "Free email audit for Australian businesses. Ten questions on your automations, deliverability, and segmentation — score out of 75 with a prioritised fix list. Takes 3 minutes.",
+    "Free email audit for Australian businesses. Ten questions on your automations, deliverability, and segmentation — with an instant scored breakdown.",
   alternates: { canonical: "/tools/email-audit" },
 };
 
