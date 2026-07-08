@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Beyond Open Rate — Email marketing agency, Australia",
   description:
     "Your email program is either making you money or costing you money. Beyond Open Rate helps Australian businesses find out which — and fix it. Free strategy session (valued at $500) or take the free audit.",
+  alternates: { canonical: "https://www.beyondopenrate.com.au/" },
 };
 
 export default function Page() {
