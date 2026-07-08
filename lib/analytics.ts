@@ -6,7 +6,6 @@ type EventName =
   | "audit_quiz_complete"
   | "audit_full_requested"
   | "strategy_session_start"
-  | "strategy_session_step"
   | "strategy_session_complete"
   | "cta_click";
 
