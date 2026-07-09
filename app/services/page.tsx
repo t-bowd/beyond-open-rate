@@ -19,22 +19,21 @@ export default function ServicesPage() {
     <>
       <PageHero
         label="Services"
-        title={<>Full-service email marketing <span className="highlight">and automation</span>.</>}
-        sub="Strategy, copy, design, and the automations that keep earning —
-          built and run end to end."
+        title={<>There's revenue sitting in your email list right now. <span className="highlight">The question is whether you're getting it</span>.</>}
+        sub="From one-off audits to full lifecycle management: we specialise in finding what's been missing and making sure it doesn't stay that way."
         actions={
           <>
-            <Link href="/tools/email-audit" className="btn btn-primary btn-lg">
-              Score your email program →
+            <Link href="/strategy-session" className="btn btn-primary btn-lg">
+              Claim your free strategy session →
             </Link>
-            <Link href="/strategy-session" className="btn btn-ghost btn-lg">
-              Talk to us
+            <Link href="#services" className="btn btn-ghost btn-lg">
+              Explore our services
             </Link>
           </>
         }
       />
 
-      <section className="section">
+      <section className="section" id="services">
         <div className="wrap">
           <ul className="svc-grid" style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {services.map((s) => (
