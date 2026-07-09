@@ -43,7 +43,9 @@ export default function Faq({ items, standalone = true }: FaqProps) {
               <span className="plus" />
             </button>
             <div className="faq-a" style={{ maxHeight: open ? "480px" : "0px" }}>
-              <div className="faq-a-inner">{item.a}</div>
+              <div className="faq-a-inner">
+                {item.a.split("\n\n").map((p, j) => <p key={j}>{p}</p>)}
+              </div>
             </div>
           </div>
         );

@@ -83,7 +83,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "How are you priced?",
-    a: "A flat fee based on scope, recurring monthly for retainer clients. No surprise hourly bills or per-email fees.Most clients start with a fixed-fee audit and then move to a monthly retainer or build project. We don't do long contracts; it's month-to-month after the initial commitment.",
+    a: "A flat fee based on scope, recurring monthly for retainer clients. No surprise hourly bills or per-email fees.\n\nMost clients start with a fixed-fee audit and then move to a monthly retainer or build project. We don't do long contracts; it's month-to-month after the initial commitment.",
   },
   {
     q: "How long until we see results?",
