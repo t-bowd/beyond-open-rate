@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import ArrowIcon from "./ArrowIcon";
 
 /* Platform badges are real — these are the ESPs/CRMs BOR actually
    works with (see lib/content.ts, "Platform & CRM setup"). Headline
@@ -19,7 +20,7 @@ export default function FinalCta() {
           Walk away knowing where your email program is costing you money.
         </Reveal>
         <Reveal>
-          <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>
+          <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">Book your free session <ArrowIcon /></Link>
         </Reveal>
       </div>
     </section>

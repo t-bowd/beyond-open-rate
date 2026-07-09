@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import ArrowIcon from "./ArrowIcon";
 
 /* PLACEHOLDER MODULE — layout only, no real offer/guarantee copy yet.
    King Kong's homepage uses a bold guarantee statement here to convert
@@ -15,7 +16,7 @@ export default function GuaranteeBand() {
           We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current results, or it's on us until we do.*
         </Reveal>
         <Reveal>
-          <Link href="/strategy-session" className="btn btn-primary btn-lg">Book your free session →</Link>
+          <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">Book your free session <ArrowIcon /></Link>
         </Reveal>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import ArrowIcon from "@/components/ArrowIcon";
 import Contact from "@/components/Contact";
 import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
@@ -42,8 +43,8 @@ export default function ToolsPage() {
                 <span className="tool-icon" aria-hidden="true">{t.icon}</span>
                 <h2>{t.title}</h2>
                 <p>{t.description}</p>
-                <Link href={`/tools/${t.slug}`} className="btn btn-primary">
-                  {t.cta} →
+                <Link href={`/tools/${t.slug}`} className="btn btn-primary btn-arrow">
+                  {t.cta} <ArrowIcon />
                 </Link>
               </Reveal>
             ))}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import ArrowIcon from "@/components/ArrowIcon";
 import Contact from "@/components/Contact";
 import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema } from "@/lib/jsonld";
@@ -23,8 +24,8 @@ export default function ServicesPage() {
         sub="From one-off audits to full lifecycle management: we specialise in finding what's been missing and making sure it doesn't stay that way."
         actions={
           <>
-            <Link href="/strategy-session" className="btn btn-primary btn-lg">
-              Claim your free strategy session →
+            <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">
+              Claim your free strategy session <ArrowIcon />
             </Link>
             <Link href="#services" className="btn btn-ghost btn-lg">
               Explore our services

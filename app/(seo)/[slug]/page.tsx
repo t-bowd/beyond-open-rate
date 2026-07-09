@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import ArrowIcon from "@/components/ArrowIcon";
 import Contact from "@/components/Contact";
 import CtaLink from "@/components/CtaLink";
 import Faq from "@/components/Faq";
@@ -59,8 +60,8 @@ export default async function SeoPage({ params }: PageProps) {
         sub={page.heroSub}
         actions={
           <>
-            <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="hero">
-              Score your email program →
+            <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="hero">
+              Score your email program <ArrowIcon />
             </CtaLink>
             <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
               Talk to us
@@ -86,8 +87,8 @@ export default async function SeoPage({ params }: PageProps) {
             deliverability, and segmentation — and a scored breakdown of what
             to fix first.
           </p>
-          <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg" label="audit_cta" location="mid_page">
-            Start the free audit →
+          <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="mid_page">
+            Start the free audit <ArrowIcon />
           </CtaLink>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import ArrowIcon from "./ArrowIcon";
 
 export default function Contact() {
   return (
@@ -17,8 +18,8 @@ export default function Contact() {
             <li><span className="tick">✓</span> You talk to the people who do the work</li>
             <li><span className="tick">✓</span> We&apos;ll respond within one business day</li>
           </ul>
-          <Link href="/strategy-session" className="btn btn-primary btn-lg">
-            Book your free session →
+          <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">
+            Book your free session <ArrowIcon />
           </Link>
         </Reveal>
       </div>
