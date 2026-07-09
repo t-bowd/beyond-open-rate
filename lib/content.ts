@@ -79,33 +79,27 @@ export const faqs: Faq[] = [
   },
   {
     q: "Do you only work with e-commerce brands?",
-    a: "No — e-commerce and SaaS are where we do our best work, but any business with a list and something to sell is a fit. The mechanics of lifecycle email — welcome, nurture, re-engagement, win-back — travel well across industries.",
+    a: "No. We've worked with brands across e-commerce, SaaS, B2B and professional services. If you've got a list and something to sell, we can work together. The mechanics of lifecycle email travel well across industries, and we know how to apply these to work for your business.",
   },
   {
     q: "How are you priced?",
-    a: "A flat monthly retainer based on scope — no surprise hourly bills, no per-email fees. Most clients start with a fixed-fee audit and build project, then move to a monthly retainer once the core flows and calendar are live. We don't do long contracts; it's month-to-month after the initial build.",
+    a: "A flat fee based on scope, recurring monthly for retainer clients. No surprise hourly bills or per-email fees.Most clients start with a fixed-fee audit and then move to a monthly retainer or build project. We don't do long contracts; it's month-to-month after the initial commitment.",
   },
   {
     q: "How long until we see results?",
-    a: "Your first automated flow is usually live within two weeks of kickoff, and that's typically where early revenue shows up. Broadcast campaign performance compounds from there — most clients see meaningful improvement in revenue per recipient within the first quarter.",
+    a: "Your first automated flow is usually live within two weeks of kickoff, and that's typically where early revenue shows up. Broadcast campaign performance compounds from there. Our clients see meaningful improvement in revenue per recipient within 60-90 days.",
   },
   {
     q: "What do you need from us to start?",
-    a: "Access to your email platform and any connected store or CRM, your brand assets (logo, fonts, colours), and a half-hour kickoff call. We handle the strategy, copy, design and build — and we keep the back-and-forth as light as possible.",
+    a: "Generally, access to your email platform and any connected store or CRM, as well as your brand assets and a half-hour kickoff call. We handle strategy, copy, design and build, aiming to keep back-and-forth as light as possible.",
   },
-  {
-    q: "Do you do the work yourselves or outsource it?",
-    a: "We do the work ourselves. The people you meet in a sales call are the same people writing your emails, building your flows, and reviewing your reports. We deliberately keep client load small so that stays true.",
-  },
+ 
   // ── Email marketing fundamentals ─────────────────────────────
   {
     q: "What is email lifecycle automation?",
     a: "Email lifecycle automation is a set of triggered email sequences that send automatically based on a subscriber's behaviour or status — welcome series when someone signs up, abandoned cart when they leave without buying, post-purchase to drive repeat orders, win-back when they go quiet. Unlike broadcast campaigns, lifecycle flows run continuously without ongoing input, compounding revenue over time.",
   },
-  {
-    q: "What email automations should every e-commerce brand have?",
-    a: "At minimum: a welcome series (3–5 emails introducing the brand and making the first purchase easy), an abandoned cart sequence (1–3 emails recovering lost revenue), a post-purchase flow (reinforcing the decision and seeding repeat purchase), and a win-back sequence for lapsed buyers. These four flows alone typically account for 15–30% of total email-attributed revenue.",
-  },
+ 
   {
     q: "What's the difference between email campaigns and email flows?",
     a: "Campaigns are one-off broadcasts sent to a segment at a specific time — a promotion, a new product launch, a newsletter. Flows (also called automations or sequences) are triggered by behaviour and run automatically. Both matter: campaigns keep the list warm and drive short-term revenue; flows earn revenue in the background without ongoing effort.",
@@ -114,10 +108,7 @@ export const faqs: Faq[] = [
     q: "How do you measure email marketing ROI?",
     a: "We use revenue per recipient (RPR) as the primary campaign metric — total revenue attributed to a send divided by the number of recipients. For flows, we track conversion rate per step and monthly revenue contribution. We also monitor list health metrics: engagement rate, spam complaint rate, and unsubscribe rate, because these predict future deliverability and, by extension, future revenue.",
   },
-  {
-    q: "Why is email deliverability important and how do you improve it?",
-    a: "Deliverability determines whether your emails reach the inbox, the promotions tab, or spam. The main levers are: authentication (SPF, DKIM, DMARC set up and enforcing), list hygiene (removing bounced and chronically unengaged addresses), sending cadence and consistency, and spam complaint rate (keep it under 0.1%). A deliverability problem can silently kill an email program — revenue drops but opens look fine because the people who do see the email skew toward the engaged minority.",
-  },
+
   {
     q: "What is a good email open rate?",
     a: "Open rate is an unreliable metric since Apple's Mail Privacy Protection (launched 2021) pre-fetches tracking pixels for a large portion of Apple Mail users, inflating reported opens. We don't use it as a primary KPI. A better question is: what's your click-to-revenue rate, and what share of total revenue does email drive? For most well-run e-commerce programs, email should account for 20–35% of total revenue.",
@@ -125,18 +116,18 @@ export const faqs: Faq[] = [
   // ── Scope and process ─────────────────────────────────────────
   {
     q: "What does an email audit involve?",
-    a: "An email audit reviews your current flows (are the right automations live, are they converting), your broadcast strategy (cadence, segmentation, relevance), your deliverability setup (authentication, list hygiene, inbox placement), your ESP configuration (data integrations, segment logic, trigger accuracy), and your reporting (are you measuring the right things). We produce a prioritised list of gaps and recommended next moves, with estimated revenue impact where we can.",
+    a: "An email audit reviews every element of your existing email setup: current automations, campaigns, deliverability, tech stack, ESP configuration and reporting. You can read more about our email audit service here.",
   },
   {
     q: "How do you approach email list segmentation?",
-    a: "Segmentation strategy is driven by your business model and customer behaviour — there's no single right answer. Most programs start by separating engaged and disengaged subscribers to protect deliverability and improve relevance. From there, the right layers depend on your data: for e-commerce, RFM (Recency, Frequency, Monetary value) is a powerful framework for identifying high-value customers worth nurturing and lapsed buyers worth recovering. For SaaS, plan tier and product usage signals tend to be more useful. We build segmentation around what's meaningful for your specific revenue model, not what's technically available in your platform.",
+    a: "Segmentation strategy is driven by your business model and customer behaviour; there's no single right answer. Whether you're e-commerce, SaaS or services, we apply our expertise to build segmentation around what's meaningful for your specific business model. ",
   },
   {
     q: "Do you write the email copy and design the templates?",
-    a: "Yes — copy and design are in-house, not outsourced. We write in the brand's voice and design mobile-first, accessible templates. We don't use AI-generated copy or off-the-shelf template libraries. Every email is built for the specific audience and objective.",
+    a: "Yes. Copy and design are in-house services provided complimentary to all of our clients. We write in your brand's voice and create mobile-first, accessible templates. Every email is built for your specific audience and objective.",
   },
   {
     q: "Can you migrate us from one ESP to another?",
-    a: "Yes. We've handled migrations from Mailchimp, ActiveCampaign, and various legacy platforms into Klaviyo, HubSpot, and Customer.io. The process covers data export and mapping, list import and tag/segment recreation, flow rebuilding in the new platform, sending domain authentication setup, and a warm-up plan to protect deliverability through the transition.",
+    a: "Yes. We've handled migrations from Mailchimp, ActiveCampaign and various legacy platforms into Klaviyo, HubSpot, Customer.io and Braze. The process covers every aspect and a warm-up plan to protect deliverability through the transition. If you're thinking about migrating, get in touch with us to discuss an approach.",
   },
 ];
