@@ -116,7 +116,7 @@ export const faqs: Faq[] = [
   // ── Scope and process ─────────────────────────────────────────
   {
     q: "What does an email audit involve?",
-    a: "An email audit reviews every element of your existing email setup: current automations, campaigns, deliverability, tech stack, ESP configuration and reporting. You can read more about our email audit service here.",
+    a: "An email audit reviews every element of your existing email setup: current automations, campaigns, deliverability, tech stack, ESP configuration and reporting. You can read more about our [email audit service here](/email-marketing-audit-australia).",
   },
   {
     q: "How do you approach email list segmentation?",

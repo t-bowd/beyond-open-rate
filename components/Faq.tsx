@@ -1,8 +1,23 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Reveal from "./Reveal";
 import { faqs as globalFaqs } from "@/lib/content";
+
+function renderAnswer(text: string) {
+  return text.split("\n\n").map((para, i) => {
+    const parts = para.split(/(\[[^\]]+\]\([^)]+\))/g);
+    return (
+      <p key={i}>
+        {parts.map((part, j) => {
+          const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+          return m ? <Link key={j} href={m[2]}>{m[1]}</Link> : part;
+        })}
+      </p>
+    );
+  });
+}
 
 export type FaqItem = { q: string; a: string };
 
@@ -44,7 +59,7 @@ export default function Faq({ items, standalone = true }: FaqProps) {
             </button>
             <div className="faq-a" style={{ maxHeight: open ? "480px" : "0px" }}>
               <div className="faq-a-inner">
-                {item.a.split("\n\n").map((p, j) => <p key={j}>{p}</p>)}
+                {renderAnswer(item.a)}
               </div>
             </div>
           </div>
