@@ -43,24 +43,7 @@ export const services: Service[] = [
     description:
       "Implementation and migration across Klaviyo, HubSpot, Customer.io and Mailchimp. We integrate your store and product data, set up segments and triggers, and make sure the automations actually fire the way you think they do.",
   },
-  {
-    slug: "deliverability-and-audits",
-    num: "05",
-    title: "Deliverability & audits",
-    blurb:
-      "Authentication, list hygiene, and inbox placement — so the emails you send are the emails people see.",
-    description:
-      "SPF, DKIM, DMARC and BIMI set up properly. List hygiene, sunset policies, warm-up strategies. We audit your current program against best practice and inbox-placement data, then fix what's costing you reach.",
-  },
-  {
-    slug: "reporting-that-matters",
-    num: "06",
-    title: "Reporting that matters",
-    blurb:
-      "Revenue per recipient, not vanity opens. Clear monthly reporting tied to the numbers your business runs on.",
-    description:
-      "Monthly reporting built around revenue per recipient, contribution to total revenue, and flow-level performance. Dashboards your CFO can read, with the context to act on.",
-  },
+
 ];
 
 export type ProcessStep = { num: string; title: string; description: string };
