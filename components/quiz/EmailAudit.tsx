@@ -143,16 +143,14 @@ export default function EmailAudit() {
 
       {phase === "intro" && (
         <div className="quiz-card strategy-intro">
-          <span className="strategy-wave" aria-hidden="true">📧</span>
-          <h2 className="strategy-headline">Answer {total} questions.</h2>
+          <h2 className="strategy-headline">Find out what's costing you revenue. Right now.</h2>
           <p className="strategy-sub">
-            Get an instant score across deliverability,
-            automation, segmentation, and copy — plus your top recommendations.
+            Answer 10 questions and get an instant diagnosis across the 3 areas most email programs (and agencies) get wrong: deliverability, automation and segmentation. PLUS your top fixes, 100% free. 
           </p>
           <ul className="quiz-bullets">
-            <li>How to make money while you sleep, with emails that work even when you're not</li>
+            <li>Make money while you sleep, with emails that work while you're not</li>
             <li>How to deliver hot messages to your hot audience</li>
-            <li>Sending to your whole list works, right? Wrong!</li>
+            <li>Sending to your whole list works, right? Wrong! Find out why.</li>
             <li>The truth about landing in the inbox</li>
             <li>Have you been doing authentication wrong? Or at all?!</li>
             <li>Have you been tracking metrics wrong? (And it really does matter)</li>

@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: "What does the audit actually cover?",
-    a: "The ten questions cover the areas that account for most of the gap between a mediocre email program and a well-run one: which automations you have live, how you approach segmentation and sends, your deliverability setup, authentication, and whether you're tracking metrics that connect to revenue. You get a score out of 75 and a prioritised list of what to address first, based on your specific answers.",
+    q: "What does the audit cover?",
+    a: "Ten questions designed to expose the gaps most businesses don't know they have. Automations, segmentation, deliverability, revenue tracking. You'll get a score out of 75 and a prioritised list of what needs attention.",
   },
   {
     q: "How long does it take?",
-    a: "About three minutes. Ten multiple-choice questions and one optional free-text question — then your scored results are emailed to you.",
+    a: "Three minutes. Ten questions. Know where you stand.",
   },
   {
     q: "Why do you need my email?",
-    a: "We send the results to your inbox so you have a concrete record to refer back to — a scored breakdown and your priority recommendations in one place.",
+    a: "That's where we send your results. A scored breakdown and your priority fixes, so you know what to do first.",
   },
   {
     q: "Who is this for?",
-    a: "Any business that sends marketing email. The scoring and recommendations adapt based on your business type and what you currently have live, so the output reflects where you actually are — not generic best-practice advice.",
+    a: "Are you a business? Do you send emails? If you answered yes to both, this is for you. Especially if you're not sure whether your email setup is working as hard as it should be.",
   },
 ];
 
