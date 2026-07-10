@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-type Offer = { id: string; title: ReactNode; body: string; cta: string; href: string };
+type Offer = { id: string; title: ReactNode; body: ReactNode; cta: string; href: string };
 
 const OFFERS: Offer[] = [
   {
