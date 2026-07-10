@@ -16,7 +16,7 @@ const OFFERS: Offer[] = [
   {
     id: "audit",
     title: <>Revenue killers<br className="desktop-br" /> exposed</>,
-    body: "What marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
+    body: <>What marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.<br /><br /></>,
     cta: "Take the free audit",
     href: "/tools/email-audit",
   },
