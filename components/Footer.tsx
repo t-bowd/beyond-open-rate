@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src="/logo-reverse.svg" alt="" width={36} height={36} style={{ height: 36, width: "auto" }} />
             <span>Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
-          <p className="footer-tagline">Grow your business with email.</p>
+          <p className="footer-tagline">Your emails owe you money. We help you find it.</p>
 
           <div className="footer-social">
             <a href={site.social.linkedin} target="_blank" rel="me noopener noreferrer" aria-label="Beyond Open Rate on LinkedIn">
