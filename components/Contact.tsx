@@ -7,19 +7,20 @@ export default function Contact() {
     <section className="section cta" id="contact" data-screen-label="Contact">
       <div className="wrap">
         <Reveal className="cta-card cta-card-simple">
-          <h2>Let&apos;s have a chat.</h2>
+          <h2>Claim your free 30-minute strategy session.</h2>
           <p>
-            Tell us a bit about your business and where email is at. Free,
-            no-obligation — you&apos;ll talk to the people who actually do
-            the work, and we&apos;ll respond within one business day.
+            Worth $500 — yours at no cost. In 30 minutes we&apos;ll identify
+            exactly where your email program is leaving money on the table and
+            give you the strategies to fix it. No obligation, no pitch.
+            Sessions are limited, so don&apos;t sit on it.
           </p>
           <ul className="cta-list">
-            <li><span className="tick">✓</span> Free, no-obligation session</li>
-            <li><span className="tick">✓</span> You talk to the people who do the work</li>
-            <li><span className="tick">✓</span> We&apos;ll respond within one business day</li>
+            <li><span className="tick">✓</span> 30 minutes, valued at $500 — 100% free</li>
+            <li><span className="tick">✓</span> We find where your email is losing you money</li>
+            <li><span className="tick">✓</span> Walk away with strategies to act on immediately</li>
           </ul>
           <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">
-            Book your free session <ArrowIcon />
+            Claim your free strategy session <ArrowIcon />
           </Link>
         </Reveal>
       </div>
