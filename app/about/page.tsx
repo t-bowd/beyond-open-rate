@@ -101,7 +101,7 @@ export default function AboutPage() {
               <p className="about-eyebrow">Co-Founder</p>
               <h2>Hi, I&apos;m Tara.</h2>
               <p>
-                I bring [X] years of experience in [field/discipline]. My background spans [areas of expertise], working across businesses from [type] to [type]. I've built [things] from the ground up and led [initiatives] at scale. What drives me is [core motivation] — and email is one of the clearest places to put that into practice.
+                I’ve worked across creative, marketing and senior leadership roles in professional services, health, education, hospitality and entertainment. I’m a data-driven thinker and creative problem solver, who’s hard to impress with surface-level metrics. At Beyond Open Rate, I bring that lens to everything we do, with solutions that are built to last and tie back to revenue. I care about whether the work is actually moving the needle.
               </p>
             </Reveal>
 
