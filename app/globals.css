@@ -840,36 +840,40 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ---------- About page ---------- */
-.about-founder-section { background: var(--surface); border-block: 1px solid var(--line); }
-.about-founder {
+.about-intro-body p {
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+}
+.about-intro-body p:last-of-type { margin-bottom: 0; }
+
+.about-team-section { background: var(--surface); border-block: 1px solid var(--line); }
+.about-team-grid {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: clamp(40px, 6vw, 80px);
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 7vw, 96px);
   align-items: start;
 }
-.about-photo-wrap { position: relative; }
-.about-photo-placeholder {
-  width: 100%; aspect-ratio: 4 / 5;
-  background: var(--line-soft);
-  border-radius: var(--radius);
-  display: grid; place-items: center;
-  border: 1px solid var(--line);
+.about-person-card { display: flex; flex-direction: column; align-items: flex-start; }
+.about-person-photo-wrap {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 28px;
+  border: 3px solid var(--line);
+  flex-shrink: 0;
 }
-.about-photo-placeholder span {
-  font-family: var(--font-display); font-size: 74px; font-weight: 700;
-  color: var(--ink-faint);
-}
-.about-photo-img {
-  width: 100%; height: auto; border-radius: var(--radius); display: block;
-}
+.about-person-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-eyebrow {
   font-family: var(--font-body); font-size: 14px; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--accent-deep);
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
-.about-founder-copy h2 { font-size: clamp(30px, 4vw, 40px); margin: 0 0 24px; }
-.about-founder-copy p { color: var(--ink-soft); margin-bottom: 16px; }
-.about-founder-copy p:last-of-type { margin-bottom: 0; }
+.about-person-card h2 { font-size: clamp(28px, 3.5vw, 38px); margin: 0 0 20px; }
+.about-person-card p { color: var(--ink-soft); line-height: 1.75; margin-bottom: 16px; }
+.about-person-card p:last-of-type { margin-bottom: 0; }
 
 .about-philosophy .section-head { margin-bottom: 0; margin-inline: 0; text-align: left; }
 .about-philosophy h2 { font-size: clamp(28px, 3.6vw, 38px); margin-bottom: 28px; }
@@ -889,8 +893,7 @@ a { color: inherit; text-decoration: none; }
 .about-wont h2 { color: var(--ink); }
 
 @media (max-width: 860px) {
-  .about-founder { grid-template-columns: 1fr; }
-  .about-photo-wrap { max-width: 280px; }
+  .about-team-grid { grid-template-columns: 1fr; gap: 48px; }
   .about-split { grid-template-columns: 1fr; gap: 32px; }
 }
 
