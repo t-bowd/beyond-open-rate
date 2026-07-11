@@ -37,9 +37,12 @@ export default function Header() {
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
+  // Blog post pages have no dark hero, so header must always show dark elements.
+  const isLightTop = pathname.startsWith("/blog/");
+
   // Header goes solid-white + dark content whenever the menu is open,
   // regardless of scroll position — same as the scrolled state.
-  const light = scrolled || open;
+  const light = scrolled || open || isLightTop;
 
   // Focused-flow pages (e.g. the strategy session funnel) get a stripped
   // header — logo only, always dark, no phone/burger/drawer — since the
