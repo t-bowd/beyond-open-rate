@@ -44,7 +44,7 @@ function getUpdatedDate() {
 }
 
 const benefits = [
-  "Lifecycle mapping so you understand where you are now and where you should be, and where untapped revenue lies.",
+  "A 60-minute working session of lifecycle mapping, to understand where you are now and where you should be, so you know where untapped revenue lies.",
   "Know which flows to build next for the fastest return, so you don't waste effort on the wrong priorities.",
   "Segmentation strategy to ensure the right message reaches the right person, without guesswork.",
   "An estimate of what better email could be worth to your business, so you can take action with confidence.",
