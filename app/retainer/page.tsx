@@ -24,24 +24,24 @@ export const metadata: Metadata = {
 
 const faq = [
   {
-    q: "Which flows should we build first?",
-    a: "In order of typical revenue impact: welcome series, abandoned cart, post-purchase, win-back. Most programs are missing at least two of these, or have versions that haven't been touched since setup day. We audit your current setup first and prioritise based on where the actual gap is.",
+    q: "What's actually included in the monthly retainer?",
+    a: "Everything your email program needs to run and perform: lifecycle flows built and maintained, a monthly campaign calendar planned and executed, copy and design handled in-house, deliverability monitored, and a monthly strategy call and revenue report. One engagement, no bolt-ons.",
   },
   {
-    q: "Is this a one-time build, or do you manage the flows ongoing?",
-    a: "Ongoing. Flows aren't set-and-forget — they need monthly monitoring, A/B testing, and trigger adjustments as your list and catalogue change. We include all of that in the monthly engagement. A flow built once and left alone will underperform within months.",
+    q: "How does pricing work?",
+    a: "A flat monthly fee scoped to your program. No per-email charges, no hourly billing, no surprise extras. You know exactly what you're paying before we start, and it doesn't change unless the scope does — which we'd discuss with you first.",
   },
   {
-    q: "How long does it take to get the first flow live?",
-    a: "Most clients are live with their first rebuilt or new flow within two weeks of kickoff. That covers the strategy brief, copy, design, build, and QA. We don't use off-the-shelf templates, so there's a real build process — but we move quickly.",
+    q: "How quickly can we get started?",
+    a: "A 30-minute kickoff call, then we're building. Most clients have their first flow live or rebuilt within two weeks of signing. The campaign calendar kicks off in the first full month.",
   },
   {
-    q: "Do we need to be on Klaviyo?",
-    a: "Not necessarily. Klaviyo is our preferred platform for e-commerce because of its data model and segmentation engine — but we work across HubSpot, Brevo, Customer.io, and Mailchimp where they're the right fit. We'll give you an honest recommendation based on your business model, not platform partnerships.",
+    q: "Is there a lock-in contract?",
+    a: "There's an initial commitment to give the program enough time to compound — email isn't a switch you flip. After that, it's month-to-month. We'd rather keep clients because the results are there than because they're contractually stuck.",
   },
   {
-    q: "What do you need from us to get started?",
-    a: "Access to your email platform and any connected store or CRM, your brand assets, and a 30-minute kickoff call. We handle strategy, copy, design, build, and ongoing optimisation from there.",
+    q: "What do you need from us on an ongoing basis?",
+    a: "A monthly approval on the campaign calendar, your brand assets upfront, and access to your platform. Beyond that, the goal is to keep your involvement as light as possible. Most clients spend less than an hour a month on email once the program is set up.",
   },
 ];
 
@@ -50,8 +50,8 @@ export default function RetainerPage() {
     <>
       <PageHero
         label="Email retainer"
-        title="Finally. A fully managed email program that runs without you — and reports revenue, not open rates."
-        sub="One all-inclusive monthly retainer covers everything — flows, campaigns, copy, design, deliverability, and reporting. You focus on your business; we make sure email is working for it."
+        title="Finally. An email agency that gets business."
+        sub="Flows, campaigns, copy, design, deliverability, and reporting — all managed. One monthly engagement. You focus on your business; we make sure email is working for it."
       />
 
       <ServiceIntro />
