@@ -3,7 +3,6 @@ import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { getAllPosts } from "@/lib/blog";
 import { getAllSeoPages } from "@/lib/seo-pages";
-import { getAllServicePages } from "@/lib/services";
 
 const u = (path: string) => `${site.url}${path}`;
 
@@ -26,10 +25,9 @@ function lastModified(relativePath: string): Date {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [posts, seoPages, servicePages] = await Promise.all([
+  const [posts, seoPages] = await Promise.all([
     getAllPosts(),
     getAllSeoPages(),
-    getAllServicePages(),
   ]);
 
   const staticEntries: MetadataRoute.Sitemap = [
@@ -40,14 +38,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: u("/blog"),               lastModified: lastModified("app/blog/page.tsx"),             changeFrequency: "weekly",  priority: 0.7 },
     { url: u("/about"),              lastModified: lastModified("app/about/page.tsx"),            changeFrequency: "monthly", priority: 0.5 },
     { url: u("/strategy-session"),  lastModified: lastModified("app/strategy-session/page.tsx"), changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/retainer"),          lastModified: lastModified("app/retainer/page.tsx"),          changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/audit"),             lastModified: lastModified("app/audit/page.tsx"),             changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/foundations"),       lastModified: lastModified("app/foundations/page.tsx"),       changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/strategy"),          lastModified: lastModified("app/strategy/page.tsx"),          changeFrequency: "monthly", priority: 0.8 },
   ];
 
-  const serviceEntries: MetadataRoute.Sitemap = servicePages.map((p) => ({
-    url: u(`/services/${p.slug}`),
-    lastModified: lastModified(`content/services/${p.slug}.mdx`),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  const serviceEntries: MetadataRoute.Sitemap = [];
 
   const seoEntries: MetadataRoute.Sitemap = seoPages.map((p) => ({
     url: u(`/${p.slug}`),

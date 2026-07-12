@@ -66,8 +66,6 @@ export default function Footer() {
               <li><Link href="/audit">Email audit</Link></li>
               <li><Link href="/foundations">Email foundations</Link></li>
               <li><Link href="/strategy">Email strategy</Link></li>
-              <li><Link href="/services/deliverability-and-audits">Deliverability & audits</Link></li>
-              <li><Link href="/services/reporting-that-matters">Reporting</Link></li>
             </ul>
           </div>
 
