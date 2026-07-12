@@ -1174,7 +1174,7 @@ a { color: inherit; text-decoration: none; }
   color: color-mix(in oklab, var(--on-accent) 70%, transparent);
 }
 .footer-social { display: flex; gap: 14px; margin-top: 20px; }
-.footer-partner { margin-top: 20px; }
+.footer-partner { display: flex; align-items: center; gap: 16px; margin-top: 20px; }
 .footer-social a {
   display: flex;
   align-items: center;

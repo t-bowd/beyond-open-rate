@@ -44,9 +44,16 @@ export default function Footer() {
             <Image
               src="/KPartner-BadgeTier-Cotton.png"
               alt="Klaviyo Partner"
-              width={120}
-              height={50}
-              style={{ height: "auto", width: 120, opacity: 0.85 }}
+              width={110}
+              height={46}
+              style={{ height: 46, width: "auto", opacity: 0.85 }}
+            />
+            <Image
+              src="/Mailchimp Academy Foundations Certification Badge.png"
+              alt="Mailchimp Academy"
+              width={32}
+              height={46}
+              style={{ height: 46, width: "auto", opacity: 0.85 }}
             />
           </div>
         </div>
