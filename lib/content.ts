@@ -40,12 +40,13 @@ export const services: Service[] = [
   },
   {
     slug: "platform-and-crm-setup",
+    href: "/strategy",
     num: "04",
-    title: "Platform & CRM setup",
+    title: "Email strategy",
     blurb:
-      "Klaviyo, HubSpot, Customer.io — migrated, integrated, and configured so your data and triggers actually fire.",
+      "Stop guessing what to build. A working session that maps your lifecycle, identifies the highest-impact opportunities, and leaves you with a plan you can act on.",
     description:
-      "Implementation and migration across Klaviyo, HubSpot, Customer.io and Mailchimp. We integrate your store and product data, set up segments and triggers, and make sure the automations actually fire the way you think they do.",
+      "A forward-focused strategy session that gives you a clear email plan built for your business — not a template. Walk away knowing exactly what to build, in what order, and what it's worth.",
   },
 
 ];
