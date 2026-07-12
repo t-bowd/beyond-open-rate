@@ -51,9 +51,9 @@ export default function Footer() {
             <Image
               src="/Mailchimp Academy Foundations Certification Badge.png"
               alt="Mailchimp Academy"
-              width={32}
-              height={46}
-              style={{ height: 46, width: "auto", opacity: 0.85 }}
+              width={60}
+              height={85}
+              style={{ height: 85, width: "auto", opacity: 0.85 }}
             />
           </div>
         </div>
