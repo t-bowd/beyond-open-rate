@@ -77,15 +77,14 @@ export default function BlogListing({ posts }: { posts: ListPost[] }) {
         </div>
 
         <div className="blog-sidebar-offer">
-          <p className="eyebrow">Free tool</p>
-          <h3>Email program audit</h3>
+          <h3>Get a free strategy session</h3>
           <p>
-            Ten questions on your automations, deliverability, and
-            segmentation. Takes about three minutes — you get a score out of
-            75 and a prioritised list of what to fix first.
+            Thirty minutes with an email strategist. We&apos;ll look at what
+            you&apos;re sending, what&apos;s leaking revenue, and what to do
+            about it — no pitch, no obligation.
           </p>
-          <Link href="/tools/email-audit" className="btn btn-primary">
-            Take the free audit
+          <Link href="/strategy-session" className="btn btn-primary">
+            Book your free session
           </Link>
         </div>
       </aside>
