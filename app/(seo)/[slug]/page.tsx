@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
@@ -47,7 +48,7 @@ const mdxOptions = {
 
 export default async function SeoPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = await getSeoPage(slug);
+  const [page, allPages] = await Promise.all([getSeoPage(slug), getAllSeoPages()]);
   if (!page) notFound();
 
   const url = `${site.url}/${slug}`;
@@ -101,6 +102,28 @@ export default async function SeoPage({ params }: PageProps) {
           </div>
         </section>
       )}
+
+      {(() => {
+        const related = page.type === "location"
+          ? allPages.filter((p) => p.slug !== slug && p.type !== "location")
+          : allPages.filter((p) => p.slug !== slug && p.type === "location");
+        if (!related.length) return null;
+        const heading = page.type === "location" ? "Specialty services" : "We cover all of Australia";
+        return (
+          <section className="section">
+            <div className="wrap" style={{ maxWidth: 740 }}>
+              <h2 style={{ marginBottom: 16 }}>{heading}</h2>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexWrap: "wrap", gap: "10px 24px" }}>
+                {related.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/${p.slug}`}>{p.h1}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+      })()}
 
       <Contact />
 

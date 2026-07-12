@@ -20,7 +20,7 @@ export default function Footer() {
             <Image src="/logo-reverse.svg" alt="" width={36} height={36} style={{ height: 36, width: "auto" }} />
             <span>Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
-          <p className="footer-tagline">Your emails owe you money. We help you find it.</p>
+          <p className="footer-tagline">Your emails owe you money.<br />We help you find it.</p>
 
           <div className="footer-social">
             <a href={site.social.linkedin} target="_blank" rel="me noopener noreferrer" aria-label="Beyond Open Rate on LinkedIn">
@@ -38,6 +38,16 @@ export default function Footer() {
                 <path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2zm0 5.94a2.34 2.34 0 1 1 0-4.68 2.34 2.34 0 0 1 0 4.68zm4.59-6.08a.84.84 0 1 1-1.68 0 .84.84 0 0 1 1.68 0zM20.7 7.6c-.07-1.42-.39-2.68-1.42-3.71-1.03-1.03-2.29-1.35-3.71-1.42C14.13 2.4 9.87 2.4 8.43 2.47 7.01 2.54 5.75 2.86 4.72 3.89 3.69 4.92 3.37 6.18 3.3 7.6 3.23 9.04 3.23 13.3 3.3 14.74c.07 1.42.39 2.68 1.42 3.71 1.03 1.03 2.29 1.35 3.71 1.42 1.44.07 5.7.07 7.14 0 1.42-.07 2.68-.39 3.71-1.42 1.03-1.03 1.35-2.29 1.42-3.71.07-1.44.07-5.7 0-7.14zm-1.86 8.68a2.87 2.87 0 0 1-1.62 1.62c-1.12.44-3.78.34-5.02.34s-3.9.1-5.02-.34a2.87 2.87 0 0 1-1.62-1.62c-.44-1.12-.34-3.78-.34-5.02s-.1-3.9.34-5.02A2.87 2.87 0 0 1 6.98 4.6c1.12-.44 3.78-.34 5.02-.34s3.9-.1 5.02.34a2.87 2.87 0 0 1 1.62 1.62c.44 1.12.34 3.78.34 5.02s.1 3.9-.34 5.02z"/>
               </svg>
             </a>
+          </div>
+
+          <div className="footer-partner">
+            <Image
+              src="/KPartner-BadgeTier-Cotton.png"
+              alt="Klaviyo Partner"
+              width={120}
+              height={50}
+              style={{ height: "auto", width: 120, opacity: 0.85 }}
+            />
           </div>
         </div>
 
@@ -57,14 +67,6 @@ export default function Footer() {
           <div className="footer-col">
             <p className="footer-col-heading">Email marketing</p>
             <ul>
-              <li><Link href="/email-marketing-audit-australia">Email audit</Link></li>
-              <li><Link href="/email-automation-agency-australia">Email automation</Link></li>
-              <li><Link href="/klaviyo-agency-australia">Klaviyo agency</Link></li>
-              <li><Link href="/klaviyo-agency-sydney">Klaviyo — Sydney</Link></li>
-              <li><Link href="/ecommerce-email-marketing-australia">E-commerce email</Link></li>
-              <li><Link href="/email-deliverability-consultant-australia">Deliverability</Link></li>
-              <li><Link href="/mailchimp-to-klaviyo-migration">Mailchimp → Klaviyo</Link></li>
-              <li><Link href="/activecampaign-consultant-australia">ActiveCampaign</Link></li>
               <li><Link href="/email-marketing-agency-sydney">Sydney</Link></li>
               <li><Link href="/email-marketing-agency-melbourne">Melbourne</Link></li>
               <li><Link href="/email-marketing-agency-brisbane">Brisbane</Link></li>
