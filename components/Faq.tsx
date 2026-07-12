@@ -24,7 +24,7 @@ export type FaqItem = { q: string; a: string };
 const INITIAL_SHOW = 6;
 
 type FaqProps = {
-  /** Custom items — falls back to the global site FAQs when omitted. */
+  /** Custom items , falls back to the global site FAQs when omitted. */
   items?: FaqItem[];
   /**
    * When true (default), renders the full standalone section with heading

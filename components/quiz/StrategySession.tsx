@@ -150,7 +150,7 @@ export default function StrategySession() {
         track("lead_error", { source: "strategy-session", error: json.error ?? String(res.status) });
         setServerError(
           res.status === 429
-            ? "A few too many tries — give it a minute and try again."
+            ? "A few too many tries , give it a minute and try again."
             : "Something went wrong on our end. Try again, or email hello@beyondopenrate.com.au.",
         );
         setStepIndex(STEP_IDS.length - 1);
@@ -324,7 +324,7 @@ Session availability is limited, claim yours now or join the waitlist.
                   {firstName ? `${firstName}, be` : "Be"} honest… what&apos;s the #1 thing holding your email revenue back?
                 </h2>
                 <p className="strategy-help">
-                  Don&apos;t skip the hairy details — the more you tell us, the more useful the call will be.
+                  Don&apos;t skip the hairy details , the more you tell us, the more useful the call will be.
                 </p>
                 <textarea
                   className="strategy-textarea"

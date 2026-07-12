@@ -2,7 +2,7 @@ import Link from "next/link";
 import Reveal from "./Reveal";
 import ArrowIcon from "./ArrowIcon";
 
-/* Platform badges are real — these are the ESPs/CRMs BOR actually
+/* Platform badges are real , these are the ESPs/CRMs BOR actually
    works with (see lib/content.ts, "Platform & CRM setup"). Headline
    is a placeholder; King Kong's closing line here is pure copy. */
 const PLATFORMS = ["Klaviyo", "HubSpot", "Customer.io", "Mailchimp", "ActiveCampaign"];

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 
-// Real, sourced, outcome-level stats — not internal/vanity metrics
+// Real, sourced, outcome-level stats , not internal/vanity metrics
 // (no open rate, no BOR-only numbers) and no jargon metric names.
 const STATS = [
   {

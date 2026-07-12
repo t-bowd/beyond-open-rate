@@ -85,7 +85,7 @@ export default async function SeoPage({ params }: PageProps) {
           <h2 style={{ marginBottom: 12 }}>Not sure where to start?</h2>
           <p style={{ marginBottom: 28 }}>
             Take the free 3-minute audit. Ten questions on your automations,
-            deliverability, and segmentation — and a scored breakdown of what
+            deliverability, and segmentation , and a scored breakdown of what
             to fix first.
           </p>
           <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="mid_page">

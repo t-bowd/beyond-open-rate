@@ -81,7 +81,7 @@ export default function BlogListing({ posts }: { posts: ListPost[] }) {
           <p>
             Claim your 100% free 30-minute strategy session (valued at $500)
             to discuss where your email program stands and how it ties to
-            revenue. Act fast — sessions are limited.
+            revenue. Act fast , sessions are limited.
           </p>
           <Link href="/strategy-session" className="btn btn-primary">
             Claim your free session

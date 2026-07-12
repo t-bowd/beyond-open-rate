@@ -2,7 +2,7 @@ import Link from "next/link";
 import Reveal from "./Reveal";
 import ArrowIcon from "./ArrowIcon";
 
-/* PLACEHOLDER MODULE — layout only, no real offer/guarantee copy yet.
+/* PLACEHOLDER MODULE , layout only, no real offer/guarantee copy yet.
    King Kong's homepage uses a bold guarantee statement here to convert
    readers who scrolled past the hero. Fill in with a real, honest
    guarantee (or drop this section) before this branch ships. */

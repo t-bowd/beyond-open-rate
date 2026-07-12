@@ -32,7 +32,7 @@ export default function ToolsPage() {
         label="Tools"
         title={<><span className="highlight">Tools</span> to improve your email program.</>}
         sub="Practical diagnostics that show you where your email program stands
-          — and what to actually do about it."
+          , and what to actually do about it."
       />
 
       <section className="section">

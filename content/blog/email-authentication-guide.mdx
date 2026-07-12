@@ -13,7 +13,7 @@ faq:
     a: "Monitoring mode (p=none) collects reports but doesn't block failed messages. Enforcing mode (p=quarantine or p=reject) actually sends failed messages to spam or blocks them entirely. Start with monitoring, review reports for two weeks, then move to quarantine."
 ---
 
-**Email authentication** — SPF, DKIM, and DMARC — is the single most common cause of emails landing in spam in 2026. Gmail and Yahoo have required all three for bulk senders since February 2024, and missing or misconfigured records are the difference between inbox and junk folder, regardless of how good the email itself is.
+**Email authentication** , SPF, DKIM, and DMARC , is the single most common cause of emails landing in spam in 2026. Gmail and Yahoo have required all three for bulk senders since February 2024, and missing or misconfigured records are the difference between inbox and junk folder, regardless of how good the email itself is.
 
 Here's what each one does, how to check yours, and the mistakes that tank deliverability.
 
@@ -79,7 +79,7 @@ Or use [MXToolbox](https://mxtoolbox.com/SuperTool.aspx) to check all three at o
 
 If anything fails, the header tells you why. "SPF fail" usually means you're sending from an IP not in your SPF record. "DKIM fail" means the signature doesn't match, often because you didn't publish the public key. "DMARC fail" means SPF and DKIM both failed, or neither aligned with your From domain.
 
-If you're not sure what's misconfigured, [run the free email program audit](/tools/email-audit) — it checks authentication records and flags common issues.
+If you're not sure what's misconfigured, [run the free email program audit](/tools/email-audit) , it checks authentication records and flags common issues.
 
 ## What happens in monitoring vs enforcing mode
 
@@ -109,4 +109,4 @@ Google and Yahoo made DMARC mandatory for bulk senders in early 2024. By mid-202
 
 Authentication also protects your domain from being used in phishing attacks. When someone spoofs your domain to scam your customers, it damages your [sender reputation](/blog/email-list-cleaning-guide) even if you didn't send the message. DMARC in reject mode stops that.
 
-If you're not sure whether your authentication is set up correctly — or if you've seen a sudden drop in inbox placement — you're likely missing one of these records or have a configuration error. It's fixable, but it requires checking DNS, testing with real mailbox providers, and monitoring reports. If you'd rather have an expert review your setup, [get in touch here](/#contact) and we'll audit your authentication stack.
+If you're not sure whether your authentication is set up correctly , or if you've seen a sudden drop in inbox placement , you're likely missing one of these records or have a configuration error. It's fixable, but it requires checking DNS, testing with real mailbox providers, and monitoring reports. If you'd rather have an expert review your setup, [get in touch here](/#contact) and we'll audit your authentication stack.

@@ -12,7 +12,7 @@ export function JsonLd({ data }: { data: object }) {
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    // ProfessionalService is a LocalBusiness subtype — helps AI engines and
+    // ProfessionalService is a LocalBusiness subtype , helps AI engines and
     // Google answer "best email agency in Australia"-style queries by
     // signalling a real service business with a defined service area,
     // not just a generic publisher/organization.
@@ -85,7 +85,7 @@ export function faqSchema(items: { q: string; a: string }[]) {
   };
 }
 
-// Named writers on the team — used to attribute Article authorship to a
+// Named writers on the team , used to attribute Article authorship to a
 // real Person (better for E-E-A-T) instead of just the brand Organization.
 const TEAM = {
   Tim: { jobTitle: "Founder", url: `${site.url}/about` },

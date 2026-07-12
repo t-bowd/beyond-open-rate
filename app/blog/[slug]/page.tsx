@@ -58,7 +58,7 @@ const mdxOptions = {
 
 const BREAKING: Record<string, string[]> = {
   deliverability: [
-    "The deliverability issue quietly killing your open rates — exposed",
+    "The deliverability issue quietly killing your open rates , exposed",
     "Why your emails are going to spam (and what your ESP isn't telling you)",
     "Australia's top email agency reveals the inbox placement secret most brands miss",
     "Exposed: the sender reputation damage hiding in plain sight",
@@ -81,18 +81,18 @@ const BREAKING: Record<string, string[]> = {
   ],
   automation: [
     "Revealed: the automation playbook behind Australia's best-performing email programs",
-    "The set-and-forget email myth — exposed",
+    "The set-and-forget email myth , exposed",
     "What your flows are missing (and what it's costing you every day)",
   ],
   ecommerce: [
     "How Australia's fastest-growing e-commerce brands are using email in 2026",
-    "The cart abandonment truth no one's talking about — revealed",
+    "The cart abandonment truth no one's talking about , revealed",
     "E-commerce email experts expose what's actually driving repeat purchases",
     "Revealed: the email strategy behind Australia's highest-revenue online stores",
   ],
   segmentation: [
     "The segmentation secret separating high-performing programs from the rest",
-    "Why sending to your whole list is quietly killing your results — exposed",
+    "Why sending to your whole list is quietly killing your results , exposed",
     "Australia's top email agency reveals the audience strategy most brands ignore",
   ],
   "list health": [
@@ -101,7 +101,7 @@ const BREAKING: Record<string, string[]> = {
     "Industry insiders expose the list hygiene mistake costing brands revenue",
   ],
   strategy: [
-    "What the best-performing email programs in Australia have in common — revealed",
+    "What the best-performing email programs in Australia have in common , revealed",
     "The email revenue gap most businesses don't know they have",
     "Australia's #1 email agency reveals what separates winning email programs",
     "Exposed: the strategy shift that turned email into a reliable revenue channel",
@@ -109,7 +109,7 @@ const BREAKING: Record<string, string[]> = {
 };
 
 const BREAKING_DEFAULT = [
-  "What Australia's best email programs have in common — revealed",
+  "What Australia's best email programs have in common , revealed",
   "The email mistake costing brands revenue every single day",
   "Australia's #1 email agency exposes what most brands are getting wrong",
   "Revealed: the email strategy shift that changes everything",

@@ -33,10 +33,10 @@ export default function PrivacyPolicy() {
           <h2>2. What information we collect</h2>
           <p>We may collect the following types of personal information:</p>
           <ul>
-            <li><strong>Contact details</strong> — your name, email address, and phone number when you fill out a form, take our email audit, or book a strategy session.</li>
-            <li><strong>Business information</strong> — details about your business, email program, and marketing goals that you share with us in the course of our work together.</li>
-            <li><strong>Communications</strong> — records of emails, messages, and calls between us.</li>
-            <li><strong>Usage data</strong> — information about how you use our website, including pages visited, time spent, and referring sources, collected via cookies and analytics tools (see section 5).</li>
+            <li><strong>Contact details</strong> , your name, email address, and phone number when you fill out a form, take our email audit, or book a strategy session.</li>
+            <li><strong>Business information</strong> , details about your business, email program, and marketing goals that you share with us in the course of our work together.</li>
+            <li><strong>Communications</strong> , records of emails, messages, and calls between us.</li>
+            <li><strong>Usage data</strong> , information about how you use our website, including pages visited, time spent, and referring sources, collected via cookies and analytics tools (see section 5).</li>
           </ul>
           <p>We do not collect sensitive information (such as health, financial account, or government identifier information) unless you provide it voluntarily and we have a clear reason to do so.</p>
 
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
 
           <h2>6. Disclosure to third parties</h2>
           <p>
-            We may share your personal information with trusted third-party service providers who assist us in operating our website and delivering our services — for example, email delivery platforms, analytics providers, and business tools. These providers are required to handle your information in accordance with applicable privacy laws and our instructions.
+            We may share your personal information with trusted third-party service providers who assist us in operating our website and delivering our services , for example, email delivery platforms, analytics providers, and business tools. These providers are required to handle your information in accordance with applicable privacy laws and our instructions.
           </p>
           <p>
             We do not sell your personal information. We will only disclose your information to third parties outside of these arrangements where required or permitted by law, or with your consent.

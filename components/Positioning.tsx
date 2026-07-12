@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 
-/* PLACEHOLDER MODULE — layout only. Consolidates King Kong's "Built
+/* PLACEHOLDER MODULE , layout only. Consolidates King Kong's "Built
    for scale" and "The power is in the platform" blocks into one slot,
    since BOR doesn't have two distinct pieces of positioning copy for
    this yet. Split back into two sections later if there's enough real

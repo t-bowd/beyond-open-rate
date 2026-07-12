@@ -36,7 +36,7 @@ export default function Hero() {
       setNote("error");
       return;
     }
-    // Hand off into the strategy session flow with the email pre-filled —
+    // Hand off into the strategy session flow with the email pre-filled ,
     // nothing is saved as a lead until they actually complete (or at
     // least reach) that funnel.
     router.push(`/strategy-session?email=${encodeURIComponent(v)}`);

@@ -11,16 +11,16 @@ import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email marketing retainer, Australia — Beyond Open Rate",
+  title: "Email marketing retainer, Australia , Beyond Open Rate",
   description:
-    "Full lifecycle email management under one monthly retainer. Flows, campaigns, copy, design, deliverability, and reporting — all managed. No scope creep, no surprises.",
+    "Full lifecycle email management under one monthly retainer. Flows, campaigns, copy, design, deliverability, and reporting , all managed. No scope creep, no surprises.",
   alternates: { canonical: "/retainer" },
   openGraph: {
     type: "website",
     url: `${site.url}/retainer`,
-    title: "Email marketing retainer, Australia — Beyond Open Rate",
+    title: "Email marketing retainer, Australia , Beyond Open Rate",
     description:
-      "Full lifecycle email management under one monthly retainer. Flows, campaigns, copy, design, deliverability, and reporting — all managed. No scope creep, no surprises.",
+      "Full lifecycle email management under one monthly retainer. Flows, campaigns, copy, design, deliverability, and reporting , all managed. No scope creep, no surprises.",
   },
 };
 
@@ -54,7 +54,7 @@ const benefits = [
   "A clean, engaged list. No dead weight dragging down your sender reputation or results.",
   "Clear monthly reporting that ties email directly to revenue. No more guessing whether it's worth it.",
   "A 60-minute dedicated monthly strategy call with an expert, so decisions are made faster and stay aligned with your business goals.",
-  "Flexible support that scales with your stage — from early-stage brands and start-ups to full lifecycle ownership.",
+  "Flexible support that scales with your stage , from early-stage brands and start-ups to full lifecycle ownership.",
   "Unlimited email support, to ensure your questions never go unanswered.",
 ];
 
@@ -65,7 +65,7 @@ const faq = [
   },
   {
     q: "How does pricing work?",
-    a: "A flat monthly fee scoped to your program. No per-email charges, no hourly billing, no surprise extras. You know exactly what you're paying before we start, and it doesn't change unless the scope does — which we'd discuss with you first.",
+    a: "A flat monthly fee scoped to your program. No per-email charges, no hourly billing, no surprise extras. You know exactly what you're paying before we start, and it doesn't change unless the scope does , which we'd discuss with you first.",
   },
   {
     q: "How quickly can we get started?",
@@ -73,7 +73,7 @@ const faq = [
   },
   {
     q: "Is there a lock-in contract?",
-    a: "There's an initial commitment to give the program enough time to compound — email isn't a switch you flip. After that, it's month-to-month. We'd rather keep clients because the results are there than because they're contractually stuck.",
+    a: "There's an initial commitment to give the program enough time to compound , email isn't a switch you flip. After that, it's month-to-month. We'd rather keep clients because the results are there than because they're contractually stuck.",
   },
   {
     q: "What do you need from us on an ongoing basis?",

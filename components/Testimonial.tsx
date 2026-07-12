@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 
-// PLACEHOLDERS — replace with real client quotes before launch.
+// PLACEHOLDERS , replace with real client quotes before launch.
 // Using first name + last initial only, no company names.
 type Review = { text: string; name: string; initial: string; rating?: number };
 
