@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
           <h2>1. About us</h2>
           <p>
-            Beyond Open Rate (ABN [ABN]) is an Australian email marketing agency. We operate the website beyondopenrate.com.au and provide email marketing strategy, audit, and retainer services to businesses.
+            Beyond Open Rate (ABN 91 693 195 836) is an Australian email marketing agency. We operate the website beyondopenrate.com.au and provide email marketing strategy, audit, and retainer services to businesses.
           </p>
           <p>
             We are committed to protecting your privacy and handling your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).
