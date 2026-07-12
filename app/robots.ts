@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
-      // Explicitly welcome AI answer-engine crawlers — we want to be
+      // Explicitly welcome AI answer-engine crawlers, we want to be
       // ingested and cited by ChatGPT, Claude, Perplexity, and Gemini.
       {
         userAgent: ["GPTBot", "ChatGPT-User", "ClaudeBot", "Claude-Web", "PerplexityBot", "Google-Extended", "anthropic-ai", "CCBot"],

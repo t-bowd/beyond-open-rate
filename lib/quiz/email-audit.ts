@@ -96,7 +96,7 @@ export const questions: Question[] = [
     kind: "single",
     prompt: "Do you segment broadcasts by audience?",
     options: [
-      { value: "always", label: "Always — every send is segmented", score: 10 },
+      { value: "always", label: "Always, every send is segmented", score: 10 },
       { value: "sometimes", label: "Sometimes, for bigger sends", score: 5 },
       { value: "never", label: "We send to the whole list", score: 0 },
     ],
@@ -118,7 +118,7 @@ export const questions: Question[] = [
     id: "auth",
     kind: "single",
     prompt: "Are SPF, DKIM, and DMARC set up on your sending domain?",
-    help: "Email authentication records — if you don't know, that's a valid answer.",
+    help: "Email authentication records, if you don't know, that's a valid answer.",
     options: [
       { value: "all", label: "All three, and DMARC is enforcing", score: 15 },
       { value: "some", label: "Some of them", score: 5 },
@@ -153,41 +153,41 @@ export type Answers = Record<string, string | string[]>;
  * gap in this set of answers. Used as the Brevo contact attribute `audit_top_issue`
  * which is personalised into the nurture sequence emails.
  *
- * Ordered by estimated revenue impact — authentication first because without it
+ * Ordered by estimated revenue impact, authentication first because without it
  * emails may never arrive, making everything else moot.
  */
 export function getTopIssue(answers: Answers): string {
   const flows = Array.isArray(answers.flows) ? answers.flows : [];
 
   if (answers.auth === "none")
-    return "Email authentication not set up — messages are landing in spam";
+    return "Email authentication not set up, messages are landing in spam";
 
   if (!flows.includes("welcome"))
-    return "No welcome series — losing revenue from every new subscriber";
+    return "No welcome series, losing revenue from every new subscriber";
 
   if (!flows.includes("abandoned_cart") && answers.industry === "ecommerce")
-    return "Abandoned cart flow not running — leaving 10–20% of email revenue on the table";
+    return "Abandoned cart flow not running, leaving 10–20% of email revenue on the table";
 
   if (!flows.includes("post_purchase"))
-    return "No post-purchase sequence — one-time buyers staying one-time buyers";
+    return "No post-purchase sequence, one-time buyers staying one-time buyers";
 
   if (answers.deliverability === "never" || answers.deliverability === "unknown")
-    return "Deliverability never checked — inbox placement is unknown";
+    return "Deliverability never checked, inbox placement is unknown";
 
   if (answers.auth === "some" || answers.auth === "unknown")
-    return "Email authentication incomplete — sender reputation at risk";
+    return "Email authentication incomplete, sender reputation at risk";
 
   if (answers.segmentation === "never")
-    return "Sending to the whole list without segmentation — hurting deliverability and revenue per send";
+    return "Sending to the whole list without segmentation, hurting deliverability and revenue per send";
 
   if (answers.cadence === "sporadic" || answers.cadence === "never")
-    return "No consistent send cadence — list is going cold between campaigns";
+    return "No consistent send cadence, list is going cold between campaigns";
 
   if (answers.revenue_share === "unknown")
-    return "Email revenue not being tracked — no way to know what's actually working";
+    return "Email revenue not being tracked, no way to know what's actually working";
 
   if (!flows.includes("winback"))
-    return "No win-back sequence — lapsed customers are walking out the door";
+    return "No win-back sequence, lapsed customers are walking out the door";
 
   return "Optimisation gaps in segmentation depth and reporting";
 }
@@ -304,7 +304,7 @@ function buildRecommendations(answers: Answers, tier: Tier): Recommendation[] {
   if (answers.cadence === "sporadic" || answers.cadence === "never") {
     recs.push({
       title: "Say goodbye to reactive campaign blasts",
-      body: "Commit to a campaign cadence — a predictable monthly calendar. Even just two well-segmented sends outperforms reactive 'whenever' sends. List warmth compounds and you stay on the front foot.",
+      body: "Commit to a campaign cadence, a predictable monthly calendar. Even just two well-segmented sends outperforms reactive 'whenever' sends. List warmth compounds and you stay on the front foot.",
     });
   }
 

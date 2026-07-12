@@ -69,7 +69,7 @@ export async function triggerBrevoNurture(input: NurtureInput): Promise<void> {
     "content-type": "application/json",
   };
 
-  // Step 1 — upsert the contact with custom attributes
+  // Step 1, upsert the contact with custom attributes
   const contactRes = await fetch("https://api.brevo.com/v3/contacts", {
     method: "POST",
     headers,
@@ -90,7 +90,7 @@ export async function triggerBrevoNurture(input: NurtureInput): Promise<void> {
     throw new Error(`Brevo contact upsert failed (${contactRes.status}): ${text}`);
   }
 
-  // Step 2 — fire the automation trigger event
+  // Step 2, fire the automation trigger event
   const eventRes = await fetch("https://api.brevo.com/v3/events", {
     method: "POST",
     headers,
@@ -187,7 +187,7 @@ function auditSection(payload: Record<string, unknown> | undefined): string {
 
   if (score !== undefined && maxScore !== undefined) {
     const pct = Math.round((score / maxScore) * 100);
-    html += `<p style="margin:0 0 8px;font-size:22px;font-weight:700;color:#111;">${score}/${maxScore} <span style="font-size:15px;color:#666;">(${pct}% — ${tier ?? ""})</span></p>`;
+    html += `<p style="margin:0 0 8px;font-size:22px;font-weight:700;color:#111;">${score}/${maxScore} <span style="font-size:15px;color:#666;">(${pct}%, ${tier ?? ""})</span></p>`;
   }
 
   if (answers && typeof answers === "object") {
@@ -220,7 +220,7 @@ export async function sendLeadNotification(lead: NotifyLeadInput): Promise<void>
         <table width="620" cellpadding="0" cellspacing="0" style="max-width:620px;width:100%;">
           <tr>
             <td style="background:#6A00CC;padding:20px 32px;border-radius:8px 8px 0 0;">
-              <p style="margin:0;font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:1px;">Beyond Open Rate — New Lead</p>
+              <p style="margin:0;font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:1px;">Beyond Open Rate, New Lead</p>
             </td>
           </tr>
           <tr>
@@ -275,7 +275,7 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
   const greeting = firstName ? `Hi ${firstName},` : "Hi there,";
   const auditCompleted = lead.auditCompleted ?? lead.source === "tool:email-audit";
 
-  const subject = "We've received your enquiry — a few things to explore while you wait";
+  const subject = "We've received your enquiry, a few things to explore while you wait";
 
   const html = `
 <!DOCTYPE html>
@@ -312,17 +312,17 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
               ${auditCompleted ? `
               <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">In the meantime, here are a few resources worth exploring while you wait.</p>
               ` : `
-              <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">While you wait, it's worth taking our free email program audit — answer 15 questions and get an instant score across deliverability, automation, segmentation, and copy. We'll be able to reference your results when we chat.</p>
+              <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">While you wait, it's worth taking our free email program audit, answer 15 questions and get an instant score across deliverability, automation, segmentation, and copy. We'll be able to reference your results when we chat.</p>
               `}
 
               ${!auditCompleted ? `
-              <!-- Audit CTA — prominent if they haven't done it -->
+              <!-- Audit CTA, prominent if they haven't done it -->
               <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:20px;">
                 <tr>
                   <td style="background:linear-gradient(135deg,#6A00CC,#8b2be2);border-radius:10px;padding:28px 28px 24px;">
                     <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:rgba(255,255,255,0.75);text-transform:uppercase;letter-spacing:0.8px;">Free tool</p>
                     <p style="margin:0 0 8px;font-size:20px;font-weight:700;color:#ffffff;letter-spacing:-0.3px;">Score your email program</p>
-                    <p style="margin:0 0 20px;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.55;">15 questions. Instant score. Covers deliverability, automation, segmentation, and copy — the four things that actually drive revenue from email.</p>
+                    <p style="margin:0 0 20px;font-size:14px;color:rgba(255,255,255,0.85);line-height:1.55;">15 questions. Instant score. Covers deliverability, automation, segmentation, and copy, the four things that actually drive revenue from email.</p>
                     <a href="${SITE}/tools/email-audit" style="display:inline-block;background:#ffffff;color:#6A00CC;text-decoration:none;font-size:14px;font-weight:700;padding:12px 24px;border-radius:6px;">Take the free audit →</a>
                   </td>
                 </tr>
@@ -335,27 +335,27 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
                   <td style="background:#f9f9fb;border:1px solid #e5e5e8;border-radius:10px;padding:24px 28px;">
                     <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Resources</p>
                     <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">Strategy, automation &amp; deliverability</p>
-                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">Practical thinking on lifecycle flows, segmentation, Klaviyo, and the metrics that actually move revenue — written for Australian e-commerce brands.</p>
+                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">Practical thinking on lifecycle flows, segmentation, Klaviyo, and the metrics that actually move revenue, written for Australian e-commerce brands.</p>
                     <a href="${SITE}/blog" style="display:inline-block;background:#111111;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:11px 22px;border-radius:6px;">Read the blog →</a>
                   </td>
                 </tr>
               </table>
 
               ${auditCompleted ? `
-              <!-- Audit CTA — secondary if they've done it -->
+              <!-- Audit CTA, secondary if they've done it -->
               <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:20px;">
                 <tr>
                   <td style="background:#f5f0ff;border:1px solid #e9d5ff;border-radius:10px;padding:24px 28px;">
                     <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#6A00CC;text-transform:uppercase;letter-spacing:0.8px;">Our services</p>
                     <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">See how we can help</p>
-                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">From Klaviyo management and lifecycle automation to deliverability fixes and platform migrations — take a look at what we do.</p>
+                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">From Klaviyo management and lifecycle automation to deliverability fixes and platform migrations, take a look at what we do.</p>
                     <a href="${SITE}/services" style="display:inline-block;background:#6A00CC;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:11px 22px;border-radius:6px;">View services →</a>
                   </td>
                 </tr>
               </table>
               ` : ""}
 
-              <p style="margin:32px 0 0;font-size:14px;color:#888888;line-height:1.6;">If you have anything to add before we chat, just reply to this email — it comes straight to us.</p>
+              <p style="margin:32px 0 0;font-size:14px;color:#888888;line-height:1.6;">If you have anything to add before we chat, just reply to this email, it comes straight to us.</p>
 
             </td>
           </tr>

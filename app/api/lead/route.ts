@@ -19,7 +19,7 @@ const LeadSchema = z.object({
   company_size: z.string().max(50).optional(),
   message: z.string().max(5000).optional(),
   payload: z.record(z.string(), z.unknown()).optional(),
-  // honeypot — bots fill it, humans don't
+  // honeypot, bots fill it, humans don't
   _hp: z.string().max(0).optional().or(z.literal("")),
 });
 

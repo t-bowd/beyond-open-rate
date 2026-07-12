@@ -6,7 +6,7 @@ import { getAllSeoPages } from "@/lib/seo-pages";
 
 const u = (path: string) => `${site.url}${path}`;
 
-// Real per-file last-edit date from git history — NOT `new Date()`.
+// Real per-file last-edit date from git history, NOT `new Date()`.
 // `new Date()` reflects "when this build ran", which fires on every
 // deploy even when a given page's content didn't change, so every page
 // would falsely report "updated today". Reading the actual last commit
@@ -19,7 +19,7 @@ function lastModified(relativePath: string): Date {
     }).trim();
     if (iso) return new Date(iso);
   } catch {
-    // git not available (e.g. some build environments) — fall through
+    // git not available (e.g. some build environments), fall through
   }
   return new Date();
 }

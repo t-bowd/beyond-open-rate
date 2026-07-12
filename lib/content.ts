@@ -14,7 +14,7 @@ export const services: Service[] = [
     num: "01",
     title: "Email retainer",
     blurb:
-      "Full lifecycle email management under one monthly engagement — flows, campaigns, copy, design, deliverability, and reporting.",
+      "Full lifecycle email management under one monthly engagement, flows, campaigns, copy, design, deliverability, and reporting.",
     description:
       "Everything your email program needs, managed as an extension of your team. One monthly engagement covers flows, campaigns, copy, design, deliverability, and reporting. No separate quotes, no scope creep.",
   },
@@ -24,9 +24,9 @@ export const services: Service[] = [
     num: "02",
     title: "Email audit",
     blurb:
-      "Find out exactly what your email program is worth — and what it's costing you. A complete diagnostic with a prioritised action plan.",
+      "Find out exactly what your email program is worth, and what it's costing you. A complete diagnostic with a prioritised action plan.",
     description:
-      "A complete diagnostic of your email and lifecycle setup — flows, deliverability, list health, copy, design, and tech stack — delivered with a prioritised action plan and walkthrough session.",
+      "A complete diagnostic of your email and lifecycle setup, flows, deliverability, list health, copy, design, and tech stack, delivered with a prioritised action plan and walkthrough session.",
   },
   {
     slug: "copy-and-design",
@@ -34,9 +34,9 @@ export const services: Service[] = [
     num: "03",
     title: "Email foundations",
     blurb:
-      "The flows your email program needs to start converting, retaining, and recovering customers — scoped to your business and built to run without you.",
+      "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
     description:
-      "We build the email foundations that turn first-time buyers into repeat customers. Welcome series, abandoned cart, post-purchase, win-back — scoped to your business, written in your voice, and handed over with a 30-day monitoring period.",
+      "We build the email foundations that turn first-time buyers into repeat customers. Welcome series, abandoned cart, post-purchase, win-back, scoped to your business, written in your voice, and handed over with a 30-day monitoring period.",
   },
   {
     slug: "platform-and-crm-setup",
@@ -46,7 +46,7 @@ export const services: Service[] = [
     blurb:
       "Stop guessing what to build. A working session that maps your lifecycle, identifies the highest-impact opportunities, and leaves you with a plan you can act on.",
     description:
-      "A forward-focused strategy session that gives you a clear email plan built for your business — not a template. Walk away knowing exactly what to build, in what order, and what it's worth.",
+      "A forward-focused strategy session that gives you a clear email plan built for your business, not a template. Walk away knowing exactly what to build, in what order, and what it's worth.",
   },
 
 ];
@@ -58,7 +58,7 @@ export const processSteps: ProcessStep[] = [
     num: "STEP 01",
     title: "Audit",
     description:
-      "We tear down your current setup — flows, deliverability, segmentation — and map the gaps costing you money.",
+      "We tear down your current setup, flows, deliverability, segmentation, and map the gaps costing you money.",
   },
   {
     num: "STEP 02",
@@ -70,7 +70,7 @@ export const processSteps: ProcessStep[] = [
     num: "STEP 03",
     title: "Scale",
     description:
-      "We test, segment, and optimise month over month — reporting on revenue, not just opens and clicks.",
+      "We test, segment, and optimise month over month, reporting on revenue, not just opens and clicks.",
   },
 ];
 
@@ -80,7 +80,7 @@ export const faqs: Faq[] = [
   // ── Working with us ──────────────────────────────────────────
   {
     q: "Which email platforms do you work with?",
-    a: "We work across all major email service providers (ESPs) and customer engagement platforms (CEPs) — from established enterprise tools to newer specialists. Whether you're on something widely used, something niche, or nothing yet, we'll work with what you have or advise on the right fit for your stage. Platform choice matters less than how it's set up and used.",
+    a: "We work across all major email service providers (ESPs) and customer engagement platforms (CEPs), from established enterprise tools to newer specialists. Whether you're on something widely used, something niche, or nothing yet, we'll work with what you have or advise on the right fit for your stage. Platform choice matters less than how it's set up and used.",
   },
   {
     q: "Do you only work with e-commerce brands?",
@@ -102,16 +102,16 @@ export const faqs: Faq[] = [
   // ── Email marketing fundamentals ─────────────────────────────
   {
     q: "What is email lifecycle automation?",
-    a: "Email lifecycle automation is a set of triggered email sequences that send automatically based on a subscriber's behaviour or status — welcome series when someone signs up, abandoned cart when they leave without buying, post-purchase to drive repeat orders, win-back when they go quiet. Unlike broadcast campaigns, lifecycle flows run continuously without ongoing input, compounding revenue over time.",
+    a: "Email lifecycle automation is a set of triggered email sequences that send automatically based on a subscriber's behaviour or status, welcome series when someone signs up, abandoned cart when they leave without buying, post-purchase to drive repeat orders, win-back when they go quiet. Unlike broadcast campaigns, lifecycle flows run continuously without ongoing input, compounding revenue over time.",
   },
  
   {
     q: "What's the difference between email campaigns and email flows?",
-    a: "Campaigns are one-off broadcasts sent to a segment at a specific time — a promotion, a new product launch, a newsletter. Flows (also called automations or sequences) are triggered by behaviour and run automatically. Both matter: campaigns keep the list warm and drive short-term revenue; flows earn revenue in the background without ongoing effort.",
+    a: "Campaigns are one-off broadcasts sent to a segment at a specific time, a promotion, a new product launch, a newsletter. Flows (also called automations or sequences) are triggered by behaviour and run automatically. Both matter: campaigns keep the list warm and drive short-term revenue; flows earn revenue in the background without ongoing effort.",
   },
   {
     q: "How do you measure email marketing ROI?",
-    a: "We use revenue per recipient (RPR) as the primary campaign metric — total revenue attributed to a send divided by the number of recipients. For flows, we track conversion rate per step and monthly revenue contribution. We also monitor list health metrics: engagement rate, spam complaint rate, and unsubscribe rate, because these predict future deliverability and, by extension, future revenue.",
+    a: "We use revenue per recipient (RPR) as the primary campaign metric, total revenue attributed to a send divided by the number of recipients. For flows, we track conversion rate per step and monthly revenue contribution. We also monitor list health metrics: engagement rate, spam complaint rate, and unsubscribe rate, because these predict future deliverability and, by extension, future revenue.",
   },
 
   {
