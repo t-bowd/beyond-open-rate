@@ -96,7 +96,7 @@ export default function Footer() {
       <div className="wrap footer-bottom">
         <p className="footer-copy">© {new Date().getFullYear()} Beyond Open Rate. All rights reserved.</p>
         {/* Privacy policy copy isn't written yet — plain text, not a link, until the page exists. */}
-        <p className="footer-legal-link">Privacy policy</p>
+        <Link href="/privacy-policy" className="footer-legal-link">Privacy policy</Link>
       </div>
     </footer>
   );
