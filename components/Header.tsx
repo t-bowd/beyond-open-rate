@@ -107,9 +107,8 @@ export default function Header() {
               </Link>
             </li>
           ))}
-          <li className="nav-drawer-section-label">SERVICES</li>
           {SERVICES.map((item) => (
-            <li key={item.href} className="nav-drawer-service">
+            <li key={item.href}>
               <Link href={item.href} onClick={() => setOpen(false)}>
                 {item.label}
               </Link>
