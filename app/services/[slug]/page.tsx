@@ -7,6 +7,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import PageHero from "@/components/PageHero";
+import ServiceIntro from "@/components/ServiceIntro";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllServicePages, getServicePage } from "@/lib/services";
 import { site } from "@/lib/site";
@@ -57,6 +58,8 @@ export default async function ServicePage({ params }: PageProps) {
         title={page.h1}
         sub={page.heroSub}
       />
+
+      <ServiceIntro />
 
       <section className="section">
         <div className="wrap prose" style={{ maxWidth: 740 }}>
