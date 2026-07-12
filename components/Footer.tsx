@@ -63,7 +63,7 @@ export default function Footer() {
             <p className="footer-col-heading">Services</p>
             <ul>
               <li><Link href="/retainer">Email retainer</Link></li>
-              <li><Link href="/services/campaign-management">Campaign management</Link></li>
+              <li><Link href="/audit">Email audit</Link></li>
               <li><Link href="/services/copy-and-design">Copy & design</Link></li>
               <li><Link href="/services/platform-and-crm-setup">Platform & CRM setup</Link></li>
               <li><Link href="/services/deliverability-and-audits">Deliverability & audits</Link></li>

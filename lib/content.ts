@@ -20,12 +20,13 @@ export const services: Service[] = [
   },
   {
     slug: "campaign-management",
+    href: "/audit",
     num: "02",
-    title: "Campaign management",
+    title: "Email audit",
     blurb:
-      "A planned calendar of broadcasts — segmented, scheduled, and sent. We own the whole cadence, not just one-offs.",
+      "Find out exactly what your email program is worth — and what it's costing you. A complete diagnostic with a prioritised action plan.",
     description:
-      "A monthly campaign calendar planned around your launches, promotions, and content — segmented, scheduled and sent. We own the full cadence so your list stays warm without you thinking about it.",
+      "A complete diagnostic of your email and lifecycle setup — flows, deliverability, list health, copy, design, and tech stack — delivered with a prioritised action plan and walkthrough session.",
   },
   {
     slug: "copy-and-design",
