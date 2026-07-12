@@ -7,8 +7,13 @@ import { usePathname } from "next/navigation";
 
 const NAV = [
   { href: "/about", label: "ABOUT" },
-  { href: "/services", label: "SERVICES" }
-  
+];
+
+const SERVICES = [
+  { href: "/retainer",    label: "RETAINER" },
+  { href: "/audit",       label: "AUDIT" },
+  { href: "/foundations", label: "FOUNDATIONS" },
+  { href: "/strategy",    label: "STRATEGY" },
 ];
 
 export default function Header() {
@@ -97,6 +102,14 @@ export default function Header() {
         <ul className="nav-drawer-links">
           {NAV.map((item) => (
             <li key={item.href}>
+              <Link href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li className="nav-drawer-section-label">SERVICES</li>
+          {SERVICES.map((item) => (
+            <li key={item.href} className="nav-drawer-service">
               <Link href={item.href} onClick={() => setOpen(false)}>
                 {item.label}
               </Link>
