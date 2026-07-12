@@ -125,6 +125,25 @@ export default async function SeoPage({ params }: PageProps) {
         );
       })()}
 
+      {page.type === "location" && (() => {
+        const siblings = allPages.filter((p) => p.slug !== slug && p.type === "location");
+        if (!siblings.length) return null;
+        return (
+          <section className="section">
+            <div className="wrap" style={{ maxWidth: 740 }}>
+              <h2 style={{ marginBottom: 16 }}>We also serve</h2>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexWrap: "wrap", gap: "10px 24px" }}>
+                {siblings.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/${p.slug}`}>{p.h1}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        );
+      })()}
+
       <Contact />
 
       <JsonLd
