@@ -6,6 +6,7 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+import GuaranteeBand from "@/components/GuaranteeBand";
 import PageHero from "@/components/PageHero";
 import ServiceIntro from "@/components/ServiceIntro";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
@@ -60,6 +61,8 @@ export default async function ServicePage({ params }: PageProps) {
       />
 
       <ServiceIntro />
+
+      <GuaranteeBand />
 
       <section className="section">
         <div className="wrap prose" style={{ maxWidth: 740 }}>
