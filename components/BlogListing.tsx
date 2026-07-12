@@ -77,14 +77,14 @@ export default function BlogListing({ posts }: { posts: ListPost[] }) {
         </div>
 
         <div className="blog-sidebar-offer">
-          <h3>Get a free strategy session</h3>
+          <h3>Claim your free strategy session</h3>
           <p>
-            Thirty minutes with an email strategist. We&apos;ll look at what
-            you&apos;re sending, what&apos;s leaking revenue, and what to do
-            about it — no pitch, no obligation.
+            Claim your 100% free 30-minute strategy session (valued at $500)
+            to discuss where your email program stands and how it ties to
+            revenue. Act fast — sessions are limited.
           </p>
           <Link href="/strategy-session" className="btn btn-primary">
-            Book your free session
+            Claim your free session
           </Link>
         </div>
       </aside>
