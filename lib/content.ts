@@ -1,5 +1,6 @@
 export type Service = {
   slug: string;
+  href?: string;
   num: string;
   title: string;
   blurb: string;
@@ -9,12 +10,13 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "lifecycle-automation",
+    href: "/retainer",
     num: "01",
-    title: "Lifecycle & automation",
+    title: "Email retainer",
     blurb:
-      "Welcome, abandonment, post-purchase, win-back. The always-on flows that earn revenue while you sleep.",
+      "Full lifecycle email management under one monthly engagement — flows, campaigns, copy, design, deliverability, and reporting.",
     description:
-      "We design and build the automated email flows that quietly run your business — welcome series, browse and cart abandonment, post-purchase, win-back, and re-engagement. Built once, tested into shape, and tuned every month against revenue.",
+      "Everything your email program needs, managed as an extension of your team. One monthly engagement covers flows, campaigns, copy, design, deliverability, and reporting. No separate quotes, no scope creep.",
   },
   {
     slug: "campaign-management",

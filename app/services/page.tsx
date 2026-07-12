@@ -39,7 +39,7 @@ export default function ServicesPage() {
           <ul className="svc-grid" style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {services.map((s) => (
               <Reveal as="li" key={s.slug}>
-                <Link href={`/services/${s.slug}`} className="svc-card svc-card-linked">
+                <Link href={s.href ?? `/services/${s.slug}`} className="svc-card svc-card-linked">
                   <h2 className="svc-card-title">{s.title}</h2>
                   <p>{s.description}</p>
                   <span className="svc-card-link">Learn more →</span>
