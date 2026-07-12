@@ -109,7 +109,7 @@ export default function EmailAudit() {
         track("lead_error", { source: "tool:email-audit", error: json.error ?? String(res.status) });
         setServerError(
           res.status === 429
-            ? "A few too many tries , give it a minute and try again."
+            ? "A few too many tries, give it a minute and try again."
             : "Something went wrong saving your results. Try again, or email hello@beyondopenrate.com.au.",
         );
         setPhase("gate");

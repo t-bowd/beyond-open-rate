@@ -31,8 +31,8 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} , Email marketing agency, Australia`,
-    template: `%s , ${site.name}`,
+    default: `${site.name}, Email marketing agency, Australia`,
+    template: `%s, ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} , Email marketing agency, Australia`,
+    title: `${site.name}, Email marketing agency, Australia`,
     description: site.description,
     locale: site.locale,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} , Email marketing agency, Australia`,
+    title: `${site.name}, Email marketing agency, Australia`,
     description: site.description,
     site: site.twitter,
   },

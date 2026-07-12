@@ -46,11 +46,11 @@ export default function Header() {
   const isLightTop = pathname.startsWith("/blog/");
 
   // Header goes solid-white + dark content whenever the menu is open,
-  // regardless of scroll position , same as the scrolled state.
+  // regardless of scroll position, same as the scrolled state.
   const light = scrolled || open || isLightTop;
 
   // Focused-flow pages (e.g. the strategy session funnel) get a stripped
-  // header , logo only, always dark, no phone/burger/drawer , since the
+  // header, logo only, always dark, no phone/burger/drawer, since the
   // page background is white, not the dark hero video.
   const isFlow = pathname === "/strategy-session";
 

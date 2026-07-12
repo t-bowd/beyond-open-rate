@@ -8,9 +8,9 @@ import { JsonLd, breadcrumbSchema, personSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Beyond Open Rate , Australian email marketing agency",
+  title: "About Beyond Open Rate, Australian email marketing agency",
   description:
-    "Australian email marketing agency. Lifecycle automation, Klaviyo, deliverability, and campaign management , for brands that want email to compound.",
+    "Australian email marketing agency. Lifecycle automation, Klaviyo, deliverability, and campaign management, for brands that want email to compound.",
   alternates: { canonical: "/about" },
 };
 

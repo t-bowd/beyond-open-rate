@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 // TODO: Legal review needed before launch.
 // These are past employer/partner brand names included as experience signals,
-// not direct client relationships , "We've worked with" is deliberately looser
+// not direct client relationships, "We've worked with" is deliberately looser
 // than "Our clients" for that reason. Options before going live:
 //   1. Get explicit written sign-off from a contact at each brand, OR
 //   2. Replace with current client logos (with permission), OR

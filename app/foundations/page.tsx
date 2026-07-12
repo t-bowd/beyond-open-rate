@@ -11,16 +11,16 @@ import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Email foundations setup, Australia , Beyond Open Rate",
+  title: "Email foundations setup, Australia, Beyond Open Rate",
   description:
-    "The flows your email program needs to start converting, retaining, and recovering customers , scoped to your business and built to run without you.",
+    "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
   alternates: { canonical: "/foundations" },
   openGraph: {
     type: "website",
     url: `${site.url}/foundations`,
-    title: "Email foundations setup, Australia , Beyond Open Rate",
+    title: "Email foundations setup, Australia, Beyond Open Rate",
     description:
-      "The flows your email program needs to start converting, retaining, and recovering customers , scoped to your business and built to run without you.",
+      "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
   },
 };
 
@@ -44,13 +44,13 @@ function getUpdatedDate() {
 }
 
 const benefits = [
-  "A 30-minute kickoff call , everything we build is scoped around your business goals and tech stack, so there are no surprises mid-project.",
+  "A 30-minute kickoff call, everything we build is scoped around your business goals and tech stack, so there are no surprises mid-project.",
   "Flows built to work 24/7, without you lifting a finger. Welcome series, abandoned cart, post-purchase, win-back and more, based on your needs.",
   "Every email written in your brand voice, designed to drive results. Nothing for you to write.",
-  "Segmentation setup to ensure the right message reaches the right customer at the right time , boosting relevance, results, and revenue.",
+  "Segmentation setup to ensure the right message reaches the right customer at the right time, boosting relevance, results, and revenue.",
   "List clean and suppression, so you're only reaching people who are likely to engage. Better deliverability, better results.",
   "Deliverability checks and a warm-up plan if needed, so your emails land in inboxes.",
-  "Professional, on-brand templates that look great on any device , without hiring a designer.",
+  "Professional, on-brand templates that look great on any device, without hiring a designer.",
   "A customised 30-day plan, so you know what to send after handover.",
   "A handover call to walk you through everything, so you feel confident and set up.",
   "A handover document to support you post-call, so you or your team can move forward without confusion.",
@@ -60,7 +60,7 @@ const benefits = [
 const faq = [
   {
     q: "Which flows are included?",
-    a: "It depends on your business and what's missing , that's what the kickoff call is for. Most foundations builds include a welcome series, abandoned cart, post-purchase sequence, and win-back. We scope to what will have the highest revenue impact for your specific setup, not a fixed template.",
+    a: "It depends on your business and what's missing, that's what the kickoff call is for. Most foundations builds include a welcome series, abandoned cart, post-purchase sequence, and win-back. We scope to what will have the highest revenue impact for your specific setup, not a fixed template.",
   },
   {
     q: "How long does the build take?",
@@ -68,11 +68,11 @@ const faq = [
   },
   {
     q: "Do we need to be on a specific platform?",
-    a: "No. We work across Klaviyo, HubSpot, Brevo, Customer.io, and Mailchimp. If you're not sure which platform is right for your business, we'll tell you , honestly, based on your setup and goals, not on what we prefer to work with.",
+    a: "No. We work across Klaviyo, HubSpot, Brevo, Customer.io, and Mailchimp. If you're not sure which platform is right for your business, we'll tell you, honestly, based on your setup and goals, not on what we prefer to work with.",
   },
   {
     q: "What do you need from us to get started?",
-    a: "Access to your email platform and any connected store or CRM, your brand assets (logo, fonts, colours, tone guidelines if you have them), and the 30-minute kickoff call. We handle everything from there , copy, design, build, and setup.",
+    a: "Access to your email platform and any connected store or CRM, your brand assets (logo, fonts, colours, tone guidelines if you have them), and the 30-minute kickoff call. We handle everything from there, copy, design, build, and setup.",
   },
   {
     q: "What happens after the 30-day monitoring period?",
@@ -89,7 +89,7 @@ export default function FoundationsPage() {
       <PageHero
         label="Email foundations"
         title="Get the email foundations that turn first-time buyers into repeat customers."
-        sub="The flows your email program needs to start converting, retaining, and recovering customers , without you having to build it."
+        sub="The flows your email program needs to start converting, retaining, and recovering customers, without you having to build it."
       />
 
       <section className="section narrative-letter" data-screen-label="Foundations intro">

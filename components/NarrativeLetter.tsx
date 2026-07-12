@@ -1,9 +1,9 @@
 import { unstable_noStore as noStore } from "next/cache";
 import Reveal from "./Reveal";
 
-/* PLACEHOLDER MODULE , layout only. King Kong runs a long, direct-address
+/* PLACEHOLDER MODULE, layout only. King Kong runs a long, direct-address
    "Dear business builder" letter here that does most of the persuasive
-   work on the page. BOR has no equivalent copy written yet , this is
+   work on the page. BOR has no equivalent copy written yet, this is
    scaffolding for that narrative, not a real draft. */
 
 function ordinal(day: number) {
@@ -35,7 +35,7 @@ export default function NarrativeLetter() {
       <div className="wrap narrative-inner">
         <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
         <Reveal as="div" className="narrative-body">
-         {/* <p>[Dear ,, opening line TBD.]</p> */}
+         {/* <p>[Dear,, opening line TBD.]</p> */}
           <p>
             You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?
           </p>
