@@ -4,9 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import ArrowIcon from "@/components/ArrowIcon";
 import Contact from "@/components/Contact";
-import CtaLink from "@/components/CtaLink";
 import Faq from "@/components/Faq";
 import PageHero from "@/components/PageHero";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
@@ -58,16 +56,6 @@ export default async function ServicePage({ params }: PageProps) {
         label={page.h1}
         title={page.h1}
         sub={page.heroSub}
-        actions={
-          <>
-            <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="hero">
-              Score your email program <ArrowIcon />
-            </CtaLink>
-            <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
-              Talk to us
-            </CtaLink>
-          </>
-        }
       />
 
       <section className="section">
