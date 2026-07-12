@@ -50,8 +50,8 @@ export default function RetainerPage() {
     <>
       <PageHero
         label="Email retainer"
-        title="Finally. An email agency that gets business."
-        sub="Flows, campaigns, copy, design, deliverability, and reporting — all managed. One monthly engagement. You focus on your business; we make sure email is working for it."
+        title="Full email management. Real results. No guesswork."
+        sub="Full lifecycle management, from strategy to send. Your program works the way it should, without you having to run it."
       />
 
       <ServiceIntro />
