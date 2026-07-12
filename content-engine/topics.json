@@ -178,7 +178,7 @@
     },
     {
       "id": "017",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "promotional",
       "tier": "gathering_info",
       "topic": "The difference between a campaign calendar and a lifecycle strategy",
