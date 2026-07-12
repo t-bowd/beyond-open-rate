@@ -146,7 +146,11 @@ export default async function PostPage({ params }: PageProps) {
           <p className="post-meta">
             <Link href="/blog">← Back to blog</Link>
           </p>
-          <p className="post-breaking">BREAKING NEWS: {getBreakingNews(post.tags, post.slug)}</p>
+          <div className="post-breaking">
+            <span className="post-breaking-dot" aria-hidden="true" />
+            <span className="post-breaking-label">Breaking News</span>
+            <span className="post-breaking-text">{getBreakingNews(post.tags, post.slug)}</span>
+          </div>
           <h1 className="post-title">{post.title}</h1>
           <p className="post-meta">
             <time dateTime={post.publishedAt}>{fmt(post.publishedAt)}</time>
