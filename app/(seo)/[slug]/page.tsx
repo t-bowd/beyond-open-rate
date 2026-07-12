@@ -97,7 +97,7 @@ export default async function SeoPage({ params }: PageProps) {
       {page.faq && page.faq.length > 0 && (
         <section className="section">
           <div className="wrap" style={{ maxWidth: 740 }}>
-            <h2>Frequently asked</h2>
+            <h2 style={{ marginBottom: 20 }}>Your questions answered</h2>
             <Faq items={page.faq} standalone={false} />
           </div>
         </section>
@@ -108,7 +108,7 @@ export default async function SeoPage({ params }: PageProps) {
           ? allPages.filter((p) => p.slug !== slug && p.type !== "location")
           : allPages.filter((p) => p.slug !== slug && p.type === "location");
         if (!related.length) return null;
-        const heading = page.type === "location" ? "Specialty services" : "We cover all of Australia";
+        const heading = "Related articles";
         return (
           <section className="section">
             <div className="wrap" style={{ maxWidth: 740 }}>
