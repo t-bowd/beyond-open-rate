@@ -22,6 +22,7 @@ const nextConfig = {
       { source: "/contact", destination: "/", permanent: false },
       { source: "/services/lifecycle-automation", destination: "/retainer", permanent: true },
       { source: "/services/campaign-management", destination: "/audit", permanent: true },
+      { source: "/services/copy-and-design", destination: "/foundations", permanent: true },
     ];
   },
 };

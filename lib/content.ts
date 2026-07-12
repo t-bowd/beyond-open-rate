@@ -30,12 +30,13 @@ export const services: Service[] = [
   },
   {
     slug: "copy-and-design",
+    href: "/foundations",
     num: "03",
-    title: "Copy & design",
+    title: "Email foundations",
     blurb:
-      "On-brand emails that read like a person and convert like a salesperson. Written and designed in-house.",
+      "The flows your email program needs to start converting, retaining, and recovering customers — scoped to your business and built to run without you.",
     description:
-      "Every email written and designed in-house — on brand, mobile-first, accessible, and built to convert. No copy-paste templates, no AI slop, no agency outsourcing.",
+      "We build the email foundations that turn first-time buyers into repeat customers. Welcome series, abandoned cart, post-purchase, win-back — scoped to your business, written in your voice, and handed over with a 30-day monitoring period.",
   },
   {
     slug: "platform-and-crm-setup",
