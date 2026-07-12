@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import remarkGfm from "remark-gfm";
-import rehypeSlug from "rehype-slug";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import GuaranteeBand from "@/components/GuaranteeBand";
@@ -38,14 +34,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-const mdxOptions = {
-  remarkPlugins: [remarkGfm],
-  rehypePlugins: [
-    rehypeSlug,
-    [rehypeAutolinkHeadings, { behavior: "wrap", properties: { className: "anchor" } }],
-  ],
-};
-
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
   const page = await getServicePage(slug);
@@ -67,19 +55,10 @@ export default async function ServicePage({ params }: PageProps) {
 
       <ServiceBenefits />
 
-      <section className="section">
-        <div className="wrap prose" style={{ maxWidth: 740 }}>
-          <MDXRemote
-            source={page.content}
-            options={{ mdxOptions: mdxOptions as never }}
-          />
-        </div>
-      </section>
-
       {page.faq && page.faq.length > 0 && (
         <section className="section">
           <div className="wrap" style={{ maxWidth: 740 }}>
-            <h2>Frequently asked</h2>
+            <h2 style={{ marginBottom: 20 }}>Your questions answered</h2>
             <Faq items={page.faq} standalone={false} />
           </div>
         </section>
