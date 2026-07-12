@@ -88,7 +88,7 @@ export default function FoundationsPage() {
     <>
       <PageHero
         label="Email foundations"
-        title="Get the email foundations that turn first-time buyers into repeat customers."
+        title=<>Get the email foundations that turn first-time buyers into <span className="highlight">repeat customers</span>.</>
         sub="The flows your email program needs to start converting, retaining, and recovering customers, without you having to build it."
       />
 

@@ -87,7 +87,7 @@ export default function AuditPage() {
     <>
       <PageHero
         label="Email audit"
-        title="Your email program is either making you money or losing it. Find out which."
+        title=<>Your email program is either making you money or losing it. <span className="highlight">Find out which</span>.</>
         sub="A complete diagnostic of your email and lifecycle setup, delivered with a prioritised action plan."
       />
 

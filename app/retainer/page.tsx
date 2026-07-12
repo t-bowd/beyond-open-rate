@@ -89,7 +89,7 @@ export default function RetainerPage() {
     <>
       <PageHero
         label="Email retainer"
-        title="Full email management. Real results. No guesswork."
+        title=<>Full email management. <span className="highlight">Real results</span>. No guesswork.</>
         sub="Full lifecycle management, from strategy to send. Your program works the way it should, without you having to run it."
       />
 

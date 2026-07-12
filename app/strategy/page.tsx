@@ -84,7 +84,7 @@ export default function StrategyPage() {
     <>
       <PageHero
         label="Email strategy"
-        title="Stop guessing what to build. Start with a plan that's built for your business."
+        title=<>Stop guessing what to build. Start with a plan that's <span className="highlight">built for your business</span>.</>
         sub="A forward-focused session that gives you a clear plan. Built for your business, not a template."
       />
 
