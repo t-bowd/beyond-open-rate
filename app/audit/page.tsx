@@ -52,7 +52,7 @@ const benefits = [
   "A tech stack review so you know if you're paying for tools you don't need, or missing tools that would make a real difference.",
   "An estimate of what better lifecycle email is potentially worth to your specific business.",
   "A PDF report that you can act on, or share internally.",
-  "A walkthrough session to get clarity on findings, so you can ask questions and leave knowing what you need to do next.",
+  "A 45-minute walkthrough session to get clarity on findings, so you can ask questions and leave knowing what you need to do next.",
   "A prioritised action plan, so there's no confusion about what to fix first for the biggest impact.",
 ];
 
