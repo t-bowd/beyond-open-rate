@@ -311,9 +311,9 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.02em;
   line-height: 1;
   color: var(--on-ink);
-  transition: color .15s;
+  transition: font-size .4s ease, color .4s ease;
 }
-.nav-drawer-links a:hover { color: var(--accent); }
+.nav-drawer-links a:hover { color: #fff; font-size: clamp(40px, 9vw, 76px); }
 @media (max-width: 480px) {
   .nav-phone-number { display: none; }
 }
