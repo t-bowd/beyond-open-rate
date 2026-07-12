@@ -52,7 +52,7 @@ const benefits = [
   "Deliverability checks and a warm-up plan if needed, so your emails land in inboxes.",
   "Professional, on-brand templates that look great on any device, without hiring a designer.",
   "A customised 30-day plan, so you know what to send after handover.",
-  "A handover call to walk you through everything, so you feel confident and set up.",
+  "A 30-minute handover call to walk you through everything, so you feel confident and set up.",
   "A handover document to support you post-call, so you or your team can move forward without confusion.",
   "30 days of monitoring after go-live, so any issues are caught and fixed before they cost you revenue.",
 ];
