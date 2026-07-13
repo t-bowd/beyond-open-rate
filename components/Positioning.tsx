@@ -14,7 +14,7 @@ export default function Positioning() {
           We're experts. We do email at a level most agencies can't.
         </Reveal>
         <Reveal as="p" className="positioning-sub">
-          Email and lifecycle marketing is a specialist discipline, and it's all we do. You won't get recommendations based on what earns us a platform commission. You won't get reports full of metrics that don't connect to revenue. 
+          Email and lifecycle marketing is a specialist discipline, and it's what we do best. You won't get recommendations based on what earns us a platform commission. You won't get reports full of metrics that don't connect to revenue. 
 <br /><br />
 We've spent 20 years inside email programs from start-ups to global enterprises. We know what good looks like, and we know when mediocre is pretending to be good.
         </Reveal>
