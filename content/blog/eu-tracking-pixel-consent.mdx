@@ -1,0 +1,95 @@
+---
+title: "Open rates just got complicated in Europe"
+description: "France and Italy have ruled that email tracking pixels require consent, on the same legal basis as cookie banners. Here's what that means for your open rate data, your automation logic, and how Australian brands selling into Europe need to respond."
+publishedAt: "2026-07-13"
+updatedAt: "2026-07-13"
+author: "Tim"
+tags: ["compliance", "deliverability", "metrics", "strategy"]
+faq:
+  - q: "Does this apply to Australian businesses?"
+    a: "Yes, if your list includes subscribers in France or Italy. GDPR and ePrivacy obligations apply based on where recipients are located, not where your business is incorporated. If you're doing any revenue in Europe, this applies to those contacts."
+  - q: "What's the difference between France and Italy's rules?"
+    a: "France requires separate consent for tracking and newsletter subscription, with a 14 July 2026 deadline to inform existing subscribers. Italy allows tracking consent to be bundled with marketing consent, but requires granular withdrawal, subscribers must be able to receive emails without being tracked inside them. Italy's deadline is 28 October 2026."
+  - q: "What if I just turn off open tracking for EU subscribers?"
+    a: "That satisfies the basic compliance requirement and is the cleanest short-term fix. The operational question is what breaks downstream: engagement scoring, send-time optimisation, re-engagement triggers. Audit what in your flows depends on open activity before you switch it off."
+  - q: "Is this coming to Australia?"
+    a: "Possibly. The Privacy Act reforms working through Canberra include serious discussion of bringing consent requirements for tracking closer to GDPR. The EU moves first on this kind of thing. That pattern has held for fifteen years."
+---
+
+In March and April 2026, two of Europe's most active data protection regulators published guidance that treats the email tracking pixel as legally equivalent to a cookie.
+
+France's CNIL issued its recommendation on 14 April. Italy's Garante issued Provision No. 284, published in the Official Gazette on 29 April. They moved independently, within weeks of each other, citing the same underlying legal logic.
+
+Not a new law. A clarification of existing ones. That distinction matters more than it seems: when a regulator says the obligation was already there and the market was simply ignoring it, you don't get a comfortable grace period. You get a clock.
+
+## What a tracking pixel does, and why regulators care
+
+Every time someone opens a marketing email, a tiny invisible image loads from a remote server. That request transmits data back to the sender: when the email was opened, on what device, from roughly where.
+
+That's how open rate tracking has always worked. Virtually every email platform uses it by default, and virtually nobody has asked permission for it.
+
+The CNIL and the Garante have now said: that loading event constitutes accessing information on the recipient's terminal device. Under the ePrivacy Directive, the same legal framework behind cookie consent banners, that requires consent unless a specific exemption applies.
+
+Email just caught up to where web tracking has been for years.
+
+## What France requires
+
+France's position is the stricter of the two.
+
+**Consent is required** when tracking is used to measure campaign performance, build recipient profiles, or feed behavioural analysis. That covers the vast majority of how open tracking is actually used: open rates, send-time optimisation, engagement scoring, re-engagement triggers.
+
+**List hygiene is exempt.** Open tracking used exclusively to suppress inactive recipients or adjust sending frequency may not require consent, provided the data collected is strictly limited to that operational purpose.
+
+**Consent to receive a newsletter is not automatically consent to be tracked inside it.** France is explicit on this. These are separate permissions.
+
+**Two deadlines run simultaneously.** For addresses collected before 14 April 2026, senders can continue tracking only if they inform those recipients and give them a clear way to object. That deadline is 14 July 2026. Addresses added after 14 April get no grace period.
+
+## What Italy requires
+
+Italy's rules carry more formal legal weight than France's recommendation, but are actually more permissive on the consent moment. Tracking consent may be bundled with general marketing consent, provided the request is neutral, non-coercive, and the recipient is properly informed.
+
+Where Italy is demanding is on withdrawal. A recipient must be able to switch off pixel tracking while continuing to receive your emails. An unsubscribe link fails this test: it removes them from the list entirely. Italy requires granular control.
+
+Italy also permits an exemption for fully anonymised aggregate open counts, where no per-user identification occurs and IP addresses are anonymised. France doesn't offer this.
+
+**Compliance deadline: 28 October 2026.**
+
+## Why Australian brands need to pay attention
+
+The instinct will be to file this under "European problem, not ours." That's largely wrong.
+
+Australia's Spam Act and Privacy Act apply based on where your business is incorporated. GDPR and ePrivacy obligations apply based on where your recipients are located. If your list includes French or Italian subscribers, and for any brand doing meaningful revenue in Europe it almost certainly does, these rules apply to those contacts regardless of where you're based.
+
+There's also an Australian regulatory signal worth watching. The Privacy Act reforms working through Canberra have included serious discussion of bringing consent requirements for tracking technologies closer to the GDPR standard. The EU moves first on this kind of thing, then other jurisdictions follow. That pattern has held consistently for fifteen years.
+
+## What this means for your email programme
+
+**Your open rate data is about to get noisier.** If you have any meaningful subscriber base in France or Italy and you implement consent-based tracking properly, your visible open rates for those segments will fall. Not because engagement dropped, but because you're tracking fewer people. The brands that don't notice this distinction will start optimising against misleading data.
+
+**Your automation logic needs auditing.** If your flows use open activity as a trigger, re-engagement sequences, send-time optimisation, engagement scoring, winback logic, that logic is now built on data with a consent layer in front of it for EU recipients. A re-engagement flow that fires because someone "hasn't opened in 90 days" may simply be firing because they never consented to open tracking.
+
+**Platform-level settings are not a complete answer.** Most ESPs are still working through what per-contact consent enforcement looks like in practice. The current working pattern is: segment EU contacts, understand your pixel use by purpose, and suppress tracked sends for non-consenting recipients. That's operationally clunky but workable while platforms catch up. Ask your ESP: can tracking be disabled at the contact level (not just the campaign level), and does opting out of tracking automatically suppress the pixel without removing the contact from your list entirely?
+
+## What to do now
+
+**Audit your tracking use by purpose.** Operational tracking for list hygiene sits in a more defensible position. Campaign performance measurement, engagement scoring, and behavioural profiling require consent.
+
+**Segment your French and Italian subscribers.** Know what volume you're dealing with before you rebuild consent flows.
+
+**Get ahead of the July deadline.** France's 14 July date for informing existing contacts has either passed or is imminent. If you haven't acted on that, inform recipients as soon as possible and document the steps taken.
+
+**Build consent language that's actually legible.** The brands that handle this well won't just be compliant. They'll build more trust with their lists because recipients will understand exactly what they signed up for.
+
+## The broader signal
+
+France and Italy moved independently. The EDPB's own Guidelines 2/2023, finalised in October 2024, confirmed that loading a pixel constitutes accessing a recipient's device under Article 5(3) of the ePrivacy Directive. Every other EU data protection authority has that same text in front of them.
+
+Treating this as a two-country problem is how the third and fourth rulings catch you flat.
+
+And beyond compliance, there's a longer-term signal here. Apple's Mail Privacy Protection, image caching by email clients, and now consent-based pixel restrictions are all converging on the same outcome: individual open events are becoming less reliable as the primary signal for email performance. The direction of travel is toward metrics that don't depend on the pixel at all. Revenue attributed to email. Conversion events. Repeat purchase behaviour.
+
+The brands that start building their measurement around those metrics now won't just be ahead on compliance. They'll have a better picture of what their email programme is actually doing.
+
+---
+
+Not sure how your current tracking setup would hold up to this kind of scrutiny? [Run the free audit](/tools/email-audit), ten questions on your automations, deliverability, and reporting, with a score and a prioritised list of what to fix first. Or if you'd like a proper review of your EU subscriber exposure, [see how our audits work](/audit).
