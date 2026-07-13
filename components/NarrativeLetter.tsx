@@ -43,7 +43,7 @@ export default function NarrativeLetter() {
             Here's what we see constantly: businesses sending campaigns that land in spam, automation that hasn't been touched since setup day, and a list full of people who stopped caring months ago. 
           </p>
 
-          <p>Nobody flagged it. Nobody fixed it. And quietly, month after month, that's revenue you didn't see and can't get back.</p>
+          <p>Nobody flagged it. Nobody fixed it. Every month, that's revenue you didn't see and can't get back.</p>
 
           <p>Most agencies will sell you on open rates and design. We don't. We care about one thing: whether your email program is making you money. If it isn't, we find out why, and we fix it.</p>
         </Reveal>

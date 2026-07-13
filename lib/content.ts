@@ -12,11 +12,21 @@ export const services: Service[] = [
     slug: "lifecycle-automation",
     href: "/retainer",
     num: "01",
-    title: "Email retainer",
+    title: "Monthly retainer",
     blurb:
       "Full lifecycle email management under one monthly engagement, flows, campaigns, copy, design, deliverability, and reporting.",
     description:
-      "Everything your email program needs, managed as an extension of your team. One monthly engagement covers flows, campaigns, copy, design, deliverability, and reporting. No separate quotes, no scope creep.",
+      "Your email program needs more than someone pressing send. We manage the full thing: strategy, copy, flows, testing, deliverability, reporting. Every decision tied back to revenue. Built to run without you managing it.",
+  },
+    {
+    slug: "copy-and-design",
+    href: "/foundations",
+    num: "03",
+    title: "Email foundations & projects",
+    blurb:
+      "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
+    description:
+      "Every day without the right foundation or flows is lost revenue you're not getting back. We scope, build and hand over a program that works, so you stop losing the customers you already paid to acquire.",
   },
   {
     slug: "campaign-management",
@@ -26,27 +36,18 @@ export const services: Service[] = [
     blurb:
       "Find out exactly what your email program is worth, and what it's costing you. A complete diagnostic with a prioritised action plan.",
     description:
-      "A complete diagnostic of your email and lifecycle setup, flows, deliverability, list health, copy, design, and tech stack, delivered with a prioritised action plan and walkthrough session.",
+      "If you don't know where your email program really stands, then you're making decisions in the dark. We go through everything: flows, campaigns, list health, deliverability, copy. We tell you what it's costing you and what fixing it is worth.",
   },
-  {
-    slug: "copy-and-design",
-    href: "/foundations",
-    num: "03",
-    title: "Email foundations",
-    blurb:
-      "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
-    description:
-      "We build the email foundations that turn first-time buyers into repeat customers. Welcome series, abandoned cart, post-purchase, win-back, scoped to your business, written in your voice, and handed over with a 30-day monitoring period.",
-  },
+
   {
     slug: "platform-and-crm-setup",
     href: "/strategy",
     num: "04",
-    title: "Email strategy",
+    title: "Strategy session",
     blurb:
       "Stop guessing what to build. A working session that maps your lifecycle, identifies the highest-impact opportunities, and leaves you with a plan you can act on.",
     description:
-      "A forward-focused strategy session that gives you a clear email plan built for your business, not a template. Walk away knowing exactly what to build, in what order, and what it's worth.",
+      "Not sure what to build next? What to fix first? Whether what you have is worth keeping? Spend a working session with us defining a clear plan, an action list, and an estimate of what better email is worth to your business. No pitch, just direction.",
   },
 
 ];
