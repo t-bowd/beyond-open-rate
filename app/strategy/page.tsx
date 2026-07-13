@@ -4,7 +4,6 @@ import Link from "next/link";
 import ArrowIcon from "@/components/ArrowIcon";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
-import GuaranteeBand from "@/components/GuaranteeBand";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
@@ -101,8 +100,6 @@ export default function StrategyPage() {
           </Reveal>
         </div>
       </section>
-
-      <GuaranteeBand />
 
       <section className="section" data-screen-label="Strategy benefits">
         <div className="wrap" style={{ maxWidth: 740 }}>
