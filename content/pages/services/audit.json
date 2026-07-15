@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Email marketing audit, Australia, Beyond Open Rate",
+    "description": "A complete diagnostic of your email and lifecycle setup, delivered with a prioritised action plan. Find out exactly what your email program is worth, and what it's costing you."
+  },
+  "hero": {
+    "label": "Email audit",
+    "titlePre": "Your email program is either making you money or losing it.",
+    "titleHighlight": "Find out which",
+    "titlePost": ".",
+    "sub": "A complete diagnostic of your email and lifecycle setup, delivered with a prioritised action plan."
+  },
+  "intro": [
+    "Most businesses assume their email is working well enough. Most of them are wrong.",
+    "Flows that haven't been touched since setup. Deliverability issues that are quietly suppressing reach. Campaigns going out with no clear picture of what's actually driving revenue.",
+    "The result? Money that should be yours is slipping through the cracks, and nobody's noticed because the open rates look fine.",
+    "An audit finds what's broken, what's missing, and what it's costing you. This isn't a vanity exercise, it's a revenue diagnostic."
+  ],
+  "benefits": {
+    "heading": "What you get",
+    "items": [
+      "A 30-minute pre-audit call, so we understand your business and setup before we assess it. You get audit findings that reflect your actual situation, not a generic checklist.",
+      "A clear picture of where you're leaving money on the table across your customer journey.",
+      "The truth about whether your emails are even reaching inboxes before you spend another dollar on campaigns.",
+      "A list health assessment so you know which segments are costing you in relevance, revenue, and sender reputation.",
+      "A campaign history review that shows you what's driving revenue, and what isn't.",
+      "A copy and design review that pinpoints why opens, clicks, or conversions are underperforming.",
+      "A tech stack review so you know if you're paying for tools you don't need, or missing tools that would make a real difference.",
+      "An estimate of what better lifecycle email is potentially worth to your specific business.",
+      "A PDF report that you can act on, or share internally.",
+      "A 45-minute walkthrough session to get clarity on findings, so you can ask questions and leave knowing what you need to do next.",
+      "A prioritised action plan, so there's no confusion about what to fix first for the biggest impact."
+    ],
+    "ctaText": "Ready to find out what your email program is actually worth?",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "What exactly does the audit cover?",
+      "a": "Your active flows and automations, campaign history and performance, deliverability and authentication setup, list health and segmentation, copy and design, and your tech stack. We look at everything that affects whether email is making you money, not just whether it's sending."
+    },
+    {
+      "q": "How long does the audit take?",
+      "a": "We run the audit over five to seven business days from the kickoff call. You'll receive the PDF report before the walkthrough session, so you have time to read through it and come with questions."
+    },
+    {
+      "q": "Do you need access to our email platform?",
+      "a": "Yes. A meaningful audit requires looking at what's actually in your account, flows, campaign history, deliverability data, list segments. Read-only access is fine. We'll tell you exactly what we need before we start."
+    },
+    {
+      "q": "What happens after we get the report?",
+      "a": "That's up to you. Some clients take the report and implement it themselves or with their team. Others ask us to do it, which we can quote as a project or a retainer, depending on scope. There's no obligation to continue, and we won't upsell you during the audit itself."
+    },
+    {
+      "q": "Is the audit a one-off, or can we work together ongoing?",
+      "a": "The audit is a standalone engagement with a fixed fee. If what we find points to ongoing work, and it usually does, we'll scope a retainer or project off the back of the findings. You'd go into that knowing exactly what needs fixing and why, which makes the engagement faster and more effective."
+    }
+  ]
+}

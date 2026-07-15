@@ -445,6 +445,259 @@ export default defineConfig({
         ],
       },
 
+      // ── Service Pages ─────────────────────────────────────────────────
+      {
+        name: "servicePages",
+        label: "Service Pages",
+        path: "content/pages/services",
+        format: "json",
+        ui: {
+          allowedActions: { create: false, delete: false },
+          router: ({ document }) => `/${document._sys.filename}`,
+        },
+        fields: [
+          {
+            type: "object",
+            name: "meta",
+            label: "SEO",
+            fields: [
+              { type: "string", name: "title", label: "Page Title", isTitle: true, required: true },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" }, required: true },
+            ],
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero",
+            fields: [
+              { type: "string", name: "label", label: "Label (eyebrow)" },
+              { type: "string", name: "titlePre", label: "Title (before highlight)" },
+              { type: "string", name: "titleHighlight", label: "Title (highlighted phrase)" },
+              { type: "string", name: "titlePost", label: "Title (after highlight)" },
+              { type: "string", name: "sub", label: "Subheadline", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "string",
+            name: "intro",
+            label: "Intro Paragraphs",
+            list: true,
+            ui: { component: "textarea" },
+          },
+          {
+            type: "object",
+            name: "benefits",
+            label: "Benefits",
+            fields: [
+              { type: "string", name: "heading", label: "Heading" },
+              { type: "string", name: "items", label: "Items", list: true, ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaHref", label: "CTA Link" },
+            ],
+          },
+          {
+            type: "object",
+            name: "faq",
+            label: "FAQs",
+            list: true,
+            ui: { itemProps: (item) => ({ label: item?.q ?? "FAQ" }) },
+            fields: [
+              { type: "string", name: "q", label: "Question", required: true },
+              { type: "string", name: "a", label: "Answer", ui: { component: "textarea" }, required: true },
+            ],
+          },
+        ],
+      },
+
+      // ── About Page (singleton) ─────────────────────────────────────────
+      {
+        name: "about",
+        label: "About Page",
+        path: "content/pages",
+        format: "json",
+        match: { include: "about" },
+        ui: {
+          allowedActions: { create: false, delete: false },
+          global: true,
+        },
+        fields: [
+          {
+            type: "object",
+            name: "meta",
+            label: "SEO",
+            fields: [
+              { type: "string", name: "title", label: "Page Title" },
+              { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero",
+            fields: [
+              { type: "string", name: "titlePre", label: "Title (before highlight)" },
+              { type: "string", name: "titleHighlight", label: "Title (highlighted phrase)" },
+              { type: "string", name: "titlePost", label: "Title (after highlight)" },
+              { type: "string", name: "sub", label: "Subheadline", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "string",
+            name: "intro",
+            label: "Intro Paragraphs",
+            list: true,
+            ui: { component: "textarea" },
+          },
+          {
+            type: "object",
+            name: "team",
+            label: "Team Members",
+            list: true,
+            ui: { itemProps: (item) => ({ label: item?.name ?? "Person" }) },
+            fields: [
+              { type: "string", name: "role", label: "Role" },
+              { type: "string", name: "name", label: "Name" },
+              { type: "image", name: "photo", label: "Photo" },
+              { type: "string", name: "bio", label: "Bio", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "philosophy",
+            label: "Our Take on Email",
+            fields: [
+              { type: "string", name: "heading", label: "Heading" },
+              { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "workWith",
+            label: "Who We Work With",
+            fields: [
+              { type: "string", name: "heading", label: "Heading" },
+              { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "wontDo",
+            label: "What We Won't Do",
+            fields: [
+              { type: "string", name: "heading", label: "Heading" },
+              { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } },
+            ],
+          },
+        ],
+      },
+
+      // ── Landing Pages (block-based) ────────────────────────────────────
+      {
+        name: "landingPages",
+        label: "Landing Pages",
+        path: "content/landing",
+        format: "json",
+        ui: {
+          filename: {
+            slugify: (values) =>
+              values.title
+                ?.toLowerCase()
+                .replace(/[^a-z0-9]+/g, "-")
+                .replace(/(^-|-$)/g, "") ?? "",
+          },
+          router: ({ document }) => `/${document._sys.filename}`,
+        },
+        fields: [
+          { type: "string", name: "title", label: "Page Title (browser tab)", isTitle: true, required: true },
+          { type: "string", name: "description", label: "Meta Description", ui: { component: "textarea" } },
+          {
+            type: "object",
+            name: "blocks",
+            label: "Page Blocks",
+            list: true,
+            templates: [
+              {
+                name: "pageHero",
+                label: "Page Hero",
+                fields: [
+                  { type: "string", name: "label", label: "Label (eyebrow)" },
+                  { type: "string", name: "titlePre", label: "Title (before highlight)" },
+                  { type: "string", name: "titleHighlight", label: "Title (highlighted phrase)" },
+                  { type: "string", name: "titlePost", label: "Title (after highlight)" },
+                  { type: "string", name: "sub", label: "Subheadline", ui: { component: "textarea" } },
+                  { type: "string", name: "ctaText", label: "CTA Button Text" },
+                  { type: "string", name: "ctaHref", label: "CTA Link" },
+                ],
+              },
+              {
+                name: "textSection",
+                label: "Text Section",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading (optional)" },
+                  { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } },
+                ],
+              },
+              {
+                name: "guaranteeBand",
+                label: "Guarantee Band",
+                fields: [
+                  { type: "string", name: "_note", label: "Note (internal only)", ui: { component: "textarea" } },
+                ],
+              },
+              {
+                name: "benefitsList",
+                label: "Benefits List",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "items", label: "Items", list: true, ui: { component: "textarea" } },
+                  { type: "string", name: "ctaText", label: "CTA Button Text" },
+                  { type: "string", name: "ctaHref", label: "CTA Link" },
+                ],
+              },
+              {
+                name: "splitOffer",
+                label: "Split Offer",
+                fields: [
+                  { type: "string", name: "_note", label: "Note (internal only)", ui: { component: "textarea" } },
+                ],
+              },
+              {
+                name: "finalCta",
+                label: "Final CTA",
+                fields: [
+                  { type: "string", name: "_note", label: "Note (internal only)", ui: { component: "textarea" } },
+                ],
+              },
+              {
+                name: "faqSection",
+                label: "FAQ Section",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading (optional)" },
+                  {
+                    type: "object",
+                    name: "questions",
+                    label: "Questions",
+                    list: true,
+                    ui: { itemProps: (item) => ({ label: item?.q ?? "FAQ" }) },
+                    fields: [
+                      { type: "string", name: "q", label: "Question", required: true },
+                      { type: "string", name: "a", label: "Answer", ui: { component: "textarea" }, required: true },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "testimonials",
+                label: "Testimonials",
+                fields: [
+                  { type: "string", name: "_note", label: "Note (internal only)", ui: { component: "textarea" } },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+
       // ── Global FAQs (singleton list) ──────────────────────────────────
       {
         name: "globalFaqs",

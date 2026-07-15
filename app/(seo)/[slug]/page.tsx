@@ -10,30 +10,33 @@ import Contact from "@/components/Contact";
 import CtaLink from "@/components/CtaLink";
 import Faq from "@/components/Faq";
 import PageHero from "@/components/PageHero";
+import LandingPageRenderer from "@/components/LandingPageRenderer";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { getAllSeoPages, getSeoPage } from "@/lib/seo-pages";
+import { getAllLandingPages, getLandingPage } from "@/lib/landing-pages";
 import { site } from "@/lib/site";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  const pages = await getAllSeoPages();
-  return pages.map((p) => ({ slug: p.slug }));
+  const [seoPages, landingPages] = await Promise.all([getAllSeoPages(), getAllLandingPages()]);
+  return [...seoPages.map((p) => ({ slug: p.slug })), ...landingPages.map((p) => ({ slug: p.slug }))];
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = await getSeoPage(slug);
+  const [landing, seo] = await Promise.all([getLandingPage(slug), getSeoPage(slug)]);
+  const page = landing ?? seo;
   if (!page) return {};
   return {
     title: page.title,
-    description: page.description,
+    description: "description" in page ? page.description : undefined,
     alternates: { canonical: `${site.url}/${slug}` },
     openGraph: {
       type: "website",
       url: `${site.url}/${slug}`,
       title: page.title,
-      description: page.description,
+      description: "description" in page ? page.description : undefined,
     },
   };
 }
@@ -48,6 +51,10 @@ const mdxOptions = {
 
 export default async function SeoPage({ params }: PageProps) {
   const { slug } = await params;
+
+  const landingPage = await getLandingPage(slug);
+  if (landingPage) return <LandingPageRenderer page={landingPage} />;
+
   const [page, allPages] = await Promise.all([getSeoPage(slug), getAllSeoPages()]);
   if (!page) notFound();
 

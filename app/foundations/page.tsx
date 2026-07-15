@@ -9,18 +9,17 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/jsonld";
 import { site } from "@/lib/site";
+import pageData from "@/content/pages/services/foundations.json";
 
 export const metadata: Metadata = {
-  title: "Email foundations setup, Australia, Beyond Open Rate",
-  description:
-    "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
+  title: pageData.meta.title,
+  description: pageData.meta.description,
   alternates: { canonical: "/foundations" },
   openGraph: {
     type: "website",
     url: `${site.url}/foundations`,
-    title: "Email foundations setup, Australia, Beyond Open Rate",
-    description:
-      "The flows your email program needs to start converting, retaining, and recovering customers, scoped to your business and built to run without you.",
+    title: pageData.meta.title,
+    description: pageData.meta.description,
   },
 };
 
@@ -43,63 +42,24 @@ function getUpdatedDate() {
   return `${ordinal(d.getDate())} of ${month} ${d.getFullYear()}`;
 }
 
-const benefits = [
-  "A 30-minute kickoff call, everything we build is scoped around your business goals and tech stack, so there are no surprises mid-project.",
-  "Flows built to work 24/7, without you lifting a finger. Welcome series, abandoned cart, post-purchase, win-back and more, based on your needs.",
-  "Every email written in your brand voice, designed to drive results. Nothing for you to write.",
-  "Segmentation setup to ensure the right message reaches the right customer at the right time, boosting relevance, results, and revenue.",
-  "List clean and suppression, so you're only reaching people who are likely to engage. Better deliverability, better results.",
-  "Deliverability checks and a warm-up plan if needed, so your emails land in inboxes.",
-  "Professional, on-brand templates that look great on any device, without hiring a designer.",
-  "A customised 30-day plan, so you know what to send after handover.",
-  "A 30-minute handover call to walk you through everything, so you feel confident and set up.",
-  "A handover document to support you post-call, so you or your team can move forward without confusion.",
-  "30 days of monitoring after go-live, so any issues are caught and fixed before they cost you revenue.",
-];
-
-const faq = [
-  {
-    q: "Which flows are included?",
-    a: "It depends on your business and what's missing, that's what the kickoff call is for. Most foundations builds include a welcome series, abandoned cart, post-purchase sequence, and win-back. We scope to what will have the highest revenue impact for your specific setup, not a fixed template.",
-  },
-  {
-    q: "How long does the build take?",
-    a: "Most foundations builds are complete within three to four weeks from kickoff. The timeline depends on the number of flows, platform complexity, and how quickly we can get brand assets and access from you. We'll give you a clear timeline before we start.",
-  },
-  {
-    q: "Do we need to be on a specific platform?",
-    a: "No. We work across Klaviyo, HubSpot, Brevo, Customer.io, and Mailchimp. If you're not sure which platform is right for your business, we'll tell you, honestly, based on your setup and goals, not on what we prefer to work with.",
-  },
-  {
-    q: "What do you need from us to get started?",
-    a: "Access to your email platform and any connected store or CRM, your brand assets (logo, fonts, colours, tone guidelines if you have them), and the 30-minute kickoff call. We handle everything from there, copy, design, build, and setup.",
-  },
-  {
-    q: "What happens after the 30-day monitoring period?",
-    a: "You own everything we build, fully. Some clients continue with us on a retainer to manage and optimise the program ongoing. Others run it themselves with the handover document as their guide. Either way, you leave with a working email program, not a dependency on us.",
-  },
-];
-
 export default function FoundationsPage() {
   noStore();
   const updated = getUpdatedDate();
+  const { hero, intro, benefits, faq } = pageData;
 
   return (
     <>
       <PageHero
-        label="Email foundations"
-        title=<>Get the email foundations that turn first-time buyers into <span className="highlight">repeat customers</span>.</>
-        sub="The flows your email program needs to start converting, retaining, and recovering customers, without you having to build it."
+        label={hero.label}
+        title={<>{hero.titlePre} <span className="highlight">{hero.titleHighlight}</span>{hero.titlePost}</>}
+        sub={hero.sub}
       />
 
       <section className="section narrative-letter" data-screen-label="Foundations intro">
         <div className="wrap narrative-inner">
           <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
           <Reveal as="div" className="narrative-body">
-            <p>If you don't have the right flows in place, you're leaving money on the table every day.</p>
-            <p>Why? The system that should be turning first-time buyers into repeat customers, and recovering the ones who almost bought, isn't there yet.</p>
-            <p>Every day without it is another day of customers slipping through gaps that should be closed. That's revenue going to a competitor, or nowhere at all.</p>
-            <p>We build those foundations. Everything scoped specifically to your business, and built to run without you.</p>
+            {intro.map((p, i) => <p key={i}>{p}</p>)}
           </Reveal>
         </div>
       </section>
@@ -108,9 +68,9 @@ export default function FoundationsPage() {
 
       <section className="section" data-screen-label="Foundations benefits">
         <div className="wrap" style={{ maxWidth: 740 }}>
-          <Reveal as="h2" style={{ marginBottom: 32 }}>What you get</Reveal>
+          <Reveal as="h2" style={{ marginBottom: 32 }}>{benefits.heading}</Reveal>
           <Reveal as="ul" className="benefits-list">
-            {benefits.map((b, i) => (
+            {benefits.items.map((b, i) => (
               <li key={i} className="benefits-item">
                 <span className="benefits-check" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -122,8 +82,8 @@ export default function FoundationsPage() {
             ))}
           </Reveal>
           <Reveal style={{ marginTop: 40 }}>
-            <Link href="/strategy-session" className="btn btn-primary btn-lg btn-arrow">
-              Stop leaving money on the table. Let&apos;s build. <ArrowIcon />
+            <Link href={benefits.ctaHref} className="btn btn-primary btn-lg btn-arrow">
+              {benefits.ctaText} <ArrowIcon />
             </Link>
           </Reveal>
         </div>
@@ -138,13 +98,8 @@ export default function FoundationsPage() {
 
       <Contact />
 
-      <JsonLd data={serviceSchema({ name: "Email foundations setup", description: metadata.description as string, slug: "foundations" })} />
-      <JsonLd
-        data={breadcrumbSchema([
-          { name: "Home", url: site.url },
-          { name: "Email foundations", url: `${site.url}/foundations` },
-        ])}
-      />
+      <JsonLd data={serviceSchema({ name: "Email foundations setup", description: pageData.meta.description, slug: "foundations" })} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: site.url }, { name: "Email foundations", url: `${site.url}/foundations` }])} />
       <JsonLd data={faqSchema(faq)} />
     </>
   );

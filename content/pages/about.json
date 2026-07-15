@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "About Beyond Open Rate, Australian email marketing agency",
+    "description": "Australian email marketing agency. Lifecycle automation, Klaviyo, deliverability, and campaign management, for brands that want email to compound."
+  },
+  "hero": {
+    "titlePre": "Email is leaving money on the table.",
+    "titleHighlight": "We get it back",
+    "titlePost": ".",
+    "sub": "Beyond Open Rate is a specialist email and lifecycle marketing consultancy based in Australia. We work with businesses who are ready to stop guessing, and start growing."
+  },
+  "intro": [
+    "Most businesses know email and CRM should be working harder. They just don't have the time, the expertise, or the bandwidth to make it happen.",
+    "That's what Beyond Open Rate was built for. Since 2020, we've worked with businesses that don't have a dedicated team, and enterprises that do but need someone to lead from the front. What they have in common is straightforward: they're ready to treat email as the revenue channel it actually is.",
+    "Regardless of business size, the goal is always the same: less money left on the table."
+  ],
+  "team": [
+    {
+      "role": "Co-Founder",
+      "name": "Tim",
+      "photo": "/tim.jpg",
+      "bio": "I've spent over 15 years working in email and CRM management. Not just sending emails, but building programs from the ground up. Front-end development, automation architecture, lifecycle strategy, platform migrations and product management across complex email programs. I've done the work at companies ranging from fast-growing startups to some of the largest consumer brands in the world. I've seen what works, and what doesn't."
+    },
+    {
+      "role": "Co-Founder",
+      "name": "Tara",
+      "photo": "/tara.jpg",
+      "bio": "I've worked across creative, marketing and senior leadership roles in professional services, health, education, hospitality and entertainment. I'm a data-driven thinker and creative problem solver, who's hard to impress with surface-level metrics. At Beyond Open Rate, I bring that lens to everything we do, with solutions that are built to last and tie back to revenue. I care about whether the work is actually moving the needle."
+    }
+  ],
+  "philosophy": {
+    "heading": "Our take on email",
+    "paragraphs": [
+      "Email is still the most powerful direct channel in marketing, and we think it's only going to matter even more. But the inbox has changed.",
+      "What started as a personal, conversational space has evolved into something closer to an official record and extension of our being: bank statements, government notices, order communications, tax communications. Most of what lands there today is functional, not relational.",
+      "That shift has raised the bar for brands. Email has become more like a verified channel than a broadcast one. The answer isn't louder subject lines or more blast promotions; it's trust.",
+      "You have to earn the right to be in someone's inbox. And the brands who invest in doing that properly, will win it."
+    ]
+  },
+  "workWith": {
+    "heading": "Who we work with",
+    "paragraphs": [
+      "If you're a business that sends marketing email and wants it to work harder, we're worth talking to.",
+      "Our best work happens with businesses that are open to honest feedback, willing to test, and ready to act on data. If you want someone to bring genuine expertise and tell you what isn't working, we're a good fit."
+    ]
+  },
+  "wontDo": {
+    "heading": "What we won't do",
+    "paragraphs": [
+      "We don't run blast campaigns. Untargeted sends to your full list, regardless of behaviour or engagement, burn list health, damage deliverability and train your subscribers to ignore you. No template fixes that.",
+      "Every campaign we send is targeted, behaviour-based and aligned with your brand. It takes more thought to set up properly, but it's worth the return."
+    ]
+  }
+}
