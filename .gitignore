@@ -16,3 +16,4 @@ next-env.d.ts
 
 # TinaCMS generated files (rebuilt by tinacms build on Vercel)
 tina/__generated__/
+public/admin/
