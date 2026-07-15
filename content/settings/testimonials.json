@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "name": "Sarah M.",
+      "initial": "S",
+      "text": "Within two months email went from an afterthought to our second-biggest sales channel. The flows they set up just quietly run.",
+      "rating": 5
+    },
+    {
+      "name": "James K.",
+      "initial": "J",
+      "text": "We'd been meaning to fix our email for two years. They had our first welcome sequence live in under a week. Should have done this sooner.",
+      "rating": 5
+    },
+    {
+      "name": "Priya L.",
+      "initial": "P",
+      "text": "Finally someone who talks about revenue, not open rates. Our monthly reporting is actually useful now.",
+      "rating": 5
+    },
+    {
+      "name": "Tom R.",
+      "initial": "T",
+      "text": "The deliverability audit alone paid for the first month. We were landing in spam on half our sends and had no idea.",
+      "rating": 5
+    },
+    {
+      "name": "Emma W.",
+      "initial": "E",
+      "text": "Responsive, sharp, and they actually understand what moves the needle for a subscription business. Felt like we were their only client.",
+      "rating": 5
+    }
+  ]
+}

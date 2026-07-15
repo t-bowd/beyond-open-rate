@@ -1,36 +1,9 @@
 import Reveal from "./Reveal";
+import testimonialData from "../content/settings/testimonials.json";
 
-// PLACEHOLDERS, replace with real client quotes before launch.
-// Using first name + last initial only, no company names.
 type Review = { text: string; name: string; initial: string; rating?: number };
 
-const REVIEWS: Review[] = [
-  {
-    text: "Within two months email went from an afterthought to our second-biggest sales channel. The flows they set up just quietly run.",
-    name: "Sarah M.",
-    initial: "S",
-  },
-  {
-    text: "We'd been meaning to fix our email for two years. They had our first welcome sequence live in under a week. Should have done this sooner.",
-    name: "James K.",
-    initial: "J",
-  },
-  {
-    text: "Finally someone who talks about revenue, not open rates. Our monthly reporting is actually useful now.",
-    name: "Priya L.",
-    initial: "P",
-  },
-  {
-    text: "The deliverability audit alone paid for the first month. We were landing in spam on half our sends and had no idea.",
-    name: "Tom R.",
-    initial: "T",
-  },
-  {
-    text: "Responsive, sharp, and they actually understand what moves the needle for a subscription business. Felt like we were their only client.",
-    name: "Emma W.",
-    initial: "E",
-  },
-];
+const REVIEWS: Review[] = testimonialData.items;
 
 function Stars({ rating = 5 }: { rating?: number }) {
   return (

@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ariakit/react": "^0.3.14",
     "@supabase/supabase-js": "^2.106.2",
+    "@tinacms/cli": "^2.5.5",
     "gray-matter": "^4.0.3",
     "next": "14.2.5",
     "next-mdx-remote": "^6.0.0",
@@ -18,6 +20,7 @@
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
+    "tinacms": "^3.10.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
@@ -25,5 +28,18 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "@ariakit/react": "0.3.14",
+    "@ariakit/react-components": "0.3.2"
+  },
+  "allowScripts": {
+    "tinacms@3.10.1": true,
+    "@tinacms/cli@2.5.5": true,
+    "better-sqlite3@12.11.1": true,
+    "core-js@3.49.0": true,
+    "esbuild@0.24.2": true,
+    "esbuild@0.18.20": true,
+    "fsevents@2.3.3": true
   }
 }
