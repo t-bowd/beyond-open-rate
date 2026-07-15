@@ -4,8 +4,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Reveal from "./Reveal";
 import ArrowIcon from "./ArrowIcon";
+import homepageData from "@/content/homepage/homepage.json";
 
-
+const { hero } = homepageData;
 const VIDEOS = ["/hero-bg1.mp4", "/hero-bg.mp4", "/hero-bg2.mp4"];
 
 export default function Hero() {
@@ -59,10 +60,10 @@ export default function Hero() {
 
       <div className="wrap hero-inner">
         <Reveal as="h1" className="hero-shout">
-          Your emails <span className="highlight">owe you money</span>.
+          {hero.headlinePre} <span className="highlight">{hero.headlineHighlight}</span>.
         </Reveal>
         <Reveal as="p" className="hero-sub">
-          The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable.
+          {hero.subheadline}
         </Reveal>
 
         <Reveal as="form" className="audit-form" id="hero-audit" onSubmit={submit} noValidate>
@@ -81,7 +82,7 @@ export default function Hero() {
             }}
           />
           <button type="submit" className="btn btn-primary btn-arrow">
-            Let&apos;s go
+            {hero.ctaText}
             <ArrowIcon />
           </button>
         </Reveal>
@@ -94,7 +95,7 @@ export default function Hero() {
           </Reveal>
         ) : (
           <Reveal as="div" className="audit-note-split">
-            <p className="audit-note-witty">We won't ghost you. Unlike your unengaged subscribers.</p>
+            <p className="audit-note-witty">{hero.noteWitty}</p>
             <p className="audit-note-stars">
               {/* <span aria-hidden="true">★★★★★</span> 5.0 stars from 100 reviews */}
             </p>

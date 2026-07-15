@@ -2,35 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
+import homepageData from "@/content/homepage/homepage.json";
 
-// Real, sourced, outcome-level stats, not internal/vanity metrics
-// (no open rate, no BOR-only numbers) and no jargon metric names.
-const STATS = [
-  {
-    target: 36,
-    prefix: "$",
-    suffix: "",
-    label: "Returned for every $1 spent. No other marketing channel comes close.",
-  },
-  {
-    target: 40,
-    prefix: "",
-    suffix: "%",
-    label: "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this.",
-  },
-  {
-    target: 320,
-    prefix: "",
-    suffix: "%",
-    label: "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously.",
-  },
-  {
-    target: 6,
-    prefix: "",
-    suffix: "x",
-    label: "Revenue difference between a well-run email program and the industry average.",
-  },
-];
+const { growFaster } = homepageData;
+const STATS = growFaster.stats;
 
 type StatProps = {
   target: number;
@@ -86,10 +61,10 @@ export default function GrowFaster() {
     <section className="section grow-faster" data-screen-label="Grow faster">
       <div className="wrap grow-faster-inner">
         <Reveal as="h2" className="display-huge">
-          Your email program is either making you money or costing you money. There's no middle ground.
+          {growFaster.headline}
         </Reveal>
         <Reveal as="p" className="grow-faster-sub">
-          Most brands treat email like an afterthought. The businesses growing fastest on email aren't doing anything exotic. They're just doing it properly.
+          {growFaster.subheadline}
         </Reveal>
       </div>
       <div className="wrap grow-stat-grid">

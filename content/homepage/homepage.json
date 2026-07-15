@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "headlinePre": "Your emails",
+    "headlineHighlight": "owe you money",
+    "subheadline": "The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable.",
+    "ctaText": "Let's go",
+    "noteWitty": "We won't ghost you. Unlike your unengaged subscribers."
+  },
+  "narrative": {
+    "paragraphs": [
+      "You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?",
+      "Here's what we see constantly: businesses sending campaigns that land in spam, automation that hasn't been touched since setup day, and a list full of people who stopped caring months ago.",
+      "Nobody flagged it. Nobody fixed it. Every month, that's revenue you didn't see and can't get back.",
+      "Most agencies will sell you on open rates and design. We don't. We care about one thing: whether your email program is making you money. If it isn't, we find out why, and we fix it."
+    ]
+  },
+  "positioning": {
+    "eyebrow": "We're not like other agencies",
+    "headline": "We're experts. We do email at a level most agencies can't.",
+    "bodyParagraphs": [
+      "Email and lifecycle marketing is a specialist discipline, and it's what we do best. You won't get recommendations based on what earns us a platform commission. You won't get reports full of metrics that don't connect to revenue.",
+      "We've spent 20 years inside email programs from start-ups to global enterprises. We know what good looks like, and we know when mediocre is pretending to be good."
+    ]
+  },
+  "guarantee": {
+    "eyebrow": "Our promise",
+    "headline": "Results guaranteed or we'll work for free.*",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current results, or it's on us until we do.*",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "growFaster": {
+    "headline": "Your email program is either making you money or costing you money. There's no middle ground.",
+    "subheadline": "Most brands treat email like an afterthought. The businesses growing fastest on email aren't doing anything exotic. They're just doing it properly.",
+    "stats": [
+      { "target": 36, "prefix": "$", "suffix": "", "label": "Returned for every $1 spent. No other marketing channel comes close." },
+      { "target": 40, "prefix": "", "suffix": "%", "label": "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this." },
+      { "target": 320, "prefix": "", "suffix": "%", "label": "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously." },
+      { "target": 6, "prefix": "", "suffix": "x", "label": "Revenue difference between a well-run email program and the industry average." }
+    ]
+  },
+  "splitOffer": {
+    "eyebrow": "Our offers",
+    "offers": [
+      {
+        "id": "strategy",
+        "title": "Claim your free strategy session",
+        "body": "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and how it ties to revenue. Act fast - sessions are limited!",
+        "ctaText": "Claim your free session",
+        "ctaHref": "/strategy-session"
+      },
+      {
+        "id": "audit",
+        "title": "Revenue killers exposed",
+        "body": "What marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
+        "ctaText": "Take the free audit",
+        "ctaHref": "/tools/email-audit"
+      }
+    ]
+  },
+  "finalCta": {
+    "platforms": ["Klaviyo", "HubSpot", "Customer.io", "Mailchimp", "ActiveCampaign"],
+    "headline": "Walk away knowing where your email program is costing you money.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "footer": {
+    "taglineLine1": "Your emails owe you money.",
+    "taglineLine2": "We help you find it."
+  }
+}

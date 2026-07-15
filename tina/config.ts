@@ -306,6 +306,145 @@ export default defineConfig({
         ],
       },
 
+      // ── Homepage (singleton) ──────────────────────────────────────────
+      {
+        name: "homepage",
+        label: "Homepage",
+        path: "content/homepage",
+        format: "json",
+        match: { include: "homepage" },
+        ui: {
+          allowedActions: { create: false, delete: false },
+          global: true,
+        },
+        fields: [
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero",
+            fields: [
+              { type: "string", name: "headlinePre", label: "Headline (before highlight)" },
+              { type: "string", name: "headlineHighlight", label: "Headline (highlighted phrase)" },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "noteWitty", label: "Note below form" },
+            ],
+          },
+          {
+            type: "object",
+            name: "narrative",
+            label: "Narrative Letter",
+            fields: [
+              {
+                type: "string",
+                name: "paragraphs",
+                label: "Paragraphs",
+                list: true,
+                ui: { component: "textarea" },
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "positioning",
+            label: "Positioning",
+            fields: [
+              { type: "string", name: "eyebrow", label: "Eyebrow" },
+              { type: "string", name: "headline", label: "Headline" },
+              {
+                type: "string",
+                name: "bodyParagraphs",
+                label: "Body Paragraphs",
+                list: true,
+                ui: { component: "textarea" },
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "guarantee",
+            label: "Guarantee",
+            fields: [
+              { type: "string", name: "eyebrow", label: "Eyebrow" },
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "body", label: "Body", ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaHref", label: "CTA Link" },
+            ],
+          },
+          {
+            type: "object",
+            name: "growFaster",
+            label: "Grow Faster (Stats)",
+            fields: [
+              { type: "string", name: "headline", label: "Headline", ui: { component: "textarea" } },
+              { type: "string", name: "subheadline", label: "Subheadline", ui: { component: "textarea" } },
+              {
+                type: "object",
+                name: "stats",
+                label: "Stats",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.prefix + item?.target + item?.suffix || "Stat",
+                  }),
+                },
+                fields: [
+                  { type: "number", name: "target", label: "Number" },
+                  { type: "string", name: "prefix", label: "Prefix (e.g. $)" },
+                  { type: "string", name: "suffix", label: "Suffix (e.g. %, x)" },
+                  { type: "string", name: "label", label: "Description", ui: { component: "textarea" } },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "splitOffer",
+            label: "Split Offer",
+            fields: [
+              { type: "string", name: "eyebrow", label: "Eyebrow" },
+              {
+                type: "object",
+                name: "offers",
+                label: "Offer Cards",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({ label: item?.title ?? "Offer" }),
+                },
+                fields: [
+                  { type: "string", name: "id", label: "ID (strategy or audit — do not change)" },
+                  { type: "string", name: "title", label: "Title" },
+                  { type: "string", name: "body", label: "Body", ui: { component: "textarea" } },
+                  { type: "string", name: "ctaText", label: "CTA Button Text" },
+                  { type: "string", name: "ctaHref", label: "CTA Link" },
+                ],
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "finalCta",
+            label: "Final CTA",
+            fields: [
+              { type: "string", name: "platforms", label: "Platform Badges", list: true },
+              { type: "string", name: "headline", label: "Headline", ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaHref", label: "CTA Link" },
+            ],
+          },
+          {
+            type: "object",
+            name: "footer",
+            label: "Footer",
+            fields: [
+              { type: "string", name: "taglineLine1", label: "Tagline line 1" },
+              { type: "string", name: "taglineLine2", label: "Tagline line 2" },
+            ],
+          },
+        ],
+      },
+
       // ── Global FAQs (singleton list) ──────────────────────────────────
       {
         name: "globalFaqs",

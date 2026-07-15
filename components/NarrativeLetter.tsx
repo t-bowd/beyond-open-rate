@@ -1,5 +1,8 @@
 import { unstable_noStore as noStore } from "next/cache";
 import Reveal from "./Reveal";
+import homepageData from "@/content/homepage/homepage.json";
+
+const { narrative } = homepageData;
 
 /* PLACEHOLDER MODULE, layout only. King Kong runs a long, direct-address
    "Dear business builder" letter here that does most of the persuasive
@@ -35,17 +38,9 @@ export default function NarrativeLetter() {
       <div className="wrap narrative-inner">
         <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
         <Reveal as="div" className="narrative-body">
-         {/* <p>[Dear,, opening line TBD.]</p> */}
-          <p>
-            You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?
-          </p>
-          <p>
-            Here's what we see constantly: businesses sending campaigns that land in spam, automation that hasn't been touched since setup day, and a list full of people who stopped caring months ago. 
-          </p>
-
-          <p>Nobody flagged it. Nobody fixed it. Every month, that's revenue you didn't see and can't get back.</p>
-
-          <p>Most agencies will sell you on open rates and design. We don't. We care about one thing: whether your email program is making you money. If it isn't, we find out why, and we fix it.</p>
+          {narrative.paragraphs.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </Reveal>
       </div>
     </section>

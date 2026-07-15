@@ -4,6 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
+import homepageData from "@/content/homepage/homepage.json";
+
+const { footer } = homepageData;
 
 export default function Footer() {
   const pathname = usePathname();
@@ -20,7 +23,7 @@ export default function Footer() {
             <Image src="/logo-reverse.svg" alt="" width={36} height={36} style={{ height: 36, width: "auto" }} />
             <span>Beyond&nbsp;Open&nbsp;Rate</span>
           </Link>
-          <p className="footer-tagline">Your emails owe you money.<br />We help you find it.</p>
+          <p className="footer-tagline">{footer.taglineLine1}<br />{footer.taglineLine2}</p>
 
           <div className="footer-social">
             <a href={site.social.linkedin} target="_blank" rel="me noopener noreferrer" aria-label="Beyond Open Rate on LinkedIn">
