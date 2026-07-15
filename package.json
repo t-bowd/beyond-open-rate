@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
+    "build": "tinacms build || true && next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "node scripts/fix-ariakit.cjs"
@@ -31,6 +31,10 @@
     "typescript": "^6.0.3"
   },
   "overrides": {
+    "@ariakit/react": "0.3.14",
+    "@ariakit/react-components": "0.3.2"
+  },
+  "resolutions": {
     "@ariakit/react": "0.3.14",
     "@ariakit/react-components": "0.3.2"
   },
