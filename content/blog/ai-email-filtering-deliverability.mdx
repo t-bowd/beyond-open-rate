@@ -1,0 +1,74 @@
+---
+title: "AI is changing how email gets filtered. Here's what that means for senders."
+description: "Mailbox providers are using AI to evaluate content quality, engagement signals, and sender reputation. The result is quieter, harder-to-diagnose deliverability problems."
+publishedAt: "2026-07-15"
+author: "Tim"
+tags: ["deliverability", "strategy", "metrics"]
+faq:
+  - q: "How is AI filtering different from traditional spam filters?"
+    a: "Traditional spam filters relied primarily on keyword matching, authentication checks, and blocklist lookups. AI-driven filtering evaluates the quality and relevance of your content, models how likely a specific recipient is to engage based on historical patterns, and can identify low-quality sending behaviour even when authentication passes cleanly. It's less about catching obvious spam and more about predicting whether a given message is worth delivering to a given person."
+  - q: "Does this mean personalisation is now required for good deliverability?"
+    a: "Not in the strict sense. You don't need to personalise every email to survive AI filtering. But you do need to send content that's genuinely relevant to the people receiving it. Broad, untargeted broadcasts to poorly segmented lists are increasingly penalised, not because they're spam but because AI systems detect that most recipients don't want them. Segmentation and relevance are now deliverability levers, not just engagement levers."
+  - q: "Which mailbox providers are using AI filtering?"
+    a: "Google (Gmail) and Microsoft (Outlook/Hotmail) have both publicly stated they use machine learning in their filtering systems. Yahoo and Apple Mail are less explicit but show behaviour consistent with AI-driven filtering. Blocklist operators like Spamhaus have also incorporated machine learning into their reputation scoring. The practice is industry-wide rather than specific to one provider."
+  - q: "How do I know if AI filtering is affecting my deliverability?"
+    a: "The clearest signal is a gradual, unexplained decline in engagement across your full list without a corresponding increase in hard bounces or obvious spam signals. If your open rates are dropping, your inbox placement is declining, but your authentication checks are clean and you're not on any blocklists, AI filtering is a likely factor. Deliverability monitoring tools like Gmail Postmaster Tools and Microsoft SNDS provide domain-level reputation data that can help confirm."
+---
+
+The conversation around AI in email marketing focuses almost entirely on the sending side. Whether AI wrote the subject line. Whether it personalised the content. Whether it predicted the optimal send time.
+
+That conversation is missing half the picture.
+
+The other half is what's happening on the receiving side. Mailbox providers and blocklist operators have been quietly deploying AI-driven filtering for years, and the systems evaluating your emails today are meaningfully different from the keyword-matching spam filters of five years ago.
+
+The result is a new class of deliverability problem: one that's harder to diagnose, easier to miss, and increasingly common.
+
+## What's changed in filtering
+
+Traditional spam filters were largely rule-based. They checked whether your email contained certain words, whether your domain was on a blocklist, whether your authentication was configured correctly. Pass the rules, land in the inbox. Fail them, get caught.
+
+AI-driven filtering doesn't work that way. Instead of checking against a fixed list of rules, it models probability. How likely is this specific message to be something this specific recipient wants? What does the sender's historical behaviour suggest about content quality and engagement? Does this email's content match the engagement patterns of people who typically read this kind of email?
+
+The result is a filter that evaluates quality and relevance, not just compliance. An email can pass every technical check and still face filtering if the model predicts it's unlikely to generate genuine engagement.
+
+## The signals that matter now
+
+**Engagement history at scale.** Mailbox providers track how recipients across their network respond to your emails over time. Consistently low click rates, high ignore rates, and frequent "move to spam" actions accumulate into a reputation score for your sending domain. This score affects future deliverability across all recipients at that provider, including people who've engaged with your emails before.
+
+The implication: sending to a cold, disengaged list doesn't just hurt your metrics for that send. It downgrades your reputation for every subsequent send to every recipient.
+
+**Content quality signals.** AI systems have moved beyond keyword matching. They can evaluate whether email content is substantive and relevant, whether it matches the stated subject line, and whether it resembles the content that high-engagement senders produce. Generic, low-effort content is increasingly identifiable as such.
+
+**Per-recipient relevance modelling.** Gmail in particular has been public about building per-user models of what each inbox owner values. An email that performs well with one segment might be filtered more aggressively for another, even from the same sender. This is why campaign-level statistics can obscure serious deliverability problems hidden within specific segments.
+
+**Sender pattern analysis.** Blocklist operators have moved beyond tracking IP addresses on static lists. Machine learning now identifies patterns in sending behaviour: sudden volume spikes, unusual sending cadences, mismatches between list size and engagement rates. These patterns can trigger reputation downgrades before a traditional blocklist entry would occur.
+
+## What this changes for senders
+
+The practical implications aren't complicated, but they do require a different way of thinking about deliverability.
+
+**List hygiene is a prerequisite, not a cleanup task.** Sending to large volumes of unengaged addresses was always bad practice. Under AI filtering, it's actively penalising. Subscribers who haven't engaged in six months are degrading your domain reputation on every send. Sunset them before they drag down placement for the subscribers who do engage.
+
+**Segmentation now affects deliverability, not just conversion.** Sending your full list a broadcast they're not interested in used to be a marketing problem. It's now also a deliverability problem. Smaller, better-targeted sends improve per-recipient relevance scores. Broad, untargeted sends accumulate negative engagement signals at scale.
+
+**Engagement metrics need to be read differently.** Open rates are compromised by Apple Mail Privacy Protection and similar proxies. Click rate and conversion rate are now better signals. More importantly, the *absence* of engagement from a large segment should be treated as an active problem, not a benchmark to optimise around.
+
+**Content quality signals matter.** Subject lines that overpromise and email bodies that underdeliver create a mismatch AI systems are increasingly good at detecting. So does the gap between what an email says and what the landing page delivers. Consistency between subject, preview text, body, and destination reduces the signals that flag content for tighter filtering.
+
+## The diagnostic problem
+
+What makes this difficult is that AI filtering failures look like a lot of other things.
+
+A gradual decline in open rates looks like audience fatigue. A drop in inbox placement looks like a technical issue. Engagement falling off with a specific segment looks like a campaign problem.
+
+The difference is that traditional deliverability problems produce clear signals: blocklist entries, authentication failures, spam folder placement at specific providers. AI filtering problems are subtler. They show up as soft declines, as reduced reach, as campaigns that just don't perform the way they used to without any obvious cause.
+
+If you're seeing declining engagement without a clear technical explanation, check your domain reputation in [Gmail Postmaster Tools](https://postmaster.google.com) and Microsoft SNDS before assuming it's a content or strategy problem. Domain reputation data is the most direct signal of where you stand with the two providers that cover the majority of commercial inboxes.
+
+If the reputation data shows a problem, the fix is almost always the same: tighten segmentation, aggressively suppress unengaged subscribers, and give the algorithms a clear run of positive engagement signals before increasing volume again.
+
+That process takes time. Reputation recovers slowly. The brands that maintain it consistently will have a structural advantage over the next few years as AI filtering becomes more sophisticated.
+
+---
+
+If you want a baseline read on where your deliverability stands, [our free email audit](/tools/email-audit) checks authentication, domain reputation, list health indicators, and engagement benchmarks across your account.
