@@ -161,7 +161,6 @@ description: "${description.replace(/"/g, '\\"')}"
 publishedAt: "${today}"
 author: "${author}"
 tags: [${tags.map((t) => `"${t}"`).join(", ")}]
-draft: true
 faq:
 ${faqYaml}
 ---
@@ -243,10 +242,7 @@ const { data: pr } = await octokit.pulls.create({
 ---
 
 ### Tim — review checklist
-- [ ] Read through for accuracy and voice — edit directly in the file if needed
-- [ ] Set \`draft: false\` in frontmatter when ready to publish
-- [ ] Check the title and meta description for length and keyword placement
-- [ ] Review FAQs — they render as schema markup on the page
+- [ ] Read through for accuracy and voice — edit the file directly if anything needs changing
 - [ ] Merge to publish
 
 ---
