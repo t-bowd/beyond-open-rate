@@ -68,7 +68,7 @@ const client = new Anthropic();
 let apiResponse;
 try {
   apiResponse = await client.messages.create({
-    model: "claude-sonnet-4-5",
+    model: "claude-sonnet-5",
     max_tokens: 1500,
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
