@@ -188,6 +188,61 @@
       "notes": "The insight is that campaigns and lifecycle are different things serving different purposes. Don't dismiss campaigns — show what's missing."
     },
     {
+      "id": "050",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "AI didn't replace email strategy. It made the gap between good strategy and bad strategy bigger.",
+      "seed_claim": "AI writes the email in 30 seconds. The decision about who gets it, when, with what suppression logic, in what context — that still takes judgment. AI gives every brand the same production speed. Strategy is now the only differentiator left.",
+      "audience_angle": "Founder who has started using AI for email drafts and thinks they've now solved their email program",
+      "cta_style": "none",
+      "notes": "The insight is that AI compresses production time, not strategy time. Brands with bad strategy now produce bad emails faster. Don't lead with doom — lead with the implication for competitive positioning."
+    },
+    {
+      "id": "051",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "gathering_info",
+      "topic": "We've used AI on client email programs for twelve months. Here's what it's actually good at.",
+      "seed_claim": "AI is genuinely useful for first drafts of high-volume sequences, subject line variants, and rephrasing product descriptions for lifecycle context. It is not useful for deciding who to send to, setting the right suppression window, or knowing when a client's deliverability is about to degrade.",
+      "audience_angle": "Founder or marketer who has heard a lot of AI hype and wants an honest practitioner take rather than a pitch",
+      "cta_style": "soft",
+      "notes": "Be specific about both the wins and the limits. Not 'AI can't replace human creativity' — name the actual things it can't do: segment decisions, suppression logic, lifecycle timing calls, deliverability judgment. Practitioner voice throughout."
+    },
+    {
+      "id": "052",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "The AI wrote the email in 30 seconds. The decision to send it took 20 minutes.",
+      "seed_claim": "The bottleneck in email has never been writing speed. It's the decision layer — who gets this, who gets suppressed, does this conflict with a flow already running, is this the right moment in the customer's lifecycle. AI doesn't make that faster. It just makes the writing part disappear.",
+      "audience_angle": "Founder who thinks using AI for email means they can now run their whole email program themselves",
+      "cta_style": "none",
+      "notes": "Enumerate what goes into the 20-minute decision: segment check, suppression logic, calendar conflict check, brand voice review, lifecycle stage. Make it feel specific and real. The writing was never the hard part."
+    },
+    {
+      "id": "053",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "AI is now deciding whether your emails get read. Here's what that means for your automations.",
+      "seed_claim": "Gmail and Apple Mail are using machine learning to categorise and deprioritise incoming email before recipients see it. The emails that survive aren't the ones with the best subject lines — they're from senders with strong historical engagement. Flows set up two years ago on a degraded list don't have that.",
+      "audience_angle": "Founder who has noticed declining open rates or engagement and doesn't understand what changed",
+      "cta_style": "soft",
+      "notes": "Build on the AI inbox filtering blog post. The key insight: inbox AI rewards engagement history, which means old flows with degraded list hygiene get filtered harder over time. Include the fix: clean lists, strong engagement signals, proper suppression. Soft CTA."
+    },
+    {
+      "id": "054",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "Everyone's using AI to send more emails. That's exactly why your deliverability is getting harder.",
+      "seed_claim": "When AI makes email production cheaper, total email volume rises across the industry. Inbox providers respond by filtering harder. The brands that win aren't the ones sending more — they're the ones sending to the right people at the right time, with clean lists and strong engagement history.",
+      "audience_angle": "Founder experimenting with AI-generated email content and increasing their send frequency as a result",
+      "cta_style": "soft",
+      "notes": "The paradox angle: the AI email boom is making email harder, not easier. Make the business case without being preachy — more email to a cold or mixed list means more complaints, worse sender reputation, lower revenue per send. Precision beats volume."
+    },
+    {
       "id": "018",
       "status": "queued",
       "pillar": "educational",
@@ -274,6 +329,39 @@
       "audience_angle": "E-commerce founder evaluating email platforms, currently on ActiveCampaign and wondering if it's right for them, or comparing options before committing",
       "format": "honest platform evaluation guide — not a hit piece, not a sales pitch",
       "notes": "Cover: what ActiveCampaign does well (CRM depth, complex multi-step automation, deal pipelines, B2B-adjacent use cases), where it struggles for pure DTC (native ecomm data sync, product-based segmentation, flow triggers off purchase events), which business types suit it vs alternatives, deliverability considerations. Platform-agnostic framing — this is about fit, not rankings."
+    },
+    {
+      "id": "055",
+      "type": "blog",
+      "status": "queued",
+      "topic": "How to use AI in your email marketing: what actually works for e-commerce",
+      "target_keywords": ["AI email marketing", "AI in email marketing", "AI email copywriting", "AI email automation"],
+      "seed_claim": "AI is genuinely useful in email marketing for specific, bounded tasks: first drafts, subject line variants, rewriting product descriptions for lifecycle context. It is not a replacement for the strategy, segmentation, and deliverability judgment that determine whether those emails actually perform.",
+      "audience_angle": "E-commerce founder or marketer who wants to use AI to improve their email program but doesn't know what's realistic or where to start",
+      "format": "practical guide with specific use cases, honest assessment of limits, and a workflow for actually integrating AI into email work",
+      "notes": "Structure: what AI is good for in email (concrete examples — drafts, variants, rephrasing), what it can't do well (segmentation decisions, suppression logic, deliverability calls, brand voice judgment), a practical workflow for using AI in a real email program. Links to relevant posts on segmentation and flows."
+    },
+    {
+      "id": "056",
+      "type": "blog",
+      "status": "queued",
+      "topic": "What AI can't do in email marketing and why that still matters for your revenue",
+      "target_keywords": ["AI email marketing", "AI vs human email marketing", "AI email strategy", "AI email copywriting"],
+      "seed_claim": "AI can write the email. It can't decide who deserves to receive it, whether your sender reputation can support another broadcast this week, or whether a discount in email three of your abandoned cart sequence is strategically sound or just margin erosion dressed up as automation.",
+      "audience_angle": "E-commerce founder who has seen the AI email hype and wants to understand where human judgment is still the thing that separates high-performing programs from average ones",
+      "format": "analytical positioning piece — contrast AI capabilities against specific human judgment calls in email strategy",
+      "notes": "This is BOR's positioning piece on AI. The angle: we use AI (so we know what it can do), and we know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece on AI — an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world."
+    },
+    {
+      "id": "057",
+      "type": "blog",
+      "status": "queued",
+      "topic": "AI inbox filtering: what email platforms are doing and what it means for your open rates",
+      "target_keywords": ["AI inbox filtering", "Gmail AI filtering", "email deliverability AI", "AI email filtering", "AI email categorisation"],
+      "seed_claim": "Gmail, Apple Mail, and a new generation of AI-powered email clients are making decisions about your emails before recipients ever see them. The signals these systems use to decide what survives the filter are not the ones most email marketers optimise for.",
+      "audience_angle": "E-commerce founder whose open rates have been declining and who wants to understand what's changed in the inbox environment in the past 12–18 months",
+      "format": "explainer with practical implications and concrete action steps",
+      "notes": "Cover: how modern inbox AI works (engagement signals, sender reputation, content patterns, unsubscribe behaviour), what gets filtered out, what survives (strong sender history, clean lists, genuine engagement), concrete actions to improve positioning with inbox AI. Reference the EU tracking pixel post for the regulatory angle on tracking. This post complements 053 (LinkedIn topic on the same theme)."
     }
   ]
 }
