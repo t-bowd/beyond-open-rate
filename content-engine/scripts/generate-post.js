@@ -78,7 +78,11 @@ try {
   process.exit(1);
 }
 
-const rawText = apiResponse.content[0].text;
+const rawText = apiResponse.content.find((b) => b.type === "text")?.text;
+if (!rawText) {
+  console.error("No text block in API response:", JSON.stringify(apiResponse.content));
+  process.exit(1);
+}
 console.log("API response received.");
 
 // ── Parse variants ────────────────────────────────────────────────────────────
@@ -150,8 +154,8 @@ try {
   process.exit(1);
 }
 
-const socialRawA = socialA.content[0].text;
-const socialRawB = socialB.content[0].text;
+const socialRawA = socialA.content.find((b) => b.type === "text")?.text ?? "";
+const socialRawB = socialB.content.find((b) => b.type === "text")?.text ?? "";
 console.log("Social content received for both variants.");
 
 // ── Build slug and date ───────────────────────────────────────────────────────
