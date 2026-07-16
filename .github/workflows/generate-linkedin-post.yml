@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: content-engine
-        run: npm install @anthropic-ai/sdk @octokit/rest
+        run: npm install
 
       - name: Generate post
         env:
