@@ -219,6 +219,61 @@
       "audience_angle": "Founder who has heard about the audit but isn't sure if it's worth their time",
       "cta_style": "audit",
       "notes": "Direct CTA to the free audit tool at beyondopenrate.com.au/tools/email-audit. Make it feel low-effort and high-value."
+    },
+    {
+      "id": "021",
+      "type": "blog",
+      "status": "queued",
+      "topic": "How to migrate from Mailchimp to Klaviyo",
+      "target_keywords": ["mailchimp to klaviyo migration", "migrate mailchimp to klaviyo", "mailchimp klaviyo integration", "migrating from mailchimp to klaviyo", "klaviyo migration"],
+      "seed_claim": "Most Mailchimp to Klaviyo migrations take longer than they should because brands move before setting up their data properly. The order is: set up the integration, let it sync historical purchase data, build your segments, then migrate your flows — not the other way around.",
+      "audience_angle": "E-commerce founder who has decided to move from Mailchimp to Klaviyo but doesn't know where to start or in what order to do things",
+      "format": "step-by-step guide",
+      "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Naturally mention that Klaviyo vs Mailchimp is a platform decision worth reading first — links to /blog/klaviyo-vs-mailchimp."
+    },
+    {
+      "id": "022",
+      "type": "blog",
+      "status": "queued",
+      "topic": "Abandoned cart email benchmarks: conversion rates, timing, and what good actually looks like",
+      "target_keywords": ["abandoned cart email conversion rate", "abandoned cart email benchmarks", "abandoned cart email timing"],
+      "seed_claim": "The average abandoned cart recovery rate is 5–8%. The top 25% of brands recover 15–22%. The difference isn't the platform — it's sequence length, timing of the first email, and whether the copy treats the abandon as a browse or a genuine signal of intent.",
+      "audience_angle": "E-commerce founder who has abandoned cart emails running but has no idea if their numbers are good or bad, or who is building a sequence from scratch",
+      "format": "data-driven guide with benchmarks and specific numbers throughout",
+      "notes": "Lead with the benchmark gap. Cover: what counts as a good recovery rate, optimal timing for first email (speed matters), how sequence length affects outcomes, what copy angle drives conversion at each email in the series. References the abandoned cart email strategy post at /blog/abandoned-cart-email-strategy."
+    },
+    {
+      "id": "023",
+      "type": "blog",
+      "status": "queued",
+      "topic": "How to sunset unengaged email subscribers without killing your list",
+      "target_keywords": ["sunset sequence email", "sunset policy email", "removing unengaged subscribers", "sunset sequence removing unengaged subscribers protecting deliverability"],
+      "seed_claim": "Sending to unengaged subscribers doesn't just hurt your metrics — it actively damages your sender reputation with every send. A sunset sequence identifies who's genuinely gone, wins back the ones who aren't, and removes the rest before they tank your deliverability.",
+      "audience_angle": "E-commerce founder with a growing list and declining engagement rates who doesn't want to delete contacts but knows they should be doing something about the dead weight",
+      "format": "step-by-step guide",
+      "notes": "Cover: what 'unengaged' means and how to define the threshold (time-based vs engagement-based), why it matters for deliverability (sender reputation, inbox placement), the 3–4 step sunset sequence with timing, what to do with non-responders (suppress, don't delete). Reference the email list cleaning guide at /blog/email-list-cleaning-guide."
+    },
+    {
+      "id": "024",
+      "type": "blog",
+      "status": "queued",
+      "topic": "Post-purchase email examples: what to send after every order and when",
+      "target_keywords": ["post purchase email examples", "post purchase email series", "post purchase cross sell email", "post purchase communication", "post purchase email automation"],
+      "seed_claim": "Most post-purchase sequences stop at the transactional emails. The brands with the highest repeat purchase rates have 6–8 additional emails in the 90 days after a sale — none of them promotional in the traditional sense. They're timed to the customer's natural repurchase window.",
+      "audience_angle": "E-commerce founder who has a post-purchase flow but it's mostly order confirmations and shipping updates, and wants to know what else to actually send",
+      "format": "examples-driven guide with specific email breakdowns, subject lines, and timing for each",
+      "notes": "Cover each email in a full post-purchase sequence: confirmation, shipping, delivery, review request, cross-sell, replenishment/reorder, loyalty/brand story, win-back trigger. Give concrete examples of subject lines and copy angles for each. Reference /blog/post-purchase-email-flow for the strategic overview."
+    },
+    {
+      "id": "025",
+      "type": "blog",
+      "status": "queued",
+      "topic": "ActiveCampaign for e-commerce: where it works and where it falls short",
+      "target_keywords": ["activecampaign for ecommerce", "activecampaign consultant", "activecampaign deliverability rate", "activecampaign vs klaviyo ecommerce"],
+      "seed_claim": "ActiveCampaign is the right tool for a specific type of e-commerce business — one with a longer sales cycle, higher AOV, and a customer journey that involves significant pre-purchase nurture. For fast-moving DTC brands with high order frequency and product-based segmentation needs, it's usually not the right fit.",
+      "audience_angle": "E-commerce founder evaluating email platforms, currently on ActiveCampaign and wondering if it's right for them, or comparing options before committing",
+      "format": "honest platform evaluation guide — not a hit piece, not a sales pitch",
+      "notes": "Cover: what ActiveCampaign does well (CRM depth, complex multi-step automation, deal pipelines, B2B-adjacent use cases), where it struggles for pure DTC (native ecomm data sync, product-based segmentation, flow triggers off purchase events), which business types suit it vs alternatives, deliverability considerations. Platform-agnostic framing — this is about fit, not rankings."
     }
   ]
 }

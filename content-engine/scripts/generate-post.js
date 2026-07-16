@@ -41,7 +41,7 @@ const socialBriefTemplate = fs.readFileSync(
 
 // ── Pick next topic ───────────────────────────────────────────────────────────
 
-const topic = topics.topics.find((t) => t.status === "queued");
+const topic = topics.topics.find((t) => t.status === "queued" && t.type !== "blog");
 
 if (!topic) {
   console.log("No queued topics — nothing to do. Add topics to topics.json.");
