@@ -24,8 +24,8 @@
   },
   "guarantee": {
     "eyebrow": "Our promise",
-    "headline": "Results guaranteed or we'll work for free.*",
-    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current results, or it's on us until we do.*",
+    "headline": "Results guaranteed or we'll work for free.",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We’ll beat your current email benchmarks within 90 days, or we’ll work for free until we do.*",
     "ctaText": "Book your free session",
     "ctaHref": "/strategy-session"
   },
@@ -33,10 +33,30 @@
     "headline": "Your email program is either making you money or costing you money. There's no middle ground.",
     "subheadline": "Most brands treat email like an afterthought. The businesses growing fastest on email aren't doing anything exotic. They're just doing it properly.",
     "stats": [
-      { "target": 36, "prefix": "$", "suffix": "", "label": "Returned for every $1 spent. No other marketing channel comes close." },
-      { "target": 40, "prefix": "", "suffix": "%", "label": "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this." },
-      { "target": 320, "prefix": "", "suffix": "%", "label": "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously." },
-      { "target": 6, "prefix": "", "suffix": "x", "label": "Revenue difference between a well-run email program and the industry average." }
+      {
+        "target": 36,
+        "prefix": "$",
+        "suffix": "",
+        "label": "Returned for every $1 spent. No other marketing channel comes close."
+      },
+      {
+        "target": 40,
+        "prefix": "",
+        "suffix": "%",
+        "label": "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this."
+      },
+      {
+        "target": 320,
+        "prefix": "",
+        "suffix": "%",
+        "label": "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously."
+      },
+      {
+        "target": 6,
+        "prefix": "",
+        "suffix": "x",
+        "label": "Revenue difference between a well-run email program and the industry average."
+      }
     ]
   },
   "splitOffer": {
@@ -59,7 +79,13 @@
     ]
   },
   "finalCta": {
-    "platforms": ["Klaviyo", "HubSpot", "Customer.io", "Mailchimp", "ActiveCampaign"],
+    "platforms": [
+      "Klaviyo",
+      "HubSpot",
+      "Customer.io",
+      "Mailchimp",
+      "ActiveCampaign"
+    ],
     "headline": "Walk away knowing where your email program is costing you money.",
     "ctaText": "Book your free session",
     "ctaHref": "/strategy-session"
