@@ -28,7 +28,8 @@ jobs:
           node-version: "20"
 
       - name: Install Anthropic SDK
-        run: npm install @anthropic-ai/sdk
+        working-directory: scripts
+        run: npm install
 
       - name: Generate post
         id: generate

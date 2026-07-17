@@ -94,7 +94,7 @@ Notes: ${topic.notes}
 Output the complete MDX file — frontmatter then body. Nothing else.`;
 
 const message = await client.messages.create({
-  model: "claude-sonnet-4-5",
+  model: "claude-sonnet-5",
   max_tokens: 4096,
   system: [
     {
@@ -106,7 +106,7 @@ const message = await client.messages.create({
   messages: [{ role: "user", content: USER }],
 });
 
-let mdx = message.content[0].text.trim();
+let mdx = (message.content.find((b) => b.type === "text")?.text ?? "").trim();
 
 // Strip accidental code fences if the model wraps the output
 mdx = mdx.replace(/^```(?:mdx)?\n?/, "").replace(/\n?```$/, "").trim();
