@@ -60,7 +60,7 @@
     ]
   },
   "splitOffer": {
-    "eyebrow": "Our offers",
+    "eyebrow": "Current offers",
     "offers": [
       {
         "id": "strategy",
