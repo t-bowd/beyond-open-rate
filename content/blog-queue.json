@@ -147,15 +147,25 @@
     "id": "how-to-migrate-from-mailchimp-to-klaviyo",
     "title": "How to migrate from Mailchimp to Klaviyo",
     "keyword": "mailchimp to klaviyo migration",
-    "tags": ["klaviyo", "mailchimp", "migration", "platforms"],
+    "tags": [
+      "klaviyo",
+      "mailchimp",
+      "migration",
+      "platforms"
+    ],
     "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Seed claim: most migrations take longer than they should because brands move before setting up their data properly — the order is: integration, data sync, segments, then flows. Naturally reference /blog/klaviyo-vs-mailchimp.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "abandoned-cart-email-benchmarks",
     "title": "Abandoned cart email benchmarks: conversion rates, timing, and what good actually looks like",
     "keyword": "abandoned cart email conversion rate",
-    "tags": ["ecommerce", "flows", "automation", "metrics"],
+    "tags": [
+      "ecommerce",
+      "flows",
+      "automation",
+      "metrics"
+    ],
     "notes": "Lead with the benchmark gap: average recovery is 5-8%, top 25% recover 15-22%. Cover: what counts as good, optimal timing for first email (speed matters most), how sequence length affects outcomes, what copy angle drives conversion at each email. Reference /blog/abandoned-cart-email-strategy.",
     "status": "queued"
   },
@@ -163,7 +173,11 @@
     "id": "how-to-sunset-unengaged-email-subscribers",
     "title": "How to sunset unengaged email subscribers without killing your list",
     "keyword": "sunset sequence email",
-    "tags": ["deliverability", "lifecycle", "automation"],
+    "tags": [
+      "deliverability",
+      "lifecycle",
+      "automation"
+    ],
     "notes": "Sending to unengaged contacts damages sender reputation with every send. Cover: defining unengaged (time-based vs engagement-based), why it matters for deliverability, the 3-4 step sunset sequence with timing, what to do with non-responders (suppress, don't delete). Reference /blog/email-list-cleaning-guide.",
     "status": "queued"
   },
@@ -171,7 +185,12 @@
     "id": "post-purchase-email-examples",
     "title": "Post-purchase email examples: what to send after every order and when",
     "keyword": "post purchase email examples",
-    "tags": ["ecommerce", "flows", "lifecycle", "retention"],
+    "tags": [
+      "ecommerce",
+      "flows",
+      "lifecycle",
+      "retention"
+    ],
     "notes": "Most post-purchase sequences stop at transactional emails. The best programs have 6-8 additional emails in the 90 days after a sale. Cover each email in a full sequence: confirmation, shipping, delivery, review request, cross-sell, replenishment, loyalty/brand story, win-back trigger. Give concrete subject lines and copy angles for each. Reference /blog/post-purchase-email-flow.",
     "status": "queued"
   },
@@ -179,7 +198,11 @@
     "id": "activecampaign-for-ecommerce",
     "title": "ActiveCampaign for e-commerce: where it works and where it falls short",
     "keyword": "activecampaign for ecommerce",
-    "tags": ["platforms", "strategy", "automation"],
+    "tags": [
+      "platforms",
+      "strategy",
+      "automation"
+    ],
     "notes": "Honest platform evaluation — not a hit piece, not a sales pitch. Cover what AC does well (CRM depth, complex automation, deal pipelines, B2B-adjacent use cases), where it struggles for DTC (native ecomm data sync, product-based segmentation, flow triggers off purchase events), which business types suit it vs alternatives. Platform-agnostic framing throughout.",
     "status": "queued"
   },
@@ -187,7 +210,11 @@
     "id": "how-to-use-ai-in-email-marketing",
     "title": "How to use AI in your email marketing: what actually works for e-commerce",
     "keyword": "AI email marketing",
-    "tags": ["strategy", "automation", "ecommerce"],
+    "tags": [
+      "strategy",
+      "automation",
+      "ecommerce"
+    ],
     "notes": "Practical guide, not hype. AI is genuinely useful for first drafts, subject line variants, and rewriting product descriptions for lifecycle context. It is not a replacement for strategy, segmentation, and deliverability judgment. Cover: what AI is good for (concrete examples), what it can't do (segmentation decisions, suppression logic, deliverability calls, brand voice calibration), a practical workflow for integrating AI into real email work.",
     "status": "queued"
   },
@@ -195,7 +222,10 @@
     "id": "what-ai-cant-do-in-email-marketing",
     "title": "What AI can't do in email marketing and why that still matters for your revenue",
     "keyword": "AI email strategy",
-    "tags": ["strategy", "automation"],
+    "tags": [
+      "strategy",
+      "automation"
+    ],
     "notes": "BOR's positioning piece on AI. We use AI and know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece — an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world.",
     "status": "queued"
   },
@@ -203,7 +233,10 @@
     "id": "ai-inbox-filtering-email-marketing",
     "title": "AI inbox filtering: what email platforms are doing and what it means for your open rates",
     "keyword": "AI inbox filtering",
-    "tags": ["deliverability", "strategy"],
+    "tags": [
+      "deliverability",
+      "strategy"
+    ],
     "notes": "Gmail, Apple Mail, and AI-powered email clients are making decisions before recipients see your emails. The signals they use to decide what survives aren't the ones most marketers optimise for. Cover: how modern inbox AI works (engagement signals, sender reputation, content patterns, unsubscribe behaviour), what gets filtered out, what survives, concrete actions. Reference the EU tracking pixel post for regulatory angle.",
     "status": "queued"
   },
