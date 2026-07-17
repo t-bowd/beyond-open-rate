@@ -7,7 +7,7 @@
     "titlePre": "Email is leaving money on the table.",
     "titleHighlight": "We get it back",
     "titlePost": ".",
-    "sub": "Beyond Open Rate is a specialist email and lifecycle marketing consultancy based in Australia. We work with businesses who are ready to stop guessing, and start growing."
+    "sub": "Beyond Open Rate is a specialist email and lifecycle marketing company based in Australia. We work with businesses who are ready to stop guessing, and start growing."
   },
   "intro": [
     "Most businesses know email and CRM should be working harder. They just don't have the time, the expertise, or the bandwidth to make it happen.",
@@ -18,13 +18,13 @@
     {
       "role": "Co-Founder",
       "name": "Tim",
-      "photo": "/tim.jpg",
+      "photo": "/uploads/tim.jpg",
       "bio": "I've spent over 15 years working in email and CRM management. Not just sending emails, but building programs from the ground up. Front-end development, automation architecture, lifecycle strategy, platform migrations and product management across complex email programs. I've done the work at companies ranging from fast-growing startups to some of the largest consumer brands in the world. I've seen what works, and what doesn't."
     },
     {
       "role": "Co-Founder",
       "name": "Tara",
-      "photo": "/tara.jpg",
+      "photo": "/uploads/tara.jpg",
       "bio": "I've worked across creative, marketing and senior leadership roles in professional services, health, education, hospitality and entertainment. I'm a data-driven thinker and creative problem solver, who's hard to impress with surface-level metrics. At Beyond Open Rate, I bring that lens to everything we do, with solutions that are built to last and tie back to revenue. I care about whether the work is actually moving the needle."
     }
   ],
