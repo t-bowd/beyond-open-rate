@@ -639,6 +639,7 @@ export default defineConfig({
                   { type: "string", name: "sub", label: "Subheadline", ui: { component: "textarea" } },
                   { type: "string", name: "ctaText", label: "CTA Button Text" },
                   { type: "string", name: "ctaHref", label: "CTA Link" },
+                  { type: "string", name: "microCopy", label: "Micro copy (below CTA)" },
                 ],
               },
               {

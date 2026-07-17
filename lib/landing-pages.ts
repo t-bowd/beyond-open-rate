@@ -12,6 +12,7 @@ export type PageHeroBlock = {
   sub?: string;
   ctaText?: string;
   ctaHref?: string;
+  microCopy?: string;
 };
 
 export type TextSectionBlock = {

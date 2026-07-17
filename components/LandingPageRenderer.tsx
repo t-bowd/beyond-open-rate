@@ -23,9 +23,12 @@ function BlockPageHero({ b }: { b: Extract<Block, { _template: "pageHero" }> }) 
       sub={b.sub}
       actions={
         b.ctaText && b.ctaHref ? (
-          <Link href={b.ctaHref} className="btn btn-primary btn-lg btn-arrow">
-            {b.ctaText} <ArrowIcon />
-          </Link>
+          <>
+            <Link href={b.ctaHref} className="btn btn-primary btn-lg btn-arrow">
+              {b.ctaText} <ArrowIcon />
+            </Link>
+            {b.microCopy && <p className="micro-copy">{b.microCopy}</p>}
+          </>
         ) : undefined
       }
     />
