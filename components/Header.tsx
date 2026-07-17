@@ -7,14 +7,14 @@ import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 
 const NAV = [
-  { href: "/about", label: "ABOUT" },
+  { href: "/about", label: "About" },
 ];
 
 const SERVICES = [
-  { href: "/retainer",    label: "RETAINER" },
-  { href: "/audit",       label: "AUDIT" },
-  { href: "/foundations", label: "FOUNDATIONS" },
-  { href: "/strategy",    label: "STRATEGY" },
+  { href: "/retainer",    label: "Retainer" },
+  { href: "/audit",       label: "Audit" },
+  { href: "/foundations", label: "Foundations" },
+  { href: "/strategy",    label: "Strategy" },
 ];
 
 export default function Header() {
