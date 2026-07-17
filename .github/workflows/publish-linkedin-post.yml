@@ -33,7 +33,8 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install @octokit/rest
+        working-directory: content-engine
+        run: npm install
 
       - name: Publish post
         env:

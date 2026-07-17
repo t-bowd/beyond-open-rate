@@ -23,7 +23,8 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install @anthropic-ai/sdk googleapis
+        working-directory: scripts
+        run: npm install
 
       - name: Generate topics
         id: generate
