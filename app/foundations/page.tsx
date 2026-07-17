@@ -45,7 +45,7 @@ function getUpdatedDate() {
 export default function FoundationsPage() {
   noStore();
   const updated = getUpdatedDate();
-  const { hero, intro, benefits, faq } = pageData;
+  const { hero, intro, guarantee, benefits, faq } = pageData;
 
   return (
     <>
@@ -64,7 +64,7 @@ export default function FoundationsPage() {
         </div>
       </section>
 
-      <GuaranteeBand />
+      <GuaranteeBand {...guarantee} />
 
       <section className="section" data-screen-label="Foundations benefits">
         <div className="wrap" style={{ maxWidth: 740 }}>

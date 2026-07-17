@@ -13,6 +13,13 @@
   "intro": [
     "Your email list is one of the most valuable assets in your business. It's also one of the most neglected. Campaigns only go out when someone has time. Flows are set and forgotten. Nobody's really sure what's driving revenue and what's just noise.,That's a capacity and expertise problem, and it's costing you money.,We take full ownership of email and CRM management, working as an extension of your team. You stay focused on your business, while we make sure email is working for it."
   ],
+  "guarantee": {
+    "eyebrow": "Our retainer promise",
+    "headline": "Results guaranteed or we'll work for free.",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
   "benefits": {
     "heading": "What you get",
     "items": [

@@ -3,13 +3,23 @@ import Reveal from "./Reveal";
 import ArrowIcon from "./ArrowIcon";
 import homepageData from "@/content/homepage/homepage.json";
 
-const { guarantee } = homepageData;
+type GuaranteeProps = {
+  eyebrow?: string;
+  headline?: string;
+  body?: string;
+  ctaText?: string;
+  ctaHref?: string;
+};
 
-/* PLACEHOLDER MODULE, layout only, no real offer/guarantee copy yet.
-   King Kong's homepage uses a bold guarantee statement here to convert
-   readers who scrolled past the hero. Fill in with a real, honest
-   guarantee (or drop this section) before this branch ships. */
-export default function GuaranteeBand() {
+export default function GuaranteeBand({ eyebrow, headline, body, ctaText, ctaHref }: GuaranteeProps = {}) {
+  const fallback = homepageData.guarantee;
+  const guarantee = {
+    eyebrow:  eyebrow  ?? fallback.eyebrow,
+    headline: headline ?? fallback.headline,
+    body:     body     ?? fallback.body,
+    ctaText:  ctaText  ?? fallback.ctaText,
+    ctaHref:  ctaHref  ?? fallback.ctaHref,
+  };
   return (
     <section className="section guarantee-band" data-screen-label="Guarantee">
       <div className="wrap guarantee-inner">

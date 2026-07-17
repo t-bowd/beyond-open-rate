@@ -486,6 +486,18 @@ export default defineConfig({
           },
           {
             type: "object",
+            name: "guarantee",
+            label: "Guarantee Band",
+            fields: [
+              { type: "string", name: "eyebrow", label: "Eyebrow" },
+              { type: "string", name: "headline", label: "Headline" },
+              { type: "string", name: "body", label: "Body", ui: { component: "textarea" } },
+              { type: "string", name: "ctaText", label: "CTA Button Text" },
+              { type: "string", name: "ctaHref", label: "CTA Link" },
+            ],
+          },
+          {
+            type: "object",
             name: "benefits",
             label: "Benefits",
             fields: [

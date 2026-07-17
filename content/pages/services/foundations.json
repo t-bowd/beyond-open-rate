@@ -16,6 +16,13 @@
     "Every day without it is another day of customers slipping through gaps that should be closed. That's revenue going to a competitor, or nowhere at all.",
     "We build those foundations. Everything scoped specifically to your business, and built to run without you."
   ],
+  "guarantee": {
+    "eyebrow": "Our foundations promise",
+    "headline": "Results guaranteed or we'll work for free.",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
   "benefits": {
     "heading": "What you get",
     "items": [
