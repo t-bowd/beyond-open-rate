@@ -1,0 +1,93 @@
+---
+title: "How to Migrate from Mailchimp to Klaviyo Without Losing Data or Revenue"
+description: "A practical guide to Mailchimp to Klaviyo migration — the right sequence, what to rebuild first, and the mistakes that stretch a two-week job into two months."
+publishedAt: "2026-07-17"
+author: "Tara"
+tags: ["klaviyo", "mailchimp", "migration", "platforms"]
+faq:
+  - q: "How long does a Mailchimp to Klaviyo migration take?"
+    a: "For a mid-sized list with basic flows, 2–3 weeks if you do the steps in the right order. Most brands take 6–8 weeks because they start building segments and flows before their data sync is actually clean, then have to redo it."
+  - q: "Will I lose my subscriber history when I migrate to Klaviyo?"
+    a: "No, but you have to migrate it deliberately. Klaviyo's native Mailchimp integration pulls profiles and some engagement data, but purchase history, custom fields, and tags often need a separate sync via your ecommerce platform or a CSV import."
+  - q: "Can I run Mailchimp and Klaviyo at the same time during migration?"
+    a: "Yes, and you should. Run both in parallel for at least one full flow cycle (usually 2–4 weeks) before cutting over sending entirely, so you can verify deliverability and revenue numbers match before switching off Mailchimp."
+  - q: "What's the biggest mistake brands make migrating to Klaviyo?"
+    a: "Building segments and flows before the data sync is verified. If your ecommerce integration isn't correctly mapping order data, every segment and flow built on top of it will be wrong, and you won't find out until revenue drops."
+---
+
+Every week we talk to a brand that's "migrating to Klaviyo" and has been for two months. The list is in, a few flows are live, and nobody's confident the data is right. That's not a Klaviyo problem — it's a sequencing problem.
+
+Migrations stall when brands start building before the foundation is set. The order matters: **integration, data sync, segments, then flows**. Skip ahead and you'll spend weeks rebuilding things you already built once.
+
+## Why Brands Move From Mailchimp to Klaviyo
+
+Most migrations aren't about price — Klaviyo is often more expensive at the same list size. They're about outgrowing what Mailchimp can do with ecommerce data.
+
+Klaviyo treats every profile as a record tied to real commerce events: orders, product views, cart activity, predicted CLV. Mailchimp treats profiles as email addresses with tags attached. Once a brand wants segments like "purchased Category A, hasn't bought in 60 days, predicted to churn," Mailchimp can't get there without workarounds.
+
+The other common trigger is flow sophistication. Mailchimp's automation builder is fine for a welcome series and an abandoned cart email. Klaviyo's is built for branching logic, multi-step win-back sequences, and conditional splits based on purchase behaviour. If you're serious about lifecycle email, you eventually hit Mailchimp's ceiling.
+
+We go deeper on the actual feature and pricing differences in [Klaviyo vs Mailchimp](/blog/klaviyo-vs-mailchimp) — worth reading before you commit if you haven't already decided.
+
+## Before You Touch the Migration: Set Up the Integration First
+
+The single biggest time-saver in any migration is refusing to import anything until your ecommerce integration is connected and verified.
+
+If you're on Shopify, WooCommerce, BigCommerce, or Magento, connect the native Klaviyo integration before you import a single Mailchimp list. This is what feeds Klaviyo the order data, product catalogue, and browsing behaviour that makes segmentation useful in the first place.
+
+Check three things before moving on:
+
+- **Historical order sync** — Klaviyo should be pulling past order history, not just orders from today forward. Depending on volume this can take 24–48 hours to fully populate.
+- **Custom properties mapping** — if you use custom fields in Mailchimp (loyalty tier, subscription status, preferred category), confirm the equivalent properties exist in Klaviyo and are populated correctly.
+- **Consent status** — Klaviyo separates email and SMS consent explicitly. Don't assume Mailchimp's "subscribed" status maps cleanly; check it manually against your actual opt-in records.
+
+Get this wrong and every segment and flow you build afterwards inherits the error.
+
+## Data Sync: The Step Everyone Rushes
+
+Once the integration is live, don't touch flows yet. Spend a few days just watching the data.
+
+Pull a sample of 20–30 customers you know well — repeat buyers, recent purchasers, a couple of lapsed ones — and check their Klaviyo profiles against what you know to be true. Does the order count match? Is the last purchase date correct? Are the custom properties from Mailchimp showing up?
+
+This is where most migration timelines blow out. Brands see the list has "imported" and assume the job's done. Then three weeks later they discover half their customers are missing purchase history because the historical sync silently failed or a field mapping was wrong. Now you're rebuilding segments that were built on bad data.
+
+Budget 3–5 days for this verification step. It feels slow. It's the reason the rest of the migration goes fast.
+
+## The Migration Sequence, in Order
+
+Once integration and data sync are verified, the build order is:
+
+1. **Integration** — ecommerce platform connected, historical data flowing, consent statuses correct.
+2. **Data sync verification** — spot-check profiles, confirm custom properties and purchase history are accurate.
+3. **Segments** — rebuild your core segments in Klaviyo using verified data, not Mailchimp exports.
+4. **Flows** — welcome, abandoned cart, post-purchase, win-back, in that order of priority.
+
+Each step depends on the one before it. Building segments on unverified data means rebuilding segments. Building flows before segments exist means flows with the wrong audience logic baked in.
+
+## What to Rebuild First
+
+Don't try to recreate every Mailchimp automation on day one. Prioritise by revenue impact.
+
+**Welcome flow** first — it's usually your highest-converting automation and the easiest to rebuild cleanly in Klaviyo's branching logic. **Abandoned cart** second, because Klaviyo's cart and browse abandonment triggers are more accurate than Mailchimp's (real-time event tracking vs delayed syncs). **Post-purchase and win-back** flows come after, once you've confirmed the first two are sending correctly and matching expected revenue.
+
+Resist rebuilding every Mailchimp segment as-is. Migration is a good excuse to prune segments that never got used and rebuild the five or six that actually drive campaigns.
+
+## Common Mistakes That Blow Out the Timeline
+
+**Migrating before the integration is stable.** Importing a static CSV of your Mailchimp list feels faster, but it strips out the live data connection that makes Klaviyo worth using.
+
+**Running both platforms sending live campaigns simultaneously without a clear cutover date.** Overlap is fine for verification; indefinite overlap means duplicate sends and inconsistent suppression lists.
+
+**Not checking SMS consent separately.** If you're planning to add SMS in Klaviyo, Mailchimp's email opt-in doesn't carry over as SMS consent. You need separate collection.
+
+**Skipping deliverability warm-up.** Klaviyo sending from a new domain or subdomain needs the same warm-up discipline as any new ESP — ramp volume gradually rather than blasting your full list on day one.
+
+**Treating the migration as "done" once flows are live.** Give it one full cycle — ideally 30 days — comparing revenue per recipient against your Mailchimp baseline before declaring victory.
+
+## Getting the Sequence Right the First Time
+
+The brands that migrate cleanly in two to three weeks are the ones that resist the urge to build fast and instead validate the data first. It's less satisfying than watching flows go live, but it's the difference between a migration that sticks and one you're still fixing in month three.
+
+If you want a clearer picture of where your current setup stands before you migrate anything, [run the free email program audit](/tools/email-audit) — it'll flag data and segmentation issues worth fixing regardless of which platform you land on.
+
+And if you'd rather have someone handle the sequencing for you, [get in touch](/#contact) — migration is most of what we do.
