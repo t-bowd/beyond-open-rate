@@ -51,13 +51,22 @@ export default function Footer() {
               height={46}
               style={{ height: 46, width: "auto", opacity: 0.85 }}
             />
-            <Image
-              src="/Mailchimp Academy Foundations Certification Badge.png"
-              alt="Mailchimp Academy"
-              width={60}
-              height={85}
-              style={{ height: 85, width: "auto", opacity: 0.85 }}
-            />
+            <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+              <Image
+                src="/Mailchimp Academy Foundations Certification Badge.png"
+                alt="Mailchimp Academy"
+                width={60}
+                height={85}
+                style={{ height: 85, width: "auto", opacity: 0.85 }}
+              />
+              <Image
+                src="/Braze_Primary_logo_WHITE.png"
+                alt="Braze"
+                width={120}
+                height={56}
+                style={{ height: 36, width: "auto", opacity: 0.85 }}
+              />
+            </div>
           </div>
         </div>
 
