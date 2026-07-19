@@ -36,7 +36,7 @@
   },
   "faq": [
     {
-      "q": "What exactly does the audit cover?",
+      "q": "What does the audit cover?",
       "a": "Your active flows and automations, campaign history and performance, deliverability and authentication setup, list health and segmentation, copy and design, and your tech stack. We look at everything that affects whether email is making you money, not just whether it's sending."
     },
     {
