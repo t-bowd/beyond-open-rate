@@ -3,18 +3,17 @@
   "description": "Most businesses are leaving 20-40% of their email revenue on the table. Claim your 100% free, no-obligation 30-minute strategy session (valued at $500).",
   "blocks": [
     {
-      "_template": "pageHero",
-      "label": "WARNING!",
-      "titlePre": "Before you send another email campaign,",
+      "label": "",
+      "titlePre": "Stop! Before you send another email campaign,",
       "titleHighlight": "read this.",
       "titlePost": "",
-      "sub": "Most businesses are leaving 20-40% of their email revenue on the table without knowing it. Claim your 100% free, no-obligation 30-minute strategy session (valued at $500).\n\nThis is only for businesses who are serious about making money. If that's you, let's chat.",
+      "sub": "Most businesses are leaving 20-40% of their email revenue on the table without knowing it. Claim your 100% free, no-obligation 30-minute strategy session (valued at $500).\n\nThis is for businesses who are serious about making money. If that's you, let's chat.",
       "ctaText": "Claim your free session now",
       "ctaHref": "/strategy-session",
-      "microCopy": "Valued at $500. Free session availability is limited."
+      "microCopy": "Valued at $500. Free session availability is limited.",
+      "_template": "pageHero"
     },
     {
-      "_template": "benefitsList",
       "heading": "Here's what you'll get during your free 30-minute session:",
       "items": [
         "We'll assess where you're leaving money on the table, and what closing those gaps looks like",
@@ -24,10 +23,10 @@
         "A roadmap to better email, delivered to your inbox so you can take action to start boosting revenue immediately"
       ],
       "ctaText": "Claim your free session now",
-      "ctaHref": "/strategy-session"
+      "ctaHref": "/strategy-session",
+      "_template": "benefitsList"
     },
     {
-      "_template": "textSection",
       "heading": "Why talk to us?",
       "paragraphs": [
         "Fair question. Here's the short answer: email and lifecycle marketing isn't just a service line for us, it's where our expertise lives. It's what our founders have 20 years combined experience in, inside programs from budding start-ups through to global enterprises.",
@@ -35,15 +34,16 @@
         "We don't recommend platforms for commission. We don't report on open rates like they're KPIs. We don't hide behind decks full of activity metrics that have nothing to do with revenue.",
         "In your 100% free 30-minute session, we'll assess where your current program stands, how it's potentially impacting your revenue, what fixing it realistically looks like and next steps to action. And if we can't identify a clear revenue opportunity, we'll tell you that too.",
         "That's the session. Then you decide what to do with it."
-      ]
+      ],
+      "_template": "textSection"
     },
     {
-      "_template": "testimonials",
-      "_note": "Pulls from homepage testimonials"
+      "_note": "Pulls from homepage testimonials",
+      "_template": "testimonials"
     },
     {
-      "_template": "finalCta",
-      "_note": "Pulls from homepage finalCta"
+      "_note": "Pulls from homepage finalCta",
+      "_template": "finalCta"
     }
   ]
 }
