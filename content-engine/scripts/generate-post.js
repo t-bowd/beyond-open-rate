@@ -69,7 +69,7 @@ let apiResponse;
 try {
   apiResponse = await client.messages.create({
     model: "claude-sonnet-5",
-    max_tokens: 1500,
+    max_tokens: 4000,
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
   });
