@@ -189,7 +189,7 @@
     },
     {
       "id": "050",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "AI didn't replace email strategy. It made the gap between good strategy and bad strategy bigger.",
