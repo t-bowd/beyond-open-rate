@@ -248,6 +248,16 @@ const { data: postedGitFile } = await octokit.repos.getContent({
   path: "content-engine/posted.json",
 });
 
+// Create published file first — do this before deleting the draft so a
+// mid-run failure leaves the draft intact and the run is safely re-runnable.
+await octokit.repos.createOrUpdateFileContents({
+  owner,
+  repo,
+  path: `content-engine/posts/published/${fileName}`,
+  message: `linkedin: archive published post ${fileName}`,
+  content: Buffer.from(fs.readFileSync(publishedPath, "utf8")).toString("base64"),
+});
+
 // Delete draft file
 if (draftGitFile) {
   await octokit.repos.deleteFile({
@@ -258,15 +268,6 @@ if (draftGitFile) {
     sha: draftGitFile.sha,
   });
 }
-
-// Create published file
-await octokit.repos.createOrUpdateFileContents({
-  owner,
-  repo,
-  path: `content-engine/posts/published/${fileName}`,
-  message: `linkedin: archive published post ${fileName}`,
-  content: Buffer.from(fs.readFileSync(publishedPath, "utf8")).toString("base64"),
-});
 
 // Update posted.json
 await octokit.repos.createOrUpdateFileContents({
