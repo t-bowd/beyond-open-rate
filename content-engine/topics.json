@@ -200,7 +200,7 @@
     },
     {
       "id": "051",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
       "topic": "We've used AI on client email programs for twelve months. Here's what it's actually good at.",
