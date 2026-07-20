@@ -372,5 +372,53 @@
     ],
     "notes": "Geo-targeted content for Adelaide market. Cover Australian spam act compliance specific to South Australia, local e-commerce case studies, timezone/sending time considerations for Adelaide audiences, and how local businesses can compete with national brands through email. Include references to Australian privacy laws and link to deliverability and segmentation guides. Mention local Klaviyo partners and Adelaide-specific success metrics.",
     "status": "queued"
+  },
+  {
+    "id": "abandoned-cart-email-sequence-examples",
+    "title": "7 Abandoned Cart Email Sequence Examples That Recover 15-30% of Lost Sales",
+    "keyword": "abandoned cart email sequence",
+    "tags": [
+      "abandoned cart",
+      "email flows",
+      "conversion optimization"
+    ],
+    "notes": "Target the high-impression 'abandoned cart email sequence' query. Include real examples with screenshots, breakdown timing strategies (immediate vs 1hr vs 24hr sends), showcase subject lines that work for Australian e-commerce, and link to existing abandoned cart strategy post. Focus on practical Klaviyo implementation tips.",
+    "status": "queued"
+  },
+  {
+    "id": "ecommerce-email-marketing-strategy-guide",
+    "title": "E-commerce Email Marketing: The Complete 2024 Strategy Guide for Australian Stores",
+    "keyword": "ecommerce email marketing",
+    "tags": [
+      "e-commerce",
+      "strategy",
+      "lifecycle marketing"
+    ],
+    "notes": "Comprehensive pillar content targeting 'ecommerce email marketing' with decent position. Cover the full ecosystem: campaigns vs flows, essential automation sequences, segmentation fundamentals, deliverability basics, and metrics that matter. Link to existing flow guides, segmentation, and ROI calculation posts as deeper dives.",
+    "status": "queued"
+  },
+  {
+    "id": "post-purchase-flow-strategy",
+    "title": "Post-Purchase Email Flow Strategy: 9 Emails That Turn Buyers Into Repeat Customers",
+    "keyword": "post purchase email flow",
+    "tags": [
+      "post-purchase",
+      "customer retention",
+      "klaviyo flows"
+    ],
+    "notes": "Target 'post purchase email flow' with tactical approach. Build on existing post-purchase examples post by diving deeper into strategy: timing between emails, when to educate vs upsell vs request reviews, segmentation by product type or AOV, and how to measure success beyond open rates. Include Klaviyo flow templates.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-agency-melbourne-guide",
+    "title": "Email Marketing Agency Melbourne: How to Choose the Right Partner for Your E-commerce Store",
+    "keyword": "email marketing agency melbourne",
+    "tags": [
+      "agency selection",
+      "melbourne",
+      "local"
+    ],
+    "notes": "Local SEO play for Melbourne-specific searches (46.4 position is movable). Cover what Melbourne e-commerce brands should look for, red flags to avoid, questions to ask during discovery calls, pricing expectations for Australian market, and case study or two from Melbourne clients. Link to 'when to hire an email automation agency' post.",
+    "status": "queued"
   }
 ]
