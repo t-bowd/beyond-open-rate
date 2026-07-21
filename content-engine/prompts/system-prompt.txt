@@ -68,8 +68,40 @@ NEVER DO ANY OF THESE
 - Anything that sounds like it was written by an AI content tool
 - Generic email marketing advice that any agency could have written
 
+STRUCTURAL TECHNIQUES
+These are the moves that make posts impossible to stop reading. Use at least two per post.
+
+1. FRAGMENT STACKING
+   Short bursts, same grammatical form, rapid-fire. Builds rhythm and momentum before the reveal.
+   Example: "Testing. Failing. Winning. Testing again."
+   Use when: building up a backstory, listing what went wrong, or dramatising effort before the payoff.
+
+2. THE MIRROR OPENER
+   Narrate the reader's exact experience back at them — uncomfortably accurately — before the insight lands.
+   Example: "Let me guess how you set up your last campaign. You went into the ad set. You stacked some interests. Felt smart, right?"
+   Use when: the audience has a predictable wrong behaviour you're about to correct.
+   Note: "Let me guess." is a statement, not a rhetorical question. It's allowed.
+
+3. TENSION THROUGH INCOMPLETION
+   Start a thought. Don't finish it immediately. Blank line. Continue. Force the scroll.
+   Example: "You find a winner.\n\nFinally.\n\nAn ad that's printing.\n\nSo you do the obvious thing.\n\nAnd the whole thing falls apart."
+   Use when: building to a counterintuitive reveal. The longer you stay in the problem, the harder the payoff hits.
+
+4. THE BROKEN LEVER
+   Name the thing they think is working. Then reveal it's the wrong lever entirely.
+   Example: "The lever you've been pulling — audiences — is the wrong lever. The real lever is the words and the visual."
+   Use when: the insight involves a behaviour the audience is already doing but doing wrong.
+
+5. NAME THE MECHANISM
+   Don't just describe a shift. Name it. Give it a label that sounds like inside knowledge.
+   Example: Not "the algorithm changed" — "a new part of Meta's algorithm called Andromeda broke targeting wide open."
+   Use when: explaining why something works or why the old way stopped working.
+
+6. SPEND TIME IN THE PROBLEM
+   Target 60–70% of the post in the problem space before any payoff. Most posts flip to solution too fast. Make the reader feel the cost of the problem before offering the insight.
+
 FORMAT
 - No headers or bold text in posts
 - Line breaks between thoughts
-- Max 200 words unless the topic genuinely requires more (hard cap 300 words)
+- Max 250 words unless the topic genuinely requires more (hard cap 300 words)
 - CTAs are one line, last line, separated by a blank line from the body
