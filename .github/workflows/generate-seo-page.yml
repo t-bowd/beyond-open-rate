@@ -1,0 +1,39 @@
+name: Generate SEO Page
+
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: "Target query (e.g. klaviyo agency perth)"
+        required: true
+        type: string
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: seo-engine
+        run: npm install
+
+      - name: Generate page
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          TARGET_QUERY: ${{ inputs.query }}
+        run: node seo-engine/scripts/generate-seo-page.js "$TARGET_QUERY"

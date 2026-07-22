@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 /**
  * generate-seo-page.js
- * Generates a fully AEO/GEO-optimised SEO page for a given target query
- * and writes it to content/seo/. Run locally, review, then commit.
+ * Generates a fully AEO/GEO-optimised SEO page for a given target query.
+ * When run in GitHub Actions (GITHUB_REPOSITORY set), opens a PR for review.
+ * When run locally, writes the file for manual review and commit.
  *
- * Usage:
+ * Usage (local):
  *   node seo-engine/scripts/generate-seo-page.js "klaviyo agency perth"
  *
  * Required env vars:
  *   ANTHROPIC_API_KEY
+ *   GITHUB_TOKEN + GITHUB_REPOSITORY  (GitHub Actions only, for PR creation)
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { Octokit } from "@octokit/rest";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -19,7 +22,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.resolve(__dirname, "../../content/seo");
 
-const query = process.argv[2];
+const query = process.env.TARGET_QUERY || process.argv[2];
 if (!query) {
   console.error("Usage: node seo-engine/scripts/generate-seo-page.js \"target query\"");
   process.exit(1);
@@ -133,5 +136,50 @@ if (!content.startsWith("---")) {
 }
 
 fs.writeFileSync(outputPath, content, "utf8");
-console.log(`\nWritten: content/seo/${slug}.mdx`);
-console.log("Review the file, then commit and push.");
+console.log(`Written: content/seo/${slug}.mdx`);
+
+// ── Open GitHub PR (GitHub Actions only) ─────────────────────────────────────
+
+const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
+
+if (!owner || !repo) {
+  console.log("No GITHUB_REPOSITORY set — skipping PR. Review the file locally and commit.");
+  process.exit(0);
+}
+
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
+const { data: refData } = await octokit.git.getRef({ owner, repo, ref: "heads/main" });
+const baseSha = refData.object.sha;
+
+const branchName = `seo/page-${slug}`;
+await octokit.git.createRef({ owner, repo, ref: `refs/heads/${branchName}`, sha: baseSha });
+
+await octokit.repos.createOrUpdateFileContents({
+  owner, repo,
+  path: `content/seo/${slug}.mdx`,
+  message: `seo: add page for "${query}"`,
+  content: Buffer.from(content).toString("base64"),
+  branch: branchName,
+});
+
+const { data: pr } = await octokit.pulls.create({
+  owner, repo,
+  title: `[SEO] ${query}`,
+  head: branchName,
+  base: "main",
+  body: `## New SEO page: ${query}
+
+**URL:** \`/${slug}\`
+
+Review the page content in \`content/seo/${slug}.mdx\` before merging.
+
+### Checklist
+- [ ] Read through the page — edit copy if anything needs adjusting
+- [ ] Check the FAQs cover the right questions for this query
+- [ ] Merge to publish`,
+});
+
+await octokit.issues.addAssignees({ owner, repo, issue_number: pr.number, assignees: [owner] });
+
+console.log(`PR opened: ${pr.html_url}`);
