@@ -151,5 +151,12 @@
     "published_at": "2026-07-20T08:21:29.541Z",
     "schedule_time": "2026-07-21T08:00:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "052",
+    "file": "2026-07-22-the-ai-wrote-the-email-in-30-seconds-the-decision.mdx",
+    "published_at": "2026-07-23T22:45:11.460Z",
+    "schedule_time": "2026-07-24T10:00:00.000+10:00",
+    "variant": "A"
   }
 ]
