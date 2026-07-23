@@ -211,7 +211,7 @@
     },
     {
       "id": "052",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "The AI wrote the email in 30 seconds. The decision to send it took 20 minutes.",
