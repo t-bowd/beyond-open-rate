@@ -34,9 +34,40 @@ faq:
 ---
 ```
 
+### Audience
+
+Two equal groups — each post should address one or both specifically:
+
+**E-commerce founders and DTC brand operators** (online stores, Shopify, BigCommerce):
+- Care about recovered carts, repeat orders, LTV
+- Want to know what email earns them, not how it works under the hood
+
+**Service business operators** (professional services, agencies, SaaS, consultants, trades, B2B):
+- Selling time or expertise, not products
+- Email list often underused outside newsletters
+- Care about booked calls, pipeline, client retention
+
+When a topic applies to both, address both specifically — not "businesses" generically. Name the ecommerce angle and the service business angle in the same post.
+
 ### Content guidelines
 
-**Voice:** Direct, confident, no fluff. Write like a senior practitioner explaining something to a smart client — not a textbook, not a listicle. Short paragraphs (2–4 sentences). No filler intros like "In today's digital landscape...". Get to the point immediately.
+**Voice:** Direct, a bit blunt — then follow the blunt statement with humour or a concrete benefit. Land the hit, then give the reader a reason to keep reading. Write like a senior practitioner explaining something to a smart client. Short paragraphs (2–4 sentences). No filler intros like "In today's digital landscape...". Get to the point immediately.
+
+**Simplicity rule:** Never explain how something works if you can explain what it earns. Translate mechanics into outcomes.
+- Wrong: "A sunset flow removes unengaged contacts from your active list to protect sender reputation."
+- Right: "If you've got contacts who haven't opened in six months, every email you send them is damaging your ability to reach the people who do open."
+
+**Commercial calendar:** When a major commercial moment is approaching (Black Friday, Christmas, EOFY, Mother's Day, Valentine's Day, Click Frenzy), angle examples toward it if naturally relevant. Service businesses have their own calendar: EOFY for accountants, Q4 planning for agencies, January for fitness.
+
+**Word bank — alternatives to overused words:** Don't lean on "gaps" or "leaks" — rotate through: revenue left behind, money already earned but not collected, the emails you're not sending, bleed/bleeding revenue, unconverted, lost at the door, dormant list, conversion drop-off.
+
+**Never do:**
+- Em dashes — use a period, comma, or restructure instead
+- Any flip construction: "It's not X, it's Y." / "It isn't that X. It's actually Y." — all variants banned
+- "Actually" or "Genuinely" used as standalone emphasis words
+- "Quietly" used as a filler more than once per post
+- "Game-changer", "holistic", "synergy", "elevate", "leverage" (as a verb), "unlock"
+- Generic claims without a number, example, or specific mechanism behind them
 
 **Structure:**
 - Opening paragraph: state the problem or the stakes clearly. No preamble.
@@ -44,6 +75,7 @@ faq:
 - Use `###` subsections where a topic genuinely warrants depth
 - Use **bold** for key terms on first use
 - Use bullet or numbered lists only when genuinely list-like (not to pad length)
+- Pull 1–2 key stats into blockquote callouts: `> **Benchmark:** stat here.`
 - Concrete numbers and examples wherever possible
 - End with a short, practical "what to do now" or takeaway section
 
@@ -56,7 +88,7 @@ faq:
 
 **Australian spelling and conventions:** e.g., "optimise" not "optimize", "colour" not "color", "programme" not "program" (except when referring to email program as a technical term).
 
-**FAQ section:** 3 questions. Use real questions someone would actually type into Google. Keep answers concise and useful.
+**FAQ section:** 3 questions. Use real questions someone would actually type into Google or an AI tool (ChatGPT, Perplexity, Claude). Answers must be self-contained — complete on their own, not "see above".
 
 ### Example of the right tone (from an existing post):
 
