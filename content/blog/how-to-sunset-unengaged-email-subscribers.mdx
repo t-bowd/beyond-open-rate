@@ -1,0 +1,78 @@
+---
+title: "How to Sunset Unengaged Email Subscribers Without Killing Your List"
+description: "Learn how a sunset sequence email strategy protects sender reputation by re-engaging or suppressing inactive subscribers before they hurt deliverability."
+publishedAt: "2026-07-24"
+author: "Tara"
+tags: ["deliverability", "lifecycle", "automation"]
+faq:
+  - q: "What is a sunset sequence in email marketing?"
+    a: "A sunset sequence is a short, automated series of emails sent to subscribers who haven't engaged in a set period, designed to either re-activate them or move them out of your regular sending list. It typically runs 3-4 emails over 2-3 weeks before suppressing non-responders."
+  - q: "Should I delete unengaged subscribers or just suppress them?"
+    a: "Suppress, don't delete. Suppression removes them from regular sends (protecting your sender reputation) while keeping the data for win-back campaigns, compliance records, or reactivation if they engage elsewhere, like a purchase."
+  - q: "How long should I wait before considering a subscriber unengaged?"
+    a: "It depends on your sending frequency and industry, but 90-120 days without an open or click is a common threshold for regular senders. Weekly senders might use 60 days; monthly senders may need 150+ days to avoid flagging normal customers too early."
+---
+
+Every email you send to someone who never opens costs you something. Not in dollars — in **sender reputation**. Inbox providers like Gmail and Outlook watch engagement rates per sending domain, and a list full of ghosts tells them your mail isn't wanted, even if 40% of your active subscribers love it.
+
+This is why "unengaged subscribers" isn't just a list-hygiene issue. It's a deliverability issue that compounds. The longer you send to people who don't respond, the more your engagement metrics slide, and the more likely your emails start landing in spam for everyone — including the subscribers who do want to hear from you.
+
+A **sunset sequence** solves this without you having to nuke your list in one panicked afternoon. Here's how to build one properly.
+
+## Define "unengaged" before you do anything else
+
+You can't sunset what you haven't defined. Most programs use one of two approaches:
+
+**Time-based**: no open or click in X days. Simple, but it doesn't account for send frequency. A subscriber who hasn't opened in 60 days is very different for a daily sender versus a monthly newsletter.
+
+**Engagement-based**: a rolling window tied to your actual send volume — e.g., no opens across the last 10 campaigns, regardless of calendar time. This is more accurate for irregular senders and avoids penalising subscribers just because you didn't email much.
+
+For most Australian small-to-mid businesses sending weekly to fortnightly, 90 days with zero opens or clicks is a reasonable starting threshold. Ecommerce brands sending daily might tighten that to 45-60 days. B2B senders on a monthly cadence often need 120-150 days to avoid flagging perfectly normal, slower-moving prospects.
+
+One caveat: Apple Mail Privacy Protection has made "opens" unreliable since 2021, since it pre-fetches images regardless of whether the human actually reads the email. Weight clicks more heavily than opens in your engagement scoring, or you'll misclassify plenty of genuinely engaged Apple Mail users as dead weight.
+
+## Why this actually matters for deliverability
+
+Mailbox providers build a reputation score for your sending domain and IP based on aggregate engagement — opens, clicks, deletes without opening, spam complaints, and how often people just ignore you. Send consistently to unengaged addresses and you're training Gmail to expect low engagement from your domain generally.
+
+The knock-on effect: your emails to *engaged* subscribers start getting throttled or filtered too. We've seen clients recover 15-20 points of inbox placement simply by suppressing their bottom 20% of unengaged contacts — no content changes, no new list growth, just fewer sends to people who weren't opening anyway.
+
+If you haven't audited your list health recently, our guide on [email list cleaning](/blog/email-list-cleaning-guide) covers the broader hygiene process this sunset sequence fits into.
+
+## The 3-4 step sunset sequence
+
+Once you've flagged a segment as unengaged, don't just cut them off — give them a fair, final chance. A good sunset sequence runs over 2-3 weeks:
+
+**Email 1 (Day 0): The re-engagement email**
+Lead with value, not guilt. "We noticed you haven't opened our emails in a while — here's what you've missed" works better than "We miss you!" Include a clear, single CTA: click here to keep getting our emails, or update your preferences.
+
+**Email 2 (Day 5-7): The incentive**
+For ecommerce, this is where a discount or exclusive offer earns its keep. For B2B or content-driven brands, offer something specific: a best-of roundup, a downloadable resource, or a direct question ("What content would actually be useful to you?").
+
+**Email 3 (Day 10-14): The plain-English warning**
+Tell them directly: "We'll stop emailing you after [date] unless you click something below." This isn't a trick — it's the email that gets the highest response rate in most sunset sequences, because urgency and clarity work.
+
+**Email 4 (Day 18-21, optional): The last call**
+A short, no-frills final nudge for high-value lists (SaaS trials, high-AOV ecommerce) where every subscriber recovered is worth the extra touch. For smaller lists, three emails is usually enough.
+
+Keep the sequence short. Dragging it out over two months doesn't improve results — it just extends the period you're sending to people who are actively hurting your sender score.
+
+## What to do with non-responders: suppress, don't delete
+
+Anyone who doesn't open, click, or update preferences by the end of the sequence should be **suppressed** from regular sends — not deleted outright.
+
+Suppression means they're excluded from your standard campaigns but the record stays in your system. This matters for three reasons:
+
+- **Compliance**: you retain proof of consent history and unsubscribe records, which matters under Australia's Spam Act.
+- **Reactivation triggers**: if a suppressed contact makes a purchase, books a call, or engages on another channel, you can automatically move them back into active sending.
+- **List analysis**: you can still track suppressed volume over time to see if your acquisition sources are bringing in low-quality signups that churn fast.
+
+Deleting outright throws away this context and makes it harder to diagnose *why* people are disengaging in the first place — bad list sources, mismatched content, wrong frequency.
+
+## Building this into an ongoing process
+
+A sunset sequence isn't a one-off clean-up project. It should run as a standing automation, triggered whenever a contact crosses your inactivity threshold. Set it, monitor open/click rates on the sequence itself quarterly, and adjust your unengaged definition as your list and sending cadence evolve.
+
+The goal isn't a smaller list for its own sake — it's a list where every send earns a strong reputation signal, which protects inbox placement for the subscribers who actually matter to your revenue.
+
+If you want a clear read on where your program stands before building this out, [run the free email program audit](/tools/email-audit) — it'll flag engagement decay and reputation risk in about five minutes. And if you'd rather have someone build the sunset logic, segmentation, and sequence copy for you, [get in touch](/#contact).
