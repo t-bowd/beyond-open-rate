@@ -69,7 +69,8 @@ let apiResponse;
 try {
   apiResponse = await client.messages.create({
     model: "claude-sonnet-5",
-    max_tokens: 4000,
+    max_tokens: 8000,
+    thinking: { type: "disabled" },
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
   });
@@ -140,12 +141,14 @@ try {
   [socialA, socialB] = await Promise.all([
     client.messages.create({
       model: "claude-sonnet-5",
-      max_tokens: 2000,
+      max_tokens: 4000,
+      thinking: { type: "disabled" },
       messages: [{ role: "user", content: buildSocialPrompt(variantA.copy) }],
     }),
     client.messages.create({
       model: "claude-sonnet-5",
-      max_tokens: 2000,
+      max_tokens: 4000,
+      thinking: { type: "disabled" },
       messages: [{ role: "user", content: buildSocialPrompt(variantB.copy) }],
     }),
   ]);
