@@ -179,7 +179,7 @@
       "automation"
     ],
     "notes": "Sending to unengaged contacts damages sender reputation with every send. Cover: defining unengaged (time-based vs engagement-based), why it matters for deliverability, the 3-4 step sunset sequence with timing, what to do with non-responders (suppress, don't delete). Reference /blog/email-list-cleaning-guide.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "post-purchase-email-examples",
