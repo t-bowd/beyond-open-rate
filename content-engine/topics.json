@@ -222,7 +222,7 @@
     },
     {
       "id": "053",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "AI is now deciding whether your emails get read. Here's what that means for your automations.",
