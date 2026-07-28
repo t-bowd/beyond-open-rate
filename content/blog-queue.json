@@ -192,7 +192,7 @@
       "retention"
     ],
     "notes": "Most post-purchase sequences stop at transactional emails. The best programs have 6-8 additional emails in the 90 days after a sale. Cover each email in a full sequence: confirmation, shipping, delivery, review request, cross-sell, replenishment, loyalty/brand story, win-back trigger. Give concrete subject lines and copy angles for each. Reference /blog/post-purchase-email-flow.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "activecampaign-for-ecommerce",
