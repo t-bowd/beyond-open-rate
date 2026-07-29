@@ -233,7 +233,7 @@
     },
     {
       "id": "054",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "Everyone's using AI to send more emails. That's exactly why your deliverability is getting harder.",
