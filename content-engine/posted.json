@@ -165,5 +165,12 @@
     "published_at": "2026-07-27T08:32:06.693Z",
     "schedule_time": "2026-07-28T08:40:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "054",
+    "file": "2026-07-29-everyones-using-ai-to-send-more-emails-thats-exact.mdx",
+    "published_at": "2026-07-29T23:07:33.790Z",
+    "schedule_time": "2026-07-30T09:30:00.000+10:00",
+    "variant": "A"
   }
 ]
