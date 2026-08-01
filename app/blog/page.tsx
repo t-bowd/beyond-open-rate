@@ -12,6 +12,13 @@ export const metadata: Metadata = {
   description:
     "Practical thinking on lifecycle automation, deliverability, segmentation, and the metrics that drive email revenue, for Australian businesses.",
   alternates: { canonical: "/blog" },
+  openGraph: {
+    type: "website",
+    url: `${site.url}/blog`,
+    title: "Email marketing strategy and advice",
+    description:
+      "Practical thinking on lifecycle automation, deliverability, segmentation, and the metrics that drive email revenue, for Australian businesses.",
+  },
 };
 
 export default async function BlogIndexPage() {
