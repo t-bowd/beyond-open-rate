@@ -1,0 +1,45 @@
+---
+title: "Gmail turned its 0.1% spam threshold into an active warning"
+description: "Google quietly rebuilt Postmaster Tools to flag senders above a 0.1% spam rate and to track recipients who simply ignore your email, not just those who complain."
+publishedAt: "2026-08-03"
+updatedAt: "2026-08-03"
+author: "Tim"
+tags: ["deliverability", "reporting", "list health"]
+faq:
+  - q: "Is 0.3% still a hard limit for Gmail?"
+    a: "Yes. Google's sender guidelines still treat 0.3% as the point where senders become ineligible for delivery mitigation and mail gets rejected or foldered outright. What changed is the space below that. Postmaster Tools now actively flags anything above 0.1%, rather than leaving it as unmonitored guidance."
+  - q: "Do I need to be a bulk sender for this to apply to me?"
+    a: "Gmail's formal bulk sender rules kick in around 5,000 messages a day to personal Gmail accounts, but the underlying spam-rate and engagement signals affect inbox placement for senders of any size. If you're on Klaviyo, Mailchimp or a similar platform sending regular campaigns and flows, check your Postmaster Tools account regardless of volume."
+  - q: "What's the difference between a spam complaint and this new low-engagement verdict?"
+    a: "A spam complaint is a recipient actively clicking 'report spam'. The low-engagement verdict covers recipients who never complain but also never open, click or otherwise interact. Google is now treating sustained indifference as its own warning sign, separate from active complaints."
+  - q: "Can I see my Postmaster Tools verdicts if I use Klaviyo or Mailchimp?"
+    a: "Yes, but you need your own Postmaster Tools account verified against your sending domain, separate from your ESP dashboard. Your ESP shows opens and clicks; Postmaster Tools shows how Gmail itself is scoring your domain, which is the more accurate signal."
+---
+
+Google has rebuilt the Deliverability analysis section inside Postmaster Tools, and the change went out without a formal announcement. Practitioners spotted it by comparing dashboards in mid to late July 2026 and traced the underlying verdict system to a Google API reference that had been sitting in developer preview since May. The practical effect: Gmail now issues an explicit warning the moment a sender's spam rate crosses 0.1%, not just when it hits the old 0.3% enforcement ceiling.
+
+## What actually changed
+
+Google's sender guidelines have said the same thing since February 2024: keep your spam complaint rate under 0.1%, and never let it reach 0.3%, the point at which Gmail rejects or folders mail outright and stops offering delivery mitigation. For two years, 0.1% functioned as an aspiration. Nobody watched it in real time. The gap between 0.1% and 0.3% was a grey zone where a lot of senders quietly sat, complaint-free enough to avoid the cliff edge but well past what Google actually wanted.
+
+The new Deliverability analysis view closes that gap. Instead of the old line charts, Postmaster Tools now assigns a plain-language verdict, and one of the negative verdicts triggers specifically for a spam rate above 0.1%. A sender running at 0.25%, who previously had no signal telling them anything was wrong, now gets flagged.
+
+## The quieter change: indifference has its own verdict
+
+The more interesting shift sits alongside the spam-rate warning. Google's new verdict system includes a category for recipients who never complain and never engage, they don't open, click or reply, they just receive and ignore. Previously this group was invisible in deliverability reporting because they generate no negative signal in the traditional sense. Now Gmail tracks it as a distinct, negative outcome, one step below "users don't want your mail."
+
+That's a meaningful change in what counts as healthy sending. A list with a low spam rate and full technical compliance, SPF, DKIM and DMARC all passing, can still get flagged if a large share of recipients are simply not responding. Authentication and complaint avoidance are no longer sufficient on their own.
+
+## Why this matters for Australian e-commerce brands
+
+Most Australian e-commerce senders aren't hitting Gmail's 5,000-message bulk sender threshold on every send, but the underlying signals apply regardless of volume, and a lot of Australian lists carry the kind of long-tail dormant subscriber that this new verdict is built to catch. Years of collecting emails at checkout, through pop-ups, through competitions, without a consistent sunset policy, produces exactly the profile Gmail now penalises: recipients who never complain, never unsubscribe, and never open anything either.
+
+Brands running flows and campaigns through Klaviyo or Mailchimp won't see this verdict inside their ESP dashboard. It only shows up in Postmaster Tools, tied to the sending domain rather than the platform, which means a domain can be quietly accumulating a negative verdict while every metric inside the ESP looks unremarkable.
+
+## What to do about it
+
+Set up or check your Postmaster Tools account against your primary sending domain if you haven't looked at it recently. Pull your current spam rate and compare it against 0.1%, not 0.3%. If you're above 0.1%, treat it as the active problem it now is rather than a number to watch.
+
+Separately, look at how much of your list has gone quiet. Segment out subscribers with no opens or clicks over the past 90 to 180 days and run them through a genuine re-engagement flow before deciding whether to suppress or sunset them. The goal isn't just avoiding complaints anymore, it's avoiding the accumulation of recipients who feel nothing about your email at all.
+
+Not sure how your current setup would hold up? [Run the free audit](/tools/email-audit), ten questions on your automations, deliverability, and reporting, with a score and a prioritised list of what to fix first.
