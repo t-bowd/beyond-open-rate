@@ -25,7 +25,7 @@
   },
   {
     "id": "email-list-cleaning-guide",
-    "title": "How to clean your email list — and when to sunset subscribers",
+    "title": "How to clean your email list \u2014 and when to sunset subscribers",
     "keyword": "email list cleaning",
     "tags": [
       "deliverability",
@@ -97,7 +97,7 @@
   },
   {
     "id": "email-marketing-roi",
-    "title": "How to calculate email marketing ROI — and what most businesses get wrong",
+    "title": "How to calculate email marketing ROI \u2014 and what most businesses get wrong",
     "keyword": "email marketing ROI",
     "tags": [
       "metrics",
@@ -153,7 +153,7 @@
       "migration",
       "platforms"
     ],
-    "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Seed claim: most migrations take longer than they should because brands move before setting up their data properly — the order is: integration, data sync, segments, then flows. Naturally reference /blog/klaviyo-vs-mailchimp.",
+    "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Seed claim: most migrations take longer than they should because brands move before setting up their data properly \u2014 the order is: integration, data sync, segments, then flows. Naturally reference /blog/klaviyo-vs-mailchimp.",
     "status": "published"
   },
   {
@@ -226,7 +226,7 @@
       "strategy",
       "automation"
     ],
-    "notes": "BOR's positioning piece on AI. We use AI and know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece — an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world.",
+    "notes": "BOR's positioning piece on AI. We use AI and know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece \u2014 an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world.",
     "status": "queued"
   },
   {
@@ -431,6 +431,18 @@
       "email automation"
     ],
     "notes": "Mirror the successful Adelaide local content approach for Perth market (26 impressions). Feature 2-4 Perth e-commerce brands, their email challenges, solutions implemented, and results. Cover local considerations like timing for AWST, Perth customer behaviour patterns, and local compliance. Include quotes from Perth business owners. Link to broader automation guides and agency comparison posts.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-services-melbourne-pricing-packages",
+    "title": "Email Marketing Services Melbourne: Pricing Models, Package Comparison & What You Actually Need",
+    "keyword": "email marketing services melbourne",
+    "tags": [
+      "melbourne",
+      "agency services",
+      "pricing"
+    ],
+    "notes": "Target 'email marketing services melbourne' (67 impressions, pos 36.5) and related Melbourne queries. Break down typical pricing models (retainer, project-based, rev-share), what's included in standard packages, pricing expectations for different business sizes, and how Melbourne agencies differ. Include local e-commerce case studies and link to agency selection guide.",
     "status": "queued"
   }
 ]

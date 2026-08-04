@@ -255,7 +255,7 @@
     },
     {
       "id": "019",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "$5M revenue, $0 invested in keeping those customers",
@@ -274,6 +274,61 @@
       "audience_angle": "Founder who has heard about the audit but isn't sure if it's worth their time",
       "cta_style": "audit",
       "notes": "Direct CTA to the free audit tool at beyondopenrate.com.au/tools/email-audit. Make it feel low-effort and high-value."
+    },
+    {
+      "id": "055",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "AI-generated email all sounds the same now. That's an opportunity if your brand doesn't.",
+      "seed_claim": "When every brand uses the same AI tools to write their emails, the output converges. The same cadence, the same sentence structure, the same faux-casual tone. Brand voice used to be hard to maintain at scale. Now it's one of the few things that actually differentiates you in the inbox.",
+      "audience_angle": "Founder who uses AI for email drafts and hasn't thought about what it does to their brand distinctiveness",
+      "cta_style": "none",
+      "notes": "The insight is competitive: AI homogenises output, which makes genuine brand voice more valuable, not less. Don't pitch brand voice work — just make the reader feel the gap between what their emails sound like and what they could sound like. No CTA needed."
+    },
+    {
+      "id": "056",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "AI built the flow. That doesn't mean the flow is correct.",
+      "seed_claim": "An AI tool can scaffold a welcome series or abandoned cart flow in minutes. It doesn't know your return window, your product replenishment cycle, your seasonal buying patterns, or which customer segment shouldn't receive a discount email. The structure is generic. A correctly configured flow is specific.",
+      "audience_angle": "Founder who used an AI tool to build their flows and assumes the output is sound",
+      "cta_style": "audit",
+      "notes": "The insight: AI generates a plausible-looking flow that can still be wrong in every meaningful way — wrong timing, wrong suppression, wrong audience, wrong context. A flow that sends is not a flow that converts. CTA to audit to check whether their AI-built flows are actually configured correctly."
+    },
+    {
+      "id": "057",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "First name + product recommendation is not personalisation. This is.",
+      "seed_claim": "Most email 'personalisation' is a merge tag and a Klaviyo recommendation block. Actual personalisation is knowing which customers are at risk of lapsing before they do, which have bought three times and are ready for a higher-AOV offer, and which just returned a product and shouldn't receive a cross-sell. AI makes the first type faster. The second type still requires strategy.",
+      "audience_angle": "Founder who thinks dynamic content and product recommendations mean their emails are personalised",
+      "cta_style": "none",
+      "notes": "Two-tier personalisation: surface-level (merge tags, AI recommendations) vs. behavioural lifecycle segmentation. Don't dismiss the first — just show what it's missing. Examples should be concrete: the lapsing buyer, the high-LTV segment, the recent returner. The contrast should feel revelatory, not academic."
+    },
+    {
+      "id": "058",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "gathering_info",
+      "topic": "Where AI actually fits in a serious email program (and where it doesn't)",
+      "seed_claim": "Use AI for: first drafts of email copy, subject line variants, rephrasing product descriptions for lifecycle context, generating A/B test ideas. Don't use AI for: deciding who gets suppressed, setting flow trigger timing, identifying list hygiene problems, or making judgment calls about your sender reputation. One list is about production speed. The other is about outcomes.",
+      "audience_angle": "Founder or email marketer who uses AI tools but hasn't thought clearly about where they help vs. where they add risk",
+      "cta_style": "soft",
+      "notes": "This is the practical companion to topic 051 (what AI is good at). Where 051 was a practitioner take, this one is prescriptive — a clear framework for use vs. don't use. Two columns, specific examples, no hedging. Soft CTA — follow or DM for the full breakdown."
+    },
+    {
+      "id": "059",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Klaviyo just added AI features. That's not the same as having an AI strategy.",
+      "seed_claim": "Klaviyo's AI tools — subject line suggestions, send time optimisation, predictive analytics — are genuinely useful additions. They're also used by every other brand on the platform. Pressing the AI button in Klaviyo doesn't create a competitive edge. Using the data Klaviyo surfaces to build a smarter segmentation and suppression strategy does.",
+      "audience_angle": "Klaviyo user who has turned on the platform's AI features and assumes that's the AI advantage covered",
+      "cta_style": "soft",
+      "notes": "Name the specific Klaviyo AI features (subject line optimisation, Smart Send Time, predictive CLV, Product recommendations). Acknowledge they're useful. Then draw the line: platform AI features reduce friction — they don't replace the judgment layer. The competitive edge is in how you use the data, not whether you've clicked the AI button. Soft CTA."
     }
   ]
 }
