@@ -444,5 +444,41 @@
     ],
     "notes": "Target 'email marketing services melbourne' (67 impressions, pos 36.5) and related Melbourne queries. Break down typical pricing models (retainer, project-based, rev-share), what's included in standard packages, pricing expectations for different business sizes, and how Melbourne agencies differ. Include local e-commerce case studies and link to agency selection guide.",
     "status": "queued"
+  },
+  {
+    "id": "abandoned-cart-email-timing-guide",
+    "title": "Abandoned Cart Email Timing: The Hour-by-Hour Data on When to Send Each Email",
+    "keyword": "abandoned cart email timing",
+    "tags": [
+      "abandoned cart",
+      "email automation",
+      "conversion optimization"
+    ],
+    "notes": "Target the 27 impressions at position 30.9 — this is our strongest abandoned cart opportunity. Focus on specific timing windows (15 minutes vs 1 hour vs 24 hours), include Australian timezone considerations, and test results from Klaviyo stores. Link to existing 'abandoned cart email benchmarks' and 'abandoned cart email strategy' posts.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-brisbane-guide",
+    "title": "Email Marketing Brisbane: How 5 QLD E-commerce Brands Grew Revenue 40%+ with Klaviyo",
+    "keyword": "email marketing brisbane",
+    "tags": [
+      "local SEO",
+      "case studies",
+      "Klaviyo"
+    ],
+    "notes": "Target 57 impressions at position 21.5 plus related 'email marketing company brisbane' and 'email marketing agency brisbane' queries. Include Brisbane-specific case studies, local compliance notes (Australian Privacy Act), and timezone/seasonal considerations for QLD businesses. Link to general 'e-commerce email marketing' guide and Klaviyo agency posts.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-audit-checklist",
+    "title": "Email Marketing Audit Checklist: 47 Points to Review Before You Waste Another Dollar",
+    "keyword": "email marketing audit",
+    "tags": [
+      "email strategy",
+      "optimization",
+      "deliverability"
+    ],
+    "notes": "Small but well-positioned opportunity (11 impressions at position 24.0). Create comprehensive audit framework covering deliverability, flows, segmentation, and revenue attribution. Include downloadable checklist, link to deliverability guide, segmentation strategies, and agency selection posts. Practical DIY angle with clear indicators of when to get help.",
+    "status": "queued"
   }
 ]
