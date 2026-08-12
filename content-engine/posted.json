@@ -199,5 +199,12 @@
     "published_at": "2026-08-09T23:43:54.331Z",
     "schedule_time": "2026-08-10T10:00:00.000+10:00",
     "variant": "A"
+  },
+  {
+    "id": "055",
+    "file": "2026-08-12-ai-generated-email-all-sounds-the-same-now-thats-a.mdx",
+    "published_at": "2026-08-12T23:09:06.467Z",
+    "schedule_time": "2026-08-13T10:00:00.000+10:00",
+    "variant": "B"
   }
 ]
