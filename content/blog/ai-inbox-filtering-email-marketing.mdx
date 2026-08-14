@@ -1,0 +1,75 @@
+---
+title: "AI inbox filtering: what email platforms are doing and what it means for your open rates"
+description: "AI inbox filtering now decides which emails reach the inbox before anyone sees them, here's what Gmail and Apple Mail actually score and reward."
+publishedAt: "2026-08-14"
+author: "Tara"
+tags: ["deliverability", "strategy", "email marketing"]
+faq:
+  - q: "What is AI inbox filtering?"
+    a: "It's the machine learning layer that Gmail, Apple Mail, Outlook and others use to decide whether your email lands in the primary inbox, a tab, spam, or gets bulk-filtered before the recipient ever sees it. It scores signals like engagement history, sender reputation, and content patterns in real time, and it's why two identical sends can perform completely differently across providers."
+  - q: "Does Apple Mail Privacy Protection affect open rates?"
+    a: "Yes. Apple Mail pre-loads images for every email, including the tracking pixel, whether or not the recipient opens it. This inflates open rates across any list with a meaningful share of Apple Mail users, which is most Australian lists, so open rate alone can no longer tell you what's actually landing or being read."
+  - q: "How do I know if AI inbox filtering is hurting my deliverability?"
+    a: "Watch for a widening gap between sends and opens on Gmail addresses specifically, rising spam complaint rates even when unsubscribes are low, and inconsistent inbox placement for the same content sent to similar segments. A proper deliverability audit will show you inbox placement by provider, which is the real diagnostic here, not blended open rate."
+---
+
+Your email doesn't go to an inbox anymore. It goes to a filter, and the filter decides if a human ever sees it.
+
+Gmail, Apple Mail, and Outlook have all built AI models that score your email before delivery, sorting it into primary, promotions, spam, or nowhere at all. None of this is announced. None of it is disclosed. You just watch your numbers move and have to reverse-engineer why.
+
+The uncomfortable part is that the signals these models reward aren't the ones most marketers spend their time on. You can write a brilliant subject line and still get filtered, because the subject line was never the thing being judged.
+
+## How the filtering actually works
+
+Inbox AI doesn't read your email for quality. It reads behaviour, patterns, and history, and it does this per recipient, not per campaign.
+
+**Engagement signals** matter most. If a recipient opens, clicks, replies to, or moves your emails out of spam, that's a strong positive signal specific to that person. If they delete without opening, or never open at all over several sends, the model quietly downgrades you for that recipient, even while other people on your list keep landing in primary.
+
+**Sender reputation** is the second layer, and it's aggregated across your whole sending domain. Spam complaints, hard bounces, and blocklist hits all drag this down. This is domain-wide, so one badly targeted campaign to a cold segment can hurt deliverability for every campaign after it.
+
+**Content patterns** get scanned too, not for keywords the way spam filters used to work in 2010, but for structural patterns that correlate with spam in the model's training data. Heavy image-to-text ratios, shortened URLs, certain formatting tricks (ALL CAPS subject lines, excessive exclamation points), these all still nudge you the wrong way.
+
+**Unsubscribe behaviour** is weighted more heavily than most marketers assume. A recipient who unsubscribes cleanly is a mild negative signal. A recipient who hits "report spam" because they couldn't find an unsubscribe link is a serious one, and it damages your reputation with that provider for every other recipient on that domain.
+
+> **Benchmark:** Gmail's Postmaster Tools data shows senders with spam complaint rates above 0.3% face meaningfully reduced inbox placement, and rates above 0.5% risk bulk folder placement across the entire sending domain, not just for the complaining recipient.
+
+## What gets filtered out
+
+Some patterns get punished consistently across providers:
+
+- **Sending to your full list regardless of engagement.** If 40% of your list hasn't opened anything in a year, sending to all of them every time tells the model you don't discriminate, and it stops trusting your discrimination.
+- **Sudden volume spikes.** A list that gets 2,000 sends a month and then jumps to 20,000 for a Black Friday push looks like compromised infrastructure to a filter, even though it's just enthusiasm.
+- **Buried or broken unsubscribe links.** This is also now a legal requirement in several jurisdictions, and we've covered the regulatory side of consent and tracking in our post on EU rules for tracking pixels, over on the /blog. The compliance angle and the deliverability angle point the same direction here.
+- **Consistently low click-through relative to opens.** Opens without clicks, especially with Apple Mail Privacy Protection inflating opens artificially, tell the model people are seeing the subject line and ignoring the content.
+
+## What survives
+
+The senders who keep landing in primary share a few habits, and none of them are exotic.
+
+They send to segments based on recent engagement, not the whole list every time. They keep a consistent, predictable cadence rather than silence followed by a burst. They get replies, because reply-based engagement is one of the strongest positive signals a model can read, and it's why a plain-text "hit reply and let me know" line in a B2B email often outperforms a beautifully designed campaign.
+
+They also prune. Removing contacts who haven't engaged in six months isn't about being tidy, it's about protecting your ability to reach the people who do open.
+
+## The ecommerce angle
+
+For a Shopify or BigCommerce store, this shows up first in abandoned cart and post-purchase flows, because those are usually your highest-volume automated sends. If those flows go to everyone regardless of engagement history, they're the fastest way to train Gmail's model against you.
+
+Segment your flows by recency. A customer who bought three months ago and a customer who bought three years ago should not get the same win-back email at the same frequency, and treating them the same is exactly the pattern that gets filtered.
+
+## The service business angle
+
+For agencies, consultants, and SaaS teams, the newsletter is usually the biggest sender of low-engagement volume. A monthly send to 5,000 contacts where 4,200 never open is training every major provider to treat your domain as low-value.
+
+The fix is smaller lists sent to more deliberately. A segmented send to your 800 most engaged contacts, with a genuine ask to reply or book a call, will do more for booked calls and pipeline than a broadcast to the full 5,000, and it protects your domain reputation for the sales sequences that actually need to land.
+
+## Concrete actions worth taking this quarter
+
+1. Pull your list by last-open date and stop sending your full volume to anyone past six months of silence.
+2. Check spam complaint rate in Google Postmaster Tools. Anything above 0.3% needs attention now, not next quarter.
+3. Audit your automated flows for engagement segmentation, not just trigger logic.
+4. Make your unsubscribe link genuinely one click, no login, no survey wall.
+5. Build in a reply-prompt somewhere in your highest-volume send. It's the strongest positive signal available to you.
+
+If you want a clearer read on where your inbox placement actually stands, [run the free email program audit](/tools/email-audit). It'll show you what's landing, what's not, and why, rather than leaving you guessing from open rate alone.
+
+None of this is complicated, but it does require treating your list as something to be earned rather than a number to be maximised. If you'd rather have someone else run the diagnostics and fix the flows, [get in touch](/#contact) and we'll look at what's actually happening in your inbox placement, not just your reports.
