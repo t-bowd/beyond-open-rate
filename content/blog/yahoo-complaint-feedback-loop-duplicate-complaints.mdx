@@ -1,0 +1,49 @@
+---
+title: "Yahoo's complaint feedback loop is duplicating spam reports"
+description: "Since 6 August 2026 Yahoo's CFL has been sending senders duplicate spam complaints, inflating complaint rates and risking false suppressions. Here's what to check before you act on the numbers."
+publishedAt: "2026-08-17"
+updatedAt: "2026-08-17"
+author: "Tim"
+tags: ["deliverability", "metrics", "reporting", "list health"]
+faq:
+  - q: "What is Yahoo's Complaint Feedback Loop (CFL)?"
+    a: "It's a data feed Yahoo sends to senders whenever a Yahoo or AOL user hits 'mark as spam' on one of their emails. Most ESPs, including Klaviyo, use it to automatically suppress subscribers who complain, so you don't keep mailing someone who's already told Yahoo they don't want your emails."
+  - q: "How do I know if my Yahoo complaint data is affected?"
+    a: "Look for a jump in Yahoo or AOL complaint volume since 6 August 2026 that isn't matched by a similar jump in unsubscribes or spam-button clicks reported elsewhere. Repeated complaints tied to the same recipient or message ID in your ESP's feedback loop log is the clearest sign."
+  - q: "Should I stop sending to Yahoo and AOL addresses until this is fixed?"
+    a: "No. Pausing sends to a whole domain over a reporting bug will hurt your sender reputation more than the bug itself. Keep sending as normal and just hold off on any manual list actions based on complaint spikes until you've confirmed the numbers are real."
+  - q: "My ESP auto-suppresses on complaints. Could this have already cost me subscribers?"
+    a: "Possibly, if suppression is fully automated with no review step. Ask your ESP support team whether they've identified and excluded the duplicate Yahoo reports from suppression logic, and whether any subscribers were incorrectly suppressed between 6 and 17 August."
+---
+
+Since 6 August 2026, Yahoo's Complaint Feedback Loop has been sending senders duplicate spam complaint reports for the same message, according to deliverability newsletter This Week in Email, which cited Yahoo's own postmaster team. If you send to Yahoo or AOL addresses and lean on complaint rate data to manage your list, the numbers you're looking at right now are inflated.
+
+## What the complaint feedback loop does
+
+Every time a Yahoo or AOL user clicks "this is spam," Yahoo reports that complaint back to the sending domain through the CFL. ESPs like Klaviyo consume that feed and use it two ways: to calculate your complaint rate against Gmail and Yahoo's enforcement threshold of 0.3%, and to automatically suppress the complaining subscriber so you stop mailing them.
+
+That threshold matters more than it used to. Since Google and Yahoo's 2024 bulk sender rules matured into outright rejection for repeat offenders, a complaint rate that creeps toward 0.3% can tip your whole domain into the spam folder, not just the one campaign that triggered it.
+
+## What broke
+
+Yahoo confirmed to senders that its CFL has been firing twice for the same complaint since 6 August. One subscriber marking one email as spam now shows up as two complaints in your reporting. Yahoo has asked senders to send examples to mail-questions@yahooinc.com while it works out a fix, but hasn't given a timeline for resolution.
+
+The bug hasn't been isolated to Yahoo either. In the same week, Microsoft stripped spam-trap hit counts and complainant details out of its own SNDS and JMRP reports, cutting sender visibility from a different angle. Neither change was announced with much warning, and both land at a moment when authentication and complaint thresholds are the difference between inbox and junk.
+
+## Why it matters for your list
+
+A doubled complaint count can push a domain that was sitting comfortably under 0.3% into enforcement territory on paper, even though nothing about subscriber sentiment has actually changed. If your team, or your ESP's automation, reacts to that spike by pausing sends, tightening segments, or mass-suppressing recipients, you're making list decisions off bad data.
+
+The suppression side is the sharper risk. If your platform removes a subscriber from your list the moment it sees a complaint, a duplicate report doesn't do any extra damage there, since the subscriber was already going to be suppressed. The real damage is to anyone monitoring complaint rate as a health metric and adjusting sending behaviour, cadence, or list hygiene based on a number that's currently running roughly double what it should be.
+
+## What to do about it
+
+Pull your Yahoo and AOL complaint numbers from the past two weeks and compare 6 August onward against the run rate before it. If you see complaints roughly double without a matching rise in unsubscribe clicks or support tickets, you're looking at the bug, not a genuine deliverability problem.
+
+Hold off on any manual response to a complaint spike from Yahoo domains specifically until Yahoo confirms a fix. Don't pause campaigns, don't shrink send segments, and don't start an emergency re-engagement flow based on this data alone.
+
+If you're on Klaviyo or another ESP with automated suppression, ask their support whether they've already filtered the duplicate reports out of your account, and whether the fix will be retroactive. Get it in writing if any subscribers were wrongly suppressed so you can review and re-add anyone who shouldn't have been removed.
+
+Keep this in the back of your mind the next time a mailbox provider changes reporting formats without warning, which is what happened with Microsoft's SNDS the same week. Complaint and reputation data from any provider is worth spot-checking against a second signal, like unsubscribe rate or support volume, before it drives an automated action on your list.
+
+Not sure how your current setup would hold up to a deliverability data glitch like this? [Run the free audit](/tools/email-audit), ten questions on your automations, deliverability, and reporting, with a score and a prioritised list of what to fix first.
