@@ -480,5 +480,41 @@
     ],
     "notes": "Small but well-positioned opportunity (11 impressions at position 24.0). Create comprehensive audit framework covering deliverability, flows, segmentation, and revenue attribution. Include downloadable checklist, link to deliverability guide, segmentation strategies, and agency selection posts. Practical DIY angle with clear indicators of when to get help.",
     "status": "queued"
+  },
+  {
+    "id": "email-marketing-retainer-pricing-guide-australia",
+    "title": "Email Marketing Retainer Pricing: What Australian E-commerce Brands Actually Pay (2024 Guide)",
+    "keyword": "email marketing retainer",
+    "tags": [
+      "pricing",
+      "agency",
+      "retainer"
+    ],
+    "notes": "Target businesses evaluating agency partnerships. Break down typical retainer structures (monthly hours vs deliverables-based), what's included at different price points ($2k-$10k+ AUD), red flags in retainer agreements, and when retainer makes sense vs project-based. Include transparent pricing examples and ROI calculations to justify costs. Link to agency selection guides.",
+    "status": "queued"
+  },
+  {
+    "id": "email-marketing-strategy-framework-ecommerce",
+    "title": "E-commerce Email Marketing Strategy: The 5-Phase Framework That Drives 30%+ Revenue",
+    "keyword": "email marketing strategy",
+    "tags": [
+      "strategy",
+      "e-commerce",
+      "framework"
+    ],
+    "notes": "Create comprehensive strategic guide covering: customer lifecycle mapping, flow architecture, campaign calendar planning, list growth tactics, and performance benchmarking. Include Australian e-commerce case studies and seasonal considerations for ANZ market. Differentiate from tactical guides with emphasis on holistic planning and revenue attribution modeling.",
+    "status": "queued"
+  },
+  {
+    "id": "best-post-purchase-email-examples-australia",
+    "title": "15 Best Post-Purchase Email Examples from Australian E-commerce Brands (With Analytics)",
+    "keyword": "best post purchase emails",
+    "tags": [
+      "post-purchase",
+      "examples",
+      "flows"
+    ],
+    "notes": "Visual showcase of high-performing post-purchase emails across different industries (fashion, food, beauty, homewares). Include actual performance metrics where possible, explain why each works, and break down copywriting techniques, design elements, and timing strategies. Complement existing post-purchase flow guides with specific creative inspiration and benchmarks.",
+    "status": "queued"
   }
 ]
