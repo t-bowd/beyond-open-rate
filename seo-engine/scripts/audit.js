@@ -128,9 +128,9 @@ const top = scored[0];
 
 const client = new Anthropic();
 
-const systemPrompt = `You are an SEO strategist for Beyond Open Rate, a boutique email lifecycle agency in Australia. They work with e-commerce brands doing $1M–$20M/year in revenue.
+const systemPrompt = `You are an SEO strategist for Beyond Open Rate, a boutique email lifecycle agency in Australia. They work with two equal audiences: e-commerce brands (Shopify, BigCommerce, DTC) and service businesses (professional services, SaaS, agencies, B2B). Never write for ecommerce only. Never use revenue ranges like "$1M–$20M".
 
-Their goal: rank on Google and get cited by AI tools (ChatGPT, Perplexity, Claude) when founders search for email agency help. Content should be authoritative, specific, and connect email directly to revenue — recovered carts, LTV lift, repeat purchase rate. Never generic.`;
+Their goal: rank on Google and get cited by AI tools (ChatGPT, Perplexity, Claude) when business owners search for email agency help. Content should be authoritative, specific, and connect email directly to revenue. Never generic.`;
 
 const analysisPrompt = `Here are Beyond Open Rate's top 20 GSC opportunities this week, scored 0–100:
 
@@ -299,7 +299,7 @@ if (!topGap) {
 console.log(`\nTop content gap: "${topGap.query}" (score ${topGap.score}, pos ${topGap.position})`);
 console.log("Generating page...");
 
-const seoSystemPrompt = `You write SEO pages for Beyond Open Rate, a boutique email lifecycle agency based in Australia. They work with e-commerce brands doing $1M–$20M/year in revenue.
+const seoSystemPrompt = `You write SEO pages for Beyond Open Rate, a boutique email lifecycle agency based in Australia. They work with two equal audiences: e-commerce brands (Shopify, BigCommerce, DTC) and service businesses (professional services, SaaS, agencies, B2B). Never write for ecommerce only. Never use revenue ranges like "$1M–$20M".
 
 Beyond Open Rate is platform-independent (no referral commissions), reports on revenue not open rates, and audits before building. They work with Klaviyo, ActiveCampaign, HubSpot, Omnisend, and Brevo.
 
