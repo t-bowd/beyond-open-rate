@@ -262,7 +262,7 @@
       "e-commerce"
     ],
     "notes": "Comprehensive workflow library beyond the basics. Include: browse abandonment, price drop alerts, back-in-stock, VIP/loyalty tier triggers, birthday/anniversary, cross-sell sequences, review request automation, and seasonal reactivation. Each workflow should have trigger logic, recommended email count, and expected performance benchmarks. Link to post-purchase flows, abandoned cart strategy, and win-back campaign posts for deeper dives.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "klaviyo-email-automation-setup-guide",
