@@ -10,65 +10,61 @@ Use the section that matches whichever LinkedIn variant Tim approved.
 # 1. INSTAGRAM CAROUSEL
 
 CAROUSEL SLIDE 1 — HOOK
-You let AI write your subject line. Did you let it decide who gets suppressed?
+Braze just shipped AI that makes decisions inside your flows. Without a human in the loop.
 
 CAROUSEL SLIDE 2
-AI is great at production. It's dangerous at judgment.
+AI running your email program is already here. The question is whether it's working from the right strategy.
 
 CAROUSEL SLIDE 3
-Safe to hand over: subject lines, first drafts, A/B ideas, tone shifts.
+What AI can do now: decide paths, optimise send time, personalise content at scale.
 
 CAROUSEL SLIDE 4
-Not safe: suppression lists, flow timing, list hygiene, sender reputation.
+What it still can't do: know if your list is clean enough for that to mean anything.
 
 CAROUSEL SLIDE 5
-AI doesn't know your "normal." It's never seen your list.
+It can optimise on top of your program. It can't build it.
 
 CAROUSEL SLIDE 6
-One column saves you hours. The other costs you deliverability you don't get back.
+The strategy has to come from somewhere. Segments, triggers, architecture, what the AI should actually be deciding.
 
 CAROUSEL SLIDE 7 — CTA
-We help brands draw that line. Follow along for more.
+The platforms are getting smarter. That makes the strategy underneath them matter more. Follow along.
 
 CAROUSEL CAPTION
-Quick gut check: if AI touched your suppression list before Black Friday, that's not efficiency — that's risk. There's a real split between where AI speeds things up and where it should never make the call. Which side of the line have you been letting it play on?
+Braze shipped Agent Steps. Every platform is heading this direction. AI making real decisions inside your flows is already live. The part that still needs a human? Building the strategy it executes. Which segments. Which triggers. Whether your list is solid enough to let AI optimise on top of it. That's the conversation worth having right now.
 
-#EmailMarketing #AIinMarketing #Deliverability #EmailStrategy #MarketingAustralia
+#EmailMarketing #AIinMarketing #EmailStrategy #MarketingAutomation #MarketingAustralia
 
 ---
 
 # 2. REEL SCRIPT
 
 REEL HOOK (0–3s)
-Quick question — did you let AI decide who gets suppressed from your Black Friday send?
+Braze just shipped AI that makes decisions inside your email flows. Without you in the loop.
 
 REEL BODY (3–45s)
-Because if you did / that should worry you.
+Agent Steps. Live now. / AI deciding which path a contact takes / when to send / what content to show. / That's not a future feature. / It's already there.
 
-Here's the thing nobody's saying out loud. / AI is really good at production. / Subject lines, first drafts, A/B test ideas — hand it all over. / That's the speed column. / Totally safe.
+And every platform is heading this direction.
 
-But there's another column. / The outcomes column.
+So the question isn't whether AI can run your email program. / It can. / The question is whether it's running the right one.
 
-Deciding who gets suppressed? / That's not a copywriting task. / That's a judgment call based on engagement, complaint risk, your sender reputation.
+Because the AI needs something to work from. / You have to tell it which segments matter. / Which flows are worth building. / Whether your list is clean enough for optimisation to mean anything / or whether you're just automating a problem faster.
 
-Setting flow timing? / Based on your customers, your purchase cycle, your testing.
-
-List hygiene? / You need to know what "normal" looks like. / AI doesn't know your normal.
-
-And if your sender reputation takes a hit / every email after that earns less. / For everyone.
+The platforms are genuinely good. / Better than they've ever been. / But they amplify. / A well-built program gets better. / A poorly-built program fails more efficiently.
 
 REEL CTA (45–60s)
-So use AI for speed. / Just don't let it make the calls that actually matter. / Follow along — we're breaking this down properly.
+Every brand getting serious about AI email / still needs someone to build the strategy it executes. / Follow along if you want to see what that looks like.
 
 REEL ON-SCREEN TEXT
-"AI = production, not judgment"
-"Safe: subject lines, drafts, A/B ideas"
-"Not safe: suppression, timing, list hygiene"
-"AI doesn't know your normal"
-"Follow for the full breakdown"
+"AI in your flows: already here"
+"Braze Agent Steps — live now"
+"AI can optimise. It can't strategise."
+"The foundation still needs a human."
+"Strategy first. AI second."
 
 REEL CAPTION
-Did AI just make a call it had no business making? There's a clear line between what AI should touch in your email program and what it shouldn't — and crossing it costs more than time.
+AI making decisions inside your email flows isn't coming — it's live. Braze shipped Agent Steps, and every platform is following. The part that still needs a human isn't the execution. It's the strategy the AI runs on.
 
 #EmailMarketing #AIinMarketing #EmailDeliverability #MarketingTips #EcommerceMarketing
 
@@ -79,30 +75,28 @@ Did AI just make a call it had no business making? There's a clear line between 
 # 1. INSTAGRAM CAROUSEL
 
 CAROUSEL SLIDE 1 — HOOK
-AI didn't break email marketing. Misusing it will.
+The platforms have caught up faster than people expected.
 
 CAROUSEL SLIDE 2
-AI writes a great subject line in seconds.
-That part's not the problem.
+AI inside your email tool isn't a feature. It's how the whole thing works now.
 
 CAROUSEL SLIDE 3
-The problem starts when AI decides instead of drafts.
+Send time optimisation. Content recommendations. AI-generated copy. Agentic flows. All live.
 
 CAROUSEL SLIDE 4
-Who gets suppressed. When cart flows send. That's not a template — that's risk.
+The question isn't whether AI can make decisions in your program. It can.
 
 CAROUSEL SLIDE 5
-List hygiene issues don't show up in a prompt. They show up over time.
+The question is whether it has the right foundation to make the right ones.
 
 CAROUSEL SLIDE 6
-Drafting = hand it to AI.
-Outcomes = keep a human on it.
+AI amplifies. A well-built program gets better. A poorly-built one fails faster.
 
 CAROUSEL SLIDE 7 — CTA
-We've drawn the line. Follow along to see where it sits.
+We build the foundation the AI runs on. Follow along.
 
 CAROUSEL CAPTION
-AI can write your subject lines. It can't tell you if your sender reputation is quietly tanking. There's a difference between speeding up production and outsourcing judgment — and it's costing some brands their inbox placement without them even noticing. Where do you draw the line with AI in your email program?
+Every major email platform now has AI making real decisions about your sends — path selection, timing, content, suppression. That's not the problem. The problem is that the AI is only as good as the strategy it's built on. If the architecture is wrong, smarter execution just moves people through the wrong journey more efficiently.
 
 #EmailMarketing #AIinMarketing #EmailStrategy #MarketingAutomation #AustralianBusiness
 
@@ -111,22 +105,32 @@ AI can write your subject lines. It can't tell you if your sender reputation is 
 # 2. REEL SCRIPT
 
 REEL HOOK (0–3s)
-AI can write your emails. It should never decide who gets them.
+The platforms have caught up faster than most people expected.
 
 REEL BODY (3–45s)
-Here's the split nobody's talking about. / AI drafting? Genuinely great. / Subject lines in seconds. / Product descriptions rewritten for six flows instead of one. / We use it every day. / But here's where it goes wrong. / The second you let AI decide who gets suppressed / or when your cart flow should send / or whether your list has a hygiene problem building underneath your open rate — / that's not a drafting task anymore. / That's a risk decision. / And AI doesn't know your customers. / It knows patterns from everyone else's. / Get sender reputation wrong / and you won't find out for weeks. / By then it's already cost you inbox placement.
+Braze has agent steps now. / AI making path decisions inside your flows. / Send time optimisation — that's been live for two years. / Content recommendations, predictive scoring — all inside the tools already.
+
+So yes. / AI can make decisions in your email program. / That part's settled.
+
+The question is whether those decisions are right. / For your list. / For your customers. / For your specific business.
+
+And that depends entirely on what's underneath it.
+
+A suppression decision is only good if the AI knows your engagement baseline. / Send time optimisation only works on a healthy, clean list. / Personalisation only moves people somewhere useful if the flow architecture is right.
+
+The platforms are amplifiers. / A well-built program gets better with AI. / A poorly-built one fails more confidently.
 
 REEL CTA (45–60s)
-Production tasks — hand them over. / Outcome tasks — keep a human who knows your list. / We've drawn that line already. / Follow along if you want to see where it sits.
+What we do is build the foundation the AI runs on. / That's the part that still needs a human. / Follow along if you want to see what it looks like.
 
 REEL ON-SCREEN TEXT
-"AI drafts. It shouldn't decide."
-"Subject lines: yes."
-"Who gets suppressed: no."
-"Sender reputation problems take weeks to surface."
-"Draft with AI. Decide with humans."
+"AI email decisions: already here"
+"Good AI needs good strategy underneath it"
+"Amplifiers: make good programs better"
+"Foundation first."
+"We build what the AI runs on."
 
 REEL CAPTION
-AI made email production faster than ever — but faster isn't the same as smarter. Here's where we draw the line between what AI should touch and what it shouldn't.
+AI running your email program isn't coming — it's here. The question is whether it's running the right one. Every platform is now making decisions inside your flows. What they can't do is build the strategy that makes those decisions right for your business.
 
 #EmailMarketing #AIinMarketing #EmailDeliverability #MarketingTips #EcommerceEmail
