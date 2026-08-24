@@ -1,0 +1,100 @@
+---
+title: "Klaviyo Email Automation Setup: From Zero to Revenue-Generating Flows"
+description: "A step-by-step guide to Klaviyo email automation setup, from account structure to your first three revenue-generating flows."
+publishedAt: "2026-08-25"
+author: "Tim"
+tags: ["klaviyo", "automation", "setup"]
+faq:
+  - q: "How long does it take to set up Klaviyo from scratch?"
+    a: "A basic setup with welcome, abandoned cart, and post-purchase flows takes 2 to 3 weeks if you're doing it properly, including testing. Rushing it to launch in a day usually means broken triggers or duplicate sends that annoy customers before you've earned a single dollar from the program."
+  - q: "Do I need Klaviyo if I'm a service business with no online store?"
+    a: "Yes, but your flows look different. Instead of abandoned cart, you'd build a lead nurture flow off a booking form or lead magnet, and instead of post-purchase, a client onboarding sequence. The setup principles (clean account structure, proper triggers, testing before launch) are identical."
+  - q: "What's the biggest mistake people make setting up Klaviyo automation?"
+    a: "Turning on every default flow Klaviyo suggests without customising the triggers or filters. This leads to customers getting a welcome email after they've already bought, or an abandoned cart reminder for a cart they completed on a different device."
+---
+
+Most Klaviyo accounts sit half-built for months. Someone connects Shopify, turns on the default welcome flow, and calls it done. Meanwhile there's a post-purchase sequence that never got built, an abandoned cart flow with the wrong filters, and a list of 40,000 contacts nobody has segmented since the account was created.
+
+This is the setup guide for doing it right the first time. Whether you're running a Shopify store or a service business collecting leads through a booking form, the structure below gets you from a blank Klaviyo account to flows that earn money without babysitting.
+
+> **Benchmark:** Klaviyo's own benchmark data shows welcome flows convert at roughly 2 to 3x the rate of standard campaigns, and abandoned cart flows recover between 3% and 10% of otherwise lost sales, depending on your average order value and industry.
+
+## Get the Account Structure Right Before You Touch a Flow
+
+Before building anything, decide how your account is organised. This matters more than people think, because a messy structure now means rebuilding segments and flows later once your list has grown to 20,000 contacts and untangling it becomes a real job.
+
+**For ecommerce:** set up one Klaviyo account per store. If you run multiple brands off one Shopify Plus account, use separate Klaviyo accounts, not one account with tags for everything. Mixing brands in a single account makes segmentation a nightmare and increases the odds you send the wrong brand's email to the wrong list.
+
+**For service businesses:** decide early whether you're tracking one "customer" list or separate lists for leads, active clients, and past clients. Most service operators do better with one master list and use segments (not separate lists) to split by status. It keeps your automation simpler and your reporting cleaner.
+
+Either way, name your flows and segments with a consistent convention from day one; for example, `FLOW - Welcome Series` and `SEG - Purchased Last 90 Days`. It sounds pedantic until you're six months in and can't find anything.
+
+## Integrating Shopify or BigCommerce
+
+The integration itself takes about ten minutes. Getting the data flowing correctly is the part people skip.
+
+1. Connect your store from Klaviyo's integrations menu. Both Shopify and BigCommerce have native, one-click integrations.
+2. Confirm that **Placed Order**, **Started Checkout**, and **Ordered Product** events are firing. Send yourself a test order to check they land in Klaviyo's activity feed within a minute or two.
+3. Check that historical order data has synced. This backfill is what lets you build segments like "customers who've spent over $500" on day one instead of waiting three months to accumulate the data.
+4. Map any custom properties you need for personalisation, like product category or subscription status, if your flows will reference them.
+
+If you're a service business without a native ecommerce integration, connect Klaviyo to your booking tool, CRM, or form provider instead (Calendly, Typeform, and most CRMs have direct integrations or work through Zapier). The goal is the same: get behavioural events into Klaviyo so flows can trigger off real actions, not just "someone joined a list."
+
+## Your First Three Flows
+
+Don't build ten flows in week one. Build these three, get them converting, then expand.
+
+### 1. Welcome Flow
+
+This is the highest-converting flow you'll ever run, because these are people who just raised their hand. Trigger it off list signup, not purchase, so it catches window shoppers and buyers alike.
+
+Structure: 3 to 5 emails over 7 to 10 days. Email one goes out immediately with a discount or lead magnet. Email two introduces the brand or your services. Email three handles objections or shows social proof. Add a filter that stops the flow if someone converts (places an order, or books a call) partway through, so you're not pitching a discount to someone who already paid full price.
+
+### 2. Abandoned Cart Flow (Ecommerce) / Lead Nurture Flow (Service Business)
+
+For ecommerce, trigger off **Started Checkout** without a matching **Placed Order** within a set window, usually 30 to 60 minutes. Send three emails: a reminder, a social proof or FAQ email, and a final nudge with urgency (limited stock, or a small discount if your margins allow it).
+
+For service businesses, trigger off form submission or inquiry without a booked call. The equivalent sequence is a reminder, a case study or testimonial, and a direct offer to book a specific time slot.
+
+The filter that trips people up: exclude anyone who has since completed the action. Klaviyo doesn't do this automatically. You need a filter checking against the "has not placed order" or "has not booked call" condition at each send.
+
+### 3. Post-Purchase / Client Onboarding Flow
+
+For ecommerce, this covers order confirmation through to the first review request and first repeat-purchase nudge. It's also where you set up cross-sell logic based on what they bought.
+
+For service businesses, this is onboarding: what happens after someone signs a contract or books their first session. A welcome-to-the-team email, what to expect, and a check-in at day 30 does more for retention than any newsletter.
+
+For a deeper breakdown of flow sequencing and email content for each stage, see our [complete Klaviyo flows guide](/blog).
+
+## Segments and Filters That Actually Matter
+
+You don't need fifty segments on day one. You need five or six that map to real decisions.
+
+- **Engaged in last 90 days** (for your main sending list, protecting deliverability)
+- **VIP / high spend** (top 10% by lifetime value, for special treatment)
+- **Lapsed customers** (no purchase in 6+ months, for win-back)
+- **Newsletter only, never purchased** (different messaging entirely)
+- **Active clients vs. past clients** (service businesses, different cadence for each)
+
+Every flow you build should reference at least one filter tied to these segments, not just the default "everyone who triggers the event." Otherwise you'll email a VIP customer the same generic abandoned cart sequence you send a first-time browser, and that's a fast way to make your best customers feel like a number. For a longer walkthrough of building segments that drive revenue rather than just organising your list, read our [segmentation strategies post](/blog).
+
+## Testing Before You Go Live
+
+Every flow gets tested before it touches a real customer. This isn't optional, and it's where most rushed setups fall over.
+
+- Trigger each flow with a test account and watch it fire in real time.
+- Check every dynamic field (first name, product name, order number) renders correctly, not as a broken merge tag.
+- Confirm the exclusion filters work by testing the "already converted" scenario, not just the happy path.
+- Check mobile rendering. Over 60% of email opens happen on mobile, and a broken layout there kills conversion before anyone reads a word.
+
+## Timeline Expectations
+
+Realistically:
+
+- **Week 1:** account structure, integration, list cleanup
+- **Week 2:** build and test welcome and abandoned cart (or lead nurture) flows
+- **Week 3:** build and test post-purchase/onboarding, set up core segments, go live
+
+Expect flows to need adjustment after the first month of real data. Open rates, click rates, and revenue per recipient will tell you where an email is underperforming, and that's normal. Nobody nails the copy or timing on the first try.
+
+If you'd rather have someone check your setup than guess whether it's right, [run the free email program audit](/tools/email-audit) and get a clear read on what's working and what's costing you revenue. Or [get in touch](/#contact) if you want the whole thing built for you.

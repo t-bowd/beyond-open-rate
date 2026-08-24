@@ -274,7 +274,7 @@
       "setup"
     ],
     "notes": "Step-by-step implementation guide for Klaviyo beginners. Cover: account structure best practices, integrating Shopify/BigCommerce, creating first three flows (welcome, abandoned cart, post-purchase), setting up segments, basic triggers and filters, and testing before going live. Include screenshots, common mistakes to avoid, and timeline expectations. Link to complete Klaviyo flows guide and segmentation strategies post.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "email-automation-software-comparison-australia",
