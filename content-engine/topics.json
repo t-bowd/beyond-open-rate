@@ -193,21 +193,21 @@
       "pillar": "educational",
       "tier": "unaware",
       "topic": "AI didn't replace email strategy. It made the gap between good strategy and bad strategy bigger.",
-      "seed_claim": "AI writes the email in 30 seconds. The decision about who gets it, when, with what suppression logic, in what context — that still takes judgment. AI gives every brand the same production speed. Strategy is now the only differentiator left.",
-      "audience_angle": "Founder who has started using AI for email drafts and thinks they've now solved their email program",
+      "seed_claim": "AI gives every brand the same tools — copy generation, send time optimisation, predictive scoring, path decisions in flows. The output you get from those tools depends entirely on the quality of the program they're running on. Strategy is now the differentiator.",
+      "audience_angle": "Founder who has started using AI for email and thinks the tools are doing the heavy lifting",
       "cta_style": "none",
-      "notes": "The insight is that AI compresses production time, not strategy time. Brands with bad strategy now produce bad emails faster. Don't lead with doom — lead with the implication for competitive positioning."
+      "notes": "The insight is that AI amplifies — a well-built program gets better, a poorly built one fails faster and more efficiently. Don't lead with doom — lead with the competitive positioning angle. Everyone has the same tools now. The program underneath is what separates them."
     },
     {
       "id": "051",
       "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
-      "topic": "We've used AI on client email programs for twelve months. Here's what it's actually good at.",
-      "seed_claim": "AI is genuinely useful for first drafts of high-volume sequences, subject line variants, and rephrasing product descriptions for lifecycle context. It is not useful for deciding who to send to, setting the right suppression window, or knowing when a client's deliverability is about to degrade.",
-      "audience_angle": "Founder or marketer who has heard a lot of AI hype and wants an honest practitioner take rather than a pitch",
+      "topic": "We've used AI on client email programs for twelve months. Here's what actually works.",
+      "seed_claim": "Twelve months of using AI across client programs. What works: send time optimisation on engaged lists, predictive scoring to surface at-risk customers before they lapse, AI path decisions in flows built with the right trigger logic. What doesn't: applying any of it to a program with foundational gaps. The tool is only as good as what it's running on.",
+      "audience_angle": "Founder or marketer who wants a straight practitioner take on AI in email — not hype, not scepticism",
       "cta_style": "soft",
-      "notes": "Be specific about both the wins and the limits. Not 'AI can't replace human creativity' — name the actual things it can't do: segment decisions, suppression logic, lifecycle timing calls, deliverability judgment. Practitioner voice throughout."
+      "notes": "Specific, grounded, from experience. Name the actual features and what they produced. The honest framing isn't 'AI has limits' — it's 'AI works well when the foundation is right.' That's a more useful and more accurate take. Practitioner voice throughout."
     },
     {
       "id": "052",
@@ -215,10 +215,10 @@
       "pillar": "educational",
       "tier": "unaware",
       "topic": "The AI wrote the email in 30 seconds. The decision to send it took 20 minutes.",
-      "seed_claim": "The bottleneck in email has never been writing speed. It's the decision layer — who gets this, who gets suppressed, does this conflict with a flow already running, is this the right moment in the customer's lifecycle. AI doesn't make that faster. It just makes the writing part disappear.",
-      "audience_angle": "Founder who thinks using AI for email means they can now run their whole email program themselves",
+      "seed_claim": "The bottleneck in email has never been writing speed. It's the decision layer — who gets this, what segment, what suppression logic, does this conflict with a flow already running. AI is collapsing the production gap. The brands pulling ahead are using that saved time to sharpen the strategy, not just send more.",
+      "audience_angle": "Founder who uses AI for email drafts and is wondering why results haven't changed much",
       "cta_style": "none",
-      "notes": "Enumerate what goes into the 20-minute decision: segment check, suppression logic, calendar conflict check, brand voice review, lifecycle stage. Make it feel specific and real. The writing was never the hard part."
+      "notes": "Reframe from 'AI doesn't help with decisions' to 'AI freed up time that better brands are spending on strategy.' The implication: you're not using the time right. Enumerate what goes into the 20-minute decision — segment check, suppression, calendar conflict, lifecycle stage. Make it feel specific."
     },
     {
       "id": "053",
@@ -281,10 +281,10 @@
       "pillar": "educational",
       "tier": "unaware",
       "topic": "AI-generated email all sounds the same now. That's an opportunity if your brand doesn't.",
-      "seed_claim": "When every brand uses the same AI tools to write their emails, the output converges. The same cadence, the same sentence structure, the same faux-casual tone. Brand voice used to be hard to maintain at scale. Now it's one of the few things that actually differentiates you in the inbox.",
+      "seed_claim": "When every brand uses the same AI tools to write their emails, the output converges — same cadence, same sentence structure, same faux-casual tone. Brand voice used to be hard to maintain at scale. Now it's one of the few things that actually differentiates you in the inbox. The brands winning in AI email aren't the ones generating more — they're the ones teaching AI to sound like them.",
       "audience_angle": "Founder who uses AI for email drafts and hasn't thought about what it does to their brand distinctiveness",
       "cta_style": "none",
-      "notes": "The insight is competitive: AI homogenises output, which makes genuine brand voice more valuable, not less. Don't pitch brand voice work — just make the reader feel the gap between what their emails sound like and what they could sound like. No CTA needed."
+      "notes": "The insight is competitive: AI homogenises output, which makes genuine brand voice more valuable, not less. Pivot toward the instructive angle — how do you use AI without sounding like everyone else? Brief it properly. Feed it examples. Make the aspiration concrete, not abstract."
     },
     {
       "id": "056",
@@ -292,10 +292,10 @@
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "AI built the flow. That doesn't mean the flow is correct.",
-      "seed_claim": "An AI tool can scaffold a welcome series or abandoned cart flow in minutes. It doesn't know your return window, your product replenishment cycle, your seasonal buying patterns, or which customer segment shouldn't receive a discount email. The structure is generic. A correctly configured flow is specific.",
-      "audience_angle": "Founder who used an AI tool to build their flows and assumes the output is sound",
+      "seed_claim": "An AI tool can scaffold a welcome series or abandoned cart flow in minutes. It can also optimise that flow once it's running. What it can't do is tell you whether the flow is built around the right triggers for your business — your return window, your purchase cycle, which customer segment shouldn't receive a discount email. Getting AI optimisation to work well starts with getting that specificity right.",
+      "audience_angle": "Founder who used an AI tool to build their flows and is wondering why they aren't converting as expected",
       "cta_style": "audit",
-      "notes": "The insight: AI generates a plausible-looking flow that can still be wrong in every meaningful way — wrong timing, wrong suppression, wrong audience, wrong context. A flow that sends is not a flow that converts. CTA to audit to check whether their AI-built flows are actually configured correctly."
+      "notes": "Reframe from 'AI doesn't know your business' (true but sounds like a limitation ad) to 'AI optimises what you give it — so the specificity has to come first.' A flow that sends is not a flow that converts. CTA to audit to check whether their AI-built flows are actually configured for their business."
     },
     {
       "id": "057",
@@ -303,32 +303,76 @@
       "pillar": "educational",
       "tier": "unaware",
       "topic": "First name + product recommendation is not personalisation. This is.",
-      "seed_claim": "Most email 'personalisation' is a merge tag and a Klaviyo recommendation block. Actual personalisation is knowing which customers are at risk of lapsing before they do, which have bought three times and are ready for a higher-AOV offer, and which just returned a product and shouldn't receive a cross-sell. AI makes the first type faster. The second type still requires strategy.",
+      "seed_claim": "Most email personalisation is a merge tag and a recommendation block. AI can surface real personalisation signals at scale — which customers are at risk of lapsing before they stop buying, which are ready for a higher-AOV offer, which just had a bad experience and shouldn't receive a cross-sell. The signals exist in your data. AI can find them. You have to know which ones to look for.",
       "audience_angle": "Founder who thinks dynamic content and product recommendations mean their emails are personalised",
       "cta_style": "none",
-      "notes": "Two-tier personalisation: surface-level (merge tags, AI recommendations) vs. behavioural lifecycle segmentation. Don't dismiss the first — just show what it's missing. Examples should be concrete: the lapsing buyer, the high-LTV segment, the recent returner. The contrast should feel revelatory, not academic."
+      "notes": "Reframe from 'AI only does surface-level personalisation' to 'AI can do real personalisation — but you need to know what to ask it to look for.' Two-tier personalisation: merge tags and product recs (what everyone does) vs. predictive lifecycle signals (what's actually possible). Make the examples concrete."
     },
     {
       "id": "058",
       "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
-      "topic": "Where AI actually fits in a serious email program (and where it doesn't)",
-      "seed_claim": "Use AI for: first drafts of email copy, subject line variants, rephrasing product descriptions for lifecycle context, generating A/B test ideas. Don't use AI for: deciding who gets suppressed, setting flow trigger timing, identifying list hygiene problems, or making judgment calls about your sender reputation. One list is about production speed. The other is about outcomes.",
-      "audience_angle": "Founder or email marketer who uses AI tools but hasn't thought clearly about where they help vs. where they add risk",
+      "topic": "Where AI actually fits in a serious email program",
+      "seed_claim": "AI is already making decisions inside most email platforms — send time, content, which flow a contact goes into. The brands getting results from it had the foundation right first: clean list, proper suppression, flows built around actual customer behaviour. AI makes a well-built program better. It makes a poorly-built one fail more efficiently.",
+      "audience_angle": "Founder or email marketer who has AI features turned on but isn't sure if they're helping",
       "cta_style": "soft",
-      "notes": "This is the practical companion to topic 051 (what AI is good at). Where 051 was a practitioner take, this one is prescriptive — a clear framework for use vs. don't use. Two columns, specific examples, no hedging. Soft CTA — follow or DM for the full breakdown."
+      "notes": "Practical and instructive — not a warning about AI, not a hype piece. The frame: AI is already in your program, the question is whether the foundation is solid enough for it to be working for you. Three things AI can genuinely improve (send timing, path decisions, content relevance) plus the one condition that makes them all work."
     },
     {
       "id": "059",
       "status": "queued",
       "pillar": "educational",
       "tier": "problem_aware",
-      "topic": "Klaviyo just added AI features. That's not the same as having an AI strategy.",
-      "seed_claim": "Klaviyo's AI tools — subject line suggestions, send time optimisation, predictive analytics — are genuinely useful additions. They're also used by every other brand on the platform. Pressing the AI button in Klaviyo doesn't create a competitive edge. Using the data Klaviyo surfaces to build a smarter segmentation and suppression strategy does.",
-      "audience_angle": "Klaviyo user who has turned on the platform's AI features and assumes that's the AI advantage covered",
+      "topic": "Your platform's AI features are on. Here's how to know if they're actually working.",
+      "seed_claim": "Send time optimisation, predictive scoring, AI path decisions — most brands have these turned on and assume they're helping. They might be. Or they might be optimising a disengaged list more efficiently and making the underlying problem harder to see. Here's what to check.",
+      "audience_angle": "Marketer or founder who has turned on platform AI features and hasn't looked closely at whether they're producing better outcomes",
       "cta_style": "soft",
-      "notes": "Name the specific Klaviyo AI features (subject line optimisation, Smart Send Time, predictive CLV, Product recommendations). Acknowledge they're useful. Then draw the line: platform AI features reduce friction — they don't replace the judgment layer. The competitive edge is in how you use the data, not whether you've clicked the AI button. Soft CTA."
+      "notes": "Diagnostic and instructive. Give specific things to check: is optimised send time improving reply-to-open ratio or just shifting when opens happen? Is predictive scoring surfacing different contacts than a simple engagement segment? Is AI path variation actually outperforming the control? Make the reader feel like they have a checklist they can action."
+    },
+    {
+      "id": "060",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Before you turn on AI features in your email platform, check these five things.",
+      "seed_claim": "AI send time optimisation, path decisions, and predictive scoring all run on your list and your data. If the list is unhealthy, the data is thin, or the flows are built on generic templates, AI will optimise in the wrong direction — and it'll do it quietly, without obvious signs that something is wrong.",
+      "audience_angle": "Marketer who is about to turn on or has just turned on AI features in their platform and wants to know if they're set up correctly",
+      "cta_style": "audit",
+      "notes": "Practical checklist: list hygiene (engagement baseline, suppression working), flow architecture (triggers specific to this business, not generic templates), data quality (enough behavioural signal for AI to work from), authentication (delivery solid before optimising), reporting (are you measuring the right outcomes). CTA to audit. This is directly useful content that also frames BOR as the people who get you ready for AI."
+    },
+    {
+      "id": "061",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "gathering_info",
+      "topic": "How to brief AI so your email copy doesn't sound like everyone else's",
+      "seed_claim": "AI trained on the internet writes email that sounds like every other email on the internet. The output is better when you give it better inputs — specific brand voice notes, examples of copy that actually sounds like you, context about where in the lifecycle this email sits and what job it's doing. The brief is the craft now.",
+      "audience_angle": "Founder or marketer who uses AI for email drafts but keeps editing them heavily or feeling like they don't quite sound right",
+      "cta_style": "none",
+      "notes": "Instructive and practical. Walk through what a good AI brief looks like for an email: the job of this email, the segment receiving it, three examples of copy that sounds like the brand, what to avoid, what the CTA is and why. Make it concrete with a worked example. This is shareable and useful content that positions BOR as practitioners who know how to use the tools."
+    },
+    {
+      "id": "062",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "AI can spot which customers are about to lapse. Most brands aren't asking it to.",
+      "seed_claim": "Predictive churn signals exist in your email data — engagement frequency dropping, purchase interval lengthening, browse-without-buy patterns emerging. AI can surface these before the customer goes quiet. Most brands are using AI to write the email. The higher-value use is identifying who needs to receive it urgently.",
+      "audience_angle": "Founder who tracks repeat purchase rate but doesn't have a proactive system for identifying at-risk customers before they lapse",
+      "cta_style": "soft",
+      "notes": "This is the AI-as-insight angle rather than AI-as-copywriter. Specific signals to name: RFM score movement, engagement tier migration, purchase interval relative to category average, browse-without-buy frequency. Make the business case clear — retaining a customer costs less than reacquiring one. Soft CTA."
+    },
+    {
+      "id": "063",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Using AI to personalise email at scale: what's actually possible right now",
+      "seed_claim": "Personalisation used to mean merge tags. Now it means AI making content decisions based on individual behaviour — what someone browsed, bought, or ignored, which stage of the lifecycle they're in, how long since they last engaged. The platforms can do this. Most brands aren't using it because they haven't connected the behavioural data the AI needs.",
+      "audience_angle": "Marketer who wants better personalisation and knows AI should be able to help but isn't sure what's actually available",
+      "cta_style": "soft",
+      "notes": "Set realistic expectations and give a practical framework. Three levels of AI personalisation: send time (easy, turn it on), content blocks (medium, requires product/category data connected), path decisions (advanced, requires clean behavioural data and well-built flows). Position BOR as the people who connect the data and build the flows that make the higher levels work."
     }
   ]
 }
