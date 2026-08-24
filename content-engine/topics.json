@@ -310,7 +310,7 @@
     },
     {
       "id": "058",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
       "topic": "Where AI actually fits in a serious email program (and where it doesn't)",
