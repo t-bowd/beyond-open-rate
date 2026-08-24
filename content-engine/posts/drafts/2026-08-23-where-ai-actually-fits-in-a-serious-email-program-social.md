@@ -1,4 +1,4 @@
-# Social content — Where AI actually fits in a serious email program (and where it doesn't)
+# Social content — Where AI actually fits in a serious email program
 
 Generated: 2026-08-23
 Use the section that matches whichever LinkedIn variant Tim approved.
@@ -10,28 +10,29 @@ Use the section that matches whichever LinkedIn variant Tim approved.
 # 1. INSTAGRAM CAROUSEL
 
 CAROUSEL SLIDE 1 — HOOK
-Braze just shipped AI that makes decisions inside your flows. Without a human in the loop.
+The AI features in your email platform are probably already on. Are they working for you?
 
 CAROUSEL SLIDE 2
-AI running your email program is already here. The question is whether it's working from the right strategy.
+Send time optimisation. Path decisions. Content recommendations. This is live in most platforms right now.
 
 CAROUSEL SLIDE 3
-What AI can do now: decide paths, optimise send time, personalise content at scale.
+The brands getting results from it have one thing in common.
 
 CAROUSEL SLIDE 4
-What it still can't do: know if your list is clean enough for that to mean anything.
+The foundation was right before they turned it on.
 
 CAROUSEL SLIDE 5
-It can optimise on top of your program. It can't build it.
+Clean list. Engaged segments. Flows built around actual customer behaviour.
 
 CAROUSEL SLIDE 6
-The strategy has to come from somewhere. Segments, triggers, architecture, what the AI should actually be deciding.
+When that's in place: AI makes a good program better.
+When it's not: AI makes the problems more efficient.
 
 CAROUSEL SLIDE 7 — CTA
-The platforms are getting smarter. That makes the strategy underneath them matter more. Follow along.
+That's the work. Follow along to see what it looks like.
 
 CAROUSEL CAPTION
-Braze shipped Agent Steps. Every platform is heading this direction. AI making real decisions inside your flows is already live. The part that still needs a human? Building the strategy it executes. Which segments. Which triggers. Whether your list is solid enough to let AI optimise on top of it. That's the conversation worth having right now.
+AI is already running inside most email platforms — send time optimisation, predictive scoring, path decisions in flows. The brands winning with it didn't just turn it on. They had the right foundation in place first. Is your program set up for AI to be working for you?
 
 #EmailMarketing #AIinMarketing #EmailStrategy #MarketingAutomation #MarketingAustralia
 
@@ -40,31 +41,31 @@ Braze shipped Agent Steps. Every platform is heading this direction. AI making r
 # 2. REEL SCRIPT
 
 REEL HOOK (0–3s)
-Braze just shipped AI that makes decisions inside your email flows. Without you in the loop.
+The AI features in your email platform are probably already on. Here's the question you should be asking.
 
 REEL BODY (3–45s)
-Agent Steps. Live now. / AI deciding which path a contact takes / when to send / what content to show. / That's not a future feature. / It's already there.
+Send time optimisation. / Predictive scoring. / Path decisions that adapt in real time based on what your subscribers do. / This is all live already. / And it's genuinely useful.
 
-And every platform is heading this direction.
+But here's the split that decides whether it works for you or against you.
 
-So the question isn't whether AI can run your email program. / It can. / The question is whether it's running the right one.
+The brands getting results from AI in their email program / had the foundation right first. / Clean list. / Engaged segments. / Flows built around how their customers actually behave. / Suppression logic working.
 
-Because the AI needs something to work from. / You have to tell it which segments matter. / Which flows are worth building. / Whether your list is clean enough for optimisation to mean anything / or whether you're just automating a problem faster.
+When that's in place / AI finds patterns you'd never catch manually. / It adapts faster than any human could. / It makes personalisation actually mean something.
 
-The platforms are genuinely good. / Better than they've ever been. / But they amplify. / A well-built program gets better. / A poorly-built program fails more efficiently.
+When it's not in place / AI just makes the problems faster. / A suppression gap gets amplified. / A wrong trigger reaches more people. / A flow pointed the wrong way gets optimised in the wrong direction / which is harder to notice than just getting it wrong.
 
 REEL CTA (45–60s)
-Every brand getting serious about AI email / still needs someone to build the strategy it executes. / Follow along if you want to see what that looks like.
+The question isn't whether AI is in your email program. / It probably already is. / The question is whether the program underneath it is solid enough for AI to help. / Follow along.
 
 REEL ON-SCREEN TEXT
-"AI in your flows: already here"
-"Braze Agent Steps — live now"
-"AI can optimise. It can't strategise."
-"The foundation still needs a human."
-"Strategy first. AI second."
+"AI is already in your email platform"
+"Foundation first"
+"Good program + AI = better"
+"Bad program + AI = faster problems"
+"The ceiling for AI is your foundation"
 
 REEL CAPTION
-AI making decisions inside your email flows isn't coming — it's live. Braze shipped Agent Steps, and every platform is following. The part that still needs a human isn't the execution. It's the strategy the AI runs on.
+AI is already making decisions inside your email program. Send time, content, who goes down which flow. Whether that's working for you or against you depends entirely on what it's built on.
 
 #EmailMarketing #AIinMarketing #EmailDeliverability #MarketingTips #EcommerceMarketing
 
@@ -75,28 +76,28 @@ AI making decisions inside your email flows isn't coming — it's live. Braze sh
 # 1. INSTAGRAM CAROUSEL
 
 CAROUSEL SLIDE 1 — HOOK
-The platforms have caught up faster than people expected.
+Three things AI can genuinely improve in your email automations right now.
 
 CAROUSEL SLIDE 2
-AI inside your email tool isn't a feature. It's how the whole thing works now.
+1. Send timing — not when people generally open, when YOUR list opens.
 
 CAROUSEL SLIDE 3
-Send time optimisation. Content recommendations. AI-generated copy. Agentic flows. All live.
+2. Path decisions — AI that responds to real-time behaviour, not fixed rules.
 
 CAROUSEL SLIDE 4
-The question isn't whether AI can make decisions in your program. It can.
+3. Content relevance — the right message for where someone actually is in their lifecycle.
 
 CAROUSEL SLIDE 5
-The question is whether it has the right foundation to make the right ones.
+All of this exists. All of it is useful.
 
 CAROUSEL SLIDE 6
-AI amplifies. A well-built program gets better. A poorly-built one fails faster.
+But one thing has to be in place first.
 
 CAROUSEL SLIDE 7 — CTA
-We build the foundation the AI runs on. Follow along.
+The ceiling for AI in your email program is your foundation. That's what we build. Follow along.
 
 CAROUSEL CAPTION
-Every major email platform now has AI making real decisions about your sends — path selection, timing, content, suppression. That's not the problem. The problem is that the AI is only as good as the strategy it's built on. If the architecture is wrong, smarter execution just moves people through the wrong journey more efficiently.
+AI can make your email program faster, smarter, and more responsive — but only if the foundation is solid. Here are three things it can genuinely improve right now, and the one condition that has to be in place first.
 
 #EmailMarketing #AIinMarketing #EmailStrategy #MarketingAutomation #AustralianBusiness
 
@@ -105,32 +106,32 @@ Every major email platform now has AI making real decisions about your sends —
 # 2. REEL SCRIPT
 
 REEL HOOK (0–3s)
-The platforms have caught up faster than most people expected.
+Three things AI can genuinely improve in your email program right now.
 
 REEL BODY (3–45s)
-Braze has agent steps now. / AI making path decisions inside your flows. / Send time optimisation — that's been live for two years. / Content recommendations, predictive scoring — all inside the tools already.
+Number one: send timing. / Not when people in general open email. / When your specific subscribers open. / AI finds that pattern from your list. / For high-volume sends it compounds fast.
 
-So yes. / AI can make decisions in your email program. / That part's settled.
+Number two: path decisions. / The better platforms now let AI decide which flow a contact goes into / based on what they just did. / That's not set-it-and-forget-it anymore. / That's a program that actually responds.
 
-The question is whether those decisions are right. / For your list. / For your customers. / For your specific business.
+Number three: content relevance. / Beyond first name and a product recommendation. / The right message for where someone is in their lifecycle / based on what they've actually done, not just a segment they got sorted into months ago.
 
-And that depends entirely on what's underneath it.
+All of this exists. All of it is useful.
 
-A suppression decision is only good if the AI knows your engagement baseline. / Send time optimisation only works on a healthy, clean list. / Personalisation only moves people somewhere useful if the flow architecture is right.
+But here's the one thing that has to be in place first. / A list clean enough and a program structured well enough / for the AI to be optimising in the right direction.
 
-The platforms are amplifiers. / A well-built program gets better with AI. / A poorly-built one fails more confidently.
+Send time optimisation on a disengaged list just delivers noise more efficiently. / Path decisions on wrong trigger logic move people through the wrong journey faster. / And personalisation on thin data is just guessing with extra steps.
 
 REEL CTA (45–60s)
-What we do is build the foundation the AI runs on. / That's the part that still needs a human. / Follow along if you want to see what it looks like.
+The ceiling for AI in your email program is your foundation. / That's what we build. / Follow along.
 
 REEL ON-SCREEN TEXT
-"AI email decisions: already here"
-"Good AI needs good strategy underneath it"
-"Amplifiers: make good programs better"
-"Foundation first."
-"We build what the AI runs on."
+"3 things AI improves in email"
+"Send timing | Path decisions | Content relevance"
+"But the foundation has to come first"
+"AI ceiling = your foundation"
+"We build the foundation."
 
 REEL CAPTION
-AI running your email program isn't coming — it's here. The question is whether it's running the right one. Every platform is now making decisions inside your flows. What they can't do is build the strategy that makes those decisions right for your business.
+AI can genuinely improve three things in your email automations right now. But only if one thing is already in place.
 
 #EmailMarketing #AIinMarketing #EmailDeliverability #MarketingTips #EcommerceEmail
