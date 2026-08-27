@@ -321,7 +321,7 @@
     },
     {
       "id": "059",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Your platform's AI features are on. Here's how to know if they're actually working.",
