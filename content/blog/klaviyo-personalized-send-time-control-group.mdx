@@ -1,0 +1,45 @@
+---
+title: "Klaviyo lets you finally prove if AI send time is working"
+description: "Klaviyo's 27 August update lets brands customise the control group and view aggregate lift data for Personalized Send Time, closing a gap that made the AI feature impossible to properly audit."
+publishedAt: "2026-08-31"
+updatedAt: "2026-08-31"
+author: "Tim"
+tags: ["klaviyo", "platforms", "metrics", "reporting", "automation"]
+faq:
+  - q: "Do I need to turn anything on to get this?"
+    a: "You need Personalized Send Time already running on at least one campaign, and your account needs the Marketing Analytics package or Advanced Klaviyo Data Platform. If you're on a lower tier, the feature exists but the reporting behind it doesn't."
+  - q: "What's the difference between Personalized Send Time and Smart Send Time?"
+    a: "Smart Send Time is the older, exploratory testing method, and it only kicks in above 12,000 recipients. Personalized Send Time is the newer AI feature with reinforcement learning and an automatic control group, and it's the one this update improves."
+  - q: "Should I use a fixed control group or historical?"
+    a: "Start with historical. It benchmarks the AI against what your account was already doing, which is the fairer comparison. A fixed time is useful if you want to test the AI against one specific hour you're curious about, but it's a narrower question."
+  - q: "Is open rate lift from this feature trustworthy?"
+    a: "Treat it as a secondary number. Apple Mail Privacy Protection inflates opens on both sides of the comparison, personalised and control, so the lift percentage is directionally fine but not exact. Placed order lift is the number to actually act on."
+---
+
+Klaviyo pushed an update to Personalized Send Time on 27 August 2026, adding two things brands using the feature have been missing since launch: the ability to customise the control group it tests against, and aggregate analytics that combine results across multiple campaigns instead of showing one at a time.
+
+## What Personalized Send Time actually does
+
+Personalized Send Time uses reinforcement learning to work out when each individual recipient is most likely to open, click, or buy, then schedules their message for that moment in their own timezone. It's Klaviyo's newer AI send-time feature, sitting above the older Smart Send Time testing method that only applies once an account passes 12,000 recipients. Personalized Send Time works on email, SMS, push, and WhatsApp campaigns, though not yet inside flows.
+
+To prove the AI is actually helping, Klaviyo has always run a control group behind the scenes: a random slice of recipients who get the same campaign on a non-personalised schedule, so the personalised group has something to be measured against. Until this update, you had no say in how that control group was built.
+
+## The gap this closes
+
+Before 27 August, the control group baseline was whatever Klaviyo decided, and you saw performance one campaign at a time. That made the feature close to impossible to audit properly. A brand running weekly campaigns had no way to ask "is this actually working across the last two months," only "did this one send do better than an unspecified baseline."
+
+Now you can set the control group to historical send time, which benchmarks against your account's own past sending pattern, or to a fixed hour if you want to test against something specific. You can apply that setting across every campaign at once instead of configuring it per-send. And the aggregate analytics view rolls open rate lift, click rate lift, and placed order lift up across campaigns, so you're looking at a trend instead of noise from a single send.
+
+## The catch
+
+This reporting sits behind Klaviyo's Marketing Analytics package or Advanced Klaviyo Data Platform, both of which are add-ons on top of a standard subscription. Personalized Send Time itself has been available more broadly, but the tools to check whether it's earning its keep are paywalled separately. If you turned the feature on because a Klaviyo rep or onboarding email recommended it, there's a reasonable chance you've been running it blind, with no visibility into whether it's actually lifting revenue for your account specifically rather than Klaviyo's aggregate case studies.
+
+Analytics also only appear 48 hours after a campaign finishes, and open rate lift excludes bot activity from Apple Mail Privacy Protection on both sides of the comparison, so it's a relative number, not an absolute one. Placed order lift is the figure that reflects actual revenue impact, and it's the one worth checking first.
+
+## What to do about it
+
+Check whether your account has Marketing Analytics or Advanced KDP before assuming you can see any of this. If you can, set the control group to historical rather than leaving Klaviyo's default, and apply that setting account-wide so every campaign is measured the same way. Give it two or three weeks of campaigns, then look at the aggregate placed order lift, not the open rate lift, and not a single campaign's result. If the lift is negligible or negative, turning Personalized Send Time off and sending at a fixed time you control is a legitimate option, not a step backward.
+
+If you don't have access to this reporting tier, don't take the feature's value on faith. Ask your Klaviyo rep for a cost comparison before renewing, or run your own manual A/B split against a fixed send time to get a rough answer without paying for the add-on.
+
+Not sure how your current setup would hold up? [Run the free audit](/tools/email-audit), ten questions on your automations, deliverability, and reporting, with a score and a prioritised list of what to fix first.
