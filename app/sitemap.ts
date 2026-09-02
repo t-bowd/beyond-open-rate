@@ -1,4 +1,6 @@
 import { execSync } from "node:child_process";
+import { statSync } from "node:fs";
+import { join } from "node:path";
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { getAllPosts } from "@/lib/blog";
@@ -6,11 +8,10 @@ import { getAllSeoPages } from "@/lib/seo-pages";
 
 const u = (path: string) => `${site.url}${path}`;
 
-// Real per-file last-edit date from git history, NOT `new Date()`.
-// `new Date()` reflects "when this build ran", which fires on every
-// deploy even when a given page's content didn't change, so every page
-// would falsely report "updated today". Reading the actual last commit
-// date per file keeps the signal meaningful without manual upkeep.
+// Per-file last-edit date. Tries git log first (accurate commit date),
+// falls back to fs.statSync mtime (accurate file date, works on Vercel
+// where git history is unavailable), then finally the build time.
+// Never returns new Date() for every file — that makes Google ignore lastmod.
 function lastModified(relativePath: string): Date {
   try {
     const iso = execSync(`git log -1 --format=%aI -- "${relativePath}"`, {
@@ -19,7 +20,12 @@ function lastModified(relativePath: string): Date {
     }).trim();
     if (iso) return new Date(iso);
   } catch {
-    // git not available (e.g. some build environments), fall through
+    // git not available in this build environment
+  }
+  try {
+    return statSync(join(process.cwd(), relativePath)).mtime;
+  } catch {
+    // file not found
   }
   return new Date();
 }
