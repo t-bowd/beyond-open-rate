@@ -332,7 +332,7 @@
     },
     {
       "id": "060",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Before you turn on AI features in your email platform, check these five things.",
