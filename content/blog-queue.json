@@ -552,5 +552,17 @@
     ],
     "notes": "Target both ActiveCampaign consultant and Adelaide queries. Cover when AC works for e-commerce vs when Klaviyo is better, what AC consultants do differently than Klaviyo experts, pricing expectations, and migration scenarios. Position Beyond Open Rate's expertise while acknowledging platform limitations. Include Adelaide-specific case study if possible.",
     "status": "queued"
+  },
+  {
+    "id": "email-audit-checklist-revenue-impact-analysis",
+    "title": "Email Marketing Audit: 12-Point Revenue Impact Assessment (Free Checklist)",
+    "keyword": "email audit",
+    "tags": [
+      "audit",
+      "optimization",
+      "deliverability"
+    ],
+    "notes": "Practical, actionable audit framework targeting 'email audit' and 'audit email' queries. Focus on revenue-impacting issues: deliverability red flags, automation gaps, segmentation opportunities, and deliverability setup. Include free downloadable checklist and Klaviyo-specific audit screenshots. Shorter, more tactical angle than existing 47-point checklist post. Link to SPF/DKIM/DMARC, deliverability, and segmentation guides.",
+    "status": "queued"
   }
 ]
