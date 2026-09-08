@@ -343,7 +343,7 @@
     },
     {
       "id": "061",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
       "topic": "How to brief AI so your email copy doesn't sound like everyone else's",
