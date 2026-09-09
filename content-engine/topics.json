@@ -354,7 +354,7 @@
     },
     {
       "id": "062",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "AI can spot which customers are about to lapse. Most brands aren't asking it to.",
