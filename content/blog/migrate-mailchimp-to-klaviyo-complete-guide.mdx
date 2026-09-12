@@ -1,0 +1,99 @@
+---
+title: "Mailchimp to Klaviyo Migration: Complete Step-by-Step Integration Guide for Australian Stores"
+description: "A practical Mailchimp to Klaviyo integration guide covering data export, consent, automations, integrations and testing for Australian ecommerce stores."
+publishedAt: "2026-09-11"
+author: "Tara"
+tags: ["klaviyo", "mailchimp", "migration"]
+faq:
+  - q: "How long does a Mailchimp to Klaviyo migration take?"
+    a: "For most Australian stores under 50,000 contacts, plan for 2 to 4 weeks. That covers data export, consent mapping, rebuilding automations, reconnecting integrations and running both platforms in parallel for at least one full send cycle before you cut over."
+  - q: "Will I lose my subscriber consent history when I migrate to Klaviyo?"
+    a: "Mailchimp doesn't export opt-in timestamps or consent source by default, so you need to pull that data manually via API or a migration tool before cancelling your Mailchimp account. Without it, you can't prove consent under the Spam Act 2003 if a complaint is ever raised."
+  - q: "Can Klaviyo import my Mailchimp automations directly?"
+    a: "No. Klaviyo and Mailchimp use different automation logic, so flows like abandoned cart, welcome series and post-purchase sequences need to be rebuilt from scratch in Klaviyo. This is actually an advantage, most stores use the rebuild to fix flows that were underperforming anyway."
+---
+
+Migrating from Mailchimp to Klaviyo isn't a data transfer. It's a rebuild, and if you treat it like a simple export/import job, you'll lose your consent records, break your abandoned cart flow for two weeks, and watch your open rates tank because nobody warmed up the new sending domain.
+
+Done properly, the migration takes 2 to 4 weeks and you come out the other side with better-performing automations than you had on Mailchimp. Done badly, you lose revenue for a month and spend another month untangling why your flows aren't firing. Here's the version that doesn't cost you either.
+
+## Why Australian Stores Are Making the Switch
+
+Mailchimp was built for newsletters. Klaviyo was built for stores that need email and SMS to talk to their Shopify or BigCommerce data in real time, product viewed, cart value, purchase history, predicted next order date.
+
+That difference shows up directly in revenue. Mailchimp's ecommerce automations are generic. Klaviyo's are built around actual purchase behaviour, which is why most stores that switch see their flow revenue (abandoned cart, browse abandonment, post-purchase) increase within the first two months, not because Klaviyo is magic, but because the segmentation is finally granular enough to send the right message to the right person.
+
+> **Benchmark:** Stores that rebuild their flows properly during migration, rather than replicating Mailchimp's setup, typically see abandoned cart recovery rates move from the 3-4% range to 5-8% within 60 days of going live on Klaviyo.
+
+If you're still deciding whether the switch is worth it, our [Klaviyo vs Mailchimp comparison](/blog/klaviyo-vs-mailchimp) breaks down where each platform actually wins.
+
+## The Realistic Timeline
+
+Forget "migrate in a weekend." Here's what actually happens, week by week:
+
+- **Week 1:** Export and clean Mailchimp data, map consent history, set up Klaviyo account and domain authentication (SPF/DKIM).
+- **Week 2:** Rebuild core flows (welcome, abandoned cart, post-purchase, winback), reconnect Shopify/BigCommerce and other integrations.
+- **Week 3:** Test everything, run both platforms in parallel with Mailchimp automations paused, send campaigns from Klaviyo only.
+- **Week 4:** Full cutover, cancel Mailchimp, monitor deliverability closely for the first fortnight.
+
+Domain authentication alone needs 48 to 72 hours to propagate properly, so don't leave it until the week you plan to launch.
+
+## Step 1: Export and Clean Your Mailchimp Data
+
+Export your full contact list, but don't just grab email addresses. You need subscription status, tags, custom fields, and purchase history if it's stored in Mailchimp.
+
+This is also your chance to clean house. If a chunk of your list hasn't opened anything in 12 months, importing them straight into Klaviyo and emailing them on day one is the fastest way to tank your sender reputation before you've even started. Segment them out and handle them separately with a re-engagement campaign, or leave them behind entirely.
+
+## Step 2: Preserving Subscriber Consent
+
+This is the step most guides skip, and it's the one that matters most for Australian stores. The **Spam Act 2003** requires you to demonstrate consent for every commercial email you send. Mailchimp's standard export doesn't include opt-in date or opt-in source, only current subscription status.
+
+Before you cancel Mailchimp, pull consent metadata via the API or a dedicated migration tool (Klaviyo has native Mailchimp import support that carries some of this across, but verify it caught opt-in timestamps). If you can't prove when and how someone consented, treat them as unconfirmed and run them through a fresh opt-in on import rather than risk a complaint with no paper trail.
+
+## Step 3: Recreating Your Automations in Klaviyo
+
+Your Mailchimp automations won't transfer. Klaviyo's flow builder uses different triggers, different logic, and considerably more data points, which means this is a rebuild, not a copy-paste job.
+
+Prioritise in this order:
+
+1. **Welcome series** – first impression and first sale opportunity
+2. **Abandoned cart** – usually your highest ROI flow
+3. **Browse abandonment** – Mailchimp often doesn't support this well, Klaviyo does natively
+4. **Post-purchase / cross-sell** – built around actual order data
+5. **Winback / sunset** – protects your sender reputation long term
+
+If you've never built flows in Klaviyo before, our [Klaviyo email automation setup guide](/blog/klaviyo-email-automation-setup) walks through the logic and timing for each of these from scratch.
+
+## Step 4: Reconnecting Your Integrations
+
+Klaviyo's real strength is the native Shopify/BigCommerce integration, but it needs to be set up correctly to pull product data, order status and customer profiles into your flows. Reconnect and verify:
+
+- Your store platform (Shopify, BigCommerce, WooCommerce)
+- SMS provider if you're running Klaviyo SMS
+- Review platforms (Yotpo, Judge.me)
+- Signup forms and popups, these usually need to be rebuilt, not just repointed
+- Any CRM or helpdesk tools pulling email engagement data
+
+Every integration you miss is a segment that won't trigger, or a flow that fires on stale data.
+
+## Step 5: Testing Before You Flip the Switch
+
+Send test versions of every flow to yourself and check personalisation fields, product recommendations, discount codes and unsubscribe links. Place a test order and confirm the abandoned cart and post-purchase flows actually fire on your live store data, not just in preview mode.
+
+Run Klaviyo and Mailchimp in parallel for at least one full week with Mailchimp's automations paused (not deleted, paused), so you have a fallback if something breaks. Only send live campaigns from Klaviyo during this window to avoid duplicate sends hitting the same subscriber from both platforms.
+
+## Common Pitfalls That Cost Stores Money
+
+- **Skipping domain warmup** – sending your full list from a new domain on day one tanks deliverability. Ramp up volume over 7 to 10 days.
+- **Losing consent data** – covered above, but it's the most common compliance gap we see.
+- **Forgetting embedded forms** – popups and signup forms hardcoded to Mailchimp's API will silently fail after cutover.
+- **Running both platforms live simultaneously** – duplicate emails annoy subscribers and spike unsubscribe rates.
+- **Not remapping segments** – Mailchimp tags don't translate directly to Klaviyo segments, and lazy remapping means your flows target the wrong people.
+
+## Migration Checklist
+
+- [ ] Export contacts with tags, custom fields and consent metadata
+- [ ] Set up domain authentication (SPF/DKIM) at least 72 hours before sending
+- [ ] Clean and segment dormant contacts before import
+- [ ] Rebuild welcome, abandoned cart, browse abandonment, post-purchase and winback flows
+- [ ] Reconnect store platform, SMS,

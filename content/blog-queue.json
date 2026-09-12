@@ -334,7 +334,7 @@
       "migration"
     ],
     "notes": "Target migration intent with practical walkthrough: data export/import process, preserving subscriber consent, recreating automations in Klaviyo, handling integrations, testing before full switch, and common pitfalls. Include timeline and checklist. Link to 'Klaviyo vs Mailchimp' comparison and 'Klaviyo email automation setup' posts.",
-    "status": "queued"
+    "status": "published"
   },
   {
     "id": "klaviyo-agency-australia-certification-partner-comparison",
