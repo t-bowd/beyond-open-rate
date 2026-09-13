@@ -1,0 +1,45 @@
+---
+title: "Klaviyo Headless: what it means when Claude and ChatGPT can run your account"
+description: "Klaviyo opened its platform to AI agents with 260+ MCP tools and 490+ APIs, letting Claude or ChatGPT read and act on your customer data directly. Here's what Australian e-commerce brands need to check before switching it on."
+publishedAt: "2026-09-14"
+updatedAt: "2026-09-14"
+author: "Tim"
+tags: ["platforms", "klaviyo", "technical"]
+faq:
+  - q: "Do I have to turn on Klaviyo Headless or connect an AI agent to my account?"
+    a: "No. It's an opt-in architecture change, not a default. Your existing campaigns, flows and dashboards keep working exactly as they do now if you never connect an MCP client."
+  - q: "Is it safe to let ChatGPT or Claude read our customer data through this?"
+    a: "It depends entirely on what access you grant and to whom. The MCP connection uses your account credentials, so anyone with that connection has the same reach as a logged-in user with full permissions unless you scope it down. Treat it like handing out an admin login, not like installing a harmless plugin."
+  - q: "Does this change how the Australian Privacy Act applies to our email data?"
+    a: "The Act doesn't care what tool touches the data, it cares what happens to it. If an AI agent can read customer profiles, purchase history or segment data, that's a use of personal information you need to account for in your privacy policy and your data handling practices, same as any other integration."
+  - q: "What's the actual benefit for a brand that isn't technical?"
+    a: "Faster reporting and analysis without waiting on a developer or an agency. A marketer can ask a connected AI tool for a plain-English breakdown of flow performance or a draft campaign brief pulled from real account data, instead of exporting CSVs and building it manually."
+---
+
+Klaviyo announced Klaviyo Headless at its K customer conference in Boston on 9 September 2026 (10 September in Australia), opening its platform so AI agents like Claude and ChatGPT can read and act on customer data without anyone opening the Klaviyo dashboard. The architecture exposes more than 260 Model Context Protocol tools and over 490 APIs, and it lands alongside an expanded integration with Anthropic that runs these workflows directly inside Claude Chat and Cowork.
+
+## What Klaviyo Headless actually is
+
+Klaviyo built its Model Context Protocol server so external AI systems can connect straight to an account's data and take action inside it, campaigns, flows, segments, customer profiles, the lot. Co-founder Andrew Bialecki framed it as a bet that an agent's usefulness comes down to three things: whether it understands a brand's data, whether it can reach that understanding from wherever it's running, and whether it can act on it for every customer. Instead of building every agent feature inside Klaviyo's own interface, the company decided to let Claude, ChatGPT and custom tools plug straight into the account.
+
+In practice that means a marketer can build a live reporting dashboard in a tool like Cursor pulling real Klaviyo numbers, or set up an automated weekly performance review that posts findings straight to Slack, all without touching the Klaviyo UI. Klaviyo also shipped SQL in plain English, so someone with no query background can ask for a segment or a data cut in ordinary sentences and get a structured answer back.
+
+## Why this is different from Klaviyo's existing AI features
+
+Klaviyo already builds AI into the platform through Composer and Customer Agent, the products it picked up when it acquired Elias Torres's Agency team in August. That earlier move put AI agents to work inside Klaviyo's own walls, building campaigns and handling support from within the account. Headless is the opposite direction: it opens the walls so agents running somewhere else entirely, on Anthropic's or OpenAI's infrastructure, can read and act on the same data. One is Klaviyo building the agent. The other is Klaviyo handing outside agents the keys.
+
+That distinction matters because it changes who is accountable for what an agent does with your customer data. When Composer drafts a campaign, it's still Klaviyo's product operating inside Klaviyo's environment. When a connected instance of Claude or ChatGPT queries your account through MCP, you're relying on your own configuration of that connection, not Klaviyo's internal guardrails, to control what gets read and what gets changed.
+
+## The access question brands need to answer first
+
+An MCP connection authenticates with your account credentials. Anyone holding that connection has whatever reach you've granted it, which by default can mean full read and write access to customer profiles, purchase history, segments and campaign controls. Before anyone on your team connects an AI tool to your Klaviyo account, work out exactly what that tool can see and touch, who set up the connection, and whether it can be revoked without disrupting anything else. This is closer to issuing an admin login than installing a plugin, and it should go through whoever in your business signs off on data access, not just whoever finds it useful.
+
+## The compliance angle Australian brands can't skip
+
+This lands in the middle of the second tranche of Australian Privacy Act reform, currently open for consultation until 18 September 2026, which tightens direct marketing rules and requires consent before personal information is used or shared for certain purposes. The Privacy Act doesn't distinguish between a person and an AI agent reading customer data, a use is a use. If a connected agent can pull profiles, purchase history or engagement data out of Klaviyo, that access needs to be reflected in your privacy policy and covered by your existing consent basis for direct marketing. Don't wait for the reform to pass before sorting this out, get it right now while the connection is new and the access list is short.
+
+## What to do about it
+
+Start by deciding whether your business needs this at all right now. If nobody on your team is asking for live dashboards or agent-run reporting, there's no reason to open the connection just because it exists. If you do want it, scope the access down to what the task actually requires, reporting and read access for a dashboard build doesn't need write access to segments or campaign sends. Document who set up any MCP connection, what it can access, and how to switch it off. Then update your privacy policy to reflect any AI tool that touches customer data, not just the ones your customers can see.
+
+Not sure how your current setup would hold up? [Run the free audit](/tools/email-audit), ten questions on your automations, deliverability, and reporting, with a score and a prioritised list of what to fix first.
