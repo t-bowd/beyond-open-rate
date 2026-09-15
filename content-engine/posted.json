@@ -255,5 +255,12 @@
     "published_at": "2026-09-12T02:43:33.162Z",
     "schedule_time": "2026-09-14T08:00:00.000+10:00",
     "variant": "B"
+  },
+  {
+    "id": "063",
+    "file": "2026-09-13-using-ai-to-personalise-email-at-scale-whats-actua.mdx",
+    "published_at": "2026-09-15T08:44:11.096Z",
+    "schedule_time": "2026-09-16T08:00:00.000+10:00",
+    "variant": "A"
   }
 ]
