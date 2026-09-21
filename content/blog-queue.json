@@ -552,5 +552,29 @@
     ],
     "notes": "Target both ActiveCampaign consultant and Adelaide queries. Cover when AC works for e-commerce vs when Klaviyo is better, what AC consultants do differently than Klaviyo experts, pricing expectations, and migration scenarios. Position Beyond Open Rate's expertise while acknowledging platform limitations. Include Adelaide-specific case study if possible.",
     "status": "queued"
+  },
+  {
+    "id": "best-klaviyo-flows-for-ecommerce-revenue",
+    "title": "Best Klaviyo Flows for E-Commerce: 12 Automations Ranked by Revenue Impact",
+    "keyword": "best klaviyo flows",
+    "tags": [
+      "klaviyo",
+      "email automation",
+      "e-commerce flows"
+    ],
+    "notes": "Target the 'best klaviyo flows' query at position 63. Structure as a ranked list with revenue benchmarks for each flow type (welcome, browse abandonment, cart abandonment, post-purchase, win-back, etc.). Include screenshots from real Australian Klaviyo accounts, conversion rate benchmarks, and setup difficulty ratings. Link to existing complete guide and individual flow deep-dives.",
+    "status": "queued"
+  },
+  {
+    "id": "ecommerce-email-marketing-agency-australia-guide",
+    "title": "How to Choose an E-Commerce Email Marketing Agency in Australia: 23-Point Vetting Checklist",
+    "keyword": "ecommerce email marketing agency",
+    "tags": [
+      "email marketing agency",
+      "e-commerce",
+      "australia"
+    ],
+    "notes": "Target both 'ecommerce email marketing agency' and 'ecommerce email marketing australia' queries. Create comprehensive vetting guide covering: Klaviyo certification status, e-commerce specialization proof, client references, deliverability expertise, compliance knowledge, contract terms, and red flags. Include questions to ask in discovery calls and what to look for in proposals. Link to city-specific agency guides (Melbourne, Perth, Brisbane) and existing agency content.",
+    "status": "queued"
   }
 ]
