@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Email & Lifecycle Marketing — Beyond Marketing",
+    "description": "Email and lifecycle marketing for Australian businesses. Klaviyo, Braze, ActiveCampaign, HubSpot and more — built to turn your list into predictable, compounding revenue."
+  },
+  "hero": {
+    "label": "Email & Lifecycle",
+    "titlePre": "Your emails",
+    "titleHighlight": "owe you money",
+    "titlePost": "",
+    "sub": "The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable."
+  },
+  "intro": [
+    "You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?",
+    "Here's what we see constantly: businesses sending campaigns that land in spam, automation that hasn't been touched since setup day, and a list full of people who stopped caring months ago.",
+    "Nobody flagged it. Nobody fixed it. Every month, that's revenue you didn't see and can't get back.",
+    "Most agencies will sell you on open rates and design. We don't. We care about one thing: whether your email program is making you money. If it isn't, we find out why, and we fix it."
+  ],
+  "guarantee": {
+    "eyebrow": "Our retainer promise",
+    "headline": "Results guaranteed or we'll work for free.",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current email benchmarks within 90 days, or we'll work for free until we do.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "benefits": {
+    "heading": "What we do",
+    "items": [
+      "Lifecycle automation — welcome flows, post-purchase, win-back, browse and cart abandonment, all built around actual customer behaviour",
+      "Campaign strategy and execution — planned against your commercial calendar, not just whenever someone remembers",
+      "Platform setup and migration — Klaviyo, Braze, ActiveCampaign, HubSpot, Customer.io; whatever fits your stack",
+      "List health and deliverability — segmentation, suppression, sender reputation, so your emails actually land in the inbox",
+      "Revenue reporting — benchmarks that connect to revenue, not open rates padded to look good",
+      "Ongoing optimisation — tests, iterations, and improvements across flows and campaigns every month"
+    ],
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "Which email platforms do you work with?",
+      "a": "Klaviyo, Braze, ActiveCampaign, HubSpot, Customer.io, Mailchimp and more. We'll recommend the right platform for your stage and budget if you're not locked in yet."
+    },
+    {
+      "q": "Do you only work with ecommerce brands?",
+      "a": "No. Email works for ecommerce, SaaS, B2B and service businesses. The flows and campaigns look different, but the principle is the same: turn the people who've heard of you into people who buy from you, and keep them buying."
+    },
+    {
+      "q": "What does a retainer include?",
+      "a": "Strategy, campaign execution, flow management and reporting. The exact scope depends on your program — some clients need ongoing campaign support, others need us to build and then hand over. We scope it around what will make the biggest difference."
+    },
+    {
+      "q": "How long before we see results?",
+      "a": "Technical fixes and flow improvements can show movement within weeks. Compounding results from a well-run program build over months. We set clear targets up front so you know what we're working toward."
+    },
+    {
+      "q": "What access do you need?",
+      "a": "Access to your email platform, and ideally your ecommerce or CRM data. Read-only is fine for the audit phase. We'll tell you exactly what we need before we start."
+    }
+  ]
+}

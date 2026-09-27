@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "SEO Services — Beyond Marketing, Australia",
+    "description": "SEO built around the searches that lead to sales, so the traffic you earn turns into revenue, not bounce rates. Technical SEO, keyword research and content for Australian businesses."
+  },
+  "hero": {
+    "label": "SEO",
+    "titlePre": "Your competitors are ranking for",
+    "titleHighlight": "your customers",
+    "titlePost": ".",
+    "sub": "SEO built around the searches that lead to sales, so the traffic you earn turns into revenue, not bounce rates."
+  },
+  "intro": [
+    "Most businesses either ignore SEO, or pay for it and never find out what it's doing.",
+    "Monthly reports full of keyword positions nobody searches for. Blog posts written for search engines instead of buyers. Traffic that arrives, bounces, and never comes back. Meanwhile, the searches that lead to sales go to whoever bothered to show up for them.",
+    "Rankings mean nothing if the traffic doesn't buy. We target the searches your customers make when they're ready to act. Then we make sure the pages they land on convert, and that visitors who aren't ready yet join your email list instead of disappearing."
+  ],
+  "guarantee": {
+    "eyebrow": "Our commitment",
+    "headline": "Honest reporting, always.",
+    "body": "No guaranteed rankings — nobody controls how search engines rank pages, and be wary of anyone who claims otherwise. What we commit to is doing the right work, consistently, and reporting honestly on what it's returning.",
+    "ctaText": "Find out what search traffic you're missing",
+    "ctaHref": "/strategy-session"
+  },
+  "benefits": {
+    "heading": "What you get",
+    "items": [
+      "A strategy call before any work starts — your SEO plan gets built around your customers, services and goals, not a generic keyword list",
+      "A technical audit of your website — we find and fix what's stopping search engines from finding, reading and ranking your pages",
+      "Keyword research based on buying intent — we go after the searches that lead to enquiries and sales, not just the ones with the biggest numbers",
+      "Optimisation of your existing pages — your current content gets improved first, because that's usually the fastest win",
+      "Content planned and written to rank and to sell — every piece has a job: bring in the right visitor and move them closer to buying",
+      "Local search optimisation — if you serve specific areas, you show up when nearby customers are looking",
+      "Visibility in AI search — your content is structured so AI assistants like ChatGPT, Gemini and Perplexity can find, understand and reference your business when people ask for recommendations",
+      "Pages that turn search traffic into customers — clear calls to action and email capture mean visitors who aren't ready to buy don't leave for good",
+      "Monthly reporting tied to enquiries and revenue from search — you see what organic traffic brought in, not a list of rankings"
+    ],
+    "ctaText": "Find out what search traffic you're missing",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "How long before we see results?",
+      "a": "SEO is the long game. Technical fixes and page improvements can show movement within weeks, but meaningful growth in traffic and revenue builds over months. We set clear targets up front so you know what we're measuring against."
+    },
+    {
+      "q": "Can you guarantee first-page rankings?",
+      "a": "No, and be wary of anyone who does. Nobody controls how search engines rank pages. What we can commit to is doing the right work, consistently, and reporting honestly on what it's returning."
+    },
+    {
+      "q": "What access do you need?",
+      "a": "Access to your website, analytics and search performance data. Read-only is fine for the audit. We'll tell you exactly what we need before we start."
+    },
+    {
+      "q": "Do you write the content?",
+      "a": "Yes. We'll need your input on what makes your business different, and we handle the research, writing and optimisation."
+    },
+    {
+      "q": "Do we need a new website for SEO to work?",
+      "a": "Usually not. Most sites can be improved significantly as they are. If something structural is holding you back, we'll tell you, and scope it separately."
+    },
+    {
+      "q": "Can you run SEO alongside our other marketing?",
+      "a": "Yes, and it works better that way. Search traffic that lands on a converting page and feeds your email list is worth far more than traffic that leaves after one visit."
+    }
+  ]
+}

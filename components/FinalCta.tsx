@@ -6,14 +6,17 @@ import homepageData from "@/content/homepage/homepage.json";
 const { finalCta } = homepageData;
 
 export default function FinalCta() {
+  const platforms = (finalCta as { platforms?: string[] }).platforms;
   return (
     <section className="section final-cta" data-screen-label="Final CTA">
       <div className="wrap final-cta-inner">
-        <div className="final-cta-platforms">
-          {finalCta.platforms.map((p) => (
-            <span className="final-cta-badge" key={p}>{p}</span>
-          ))}
-        </div>
+        {platforms && platforms.length > 0 && (
+          <div className="final-cta-platforms">
+            {platforms.map((p) => (
+              <span className="final-cta-badge" key={p}>{p}</span>
+            ))}
+          </div>
+        )}
         <Reveal as="h2" className="display-huge">
           {finalCta.headline}
         </Reveal>

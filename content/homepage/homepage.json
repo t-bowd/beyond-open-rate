@@ -1,11 +1,121 @@
 {
   "hero": {
-    "headlinePre": "Your emails",
-    "headlineHighlight": "owe you money",
-    "subheadline": "The money in your email program isn't going to find itself. We make it simpler, faster and genuinely profitable.",
-    "ctaText": "Let's go",
-    "noteWitty": "We won't ghost you. Unlike your unengaged subscribers."
+    "headlinePre": "You're paying to fill a",
+    "headlineHighlight": "bucket with holes in it",
+    "subheadline": "Most businesses pour budget into ads and never fix what happens after the click. We oversee the whole funnel, to keep customers buying long after the first sale.",
+    "ctaText": "Book your free session",
+    "noteWitty": "No obligation. No pitch. Sessions are limited, so don't sit on it."
   },
+  "problemAgitation": {
+    "lead": "Most businesses pay for attention and then lose it.",
+    "paragraphs": [
+      "You boost a few posts, run some ads, maybe hire someone for SEO. Traffic goes up. Sales barely move. The people who do buy, buy once, and you never hear from them again.",
+      "Every gap costs you. Leads land on a page that doesn't convert. Ad spend chases people you already had. Customers who would have come back were never asked.",
+      "Nobody connected the dots, because your ad person, your SEO person and your email person have never been in the same room.",
+      "We are the same room. Every channel we run gets planned against one question: is this making you money? If it isn't, we find where it's leaking, and we find a fix for it."
+    ]
+  },
+  "splitOffer": {
+    "eyebrow": "Current offers",
+    "offers": [
+      {
+        "id": "strategy",
+        "title": "Claim your free strategy session",
+        "body": "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your marketing stands and how it ties to revenue. Act fast — sessions are limited.",
+        "ctaText": "Claim your free session",
+        "ctaHref": "/strategy-session"
+      },
+      {
+        "id": "audit",
+        "title": "Revenue killers exposed",
+        "body": "What marketing agencies won't tell you... and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
+        "ctaText": "Take the free audit",
+        "ctaHref": "/tools/email-audit"
+      }
+    ]
+  },
+  "fullFunnel": {
+    "eyebrow": "The whole funnel",
+    "headline": "Every stage of your funnel is either making you money or costing you money.",
+    "body": "Getting found. Getting the click. Getting the sale. Getting the next sale. Most agencies own one of those and hope the rest works out. We plan all four together, so what you spend at the top keeps earning at the bottom.",
+    "stages": [
+      {
+        "label": "Get found",
+        "channels": "SEO, Organic Social",
+        "body": "Show up when customers are already searching, and stay in their feed between purchases.",
+        "href": "/seo"
+      },
+      {
+        "label": "Get the click",
+        "channels": "Paid Social",
+        "body": "Ads aimed at people likely to buy. Budget goes where the return is, and gets pulled from where it isn't.",
+        "href": "/paid-social"
+      },
+      {
+        "label": "Get the sale",
+        "channels": "Landing Pages",
+        "body": "Pages built to convert the traffic you've paid for, so fewer visitors leave empty-handed.",
+        "href": "/landing-pages"
+      },
+      {
+        "label": "Get the next sale",
+        "channels": "Email & Lifecycle",
+        "body": "Automations that bring customers back again and again, working 24/7 while you run the business.",
+        "href": "/email-lifecycle"
+      }
+    ]
+  },
+  "differentiator": {
+    "eyebrow": "Boutique, on purpose",
+    "headline": "Big-agency capability. None of the big-agency bloat.",
+    "paragraphs": [
+      "Large agencies put a senior strategist in the pitch and a junior on your account. Freelancers are cheap until they vanish mid-project. We're a specialist team where the people who plan your strategy stay across the work.",
+      "More than 20 years of combined experience across email and lifecycle marketing, social media and full-funnel strategy, from start-ups to global enterprises, means we know what happens to a customer after the click. Most agencies stop at the sale. That's where we're just getting started.",
+      "No platform commissions shaping our recommendations. No reports padded with likes and impressions. Just a plan that fits your business, your budget and your stage."
+    ]
+  },
+  "howWeWork": {
+    "headline": "How we work",
+    "steps": [
+      {
+        "number": "1",
+        "label": "Find the leaks",
+        "body": "We start with your goals and where you're leaving money on the table, before spending a cent more on getting attention."
+      },
+      {
+        "number": "2",
+        "label": "Build the plan that fits",
+        "body": "Not every business needs every channel. We recommend what will pay off at your stage, and we'll tell you what to skip."
+      },
+      {
+        "number": "3",
+        "label": "Run it, measure it, fix it",
+        "body": "Every channel reports against revenue. If something's underperforming, you'll hear it from us first."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do I need every service?",
+      "a": "No. Most clients start with the one or two channels that will make the biggest difference right now, then add more as it makes sense. We'd rather you commit to less and see a return than spend more on channels you aren't ready for."
+    },
+    {
+      "q": "Can you just run our ads, SEO or email on its own?",
+      "a": "Yes. We'll also tell you if another part of your funnel is wasting that spend, because that's the point of hiring us."
+    },
+    {
+      "q": "Which platforms do you work with?",
+      "a": "All the major ad, social and email platforms, plus newer specialists. Whatever you're on now, we'll work with it or advise on the right fit for your stage. How it's set up matters more than which one you pick."
+    },
+    {
+      "q": "Do you only work with ecommerce brands?",
+      "a": "No. We work with ecommerce, SaaS, B2B and service businesses. If you have customers and something to sell them, we can help."
+    },
+    {
+      "q": "How are you priced?",
+      "a": "A flat fee based on scope, or monthly for retainers. We tailor our approach for each client to ensure your needs are met. For a scope and quote, submit an enquiry or book a free call."
+    }
+  ],
   "narrative": {
     "paragraphs": [
       "You already know email is supposed to be your highest-returning channel. The data says $36 back for every dollar in. So why does it feel like yours is barely covering its own weight?",
@@ -22,76 +132,30 @@
       "We've spent 20 years inside email programs from start-ups to global enterprises. We know what good looks like, and we know when mediocre is pretending to be good."
     ]
   },
-  "guarantee": {
-    "eyebrow": "Our retainer promise",
-    "headline": "Results guaranteed or we'll work for free.",
-    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We’ll beat your current email benchmarks within 90 days, or we’ll work for free until we do.",
-    "ctaText": "Book your free session",
-    "ctaHref": "/strategy-session"
-  },
   "growFaster": {
     "headline": "Your email program is either making you money or costing you money. There's no middle ground.",
     "subheadline": "Most brands treat email like an afterthought. The businesses growing fastest on email aren't doing anything exotic. They're just doing it properly.",
     "stats": [
-      {
-        "target": 36,
-        "prefix": "$",
-        "suffix": "",
-        "label": "Returned for every $1 spent. No other marketing channel comes close."
-      },
-      {
-        "target": 40,
-        "prefix": "",
-        "suffix": "%",
-        "label": "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this."
-      },
-      {
-        "target": 320,
-        "prefix": "",
-        "suffix": "%",
-        "label": "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously."
-      },
-      {
-        "target": 6,
-        "prefix": "",
-        "suffix": "x",
-        "label": "Revenue difference between a well-run email program and the industry average."
-      }
+      { "target": 36, "prefix": "$", "suffix": "", "label": "Returned for every $1 spent. No other marketing channel comes close." },
+      { "target": 40, "prefix": "", "suffix": "%", "label": "Of total revenue at well-run brands comes from email. Most businesses are nowhere near this." },
+      { "target": 320, "prefix": "", "suffix": "%", "label": "More revenue from automated flows than batch-and-blast campaigns. Set once, earn continuously." },
+      { "target": 6, "prefix": "", "suffix": "x", "label": "Revenue difference between a well-run email program and the industry average." }
     ]
   },
-  "splitOffer": {
-    "eyebrow": "Current offers",
-    "offers": [
-      {
-        "id": "strategy",
-        "title": "Claim your free strategy session",
-        "body": "Claim your 100% free 30-minute strategy session (valued at $500) to discuss where your email program stands and how it ties to revenue. Act fast - sessions are limited!",
-        "ctaText": "Claim your free session",
-        "ctaHref": "/strategy-session"
-      },
-      {
-        "id": "audit",
-        "title": "Revenue killers exposed",
-        "body": "What marketing agencies won't tell you...and it's leaving money on the table. Reveal your revenue gaps and how to close them with the free audit.",
-        "ctaText": "Take the free audit",
-        "ctaHref": "/tools/email-audit"
-      }
-    ]
+  "guarantee": {
+    "eyebrow": "Our commitment",
+    "headline": "Results guaranteed or we'll work for free.",
+    "body": "We don't do vanity metrics, because vanity metrics don't pay salaries. We'll beat your current benchmarks within 90 days, or we'll work for free until we do.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
   },
   "finalCta": {
-    "platforms": [
-      "Klaviyo",
-      "HubSpot",
-      "Customer.io",
-      "Mailchimp",
-      "ActiveCampaign"
-    ],
-    "headline": "Walk away knowing where your email program is costing you money.",
+    "headline": "Walk away knowing where you're leaving money on the table.",
     "ctaText": "Book your free session",
     "ctaHref": "/strategy-session"
   },
   "footer": {
-    "taglineLine1": "Your emails owe you money.",
+    "taglineLine1": "Your marketing owes you money.",
     "taglineLine2": "We help you find it."
   }
 }

@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Landing Pages — Beyond Marketing, Australia",
+    "description": "We write, design and build landing pages with one job: turning visitors into leads and sales. Conversion copy, mobile-first design, connected to your email and CRM."
+  },
+  "hero": {
+    "label": "Landing Pages",
+    "titlePre": "More traffic won't fix a landing page that",
+    "titleHighlight": "doesn't convert",
+    "titlePost": ".",
+    "sub": "We write, design and build landing pages with one job: turning visitors into leads and sales."
+  },
+  "intro": [
+    "Most businesses spend thousands getting people to a page, but that page was never built to sell.",
+    "A homepage with six competing messages. A form that asks for everything but a blood type. A page that looks great on desktop and falls apart on mobile. No clear offer, no reason to act now, and no way to follow up with anyone who leaves.",
+    "Every visitor who bounces is money you've already spent. We write and build landing pages with one job each: turn the traffic you're paying for into leads and sales, and capture the people who aren't ready yet, so they don't disappear for good."
+  ],
+  "guarantee": {
+    "eyebrow": "Our project promise",
+    "headline": "Every page ships live and fully tested.",
+    "body": "If something we built doesn't work as it should, we fix it at no extra cost. Ongoing testing and improvement is available as part of a retainer.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "benefits": {
+    "heading": "What you get",
+    "items": [
+      "A strategy call before we write a word — your page gets built around your offer, your audience and where your traffic is coming from",
+      "An offer worth acting on — we help shape what you're offering so visitors have a clear reason to act now, not 'sometime later'",
+      "Conversion copy built on a proven direct-response structure — it speaks to your customer's problem, answers their objections, and asks for the action",
+      "Design that fits your brand and keeps attention on one action — no menus or distractions pulling visitors away from the point",
+      "A fast, mobile-first build — most of your visitors are on their phones, so the page is built for them first",
+      "Tracking and analytics set up from launch — you know exactly what each page brings in, and where visitors drop off",
+      "Your page connected to your email and CRM — new leads get followed up automatically, within minutes, not days",
+      "Testing and improvement after launch — headlines, offers and layouts get tested, so conversion rates keep climbing instead of flatlining"
+    ],
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "How long does a landing page take?",
+      "a": "It depends on scope, the number of pages and how much of the offer is already defined. We'll give you a firm timeline before we start, and we stick to it."
+    },
+    {
+      "q": "Can you build it on our existing website?",
+      "a": "Usually, yes. We work with most website platforms, or we can build a standalone page if that's the better fit. We'll recommend what's right for your setup, not what's easiest for us."
+    },
+    {
+      "q": "Do you write the copy?",
+      "a": "Yes. Copy is where most landing pages fail, so it's where we spend the most time. We'll need your input on your offer and customers, and we handle the rest."
+    },
+    {
+      "q": "Do we need to be running ads to use a landing page?",
+      "a": "No. Landing pages work for any traffic you send them: email campaigns, social posts, search, even a link in your bio."
+    },
+    {
+      "q": "How are landing pages priced?",
+      "a": "Either a fixed project fee based on scope, or as an inclusion in your overall strategy package. Get in touch so we can tailor a solution for your business, or book a free strategy call."
+    }
+  ]
+}

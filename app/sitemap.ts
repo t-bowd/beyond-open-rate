@@ -37,18 +37,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
 
   const staticEntries: MetadataRoute.Sitemap = [
-    { url: u("/"),                   lastModified: lastModified("app/page.tsx"),                  changeFrequency: "weekly",  priority: 1.0 },
-    { url: u("/services"),           lastModified: lastModified("app/services/page.tsx"),         changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/tools"),              lastModified: lastModified("app/tools/page.tsx"),            changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/tools/email-audit"),  lastModified: lastModified("app/tools/email-audit/page.tsx"), changeFrequency: "monthly", priority: 0.9 },
-    { url: u("/blog"),               lastModified: lastModified("app/blog/page.tsx"),             changeFrequency: "weekly",  priority: 0.7 },
-    { url: u("/about"),              lastModified: lastModified("app/about/page.tsx"),            changeFrequency: "monthly", priority: 0.5 },
-    { url: u("/strategy-session"),  lastModified: lastModified("app/strategy-session/page.tsx"), changeFrequency: "monthly", priority: 0.9 },
-    { url: u("/retainer"),          lastModified: lastModified("app/retainer/page.tsx"),          changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/audit"),             lastModified: lastModified("app/audit/page.tsx"),             changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/foundations"),       lastModified: lastModified("app/foundations/page.tsx"),       changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/strategy"),          lastModified: lastModified("app/strategy/page.tsx"),          changeFrequency: "monthly", priority: 0.8 },
-    { url: u("/ai-information"),   lastModified: lastModified("app/ai-information/page.tsx"),    changeFrequency: "monthly", priority: 0.5 },
+    { url: u("/"),                    lastModified: lastModified("app/page.tsx"),                        changeFrequency: "weekly",  priority: 1.0 },
+    { url: u("/email-lifecycle"),     lastModified: lastModified("app/email-lifecycle/page.tsx"),        changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/paid-social"),         lastModified: lastModified("app/paid-social/page.tsx"),            changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/organic-social"),      lastModified: lastModified("app/organic-social/page.tsx"),         changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/seo"),                 lastModified: lastModified("app/seo/page.tsx"),                    changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/landing-pages"),       lastModified: lastModified("app/landing-pages/page.tsx"),          changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/services"),            lastModified: lastModified("app/services/page.tsx"),               changeFrequency: "monthly", priority: 0.6 },
+    { url: u("/tools"),               lastModified: lastModified("app/tools/page.tsx"),                  changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/tools/email-audit"),   lastModified: lastModified("app/tools/email-audit/page.tsx"),      changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/blog"),                lastModified: lastModified("app/blog/page.tsx"),                   changeFrequency: "weekly",  priority: 0.7 },
+    { url: u("/about"),               lastModified: lastModified("app/about/page.tsx"),                  changeFrequency: "monthly", priority: 0.5 },
+    { url: u("/strategy-session"),    lastModified: lastModified("app/strategy-session/page.tsx"),       changeFrequency: "monthly", priority: 0.9 },
+    { url: u("/retainer"),            lastModified: lastModified("app/retainer/page.tsx"),               changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/audit"),               lastModified: lastModified("app/audit/page.tsx"),                  changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/projects"),            lastModified: lastModified("app/projects/page.tsx"),               changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/strategy"),            lastModified: lastModified("app/strategy/page.tsx"),               changeFrequency: "monthly", priority: 0.8 },
+    { url: u("/ai-information"),      lastModified: lastModified("app/ai-information/page.tsx"),         changeFrequency: "monthly", priority: 0.5 },
   ];
 
   const serviceEntries: MetadataRoute.Sitemap = [];

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Paid Social Advertising — Beyond Marketing, Australia",
+    "description": "Paid social campaigns built around the funnel behind them, so traffic turns into customers and customers come back. Strategy, creative and campaign management."
+  },
+  "hero": {
+    "label": "Paid Social",
+    "titlePre": "Is your ad spend making you money or",
+    "titleHighlight": "feeding the algorithm",
+    "titlePost": "?",
+    "sub": "Paid social campaigns built around the funnel behind it, so traffic turns into customers, and customers come back."
+  },
+  "intro": [
+    "Most businesses running paid social are paying for attention they can't keep.",
+    "The ads get likes and clicks. The reports look busy. Cost per click sits 'within benchmark'. And the sales dashboard barely moves.",
+    "Here's where it goes: traffic lands on a page that was never built to convert it. New leads hear nothing for a week. Existing customers get served ads for things they already bought. You pay for all of it.",
+    "Paid social only performs as well as the funnel behind it. We run your ads and build what happens after the click, so the traffic you pay for turns into customers, and those customers turn into repeat buyers."
+  ],
+  "guarantee": {
+    "eyebrow": "Our commitment",
+    "headline": "You own everything, always.",
+    "body": "Your ad accounts, audiences and data stay with you. If we ever part ways, everything we built is yours. No lock-in.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "benefits": {
+    "heading": "What you get",
+    "items": [
+      "A strategy call before we spend a cent — campaigns built around your margins, customers and goals, not an agency template",
+      "An audit of your existing ad accounts, if you have them — we stop what's wasting money before we add more",
+      "Targeting based on who buys from you, including excluding existing customers from acquisition campaigns so you stop paying to win people you already have",
+      "Ad copy and creative direction written to sell — using the same direct-response approach that drives our email programs",
+      "Campaigns connected to your landing pages and email — new leads get followed up in minutes, not whenever someone remembers",
+      "Retargeting that brings back the people who looked but didn't buy — these are your cheapest sales, and most businesses ignore them",
+      "Ongoing testing of audiences, offers and creative — budget moves to what's working and gets pulled from what isn't",
+      "Monthly reporting tied to revenue and cost per acquisition — you see what each dollar returned, not how many people liked a post"
+    ],
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "Which platforms do you run ads on?",
+      "a": "All the major social ad platforms. We recommend channels based on where your customers spend their time and where your numbers work, not where we're most comfortable."
+    },
+    {
+      "q": "Is ad spend included in your fee?",
+      "a": "No. You pay ad spend directly to the platform, so you keep full visibility and control. Our fee covers strategy, creative, campaign management and reporting."
+    },
+    {
+      "q": "How much do we need to spend on ads?",
+      "a": "It depends on your goals, margins and what a customer is worth to you. We'll recommend a starting budget in your strategy session, and if paid social isn't the right move yet, we'll tell you."
+    },
+    {
+      "q": "How long before we see results?",
+      "a": "Every new campaign needs a testing period to find the audiences and creative that convert. The initial period is about learning, and performance builds as the data comes in. We set clear targets up front so you know what we're measuring against."
+    },
+    {
+      "q": "Do we own our ad accounts?",
+      "a": "Yes, always. If we ever part ways, your accounts, audiences and data stay with you."
+    },
+    {
+      "q": "Can you run our ads without touching email or landing pages?",
+      "a": "Yes. If your landing page or follow-up is where the money's leaking, though, you'll hear it from us, because fixing it makes your ad spend go further."
+    }
+  ]
+}

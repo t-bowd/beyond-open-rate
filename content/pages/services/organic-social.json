@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Organic Social Media — Beyond Marketing, Australia",
+    "description": "Organic social built to turn attention into customers, and followers into an audience you actually own. Content strategy, creation and management."
+  },
+  "hero": {
+    "label": "Organic Social",
+    "titlePre": "Your followers aren't",
+    "titleHighlight": "paying the bills",
+    "titlePost": ". Yet.",
+    "sub": "Organic social built to turn attention into customers, and followers into an audience you actually own."
+  },
+  "intro": [
+    "Most businesses treat organic social like a chore. Post something, anything, three times a week, and hope it adds up.",
+    "It rarely does. The content has no plan behind it. Followers never hear about your offers. People who engage never get asked to join your list, so when the algorithm shifts, your audience goes with it. Hours go in every week, and nothing measurable comes out.",
+    "Organic social has two jobs: keep you front of mind, and move people closer to buying. We plan every post against both, and we connect your social to your email list, so the audience you build is one you own."
+  ],
+  "guarantee": {
+    "eyebrow": "Our commitment",
+    "headline": "Quality over quantity, every time.",
+    "body": "Two channels done well will outperform five done badly. We won't spread you thin for the sake of a bigger-looking proposal.",
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "benefits": {
+    "heading": "What you get",
+    "items": [
+      "A strategy call before anything gets posted — your content gets built around your customers, offers and goals, not whatever's trending this week",
+      "A review of your current channels — you'll know what's working, what's wasting your time, and where to focus",
+      "A content strategy built on why people buy from you — posts answer the questions and objections that stand between a follower and a sale",
+      "A content calendar, planned and scheduled in advance — no more scrambling for something to post at 9pm",
+      "Captions and creative direction written to sell without sounding salesy — the same direct-response thinking behind our email programs",
+      "Comment and message management — enquiries get answered promptly, instead of sitting in an inbox for three days",
+      "Content that grows your email list — followers become subscribers you can sell to directly, whatever the algorithm does next",
+      "Coordination with your other channels — your best-performing organic posts get backed with budget, so proven content does the heavy lifting",
+      "Monthly reporting tied to enquiries, traffic and sales — you see what your content brought in, not just how many people double-tapped it"
+    ],
+    "ctaText": "Book your free session",
+    "ctaHref": "/strategy-session"
+  },
+  "faq": [
+    {
+      "q": "Which platforms do you manage?",
+      "a": "We recommend platforms based on where your customers spend their time. Two channels done well will outperform five done badly, so we won't spread you thin for the sake of it."
+    },
+    {
+      "q": "Do we get to approve posts before they go live?",
+      "a": "Yes. You'll see your content calendar in advance, with time to request changes before anything is published."
+    },
+    {
+      "q": "Will you grow our follower count?",
+      "a": "We track it, but we don't chase it. A smaller audience that buys is worth more than a big one that scrolls past."
+    },
+    {
+      "q": "Can you run organic social without paid ads?",
+      "a": "Yes. Many clients start with organic and add paid once there's proven content worth putting budget behind."
+    }
+  ]
+}
