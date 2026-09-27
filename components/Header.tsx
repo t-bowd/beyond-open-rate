@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 
@@ -28,9 +28,6 @@ export default function Header() {
   const [digitalOpen, setDigitalOpen] = useState(false);
   const pathname = usePathname();
 
-  const emailRef   = useRef<HTMLLIElement>(null);
-  const digitalRef = useRef<HTMLLIElement>(null);
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
@@ -55,16 +52,6 @@ export default function Header() {
     document.body.style.overflow = drawerOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [drawerOpen]);
-
-  // Close desktop dropdowns when clicking outside
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (emailRef.current && !emailRef.current.contains(e.target as Node)) setEmailOpen(false);
-      if (digitalRef.current && !digitalRef.current.contains(e.target as Node)) setDigitalOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
 
   const isLightTop = pathname.startsWith("/blog/");
   const light = scrolled || drawerOpen || isLightTop;
@@ -98,52 +85,6 @@ export default function Header() {
             <Image src={light ? "/logo.svg" : "/logo-reverse.svg"} alt="" width={28} height={28} priority style={{ height: 28, width: "auto" }} />
             <span className="brand-name">Beyond&nbsp;<span className="brand-accent">Marketing</span></span>
           </Link>
-
-          {/* Desktop nav */}
-          <nav className="nav-desktop" aria-label="Main navigation">
-            <ul className="nav-desktop-list">
-              <li ref={emailRef} className={`nav-desktop-item has-dropdown ${emailOpen ? "open" : ""}`}>
-                <button
-                  className="nav-desktop-trigger"
-                  aria-expanded={emailOpen}
-                  onClick={() => { setEmailOpen((v) => !v); setDigitalOpen(false); }}
-                >
-                  Email &amp; Lifecycle
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="nav-chevron">
-                    <path d="M2 4l4 4 4-4" />
-                  </svg>
-                </button>
-                <ul className="nav-dropdown">
-                  <li><Link href="/email-lifecycle">Email &amp; Lifecycle</Link></li>
-                  {EMAIL_LINKS.map((item) => (
-                    <li key={item.href}><Link href={item.href}>{item.label}</Link></li>
-                  ))}
-                </ul>
-              </li>
-
-              <li ref={digitalRef} className={`nav-desktop-item has-dropdown ${digitalOpen ? "open" : ""}`}>
-                <button
-                  className="nav-desktop-trigger"
-                  aria-expanded={digitalOpen}
-                  onClick={() => { setDigitalOpen((v) => !v); setEmailOpen(false); }}
-                >
-                  Digital Marketing
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="nav-chevron">
-                    <path d="M2 4l4 4 4-4" />
-                  </svg>
-                </button>
-                <ul className="nav-dropdown">
-                  {DIGITAL_LINKS.map((item) => (
-                    <li key={item.href}><Link href={item.href}>{item.label}</Link></li>
-                  ))}
-                </ul>
-              </li>
-
-              <li className="nav-desktop-item">
-                <Link href="/blog" className="nav-desktop-link">Blog</Link>
-              </li>
-            </ul>
-          </nav>
 
           <button
             className={`nav-toggle ${drawerOpen ? "open" : ""}`}
