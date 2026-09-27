@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { unstable_noStore as noStore } from "next/cache";
 import Hero from "@/components/Hero";
 import SplitOffer from "@/components/SplitOffer";
 import Testimonial from "@/components/Testimonial";
@@ -8,6 +9,24 @@ import FinalCta from "@/components/FinalCta";
 import Reveal from "@/components/Reveal";
 import { JsonLd, faqSchema } from "@/lib/jsonld";
 import homepageData from "@/content/homepage/homepage.json";
+
+function ordinal(day: number) {
+  if (day > 3 && day < 21) return `${day}th`;
+  switch (day % 10) {
+    case 1: return `${day}st`;
+    case 2: return `${day}nd`;
+    case 3: return `${day}rd`;
+    default: return `${day}th`;
+  }
+}
+
+function getUpdatedDate() {
+  const MS_PER_DAY = 86_400_000;
+  const bucketStart = Math.floor(Date.now() / (MS_PER_DAY * 3)) * (MS_PER_DAY * 3);
+  const d = new Date(bucketStart);
+  const month = d.toLocaleString("en-AU", { month: "long" });
+  return `${ordinal(d.getDate())} of ${month} ${d.getFullYear()}`;
+}
 
 const { problemAgitation, fullFunnel, differentiator, howWeWork, faq } = homepageData;
 
@@ -19,6 +38,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  noStore();
+  const updated = getUpdatedDate();
   return (
     <>
       <Hero />
@@ -26,8 +47,9 @@ export default function Page() {
       {/* Problem agitation */}
       <section className="section narrative-letter" data-screen-label="Problem agitation">
         <div className="wrap narrative-inner">
+          <Reveal as="p" className="narrative-date">Updated: {updated}</Reveal>
           <Reveal as="div" className="narrative-body">
-            <p><strong>{problemAgitation.lead}</strong></p>
+            <p>{problemAgitation.lead}</p>
             {problemAgitation.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
           </Reveal>
         </div>
