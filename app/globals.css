@@ -319,6 +319,142 @@ a { color: inherit; text-decoration: none; }
   .btn-lg { white-space: normal; text-align: center; max-width: 100%; }
 }
 
+/* ---------- Desktop nav (dropdowns) ---------- */
+.nav-desktop {
+  display: none; /* hidden on mobile */
+  grid-column: 3;
+  justify-self: end;
+  align-items: center;
+  gap: 4px;
+}
+.nav-desktop-list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-desktop-item { position: relative; }
+.nav-desktop-trigger,
+.nav-desktop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14.5px;
+  color: inherit;
+  border-radius: 6px;
+  transition: background .15s ease, color .15s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.nav-desktop-trigger:hover,
+.nav-desktop-link:hover {
+  background: color-mix(in oklab, currentColor 10%, transparent);
+}
+.nav-chevron {
+  flex-shrink: 0;
+  transition: transform .2s ease;
+}
+.nav-desktop-item.open .nav-chevron,
+.nav-chevron.open { transform: rotate(180deg); }
+
+/* Dropdown panel */
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  background: var(--paper);
+  border: 1px solid color-mix(in oklab, var(--ink) 10%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px color-mix(in oklab, var(--ink) 12%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity .18s ease, transform .18s ease;
+  z-index: 60;
+}
+.nav-desktop-item.open .nav-dropdown {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.nav-dropdown li a {
+  display: block;
+  padding: 9px 14px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--ink);
+  border-radius: 6px;
+  transition: background .12s ease;
+  text-decoration: none;
+}
+.nav-dropdown li a:hover {
+  background: color-mix(in oklab, var(--ink) 6%, transparent);
+}
+.nav-dropdown li:first-child a {
+  font-weight: 700;
+  border-bottom: 1px solid color-mix(in oklab, var(--ink) 10%, transparent);
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 4px;
+  padding-bottom: 12px;
+}
+
+/* Show desktop nav, hide burger above 860px */
+@media (min-width: 861px) {
+  .nav-desktop { display: flex; }
+  .nav-toggle  { display: none; }
+}
+
+/* ---------- Mobile drawer — group headings + sub-links ---------- */
+.nav-drawer-group { width: 100%; }
+.nav-drawer-group-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(36px, 8vw, 68px);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--on-ink);
+  padding: 0;
+  transition: transform .4s ease, color .4s ease;
+}
+.nav-drawer-group-toggle:hover { color: #fff; transform: scale(1.04); }
+.nav-drawer-sub {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.nav-drawer-sub a {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: clamp(15px, 3.5vw, 20px);
+  color: color-mix(in oklab, var(--on-ink) 70%, transparent);
+  transition: color .2s ease;
+  text-decoration: none;
+}
+.nav-drawer-sub a:hover { color: #fff; }
+
 /* ---------- Hero ---------- */
 .hero { padding: clamp(56px, 9vw, 116px) 0 clamp(48px, 7vw, 92px); }
 .hero-inner { max-width: 880px; margin-inline: auto; text-align: center; }
@@ -1609,4 +1745,110 @@ a { color: inherit; text-decoration: none; }
 }
 .strategy-slider input[type="range"] {
   width: 100%; accent-color: var(--accent); cursor: pointer;
+}
+
+/* ── Homepage: new section utilities ─────────────────────────── */
+.section-intro {
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-top: 12px;
+}
+
+/* Full-funnel grid — 4 channel cards */
+.funnel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+}
+@media (min-width: 860px) {
+  .funnel-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.funnel-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.18s, background 0.18s;
+}
+.funnel-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-tint);
+}
+
+.funnel-card-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.funnel-card-channels {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.funnel-card-body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+/* How we work — numbered steps */
+.how-we-work-steps {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 860px) {
+  .how-we-work-steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+.how-we-work-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.how-we-work-step > div {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.how-we-work-step > div strong {
+  color: var(--ink);
 }
