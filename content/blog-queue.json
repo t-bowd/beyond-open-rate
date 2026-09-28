@@ -552,5 +552,41 @@
     ],
     "notes": "Target both ActiveCampaign consultant and Adelaide queries. Cover when AC works for e-commerce vs when Klaviyo is better, what AC consultants do differently than Klaviyo experts, pricing expectations, and migration scenarios. Position Beyond Open Rate's expertise while acknowledging platform limitations. Include Adelaide-specific case study if possible.",
     "status": "queued"
+  },
+  {
+    "id": "best-klaviyo-flows-for-ecommerce-revenue",
+    "title": "The 12 Best Klaviyo Flows for E-Commerce (Ranked by Revenue Impact)",
+    "keyword": "best klaviyo flows",
+    "tags": [
+      "klaviyo",
+      "automation",
+      "flows"
+    ],
+    "notes": "Target 'best klaviyo flows' query (18 impressions, position 63). Rank flows by typical revenue contribution percentage, include setup complexity rating, and show which flows to prioritize in months 1, 3, 6. Feature screenshots from actual Australian stores. Link to complete Klaviyo flows guide and specific flow strategy posts.",
+    "status": "queued"
+  },
+  {
+    "id": "ai-email-marketing-ecommerce-guide",
+    "title": "AI Email Marketing for E-Commerce: 9 Ways to Use It (And 4 Ways It'll Hurt Your Revenue)",
+    "keyword": "ai email marketing for ecommerce",
+    "tags": [
+      "ai",
+      "ecommerce",
+      "strategy"
+    ],
+    "notes": "Target 'ai email marketing for ecommerce' (30 impressions, position 45). Differentiate from existing AI posts by focusing specifically on e-commerce applications: product recommendations, send time optimization, subject line testing, content generation. Include what AI can't do for e-commerce context and personalization. Link to existing AI posts on what works and inbox filtering.",
+    "status": "queued"
+  },
+  {
+    "id": "ecommerce-email-marketing-agency-guide-australia",
+    "title": "How to Choose an E-Commerce Email Marketing Agency in Australia (2024 Buyer's Guide)",
+    "keyword": "ecommerce email marketing agency",
+    "tags": [
+      "agency-selection",
+      "ecommerce",
+      "australia"
+    ],
+    "notes": "Combine multiple agency-related queries (69 total impressions across 'ecommerce email marketing agency' and 'ecommerce email marketing australia'). Cover certification requirements, pricing models specific to e-commerce, red flags, questions to ask, and case study examples from Australian brands. Position as the definitive agency selection guide. Link to Melbourne, Perth, Brisbane agency posts and retainer pricing post.",
+    "status": "queued"
   }
 ]
