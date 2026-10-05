@@ -552,5 +552,53 @@
     ],
     "notes": "Target both ActiveCampaign consultant and Adelaide queries. Cover when AC works for e-commerce vs when Klaviyo is better, what AC consultants do differently than Klaviyo experts, pricing expectations, and migration scenarios. Position Beyond Open Rate's expertise while acknowledging platform limitations. Include Adelaide-specific case study if possible.",
     "status": "queued"
+  },
+  {
+    "id": "best-klaviyo-flows-ecommerce-revenue-breakdown",
+    "title": "Best Klaviyo Flows for E-Commerce: 8 Automations Ranked by Revenue Impact (with Setup Priority)",
+    "keyword": "best klaviyo flows",
+    "tags": [
+      "klaviyo",
+      "flows",
+      "automation"
+    ],
+    "notes": "Address the 'best flows' query directly with revenue-ranked list: abandoned cart, browse abandonment, post-purchase, welcome, winback, VIP, birthday, back-in-stock. Include average revenue per recipient for each flow type and recommended setup order for new stores. Link to complete guide to klaviyo flows and specific flow strategy posts.",
+    "status": "queued"
+  },
+  {
+    "id": "ecommerce-email-marketing-agency-australia-selection-guide",
+    "title": "How to Choose an E-Commerce Email Marketing Agency: 11 Questions Australian Brands Should Actually Ask",
+    "keyword": "ecommerce email marketing agency",
+    "tags": [
+      "agency",
+      "ecommerce",
+      "australia"
+    ],
+    "notes": "Targets both 'ecommerce email marketing agency' and broader 'ecommerce email marketing' queries. Cover pricing transparency, platform expertise (Klaviyo focus), result guarantees, onboarding process, and red flags. Include decision framework for agency vs in-house. Link to retainer pricing post and what agencies actually do post.",
+    "status": "queued"
+  },
+  {
+    "id": "ai-email-marketing-ecommerce-use-cases-2024",
+    "title": "AI Email Marketing for E-Commerce: 9 Use Cases That Actually Work (Plus 4 That Don't)",
+    "keyword": "ai email marketing for ecommerce",
+    "tags": [
+      "ai",
+      "ecommerce",
+      "automation"
+    ],
+    "notes": "Build on existing AI posts but focus specifically on e-commerce applications: subject line optimization, send time prediction, product recommendations, content generation, segmentation. Include specific tools, ROI data, and realistic expectations. Link to existing 'what AI can't do' and 'what actually works' posts for comprehensive coverage.",
+    "status": "queued"
+  },
+  {
+    "id": "email-audit-checklist-klaviyo-performance-review",
+    "title": "Email Marketing Audit for Klaviyo Users: 63-Point Checklist to Find Revenue Leaks in Your Flows & Campaigns",
+    "keyword": "audit email",
+    "tags": [
+      "audit",
+      "klaviyo",
+      "optimization"
+    ],
+    "notes": "Expand on existing general audit post with Klaviyo-specific checklist: flow logic errors, segment overlap issues, suppression list problems, integration gaps, compliance risks. Include downloadable checklist and before/after case study. Link to existing comprehensive audit post and deliverability troubleshooting content.",
+    "status": "queued"
   }
 ]
