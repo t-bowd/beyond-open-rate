@@ -1656,6 +1656,16 @@ a { color: inherit; text-decoration: none; }
   width: 100%; accent-color: var(--accent); cursor: pointer;
 }
 
+/* ── Homepage: section background alternation ────────────────── */
+[data-screen-label="Full funnel"]   { background: var(--paper); }
+[data-screen-label="Differentiator"] { background: var(--surface); }
+[data-screen-label="How we work"]   { background: var(--ink-bg); color: var(--on-ink); }
+[data-screen-label="FAQ"]           { background: var(--surface); }
+
+/* Text colour fixes inside the dark "How we work" band */
+[data-screen-label="How we work"] .how-we-work-step > div { color: var(--on-ink-soft); }
+[data-screen-label="How we work"] .how-we-work-step > div strong { color: var(--on-ink); }
+
 /* ── Homepage: new section utilities ─────────────────────────── */
 .section-intro {
   color: var(--ink-soft);
