@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 
 const EMAIL_LINKS = [
-  { href: "/about",         label: "About" },
   { href: "/retainer",      label: "Retainer" },
   { href: "/audit",         label: "Audit" },
   { href: "/projects",      label: "Projects" },
@@ -149,6 +148,9 @@ export default function Header() {
             )}
           </li>
 
+          <li>
+            <Link href="/about" onClick={() => setDrawerOpen(false)}>About</Link>
+          </li>
           <li>
             <Link href="/blog" onClick={() => setDrawerOpen(false)}>Blog</Link>
           </li>
