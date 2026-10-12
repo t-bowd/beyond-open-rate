@@ -1,129 +1,153 @@
 {
-  "generated_at": "2026-09-20T23:51:17.726Z",
+  "generated_at": "2026-10-12T00:59:15.387Z",
   "period": {
-    "start": "2026-06-22",
-    "end": "2026-09-20"
+    "start": "2026-07-14",
+    "end": "2026-10-12"
   },
-  "total_queries": 419,
+  "total_queries": 518,
   "opportunities": [
-    {
-      "query": "email marketing brisbane",
-      "clicks": 0,
-      "impressions": 244,
-      "ctr": 0,
-      "position": 14.7,
-      "score": 82
-    },
     {
       "query": "klaviyo agency melbourne",
       "clicks": 0,
-      "impressions": 89,
+      "impressions": 125,
       "ctr": 0,
-      "position": 13.2,
+      "position": 11,
+      "score": 82
+    },
+    {
+      "query": "email automation agency",
+      "clicks": 0,
+      "impressions": 95,
+      "ctr": 0,
+      "position": 14.4,
       "score": 74
     },
     {
-      "query": "brisbane email marketing management",
+      "query": "email marketing agency brisbane",
       "clicks": 0,
-      "impressions": 28,
+      "impressions": 127,
       "ctr": 0,
-      "position": 10.1,
-      "score": 68
-    },
-    {
-      "query": "email marketing agency in brisbane",
-      "clicks": 0,
-      "impressions": 34,
-      "ctr": 0,
-      "position": 11.3,
-      "score": 68
+      "position": 9.8,
+      "score": 74
     },
     {
       "query": "email marketing company brisbane",
       "clicks": 0,
-      "impressions": 47,
+      "impressions": 64,
       "ctr": 0,
-      "position": 12.5,
+      "position": 11.5,
+      "score": 74
+    },
+    {
+      "query": "klaviyo brisbane",
+      "clicks": 0,
+      "impressions": 65,
+      "ctr": 0,
+      "position": 12.6,
+      "score": 74
+    },
+    {
+      "query": "email marketing agency in brisbane",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 10.9,
       "score": 68
     },
     {
       "query": "email marketing services brisbane",
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 33,
       "ctr": 0,
-      "position": 10.8,
+      "position": 10.3,
       "score": 68
     },
     {
-      "query": "klaviyo brisbane",
+      "query": "marketing audit australia",
       "clicks": 0,
-      "impressions": 44,
+      "impressions": 41,
       "ctr": 0,
-      "position": 14,
+      "position": 13.9,
       "score": 68
     },
     {
-      "query": "klaviyo sydney",
+      "query": "email marketing brisbane",
       "clicks": 0,
-      "impressions": 27,
+      "impressions": 335,
       "ctr": 0,
-      "position": 10.4,
-      "score": 68
-    },
-    {
-      "query": "email marketing agency brisbane",
-      "clicks": 0,
-      "impressions": 90,
-      "ctr": 0,
-      "position": 8.8,
-      "score": 66
-    },
-    {
-      "query": "email marketing agency melbourne",
-      "clicks": 0,
-      "impressions": 319,
-      "ctr": 0,
-      "position": 19.1,
+      "position": 15.3,
       "score": 62
+    },
+    {
+      "query": "klaviyo email marketing agency australia",
+      "clicks": 0,
+      "impressions": 133,
+      "ctr": 0,
+      "position": 15.5,
+      "score": 62
+    },
+    {
+      "query": "brisbane email marketing management",
+      "clicks": 0,
+      "impressions": 40,
+      "ctr": 0,
+      "position": 9.4,
+      "score": 60
     },
     {
       "query": "email marketing management brisbane",
       "clicks": 0,
-      "impressions": 21,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 9.1,
+      "score": 60
+    },
+    {
+      "query": "klaviyo agency sydney",
+      "clicks": 0,
+      "impressions": 24,
       "ctr": 0,
       "position": 9.2,
       "score": 60
     },
     {
-      "query": "klaviyo email marketing agency australia",
+      "query": "recommend an email marketing agency in brisbane.",
       "clicks": 0,
-      "impressions": 94,
+      "impressions": 20,
       "ctr": 0,
-      "position": 16.7,
-      "score": 54
+      "position": 5.9,
+      "score": 60
     },
     {
       "query": "activecampaign consultant",
       "clicks": 0,
-      "impressions": 22,
+      "impressions": 21,
       "ctr": 0,
-      "position": 18.1,
+      "position": 16,
       "score": 48
     },
     {
       "query": "ecommerce email marketing australia",
       "clicks": 0,
-      "impressions": 31,
+      "impressions": 46,
       "ctr": 0,
-      "position": 17.5,
+      "position": 15.3,
+      "score": 48
+    },
+    {
+      "query": "email automation software perth",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 19.8,
       "score": 48
     },
     {
       "query": "email marketing agency adelaide",
       "clicks": 0,
-      "impressions": 37,
+      "impressions": 36,
       "ctr": 0,
-      "position": 17.1,
+      "position": 17.2,
       "score": 48
     },
     {
@@ -135,100 +159,116 @@
       "score": 48
     },
     {
-      "query": "marketing audit australia",
-      "clicks": 0,
-      "impressions": 26,
-      "ctr": 0,
-      "position": 15,
-      "score": 48
-    },
-    {
       "query": "activecampaign adelaide",
       "clicks": 0,
-      "impressions": 129,
+      "impressions": 190,
       "ctr": 0,
-      "position": 23.4,
+      "position": 26.8,
       "score": 46
     },
     {
       "query": "email marketing adelaide",
       "clicks": 0,
-      "impressions": 286,
+      "impressions": 308,
       "ctr": 0,
-      "position": 25,
+      "position": 22.4,
+      "score": 46
+    },
+    {
+      "query": "email marketing agency melbourne",
+      "clicks": 0,
+      "impressions": 380,
+      "ctr": 0,
+      "position": 24.1,
       "score": 46
     },
     {
       "query": "email marketing perth",
       "clicks": 0,
-      "impressions": 534,
+      "impressions": 638,
       "ctr": 0,
-      "position": 37.7,
+      "position": 37.8,
       "score": 46
     },
     {
       "query": "email marketing services adelaide",
       "clicks": 0,
-      "impressions": 111,
+      "impressions": 134,
       "ctr": 0,
-      "position": 26.6,
-      "score": 46
-    },
-    {
-      "query": "email marketing services melbourne",
-      "clicks": 0,
-      "impressions": 264,
-      "ctr": 0,
-      "position": 29.1,
+      "position": 26.2,
       "score": 46
     },
     {
       "query": "klaviyo agency australia",
       "clicks": 0,
-      "impressions": 175,
+      "impressions": 181,
       "ctr": 0,
-      "position": 23.6,
+      "position": 23.4,
       "score": 46
     },
     {
-      "query": "email automation agency",
+      "query": "email automation perth",
       "clicks": 0,
-      "impressions": 151,
+      "impressions": 61,
       "ctr": 0,
-      "position": 35.7,
+      "position": 29.9,
+      "score": 38
+    },
+    {
+      "query": "email marketing",
+      "clicks": 0,
+      "impressions": 303,
+      "ctr": 0,
+      "position": 45,
       "score": 38
     },
     {
       "query": "email marketing agency",
       "clicks": 0,
-      "impressions": 135,
+      "impressions": 201,
       "ctr": 0,
-      "position": 37.2,
+      "position": 38.5,
       "score": 38
     },
     {
       "query": "email marketing melbourne",
       "clicks": 0,
-      "impressions": 239,
+      "impressions": 292,
       "ctr": 0,
-      "position": 33.9,
+      "position": 37.4,
+      "score": 38
+    },
+    {
+      "query": "email marketing services melbourne",
+      "clicks": 0,
+      "impressions": 326,
+      "ctr": 0,
+      "position": 33,
       "score": 38
     },
     {
       "query": "email marketing services perth",
       "clicks": 0,
-      "impressions": 179,
+      "impressions": 207,
       "ctr": 0,
-      "position": 47,
+      "position": 46.1,
       "score": 38
     },
     {
       "query": "email marketing strategy",
       "clicks": 0,
-      "impressions": 183,
+      "impressions": 255,
       "ctr": 0,
-      "position": 31.2,
+      "position": 30.4,
       "score": 38
+    },
+    {
+      "query": "+61 452",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11,
+      "score": 33
     },
     {
       "query": "activecampaign agency",
@@ -249,9 +289,9 @@
     {
       "query": "activecampaign ecommerce",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 6,
       "ctr": 0,
-      "position": 17.2,
+      "position": 16.8,
       "score": 33
     },
     {
@@ -260,14 +300,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 18,
-      "score": 33
-    },
-    {
-      "query": "affordable email marketing agency sydney",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 18.8,
       "score": 33
     },
     {
@@ -287,6 +319,30 @@
       "score": 33
     },
     {
+      "query": "cheap version marketing automation software for ecommerce customer lifecycle journeys in australia",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11,
+      "score": 33
+    },
+    {
+      "query": "commerce automation",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11,
+      "score": 33
+    },
+    {
+      "query": "communication agency brisbane",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 15.4,
+      "score": 33
+    },
+    {
       "query": "consultant activecampaign",
       "clicks": 0,
       "impressions": 1,
@@ -303,11 +359,43 @@
       "score": 33
     },
     {
-      "query": "email automation specialists au",
+      "query": "email automation agency melbourne",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 18.2,
+      "score": 33
+    },
+    {
+      "query": "email automation agency sydney",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 19.3,
+      "score": 33
+    },
+    {
+      "query": "email bounce rate audit",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 15,
+      "position": 19,
+      "score": 33
+    },
+    {
+      "query": "email marketing agency australia",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 12.2,
+      "score": 33
+    },
+    {
+      "query": "email marketing automation agency",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11,
       "score": 33
     },
     {
@@ -327,11 +415,43 @@
       "score": 33
     },
     {
+      "query": "email marketing data europa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 16,
+      "score": 33
+    },
+    {
+      "query": "email marketing europe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19,
+      "score": 33
+    },
+    {
+      "query": "email marketing gold coast",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 19,
+      "score": 33
+    },
+    {
       "query": "email marketing strategy melbourne",
       "clicks": 0,
       "impressions": 19,
       "ctr": 0,
       "position": 15.9,
+      "score": 33
+    },
+    {
+      "query": "free marketing audit",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 16,
       "score": 33
     },
     {
@@ -375,9 +495,33 @@
       "score": 33
     },
     {
+      "query": "how to rank tracking in europe",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 17.7,
+      "score": 33
+    },
+    {
+      "query": "how to set up lifecycle emails for a saas product",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5,
+      "score": 33
+    },
+    {
+      "query": "hubspot agency brisbane",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 14.7,
+      "score": 33
+    },
+    {
       "query": "improving conversion rates with automation",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 20,
       "score": 33
@@ -391,19 +535,27 @@
       "score": 33
     },
     {
-      "query": "klaviyo office sydney",
+      "query": "klaviyo flow library",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 15.5,
+      "position": 17.5,
       "score": 33
     },
     {
-      "query": "klaviyo sydney office",
+      "query": "klaviyo flows library",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 5,
       "ctr": 0,
-      "position": 19.5,
+      "position": 19.4,
+      "score": 33
+    },
+    {
+      "query": "klaviyo sydney",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 12.1,
       "score": 33
     },
     {
@@ -412,6 +564,22 @@
       "impressions": 1,
       "ctr": 0,
       "position": 14,
+      "score": 33
+    },
+    {
+      "query": "mailchimp to klaviyo",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 16.7,
+      "score": 33
+    },
+    {
+      "query": "marketing audit melbourne",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 17.8,
       "score": 33
     },
     {
@@ -431,11 +599,27 @@
       "score": 33
     },
     {
+      "query": "post purchase flow",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.5,
+      "score": 33
+    },
+    {
       "query": "post purchase sms flows",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 20,
+      "score": 33
+    },
+    {
+      "query": "sms marketing brisbane",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 11.5,
       "score": 33
     },
     {
@@ -457,57 +641,73 @@
     {
       "query": "which is better for e-commerce - mailchimp or klaviyo?",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 14,
       "ctr": 0,
-      "position": 12.5,
+      "position": 10.5,
       "score": 33
     },
     {
-      "query": "email marketing audit",
+      "query": "which is better for ecommerce - mailchimp or klaviyo?",
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 4,
       "ctr": 0,
-      "position": 27.3,
+      "position": 18.5,
+      "score": 33
+    },
+    {
+      "query": "which tools let you automate creator tier progress nudges based on combined metrics?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18,
+      "score": 33
+    },
+    {
+      "query": "ecommerce email marketing agency",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 28.4,
       "score": 32
     },
     {
       "query": "email marketing company melbourne",
       "clicks": 0,
-      "impressions": 32,
+      "impressions": 41,
       "ctr": 0,
-      "position": 20,
-      "score": 32
-    },
-    {
-      "query": "email marketing sydney",
-      "clicks": 0,
-      "impressions": 30,
-      "ctr": 0,
-      "position": 25.7,
+      "position": 24.8,
       "score": 32
     },
     {
       "query": "klaviyo email marketing melbourne",
       "clicks": 0,
-      "impressions": 30,
+      "impressions": 38,
       "ctr": 0,
-      "position": 23.7,
+      "position": 22.5,
+      "score": 32
+    },
+    {
+      "query": "mailchimp adelaide",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 28.9,
       "score": 32
     },
     {
       "query": "marketing retainer",
       "clicks": 0,
-      "impressions": 24,
+      "impressions": 29,
       "ctr": 0,
-      "position": 29.6,
+      "position": 30,
       "score": 32
     },
     {
       "query": "post purchase emails",
       "clicks": 0,
-      "impressions": 47,
+      "impressions": 46,
       "ctr": 0,
-      "position": 28.3,
+      "position": 27.1,
       "score": 32
     },
     {
@@ -519,27 +719,19 @@
       "score": 30
     },
     {
-      "query": "email automation perth",
-      "clicks": 0,
-      "impressions": 53,
-      "ctr": 0,
-      "position": 31,
-      "score": 30
-    },
-    {
-      "query": "email automation services",
-      "clicks": 0,
-      "impressions": 62,
-      "ctr": 0,
-      "position": 69.8,
-      "score": 30
-    },
-    {
       "query": "email marketing agency perth",
       "clicks": 0,
-      "impressions": 72,
+      "impressions": 86,
       "ctr": 0,
       "position": 31.5,
+      "score": 30
+    },
+    {
+      "query": "email marketing agency sydney",
+      "clicks": 0,
+      "impressions": 52,
+      "ctr": 0,
+      "position": 38.5,
       "score": 30
     },
     {
@@ -567,6 +759,14 @@
       "score": 25
     },
     {
+      "query": "best email marketing automation software",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6,
+      "score": 25
+    },
+    {
       "query": "beyond open",
       "clicks": 0,
       "impressions": 1,
@@ -575,7 +775,71 @@
       "score": 25
     },
     {
+      "query": "cookie consent rate",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 9.2,
+      "score": 25
+    },
+    {
       "query": "custom website",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "score": 25
+    },
+    {
+      "query": "ecommerce agency brisbane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "score": 25
+    },
+    {
+      "query": "ecommerce automations",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7,
+      "score": 25
+    },
+    {
+      "query": "ecommerce crm software with the strongest shopify and woocommerce integration for dtc email marketers?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "score": 25
+    },
+    {
+      "query": "ecommerce marketing agency brisbane",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6,
+      "score": 25
+    },
+    {
+      "query": "ecommerce marketing agency qld",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5,
+      "score": 25
+    },
+    {
+      "query": "ecommerce marketing brisbane",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5,
+      "score": 25
+    },
+    {
+      "query": "email flows",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -591,11 +855,19 @@
       "score": 25
     },
     {
-      "query": "email marketing agency australia",
+      "query": "email marketing digital agency",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 1,
       "ctr": 0,
-      "position": 9.8,
+      "position": 9,
+      "score": 25
+    },
+    {
+      "query": "email marketing services gold coast",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5,
       "score": 25
     },
     {
@@ -604,6 +876,14 @@
       "impressions": 1,
       "ctr": 0,
       "position": 6,
+      "score": 25
+    },
+    {
+      "query": "gold coast email marketing services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5,
       "score": 25
     },
     {
@@ -623,6 +903,14 @@
       "score": 25
     },
     {
+      "query": "how long is the trial period vendors offer for testing cart abandonment and post-purchase flows?",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8.6,
+      "score": 25
+    },
+    {
       "query": "how to add social media to google search console",
       "clicks": 0,
       "impressions": 1,
@@ -631,11 +919,19 @@
       "score": 25
     },
     {
-      "query": "how to set up lifecycle emails for a saas product",
+      "query": "how to test klaviyo flows",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 10,
+      "position": 6,
+      "score": 25
+    },
+    {
+      "query": "is mailchimp or klaviyo better for ecommerce?",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8.8,
       "score": 25
     },
     {
@@ -647,11 +943,51 @@
       "score": 25
     },
     {
-      "query": "recommend an email marketing agency in brisbane.",
+      "query": "klaviyo flows review",
       "clicks": 0,
-      "impressions": 19,
+      "impressions": 1,
       "ctr": 0,
-      "position": 5.6,
+      "position": 8,
+      "score": 25
+    },
+    {
+      "query": "square au email marketing automation software australia en non-brand",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "score": 25
+    },
+    {
+      "query": "square au email marketing automation tools australia en non-brand",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "score": 25
+    },
+    {
+      "query": "welcome series emails",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7,
+      "score": 25
+    },
+    {
+      "query": "welcome to purchase！",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "score": 25
+    },
+    {
+      "query": "what is a tracking pixel",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
       "score": 25
     },
     {
@@ -663,20 +999,20 @@
       "score": 25
     },
     {
-      "query": "which cheap version of an ecommerce referral system also supports email and sms automation in australia?",
+      "query": "where can i find email automation software that supports workflow based email sending outside business hours?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 9,
+      "position": 7,
       "score": 25
     },
     {
-      "query": "abandoned cart email sequence",
+      "query": "which cheap version of an ecommerce referral system also supports email and sms automation in australia?",
       "clicks": 0,
-      "impressions": 23,
+      "impressions": 5,
       "ctr": 0,
-      "position": 88.9,
-      "score": 24
+      "position": 5.8,
+      "score": 25
     },
     {
       "query": "abandoned cart email timing",
@@ -689,17 +1025,25 @@
     {
       "query": "active campaign perth",
       "clicks": 0,
-      "impressions": 24,
+      "impressions": 28,
       "ctr": 0,
-      "position": 33.6,
+      "position": 34.1,
+      "score": 24
+    },
+    {
+      "query": "activecampaign perth",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 39.1,
       "score": 24
     },
     {
       "query": "adelaide email systems",
       "clicks": 0,
-      "impressions": 29,
+      "impressions": 37,
       "ctr": 0,
-      "position": 35.4,
+      "position": 35,
       "score": 24
     },
     {
@@ -711,35 +1055,59 @@
       "score": 24
     },
     {
+      "query": "audit email",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 39.5,
+      "score": 24
+    },
+    {
+      "query": "email audit",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 39.4,
+      "score": 24
+    },
+    {
+      "query": "email automation services",
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 64.7,
+      "score": 24
+    },
+    {
+      "query": "email campaign audit",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 42.2,
+      "score": 24
+    },
+    {
       "query": "email marketing agencies melbourne",
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 29,
       "ctr": 0,
-      "position": 31.1,
+      "position": 32.9,
       "score": 24
     },
     {
       "query": "email marketing agency near me",
       "clicks": 0,
-      "impressions": 25,
+      "impressions": 26,
       "ctr": 0,
-      "position": 36.3,
+      "position": 35.1,
       "score": 24
     },
     {
-      "query": "email marketing agency sydney",
+      "query": "email marketing audit",
       "clicks": 0,
-      "impressions": 28,
+      "impressions": 47,
       "ctr": 0,
-      "position": 37.8,
-      "score": 24
-    },
-    {
-      "query": "email marketing automation agency",
-      "clicks": 0,
-      "impressions": 27,
-      "ctr": 0,
-      "position": 74.6,
+      "position": 30.4,
       "score": 24
     },
     {
@@ -753,25 +1121,41 @@
     {
       "query": "email marketing companies near me",
       "clicks": 0,
-      "impressions": 21,
+      "impressions": 28,
       "ctr": 0,
-      "position": 75.3,
+      "position": 60,
+      "score": 24
+    },
+    {
+      "query": "email marketing company",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 44.4,
       "score": 24
     },
     {
       "query": "email marketing in perth",
       "clicks": 0,
-      "impressions": 21,
+      "impressions": 23,
       "ctr": 0,
-      "position": 41.7,
+      "position": 41.3,
       "score": 24
     },
     {
-      "query": "how many abandoned cart emails should i send",
+      "query": "email marketing services sydney",
       "clicks": 0,
-      "impressions": 20,
+      "impressions": 25,
       "ctr": 0,
-      "position": 58,
+      "position": 42.1,
+      "score": 24
+    },
+    {
+      "query": "email marketing sydney",
+      "clicks": 0,
+      "impressions": 49,
+      "ctr": 0,
+      "position": 30.7,
       "score": 24
     },
     {
@@ -783,43 +1167,35 @@
       "score": 24
     },
     {
+      "query": "klaviyo expert australia",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 40.4,
+      "score": 24
+    },
+    {
       "query": "klaviyo expert melbourne",
       "clicks": 0,
-      "impressions": 20,
+      "impressions": 24,
       "ctr": 0,
-      "position": 35.8,
+      "position": 38.3,
       "score": 24
     },
     {
       "query": "klaviyo flows",
       "clicks": 0,
-      "impressions": 46,
+      "impressions": 40,
       "ctr": 0,
-      "position": 53.2,
-      "score": 24
-    },
-    {
-      "query": "klaviyo flows ecommerce",
-      "clicks": 0,
-      "impressions": 24,
-      "ctr": 0,
-      "position": 54.8,
+      "position": 52.8,
       "score": 24
     },
     {
       "query": "klaviyo marketing agency",
       "clicks": 0,
-      "impressions": 31,
+      "impressions": 33,
       "ctr": 0,
-      "position": 47.8,
-      "score": 24
-    },
-    {
-      "query": "klaviyo migration",
-      "clicks": 0,
-      "impressions": 27,
-      "ctr": 0,
-      "position": 50.7,
+      "position": 48.1,
       "score": 24
     },
     {
@@ -833,17 +1209,9 @@
     {
       "query": "klaviyo setup melbourne",
       "clicks": 0,
-      "impressions": 26,
-      "ctr": 0,
-      "position": 37.5,
-      "score": 24
-    },
-    {
-      "query": "mailchimp adelaide",
-      "clicks": 0,
       "impressions": 28,
       "ctr": 0,
-      "position": 37.1,
+      "position": 39.2,
       "score": 24
     },
     {
@@ -857,33 +1225,33 @@
     {
       "query": "perth email automation",
       "clicks": 0,
-      "impressions": 27,
+      "impressions": 34,
       "ctr": 0,
-      "position": 32.2,
+      "position": 31.9,
       "score": 24
     },
     {
       "query": "perth email marketing",
       "clicks": 0,
-      "impressions": 35,
+      "impressions": 44,
       "ctr": 0,
-      "position": 42.1,
+      "position": 41.4,
       "score": 24
     },
     {
       "query": "perth email marketing services",
       "clicks": 0,
-      "impressions": 33,
+      "impressions": 34,
       "ctr": 0,
-      "position": 46.6,
+      "position": 46.3,
       "score": 24
     },
     {
       "query": "post purchase email flow",
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 23,
       "ctr": 0,
-      "position": 71.7,
+      "position": 68.1,
       "score": 24
     },
     {
@@ -895,27 +1263,27 @@
       "score": 24
     },
     {
-      "query": "post-purchase email flow",
+      "query": "active campaign partner perth",
       "clicks": 0,
-      "impressions": 21,
+      "impressions": 6,
       "ctr": 0,
-      "position": 70.8,
-      "score": 24
-    },
-    {
-      "query": "activecampaign certified consultant",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 30,
+      "position": 27.2,
       "score": 17
     },
     {
       "query": "activecampaign open rates",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 25.4,
+      "position": 25,
+      "score": 17
+    },
+    {
+      "query": "affordable email marketing agency sydney",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 26.6,
       "score": 17
     },
     {
@@ -943,27 +1311,43 @@
       "score": 17
     },
     {
-      "query": "ecommerce automation",
+      "query": "best email flows",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 24.3,
+      "position": 25,
+      "score": 17
+    },
+    {
+      "query": "bulk email marketing companies",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30,
       "score": 17
     },
     {
       "query": "ecommerce email marketing",
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 9,
       "ctr": 0,
-      "position": 27.1,
+      "position": 28.3,
       "score": 17
     },
     {
-      "query": "email automation software perth",
+      "query": "email automation platform",
       "clicks": 0,
-      "impressions": 18,
+      "impressions": 3,
       "ctr": 0,
-      "position": 23,
+      "position": 29.3,
+      "score": 17
+    },
+    {
+      "query": "email automation specialists au",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 25.4,
       "score": 17
     },
     {
@@ -985,17 +1369,33 @@
     {
       "query": "email conversion",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 26.5,
+      "position": 27.2,
       "score": 17
     },
     {
       "query": "email conversions",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 8,
       "ctr": 0,
-      "position": 27.3,
+      "position": 26.1,
+      "score": 17
+    },
+    {
+      "query": "email deployment",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29,
+      "score": 17
+    },
+    {
+      "query": "email marketing advice",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 30,
       "score": 17
     },
     {
@@ -1007,11 +1407,35 @@
       "score": 17
     },
     {
+      "query": "email marketing audit template",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28,
+      "score": 17
+    },
+    {
       "query": "email marketing company perth",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 9,
       "ctr": 0,
       "position": 28.3,
+      "score": 17
+    },
+    {
+      "query": "email marketing ecommerce",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 30,
+      "score": 17
+    },
+    {
+      "query": "email marketing guidelines",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 23,
       "score": 17
     },
     {
@@ -1023,19 +1447,35 @@
       "score": 17
     },
     {
+      "query": "email marketing statistics australia",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 28.5,
+      "score": 17
+    },
+    {
       "query": "email marketing strategy australia",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 10,
       "ctr": 0,
-      "position": 24.8,
+      "position": 21.5,
+      "score": 17
+    },
+    {
+      "query": "email open rates",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26,
       "score": 17
     },
     {
       "query": "email strategy",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 9,
       "ctr": 0,
-      "position": 28.8,
+      "position": 28,
       "score": 17
     },
     {
@@ -1047,11 +1487,19 @@
       "score": 17
     },
     {
-      "query": "free audit",
+      "query": "free email tracking pixel",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 27.5,
+      "score": 17
+    },
+    {
+      "query": "full service email marketing agency",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 30,
+      "position": 29,
       "score": 17
     },
     {
@@ -1063,19 +1511,27 @@
       "score": 17
     },
     {
+      "query": "is klaviyo better than mailchimp",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 22,
+      "score": 17
+    },
+    {
       "query": "klaviyo australia",
       "clicks": 0,
       "impressions": 11,
       "ctr": 0,
-      "position": 23,
+      "position": 24.6,
       "score": 17
     },
     {
       "query": "klaviyo consultant",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 29.5,
+      "position": 29.7,
       "score": 17
     },
     {
@@ -1095,11 +1551,19 @@
       "score": 17
     },
     {
-      "query": "klaviyo flow library",
+      "query": "klaviyo mailchimp integration",
       "clicks": 0,
-      "impressions": 13,
+      "impressions": 2,
       "ctr": 0,
-      "position": 29.4,
+      "position": 27,
+      "score": 17
+    },
+    {
+      "query": "klaviyo office sydney",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22,
       "score": 17
     },
     {
@@ -1121,9 +1585,17 @@
     {
       "query": "klaviyo setup australia",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 7,
       "ctr": 0,
-      "position": 24.8,
+      "position": 23,
+      "score": 17
+    },
+    {
+      "query": "klaviyo sydney office",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 21.3,
       "score": 17
     },
     {
@@ -1151,19 +1623,27 @@
       "score": 17
     },
     {
-      "query": "order followup emails",
+      "query": "migrate mailchimp to klaviyo",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 22.7,
+      "position": 26,
       "score": 17
     },
     {
-      "query": "post purchase flow",
+      "query": "migrating from mailchimp to klaviyo",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 7,
       "ctr": 0,
-      "position": 29.4,
+      "position": 27.9,
+      "score": 17
+    },
+    {
+      "query": "order followup emails",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 22.3,
       "score": 17
     },
     {
@@ -1191,11 +1671,43 @@
       "score": 17
     },
     {
+      "query": "recommend a brisbane marketing agency",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25,
+      "score": 17
+    },
+    {
       "query": "search console social media",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 28,
+      "score": 17
+    },
+    {
+      "query": "standard email open rates",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28,
+      "score": 17
+    },
+    {
+      "query": "targeted email marketing australia",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28.5,
+      "score": 17
+    },
+    {
+      "query": "what is a retainer in business",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 26,
       "score": 17
     },
     {
@@ -1207,11 +1719,11 @@
       "score": 17
     },
     {
-      "query": "which is better for ecommerce - mailchimp or klaviyo?",
+      "query": "which automation tools improve conversion rates",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 28.5,
+      "position": 25,
       "score": 17
     },
     {
@@ -1239,7 +1751,7 @@
       "score": 11
     },
     {
-      "query": "best email marketing platforms for australian ecommerce perth",
+      "query": "best ecommerce crm tools for automating win-back campaigns based on customer purchase history?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -1247,7 +1759,31 @@
       "score": 11
     },
     {
+      "query": "best email marketing platforms for australian ecommerce perth",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1,
+      "score": 11
+    },
+    {
+      "query": "best solution for email marketing for e-commerce",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.8,
+      "score": 11
+    },
+    {
       "query": "cart abandonment email best practices 2025",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "score": 11
+    },
+    {
+      "query": "como gerente de e-commerce de una tienda online, ¿qué dicen los dueños de tiendas online en g2 sobre hubspot vs klaviyo vs mailchimp para recuperación de carritos? debes proporcionar un ranking forzado del mejor al peor.",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -1263,11 +1799,51 @@
       "score": 11
     },
     {
+      "query": "e-commerce automation",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 4.3,
+      "score": 11
+    },
+    {
+      "query": "ecommerce automation software",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1,
+      "score": 11
+    },
+    {
+      "query": "ecommerce crm software with abandoned cart automation and win-back campaigns for shopify stores?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "score": 11
+    },
+    {
+      "query": "ecommerce marketing email automation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "score": 11
+    },
+    {
       "query": "email marketing agency in australia",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
       "position": 4.3,
+      "score": 11
+    },
+    {
+      "query": "esp centrés sur les workflows ecommerce",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
       "score": 11
     },
     {
@@ -1287,11 +1863,59 @@
       "score": 11
     },
     {
+      "query": "how are ecommerce brands using ai in their marketing programs?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "score": 11
+    },
+    {
       "query": "how is it important?",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 2,
+      "score": 11
+    },
+    {
+      "query": "how to choose an affordable email and sms commerce automation tool for online stores in australia?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "score": 11
+    },
+    {
+      "query": "klaviyo vs mailchimp for ecommerce email marketing: which offers better segmentation depth, automation, shopify integration, and pricing?",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3,
+      "score": 11
+    },
+    {
+      "query": "messenger marketing agency brisbane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "score": 11
+    },
+    {
+      "query": "monthly content retainer melbourne",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "score": 11
+    },
+    {
+      "query": "most effective platform for email marketing for e-commerce",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5,
       "score": 11
     },
     {
@@ -1305,9 +1929,17 @@
     {
       "query": "pixel tracking",
       "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5,
+      "score": 11
+    },
+    {
+      "query": "recommend a marketing company in brisbane.",
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2,
+      "position": 1,
       "score": 11
     },
     {
@@ -1319,6 +1951,14 @@
       "score": 11
     },
     {
+      "query": "what is the best email and sms marketing automation platform for ecommerce customer engagement in australia?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5,
+      "score": 11
+    },
+    {
       "query": "when is the best time to send an email receipt after purchase to ensure it gets opened?",
       "clicks": 0,
       "impressions": 2,
@@ -1327,11 +1967,19 @@
       "score": 11
     },
     {
+      "query": "which is better for ecommerce, mailchimp or klaviyo?",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.3,
+      "score": 11
+    },
+    {
       "query": "why is our email open rate dropping every month? perth",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 4,
+      "position": 2,
       "score": 11
     },
     {
@@ -1377,17 +2025,25 @@
     {
       "query": "abandoned cart email benchmarks",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 13,
       "ctr": 0,
-      "position": 43,
+      "position": 35.8,
       "score": 9
     },
     {
       "query": "abandoned cart email conversion rate",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 9,
       "ctr": 0,
-      "position": 51.2,
+      "position": 47.2,
+      "score": 9
+    },
+    {
+      "query": "abandoned cart email sequence",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 88.9,
       "score": 9
     },
     {
@@ -1401,9 +2057,9 @@
     {
       "query": "abandoned cart email strategy",
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 11,
       "ctr": 0,
-      "position": 63.2,
+      "position": 61.9,
       "score": 9
     },
     {
@@ -1423,19 +2079,11 @@
       "score": 9
     },
     {
-      "query": "active campaign partner perth",
-      "clicks": 0,
-      "impressions": 5,
-      "ctr": 0,
-      "position": 30.8,
-      "score": 9
-    },
-    {
       "query": "active commerce",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 71,
+      "position": 50.5,
       "score": 9
     },
     {
@@ -1444,6 +2092,14 @@
       "impressions": 3,
       "ctr": 0,
       "position": 38.7,
+      "score": 9
+    },
+    {
+      "query": "activecampaign certified consultant",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 31.7,
       "score": 9
     },
     {
@@ -1468,14 +2124,6 @@
       "impressions": 2,
       "ctr": 0,
       "position": 33.5,
-      "score": 9
-    },
-    {
-      "query": "activecampaign perth",
-      "clicks": 0,
-      "impressions": 18,
-      "ctr": 0,
-      "position": 40.1,
       "score": 9
     },
     {
@@ -1575,14 +2223,6 @@
       "score": 9
     },
     {
-      "query": "audit email",
-      "clicks": 0,
-      "impressions": 15,
-      "ctr": 0,
-      "position": 36.9,
-      "score": 9
-    },
-    {
       "query": "automated email software",
       "clicks": 0,
       "impressions": 1,
@@ -1599,11 +2239,27 @@
       "score": 9
     },
     {
+      "query": "automated marketing agency",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49,
+      "score": 9
+    },
+    {
       "query": "automation email software",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
       "position": 50,
+      "score": 9
+    },
+    {
+      "query": "automation tools that improve conversion rates",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 41,
       "score": 9
     },
     {
@@ -1633,9 +2289,9 @@
     {
       "query": "best email marketing software australia",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 4,
       "ctr": 0,
-      "position": 60,
+      "position": 46,
       "score": 9
     },
     {
@@ -1657,9 +2313,9 @@
     {
       "query": "best practice klaviyo flows",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 66,
+      "position": 64,
       "score": 9
     },
     {
@@ -1713,9 +2369,9 @@
     {
       "query": "cart abandonment email sequence",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 89,
+      "position": 92,
       "score": 9
     },
     {
@@ -1732,6 +2388,22 @@
       "impressions": 1,
       "ctr": 0,
       "position": 51,
+      "score": 9
+    },
+    {
+      "query": "content management beyond marketing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72,
+      "score": 9
+    },
+    {
+      "query": "conversion rate optimisation brisbane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67,
       "score": 9
     },
     {
@@ -1759,11 +2431,19 @@
       "score": 9
     },
     {
-      "query": "ecommerce email marketing agency",
+      "query": "ecommerce agency",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 1,
       "ctr": 0,
-      "position": 39.3,
+      "position": 96,
+      "score": 9
+    },
+    {
+      "query": "ecommerce automation",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 31.5,
       "score": 9
     },
     {
@@ -1772,6 +2452,14 @@
       "impressions": 1,
       "ctr": 0,
       "position": 47,
+      "score": 9
+    },
+    {
+      "query": "effective email marketing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38,
       "score": 9
     },
     {
@@ -1785,65 +2473,65 @@
     {
       "query": "email acquisition",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 73,
+      "position": 63,
       "score": 9
     },
     {
-      "query": "email audit",
-      "clicks": 0,
-      "impressions": 19,
-      "ctr": 0,
-      "position": 39.6,
-      "score": 9
-    },
-    {
-      "query": "email automation agency melbourne",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 33.5,
-      "score": 9
-    },
-    {
-      "query": "email automation platform",
+      "query": "email audit for marketing teams",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 32,
+      "position": 44,
+      "score": 9
+    },
+    {
+      "query": "email automation",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 61.5,
+      "score": 9
+    },
+    {
+      "query": "email automation flow",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48,
+      "score": 9
+    },
+    {
+      "query": "email automation flows",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42,
       "score": 9
     },
     {
       "query": "email automation platforms",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 85.5,
+      "position": 60.7,
       "score": 9
     },
     {
       "query": "email automation programs",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 46,
       "score": 9
     },
     {
-      "query": "email automation setup australia",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 96,
-      "score": 9
-    },
-    {
       "query": "email automation software",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 11,
       "ctr": 0,
-      "position": 70.8,
+      "position": 51.7,
       "score": 9
     },
     {
@@ -1865,9 +2553,9 @@
     {
       "query": "email automation tool",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 90,
+      "position": 85,
       "score": 9
     },
     {
@@ -1879,27 +2567,27 @@
       "score": 9
     },
     {
-      "query": "email campaign audit",
+      "query": "email automation tools that work australia outlook 365",
       "clicks": 0,
-      "impressions": 18,
+      "impressions": 1,
       "ctr": 0,
-      "position": 43.1,
+      "position": 81,
       "score": 9
     },
     {
       "query": "email campaign management",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 83,
+      "position": 93.3,
       "score": 9
     },
     {
       "query": "email content optimization",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 11,
       "ctr": 0,
-      "position": 60,
+      "position": 60.6,
       "score": 9
     },
     {
@@ -1935,11 +2623,27 @@
       "score": 9
     },
     {
+      "query": "email marketer",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43,
+      "score": 9
+    },
+    {
       "query": "email marketing agencies",
       "clicks": 0,
-      "impressions": 13,
+      "impressions": 17,
       "ctr": 0,
-      "position": 74.5,
+      "position": 75.2,
+      "score": 9
+    },
+    {
+      "query": "email marketing agency ecommerce",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35,
       "score": 9
     },
     {
@@ -1959,27 +2663,51 @@
       "score": 9
     },
     {
-      "query": "email marketing companies",
+      "query": "email marketing campaign management",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 7,
       "ctr": 0,
-      "position": 47.9,
+      "position": 61.6,
       "score": 9
     },
     {
-      "query": "email marketing company",
+      "query": "email marketing challenges",
       "clicks": 0,
-      "impressions": 14,
+      "impressions": 1,
       "ctr": 0,
-      "position": 44.2,
+      "position": 34,
+      "score": 9
+    },
+    {
+      "query": "email marketing companies",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 49,
+      "score": 9
+    },
+    {
+      "query": "email marketing companies sydney",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42,
+      "score": 9
+    },
+    {
+      "query": "email marketing consultancy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82,
       "score": 9
     },
     {
       "query": "email marketing consultant",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 15,
       "ctr": 0,
-      "position": 57.3,
+      "position": 60.5,
       "score": 9
     },
     {
@@ -1993,17 +2721,25 @@
     {
       "query": "email marketing consultants",
       "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 55,
+      "score": 9
+    },
+    {
+      "query": "email marketing content strategy",
+      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 56,
+      "position": 44,
       "score": 9
     },
     {
       "query": "email marketing conversion",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 39,
+      "position": 37.5,
       "score": 9
     },
     {
@@ -2023,19 +2759,27 @@
       "score": 9
     },
     {
-      "query": "email marketing ecommerce",
+      "query": "email marketing faqs",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 1,
       "ctr": 0,
-      "position": 31.6,
+      "position": 39,
       "score": 9
     },
     {
       "query": "email marketing firm",
       "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 36.9,
+      "score": 9
+    },
+    {
+      "query": "email marketing for businesses",
+      "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 87.7,
+      "position": 47.7,
       "score": 9
     },
     {
@@ -2047,9 +2791,25 @@
       "score": 9
     },
     {
+      "query": "email marketing for startups",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 42,
+      "score": 9
+    },
+    {
+      "query": "email marketing guide",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 33.8,
+      "score": 9
+    },
+    {
       "query": "email marketing industry",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 41,
       "score": 9
@@ -2057,9 +2817,9 @@
     {
       "query": "email marketing management",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 57,
+      "position": 53.3,
       "score": 9
     },
     {
@@ -2068,6 +2828,30 @@
       "impressions": 2,
       "ctr": 0,
       "position": 43,
+      "score": 9
+    },
+    {
+      "query": "email marketing management services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 72.7,
+      "score": 9
+    },
+    {
+      "query": "email marketing newcastle nsw",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 51,
+      "score": 9
+    },
+    {
+      "query": "email marketing optimisation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46,
       "score": 9
     },
     {
@@ -2081,9 +2865,9 @@
     {
       "query": "email marketing penrith",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 5,
       "ctr": 0,
-      "position": 50,
+      "position": 45.2,
       "score": 9
     },
     {
@@ -2097,9 +2881,9 @@
     {
       "query": "email marketing services in rockingham",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 10,
       "ctr": 0,
-      "position": 55.3,
+      "position": 58,
       "score": 9
     },
     {
@@ -2111,27 +2895,19 @@
       "score": 9
     },
     {
-      "query": "email marketing services sydney",
-      "clicks": 0,
-      "impressions": 13,
-      "ctr": 0,
-      "position": 42.1,
-      "score": 9
-    },
-    {
-      "query": "email marketing statistics australia",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 31,
-      "score": 9
-    },
-    {
       "query": "email marketing strategies",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 15,
       "ctr": 0,
-      "position": 35.8,
+      "position": 34.5,
+      "score": 9
+    },
+    {
+      "query": "email marketing techniques",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32,
       "score": 9
     },
     {
@@ -2151,19 +2927,27 @@
       "score": 9
     },
     {
+      "query": "email marketing.",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46,
+      "score": 9
+    },
+    {
       "query": "email optimisation",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 7,
       "ctr": 0,
-      "position": 44.8,
+      "position": 44.4,
       "score": 9
     },
     {
       "query": "email optimization",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 47,
+      "position": 41.5,
       "score": 9
     },
     {
@@ -2177,9 +2961,9 @@
     {
       "query": "email services in perth",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 10,
       "ctr": 0,
-      "position": 54.6,
+      "position": 54.5,
       "score": 9
     },
     {
@@ -2193,25 +2977,33 @@
     {
       "query": "email systems",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 13,
       "ctr": 0,
-      "position": 69.5,
+      "position": 69.9,
       "score": 9
     },
     {
-      "query": "email welcome series best practices",
+      "query": "email tracking pixel free",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 88,
+      "position": 38.5,
       "score": 9
     },
     {
       "query": "email+marketing+consultant",
       "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 57.3,
+      "score": 9
+    },
+    {
+      "query": "emailmarketing",
+      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 56.5,
+      "position": 44.5,
       "score": 9
     },
     {
@@ -2239,19 +3031,43 @@
       "score": 9
     },
     {
+      "query": "france position tracking system market",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92,
+      "score": 9
+    },
+    {
+      "query": "free audit",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 37.7,
+      "score": 9
+    },
+    {
       "query": "free strategy call",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 10,
       "ctr": 0,
-      "position": 83.6,
+      "position": 81.1,
+      "score": 9
+    },
+    {
+      "query": "free zero click marketing audit",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85,
       "score": 9
     },
     {
       "query": "google postmaster tools spam rate threshold 0.3% 2024",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 65,
+      "position": 44.5,
       "score": 9
     },
     {
@@ -2260,6 +3076,38 @@
       "impressions": 3,
       "ctr": 0,
       "position": 96.3,
+      "score": 9
+    },
+    {
+      "query": "google search console integration dashboard in australia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 87,
+      "score": 9
+    },
+    {
+      "query": "google search console integration reports in australia",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5,
+      "score": 9
+    },
+    {
+      "query": "google search console integration strategy in australia",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 79,
+      "score": 9
+    },
+    {
+      "query": "google search console integration tool in australia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 87.7,
       "score": 9
     },
     {
@@ -2289,9 +3137,9 @@
     {
       "query": "how does activecampaign handle sales?",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 6,
       "ctr": 0,
-      "position": 34.8,
+      "position": 32,
       "score": 9
     },
     {
@@ -2303,19 +3151,19 @@
       "score": 9
     },
     {
-      "query": "how many emails in a welcome series",
+      "query": "how many abandoned cart emails should i send",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 14,
       "ctr": 0,
-      "position": 87.7,
+      "position": 52.1,
       "score": 9
     },
     {
-      "query": "how to chek dkim and spf email in yahoo!",
+      "query": "how many emails in a welcome series",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 97.5,
+      "position": 95,
       "score": 9
     },
     {
@@ -2324,6 +3172,14 @@
       "impressions": 1,
       "ctr": 0,
       "position": 84,
+      "score": 9
+    },
+    {
+      "query": "how to improve email marketing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 36,
       "score": 9
     },
     {
@@ -2359,6 +3215,22 @@
       "score": 9
     },
     {
+      "query": "ifactory brisbane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87,
+      "score": 9
+    },
+    {
+      "query": "improve email campaign performance",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 47.6,
+      "score": 9
+    },
+    {
       "query": "inactive email subscribers",
       "clicks": 0,
       "impressions": 3,
@@ -2375,19 +3247,11 @@
       "score": 9
     },
     {
-      "query": "is klaviyo better than mailchimp",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 57.5,
-      "score": 9
-    },
-    {
       "query": "klavio vs mailchimp",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
-      "position": 53.3,
+      "position": 48.7,
       "score": 9
     },
     {
@@ -2396,14 +3260,6 @@
       "impressions": 6,
       "ctr": 0,
       "position": 52.8,
-      "score": 9
-    },
-    {
-      "query": "klaviyo and mailchimp",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 67,
       "score": 9
     },
     {
@@ -2425,9 +3281,17 @@
     {
       "query": "klaviyo consultancy",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 49.3,
+      "position": 47.4,
+      "score": 9
+    },
+    {
+      "query": "klaviyo email agency",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 49,
       "score": 9
     },
     {
@@ -2447,19 +3311,11 @@
       "score": 9
     },
     {
-      "query": "klaviyo expert australia",
-      "clicks": 0,
-      "impressions": 18,
-      "ctr": 0,
-      "position": 38.9,
-      "score": 9
-    },
-    {
       "query": "klaviyo flow",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 2,
       "ctr": 0,
-      "position": 44,
+      "position": 47.5,
       "score": 9
     },
     {
@@ -2473,9 +3329,9 @@
     {
       "query": "klaviyo flow examples",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 62.3,
+      "position": 62.5,
       "score": 9
     },
     {
@@ -2487,51 +3343,59 @@
       "score": 9
     },
     {
-      "query": "klaviyo flows for ecommerce",
+      "query": "klaviyo flows best practices",
       "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 52.7,
-      "score": 9
-    },
-    {
-      "query": "klaviyo flows for subscription brands",
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 61.6,
-      "score": 9
-    },
-    {
-      "query": "klaviyo flows library",
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0,
-      "position": 30.1,
-      "score": 9
-    },
-    {
-      "query": "klaviyo flows review",
-      "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
       "position": 66,
       "score": 9
     },
     {
+      "query": "klaviyo flows ecommerce",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 45.4,
+      "score": 9
+    },
+    {
+      "query": "klaviyo flows for ecommerce",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 40.2,
+      "score": 9
+    },
+    {
+      "query": "klaviyo flows for subscription brands",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 61.3,
+      "score": 9
+    },
+    {
+      "query": "klaviyo flows subscription brands",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64,
+      "score": 9
+    },
+    {
       "query": "klaviyo flows tutorial",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 6,
       "ctr": 0,
-      "position": 41.9,
+      "position": 42.8,
       "score": 9
     },
     {
       "query": "klaviyo flows wikipedia",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 66.8,
+      "position": 48,
       "score": 9
     },
     {
@@ -2543,11 +3407,11 @@
       "score": 9
     },
     {
-      "query": "klaviyo mailchimp integration",
+      "query": "klaviyo migration",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 7,
       "ctr": 0,
-      "position": 63.1,
+      "position": 39,
       "score": 9
     },
     {
@@ -2609,9 +3473,9 @@
     {
       "query": "klaviyo subscription flows",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 11,
       "ctr": 0,
-      "position": 65.8,
+      "position": 66.4,
       "score": 9
     },
     {
@@ -2633,25 +3497,17 @@
     {
       "query": "klaviyo vs mailchimp",
       "clicks": 0,
-      "impressions": 17,
+      "impressions": 13,
       "ctr": 0,
-      "position": 53.8,
-      "score": 9
-    },
-    {
-      "query": "klaviyo vs mailchimp ecommerce growth",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 71,
+      "position": 48.3,
       "score": 9
     },
     {
       "query": "klaviyo vs mailchimp for ecommerce",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 7,
       "ctr": 0,
-      "position": 45.3,
+      "position": 30.3,
       "score": 9
     },
     {
@@ -2697,9 +3553,17 @@
     {
       "query": "list of klaviyo flows",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 14,
       "ctr": 0,
-      "position": 64,
+      "position": 63.1,
+      "score": 9
+    },
+    {
+      "query": "mailchimp expert melbourne",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50,
       "score": 9
     },
     {
@@ -2711,43 +3575,19 @@
       "score": 9
     },
     {
-      "query": "mailchimp klaviyo integration",
-      "clicks": 0,
-      "impressions": 10,
-      "ctr": 0,
-      "position": 71.1,
-      "score": 9
-    },
-    {
-      "query": "mailchimp to klaviyo",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 55.4,
-      "score": 9
-    },
-    {
       "query": "mailchimp to klaviyo migration",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 5,
       "ctr": 0,
-      "position": 41.3,
+      "position": 31.4,
       "score": 9
     },
     {
       "query": "mailchimp vs klaviyo",
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 14,
       "ctr": 0,
-      "position": 51.3,
-      "score": 9
-    },
-    {
-      "query": "mailchimp vs. klaviyo",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 73,
+      "position": 48.9,
       "score": 9
     },
     {
@@ -2761,9 +3601,17 @@
     {
       "query": "mailroom automation australia",
       "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43,
+      "score": 9
+    },
+    {
+      "query": "marketing auditor",
+      "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 79.3,
+      "position": 38.3,
       "score": 9
     },
     {
@@ -2783,27 +3631,11 @@
       "score": 9
     },
     {
-      "query": "migrate mailchimp to klaviyo",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 52.9,
-      "score": 9
-    },
-    {
-      "query": "migrating from mailchimp to klaviyo",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0,
-      "position": 42.7,
-      "score": 9
-    },
-    {
       "query": "monthly retainer",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 5,
       "ctr": 0,
-      "position": 35.7,
+      "position": 31.6,
       "score": 9
     },
     {
@@ -2817,25 +3649,25 @@
     {
       "query": "moving from mailchimp to klaviyo",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 4,
       "ctr": 0,
-      "position": 51.8,
+      "position": 40,
       "score": 9
     },
     {
       "query": "optimal cart abandonment email timing benchmarks",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 9,
       "ctr": 0,
-      "position": 47.3,
+      "position": 48.4,
       "score": 9
     },
     {
-      "query": "placed order rate klaviyo",
+      "query": "perth newsletter services",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 47,
+      "position": 57,
       "score": 9
     },
     {
@@ -2855,14 +3687,6 @@
       "score": 9
     },
     {
-      "query": "post purchase automation",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 93,
-      "score": 9
-    },
-    {
       "query": "post purchase communication",
       "clicks": 0,
       "impressions": 1,
@@ -2871,19 +3695,11 @@
       "score": 9
     },
     {
-      "query": "post purchase cross sell email",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 71,
-      "score": 9
-    },
-    {
       "query": "post purchase email automation",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 2,
       "ctr": 0,
-      "position": 83.5,
+      "position": 77.5,
       "score": 9
     },
     {
@@ -2913,17 +3729,9 @@
     {
       "query": "post purchase email flow examples",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
-      "position": 54.8,
-      "score": 9
-    },
-    {
-      "query": "post purchase email flow service",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 78,
+      "position": 40.3,
       "score": 9
     },
     {
@@ -2937,9 +3745,9 @@
     {
       "query": "post purchase email sequence",
       "clicks": 0,
-      "impressions": 17,
+      "impressions": 14,
       "ctr": 0,
-      "position": 63,
+      "position": 55.3,
       "score": 9
     },
     {
@@ -2953,17 +3761,17 @@
     {
       "query": "post purchase email series",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 93.5,
+      "position": 92,
       "score": 9
     },
     {
       "query": "post purchase email strategy",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 6,
       "ctr": 0,
-      "position": 76.9,
+      "position": 69.2,
       "score": 9
     },
     {
@@ -2991,19 +3799,11 @@
       "score": 9
     },
     {
-      "query": "post purchase flow examples",
+      "query": "post purchase follow up",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 87.7,
-      "score": 9
-    },
-    {
-      "query": "post purchase follow up",
-      "clicks": 0,
-      "impressions": 4,
-      "ctr": 0,
-      "position": 58.8,
+      "position": 51.3,
       "score": 9
     },
     {
@@ -3057,9 +3857,9 @@
     {
       "query": "post-purchase automation email",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 2,
       "ctr": 0,
-      "position": 86.5,
+      "position": 84.5,
       "score": 9
     },
     {
@@ -3076,6 +3876,14 @@
       "impressions": 2,
       "ctr": 0,
       "position": 36.5,
+      "score": 9
+    },
+    {
+      "query": "post-purchase email flow",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 66.6,
       "score": 9
     },
     {
@@ -3097,9 +3905,9 @@
     {
       "query": "purchase email",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 56.5,
+      "position": 59,
       "score": 9
     },
     {
@@ -3159,6 +3967,14 @@
       "score": 9
     },
     {
+      "query": "roller klaviyo automation",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38,
+      "score": 9
+    },
+    {
       "query": "roller to klaviyo",
       "clicks": 0,
       "impressions": 3,
@@ -3193,9 +4009,9 @@
     {
       "query": "sales automation australia",
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 9,
       "ctr": 0,
-      "position": 92.9,
+      "position": 81.3,
       "score": 9
     },
     {
@@ -3215,22 +4031,6 @@
       "score": 9
     },
     {
-      "query": "sunset policy email",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 93,
-      "score": 9
-    },
-    {
-      "query": "sunset sequence removing unengaged subscribrs protecting deliverability",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 87,
-      "score": 9
-    },
-    {
       "query": "thank you email after purchase",
       "clicks": 0,
       "impressions": 1,
@@ -3247,11 +4047,11 @@
       "score": 9
     },
     {
-      "query": "types of klaviyo flows",
+      "query": "twilio sendgrid vs mailchimp vs klaviyo for ecommerce in australia",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 69,
+      "position": 73,
       "score": 9
     },
     {
@@ -3263,9 +4063,17 @@
       "score": 9
     },
     {
+      "query": "weekly article recommendation automation preferences",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47,
+      "score": 9
+    },
+    {
       "query": "welcome email series",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
       "position": 54,
       "score": 9
@@ -3276,14 +4084,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 52,
-      "score": 9
-    },
-    {
-      "query": "welcome series best practices",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 86,
       "score": 9
     },
     {
@@ -3340,14 +4140,6 @@
       "impressions": 2,
       "ctr": 0,
       "position": 67,
-      "score": 9
-    },
-    {
-      "query": "why is klaviyo better than mailchimp",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 81,
       "score": 9
     },
     {
