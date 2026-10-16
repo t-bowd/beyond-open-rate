@@ -36,28 +36,36 @@ export async function requestFullAudit(id: string): Promise<void> {
 export async function captureLead(
   input: CaptureLeadInput,
 ): Promise<CaptureLeadResult> {
-  const { data, error } = await supabaseAdmin()
-    .from("leads")
-    .insert({
-      email: input.email.toLowerCase().trim(),
-      name: input.name?.trim() || null,
-      phone: input.phone?.trim() || null,
-      website: input.website?.trim() || null,
-      company: input.company?.trim() || null,
-      company_size: input.company_size?.trim() || null,
-      message: input.message?.trim() || null,
-      source: input.source,
-      payload: input.payload ?? {},
-      user_agent: input.userAgent ?? null,
-      ip: input.ip ?? null,
-    })
-    .select("id")
-    .single();
+  // The database is a record of the lead, not a gate. If the insert fails the
+  // emails still go out, so a Supabase outage can't cost us a lead.
+  let id = "unsaved";
+  try {
+    const { data, error } = await supabaseAdmin()
+      .from("leads")
+      .insert({
+        email: input.email.toLowerCase().trim(),
+        name: input.name?.trim() || null,
+        phone: input.phone?.trim() || null,
+        website: input.website?.trim() || null,
+        company: input.company?.trim() || null,
+        company_size: input.company_size?.trim() || null,
+        message: input.message?.trim() || null,
+        source: input.source,
+        payload: input.payload ?? {},
+        user_agent: input.userAgent ?? null,
+        ip: input.ip ?? null,
+      })
+      .select("id")
+      .single();
 
-  if (error) throw error;
+    if (error) throw error;
+    id = data.id;
+  } catch (err) {
+    console.error("[lead] DB INSERT FAILED, lead not saved (emails still sending)", input.email, err);
+  }
 
   const lead = {
-    id: data.id,
+    id,
     email: input.email.toLowerCase().trim(),
     name: input.name?.trim() || null,
     phone: input.phone?.trim() || null,
@@ -109,5 +117,5 @@ export async function captureLead(
     }
   }
 
-  return { id: data.id };
+  return { id };
 }
