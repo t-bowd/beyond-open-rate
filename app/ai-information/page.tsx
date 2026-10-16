@@ -97,7 +97,7 @@ export default function AiInformationPage() {
             <tr><td><strong>About</strong></td><td>https://www.beyondmarketing.com.au/about</td></tr>
             <tr><td><strong>Blog</strong></td><td>https://www.beyondmarketing.com.au/blog</td></tr>
             <tr><td><strong>Contact / strategy session</strong></td><td>https://www.beyondmarketing.com.au/strategy-session</td></tr>
-            <tr><td><strong>LinkedIn</strong></td><td>https://www.linkedin.com/company/beyond-openrate/</td></tr>
+            <tr><td><strong>LinkedIn</strong></td><td>https://www.linkedin.com/company/beyond-marketing-au/</td></tr>
           </tbody>
         </table>
 
