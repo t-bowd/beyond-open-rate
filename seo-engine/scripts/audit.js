@@ -13,6 +13,7 @@
  *   GITHUB_REPOSITORY
  */
 
+import { seoSystemPrompt, buildSeoUserPrompt } from "./seo-page-prompt.js";
 import { google } from "googleapis";
 import Anthropic from "@anthropic-ai/sdk";
 import { Octokit } from "@octokit/rest";
@@ -128,11 +129,11 @@ const top = scored[0];
 
 const client = new Anthropic();
 
-const systemPrompt = `You are an SEO strategist for Beyond Open Rate, a boutique email lifecycle agency in Australia. They work with two equal audiences: e-commerce brands (Shopify, BigCommerce, DTC) and service businesses (professional services, SaaS, agencies, B2B). Never write for ecommerce only. Never use revenue ranges like "$1M–$20M".
+const systemPrompt = `You are an SEO strategist for Beyond Marketing, a boutique full-funnel digital marketing agency in Australia (paid social, organic social, SEO and AI search visibility, landing pages, email and lifecycle). They work with two equal audiences: e-commerce brands and service businesses (professional services, SaaS, agencies, B2B). Never write for ecommerce only. Never use revenue ranges.
 
-Their goal: rank on Google and get cited by AI tools (ChatGPT, Perplexity, Claude) when business owners search for email agency help. Content should be authoritative, specific, and connect email directly to revenue. Never generic.`;
+Their goal: rank on Google and get cited by AI tools (ChatGPT, Perplexity, Gemini) when business owners search for marketing help. Content should be authoritative, specific, and connect marketing directly to revenue. Never generic. Never invent statistics. The site was originally email-only and most existing search data is still email queries; flag where the data shows demand for the other services.`;
 
-const analysisPrompt = `Here are Beyond Open Rate's top 20 GSC opportunities this week, scored 0–100:
+const analysisPrompt = `Here are Beyond Marketing's top 20 GSC opportunities this week, scored 0–100:
 
 ${top20.map((r, i) => `${i + 1}. "${r.query}" — score ${r.score} | pos ${r.position} | ${r.impressions} impressions | ${r.ctr}% CTR | ${r.clicks} clicks`).join("\n")}
 
@@ -145,13 +146,13 @@ Do three things:
 For each of the top 5, one sentence: why it's an opportunity and what action it needs (write new content / optimise existing page / fix meta title & description).
 
 ## PRIORITY CONTENT BRIEF
-Pick the single highest-leverage opportunity and write a full brief for a blog post that would help BOR rank for it AND get cited in AI answers. Include:
+Pick the single highest-leverage opportunity and write a full brief for a blog post that would help Beyond Marketing rank for it AND get cited in AI answers. Include:
 - Target query
 - Working title
 - What the post needs to cover (5–8 specific bullet points)
 - Word count target
-- Angle that makes it distinctly BOR — not advice any agency could write
-- One specific stat or claim they should lead with`;
+- Angle that makes it distinctly Beyond Marketing — not advice any agency could write
+- One specific, real, widely published fact to lead with (never invent a statistic)`;
 
 let analysis;
 try {
@@ -276,20 +277,34 @@ function queryToSlug(q) {
   return q.toLowerCase().replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-").replace(/-+$/, "");
 }
 
-// Skip queries that aren't page-worthy (Klaviyo's own office, navigational, etc.)
-const SKIP_TERMS = ["office", "login", "careers", "jobs", "support", "contact", "price", "pricing", "review", "vs "];
+// Skip queries that aren't page-worthy (navigational, pricing-comparison, email-platform names, etc.)
+const SKIP_TERMS = ["office", "login", "careers", "jobs", "support", "contact", "price", "pricing", "review", "vs ",
+  "klaviyo", "mailchimp", "activecampaign", "hubspot", "omnisend", "brevo"];
 
 function isPageWorthy(query) {
   const q = query.toLowerCase();
   return !SKIP_TERMS.some((term) => q.includes(term));
 }
 
-// Find the top-scored opportunity where no page exists yet
-const topGap = scored.find((r) => {
-  if (!isPageWorthy(r.query)) return false;
+async function branchExists(name) {
+  try {
+    await octokit.git.getRef({ owner, repo, ref: `heads/${name}` });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+// Top-scored opportunity with no page and no page branch already in flight
+let topGap = null;
+for (const r of scored) {
+  if (!isPageWorthy(r.query)) continue;
   const slug = queryToSlug(r.query);
-  return !fs.existsSync(path.join(CONTENT_SEO_DIR, `${slug}.mdx`));
-});
+  if (fs.existsSync(path.join(CONTENT_SEO_DIR, `${slug}.mdx`))) continue;
+  if (await branchExists(`seo/page-${slug}`)) continue;
+  topGap = r;
+  break;
+}
 
 if (!topGap) {
   console.log("No content gap found this week — all top opportunities already have pages.");
@@ -299,74 +314,10 @@ if (!topGap) {
 console.log(`\nTop content gap: "${topGap.query}" (score ${topGap.score}, pos ${topGap.position})`);
 console.log("Generating page...");
 
-const seoSystemPrompt = `You write SEO pages for Beyond Open Rate, a boutique email lifecycle agency based in Australia. They work with two equal audiences: e-commerce brands (Shopify, BigCommerce, DTC) and service businesses (professional services, SaaS, agencies, B2B). Never write for ecommerce only. Never use revenue ranges like "$1M–$20M".
-
-Beyond Open Rate is platform-independent (no referral commissions), reports on revenue not open rates, and audits before building. They work with Klaviyo, ActiveCampaign, HubSpot, Omnisend, and Brevo.
-
-You must write every page with three layers built in:
-
-1. SEO LAYER — rank on Google
-   - Target query is the primary keyword, used naturally in title, h1, heroSub, description, and body
-   - Clear H2 structure covering what someone searching this query actually wants to know
-   - Specific benchmarks and numbers throughout (these build topical authority)
-
-2. AEO LAYER — get cited as a direct answer by AI tools
-   - FAQ questions must mirror how people phrase queries to AI tools (ChatGPT, Perplexity, Claude)
-   - Always include: a definitional FAQ ("What is X?"), a recommendation FAQ ("Which X do you recommend?"), and a cost FAQ ("How much does X cost?")
-   - For city pages, always include: "Is there an X in [City]?" and "Do I need a local X or can I work remotely?"
-   - FAQ answers must be self-contained — complete answers on their own, not "see above"
-   - Benchmark stats belong in blockquote callouts: > **Stat label:** stat here. These get extracted by AI crawlers.
-
-3. GEO LAYER — get cited by name when AI tools recommend agencies
-   - First paragraph of body must identify Beyond Open Rate explicitly: "Beyond Open Rate is an Australian [service] specialising in..."
-   - Every FAQ answer where relevant should name Beyond Open Rate, not just say "we"
-   - Include specific differentiators: platform-independent, revenue reporting, audit-first
-
-BRAND VOICE
-- Direct, authoritative, practitioner — not a content creator
-- Australian — no American spellings
-- No em dashes. Use a comma, period, or restructure.
-- No "game-changer", "holistic", "synergy", "elevate", "leverage" (verb), "unlock"
-- Connect everything to revenue: recovered carts, LTV lift, repeat purchase rate
-
-FORMAT — output raw MDX frontmatter + body, nothing else. No preamble, no explanation.
-
-MDX STRUCTURE:
----
-title: "[Page title]"
-h1: "[H1 text]"
-heroSub: "[One sentence hero subtitle]"
-description: "[Meta description, 140–160 chars]"
-type: [service | platform | location]
-[location: City, State  ← only for location pages]
-[platform: Klaviyo  ← only for platform pages]
-faq:
-  - q: "[question]"
-    a: "[answer]"
-  [repeat for 6–8 FAQs]
----
-
-[Body content in MDX/markdown]
-
-[End with a CTA paragraph linking to /tools/email-audit and /email-marketing-audit-australia]`;
-
-const seoUserPrompt = `Write a complete, AEO/GEO-optimised SEO page for the target query: "${topGap.query}"
-
-GSC context: this query has ${topGap.impressions} impressions over 90 days at position ${topGap.position} with ${topGap.clicks} clicks. There is no existing page targeting it.
-
-Infer the page type from the query:
-- If it mentions a city (Sydney, Melbourne, Brisbane, Perth, Adelaide, Gold Coast, etc.) → type: location
-- If it mentions Klaviyo, ActiveCampaign, HubSpot, Omnisend, Mailchimp → type: platform
-- Otherwise → type: service
-
-Include 6–8 FAQ questions. The first three must be:
-1. A definitional question ("What is [X]?")
-2. A recommendation question ("Which [X] do you recommend?" or "Is there a [X] in [City]?")
-3. A cost question ("How much does [X] cost?")
-
-Then 3–5 topic-specific questions that address what someone would ask an AI tool.
-
-Body: 400–600 words. Use ## headings. Pull 1–2 key stats into blockquote callouts.`;
+const seoUserPrompt = buildSeoUserPrompt(
+  topGap.query,
+  `\nGSC context: this query has ${topGap.impressions} impressions over 90 days at position ${topGap.position} with ${topGap.clicks} clicks. There is no existing page targeting it.\n`,
+);
 
 let pageContent;
 try {

@@ -59,6 +59,7 @@ export default async function SeoPage({ params }: PageProps) {
   if (!page) notFound();
 
   const url = `${site.url}/${slug}`;
+  const isEmail = !page.service || page.service === "email";
 
   return (
     <>
@@ -67,14 +68,20 @@ export default async function SeoPage({ params }: PageProps) {
         title={page.h1}
         sub={page.heroSub}
         actions={
-          <>
-            <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="hero">
-              Score your email program <ArrowIcon />
+          isEmail ? (
+            <>
+              <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="hero">
+                Score your email program <ArrowIcon />
+              </CtaLink>
+              <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
+                Talk to us
+              </CtaLink>
+            </>
+          ) : (
+            <CtaLink href="/strategy-session" className="btn btn-primary btn-lg btn-arrow" label="contact_cta" location="hero">
+              Book your free session <ArrowIcon />
             </CtaLink>
-            <CtaLink href="/strategy-session" className="btn btn-ghost btn-lg" label="contact_cta" location="hero">
-              Talk to us
-            </CtaLink>
-          </>
+          )
         }
       />
 
@@ -90,14 +97,29 @@ export default async function SeoPage({ params }: PageProps) {
       <section className="section" style={{ background: "var(--surface)" }}>
         <div className="wrap" style={{ maxWidth: 680, textAlign: "center" }}>
           <h2 style={{ marginBottom: 12 }}>Not sure where to start?</h2>
-          <p style={{ marginBottom: 28 }}>
-            Take the free 3-minute audit. Ten questions on your automations,
-            deliverability, and segmentation, and a scored breakdown of what
-            to fix first.
-          </p>
-          <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="mid_page">
-            Start the free audit <ArrowIcon />
-          </CtaLink>
+          {isEmail ? (
+            <>
+              <p style={{ marginBottom: 28 }}>
+                Take the free 3-minute audit. Ten questions on your automations,
+                deliverability, and segmentation, and a scored breakdown of what
+                to fix first.
+              </p>
+              <CtaLink href="/tools/email-audit" className="btn btn-primary btn-lg btn-arrow" label="audit_cta" location="mid_page">
+                Start the free audit <ArrowIcon />
+              </CtaLink>
+            </>
+          ) : (
+            <>
+              <p style={{ marginBottom: 28 }}>
+                Book a free 30-minute strategy session. We will look at where your
+                marketing stands and where it is losing money, and tell you what
+                to fix first.
+              </p>
+              <CtaLink href="/strategy-session" className="btn btn-primary btn-lg btn-arrow" label="contact_cta" location="mid_page">
+                Book your free session <ArrowIcon />
+              </CtaLink>
+            </>
+          )}
         </div>
       </section>
 

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       query:
-        description: "Target query (e.g. klaviyo agency perth)"
+        description: "Target query (e.g. paid social agency perth)"
         required: true
         type: string
 

@@ -6,6 +6,7 @@ const SEO_DIR = join(process.cwd(), "content", "seo");
 
 export type SeoPageFaq = { q: string; a: string };
 export type SeoPageType = "platform" | "service" | "location";
+export type SeoPageService = "email" | "paid-social" | "organic-social" | "seo" | "landing-pages" | "full-funnel";
 
 export type SeoPageFrontmatter = {
   title: string;
@@ -15,6 +16,7 @@ export type SeoPageFrontmatter = {
   type: SeoPageType;
   location?: string;
   platform?: string;
+  service?: SeoPageService;
   faq?: SeoPageFaq[];
 };
 
