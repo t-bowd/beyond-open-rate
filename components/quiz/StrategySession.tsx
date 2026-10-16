@@ -151,7 +151,7 @@ export default function StrategySession() {
         setServerError(
           res.status === 429
             ? "A few too many tries, give it a minute and try again."
-            : "Something went wrong on our end. Try again, or email hello@beyondopenrate.com.au.",
+            : "Something went wrong on our end. Try again, or email hello@beyondmarketing.com.au.",
         );
         setStepIndex(STEP_IDS.length - 1);
         setPhase("steps");

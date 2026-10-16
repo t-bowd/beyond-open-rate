@@ -373,6 +373,116 @@
       "audience_angle": "Marketer who wants better personalisation and knows AI should be able to help but isn't sure what's actually available",
       "cta_style": "soft",
       "notes": "Set realistic expectations and give a practical framework. Three levels of AI personalisation: send time (easy, turn it on), content blocks (medium, requires product/category data connected), path decisions (advanced, requires clean behavioural data and well-built flows). Position BOR as the people who connect the data and build the flows that make the higher levels work."
+    },
+    {
+      "id": "064",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "Your ad is not the problem. Your landing page is.",
+      "seed_claim": "You can write a great ad and still lose almost everyone at the page it sends them to. The ad gets the click, the page decides whether the click was worth paying for. Most businesses keep tweaking the ad.",
+      "audience_angle": "Founder who keeps changing ad creative while the page stays the same",
+      "cta_style": "none",
+      "notes": "Mirror opener. Walk through what a visitor experiences after clicking. One idea, no stats. Platform agnostic."
+    },
+    {
+      "id": "065",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "You doubled your ad budget. Your sales didn't double.",
+      "seed_claim": "More budget buys more attention, not more sales. If the page, the offer or the follow-up leaks, a bigger budget just leaks faster. The fix is usually downstream of the ad.",
+      "audience_angle": "Business owner scaling ad spend and not seeing the return",
+      "cta_style": "soft",
+      "notes": "Use the broken lever structure: budget is the wrong lever. Name where to look instead: page, offer, follow-up. Illustrative maths only, clearly labelled, no real benchmarks."
+    },
+    {
+      "id": "066",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "Most businesses measure social by likes. Here's what to measure instead.",
+      "seed_claim": "Likes and reach feel like progress and rarely connect to revenue. The numbers that matter are enquiries, branded searches and customers who mention seeing you on social.",
+      "audience_angle": "Owner who posts consistently but cannot say what it earns",
+      "cta_style": "none",
+      "notes": "Short and blunt. Three practical things to track without fancy tools. No invented statistics."
+    },
+    {
+      "id": "067",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Ranking on Google isn't enough anymore. People are asking ChatGPT.",
+      "seed_claim": "A growing number of buyers ask an AI assistant who to hire before they ever open Google. Being the business that gets named is a different job from ranking a page, and most businesses have not started on it.",
+      "audience_angle": "Business owner who has invested in SEO and has not thought about AI search",
+      "cta_style": "soft",
+      "notes": "Be honest: nobody can guarantee being named. Say what is known (clear answers, consistent business info, being referenced elsewhere). No made-up numbers."
+    },
+    {
+      "id": "068",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "gathering_info",
+      "topic": "AEO and GEO, without the jargon.",
+      "seed_claim": "AEO is making your content easy for AI tools to answer from. GEO is getting your business named when they recommend someone. Both build on good SEO rather than replacing it.",
+      "audience_angle": "Owner who keeps hearing the acronyms and wants a plain definition",
+      "cta_style": "none",
+      "notes": "Definition post. Two terms, one line each, then the three practical things to do first. No hype."
+    },
+    {
+      "id": "069",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Your SEO report says rankings are up. Does it say what that earned?",
+      "seed_claim": "A report full of rankings and impressions can look great while the phone stays quiet. SEO should be judged on enquiries and sales, not positions.",
+      "audience_angle": "Business owner paying for SEO who cannot see the return",
+      "cta_style": "soft",
+      "notes": "Contrast vanity vs revenue reporting. This is also how we report. Soft CTA only."
+    },
+    {
+      "id": "070",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "unaware",
+      "topic": "The customer you already paid for is the cheapest sale you'll make this year.",
+      "seed_claim": "Getting someone to buy once is the expensive part. Most businesses spend almost nothing on getting them to buy again, then pay to find a new customer instead.",
+      "audience_angle": "Business that spends heavily on acquisition and little on repeat purchase",
+      "cta_style": "none",
+      "notes": "Pattern interrupt. Lifecycle angle but platform agnostic: email, SMS and retargeting all count. No stats."
+    },
+    {
+      "id": "071",
+      "status": "queued",
+      "pillar": "promotional",
+      "tier": "gathering_info",
+      "topic": "Why we plan the whole funnel instead of selling you one channel.",
+      "seed_claim": "An ads specialist optimises ads, an SEO specialist optimises search, and nobody owns what happens between them. We plan getting found, the click, the sale and the next sale together so spend at the top keeps earning at the bottom.",
+      "audience_angle": "Owner who has hired separate specialists and feels the pieces do not connect",
+      "cta_style": "soft",
+      "notes": "Position the boutique, full-funnel approach. Contrast with channel silos. No client results claimed."
+    },
+    {
+      "id": "072",
+      "status": "queued",
+      "pillar": "promotional",
+      "tier": "ready_to_buy",
+      "topic": "Free 30-minute strategy session: what we actually look at.",
+      "seed_claim": "In 30 minutes we look at where your marketing stands, where it is losing money and what to fix first. No pitch deck, nothing to prepare.",
+      "audience_angle": "Owner ready to talk and wanting to know what the session involves",
+      "cta_style": "direct",
+      "notes": "List the three things we cover in the session. Direct CTA to book via the strategy session page. Mention sessions are limited."
+    },
+    {
+      "id": "073",
+      "status": "queued",
+      "pillar": "educational",
+      "tier": "problem_aware",
+      "topic": "Posting every day is not a strategy.",
+      "seed_claim": "Consistency matters, volume for its own sake does not. A realistic organic plan is a few pieces a week built around what your buyers actually want to know, reused across channels.",
+      "audience_angle": "Time-poor owner who thinks organic social means posting constantly",
+      "cta_style": "soft",
+      "notes": "Give a minimal weekly rhythm in plain language. Fragment stacking works well here."
     }
   ]
 }

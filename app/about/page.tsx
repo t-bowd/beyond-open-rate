@@ -65,7 +65,7 @@ export default function AboutPage() {
                 <div className="about-person-photo-wrap">
                   <Image
                     src={person.photo}
-                    alt={`${person.name}, ${person.role} of Beyond Open Rate`}
+                    alt={`${person.name}, ${person.role} of Beyond Marketing`}
                     width={320}
                     height={320}
                     className="about-person-photo"

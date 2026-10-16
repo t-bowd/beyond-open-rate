@@ -110,7 +110,7 @@ export default function EmailAudit() {
         setServerError(
           res.status === 429
             ? "A few too many tries, give it a minute and try again."
-            : "Something went wrong saving your results. Try again, or email hello@beyondopenrate.com.au.",
+            : "Something went wrong saving your results. Try again, or email hello@beyondmarketing.com.au.",
         );
         setPhase("gate");
         return;
