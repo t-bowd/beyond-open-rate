@@ -25,7 +25,7 @@
   },
   {
     "id": "email-list-cleaning-guide",
-    "title": "How to clean your email list — and when to sunset subscribers",
+    "title": "How to clean your email list \u2014 and when to sunset subscribers",
     "keyword": "email list cleaning",
     "tags": [
       "deliverability",
@@ -97,7 +97,7 @@
   },
   {
     "id": "email-marketing-roi",
-    "title": "How to calculate email marketing ROI — and what most businesses get wrong",
+    "title": "How to calculate email marketing ROI \u2014 and what most businesses get wrong",
     "keyword": "email marketing ROI",
     "tags": [
       "metrics",
@@ -153,7 +153,7 @@
       "migration",
       "platforms"
     ],
-    "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Seed claim: most migrations take longer than they should because brands move before setting up their data properly — the order is: integration, data sync, segments, then flows. Naturally reference /blog/klaviyo-vs-mailchimp.",
+    "notes": "Cover: why brands migrate, what to do before migrating (integration setup, data sync), the migration sequence, what to rebuild first, common mistakes. Seed claim: most migrations take longer than they should because brands move before setting up their data properly \u2014 the order is: integration, data sync, segments, then flows. Naturally reference /blog/klaviyo-vs-mailchimp.",
     "status": "published"
   },
   {
@@ -203,7 +203,7 @@
       "strategy",
       "automation"
     ],
-    "notes": "Honest platform evaluation — not a hit piece, not a sales pitch. Cover what AC does well (CRM depth, complex automation, deal pipelines, B2B-adjacent use cases), where it struggles for DTC (native ecomm data sync, product-based segmentation, flow triggers off purchase events), which business types suit it vs alternatives. Platform-agnostic framing throughout.",
+    "notes": "Honest platform evaluation \u2014 not a hit piece, not a sales pitch. Cover what AC does well (CRM depth, complex automation, deal pipelines, B2B-adjacent use cases), where it struggles for DTC (native ecomm data sync, product-based segmentation, flow triggers off purchase events), which business types suit it vs alternatives. Platform-agnostic framing throughout.",
     "status": "published"
   },
   {
@@ -226,7 +226,7 @@
       "strategy",
       "automation"
     ],
-    "notes": "BOR's positioning piece on AI. We use AI and know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece — an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world.",
+    "notes": "BOR's positioning piece on AI. We use AI and know exactly where it falls short. Cover: segmentation decisions, deliverability judgment, brand voice calibration, lifecycle timing, suppression logic, knowing when not to send. Not a hit piece \u2014 an honest assessment that makes the case for strategy expertise as the scarce resource in an AI-saturated world.",
     "status": "published"
   },
   {
@@ -335,222 +335,5 @@
     ],
     "notes": "Target migration intent with practical walkthrough: data export/import process, preserving subscriber consent, recreating automations in Klaviyo, handling integrations, testing before full switch, and common pitfalls. Include timeline and checklist. Link to 'Klaviyo vs Mailchimp' comparison and 'Klaviyo email automation setup' posts.",
     "status": "published"
-  },
-  {
-    "id": "klaviyo-agency-australia-certification-partner-comparison",
-    "title": "The Complete Guide to Klaviyo Agencies in Australia: Certifications, Partners & What to Look For",
-    "keyword": "klaviyo agency australia",
-    "tags": [
-      "klaviyo",
-      "agency",
-      "australia",
-      "certification"
-    ],
-    "notes": "Target position 41.3 ranking with focused content on Australian Klaviyo partner landscape. Explain Klaviyo certification tiers (Bronze/Silver/Gold/Platinum), what they mean, directory of certified Australian partners, questions to ask before hiring, pricing benchmarks for Australian market, and how to verify credentials. Include comparison table of service offerings by partner tier.",
-    "status": "queued"
-  },
-  {
-    "id": "klaviyo-migration-checklist-data-preservation",
-    "title": "Klaviyo Migration Checklist: How to Preserve Your Email Data, Segments & Performance History",
-    "keyword": "klaviyo migration",
-    "tags": [
-      "klaviyo",
-      "migration",
-      "technical"
-    ],
-    "notes": "Target both 'klaviyo migration' and 'migrate mailchimp to klaviyo' queries with a technical deep-dive on what many guides miss: preserving historical data, maintaining segment logic, handling custom properties, and avoiding deliverability drops during transition. Include pre-migration audit steps, data mapping templates, and post-migration testing protocols. Link to Mailchimp migration guide and Klaviyo vs Mailchimp comparison.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-adelaide-local-businesses",
-    "title": "Email Marketing in Adelaide: Local Compliance, Best Practices & E-Commerce Success Stories",
-    "keyword": "email marketing adelaide",
-    "tags": [
-      "adelaide",
-      "australia",
-      "local"
-    ],
-    "notes": "Geo-targeted content for Adelaide market. Cover Australian spam act compliance specific to South Australia, local e-commerce case studies, timezone/sending time considerations for Adelaide audiences, and how local businesses can compete with national brands through email. Include references to Australian privacy laws and link to deliverability and segmentation guides. Mention local Klaviyo partners and Adelaide-specific success metrics.",
-    "status": "queued"
-  },
-  {
-    "id": "abandoned-cart-email-sequence-examples",
-    "title": "7 Abandoned Cart Email Sequence Examples That Recover 15-30% of Lost Sales",
-    "keyword": "abandoned cart email sequence",
-    "tags": [
-      "abandoned cart",
-      "email flows",
-      "conversion optimization"
-    ],
-    "notes": "Target the high-impression 'abandoned cart email sequence' query. Include real examples with screenshots, breakdown timing strategies (immediate vs 1hr vs 24hr sends), showcase subject lines that work for Australian e-commerce, and link to existing abandoned cart strategy post. Focus on practical Klaviyo implementation tips.",
-    "status": "queued"
-  },
-  {
-    "id": "ecommerce-email-marketing-strategy-guide",
-    "title": "E-commerce Email Marketing: The Complete 2024 Strategy Guide for Australian Stores",
-    "keyword": "ecommerce email marketing",
-    "tags": [
-      "e-commerce",
-      "strategy",
-      "lifecycle marketing"
-    ],
-    "notes": "Comprehensive pillar content targeting 'ecommerce email marketing' with decent position. Cover the full ecosystem: campaigns vs flows, essential automation sequences, segmentation fundamentals, deliverability basics, and metrics that matter. Link to existing flow guides, segmentation, and ROI calculation posts as deeper dives.",
-    "status": "queued"
-  },
-  {
-    "id": "post-purchase-flow-strategy",
-    "title": "Post-Purchase Email Flow Strategy: 9 Emails That Turn Buyers Into Repeat Customers",
-    "keyword": "post purchase email flow",
-    "tags": [
-      "post-purchase",
-      "customer retention",
-      "klaviyo flows"
-    ],
-    "notes": "Target 'post purchase email flow' with tactical approach. Build on existing post-purchase examples post by diving deeper into strategy: timing between emails, when to educate vs upsell vs request reviews, segmentation by product type or AOV, and how to measure success beyond open rates. Include Klaviyo flow templates.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-agency-melbourne-guide",
-    "title": "Email Marketing Agency Melbourne: How to Choose the Right Partner for Your E-commerce Store",
-    "keyword": "email marketing agency melbourne",
-    "tags": [
-      "agency selection",
-      "melbourne",
-      "local"
-    ],
-    "notes": "Local SEO play for Melbourne-specific searches (46.4 position is movable). Cover what Melbourne e-commerce brands should look for, red flags to avoid, questions to ask during discovery calls, pricing expectations for Australian market, and case study or two from Melbourne clients. Link to 'when to hire an email automation agency' post.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-perth-local-brands-case-studies",
-    "title": "Email Marketing in Perth: How 4 Local E-commerce Brands Grew Revenue with Automation",
-    "keyword": "email marketing perth",
-    "tags": [
-      "local SEO",
-      "case studies",
-      "email automation"
-    ],
-    "notes": "Mirror the successful Adelaide local content approach for Perth market (26 impressions). Feature 2-4 Perth e-commerce brands, their email challenges, solutions implemented, and results. Cover local considerations like timing for AWST, Perth customer behaviour patterns, and local compliance. Include quotes from Perth business owners. Link to broader automation guides and agency comparison posts.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-services-melbourne-pricing-packages",
-    "title": "Email Marketing Services Melbourne: Pricing Models, Package Comparison & What You Actually Need",
-    "keyword": "email marketing services melbourne",
-    "tags": [
-      "melbourne",
-      "agency services",
-      "pricing"
-    ],
-    "notes": "Target 'email marketing services melbourne' (67 impressions, pos 36.5) and related Melbourne queries. Break down typical pricing models (retainer, project-based, rev-share), what's included in standard packages, pricing expectations for different business sizes, and how Melbourne agencies differ. Include local e-commerce case studies and link to agency selection guide.",
-    "status": "queued"
-  },
-  {
-    "id": "abandoned-cart-email-timing-guide",
-    "title": "Abandoned Cart Email Timing: The Hour-by-Hour Data on When to Send Each Email",
-    "keyword": "abandoned cart email timing",
-    "tags": [
-      "abandoned cart",
-      "email automation",
-      "conversion optimization"
-    ],
-    "notes": "Target the 27 impressions at position 30.9 — this is our strongest abandoned cart opportunity. Focus on specific timing windows (15 minutes vs 1 hour vs 24 hours), include Australian timezone considerations, and test results from Klaviyo stores. Link to existing 'abandoned cart email benchmarks' and 'abandoned cart email strategy' posts.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-brisbane-guide",
-    "title": "Email Marketing Brisbane: How 5 QLD E-commerce Brands Grew Revenue 40%+ with Klaviyo",
-    "keyword": "email marketing brisbane",
-    "tags": [
-      "local SEO",
-      "case studies",
-      "Klaviyo"
-    ],
-    "notes": "Target 57 impressions at position 21.5 plus related 'email marketing company brisbane' and 'email marketing agency brisbane' queries. Include Brisbane-specific case studies, local compliance notes (Australian Privacy Act), and timezone/seasonal considerations for QLD businesses. Link to general 'e-commerce email marketing' guide and Klaviyo agency posts.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-audit-checklist",
-    "title": "Email Marketing Audit Checklist: 47 Points to Review Before You Waste Another Dollar",
-    "keyword": "email marketing audit",
-    "tags": [
-      "email strategy",
-      "optimization",
-      "deliverability"
-    ],
-    "notes": "Small but well-positioned opportunity (11 impressions at position 24.0). Create comprehensive audit framework covering deliverability, flows, segmentation, and revenue attribution. Include downloadable checklist, link to deliverability guide, segmentation strategies, and agency selection posts. Practical DIY angle with clear indicators of when to get help.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-retainer-pricing-guide-australia",
-    "title": "Email Marketing Retainer Pricing: What Australian E-commerce Brands Actually Pay (2024 Guide)",
-    "keyword": "email marketing retainer",
-    "tags": [
-      "pricing",
-      "agency",
-      "retainer"
-    ],
-    "notes": "Target businesses evaluating agency partnerships. Break down typical retainer structures (monthly hours vs deliverables-based), what's included at different price points ($2k-$10k+ AUD), red flags in retainer agreements, and when retainer makes sense vs project-based. Include transparent pricing examples and ROI calculations to justify costs. Link to agency selection guides.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-strategy-framework-ecommerce",
-    "title": "E-commerce Email Marketing Strategy: The 5-Phase Framework That Drives 30%+ Revenue",
-    "keyword": "email marketing strategy",
-    "tags": [
-      "strategy",
-      "e-commerce",
-      "framework"
-    ],
-    "notes": "Create comprehensive strategic guide covering: customer lifecycle mapping, flow architecture, campaign calendar planning, list growth tactics, and performance benchmarking. Include Australian e-commerce case studies and seasonal considerations for ANZ market. Differentiate from tactical guides with emphasis on holistic planning and revenue attribution modeling.",
-    "status": "queued"
-  },
-  {
-    "id": "best-post-purchase-email-examples-australia",
-    "title": "15 Best Post-Purchase Email Examples from Australian E-commerce Brands (With Analytics)",
-    "keyword": "best post purchase emails",
-    "tags": [
-      "post-purchase",
-      "examples",
-      "flows"
-    ],
-    "notes": "Visual showcase of high-performing post-purchase emails across different industries (fashion, food, beauty, homewares). Include actual performance metrics where possible, explain why each works, and break down copywriting techniques, design elements, and timing strategies. Complement existing post-purchase flow guides with specific creative inspiration and benchmarks.",
-    "status": "queued"
-  },
-  {
-    "id": "email-marketing-agency-perth-ecommerce",
-    "title": "Email Marketing Agency Perth: 6 WA E-Commerce Brands Share What Worked (And What Didn't)",
-    "keyword": "email marketing agency perth",
-    "tags": [
-      "email-marketing-agency",
-      "perth",
-      "case-studies"
-    ],
-    "notes": "Target 36 impressions at position 34.9. Follow successful Brisbane/Melbourne geo-content format with local case studies, Perth timezone considerations for send times, WA compliance specifics, and regional e-commerce trends. Include comparison table of Perth-based vs national agencies. Link to existing Melbourne and Brisbane geo posts plus general agency selection guide.",
-    "status": "queued"
-  },
-  {
-    "id": "ecommerce-email-marketing-australia-compliance-2024",
-    "title": "E-Commerce Email Marketing Australia: SPAM Act Compliance, GST Rules & What Changed in 2024",
-    "keyword": "ecommerce email marketing australia",
-    "tags": [
-      "email-marketing",
-      "compliance",
-      "australia"
-    ],
-    "notes": "Target 16 impressions at position 11.8 (already ranking well - push to top 5). Focus on Australian-specific angle: SPAM Act requirements for e-commerce flows, unsubscribe rules in transactional emails, ACCC guidelines updates, and how major platforms (Klaviyo, Mailchimp) handle AU compliance. Include compliance checklist and common violations. Link to deliverability and segmentation strategy posts.",
-    "status": "queued"
-  },
-  {
-    "id": "activecampaign-consultant-australia-when-you-need-one",
-    "title": "ActiveCampaign Consultant Guide: When Australian E-commerce Brands Actually Need One",
-    "keyword": "activecampaign consultant",
-    "tags": [
-      "activecampaign",
-      "email consultant",
-      "agency services"
-    ],
-    "notes": "Target both ActiveCampaign consultant and Adelaide queries. Cover when AC works for e-commerce vs when Klaviyo is better, what AC consultants do differently than Klaviyo experts, pricing expectations, and migration scenarios. Position Beyond Open Rate's expertise while acknowledging platform limitations. Include Adelaide-specific case study if possible.",
-    "status": "queued"
   }
 ]

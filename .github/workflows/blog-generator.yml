@@ -31,10 +31,17 @@ jobs:
         working-directory: scripts
         run: npm install
 
+      - name: List topics already in flight
+        id: inflight
+        run: |
+          ids=$(git ls-remote --heads origin 'blog/*' | sed 's#.*refs/heads/blog/##' | paste -sd, -)
+          echo "ids=$ids" >> $GITHUB_OUTPUT
+
       - name: Generate post
         id: generate
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SKIP_IDS: ${{ steps.inflight.outputs.ids }}
         run: |
           # stderr (progress logs) flows to the Actions console naturally
           # stdout carries only the slug= / title= lines
@@ -89,7 +96,7 @@ jobs:
           ### Review checklist
           - [ ] Tone and voice feels right
           - [ ] Facts and examples are accurate
-          - [ ] Internal links to \`/tools/email-audit\` and \`/#contact\` are present
+          - [ ] Internal links to the relevant service page and \`/strategy-session\` are present
           - [ ] FAQ questions are ones real people would search for
           - [ ] Description is under 160 characters
 

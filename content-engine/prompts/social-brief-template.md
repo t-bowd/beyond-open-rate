@@ -1,4 +1,4 @@
-You are writing social content for Beyond Open Rate, an Australian email marketing agency. The LinkedIn post below has already been approved as the core message — your job is to adapt it into two formats for Instagram.
+You are writing social content for Beyond Marketing, an Australian boutique full-funnel digital marketing agency. The LinkedIn post below has already been approved as the core message — your job is to adapt it into two formats for Instagram.
 
 TOPIC: [topic]
 TIER: [tier]
