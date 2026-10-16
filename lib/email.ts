@@ -4,6 +4,7 @@ const FROM_HELLO = { name: "Beyond Marketing", email: "hello@again.beyondopenrat
 const REPLY_TO = { name: "Tim Bowman", email: "hello@beyondmarketing.com.au" };
 const NOTIFY_TO = "hello@beyondmarketing.com.au";
 const SITE = "https://www.beyondmarketing.com.au";
+const BOOKING_URL = "https://calendar.app.google/yxkWyUQ25sPHVnZX7";
 
 // ── Brevo send helper ─────────────────────────────────────────────────────────
 
@@ -306,8 +307,16 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
           <tr>
             <td style="background:#ffffff;padding:40px 40px 32px;">
 
-              <h1 style="margin:0 0 8px;font-size:26px;font-weight:700;color:#111111;letter-spacing:-0.5px;">We'll be in touch shortly.</h1>
-              <p style="margin:0 0 24px;font-size:16px;color:#555555;line-height:1.65;">${greeting} Thanks for reaching out. We'll review your details and get back to you within one business day.</p>
+              <h1 style="margin:0 0 8px;font-size:26px;font-weight:700;color:#111111;letter-spacing:-0.5px;">Let's find a time to talk.</h1>
+              <p style="margin:0 0 24px;font-size:16px;color:#555555;line-height:1.65;">${greeting} Thanks for reaching out. Pick a time that suits you for your free strategy session. Prefer to chat first? Just reply to this email and we'll get back to you within one business day.</p>
+
+              <table cellpadding="0" cellspacing="0" role="presentation" style="margin:0 0 32px;">
+                <tr>
+                  <td style="background:#6A00CC;border-radius:8px;">
+                    <a href="${BOOKING_URL}" style="display:inline-block;color:#ffffff;text-decoration:none;font-size:16px;font-weight:700;padding:16px 32px;">Book your free session →</a>
+                  </td>
+                </tr>
+              </table>
 
               ${auditCompleted ? `
               <p style="margin:0 0 32px;font-size:16px;color:#555555;line-height:1.65;">In the meantime, here are a few resources worth exploring while you wait.</p>
