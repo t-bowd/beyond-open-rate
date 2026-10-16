@@ -334,8 +334,8 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
                 <tr>
                   <td style="background:#f9f9fb;border:1px solid #e5e5e8;border-radius:10px;padding:24px 28px;">
                     <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:0.8px;">Resources</p>
-                    <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">Strategy, automation &amp; deliverability</p>
-                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">Practical thinking on lifecycle flows, segmentation, Klaviyo, and the metrics that actually move revenue, written for Australian e-commerce brands.</p>
+                    <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">Marketing that connects to revenue</p>
+                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">Practical thinking on paid social, SEO, email and landing pages — and how each channel connects to revenue. No vanity metrics, no fluff.</p>
                     <a href="${SITE}/blog" style="display:inline-block;background:#111111;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:11px 22px;border-radius:6px;">Read the blog →</a>
                   </td>
                 </tr>
@@ -347,8 +347,8 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
                 <tr>
                   <td style="background:#f5f0ff;border:1px solid #e9d5ff;border-radius:10px;padding:24px 28px;">
                     <p style="margin:0 0 6px;font-size:12px;font-weight:700;color:#6A00CC;text-transform:uppercase;letter-spacing:0.8px;">Our services</p>
-                    <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">See how we can help</p>
-                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">From Klaviyo management and lifecycle automation to deliverability fixes and platform migrations, take a look at what we do.</p>
+                    <p style="margin:0 0 8px;font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.3px;">The full funnel, covered</p>
+                    <p style="margin:0 0 16px;font-size:14px;color:#555555;line-height:1.55;">From email and lifecycle automation to paid social, SEO and landing pages — see what we do and how we can plug into your funnel.</p>
                     <a href="${SITE}/services" style="display:inline-block;background:#6A00CC;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:11px 22px;border-radius:6px;">View services →</a>
                   </td>
                 </tr>
