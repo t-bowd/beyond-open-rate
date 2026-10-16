@@ -1,9 +1,9 @@
 const BREVO_API = "https://api.brevo.com/v3/smtp/email";
-const FROM_LEADS = { name: "Beyond Open Rate", email: "leads@ops.beyondopenrate.com.au" };
-const FROM_HELLO = { name: "Beyond Open Rate", email: "hello@again.beyondopenrate.com.au" };
-const REPLY_TO = { name: "Tim Bowman", email: "tim@timbowman.com.au" };
-const NOTIFY_TO = "tim@timbowman.com.au";
-const SITE = "https://www.beyondopenrate.com.au";
+const FROM_LEADS = { name: "Beyond Marketing", email: "leads@ops.beyondopenrate.com.au" };
+const FROM_HELLO = { name: "Beyond Marketing", email: "hello@again.beyondopenrate.com.au" };
+const REPLY_TO = { name: "Tim Bowman", email: "hello@beyondmarketing.com.au" };
+const NOTIFY_TO = "hello@beyondmarketing.com.au";
+const SITE = "https://www.beyondmarketing.com.au";
 
 // ── Brevo send helper ─────────────────────────────────────────────────────────
 
@@ -220,7 +220,7 @@ export async function sendLeadNotification(lead: NotifyLeadInput): Promise<void>
         <table width="620" cellpadding="0" cellspacing="0" style="max-width:620px;width:100%;">
           <tr>
             <td style="background:#6A00CC;padding:20px 32px;border-radius:8px 8px 0 0;">
-              <p style="margin:0;font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:1px;">Beyond Open Rate, New Lead</p>
+              <p style="margin:0;font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:1px;">Beyond Marketing, New Lead</p>
             </td>
           </tr>
           <tr>
@@ -296,8 +296,8 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
           <tr>
             <td style="background:#ffffff;padding:28px 40px 24px;border-radius:12px 12px 0 0;border-bottom:1px solid #eeeeee;" align="center">
               <a href="${SITE}" style="text-decoration:none;display:inline-flex;align-items:center;gap:12px;">
-                <img src="${SITE}/favicon.png" alt="Beyond Open Rate" width="32" height="32" style="display:block;width:32px;height:32px;" />
-                <span style="font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.4px;">Beyond&nbsp;Open&nbsp;Rate</span>
+                <img src="${SITE}/favicon.png" alt="Beyond Marketing" width="32" height="32" style="display:block;width:32px;height:32px;" />
+                <span style="font-size:18px;font-weight:700;color:#111111;letter-spacing:-0.4px;">Beyond&nbsp;Marketing</span>
               </a>
             </td>
           </tr>
@@ -363,7 +363,7 @@ export async function sendLeadConfirmation(lead: ConfirmLeadInput): Promise<void
           <!-- Footer -->
           <tr>
             <td style="background:#f5f5f7;padding:20px 40px;border-radius:0 0 12px 12px;border-top:1px solid #e5e5e8;" align="center">
-              <p style="margin:0 0 4px;font-size:12px;color:#999999;">Beyond Open Rate · <a href="${SITE}" style="color:#999;text-decoration:none;">beyondopenrate.com.au</a></p>
+              <p style="margin:0 0 4px;font-size:12px;color:#999999;">Beyond Marketing · <a href="${SITE}" style="color:#999;text-decoration:none;">beyondmarketing.com.au</a></p>
               <p style="margin:0;font-size:12px;color:#bbbbbb;">You received this because you submitted an enquiry on our website.</p>
             </td>
           </tr>
