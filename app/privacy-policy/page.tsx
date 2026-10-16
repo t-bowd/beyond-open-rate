@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Beyond Open Rate",
-  description: "How Beyond Open Rate collects, uses, and protects your personal information under the Australian Privacy Act 1988.",
+  title: "Privacy Policy | Beyond Marketing",
+  description: "How Beyond Marketing collects, uses, and protects your personal information under the Australian Privacy Act 1988.",
   alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicy() {
-  const updated = "12 July 2026";
+  const updated = "16 October 2026";
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
           <h2>1. About us</h2>
           <p>
-            Beyond Open Rate (ABN 91 693 195 836) is an Australian email marketing agency. We operate the website beyondopenrate.com.au and provide email marketing strategy, audit, and retainer services to businesses.
+            Beyond Marketing (formerly Beyond Open Rate, ABN 91 693 195 836) is an Australian digital marketing agency. We operate the website beyondmarketing.com.au and provide paid social, organic social, SEO, landing page, and email and lifecycle marketing services to businesses.
           </p>
           <p>
             We are committed to protecting your privacy and handling your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
           <p>We may collect the following types of personal information:</p>
           <ul>
             <li><strong>Contact details</strong>, your name, email address, and phone number when you fill out a form, take our email audit, or book a strategy session.</li>
-            <li><strong>Business information</strong>, details about your business, email program, and marketing goals that you share with us in the course of our work together.</li>
+            <li><strong>Business information</strong>, details about your business, marketing programs, and marketing goals that you share with us in the course of our work together.</li>
             <li><strong>Communications</strong>, records of emails, messages, and calls between us.</li>
             <li><strong>Usage data</strong>, information about how you use our website, including pages visited, time spent, and referring sources, collected via cookies and analytics tools (see section 5).</li>
           </ul>
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
           </ul>
           <p>
             You may opt out of marketing communications at any time by clicking &ldquo;unsubscribe&rdquo; in any email we send, or by contacting us at{" "}
-            <a href="mailto:privacy@beyondopenrate.com.au">privacy@beyondopenrate.com.au</a>.
+            <a href="mailto:hello@beyondmarketing.com.au">hello@beyondmarketing.com.au</a>.
           </p>
 
           <h2>5. Cookies and tracking technologies</h2>
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
           </ul>
           <p>
             To exercise any of these rights, contact us at{" "}
-            <a href="mailto:privacy@beyondopenrate.com.au">privacy@beyondopenrate.com.au</a>.
+            <a href="mailto:hello@beyondmarketing.com.au">hello@beyondmarketing.com.au</a>.
             We will respond within a reasonable time (generally 30 days).
           </p>
 
@@ -118,13 +118,13 @@ export default function PrivacyPolicy() {
 
           <h2>11. Changes to this policy</h2>
           <p>
-            We may update this Privacy Policy from time to time. The current version will always be available at beyondopenrate.com.au/privacy-policy. We encourage you to review it periodically.
+            We may update this Privacy Policy from time to time. The current version will always be available at beyondmarketing.com.au/privacy-policy. We encourage you to review it periodically.
           </p>
 
           <h2>12. Contact us</h2>
           <p>
             For privacy-related enquiries, please contact us at:{" "}
-            <a href="mailto:privacy@beyondopenrate.com.au">privacy@beyondopenrate.com.au</a>
+            <a href="mailto:hello@beyondmarketing.com.au">hello@beyondmarketing.com.au</a>
           </p>
         </div>
       </section>
