@@ -335,5 +335,229 @@
     ],
     "notes": "Target migration intent with practical walkthrough: data export/import process, preserving subscriber consent, recreating automations in Klaviyo, handling integrations, testing before full switch, and common pitfalls. Include timeline and checklist. Link to 'Klaviyo vs Mailchimp' comparison and 'Klaviyo email automation setup' posts.",
     "status": "published"
+  },
+  {
+    "id": "paid-social",
+    "title": "Why your Meta ads get clicks but no sales, and where to look first",
+    "keyword": "meta ads clicks but no sales",
+    "tags": [
+      "paid social",
+      "conversion"
+    ],
+    "notes": "Diagnose in order: offer, creative, landing page, tracking, audience. Give a simple checklist. Link to /paid-social and /landing-pages.",
+    "status": "queued"
+  },
+  {
+    "id": "paid-social",
+    "title": "How much should an Australian small business spend on Meta ads?",
+    "keyword": "meta ads budget australia",
+    "tags": [
+      "paid social",
+      "budget"
+    ],
+    "notes": "Work from margin and target cost per sale, not a flat number. Illustrative examples only, no invented benchmarks. Cover testing budget vs scaling. Link to /paid-social.",
+    "status": "queued"
+  },
+  {
+    "id": "paid-social",
+    "title": "Creative is the new targeting: how to brief ads the algorithm can work with",
+    "keyword": "meta ads creative strategy",
+    "tags": [
+      "paid social",
+      "creative"
+    ],
+    "notes": "Broad targeting plus strong creative. How to brief variety: angles, hooks, formats. What to test first. Link to /paid-social.",
+    "status": "queued"
+  },
+  {
+    "id": "paid-social",
+    "title": "Retargeting that doesn't annoy people: what to show visitors who didn't buy",
+    "keyword": "retargeting ads strategy",
+    "tags": [
+      "paid social",
+      "retargeting"
+    ],
+    "notes": "Segment by intent (product viewers, cart, past buyers). Frequency caps, exclusions, message sequencing. Link to /paid-social.",
+    "status": "queued"
+  },
+  {
+    "id": "organic-social",
+    "title": "Organic social for businesses that hate posting: a realistic content plan",
+    "keyword": "organic social media strategy small business",
+    "tags": [
+      "organic social",
+      "content"
+    ],
+    "notes": "A minimal weekly rhythm for time-poor owners. Content pillars, repurposing, what to stop doing. Link to /organic-social.",
+    "status": "queued"
+  },
+  {
+    "id": "organic-social",
+    "title": "LinkedIn for service businesses: what to post when you're not an influencer",
+    "keyword": "linkedin marketing for service businesses",
+    "tags": [
+      "organic social",
+      "linkedin"
+    ],
+    "notes": "Post types that build trust for B2B and professional services. Founder voice, proof, teaching. Link to /organic-social.",
+    "status": "queued"
+  },
+  {
+    "id": "organic-social",
+    "title": "How to tell whether organic social is actually making you money",
+    "keyword": "measure organic social roi",
+    "tags": [
+      "organic social",
+      "measurement"
+    ],
+    "notes": "Practical attribution: UTMs, 'how did you hear about us', branded search lift, assisted conversions. Be honest about limits. Link to /organic-social.",
+    "status": "queued"
+  },
+  {
+    "id": "seo",
+    "title": "SEO for Australian service businesses: where to start on a small budget",
+    "keyword": "seo for small business australia",
+    "tags": [
+      "seo",
+      "service businesses"
+    ],
+    "notes": "Prioritise: service pages, Google Business Profile, a few useful articles, basic technical health. What to ignore early. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "local-seo-checklist",
+    "title": "Local SEO checklist: Google Business Profile, reviews and service pages",
+    "keyword": "local seo checklist australia",
+    "tags": [
+      "seo",
+      "local seo"
+    ],
+    "notes": "Step-by-step checklist for a business serving specific Australian suburbs or cities. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "seo-wrong-keywords",
+    "title": "Why your site ranks for the wrong keywords, and how to fix it",
+    "keyword": "website ranking for wrong keywords",
+    "tags": [
+      "seo",
+      "keywords"
+    ],
+    "notes": "Search intent mismatch, how to check queries in Search Console, how to retarget pages. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "landing-page-vs-homepage",
+    "title": "Landing page or homepage: where should your ad traffic land?",
+    "keyword": "landing page vs homepage",
+    "tags": [
+      "landing pages",
+      "paid social"
+    ],
+    "notes": "When a dedicated page wins, when a homepage is fine, message match, one goal per page. Link to /landing-pages and /paid-social.",
+    "status": "queued"
+  },
+  {
+    "id": "landing-page-not-converting",
+    "title": "Nine reasons your landing page isn't converting",
+    "keyword": "landing page not converting",
+    "tags": [
+      "landing pages",
+      "conversion"
+    ],
+    "notes": "Nine specific, diagnosable causes with a fix for each. Link to /landing-pages.",
+    "status": "queued"
+  },
+  {
+    "id": "landing-page-headline",
+    "title": "How to write a landing page headline that earns the scroll",
+    "keyword": "landing page headline",
+    "tags": [
+      "landing pages",
+      "copywriting"
+    ],
+    "notes": "Match the ad promise, lead with the outcome, specificity. Before/after examples. Link to /landing-pages.",
+    "status": "queued"
+  },
+  {
+    "id": "what-is-aeo",
+    "title": "What is AEO? Answer engine optimisation explained for business owners",
+    "keyword": "answer engine optimisation",
+    "tags": [
+      "ai search",
+      "aeo",
+      "seo"
+    ],
+    "notes": "Plain-English definition, how it relates to SEO, what to do now (clear answers, structure, entities, schema). Be honest about what is unproven. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "geo-vs-seo",
+    "title": "GEO vs SEO: what changes when people ask ChatGPT instead of Google",
+    "keyword": "generative engine optimisation vs seo",
+    "tags": [
+      "ai search",
+      "geo",
+      "seo"
+    ],
+    "notes": "What stays the same, what differs, how AI tools pick sources. No guaranteed-placement claims. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "get-mentioned-in-ai-answers",
+    "title": "How to get your business mentioned in AI answers: what's proven and what's guesswork",
+    "keyword": "get mentioned in chatgpt",
+    "tags": [
+      "ai search",
+      "geo",
+      "brand"
+    ],
+    "notes": "Separate known (clear content, authority, consistent business info, being cited elsewhere) from speculation. Practical steps. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "ai-search-organic-traffic",
+    "title": "Is AI search cutting your organic traffic? How to check in Search Console and GA4",
+    "keyword": "ai overviews organic traffic impact",
+    "tags": [
+      "ai search",
+      "analytics",
+      "seo"
+    ],
+    "notes": "How to look for impression/click divergence, landing page trends, referral traffic from AI tools in GA4. What to do with the findings. Link to /seo.",
+    "status": "queued"
+  },
+  {
+    "id": "first-30-days-after-purchase",
+    "title": "What happens after the click: the first 30 days that turn buyers into repeat customers",
+    "keyword": "customer retention after first purchase",
+    "tags": [
+      "lifecycle",
+      "retention"
+    ],
+    "notes": "Platform-agnostic. Post-purchase sequence across email, SMS and retargeting. Why most brands go quiet. Link to /email-lifecycle.",
+    "status": "queued"
+  },
+  {
+    "id": "get-customers-to-buy-again",
+    "title": "How to get customers to buy again: email, SMS and retargeting compared",
+    "keyword": "how to get customers to buy again",
+    "tags": [
+      "lifecycle",
+      "retention"
+    ],
+    "notes": "Compare channels by job, cost and risk. When each makes sense. No platform names. Link to /email-lifecycle and /paid-social.",
+    "status": "queued"
+  },
+  {
+    "id": "full-funnel-scorecard",
+    "title": "Why your marketing channels shouldn't report separately: a simple full-funnel scorecard",
+    "keyword": "full funnel marketing scorecard",
+    "tags": [
+      "full funnel",
+      "reporting"
+    ],
+    "notes": "Replace channel silos with four numbers: found, clicked, sold, sold again. How to build it in a spreadsheet. Link to /strategy-session.",
+    "status": "queued"
   }
 ]
