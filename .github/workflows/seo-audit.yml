@@ -1,9 +1,8 @@
 name: SEO Audit
 
 on:
-  schedule:
-    # Every Monday 8am AEST (Sunday 10pm UTC)
-    - cron: "0 22 * * 0"
+  # Cron disabled: audit was email-skewed, read the old domain and produced no clicks.
+  # Re-enable once beyondmarketing.com.au has real Search Console data.
   workflow_dispatch: {}
 
 jobs:
