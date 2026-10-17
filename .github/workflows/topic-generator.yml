@@ -1,9 +1,8 @@
 name: Generate blog topics
 
 on:
-  schedule:
-    # Mondays at 9am AEST (UTC+10) = 23:00 UTC Sunday
-    - cron: "0 23 * * 0"
+  # Cron disabled: reads old-domain, email-heavy Search Console data and 20 topics are queued.
+  # Re-enable once beyondmarketing.com.au has real Search Console data.
   workflow_dispatch:
 
 jobs:
