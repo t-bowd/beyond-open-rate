@@ -8,7 +8,6 @@ export const site: {
   phone: string;
   locale: string;
   ogImage: string;
-  twitter: string;
   legalName: string;
   founded: string;
   sameAs: string[];
