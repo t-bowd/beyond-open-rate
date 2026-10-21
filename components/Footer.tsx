@@ -106,6 +106,7 @@ export default function Footer() {
         <p className="footer-copy">© {new Date().getFullYear()} Beyond Marketing. All rights reserved.</p>
         <div style={{ display: "flex", gap: "1rem" }}>
           <Link href="/privacy-policy" className="footer-legal-link">Privacy policy</Link>
+          <Link href="/terms-of-use" className="footer-legal-link">Terms of use</Link>
           <Link href="/ai-information" className="footer-legal-link">Official information for AI</Link>
         </div>
       </div>
