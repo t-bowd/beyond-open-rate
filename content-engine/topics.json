@@ -398,7 +398,7 @@
     },
     {
       "id": "066",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "unaware",
       "topic": "Most businesses measure social by likes. Here's what to measure instead.",
