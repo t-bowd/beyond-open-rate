@@ -15,7 +15,7 @@ export default function TermsOfUse() {
     <>
       <PageHero
         label="Terms of Use"
-        title="Website Terms of Use"
+        title="Terms of Use"
         sub="The terms that apply when you use our website."
       />
 
