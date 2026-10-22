@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "About Beyond Open Rate, Australian email marketing agency",
-    "description": "Australian email marketing agency. Lifecycle automation, Klaviyo, deliverability, and campaign management, for brands that want email to compound."
+    "title": "About Beyond Marketing, full-funnel digital marketing agency, Australia",
+    "description": "Beyond Marketing is a boutique Australian agency planning paid social, organic social, SEO, landing pages and email together, measured against revenue."
   },
   "hero": {
-    "titlePre": "Email is leaving money on the table.",
-    "titleHighlight": "We get it back",
+    "titlePre": "Your marketing owes you money.",
+    "titleHighlight": "We help you find it",
     "titlePost": ".",
-    "sub": "Beyond Open Rate is a specialist email marketing company based in Australia. We work with businesses who are ready to stop guessing, and start growing."
+    "sub": "Beyond Marketing is a boutique digital marketing agency based in Australia. We work with businesses who are ready to stop guessing, and start growing."
   },
   "intro": [
-    "Most businesses know email and CRM should be working harder. They just don't have the time, the expertise, or the bandwidth to make it happen.",
-    "That's what Beyond Open Rate was built for. Since 2020, we've worked with businesses that don't have a dedicated team, and enterprises that do but need someone to lead from the front. What they have in common is straightforward: they're ready to treat email as the revenue channel it actually is.",
+    "Most businesses pay for attention and then lose it. Traffic goes up, sales barely move, and the people who do buy, buy once. Nobody has connected the dots, because the ads, SEO and email have never been planned in the same room.",
+    "That's what Beyond Marketing was built for. With more than 20 years of combined experience across email and lifecycle marketing, social media and full-funnel strategy, we've worked with start-ups and global enterprises alike. What they have in common is straightforward: they're ready to treat marketing as a revenue channel, not a cost.",
     "Regardless of business size, the goal is always the same: less money left on the table."
   ],
   "team": [
@@ -25,30 +25,29 @@
       "role": "Co-Founder",
       "name": "Tara",
       "photo": "/tara.jpg",
-      "bio": "I've worked across creative, marketing and senior leadership roles in professional services, health, education, hospitality and entertainment. I'm a data-driven thinker and creative problem solver, who's hard to impress with surface-level metrics. At Beyond Open Rate, I bring that lens to everything we do, with solutions that are built to last and tie back to revenue. I care about whether the work is actually moving the needle."
+      "bio": "I've worked across creative, marketing and senior leadership roles in professional services, health, education, hospitality and entertainment. I'm a data-driven thinker and creative problem solver, who's hard to impress with surface-level metrics. At Beyond Marketing, I bring that lens to everything we do, with solutions that are built to last and tie back to revenue. I care about whether the work is actually moving the needle."
     }
   ],
   "philosophy": {
-    "heading": "Our take on email",
+    "heading": "Our take on marketing",
     "paragraphs": [
-      "Email is still the most powerful direct channel in marketing, and we think it's only going to matter even more. But the inbox has changed.",
-      "What started as a personal, conversational space has evolved into something closer to an official record and extension of our being: bank statements, government notices, order communications, tax communications. Most of what lands there today is functional, not relational.",
-      "That shift has raised the bar for brands. Email has become more like a verified channel than a broadcast one. The answer isn't louder subject lines or more blast promotions; it's trust.",
-      "You have to earn the right to be in someone's inbox. And the brands who invest in doing that properly, will win it."
+      "Every stage of your funnel is either making you money or costing you money. Getting found, getting the click, getting the sale and getting the next sale all depend on each other.",
+      "Most agencies own one of those stages and hope the rest works out. We plan all four together, so what you spend at the top keeps earning at the bottom.",
+      "It comes down to trust. People can ignore an ad, scroll past a post and delete an email in a second. You have to earn the right to their attention, and the businesses that invest in doing that properly, will win it."
     ]
   },
   "workWith": {
     "heading": "Who we work with",
     "paragraphs": [
-      "If you're a business that sends marketing email and wants it to work harder, we're worth talking to.",
+      "If you're a business that invests in marketing and wants it to work harder, we're worth talking to.",
       "Our best work happens with businesses that are open to honest feedback, willing to test, and ready to act on data. If you want someone to bring genuine expertise and tell you what isn't working, we're a good fit."
     ]
   },
   "wontDo": {
     "heading": "What we won't do",
     "paragraphs": [
-      "We don't run blast campaigns. Untargeted sends to your full list, regardless of behaviour or engagement, burn list health, damage deliverability and train your subscribers to ignore you. No template fixes that.",
-      "Every campaign we send is targeted, behaviour-based and aligned with your brand. It takes more thought to set up properly, but it's worth the return."
+      "We don't report on likes and impressions. A report padded with vanity metrics can look great while the phone stays quiet, and no dashboard fixes that.",
+      "We also don't recommend channels you aren't ready for. Not every business needs every channel, so we'll tell you what to skip, and if something is underperforming you'll hear it from us first."
     ]
   }
 }
