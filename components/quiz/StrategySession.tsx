@@ -5,8 +5,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import {
   platformOptions,
   budgetOptions,
+  revenueOptions,
   timelineOptions,
-  formatRevenue,
 } from "@/lib/quiz/strategy-session";
 import { track } from "@/lib/analytics";
 import ArrowIcon from "@/components/ArrowIcon";
@@ -31,8 +31,8 @@ type Values = {
   website: string;
   platform: string;
   budget: string;
-  current_revenue: number;
-  target_revenue: number;
+  current_revenue: string;
+  target_revenue: string;
   obstacle: string;
   timeline: string;
   _hp: string;
@@ -44,12 +44,15 @@ const initialValues: Values = {
   website: "",
   platform: "",
   budget: "",
-  current_revenue: 0,
-  target_revenue: 0,
+  current_revenue: "",
+  target_revenue: "",
   obstacle: "",
   timeline: "",
   _hp: "",
 };
+
+const labelOf = (opts: { value: string; label: string }[], v: string) =>
+  opts.find((o) => o.value === v)?.label ?? v;
 
 type Phase = "intro" | "steps" | "submitting" | "done";
 
@@ -81,8 +84,9 @@ export default function StrategySession() {
       case "budget":
         return values.budget.length > 0;
       case "current_revenue":
+        return values.current_revenue.length > 0;
       case "target_revenue":
-        return true;
+        return values.target_revenue.length > 0;
       case "obstacle":
         return values.obstacle.trim().length > 0;
       case "timeline":
@@ -136,9 +140,9 @@ export default function StrategySession() {
           website: values.website,
           payload: {
             platform: values.platform,
-            budget: values.budget,
-            currentRevenue: values.current_revenue,
-            targetRevenue: values.target_revenue,
+            budget: labelOf(budgetOptions, values.budget),
+            currentRevenue: labelOf(revenueOptions, values.current_revenue),
+            targetRevenue: labelOf(revenueOptions, values.target_revenue),
             obstacle: values.obstacle,
             timeline: values.timeline,
           },
@@ -304,16 +308,18 @@ Session availability is limited, claim yours now or join the waitlist.
                     ? "We're asking so we only recommend strategies that'll actually move the needle for you."
                     : "We're asking so we can build you a growth plan to help you get there."}
                 </p>
-                <div className="strategy-slider">
-                  <div className="strategy-slider-value">{formatRevenue(values[stepId])}</div>
-                  <input
-                    type="range"
-                    min={0}
-                    max={200000}
-                    step={5000}
-                    value={values[stepId]}
-                    onChange={(e) => setValues((v) => ({ ...v, [stepId]: Number(e.target.value) }))}
-                  />
+                <div className="strategy-pill-grid">
+                  {revenueOptions.map((o) => (
+                    <button
+                      type="button"
+                      key={o.value}
+                      className={`strategy-pill ${values[stepId] === o.value ? "selected" : ""}`}
+                      onClick={() => setValues((v) => ({ ...v, [stepId]: o.value }))}
+                    >
+                      <span className="strategy-pill-dot" />
+                      {o.label}
+                    </button>
+                  ))}
                 </div>
               </>
             )}
@@ -321,7 +327,7 @@ Session availability is limited, claim yours now or join the waitlist.
             {stepId === "obstacle" && (
               <>
                 <h2 className="strategy-prompt">
-                  {firstName ? `${firstName}, be` : "Be"} honest… what&apos;s the #1 thing holding your email revenue back?
+                  {firstName ? `${firstName}, be` : "Be"} honest… what&apos;s the #1 thing holding your revenue back?
                 </h2>
                 <p className="strategy-help">
                   Don&apos;t skip the hairy details, the more you tell us, the more useful the call will be.

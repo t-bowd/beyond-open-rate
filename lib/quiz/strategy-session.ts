@@ -17,7 +17,18 @@ export const budgetOptions: PillOption[] = [
   { value: "5k-10k", label: "$5k – $10k" },
   { value: "10k-20k", label: "$10k – $20k" },
   { value: "20k-50k", label: "$20k – $50k" },
-  { value: "50k+", label: "$50k+" },
+  { value: "50k-100k", label: "$50k – $100k" },
+  { value: "100k+", label: "$100k+" },
+];
+
+export const revenueOptions: PillOption[] = [
+  { value: "<20k", label: "Under $20k" },
+  { value: "20k-50k", label: "$20k – $50k" },
+  { value: "50k-100k", label: "$50k – $100k" },
+  { value: "100k-250k", label: "$100k – $250k" },
+  { value: "250k-500k", label: "$250k – $500k" },
+  { value: "500k-1m", label: "$500k – $1M" },
+  { value: "1m+", label: "$1M+" },
 ];
 
 export const timelineOptions: PillOption[] = [
@@ -28,9 +39,3 @@ export const timelineOptions: PillOption[] = [
   { value: "6-weeks+", label: "6 weeks+" },
   { value: "exploring", label: "Just exploring for now", full: true },
 ];
-
-export function formatRevenue(n: number): string {
-  if (n >= 200000) return "$200k+";
-  if (n >= 1000) return `$${Math.round(n / 1000)}k`;
-  return `$${n}`;
-}
