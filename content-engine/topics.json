@@ -409,7 +409,7 @@
     },
     {
       "id": "067",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Ranking on Google isn't enough anymore. People are asking ChatGPT.",
