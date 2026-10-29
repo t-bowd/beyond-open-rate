@@ -420,7 +420,7 @@
     },
     {
       "id": "068",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "gathering_info",
       "topic": "AEO and GEO, without the jargon.",
