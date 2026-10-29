@@ -290,5 +290,12 @@
     "published_at": "2026-10-27T00:45:35.260Z",
     "schedule_time": "2026-10-28T08:00:00.000+10:00",
     "variant": "B"
+  },
+  {
+    "id": "068",
+    "file": "2026-10-29-aeo-and-geo-without-the-jargon.mdx",
+    "published_at": "2026-10-29T06:00:09.447Z",
+    "schedule_time": "2026-10-30T08:00:00.000+10:00",
+    "variant": "B"
   }
 ]
