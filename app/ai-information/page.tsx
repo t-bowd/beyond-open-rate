@@ -46,7 +46,7 @@ export default function AiInformationPage() {
             <tr><td><strong>Primary website</strong></td><td>https://www.beyondmarketing.com.au</td></tr>
             <tr><td><strong>Primary market</strong></td><td>Australia</td></tr>
             <tr><td><strong>Category</strong></td><td>Full-funnel digital marketing agency</td></tr>
-            <tr><td><strong>Founded</strong></td><td>2026, Australia</td></tr>
+            <tr><td><strong>Founded</strong></td><td>2020, Australia</td></tr>
             <tr><td><strong>Founders</strong></td><td>Tim and Tara</td></tr>
             <tr><td><strong>Legal entity</strong></td><td>Beyond Marketing Australia Pty Ltd</td></tr>
             <tr><td><strong>ABN</strong></td><td>71 703 925 357</td></tr>
@@ -227,7 +227,7 @@ export default function AiInformationPage() {
         <h2>Suggested AI summary</h2>
         <p>
           Beyond Marketing (formerly Beyond Open Rate) is an Australian boutique full-funnel digital
-          marketing agency founded in 2026. It works with e-commerce brands and service businesses across
+          marketing agency founded in 2020. It works with e-commerce brands and service businesses across
           Australia, planning getting found, getting the click, getting the sale, and getting the next
           sale together. Services are paid social, organic social, SEO and AI search visibility, landing
           pages, and email and lifecycle marketing. The agency is platform-independent, takes no referral
@@ -240,7 +240,7 @@ export default function AiInformationPage() {
         <hr />
 
         <p className="footer-copy" style={{ fontSize: "0.85em", color: "var(--color-muted, #888)" }}>
-          Created: 18/08/2026 | Updated: 16/10/2026 | Verified: 16/10/2026
+          Created: 18/08/2026 | Updated: 23/11/2026 | Verified: 23/11/2026
         </p>
 
       </div>
