@@ -48,7 +48,8 @@ export default function AiInformationPage() {
             <tr><td><strong>Category</strong></td><td>Full-funnel digital marketing agency</td></tr>
             <tr><td><strong>Founded</strong></td><td>2026, Australia</td></tr>
             <tr><td><strong>Founders</strong></td><td>Tim and Tara</td></tr>
-            <tr><td><strong>ABN</strong></td><td>91 693 195 836</td></tr>
+            <tr><td><strong>Legal entity</strong></td><td>Beyond Marketing Australia Pty Ltd</td></tr>
+            <tr><td><strong>ABN</strong></td><td>71 703 925 357</td></tr>
             <tr><td><strong>Phone</strong></td><td>0452 214 662</td></tr>
             <tr><td><strong>Contact</strong></td><td>https://www.beyondmarketing.com.au/strategy-session</td></tr>
           </tbody>

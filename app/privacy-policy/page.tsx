@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
           <h2>1. About us</h2>
           <p>
-            Beyond Marketing (formerly Beyond Open Rate, ABN 91 693 195 836) is an Australian digital marketing agency. We operate the website beyondmarketing.com.au and provide paid social, organic social, SEO, landing page, and email and lifecycle marketing services to businesses.
+            Beyond Marketing Australia Pty Ltd (ABN 71 703 925 357), trading as Beyond Marketing (formerly Beyond Open Rate), is an Australian digital marketing agency. We operate the website beyondmarketing.com.au and provide paid social, organic social, SEO, landing page, and email and lifecycle marketing services to businesses.
           </p>
           <p>
             We are committed to protecting your privacy and handling your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs).

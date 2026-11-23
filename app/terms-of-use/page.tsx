@@ -25,7 +25,7 @@ export default function TermsOfUse() {
 
           <h2>1. About these Terms</h2>
           <p>
-            These Terms of Use govern your access to and use of beyondmarketing.com.au (the &ldquo;<strong>Site</strong>&rdquo;), operated by Solstice Endeavours Pty Limited t/as Beyond Marketing Australia (ABN 91 693 195 836) (&ldquo;<strong>Beyond Marketing</strong>&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, please do not use the Site.
+            These Terms of Use govern your access to and use of beyondmarketing.com.au (the &ldquo;<strong>Site</strong>&rdquo;), operated by Beyond Marketing Australia Pty Ltd (ABN 71 703 925 357) (&ldquo;<strong>Beyond Marketing</strong>&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, please do not use the Site.
           </p>
           <p>
             These Terms apply to your use of the Site itself. They do not govern the provision of our services. If you engage us, that engagement is governed by our Master Services Agreement and the applicable Schedule, signed separately.
