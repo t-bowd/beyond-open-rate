@@ -431,7 +431,7 @@
     },
     {
       "id": "069",
-      "status": "queued",
+      "status": "in_review",
       "pillar": "educational",
       "tier": "problem_aware",
       "topic": "Your SEO report says rankings are up. Does it say what that earned?",
